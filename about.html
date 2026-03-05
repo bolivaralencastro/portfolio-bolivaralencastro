@@ -10,11 +10,12 @@
   <link rel="canonical" href="https://bolivaralencastro.com.br/about.html">
 </head>
 <body>
+  <div class="grain"></div>
   <a href="#main" class="skip-link">Pular para o conteúdo principal</a>
 
   <header class="grid">
-    <div class="brand col-4 h-card"><strong class="p-name">Bolívar Alencastro</strong></div>
-    <nav class="col-8" aria-label="Navegação principal">
+    <div class="brand col-8 h-card"><span class="brand-mark" aria-hidden="true"><span class="dot dot-red"></span><span class="dot dot-blue"></span><span class="dot dot-yellow"></span></span><strong class="p-name">Bolívar Alencastro</strong></div>
+    <nav class="col-4" aria-label="Navegação principal">
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/about.html" aria-current="page">About</a></li>
@@ -25,17 +26,16 @@
   </header>
 
   <main id="main" class="grid h-card">
-    <h1 class="p-name col-8">Sobre mim</h1>
-
-    <section class="col-4">
-      <picture>
-        <source srcset="/assets/images/bolivar-perfil.avif" type="image/avif">
-        <source srcset="/assets/images/bolivar-perfil.webp" type="image/webp">
-        <img src="/assets/images/bolivar-perfil.jpg" alt="Retrato profissional de Bolívar Alencastro" width="400" height="400" fetchpriority="high" class="u-photo">
-      </picture>
+    <section class="grid col-12 about-hero">
+      <h1 class="p-name col-8">Sobre mim</h1>
+      <section class="col-4 about-portrait">
+        <picture>
+          <img src="/assets/images/about.png" alt="Retrato profissional de Bolívar Alencastro" width="900" height="900" fetchpriority="high" class="u-photo">
+        </picture>
+      </section>
     </section>
 
-    <section class="grid col-8">
+    <section class="grid col-8 section-block">
       <h2 class="col-12">Manifesto e Valores</h2>
       <p class="p-note col-10">Acredito na posse total dos dados (Indie Web), em sistemas que independem de compiladores e na entrega de produtos acessíveis por padrão (WCAG AAA). O bom design não envelhece se estiver ancorado nos fundamentos da web.</p>
     </section>
@@ -54,17 +54,16 @@
       </ol>
     </section>
 
-    <section class="grid col-12 section-block">
-      <h2 class="col-12">Contato Direto</h2>
-      <p class="col-6">Zero formulários inseguros. Entre em contato por email:</p>
-      <p class="col-6"><a href="mailto:contato@bolivaralencastro.com.br" class="u-email">contato@bolivaralencastro.com.br</a></p>
-    </section>
   </main>
 
   <footer class="grid">
-    <p class="col-6">&copy; 2026 Bolívar Alencastro.</p>
-    <nav class="col-6" aria-label="Rodapé">
-      <ul><li><a href="/feed.xml">RSS</a></li></ul>
+    <p class="col-9">&copy; 2026 Bolívar Alencastro. Design HTML-first.</p>
+    <nav class="footer-links col-3" aria-label="Links do rodapé">
+      <ul>
+        <li><a href="/feed.xml" rel="alternate">RSS Feed</a></li>
+        <li><a href="/sitemap.xml">Sitemap</a></li>
+        <li><a href="/humans.txt">Humans</a></li>
+      </ul>
     </nav>
   </footer>
 </body>
