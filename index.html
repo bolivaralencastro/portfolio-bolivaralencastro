@@ -6,7 +6,7 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self' data:;">
   <title>Bolívar Alencastro - Product Designer</title>
   <meta name="description" content="Portfólio de Bolívar Alencastro, Product Designer focado em arquitetura nativa, acessibilidade e performance absoluta.">
-  
+
   <link rel="stylesheet" href="/style.css">
   <link rel="canonical" href="https://bolivaralencastro.com.br/">
   <link rel="alternate" type="application/atom+xml" title="Feed RSS do Blog" href="/feed.xml">
@@ -29,12 +29,12 @@
 </head>
 <body>
   <a href="#main" class="skip-link">Pular para o conteúdo principal</a>
-  
-  <header>
-    <div class="h-card">
+
+  <header class="grid">
+    <div class="brand col-4 h-card">
       <strong class="p-name">Bolívar Alencastro</strong>
     </div>
-    <nav aria-label="Navegação principal">
+    <nav class="col-8" aria-label="Navegação principal">
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/about.html">About</a></li>
@@ -44,49 +44,46 @@
     </nav>
   </header>
 
-  <main id="main">
-    <section class="hero scroll-reveal">
-      <h1>Product Designer.</h1>
-      <p>Desenho identidades, interfaces e experiências focadas em durabilidade, acessibilidade (WCAG AAA) e aderência estrita aos padrões da plataforma web (HTML-first).</p>
-      <a href="/about.html" class="button">Conheça minha trajetória</a>
+  <main id="main" class="grid">
+    <section class="grid col-12">
+      <h1 class="col-8">Product Designer.</h1>
+      <p class="lead col-6">Desenho identidades, interfaces e experiências focadas em durabilidade, acessibilidade (WCAG AAA) e aderência estrita aos padrões da plataforma web (HTML-first).</p>
+      <p class="meta col-3">Editorial interface systems. Zero build. Zero frameworks.</p>
+      <a href="/about.html" class="button col-3">Conheça minha trajetória</a>
     </section>
 
-    <section class="container scroll-reveal">
-      <h2>Featured Projects</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>Sistema de Design Nativo</h3>
-          <p>Criação de tokens e componentes CSS puramente estáticos.</p>
-          <a href="/projects/sistema-design.html">Ver Estudo de Caso completo</a>
-        </article>
-        <article class="card">
-          <h3>Banco Digital HTML-first</h3>
-          <p>Interface financeira reescrita sem frameworks JS.</p>
-          <a href="/projects/banco-digital.html">Ver Estudo de Caso completo</a>
-        </article>
-        <article class="card">
-          <h3>Acessibilidade AAA</h3>
-          <p>Auditoria e adequação visual do portal de notícias.</p>
-          <a href="/projects/acessibilidade-aaa.html">Ver Estudo de Caso completo</a>
-        </article>
-      </div>
+    <section class="grid col-12 section-block">
+      <h2 class="col-12">Featured Projects</h2>
+      <article class="project-item col-4">
+        <h3>Sistema de Design Nativo</h3>
+        <p>Criação de tokens e componentes CSS puramente estáticos.</p>
+        <a href="/projects/sistema-design.html">Ver estudo de caso</a>
+      </article>
+      <article class="project-item col-4">
+        <h3>Banco Digital HTML-first</h3>
+        <p>Interface financeira reescrita sem frameworks JS.</p>
+        <a href="/projects/banco-digital.html">Ver estudo de caso</a>
+      </article>
+      <article class="project-item col-4">
+        <h3>Acessibilidade AAA</h3>
+        <p>Auditoria e adequação visual com foco em legibilidade e navegação assistiva.</p>
+        <a href="/projects/acessibilidade-aaa.html">Ver estudo de caso</a>
+      </article>
     </section>
 
-    <section class="scroll-reveal">
-      <h2>Latest Posts</h2>
-      <ul class="grid">
-        <li class="card h-entry">
-          <time datetime="2026-03-04">04/03/2026</time>
-          <h3 class="p-name"><a href="/blog/o-futuro-do-design-html-first.html">A Morte da Obsolescência Programada no Design</a></h3>
-          <p class="e-content">Por que abandonar frameworks JS pesados é a decisão de produto mais rentável da década.</p>
-        </li>
-      </ul>
+    <section class="grid col-12 section-block">
+      <h2 class="col-12">Latest Post</h2>
+      <article class="post-item h-entry col-8">
+        <time datetime="2026-03-04">04/03/2026</time>
+        <h3 class="p-name"><a href="/blog/o-futuro-do-design-html-first.html">A Morte da Obsolescência Programada no Design</a></h3>
+        <p class="e-content">Por que abandonar frameworks JS pesados é a decisão de produto mais rentável da década.</p>
+      </article>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 Bolívar Alencastro. Design HTML-first.</p>
-    <nav aria-label="Links do rodapé">
+  <footer class="grid">
+    <p class="col-6">&copy; 2026 Bolívar Alencastro. Design HTML-first.</p>
+    <nav class="col-6" aria-label="Links do rodapé">
       <ul>
         <li><a href="/feed.xml" rel="alternate">RSS Feed</a></li>
         <li><a href="/sitemap.xml">Sitemap</a></li>

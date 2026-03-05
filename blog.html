@@ -10,9 +10,10 @@
 </head>
 <body>
   <a href="#main" class="skip-link">Pular para o conteúdo principal</a>
-  <header>
-    <div><strong>Bolívar Alencastro</strong></div>
-    <nav>
+
+  <header class="grid">
+    <div class="brand col-4"><strong>Bolívar Alencastro</strong></div>
+    <nav class="col-8" aria-label="Navegação principal">
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/about.html">About</a></li>
@@ -22,15 +23,18 @@
     </nav>
   </header>
 
-  <main id="main" class="container scroll-reveal">
-    <h1>Blog e Notas</h1>
-    <div class="grid">
-      <article class="card h-entry">
-        <time class="dt-published" datetime="2026-03-04">4 de Março, 2026</time>
-        <h2 class="p-name"><a href="/blog/o-futuro-do-design-html-first.html" class="u-url">A Morte da Obsolescência Programada no Design</a></h2>
+  <main id="main" class="grid">
+    <h1 class="col-8">Blog</h1>
+    <p class="lead col-4">Notas editoriais sobre design, sistema visual e arquitetura web nativa.</p>
+
+    <section class="grid col-12 section-block">
+      <h2 class="col-12">Posts</h2>
+      <article class="post-item h-entry col-8">
+        <time class="dt-published" datetime="2026-03-04">04 de Março, 2026</time>
+        <h3 class="p-name"><a href="/blog/o-futuro-do-design-html-first.html" class="u-url">A Morte da Obsolescência Programada no Design</a></h3>
         <p class="p-summary">Por que abandonar frameworks JS pesados é a decisão de produto mais rentável da década para empresas.</p>
       </article>
-    </div>
+    </section>
   </main>
 </body>
 </html>

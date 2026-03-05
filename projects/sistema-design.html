@@ -10,17 +10,18 @@
 </head>
 <body>
   <a href="#main" class="skip-link">Pular para o conteúdo</a>
-  <header>
-    <nav aria-label="Navegação do case">
-      <ul>
-        <li><a href="/projects.html">← Voltar aos Projetos</a></li>
-      </ul>
+
+  <header class="grid">
+    <nav class="col-12" aria-label="Navegação do case">
+      <ul><li><a href="/projects.html">← Voltar aos Projetos</a></li></ul>
     </nav>
   </header>
 
-  <main id="main" class="scroll-reveal h-entry">
-    <h1 class="p-name">Estudo de Caso: Sistema de Design Nativo</h1>
-    <div class="e-content">
+  <main id="main" class="grid h-entry">
+    <h1 class="p-name col-9">Estudo de Caso: Sistema de Design Nativo</h1>
+    <p class="meta col-3">Case Study</p>
+
+    <article class="e-content col-8 section-block">
       <p>Problema: o time dependia de um stack complexo para manter componentes básicos, com variações difíceis de governar e inconsistência visual entre produtos.</p>
 
       <h2>Abordagem</h2>
@@ -32,7 +33,7 @@
         <li>Aumento de consistência entre telas e fluxos críticos.</li>
         <li>Documentação legível diretamente no código-fonte, sem dependência de toolchain.</li>
       </ul>
-    </div>
+    </article>
   </main>
 </body>
 </html>

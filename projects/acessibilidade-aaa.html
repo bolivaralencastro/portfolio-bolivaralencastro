@@ -10,17 +10,18 @@
 </head>
 <body>
   <a href="#main" class="skip-link">Pular para o conteúdo</a>
-  <header>
-    <nav aria-label="Navegação do case">
-      <ul>
-        <li><a href="/projects.html">← Voltar aos Projetos</a></li>
-      </ul>
+
+  <header class="grid">
+    <nav class="col-12" aria-label="Navegação do case">
+      <ul><li><a href="/projects.html">← Voltar aos Projetos</a></li></ul>
     </nav>
   </header>
 
-  <main id="main" class="scroll-reveal h-entry">
-    <h1 class="p-name">Estudo de Caso: Acessibilidade AAA</h1>
-    <div class="e-content">
+  <main id="main" class="grid h-entry">
+    <h1 class="p-name col-9">Estudo de Caso: Acessibilidade AAA</h1>
+    <p class="meta col-3">Case Study</p>
+
+    <article class="e-content col-8 section-block">
       <p>Problema: o produto apresentava falhas recorrentes de contraste, foco e semântica que impactavam navegação por teclado e tecnologias assistivas.</p>
 
       <h2>Abordagem</h2>
@@ -32,7 +33,7 @@
         <li>Fluxos críticos compatíveis com teclado e leitores de tela.</li>
         <li>Base visual mais previsível para evolução contínua do produto.</li>
       </ul>
-    </div>
+    </article>
   </main>
 </body>
 </html>
