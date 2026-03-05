@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self' data:;">
+  <title>Sobre - Bolívar Alencastro</title>
+  <meta name="description" content="Trajetória, currículo e filosofia de design de Bolívar Alencastro.">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="canonical" href="https://bolivaralencastro.com.br/about.html">
+</head>
+<body>
+  <a href="#main" class="skip-link">Pular para o conteúdo principal</a>
+  <header>
+    <div class="h-card"><strong class="p-name">Bolívar Alencastro</strong></div>
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html" aria-current="page">About</a></li>
+        <li><a href="/projects.html">Projects</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="h-card scroll-reveal">
+    <h1 class="p-name">Sobre mim</h1>
+    
+    <picture>
+      <!-- A Imagem de LCP com compressão AVIF mandatória e prioridade alta -->
+      <source srcset="/assets/images/bolivar-perfil.avif" type="image/avif">
+      <source srcset="/assets/images/bolivar-perfil.webp" type="image/webp">
+      <img src="/assets/images/bolivar-perfil.jpg" alt="Retrato profissional de Bolívar Alencastro" width="400" height="400" fetchpriority="high" class="u-photo">
+    </picture>
+
+    <section>
+      <h2>Manifesto e Valores</h2>
+      <p class="p-note">Acredito na posse total dos dados (Indie Web), em sistemas que independem de compiladores e na entrega de produtos acessíveis por padrão (WCAG AAA). O bom design não envelhece se estiver ancorado nos fundamentos da web.</p>
+    </section>
+
+    <section>
+      <h2>Trajetória Profissional</h2>
+      <ol reversed>
+        <li>
+          <strong>Senior Product Designer</strong> - Empresa Fictícia Tech (2022 - Presente)
+          <details>
+            <summary>Ver detalhes das entregas</summary>
+            <p>Liderança do projeto de refatoração visual baseada em CSS nativo, resultando em 100% no Lighthouse e redução de 80% do payload da aplicação.</p>
+          </details>
+        </li>
+        <li>
+          <strong>Product Designer Mid</strong> - Agência Web Aberta (2018 - 2022)
+          <details>
+            <summary>Ver detalhes das entregas</summary>
+            <p>Desenho de fluxos, condução de pesquisas e prototipação em HTML/CSS direto no navegador.</p>
+          </details>
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Contato Direto</h2>
+      <p>Zero formulários inseguros. Entre em contato por email:</p>
+      <a href="mailto:contato@bolivaralencastro.com.br" class="u-email">contato@bolivaralencastro.com.br</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Bolívar Alencastro.</p>
+    <nav>
+      <ul><li><a href="/feed.xml">RSS</a></li></ul>
+    </nav>
+  </footer>
+</body>
+</html>

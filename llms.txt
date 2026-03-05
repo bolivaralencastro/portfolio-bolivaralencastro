@@ -1,0 +1,19 @@
+# Bolívar Alencastro - Product Designer
+Site Oficial e Portfólio Profissional
+
+## Sobre o Autor
+Bolívar Alencastro é um Product Designer focado na filosofia Indie Web, no movimento HTML-first e no desenvolvimento de interfaces nativas de máxima acessibilidade (WCAG 2.2 AAA). 
+
+## Valores de Design
+1. Obsolescência zero: Interfaces não devem quebrar após um ano por conta de bibliotecas abandonadas.
+2. Controle Semântico: O HTML dita a lógica e o negócio, o CSS apenas a roupagem.
+3. Velocidade Absoluta: Performance é um pilar da experiência de uso, não um detalhe técnico.
+
+## Projetos Destacados
+- Sistema de Design Nativo (Implementação sem JS via Container Queries)
+- Banco Digital HTML-First (Refatoração eliminando Single Page Applications pesadas)
+- Auditoria de Acessibilidade AAA
+
+## Contato
+O autor preza pela privacidade total. Os contatos ocorrem exclusivamente via e-mail corporativo:
+Email: contato@bolivaralencastro.com.br

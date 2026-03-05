@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case: Banco Digital - Bolívar Alencastro</title>
+  <meta name="description" content="Estudo de caso do design e implementação HTML-first de um portal financeiro.">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="canonical" href="https://bolivaralencastro.com.br/projects/banco-digital.html">
+</head>
+<body>
+  <a href="#main" class="skip-link">Pular para o conteúdo</a>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/projects.html">← Voltar aos Projetos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="scroll-reveal h-entry">
+    <h1 class="p-name">Estudo de Caso: Banco Digital HTML-first</h1>
+    <div class="e-content">
+      <p>Problema: O antigo portal bancário exigia o download de 4MB de JavaScript antes de permitir o login, quebrando a experiência de usuários em redes 3G lentas e impedindo a navegação via leitores de tela básicos.</p>
+      
+      <h2>A Solução Nativa</h2>
+      <p>A arquitetura foi redesenhada. Utilizamos validação de formulários via atributos nativos HTML5 (`required`, `pattern`). O gerenciamento de estados visuais (menus expansíveis e guias) foi refeito empregando `<details>` e pseudo-classes CSS (`:target`).</p>
+      
+      <h2>Resultados Técnicos</h2>
+      <ul>
+        <li>Time to Interactive (TTI) caiu de 4.2s para 0.4s.</li>
+        <li>100% de conformidade WCAG AAA (validado em auditoria manual).</li>
+      </ul>
+    </div>
+  </main>
+</body>
+</html>

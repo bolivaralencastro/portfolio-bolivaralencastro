@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self' data:;">
+  <title>Projetos - Bolívar Alencastro</title>
+  <meta name="description" content="Catálogo de estudos de caso e projetos de design desenvolvidos por Bolívar Alencastro.">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="canonical" href="https://bolivaralencastro.com.br/projects.html">
+</head>
+<body>
+  <a href="#main" class="skip-link">Pular para o conteúdo principal</a>
+  <header>
+    <div><strong>Bolívar Alencastro</strong></div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/projects.html" aria-current="page">Projects</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="container scroll-reveal">
+    <h1>Projetos Recentes</h1>
+    
+    <div class="grid">
+      <!-- Card 1 com Popover de Preview -->
+      <article class="card">
+        <h2>Banco Digital Web</h2>
+        <p>Interface puramente estática e acessível.</p>
+        <button popovertarget="modal-banco">Pré-visualização Rápida</button>
+        <br><a href="/projects/banco-digital.html">Ler Case Completo</a>
+      </article>
+
+      <!-- Modal Nativo (Popover API) do Card 1 -->
+      <dialog popover id="modal-banco">
+        <h2>Preview: Banco Digital</h2>
+        <p>Um redesign absoluto com foco em contraste AAA, remoção total de bibliotecas cliente-side e transições de página nativas.</p>
+        <button popovertarget="modal-banco" popovertargetaction="hide">Fechar Preview</button>
+      </dialog>
+
+      <!-- Card 2 -->
+      <article class="card">
+        <h2>Design System Zero-Build</h2>
+        <p>Tokens gerenciados por CSS Variables estritas.</p>
+        <button popovertarget="modal-ds">Pré-visualização Rápida</button>
+      </article>
+
+      <!-- Modal Nativo do Card 2 -->
+      <dialog popover id="modal-ds">
+        <h2>Preview: Design System</h2>
+        <p>Criação de componentes reativos usando Container Queries e o pseudo-seletor :has(), eliminando ResizeObservers.</p>
+        <button popovertarget="modal-ds" popovertargetaction="hide">Fechar Preview</button>
+      </dialog>
+    </div>
+  </main>
+</body>
+</html>
