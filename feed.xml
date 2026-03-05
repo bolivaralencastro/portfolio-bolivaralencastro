@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Blog de Bolívar Alencastro</title>
+  <subtitle>Product Design e Arquitetura Web Nativa</subtitle>
+  <link href="https://bolivaralencastro.com.br/feed.xml" rel="self"/>
+  <link href="https://bolivaralencastro.com.br/"/>
+  <updated>2026-03-04T12:00:00Z</updated>
+  <id>https://bolivaralencastro.com.br/</id>
+  <author>
+    <name>Bolívar Alencastro</name>
+    <email>contato@bolivaralencastro.com.br</email>
+  </author>
+
+  <entry>
+    <title>A Morte da Obsolescência Programada no Design</title>
+    <link href="https://bolivaralencastro.com.br/blog/o-futuro-do-design-html-first.html"/>
+    <id>https://bolivaralencastro.com.br/blog/o-futuro-do-design-html-first.html</id>
+    <updated>2026-03-04T12:00:00Z</updated>
+    <summary>Por que abandonar frameworks JS pesados é a decisão de produto mais rentável da década.</summary>
+    <content type="html">
+      <![CDATA[ <p>A web é nativamente responsiva, acessível e durável. Como Product Designers, nossa prioridade é criar utilidade, e não alimentar fogueiras de empilhamento tecnológico.</p> ]]>
+    </content>
+  </entry>
+</feed>
