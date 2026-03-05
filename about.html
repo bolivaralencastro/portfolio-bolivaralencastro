@@ -11,9 +11,10 @@
 </head>
 <body>
   <a href="#main" class="skip-link">Pular para o conteúdo principal</a>
-  <header>
-    <div class="h-card"><strong class="p-name">Bolívar Alencastro</strong></div>
-    <nav aria-label="Navegação principal">
+
+  <header class="grid">
+    <div class="brand col-4 h-card"><strong class="p-name">Bolívar Alencastro</strong></div>
+    <nav class="col-8" aria-label="Navegação principal">
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/about.html" aria-current="page">About</a></li>
@@ -23,51 +24,46 @@
     </nav>
   </header>
 
-  <main id="main" class="h-card scroll-reveal">
-    <h1 class="p-name">Sobre mim</h1>
-    
-    <picture>
-      <!-- A Imagem de LCP com compressão AVIF mandatória e prioridade alta -->
-      <source srcset="/assets/images/bolivar-perfil.avif" type="image/avif">
-      <source srcset="/assets/images/bolivar-perfil.webp" type="image/webp">
-      <img src="/assets/images/bolivar-perfil.jpg" alt="Retrato profissional de Bolívar Alencastro" width="400" height="400" fetchpriority="high" class="u-photo">
-    </picture>
+  <main id="main" class="grid h-card">
+    <h1 class="p-name col-8">Sobre mim</h1>
 
-    <section>
-      <h2>Manifesto e Valores</h2>
-      <p class="p-note">Acredito na posse total dos dados (Indie Web), em sistemas que independem de compiladores e na entrega de produtos acessíveis por padrão (WCAG AAA). O bom design não envelhece se estiver ancorado nos fundamentos da web.</p>
+    <section class="col-4">
+      <picture>
+        <source srcset="/assets/images/bolivar-perfil.avif" type="image/avif">
+        <source srcset="/assets/images/bolivar-perfil.webp" type="image/webp">
+        <img src="/assets/images/bolivar-perfil.jpg" alt="Retrato profissional de Bolívar Alencastro" width="400" height="400" fetchpriority="high" class="u-photo">
+      </picture>
     </section>
 
-    <section>
-      <h2>Trajetória Profissional</h2>
-      <ol reversed>
+    <section class="grid col-8">
+      <h2 class="col-12">Manifesto e Valores</h2>
+      <p class="p-note col-10">Acredito na posse total dos dados (Indie Web), em sistemas que independem de compiladores e na entrega de produtos acessíveis por padrão (WCAG AAA). O bom design não envelhece se estiver ancorado nos fundamentos da web.</p>
+    </section>
+
+    <section class="grid col-12 section-block">
+      <h2 class="col-12">Trajetória Profissional</h2>
+      <ol reversed class="col-8">
         <li>
           <strong>Senior Product Designer</strong> - Empresa Fictícia Tech (2022 - Presente)
-          <details>
-            <summary>Ver detalhes das entregas</summary>
-            <p>Liderança do projeto de refatoração visual baseada em CSS nativo, resultando em 100% no Lighthouse e redução de 80% do payload da aplicação.</p>
-          </details>
+          <p>Liderança do projeto de refatoração visual baseada em CSS nativo, resultando em 100% no Lighthouse e redução de 80% do payload da aplicação.</p>
         </li>
         <li>
           <strong>Product Designer Mid</strong> - Agência Web Aberta (2018 - 2022)
-          <details>
-            <summary>Ver detalhes das entregas</summary>
-            <p>Desenho de fluxos, condução de pesquisas e prototipação em HTML/CSS direto no navegador.</p>
-          </details>
+          <p>Desenho de fluxos, condução de pesquisas e prototipação em HTML/CSS direto no navegador.</p>
         </li>
       </ol>
     </section>
 
-    <section>
-      <h2>Contato Direto</h2>
-      <p>Zero formulários inseguros. Entre em contato por email:</p>
-      <a href="mailto:contato@bolivaralencastro.com.br" class="u-email">contato@bolivaralencastro.com.br</a>
+    <section class="grid col-12 section-block">
+      <h2 class="col-12">Contato Direto</h2>
+      <p class="col-6">Zero formulários inseguros. Entre em contato por email:</p>
+      <p class="col-6"><a href="mailto:contato@bolivaralencastro.com.br" class="u-email">contato@bolivaralencastro.com.br</a></p>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 Bolívar Alencastro.</p>
-    <nav>
+  <footer class="grid">
+    <p class="col-6">&copy; 2026 Bolívar Alencastro.</p>
+    <nav class="col-6" aria-label="Rodapé">
       <ul><li><a href="/feed.xml">RSS</a></li></ul>
     </nav>
   </footer>
