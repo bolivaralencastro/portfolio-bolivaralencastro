@@ -1,0 +1,27 @@
+name: Validate Content
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  validate-content:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Ensure generated files are up to date
+        run: python scripts/build_site_metadata.py --check
+
+      - name: Validate editorial and SEO rules
+        run: python scripts/validate_site.py
