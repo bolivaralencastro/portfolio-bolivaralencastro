@@ -250,6 +250,23 @@ def validate_links(repo_root: pathlib.Path, pages: Iterable[PageMeta], errors: l
                 errors.append(f"{page.rel_path}: broken internal link '{href}' (target '{target.relative_to(repo_root)}' not found)")
 
 
+def class_exists(html_content: str, class_name: str) -> bool:
+    pattern = re.compile(rf'class\s*=\s*["\'][^"\']*\b{re.escape(class_name)}\b[^"\']*["\']', flags=re.I)
+    return bool(pattern.search(html_content))
+
+
+def extract_first_class_text(html_content: str, class_name: str) -> str:
+    pattern = re.compile(
+        rf"<(?P<tag>[a-z0-9]+)[^>]*class\s*=\s*[\"'][^\"']*\b{re.escape(class_name)}\b[^\"']*[\"'][^>]*>(?P<body>.*?)</(?P=tag)>",
+        flags=re.I | re.S,
+    )
+    match = pattern.search(html_content)
+    if not match:
+        return ""
+    body = re.sub(r"<[^>]+>", " ", match.group("body"))
+    return " ".join(body.split()).strip()
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Validate editorial and SEO metadata")
     parser.add_argument("--base-url", default=BASE_URL_DEFAULT, help="Canonical base URL")
@@ -284,6 +301,7 @@ def main() -> int:
             errors.append(f"{page.rel_path}: <html lang> must be 'pt-BR' (found '{page.lang or 'missing'}')")
 
         if page.rel_path.startswith("blog/"):
+            raw_html = page.path.read_text(encoding="utf-8")
             if not page.published_datetime:
                 errors.append(f"{page.rel_path}: missing time.dt-published[datetime]")
             elif not is_valid_iso_datetime(page.published_datetime):
@@ -296,6 +314,19 @@ def main() -> int:
             h1 = page.h1_texts[0] if page.h1_texts else ""
             if h1 and page.title_tag and h1 not in page.title_tag:
                 errors.append(f"{page.rel_path}: <title> should include the main <h1> text")
+
+            if not class_exists(raw_html, "post-meta"):
+                errors.append(f"{page.rel_path}: missing visible post metadata block (.post-meta)")
+
+            category_text = extract_first_class_text(raw_html, "p-category")
+            if not category_text:
+                errors.append(f"{page.rel_path}: missing visible category (.p-category) below title")
+
+            reading_time_text = extract_first_class_text(raw_html, "reading-time")
+            if not reading_time_text:
+                errors.append(f"{page.rel_path}: missing visible reading time (.reading-time) below title")
+            elif not re.search(r"\b\d+\s*min\b", reading_time_text.lower()):
+                errors.append(f"{page.rel_path}: reading time must include minutes (ex: '6 min de leitura')")
 
         if page.rel_path.startswith("projects/"):
             if not page.title_tag:
