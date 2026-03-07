@@ -162,6 +162,14 @@ header .brand {
   font-weight: 700;
 }
 
+.brand-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--text);
+  border-bottom: none;
+}
+
 .brand-mark {
   display: inline-flex;
   align-items: center;
@@ -357,6 +365,10 @@ a:hover {
 }
 
 .post-item h3 a {
+  border-bottom: none;
+}
+
+.project-item h3 a {
   border-bottom: none;
 }
 
