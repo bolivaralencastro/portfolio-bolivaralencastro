@@ -21,7 +21,7 @@
     <published>2025-10-23T00:00:00Z</published>
     <updated>2025-10-23T00:00:00Z</updated>
     <summary>Descubra como um teste A/B/C no Hemocentro de SP usa design e dados para melhorar a experiência do usuário, com lições sobre padrões, acessibilidade e engajamento.</summary>
-    <content type="html">&lt;p&gt;Era uma manhã qualquer quando pisei no Hemocentro do Hospital das Clínicas, em São Paulo, para doar sangue. Tudo fluía bem: equipe atenciosa, ambiente acolhedor e processo organizado. Mas, ao usar o totem de autoatendimento para digitar meu CPF, senti um pequeno atrito. Esse incômodo virou hipótese de design.&lt;/p&gt;</content>
+    <content type="html">&lt;p&gt;Era uma manhã qualquer quando pisei no Hemocentro de São Paulo do Hospital das Clínicas da FMUSP, em São Paulo, para doar sangue. Tudo fluía bem: equipe atenciosa, ambiente acolhedor e processo organizado. Mas, ao usar o totem de autoatendimento para digitar meu CPF, senti um pequeno atrito. Esse incômodo virou hipótese de design.&lt;/p&gt;</content>
   </entry>
 
   <entry>
