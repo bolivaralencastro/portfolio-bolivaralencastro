@@ -24,4 +24,14 @@
     <content type="html">&lt;p&gt;Ensinaram-nos que para um botão ser clicável ele precisava de estado gerenciado via bibliotecas de 40kb. Ensinaram-nos mal.&lt;/p&gt;</content>
   </entry>
 
+  <entry>
+    <title>Design, Dados e Doação de Sangue: Como um Totem me Fez Repensar a Experiência do Usuário</title>
+    <link href="https://bolivaralencastro.com.br/blog/design-dados-e-doao-de-sangue-como-um-totem-me-fez-repensar-a-experincia-do-usurio.html" rel="alternate"/>
+    <id>https://bolivaralencastro.com.br/blog/design-dados-e-doao-de-sangue-como-um-totem-me-fez-repensar-a-experincia-do-usurio.html</id>
+    <published>2025-10-23T00:00:00Z</published>
+    <updated>2025-10-23T00:00:00Z</updated>
+    <summary>Descubra como um teste A/B/C no Hemocentro de SP usa design e dados para melhorar a experiência do usuário, com lições sobre padrões, acessibilidade e engajamento.</summary>
+    <content type="html">&lt;p&gt;Era uma manhã qualquer quando pisei no Hemocentro do Hospital das Clínicas, em São Paulo, para doar sangue. Tudo fluía bem: equipe atenciosa, ambiente acolhedor e processo organizado. Mas, ao usar o totem de autoatendimento para digitar meu CPF, senti um pequeno atrito. Esse incômodo virou hipótese de design.&lt;/p&gt;</content>
+  </entry>
+
 </feed>
