@@ -1,49 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-   <url>
-      <loc>https://bolivaralencastro.com.br/</loc>
-      <lastmod>2026-03-05</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>1.0</priority>
-   </url>
-   <url>
-      <loc>https://bolivaralencastro.com.br/about.html</loc>
-      <lastmod>2026-03-05</lastmod>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://bolivaralencastro.com.br/projects.html</loc>
-      <lastmod>2026-03-05</lastmod>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://bolivaralencastro.com.br/projects/banco-digital.html</loc>
-      <lastmod>2026-03-05</lastmod>
-      <priority>0.7</priority>
-   </url>
-   <url>
-      <loc>https://bolivaralencastro.com.br/projects/sistema-design.html</loc>
-      <lastmod>2026-03-05</lastmod>
-      <priority>0.7</priority>
-   </url>
-   <url>
-      <loc>https://bolivaralencastro.com.br/projects/acessibilidade-aaa.html</loc>
-      <lastmod>2026-03-05</lastmod>
-      <priority>0.7</priority>
-   </url>
-   <url>
-      <loc>https://bolivaralencastro.com.br/blog.html</loc>
-      <lastmod>2026-03-05</lastmod>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://bolivaralencastro.com.br/blog/o-futuro-do-design-html-first.html</loc>
-      <lastmod>2026-03-05</lastmod>
-      <priority>0.6</priority>
-   </url>
-   <url>
-      <loc>https://bolivaralencastro.com.br/blog/como-criar-um-portfolio-de-product-designer-que-realmente-se-destaca.html</loc>
-      <lastmod>2025-08-19</lastmod>
-      <priority>0.6</priority>
-   </url>
-</urlset>
+https://bolivaralencastro.com.br/
+https://bolivaralencastro.com.br/about.html
+https://bolivaralencastro.com.br/projects.html
+https://bolivaralencastro.com.br/projects/keeps-learning-konquest.html
+https://bolivaralencastro.com.br/projects/kirinus-escola-de-danca.html
+https://bolivaralencastro.com.br/projects/intelbras-opl-cidades-invisiveis.html
+https://bolivaralencastro.com.br/projects/experiencia-branding-identidade-visual.html
+https://bolivaralencastro.com.br/blog.html
+https://bolivaralencastro.com.br/blog/o-futuro-do-design-html-first.html
+https://bolivaralencastro.com.br/blog/como-criar-um-portfolio-de-product-designer-que-realmente-se-destaca.html
+https://bolivaralencastro.com.br/now.html

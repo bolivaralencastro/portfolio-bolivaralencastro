@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="keeps logo">
+  <rect width="1600" height="900" fill="#111827"/>
+  <rect x="40" y="40" width="1520" height="820" fill="none" stroke="#9ca3af" stroke-width="2"/>
+  <text x="800" y="430" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="52" fill="#f3f4f6">keeps logo</text>
+  <text x="800" y="500" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#d1d5db">imagem local (placeholder)</text>
+</svg>
