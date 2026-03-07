@@ -267,6 +267,20 @@ def extract_first_class_text(html_content: str, class_name: str) -> str:
     return " ".join(body.split()).strip()
 
 
+def class_inside_post_meta(html_content: str, class_name: str) -> bool:
+    block_pattern = re.compile(
+        r"<(?P<tag>[a-z0-9]+)[^>]*class\s*=\s*[\"'][^\"']*\bpost-meta\b[^\"']*[\"'][^>]*>(?P<body>.*?)</(?P=tag)>",
+        flags=re.I | re.S,
+    )
+    block_match = block_pattern.search(html_content)
+    if not block_match:
+        return False
+
+    body = block_match.group("body")
+    class_pattern = re.compile(rf'class\s*=\s*["\'][^"\']*\b{re.escape(class_name)}\b[^"\']*["\']', flags=re.I)
+    return bool(class_pattern.search(body))
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Validate editorial and SEO metadata")
     parser.add_argument("--base-url", default=BASE_URL_DEFAULT, help="Canonical base URL")
@@ -306,6 +320,8 @@ def main() -> int:
                 errors.append(f"{page.rel_path}: missing time.dt-published[datetime]")
             elif not is_valid_iso_datetime(page.published_datetime):
                 errors.append(f"{page.rel_path}: dt-published datetime must be ISO format")
+            if not page.og_image:
+                errors.append(f"{page.rel_path}: missing og:image (required for blog listing cover)")
 
             has_blog_posting = any("BlogPosting" in extract_jsonld_types(payload) for payload in page.jsonld_blocks)
             if not has_blog_posting:
@@ -317,6 +333,8 @@ def main() -> int:
 
             if not class_exists(raw_html, "post-meta"):
                 errors.append(f"{page.rel_path}: missing visible post metadata block (.post-meta)")
+            elif not class_inside_post_meta(raw_html, "u-url"):
+                errors.append(f"{page.rel_path}: permalink (.u-url) must be inside .post-meta")
 
             category_text = extract_first_class_text(raw_html, "p-category")
             if not category_text:
@@ -328,6 +346,20 @@ def main() -> int:
             elif not re.search(r"\b\d+\s*min\b", reading_time_text.lower()):
                 errors.append(f"{page.rel_path}: reading time must include minutes (ex: '6 min de leitura')")
 
+        if page.rel_path == "blog.html":
+            has_collection_jsonld = any(
+                bool({"CollectionPage", "Blog"} & extract_jsonld_types(payload)) for payload in page.jsonld_blocks
+            )
+            has_item_list_jsonld = any("ItemList" in extract_jsonld_types(payload) for payload in page.jsonld_blocks)
+            if not has_collection_jsonld:
+                errors.append("blog.html: missing JSON-LD for CollectionPage or Blog")
+            if not has_item_list_jsonld:
+                errors.append("blog.html: missing JSON-LD ItemList for post listing")
+
+            raw_html = page.path.read_text(encoding="utf-8")
+            if "<!-- AUTO:blog-jsonld:start -->" not in raw_html or "<!-- AUTO:blog-jsonld:end -->" not in raw_html:
+                errors.append("blog.html: missing AUTO markers for blog JSON-LD block")
+
         if page.rel_path.startswith("projects/"):
             if not page.title_tag:
                 errors.append(f"{page.rel_path}: missing title")
@@ -335,6 +367,8 @@ def main() -> int:
                 errors.append(f"{page.rel_path}: missing description")
             if not page.canonical:
                 errors.append(f"{page.rel_path}: missing canonical")
+            if not page.og_image:
+                errors.append(f"{page.rel_path}: missing og:image (required for project listing cover)")
             if page.h1_count < 1:
                 errors.append(f"{page.rel_path}: at least one <h1> is required")
             if any(not alt for alt in page.image_alts):
