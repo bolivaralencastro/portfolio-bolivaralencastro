@@ -302,6 +302,12 @@ a:hover {
   border-bottom-color: var(--accent);
 }
 
+.brand-link,
+.brand-link:hover,
+.brand-link:focus-visible {
+  border-bottom: none;
+}
+
 .lead {
   font-size: clamp(1.45rem, 2.2vw, 1.95rem);
   line-height: 1.6;
