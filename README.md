@@ -10,8 +10,10 @@ Arquivos e blocos gerados automaticamente:
 - `sitemap.xml`
 - `feed.xml`
 - `feed.txt` (mantido sincronizado com `feed.xml` para compatibilidade)
+- bloco `AUTO:blog-jsonld` em `blog.html` (CollectionPage + ItemList)
 - bloco `AUTO:blog-list` em `blog.html`
 - bloco `AUTO:projects-list` em `projects.html`
+- bloco `AUTO:featured-projects` em `index.html`
 - bloco `AUTO:latest-post` em `index.html`
 
 Scripts:
@@ -38,6 +40,7 @@ Metadados minimos obrigatorios:
 - `<title>...</title>`
 - `<meta name="description" content="...">`
 - `<link rel="canonical" href="https://bolivaralencastro.com.br/blog/slug.html">`
+- `<meta property="og:image" content="https://...">` (obrigatorio para capa na listagem do blog)
 - exatamente um `<h1>` (idealmente `class="p-name"`)
 - `<time class="dt-published" datetime="YYYY-MM-DD">`
 - JSON-LD com `"@type": "BlogPosting"`
@@ -57,6 +60,7 @@ Metadados minimos obrigatorios:
 - `<title>...</title>`
 - `<meta name="description" content="...">`
 - `<link rel="canonical" href="https://bolivaralencastro.com.br/projects/slug.html">`
+- `<meta property="og:image" content="https://...">` (obrigatorio para capa na listagem de projetos)
 - pelo menos um `<h1>`
 - todas as imagens com `alt` nao vazio
 - recomendado: JSON-LD com `CreativeWork` e Open Graph/Twitter Card

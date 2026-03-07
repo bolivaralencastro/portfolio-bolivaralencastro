@@ -7,12 +7,14 @@ import argparse
 import datetime as dt
 import html
 from html.parser import HTMLParser
+import json
 import pathlib
 import re
 import subprocess
 import sys
 from dataclasses import dataclass
 from typing import List
+from urllib.parse import urlparse
 
 BASE_URL_DEFAULT = "https://bolivaralencastro.com.br"
 ROOT_PAGES = ["index.html", "about.html", "blog.html", "projects.html", "now.html"]
@@ -32,6 +34,7 @@ class PageMeta:
     h1_texts: List[str] = None
     h1_p_name_text: str = ""
     description: str = ""
+    og_image: str = ""
     canonical: str = ""
     lang: str = ""
     summary: str = ""
@@ -88,6 +91,8 @@ class MetaParser(HTMLParser):
 
         if tag == "meta" and (attrs.get("name") or "").lower() == "description":
             self.page.description = (attrs.get("content") or "").strip()
+        if tag == "meta" and (attrs.get("property") or "").lower() == "og:image":
+            self.page.og_image = (attrs.get("content") or "").strip()
 
         if tag == "link" and (attrs.get("rel") or "").lower() == "canonical":
             self.page.canonical = (attrs.get("href") or "").strip()
@@ -267,14 +272,20 @@ def build_blog_list_html(posts: list[dict]) -> str:
         title = html.escape(post["title"])
         summary = html.escape(post["summary"])
         href = html.escape(post["href"])
+        cover = html.escape(post["cover_html"])
         date_iso = post["published"].date().isoformat()
         date_human = format_pt_date_short(post["published"])
         lines.extend(
             [
-                "      <article class=\"post-item h-entry col-8\">",
-                f"        <h3 class=\"p-name\"><a href=\"{href}\" class=\"u-url\">{title}</a></h3>",
-                f"        <time class=\"dt-published\" datetime=\"{date_iso}\">{date_human}</time>",
-                f"        <p class=\"p-summary\">{summary}</p>",
+                "      <article class=\"post-item post-row h-entry col-12\">",
+                f"        <time class=\"dt-published post-row-date\" datetime=\"{date_iso}\">{date_human}</time>",
+                "        <div class=\"post-row-body\">",
+                f"          <h3 class=\"p-name\"><a href=\"{href}\" class=\"u-url\">{title}</a></h3>",
+                f"          <p class=\"p-summary\">{summary}</p>",
+                "        </div>",
+                f"        <a href=\"{href}\" class=\"post-row-cover\" aria-label=\"Abrir post: {title}\">",
+                f"          <img src=\"{cover}\" alt=\"Capa do post: {title}\" loading=\"lazy\" decoding=\"async\">",
+                "        </a>",
                 "      </article>",
                 "",
             ]
@@ -288,9 +299,13 @@ def build_projects_list_html(projects: list[dict]) -> str:
         title = html.escape(project["title"])
         description = html.escape(project["description"])
         href = html.escape(project["href"])
+        cover = html.escape(project["cover_html"])
         lines.extend(
             [
                 "      <article class=\"project-item col-4\">",
+                f"        <a href=\"{href}\" class=\"project-cover\" aria-label=\"Abrir projeto: {title}\">",
+                f"          <img src=\"{cover}\" alt=\"Capa do projeto: {title}\" loading=\"lazy\" decoding=\"async\">",
+                "        </a>",
                 f"        <h3><a href=\"{href}\">{title}</a></h3>",
                 f"        <p>{description}</p>",
                 "      </article>",
@@ -304,17 +319,62 @@ def build_latest_post_html(latest_post: dict) -> str:
     title = html.escape(latest_post["title"])
     summary = html.escape(latest_post["summary"])
     href = html.escape(latest_post["href"])
+    cover = html.escape(latest_post["cover_html"])
     date_iso = latest_post["published"].date().isoformat()
     date_human = format_pt_date_short(latest_post["published"])
 
     return "\n".join(
         [
-            "      <article class=\"post-item h-entry col-8\">",
-            f"        <h3 class=\"p-name\"><a href=\"{href}\" class=\"u-url\">{title}</a></h3>",
-            f"        <time class=\"dt-published\" datetime=\"{date_iso}\">{date_human}</time>",
-            f"        <p class=\"p-summary\">{summary}</p>",
+            "      <article class=\"post-item post-row h-entry col-12\">",
+            f"        <time class=\"dt-published post-row-date\" datetime=\"{date_iso}\">{date_human}</time>",
+            "        <div class=\"post-row-body\">",
+            f"          <h3 class=\"p-name\"><a href=\"{href}\" class=\"u-url\">{title}</a></h3>",
+            f"          <p class=\"p-summary\">{summary}</p>",
+            "        </div>",
+            f"        <a href=\"{href}\" class=\"post-row-cover\" aria-label=\"Abrir post: {title}\">",
+            f"          <img src=\"{cover}\" alt=\"Capa do post: {title}\" loading=\"lazy\" decoding=\"async\">",
+            "        </a>",
             "      </article>",
         ]
+    )
+
+
+def build_featured_projects_html(projects: list[dict], limit: int = 3) -> str:
+    return build_projects_list_html(projects[:limit])
+
+
+def build_blog_collection_jsonld(posts: list[dict], base_url: str) -> str:
+    item_list = []
+    for idx, post in enumerate(posts, start=1):
+        item_list.append(
+            {
+                "@type": "ListItem",
+                "position": idx,
+                "url": post["canonical"],
+                "item": {
+                    "@type": "BlogPosting",
+                    "headline": post["title"],
+                    "datePublished": post["published"].date().isoformat(),
+                    "url": post["canonical"],
+                    "description": post["summary"],
+                },
+            }
+        )
+
+    payload = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Blog - Bolívar Alencastro",
+        "url": f"{base_url}/blog.html",
+        "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": item_list,
+        },
+    }
+    return (
+        "  <script type=\"application/ld+json\">\n"
+        + json.dumps(payload, ensure_ascii=False, indent=2)
+        + "\n  </script>"
     )
 
 
@@ -413,6 +473,18 @@ def normalize_href(rel_path: str) -> str:
     return "/" if rel_path == "index.html" else f"/{rel_path}"
 
 
+def normalize_cover_for_html(url: str, base_url: str) -> str:
+    parsed = urlparse(url)
+    if not parsed.scheme:
+        return url
+
+    base_host = (urlparse(base_url).hostname or "").lower()
+    image_host = (parsed.hostname or "").lower()
+    if image_host == base_host or image_host.endswith(f".{base_host}"):
+        return parsed.path or url
+    return url
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Generate sitemap/feed and editorial index blocks")
     parser.add_argument("--check", action="store_true", help="Validate generated outputs without writing files")
@@ -433,6 +505,7 @@ def main() -> int:
         meta = parse_page(post_path, repo_root)
         title = infer_post_title(meta)
         canonical = meta.canonical
+        og_image = meta.og_image
         published_raw = meta.published_datetime
         summary = meta.summary or meta.e_content_first_paragraph
         snippet = meta.e_content_first_paragraph
@@ -444,6 +517,8 @@ def main() -> int:
             missing.append("canonical")
         if not published_raw:
             missing.append("time.dt-published[datetime]")
+        if not og_image:
+            missing.append("meta property='og:image'")
         if not summary:
             missing.append("summary (.p-summary or first paragraph)")
         if not snippet:
@@ -462,6 +537,8 @@ def main() -> int:
                 "title": title,
                 "summary": summary,
                 "snippet": snippet,
+                "cover": og_image,
+                "cover_html": normalize_cover_for_html(og_image, base_url),
                 "published": published,
             }
         )
@@ -479,8 +556,9 @@ def main() -> int:
         title = infer_project_title(meta)
         description = meta.description
         canonical = meta.canonical
+        cover = meta.og_image
         href = normalize_href(meta.rel_path)
-        if not title or not description or not canonical:
+        if not title or not description or not canonical or not cover:
             missing = []
             if not title:
                 missing.append("title")
@@ -488,6 +566,8 @@ def main() -> int:
                 missing.append("meta description")
             if not canonical:
                 missing.append("canonical")
+            if not cover:
+                missing.append("meta property='og:image'")
             raise BuildError(f"{meta.rel_path}: missing required project metadata: {', '.join(missing)}")
 
         projects.append(
@@ -499,6 +579,8 @@ def main() -> int:
                 "title": title,
                 "description": description,
                 "canonical": canonical,
+                "cover": cover,
+                "cover_html": normalize_cover_for_html(cover, base_url),
             }
         )
 
@@ -547,18 +629,24 @@ def main() -> int:
     feed_content = render_atom_feed(base_url, posts)
 
     blog_list_inner = build_blog_list_html(posts)
+    blog_jsonld_inner = build_blog_collection_jsonld(posts, base_url)
     projects_list_inner = build_projects_list_html(projects)
+    featured_projects_inner = build_featured_projects_html(projects, limit=3)
     latest_post_inner = build_latest_post_html(posts[0])
 
     blog_html_path = repo_root / "blog.html"
     projects_html_path = repo_root / "projects.html"
     index_html_path = repo_root / "index.html"
 
-    blog_html = replace_auto_block(blog_html_path.read_text(encoding="utf-8"), "blog-list", blog_list_inner)
+    blog_html = blog_html_path.read_text(encoding="utf-8")
+    blog_html = replace_auto_block(blog_html, "blog-jsonld", blog_jsonld_inner)
+    blog_html = replace_auto_block(blog_html, "blog-list", blog_list_inner)
     projects_html = replace_auto_block(
         projects_html_path.read_text(encoding="utf-8"), "projects-list", projects_list_inner
     )
-    index_html = replace_auto_block(index_html_path.read_text(encoding="utf-8"), "latest-post", latest_post_inner)
+    index_html = index_html_path.read_text(encoding="utf-8")
+    index_html = replace_auto_block(index_html, "featured-projects", featured_projects_inner)
+    index_html = replace_auto_block(index_html, "latest-post", latest_post_inner)
 
     changed: list[pathlib.Path] = []
     write_or_check(repo_root / "sitemap.xml", sitemap_content, args.check, changed)
