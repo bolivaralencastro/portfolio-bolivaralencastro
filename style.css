@@ -455,13 +455,13 @@ footer nav {
 }
 
 footer nav ul {
-  display: flex;
-  justify-content: flex-end;
-  gap: var(--space-2);
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
   margin: 0;
   padding: 0;
   align-items: center;
+  justify-items: center;
 }
 
 footer nav a {
@@ -473,10 +473,7 @@ footer nav a {
 }
 
 .footer-links ul {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0;
-  justify-items: center;
+  width: 100%;
 }
 
 @media (max-width: 980px) {
