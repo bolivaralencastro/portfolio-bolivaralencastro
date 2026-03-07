@@ -176,10 +176,17 @@ nav ul {
   padding: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
   column-gap: var(--gutter);
   row-gap: 0;
   justify-items: center;
+}
+
+header nav ul {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+footer nav ul {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 nav a {
