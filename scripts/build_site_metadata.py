@@ -291,9 +291,8 @@ def build_projects_list_html(projects: list[dict]) -> str:
         lines.extend(
             [
                 "      <article class=\"project-item col-4\">",
-                f"        <h3>{title}</h3>",
+                f"        <h3><a href=\"{href}\">{title}</a></h3>",
                 f"        <p>{description}</p>",
-                f"        <a href=\"{href}\">Ler case completo</a>",
                 "      </article>",
                 "",
             ]
