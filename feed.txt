@@ -21,4 +21,15 @@
       <![CDATA[ <p>A web é nativamente responsiva, acessível e durável. Como Product Designers, nossa prioridade é criar utilidade, e não alimentar fogueiras de empilhamento tecnológico.</p> ]]>
     </content>
   </entry>
+
+  <entry>
+    <title>Como criar um portfólio de Product Designer que realmente se destaca</title>
+    <link href="https://bolivaralencastro.com.br/blog/como-criar-um-portfolio-de-product-designer-que-realmente-se-destaca.html"/>
+    <id>https://bolivaralencastro.com.br/blog/como-criar-um-portfolio-de-product-designer-que-realmente-se-destaca.html</id>
+    <updated>2025-08-19T12:00:00Z</updated>
+    <summary>Um guia sobre como estruturar e apresentar um portfólio de Product Designer que capture a atenção de recrutadores e líderes de produto.</summary>
+    <content type="html">
+      <![CDATA[ <p>Para Product Designers, o portfólio é mais do que uma vitrine de trabalhos: é uma narrativa sobre como você pensa, resolve problemas e cria valor por meio do design.</p> ]]>
+    </content>
+  </entry>
 </feed>
