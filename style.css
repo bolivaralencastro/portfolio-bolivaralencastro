@@ -605,6 +605,76 @@ a:hover {
   margin-top: var(--space-3);
 }
 
+.author-card {
+  margin-top: var(--space-6);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--card-rule);
+  display: grid;
+  grid-template-columns: minmax(0, 7rem) minmax(0, 1fr);
+  gap: var(--space-3);
+  align-items: start;
+}
+
+.author-card .author-card-photo {
+  width: 7rem;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 4px;
+  margin: 0;
+}
+
+.author-card .author-card-body {
+  display: grid;
+  gap: var(--space-1);
+}
+
+.author-card .author-card-title {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-caps);
+  color: var(--muted);
+}
+
+.author-card .author-card-name {
+  font-size: clamp(1.2rem, 1.8vw, 1.5rem);
+  line-height: 1.18;
+  letter-spacing: -0.014em;
+}
+
+.author-card .author-card-name a {
+  border-bottom: none;
+  color: var(--title);
+}
+
+.author-card .author-card-copy {
+  font-size: var(--text-md);
+  line-height: 1.62;
+  color: var(--muted);
+  max-width: 52ch;
+}
+
+.author-card .author-card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-1);
+  padding-left: 0;
+  list-style: none;
+}
+
+.author-card .author-card-links a {
+  border-bottom: none;
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-caps);
+  color: var(--text);
+}
+
+.author-card .author-card-links a:hover,
+.author-card .author-card-links a:focus-visible {
+  color: var(--primary);
+}
+
 ul,
 ol {
   padding-left: var(--space-3);
@@ -800,6 +870,14 @@ footer nav a {
 
   p,
   li { font-size: 1rem; }
+
+  .author-card {
+    grid-template-columns: 1fr;
+  }
+
+  .author-card .author-card-photo {
+    width: min(7rem, 100%);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
