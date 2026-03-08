@@ -4,7 +4,7 @@
   <subtitle>Product Design e Arquitetura Web Nativa</subtitle>
   <link href="https://bolivaralencastro.com.br/feed.xml" rel="self"/>
   <link href="https://bolivaralencastro.com.br/blog.html" rel="alternate"/>
-  <updated>2025-10-23T00:00:00Z</updated>
+  <updated>2026-03-08T00:00:00Z</updated>
   <id>https://bolivaralencastro.com.br/feed.xml</id>
   <author>
     <name>Bolívar Alencastro</name>
@@ -13,6 +13,16 @@
   <contributor>
     <name>Bolivar Alencastro</name>
   </contributor>
+
+  <entry>
+    <title>Por que adotei a lógica da IndieWeb no meu portfólio</title>
+    <link href="https://bolivaralencastro.com.br/blog/por-que-adotei-a-logica-da-indieweb-no-meu-portfolio.html" rel="alternate"/>
+    <id>https://bolivaralencastro.com.br/blog/por-que-adotei-a-logica-da-indieweb-no-meu-portfolio.html</id>
+    <published>2026-03-08T00:00:00Z</published>
+    <updated>2026-03-08T00:00:00Z</updated>
+    <summary>Como a IndieWeb me ajudou a tratar o portfólio como produto próprio e por que LLMs, CLI, MCP e APIs tornaram esse caminho mais simples e democrático.</summary>
+    <content type="html">&lt;p&gt;Durante muito tempo, a ideia de ter um portfólio realmente meu parecia ótima na teoria e cara na prática. Em algum momento, percebi que queria menos site para ser administrado e mais casa digital para ser cultivada.&lt;/p&gt;</content>
+  </entry>
 
   <entry>
     <title>Design, Dados e Doação de Sangue: Como um Totem me Fez Repensar a Experiência do Usuário</title>
