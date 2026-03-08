@@ -20,7 +20,6 @@ Scripts:
 - `python scripts/build_site_metadata.py`: gera sitemap, feed e blocos auto-gerados.
 - `python scripts/build_site_metadata.py --check`: falha se os arquivos gerados estiverem desatualizados.
 - `python scripts/validate_site.py`: valida SEO/editorial/integridade.
-- `python scripts/markdown_to_blogpost.py caminho\\arquivo.md`: converte Markdown em `blog/<slug>.html`.
 
 ## Workflows GitHub Actions
 
@@ -53,46 +52,6 @@ Heuristicas usadas no feed:
 - data: `time.dt-published[datetime]`
 - resumo: `.p-summary`, ou primeiro paragrafo de `.e-content`
 - trecho curto: primeiro paragrafo de `.e-content`
-
-### Gerar post a partir de Markdown
-
-O script `scripts/markdown_to_blogpost.py` aceita um arquivo `.md` com front matter simples e gera o HTML completo do post no padrao do site.
-
-Exemplo:
-
-```md
----
-title: Meu novo post
-date: 2026-03-08
-updated: 2026-03-08
-category: Product Design
-cover_image: /assets/images/blog/meu-novo-post/cover.webp
-cover_alt: Capa do post Meu novo post
-description: Resumo curto usado em SEO, feed e listagem.
-slug: meu-novo-post
----
-
-# Meu novo post
-
-Texto de abertura.
-
-## Subtitulo
-
-- item 1
-- item 2
-```
-
-Comando:
-
-```bash
-python scripts/markdown_to_blogpost.py .\rascunhos\meu-novo-post.md --sync-metadata
-```
-
-Notas:
-- `title` pode ser omitido se o Markdown comecar com `# Titulo`.
-- `description` e `reading_time` sao gerados automaticamente quando ausentes.
-- `cover_image` e obrigatorio para manter a listagem do blog e os metadados sociais corretos.
-- `--sync-metadata` executa `scripts/build_site_metadata.py` ao final para atualizar `blog.html`, feed e sitemap.
 
 ## Como criar um novo projeto (`/projects/*.html`)
 
