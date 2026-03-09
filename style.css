@@ -649,12 +649,23 @@ a {
 
 .author-card {
   margin-top: var(--space-6);
-  padding-top: var(--space-3);
-  border-top: 1px solid var(--card-rule);
-  display: grid;
-  grid-template-columns: minmax(0, 7rem) minmax(0, 1fr);
-  gap: var(--space-3);
-  align-items: start;
+
+  & .author-card-title {
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-caps);
+    color: var(--muted);
+    margin-bottom: var(--space-2);
+  }
+
+  & .author-card-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 7rem) minmax(0, 1fr);
+    gap: var(--space-3);
+    align-items: start;
+    padding-top: var(--space-3);
+    border-top: 1px solid var(--card-rule);
+  }
 
   & .author-card-photo {
     width: 7rem;
@@ -667,13 +678,6 @@ a {
   & .author-card-body {
     display: grid;
     gap: var(--space-1);
-  }
-
-  & .author-card-title {
-    font-size: var(--text-xs);
-    text-transform: uppercase;
-    letter-spacing: var(--tracking-caps);
-    color: var(--muted);
   }
 
   & .author-card-name {
@@ -908,12 +912,12 @@ footer {
 
   p, li { font-size: 1rem; }
 
-  .author-card {
+  .author-card .author-card-inner {
     grid-template-columns: 1fr;
+  }
 
-    & .author-card-photo {
-      width: min(7rem, 100%);
-    }
+  .author-card .author-card-photo {
+    width: min(7rem, 100%);
   }
 }
 
