@@ -15,6 +15,36 @@ from typing import Iterable, List
 
 BASE_URL_DEFAULT = "https://bolivaralencastro.com.br"
 ROOT_PAGES = ["index.html", "about.html", "blog.html", "projects.html", "now.html"]
+CLARITY_SCRIPT_SRC = "/assets/js/clarity.js"
+CLARITY_CSP_SOURCES = ["https://*.clarity.ms", "https://c.bing.com"]
+VOID_TAGS = {
+    "area",
+    "base",
+    "br",
+    "col",
+    "embed",
+    "hr",
+    "img",
+    "input",
+    "link",
+    "meta",
+    "param",
+    "source",
+    "track",
+    "wbr",
+}
+
+
+@dataclass
+class ImageMeta:
+    src: str = ""
+    alt: str = ""
+    width: str = ""
+    height: str = ""
+    loading: str = ""
+    decoding: str = ""
+    fetchpriority: str = ""
+    in_e_content: bool = False
 
 
 @dataclass
@@ -39,6 +69,10 @@ class PageMeta:
     twitter_title: str = ""
     twitter_description: str = ""
     twitter_image: str = ""
+    script_srcs: List[str] = None
+    deferred_script_srcs: List[str] = None
+    csp_content: str = ""
+    images: List[ImageMeta] = None
 
     def __post_init__(self) -> None:
         if self.h1_texts is None:
@@ -49,6 +83,12 @@ class PageMeta:
             self.links = []
         if self.image_alts is None:
             self.image_alts = []
+        if self.script_srcs is None:
+            self.script_srcs = []
+        if self.deferred_script_srcs is None:
+            self.deferred_script_srcs = []
+        if self.images is None:
+            self.images = []
 
 
 class PageParser(HTMLParser):
@@ -60,6 +100,7 @@ class PageParser(HTMLParser):
         self._h1_chunks: List[str] = []
         self._in_jsonld_script = False
         self._jsonld_chunks: List[str] = []
+        self._tag_stack: List[bool] = []
 
     @staticmethod
     def _classes(attrs: dict) -> set[str]:
@@ -69,6 +110,9 @@ class PageParser(HTMLParser):
     def handle_starttag(self, tag: str, attrs_list) -> None:
         attrs = dict(attrs_list)
         classes = self._classes(attrs)
+        in_e_content = "e-content" in classes or any(self._tag_stack)
+        if tag not in VOID_TAGS:
+            self._tag_stack.append("e-content" in classes)
 
         if tag == "html":
             self.meta.lang = (attrs.get("lang") or "").strip()
@@ -79,6 +123,7 @@ class PageParser(HTMLParser):
         if tag == "meta":
             name = (attrs.get("name") or "").lower().strip()
             prop = (attrs.get("property") or "").lower().strip()
+            http_equiv = (attrs.get("http-equiv") or "").lower().strip()
             if name == "description":
                 self.meta.description = (attrs.get("content") or "").strip()
             if prop == "og:title":
@@ -97,6 +142,8 @@ class PageParser(HTMLParser):
                 self.meta.twitter_description = (attrs.get("content") or "").strip()
             if name == "twitter:image":
                 self.meta.twitter_image = (attrs.get("content") or "").strip()
+            if http_equiv == "content-security-policy":
+                self.meta.csp_content = (attrs.get("content") or "").strip()
 
         if tag == "link" and (attrs.get("rel") or "").lower() == "canonical":
             self.meta.canonical = (attrs.get("href") or "").strip()
@@ -112,6 +159,12 @@ class PageParser(HTMLParser):
         if tag == "script" and (attrs.get("type") or "").lower() == "application/ld+json":
             self._in_jsonld_script = True
             self._jsonld_chunks = []
+        elif tag == "script":
+            src = (attrs.get("src") or "").strip()
+            if src:
+                self.meta.script_srcs.append(src)
+                if "defer" in attrs:
+                    self.meta.deferred_script_srcs.append(src)
 
         if tag == "a":
             href = (attrs.get("href") or "").strip()
@@ -120,8 +173,26 @@ class PageParser(HTMLParser):
 
         if tag == "img":
             self.meta.image_alts.append((attrs.get("alt") or "").strip())
+            self.meta.images.append(
+                ImageMeta(
+                    src=(attrs.get("src") or "").strip(),
+                    alt=(attrs.get("alt") or "").strip(),
+                    width=(attrs.get("width") or "").strip(),
+                    height=(attrs.get("height") or "").strip(),
+                    loading=(attrs.get("loading") or "").strip().lower(),
+                    decoding=(attrs.get("decoding") or "").strip().lower(),
+                    fetchpriority=(attrs.get("fetchpriority") or "").strip().lower(),
+                    in_e_content=in_e_content,
+                )
+            )
+
+    def handle_startendtag(self, tag: str, attrs_list) -> None:
+        self.handle_starttag(tag, attrs_list)
 
     def handle_endtag(self, tag: str) -> None:
+        if self._tag_stack:
+            self._tag_stack.pop()
+
         if tag == "title":
             self._in_title = False
 
@@ -313,6 +384,14 @@ def main() -> int:
             errors.append(f"{page.rel_path}: expected exactly one <h1>, found {page.h1_count}")
         if page.lang != "pt-BR":
             errors.append(f"{page.rel_path}: <html lang> must be 'pt-BR' (found '{page.lang or 'missing'}')")
+        if CLARITY_SCRIPT_SRC not in page.script_srcs:
+            errors.append(f"{page.rel_path}: missing Clarity loader script '{CLARITY_SCRIPT_SRC}'")
+        if CLARITY_SCRIPT_SRC not in page.deferred_script_srcs:
+            errors.append(f"{page.rel_path}: Clarity loader script must use 'defer'")
+        if page.csp_content:
+            for source in CLARITY_CSP_SOURCES:
+                if source not in page.csp_content:
+                    errors.append(f"{page.rel_path}: CSP must allow Clarity source '{source}'")
 
         if page.rel_path.startswith("blog/"):
             raw_html = page.path.read_text(encoding="utf-8")
@@ -361,6 +440,7 @@ def main() -> int:
                 errors.append("blog.html: missing AUTO markers for blog JSON-LD block")
 
         if page.rel_path.startswith("projects/"):
+            project_content_images = [image for image in page.images if image.in_e_content]
             if not page.title_tag:
                 errors.append(f"{page.rel_path}: missing title")
             if not page.description:
@@ -373,6 +453,30 @@ def main() -> int:
                 errors.append(f"{page.rel_path}: at least one <h1> is required")
             if any(not alt for alt in page.image_alts):
                 errors.append(f"{page.rel_path}: all <img> must include non-empty alt text")
+            if not project_content_images:
+                errors.append(f"{page.rel_path}: project content should include at least one image inside .e-content")
+            for index, image in enumerate(project_content_images, start=1):
+                if not image.width or not image.height or not image.width.isdigit() or not image.height.isdigit():
+                    errors.append(
+                        f"{page.rel_path}: project content image #{index} must declare numeric width and height"
+                    )
+                if image.decoding != "async":
+                    errors.append(
+                        f"{page.rel_path}: project content image #{index} must use decoding='async'"
+                    )
+                if index == 1:
+                    if image.loading == "lazy":
+                        errors.append(
+                            f"{page.rel_path}: first project content image must not use loading='lazy'"
+                        )
+                    if image.fetchpriority != "high":
+                        errors.append(
+                            f"{page.rel_path}: first project content image must use fetchpriority='high'"
+                        )
+                elif image.loading != "lazy":
+                    errors.append(
+                        f"{page.rel_path}: project content image #{index} must use loading='lazy'"
+                    )
 
         if page.rel_path in ROOT_PAGES:
             if not page.og_title:
