@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import hashlib
 import html
 from html.parser import HTMLParser
 import json
@@ -20,6 +21,13 @@ BASE_URL_DEFAULT = "https://bolivaralencastro.com.br"
 ROOT_PAGES = ["index.html", "about.html", "blog.html", "projects.html", "now.html"]
 FEED_AUTHOR_NAME = "Bolívar Alencastro"
 FEED_AUTHOR_FALLBACK = "Bolivar Alencastro"
+LISTING_CARD_FILENAMES = ("card.webp", "cover.webp")
+LISTING_CARD_WIDTH = 960
+LISTING_CARD_HEIGHT = 540
+VERSIONED_ASSETS = {
+    "/style.css": pathlib.Path("style.css"),
+    "/assets/js/clarity.js": pathlib.Path("assets/js/clarity.js"),
+}
 
 
 class BuildError(RuntimeError):
@@ -272,9 +280,12 @@ def build_blog_list_html(posts: list[dict]) -> str:
         title = html.escape(post["title"])
         summary = html.escape(post["summary"])
         href = html.escape(post["href"])
-        cover = html.escape(post["cover_html"])
+        cover = html.escape(post["listing_cover_html"])
         date_iso = post["published"].date().isoformat()
         date_human = format_pt_date_short(post["published"])
+        size_attrs = ""
+        if post["listing_cover_width"] and post["listing_cover_height"]:
+            size_attrs = f' width="{post["listing_cover_width"]}" height="{post["listing_cover_height"]}"'
         lines.extend(
             [
                 "      <article class=\"post-item post-row h-entry col-12\">",
@@ -284,7 +295,7 @@ def build_blog_list_html(posts: list[dict]) -> str:
                 f"          <p class=\"p-summary\">{summary}</p>",
                 "        </div>",
                 f"        <a href=\"{href}\" class=\"post-row-cover\" aria-label=\"Abrir post: {title}\">",
-                f"          <img src=\"{cover}\" alt=\"Capa do post: {title}\" loading=\"lazy\" decoding=\"async\">",
+                f"          <img src=\"{cover}\" alt=\"Capa do post: {title}\" loading=\"lazy\" decoding=\"async\"{size_attrs}>",
                 "        </a>",
                 "      </article>",
                 "",
@@ -299,12 +310,15 @@ def build_projects_list_html(projects: list[dict]) -> str:
         title = html.escape(project["title"])
         description = html.escape(project["description"])
         href = html.escape(project["href"])
-        cover = html.escape(project["cover_html"])
+        cover = html.escape(project["listing_cover_html"])
+        size_attrs = ""
+        if project["listing_cover_width"] and project["listing_cover_height"]:
+            size_attrs = f' width="{project["listing_cover_width"]}" height="{project["listing_cover_height"]}"'
         lines.extend(
             [
                 "      <article class=\"project-item col-4\">",
                 f"        <a href=\"{href}\" class=\"project-cover\" aria-label=\"Abrir projeto: {title}\">",
-                f"          <img src=\"{cover}\" alt=\"Capa do projeto: {title}\" loading=\"lazy\" decoding=\"async\">",
+                f"          <img src=\"{cover}\" alt=\"Capa do projeto: {title}\" loading=\"lazy\" decoding=\"async\"{size_attrs}>",
                 "        </a>",
                 f"        <h3><a href=\"{href}\">{title}</a></h3>",
                 f"        <p>{description}</p>",
@@ -319,9 +333,15 @@ def build_latest_post_html(latest_post: dict) -> str:
     title = html.escape(latest_post["title"])
     summary = html.escape(latest_post["summary"])
     href = html.escape(latest_post["href"])
-    cover = html.escape(latest_post["cover_html"])
+    cover = html.escape(latest_post["listing_cover_html"])
     date_iso = latest_post["published"].date().isoformat()
     date_human = format_pt_date_short(latest_post["published"])
+    size_attrs = ""
+    if latest_post["listing_cover_width"] and latest_post["listing_cover_height"]:
+        size_attrs = (
+            f' width="{latest_post["listing_cover_width"]}"'
+            f' height="{latest_post["listing_cover_height"]}"'
+        )
 
     return "\n".join(
         [
@@ -332,7 +352,7 @@ def build_latest_post_html(latest_post: dict) -> str:
             f"          <p class=\"p-summary\">{summary}</p>",
             "        </div>",
             f"        <a href=\"{href}\" class=\"post-row-cover\" aria-label=\"Abrir post: {title}\">",
-            f"          <img src=\"{cover}\" alt=\"Capa do post: {title}\" loading=\"lazy\" decoding=\"async\">",
+            f"          <img src=\"{cover}\" alt=\"Capa do post: {title}\" loading=\"lazy\" decoding=\"async\"{size_attrs}>",
             "        </a>",
             "      </article>",
         ]
@@ -485,6 +505,55 @@ def normalize_cover_for_html(url: str, base_url: str) -> str:
     return url
 
 
+def resolve_listing_cover(url: str, base_url: str, repo_root: pathlib.Path) -> dict[str, object]:
+    normalized = normalize_cover_for_html(url, base_url)
+    parsed = urlparse(normalized)
+    asset_path = parsed.path or normalized
+
+    if not asset_path.startswith("/"):
+        return {"path": normalized, "width": None, "height": None}
+
+    source_asset = repo_root / asset_path.lstrip("/")
+    for filename in LISTING_CARD_FILENAMES:
+        candidate = source_asset.with_name(filename)
+        if candidate.exists():
+            result = {"path": f"/{candidate.relative_to(repo_root).as_posix()}", "width": None, "height": None}
+            if filename == "card.webp":
+                result["width"] = LISTING_CARD_WIDTH
+                result["height"] = LISTING_CARD_HEIGHT
+            return result
+
+    return {"path": asset_path, "width": None, "height": None}
+
+
+def build_asset_versions(repo_root: pathlib.Path) -> dict[str, str]:
+    versions: dict[str, str] = {}
+    for public_path, relative_path in VERSIONED_ASSETS.items():
+        asset_path = repo_root / relative_path
+        if not asset_path.exists():
+            raise BuildError(f"Missing versioned asset: {relative_path.as_posix()}")
+        digest = hashlib.sha256(asset_path.read_bytes()).hexdigest()[:10]
+        versions[public_path] = digest
+    return versions
+
+
+def versioned_asset_url(public_path: str, version: str) -> str:
+    return f"{public_path}?v={version}"
+
+
+def replace_asset_reference(html_content: str, attr_name: str, public_path: str, version: str) -> str:
+    versioned_url = versioned_asset_url(public_path, version)
+    pattern = re.compile(rf'({attr_name}=["\']){re.escape(public_path)}(?:\?v=[0-9a-f]+)?(["\'])')
+    return pattern.sub(rf"\1{versioned_url}\2", html_content)
+
+
+def apply_versioned_asset_refs(html_content: str, versions: dict[str, str]) -> str:
+    updated = html_content
+    updated = replace_asset_reference(updated, "href", "/style.css", versions["/style.css"])
+    updated = replace_asset_reference(updated, "src", "/assets/js/clarity.js", versions["/assets/js/clarity.js"])
+    return updated
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Generate sitemap/feed and editorial index blocks")
     parser.add_argument("--check", action="store_true", help="Validate generated outputs without writing files")
@@ -496,6 +565,7 @@ def main() -> int:
 
     blog_dir = repo_root / "blog"
     projects_dir = repo_root / "projects"
+    asset_versions = build_asset_versions(repo_root)
 
     post_files = sorted(blog_dir.glob("*.html"))
     project_files = sorted(projects_dir.glob("*.html"))
@@ -527,6 +597,7 @@ def main() -> int:
             raise BuildError(f"{meta.rel_path}: missing required feed metadata: {', '.join(missing)}")
 
         published = parse_iso_datetime(published_raw, meta.rel_path)
+        listing_cover = resolve_listing_cover(og_image, base_url, repo_root)
         posts.append(
             {
                 "path": post_path,
@@ -539,6 +610,9 @@ def main() -> int:
                 "snippet": snippet,
                 "cover": og_image,
                 "cover_html": normalize_cover_for_html(og_image, base_url),
+                "listing_cover_html": listing_cover["path"],
+                "listing_cover_width": listing_cover["width"],
+                "listing_cover_height": listing_cover["height"],
                 "published": published,
             }
         )
@@ -570,6 +644,7 @@ def main() -> int:
                 missing.append("meta property='og:image'")
             raise BuildError(f"{meta.rel_path}: missing required project metadata: {', '.join(missing)}")
 
+        listing_cover = resolve_listing_cover(cover, base_url, repo_root)
         projects.append(
             {
                 "path": project_path,
@@ -581,6 +656,9 @@ def main() -> int:
                 "canonical": canonical,
                 "cover": cover,
                 "cover_html": normalize_cover_for_html(cover, base_url),
+                "listing_cover_html": listing_cover["path"],
+                "listing_cover_width": listing_cover["width"],
+                "listing_cover_height": listing_cover["height"],
             }
         )
 
@@ -652,9 +730,22 @@ def main() -> int:
     write_or_check(repo_root / "sitemap.xml", sitemap_content, args.check, changed)
     write_or_check(repo_root / "feed.xml", feed_content, args.check, changed)
     write_or_check(repo_root / "feed.txt", feed_content, args.check, changed)
-    write_or_check(blog_html_path, blog_html, args.check, changed)
-    write_or_check(projects_html_path, projects_html, args.check, changed)
-    write_or_check(index_html_path, index_html, args.check, changed)
+
+    managed_pages = {
+        blog_html_path: blog_html,
+        projects_html_path: projects_html,
+        index_html_path: index_html,
+    }
+    public_pages = [repo_root / name for name in ROOT_PAGES]
+    public_pages.extend(post_files)
+    public_pages.extend(project_files)
+
+    for page_path in public_pages:
+        source_html = managed_pages.get(page_path)
+        if source_html is None:
+            source_html = page_path.read_text(encoding="utf-8")
+        versioned_html = apply_versioned_asset_refs(source_html, asset_versions)
+        write_or_check(page_path, versioned_html, args.check, changed)
 
     if changed:
         if args.check:

@@ -11,6 +11,8 @@ on:
       - '*.html'
       - 'blog/*.html'
       - 'projects/*.html'
+      - 'style.css'
+      - 'assets/js/*.js'
       - 'scripts/*.py'
       - 'robots.txt'
 
@@ -40,15 +42,26 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          FILES="sitemap.xml feed.xml feed.txt blog.html projects.html index.html"
+          FILES=(
+            sitemap.xml
+            feed.xml
+            feed.txt
+            index.html
+            about.html
+            blog.html
+            projects.html
+            now.html
+            blog/*.html
+            projects/*.html
+          )
 
-          if git diff --quiet -- $FILES; then
+          if git diff --quiet -- "${FILES[@]}"; then
             echo "No generated metadata changes to commit."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add $FILES
+          git add "${FILES[@]}"
           git commit -m "chore(site): refresh feed sitemap and content indexes"
           git push

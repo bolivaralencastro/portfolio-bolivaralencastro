@@ -4,9 +4,9 @@ Portfolio HTML-first publicado no GitHub Pages em `https://bolivaralencastro.com
 
 ## Automacao editorial e SEO
 
-Este repositorio usa scripts Python (stdlib) para manter metadados e indices editoriais sem CMS.
+Este repositorio usa scripts Python (stdlib) para manter metadados, indices editoriais e URLs versionadas de assets sem CMS.
 
-Arquivos e blocos gerados automaticamente:
+Arquivos, blocos e referencias gerados automaticamente:
 - `sitemap.xml`
 - `feed.xml`
 - `feed.txt` (mantido sincronizado com `feed.xml` para compatibilidade)
@@ -15,19 +15,29 @@ Arquivos e blocos gerados automaticamente:
 - bloco `AUTO:projects-list` em `projects.html`
 - bloco `AUTO:featured-projects` em `index.html`
 - bloco `AUTO:latest-post` em `index.html`
+- URLs versionadas para `/style.css` e `/assets/js/clarity.js` em todas as paginas publicas
 
 Scripts:
-- `python scripts/build_site_metadata.py`: gera sitemap, feed e blocos auto-gerados.
-- `python scripts/build_site_metadata.py --check`: falha se os arquivos gerados estiverem desatualizados.
+- `python scripts/build_site_metadata.py`: gera sitemap, feed, blocos auto-gerados e atualiza o versionamento de assets publicos.
+- `python scripts/build_site_metadata.py --check`: falha se os arquivos gerados ou as URLs versionadas de assets estiverem desatualizados.
 - `python scripts/validate_site.py`: valida SEO/editorial/integridade.
 
 ## Analytics
 
 - O portfolio carrega o Microsoft Clarity por meio de [`assets/js/clarity.js`](./assets/js/clarity.js).
 - O ID do projeto ativo e `t8asclyhhx`.
-- Toda pagina publica deve incluir `<script src="/assets/js/clarity.js" defer></script>` no `<head>`.
+- Toda pagina publica deve incluir o loader do Clarity e a folha principal com URL versionada, por exemplo:
+  - `<link rel="stylesheet" href="/style.css?v=HASH">`
+  - `<script src="/assets/js/clarity.js?v=HASH" defer></script>`
 - As paginas com CSP liberam `www.clarity.ms`, `*.clarity.ms` e `c.bing.com`.
 - Para integrar um banner proprio no futuro, use `window.portfolioClarityConsent("granted" | "denied", "granted" | "denied")`.
+
+## Cache de assets
+
+- O HTML continua sem cache agressivo para evitar pagina velha apos deploy.
+- CSS/JS estaticos devem ser servidos com URL versionada para permitir cache forte no Cloudflare sem risco pratico de stale asset.
+- Sempre que `style.css` ou `assets/js/clarity.js` mudarem, rode `python scripts/build_site_metadata.py` antes de publicar se estiver trabalhando fora do CI.
+- Para cards de listagem, prefira `card.webp` no mesmo diretorio da imagem social. O gerador usa `card.webp`, cai para `cover.webp` e so usa `og.*` como ultimo fallback.
 
 ## Workflows GitHub Actions
 
@@ -49,6 +59,7 @@ Metadados minimos obrigatorios:
 - `<meta name="description" content="...">`
 - `<link rel="canonical" href="https://bolivaralencastro.com.br/blog/slug.html">`
 - `<meta property="og:image" content="https://...">` (obrigatorio para capa na listagem do blog)
+- recomendado para listagens: `assets/images/blog/<slug>/card.webp` em 960x540
 - exatamente um `<h1>` (idealmente `class="p-name"`)
 - `<time class="dt-published" datetime="YYYY-MM-DD">`
 - JSON-LD com `"@type": "BlogPosting"`
@@ -69,6 +80,7 @@ Metadados minimos obrigatorios:
 - `<meta name="description" content="...">`
 - `<link rel="canonical" href="https://bolivaralencastro.com.br/projects/slug.html">`
 - `<meta property="og:image" content="https://...">` (obrigatorio para capa na listagem de projetos)
+- recomendado para listagens: `assets/images/projects/<slug>/card.webp` em 960x540
 - pelo menos um `<h1>`
 - todas as imagens com `alt` nao vazio
 - imagens dentro de `.e-content` com `width` e `height` numericos para preservar proporcao em web e mobile
