@@ -12,10 +12,12 @@ import re
 import sys
 from dataclasses import dataclass
 from typing import Iterable, List
+from urllib.parse import parse_qs, urlsplit
 
 BASE_URL_DEFAULT = "https://bolivaralencastro.com.br"
 ROOT_PAGES = ["index.html", "about.html", "blog.html", "projects.html", "now.html"]
 CLARITY_SCRIPT_SRC = "/assets/js/clarity.js"
+MAIN_STYLESHEET_HREF = "/style.css"
 CLARITY_CSP_SOURCES = ["https://*.clarity.ms", "https://c.bing.com"]
 VOID_TAGS = {
     "area",
@@ -71,6 +73,7 @@ class PageMeta:
     twitter_image: str = ""
     script_srcs: List[str] = None
     deferred_script_srcs: List[str] = None
+    stylesheet_hrefs: List[str] = None
     csp_content: str = ""
     images: List[ImageMeta] = None
 
@@ -87,6 +90,8 @@ class PageMeta:
             self.script_srcs = []
         if self.deferred_script_srcs is None:
             self.deferred_script_srcs = []
+        if self.stylesheet_hrefs is None:
+            self.stylesheet_hrefs = []
         if self.images is None:
             self.images = []
 
@@ -145,8 +150,13 @@ class PageParser(HTMLParser):
             if http_equiv == "content-security-policy":
                 self.meta.csp_content = (attrs.get("content") or "").strip()
 
-        if tag == "link" and (attrs.get("rel") or "").lower() == "canonical":
-            self.meta.canonical = (attrs.get("href") or "").strip()
+        if tag == "link":
+            rel_values = {item.strip() for item in (attrs.get("rel") or "").lower().split() if item.strip()}
+            href = (attrs.get("href") or "").strip()
+            if "canonical" in rel_values:
+                self.meta.canonical = href
+            if "stylesheet" in rel_values and href:
+                self.meta.stylesheet_hrefs.append(href)
 
         if tag == "h1":
             self.meta.h1_count += 1
@@ -295,6 +305,14 @@ def resolve_internal_link(repo_root: pathlib.Path, href: str) -> pathlib.Path:
     return repo_root / cleaned.lstrip("/")
 
 
+def asset_path(value: str) -> str:
+    return urlsplit(value).path
+
+
+def has_version_query(value: str) -> bool:
+    return bool(parse_qs(urlsplit(value).query).get("v", [""])[0])
+
+
 def validate_robots(repo_root: pathlib.Path, base_url: str, errors: list[str]) -> None:
     robots_path = repo_root / "robots.txt"
     if not robots_path.exists():
@@ -384,9 +402,21 @@ def main() -> int:
             errors.append(f"{page.rel_path}: expected exactly one <h1>, found {page.h1_count}")
         if page.lang != "pt-BR":
             errors.append(f"{page.rel_path}: <html lang> must be 'pt-BR' (found '{page.lang or 'missing'}')")
-        if CLARITY_SCRIPT_SRC not in page.script_srcs:
+        matching_stylesheets = [href for href in page.stylesheet_hrefs if asset_path(href) == MAIN_STYLESHEET_HREF]
+        if not matching_stylesheets:
+            errors.append(f"{page.rel_path}: missing main stylesheet '{MAIN_STYLESHEET_HREF}'")
+        elif not any(has_version_query(href) for href in matching_stylesheets):
+            errors.append(f"{page.rel_path}: main stylesheet must include a version query parameter")
+
+        matching_clarity_scripts = [src for src in page.script_srcs if asset_path(src) == CLARITY_SCRIPT_SRC]
+        matching_deferred_clarity_scripts = [
+            src for src in page.deferred_script_srcs if asset_path(src) == CLARITY_SCRIPT_SRC
+        ]
+        if not matching_clarity_scripts:
             errors.append(f"{page.rel_path}: missing Clarity loader script '{CLARITY_SCRIPT_SRC}'")
-        if CLARITY_SCRIPT_SRC not in page.deferred_script_srcs:
+        elif not any(has_version_query(src) for src in matching_clarity_scripts):
+            errors.append(f"{page.rel_path}: Clarity loader script must include a version query parameter")
+        if not matching_deferred_clarity_scripts:
             errors.append(f"{page.rel_path}: Clarity loader script must use 'defer'")
         if page.csp_content:
             for source in CLARITY_CSP_SOURCES:
