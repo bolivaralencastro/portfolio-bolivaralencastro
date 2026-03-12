@@ -21,6 +21,14 @@ Scripts:
 - `python scripts/build_site_metadata.py --check`: falha se os arquivos gerados estiverem desatualizados.
 - `python scripts/validate_site.py`: valida SEO/editorial/integridade.
 
+## Analytics
+
+- O portfolio carrega o Microsoft Clarity por meio de [`assets/js/clarity.js`](./assets/js/clarity.js).
+- O ID do projeto ativo e `t8asclyhhx`.
+- Toda pagina publica deve incluir `<script src="/assets/js/clarity.js" defer></script>` no `<head>`.
+- As paginas com CSP liberam `www.clarity.ms`, `*.clarity.ms` e `c.bing.com`.
+- Para integrar um banner proprio no futuro, use `window.portfolioClarityConsent("granted" | "denied", "granted" | "denied")`.
+
 ## Workflows GitHub Actions
 
 - `.github/workflows/validate-content.yml`
@@ -63,6 +71,10 @@ Metadados minimos obrigatorios:
 - `<meta property="og:image" content="https://...">` (obrigatorio para capa na listagem de projetos)
 - pelo menos um `<h1>`
 - todas as imagens com `alt` nao vazio
+- imagens dentro de `.e-content` com `width` e `height` numericos para preservar proporcao em web e mobile
+- primeira imagem dentro de `.e-content` sem `loading="lazy"` e com `fetchpriority="high"`
+- imagens seguintes dentro de `.e-content` com `loading="lazy"`
+- todas as imagens dentro de `.e-content` com `decoding="async"`
 - recomendado: JSON-LD com `CreativeWork` e Open Graph/Twitter Card
 
 ## Teste local rapido
