@@ -894,6 +894,8 @@ footer {
     &::before { display: none; }
   }
 
+  .grain { display: none; }
+
   .grid {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
