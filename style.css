@@ -545,10 +545,10 @@ a {
 
   & .post-row-date {
     grid-column: 1 / span 1;
+    grid-row: 1;
     align-self: start;
     display: flex;
-    align-items: center;
-    min-height: calc(var(--card-title-size) * var(--card-title-lh));
+    align-items: flex-start;
     justify-self: center;
     text-align: center;
     font-size: 0.72rem;
@@ -558,12 +558,17 @@ a {
 
   & .post-row-body {
     grid-column: 2 / span 7;
+    grid-row: 1;
     display: grid;
     gap: var(--space-1);
+    min-width: 0;
+    align-self: start;
+    align-content: start;
   }
 
   & .post-row-cover {
     grid-column: 9 / span 4;
+    grid-row: 1;
     display: block;
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -589,6 +594,16 @@ a {
 }
 
 .post-item {
+  & h3,
+  & h3 a,
+  & .p-summary {
+    min-width: 0;
+  }
+
+  & h3 a {
+    overflow-wrap: anywhere;
+  }
+
   & .p-summary {
     font-size: var(--text-md);
     line-height: 1.62;
@@ -901,16 +916,19 @@ footer {
   .post-row {
     & .post-row-date {
       grid-column: 1 / span 1;
+      grid-row: 2;
       justify-self: start;
       text-align: left;
     }
 
     & .post-row-body {
       grid-column: 2 / span 5;
+      grid-row: 2;
     }
 
     & .post-row-cover {
       grid-column: 1 / -1;
+      grid-row: 1;
     }
   }
 }
@@ -933,6 +951,38 @@ footer {
 
   .author-card .author-card-photo {
     width: min(7rem, 100%);
+  }
+
+  .post-row {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+
+    & .post-row-cover,
+    & .post-row-body,
+    & .post-row-date {
+      grid-column: 1 / -1;
+    }
+
+    & .post-row-cover {
+      grid-row: 1;
+      margin-bottom: 0;
+    }
+
+    & .post-row-body {
+      grid-row: 2;
+      gap: calc(var(--space-1) * 0.75);
+    }
+
+    & .post-row-date {
+      grid-row: 3;
+      min-height: auto;
+      justify-self: start;
+      text-align: left;
+    }
+
+    & .p-summary {
+      max-width: none;
+    }
   }
 }
 
