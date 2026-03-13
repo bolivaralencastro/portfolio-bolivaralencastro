@@ -532,7 +532,13 @@ def build_asset_versions(repo_root: pathlib.Path) -> dict[str, str]:
         asset_path = repo_root / relative_path
         if not asset_path.exists():
             raise BuildError(f"Missing versioned asset: {relative_path.as_posix()}")
-        digest = hashlib.sha256(asset_path.read_bytes()).hexdigest()[:10]
+
+        # Normalize text asset newlines so versioned URLs remain stable across
+        # Windows and Linux checkouts.
+        normalized_bytes = (
+            asset_path.read_text(encoding="utf-8").replace("\r\n", "\n").replace("\r", "\n").encode("utf-8")
+        )
+        digest = hashlib.sha256(normalized_bytes).hexdigest()[:10]
         versions[public_path] = digest
     return versions
 
