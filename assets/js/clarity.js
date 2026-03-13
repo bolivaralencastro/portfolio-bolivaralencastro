@@ -2,9 +2,21 @@
   "use strict";
 
   var CLARITY_PROJECT_ID = "t8asclyhhx";
+  var clarityScriptLoaded = false;
+  var clarityScriptScheduled = false;
 
   function isConsentValue(value) {
     return value === "granted" || value === "denied";
+  }
+
+  function ensureClarityStub() {
+    if (typeof window.clarity === "function") {
+      return;
+    }
+
+    window.clarity = function () {
+      (window.clarity.q = window.clarity.q || []).push(arguments);
+    };
   }
 
   function getPageType(pathname) {
@@ -55,18 +67,48 @@
     return "site";
   }
 
-  (function (c, l, a, r, i, t, y) {
-    c[a] =
-      c[a] ||
-      function () {
-        (c[a].q = c[a].q || []).push(arguments);
-      };
-    t = l.createElement(r);
-    t.async = 1;
-    t.src = "https://www.clarity.ms/tag/" + i;
-    y = l.getElementsByTagName(r)[0];
-    y.parentNode.insertBefore(t, y);
-  })(window, document, "clarity", "script", CLARITY_PROJECT_ID);
+  function loadClarityScript() {
+    var firstScript;
+    var script;
+
+    if (clarityScriptLoaded) {
+      return;
+    }
+
+    clarityScriptLoaded = true;
+    script = document.createElement("script");
+    script.async = true;
+    script.src = "https://www.clarity.ms/tag/" + CLARITY_PROJECT_ID;
+    firstScript = document.getElementsByTagName("script")[0];
+    firstScript.parentNode.insertBefore(script, firstScript);
+  }
+
+  function scheduleClarityScript() {
+    function scheduleAtIdle() {
+      if ("requestIdleCallback" in window) {
+        window.requestIdleCallback(loadClarityScript, { timeout: 5000 });
+        return;
+      }
+
+      window.setTimeout(loadClarityScript, 3000);
+    }
+
+    if (clarityScriptScheduled) {
+      return;
+    }
+
+    clarityScriptScheduled = true;
+
+    if (document.readyState === "complete") {
+      scheduleAtIdle();
+      return;
+    }
+
+    window.addEventListener("load", scheduleAtIdle, { once: true });
+  }
+
+  ensureClarityStub();
+  scheduleClarityScript();
 
   window.clarity("set", "page_type", getPageType(window.location.pathname || "/"));
   window.clarity("set", "site_section", getSiteSection(window.location.pathname || "/"));
