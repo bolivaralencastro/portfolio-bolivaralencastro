@@ -289,14 +289,14 @@ def build_blog_list_html(posts: list[dict]) -> str:
         lines.extend(
             [
                 "      <article class=\"post-item post-row h-entry col-12\">",
-                f"        <time class=\"dt-published post-row-date\" datetime=\"{date_iso}\">{date_human}</time>",
+                f"        <a href=\"{href}\" class=\"post-row-cover\" aria-label=\"Abrir post: {title}\">",
+                f"          <img src=\"{cover}\" alt=\"Capa do post: {title}\" loading=\"lazy\" decoding=\"async\"{size_attrs}>",
+                "        </a>",
                 "        <div class=\"post-row-body\">",
                 f"          <h3 class=\"p-name\"><a href=\"{href}\" class=\"u-url\">{title}</a></h3>",
                 f"          <p class=\"p-summary\">{summary}</p>",
                 "        </div>",
-                f"        <a href=\"{href}\" class=\"post-row-cover\" aria-label=\"Abrir post: {title}\">",
-                f"          <img src=\"{cover}\" alt=\"Capa do post: {title}\" loading=\"lazy\" decoding=\"async\"{size_attrs}>",
-                "        </a>",
+                f"        <time class=\"dt-published post-row-date\" datetime=\"{date_iso}\">{date_human}</time>",
                 "      </article>",
                 "",
             ]
@@ -346,14 +346,14 @@ def build_latest_post_html(latest_post: dict) -> str:
     return "\n".join(
         [
             "      <article class=\"post-item post-row h-entry col-12\">",
-            f"        <time class=\"dt-published post-row-date\" datetime=\"{date_iso}\">{date_human}</time>",
+            f"        <a href=\"{href}\" class=\"post-row-cover\" aria-label=\"Abrir post: {title}\">",
+            f"          <img src=\"{cover}\" alt=\"Capa do post: {title}\" loading=\"lazy\" decoding=\"async\"{size_attrs}>",
+            "        </a>",
             "        <div class=\"post-row-body\">",
             f"          <h3 class=\"p-name\"><a href=\"{href}\" class=\"u-url\">{title}</a></h3>",
             f"          <p class=\"p-summary\">{summary}</p>",
             "        </div>",
-            f"        <a href=\"{href}\" class=\"post-row-cover\" aria-label=\"Abrir post: {title}\">",
-            f"          <img src=\"{cover}\" alt=\"Capa do post: {title}\" loading=\"lazy\" decoding=\"async\"{size_attrs}>",
-            "        </a>",
+            f"        <time class=\"dt-published post-row-date\" datetime=\"{date_iso}\">{date_human}</time>",
             "      </article>",
         ]
     )
