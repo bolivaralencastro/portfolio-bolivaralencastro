@@ -444,6 +444,15 @@ a {
   }
 }
 
+.h-entry > .p-summary {
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-4);
+  font-size: var(--text-lg);
+  line-height: 1.58;
+  color: var(--text);
+  max-width: 44ch;
+}
+
 /* ---------- Button ---------- */
 
 .button {
