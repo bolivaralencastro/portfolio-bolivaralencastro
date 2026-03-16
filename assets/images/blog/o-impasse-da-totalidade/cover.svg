@@ -1,0 +1,13 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F4F0E8"/>
+  <rect x="48" y="48" width="1504" height="804" rx="28" fill="#111111"/>
+  <circle cx="1210" cy="236" r="198" fill="#E86F2D" fill-opacity="0.92"/>
+  <circle cx="456" cy="706" r="246" fill="#6F7C63" fill-opacity="0.88"/>
+  <circle cx="1376" cy="744" r="112" fill="#F4F0E8" fill-opacity="0.18"/>
+  <path d="M240 240C360 148 540 126 684 192C828 258 846 386 968 444C1074 494 1210 490 1336 436" stroke="#F4F0E8" stroke-width="3" stroke-opacity="0.35"/>
+  <path d="M206 646C340 530 506 496 644 546C780 596 880 724 1034 748C1154 768 1268 718 1362 632" stroke="#F4F0E8" stroke-width="3" stroke-opacity="0.24"/>
+  <text x="146" y="290" fill="#F4F0E8" font-family="Georgia, 'Times New Roman', serif" font-size="120" font-weight="700">D'eu, D'eus</text>
+  <text x="152" y="382" fill="#F4F0E8" fill-opacity="0.78" font-family="Arial, Helvetica, sans-serif" font-size="34" letter-spacing="1.2">Notas sobre um Deus que não pode existir</text>
+  <text x="152" y="660" fill="#F4F0E8" fill-opacity="0.88" font-family="Arial, Helvetica, sans-serif" font-size="28">Unidade, saturação, ruptura e dispersão</text>
+  <text x="152" y="708" fill="#F4F0E8" fill-opacity="0.56" font-family="Arial, Helvetica, sans-serif" font-size="22">bolivaralencastro.com.br</text>
+</svg>
