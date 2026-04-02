@@ -15,7 +15,7 @@ from typing import Iterable, List
 from urllib.parse import parse_qs, urlsplit
 
 BASE_URL_DEFAULT = "https://bolivaralencastro.com.br"
-ROOT_PAGES = ["index.html", "about.html", "blog.html", "projects.html", "now.html"]
+ROOT_PAGES = ["index.html", "about.html", "curriculo/index.html", "blog.html", "projects.html", "now.html"]
 CLARITY_SCRIPT_SRC = "/assets/js/clarity.js"
 MAIN_STYLESHEET_HREF = "/style.css"
 CLARITY_CSP_SOURCES = ["https://*.clarity.ms", "https://c.bing.com"]
@@ -293,6 +293,8 @@ def extract_jsonld_types(payload: str) -> set[str]:
 def canonical_expected(base_url: str, rel_path: str) -> str:
     if rel_path == "index.html":
         return f"{base_url}/"
+    if rel_path.endswith("/index.html"):
+        return f"{base_url}/{rel_path.removesuffix('/index.html')}/"
     return f"{base_url}/{rel_path}"
 
 
