@@ -4,7 +4,7 @@
   <subtitle>Product Design e Arquitetura Web Nativa</subtitle>
   <link href="https://bolivaralencastro.com.br/feed.xml" rel="self"/>
   <link href="https://bolivaralencastro.com.br/blog.html" rel="alternate"/>
-  <updated>2026-03-15T00:00:00Z</updated>
+  <updated>2026-04-02T00:00:00Z</updated>
   <id>https://bolivaralencastro.com.br/feed.xml</id>
   <author>
     <name>Bolívar Alencastro</name>
@@ -13,6 +13,16 @@
   <contributor>
     <name>Bolivar Alencastro</name>
   </contributor>
+
+  <entry>
+    <title>Anotações sobre o Excesso e o Norte Quântico</title>
+    <link href="https://bolivaralencastro.com.br/blog/anotacoes-sobre-o-excesso-e-o-norte-quantico.html" rel="alternate"/>
+    <id>https://bolivaralencastro.com.br/blog/anotacoes-sobre-o-excesso-e-o-norte-quantico.html</id>
+    <published>2026-03-31T00:00:00Z</published>
+    <updated>2026-04-02T00:00:00Z</updated>
+    <summary>O excesso de informação não é apenas um problema estatístico; é uma erosão do sentido. Notas sobre algoritmos, humanidade e o futuro da criatividade no STATE.</summary>
+    <content type="html">&lt;p&gt;Dizemos a nós mesmos histórias para poder viver, mas ultimamente as histórias têm sido barulhentas demais. O excesso de informação não é apenas um problema estatístico; é uma erosão do sentido. No dia 31 de março, no cenário industrial do STATE, quatro vozes se reuniram sob o pretexto de falar sobre algoritmos, mas acabaram falando sobre o que significa permanecer humano quando tudo ao redor é zumbido.&lt;/p&gt;</content>
+  </entry>
 
   <entry>
     <title>O impasse da totalidade</title>
