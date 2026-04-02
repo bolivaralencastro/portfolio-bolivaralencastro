@@ -15,7 +15,7 @@ from typing import Iterable, List
 from urllib.parse import parse_qs, urlsplit
 
 BASE_URL_DEFAULT = "https://bolivaralencastro.com.br"
-ROOT_PAGES = ["index.html", "about.html", "curriculo/index.html", "blog.html", "projects.html", "now.html"]
+ROOT_PAGES = ["index.html", "about.html", "blog.html", "projects.html", "now.html"]
 CLARITY_SCRIPT_SRC = "/assets/js/clarity.js"
 MAIN_STYLESHEET_HREF = "/style.css"
 CLARITY_CSP_SOURCES = ["https://*.clarity.ms", "https://c.bing.com"]
