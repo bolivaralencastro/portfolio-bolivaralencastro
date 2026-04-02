@@ -18,7 +18,7 @@ from typing import List
 from urllib.parse import urlparse
 
 BASE_URL_DEFAULT = "https://bolivaralencastro.com.br"
-ROOT_PAGES = ["index.html", "about.html", "blog.html", "projects.html", "now.html"]
+ROOT_PAGES = ["index.html", "about.html", "curriculo/index.html", "blog.html", "projects.html", "now.html"]
 FEED_AUTHOR_NAME = "Bolívar Alencastro"
 FEED_AUTHOR_FALLBACK = "Bolivar Alencastro"
 LISTING_CARD_FILENAMES = ("card.webp", "cover.webp")
@@ -248,6 +248,8 @@ def get_lastmod_date(path: pathlib.Path, repo_root: pathlib.Path) -> str:
 def rel_to_url(rel_path: str, base_url: str) -> str:
     if rel_path == "index.html":
         return f"{base_url}/"
+    if rel_path.endswith("/index.html"):
+        return f"{base_url}/{rel_path.removesuffix('/index.html')}/"
     return f"{base_url}/{rel_path}"
 
 
@@ -679,7 +681,7 @@ def main() -> int:
         url = rel_to_url(rel_path, base_url)
         if rel_path == "index.html":
             priority = 1.0
-        elif rel_path in {"about.html", "blog.html", "projects.html"}:
+        elif rel_path in {"about.html", "curriculo/index.html", "blog.html", "projects.html"}:
             priority = 0.8
         else:
             priority = 0.7
