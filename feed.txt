@@ -4,7 +4,7 @@
   <subtitle>Product Design e Arquitetura Web Nativa</subtitle>
   <link href="https://bolivaralencastro.com.br/feed.xml" rel="self"/>
   <link href="https://bolivaralencastro.com.br/blog.html" rel="alternate"/>
-  <updated>2026-03-31T00:00:00Z</updated>
+  <updated>2026-04-12T00:00:00Z</updated>
   <id>https://bolivaralencastro.com.br/feed.xml</id>
   <author>
     <name>Bolívar Alencastro</name>
@@ -13,6 +13,16 @@
   <contributor>
     <name>Bolivar Alencastro</name>
   </contributor>
+
+  <entry>
+    <title>GitHub Copilot, contexto e o que ficou do workshop na FIAP</title>
+    <link href="https://bolivaralencastro.com.br/blog/github-copilot-contexto-e-o-que-ficou-do-workshop-na-fiap.html" rel="alternate"/>
+    <id>https://bolivaralencastro.com.br/blog/github-copilot-contexto-e-o-que-ficou-do-workshop-na-fiap.html</id>
+    <published>2026-04-12T00:00:00Z</published>
+    <updated>2026-04-12T00:00:00Z</updated>
+    <summary>Um relato sobre o GitHub Copilot Dev Days São Paulo e a ideia de que, no desenvolvimento com IA, contexto importa tanto quanto o modelo.</summary>
+    <content type="html">&lt;p&gt;No sábado, 11 de abril de 2026, participei do GitHub Copilot Dev Days São Paulo, realizado na FIAP. Estive na trilha de Python e acompanhei o workshop conduzido por Renato Romão de Souza, Enrico Ferraz e Mayumi Shingaki, com foco no uso do GitHub Copilot no Visual Studio Code. Foram poucas horas, mas suficientes para deixar uma impressão mais nítida do que realmente importa nesse tipo de ferramenta.&lt;/p&gt;</content>
+  </entry>
 
   <entry>
     <title>Anotações sobre o Excesso e o Norte Quântico</title>
