@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>No Cubo, o Agent Speedrun expôs a infraestrutura por trás de um agente utilizável - Blog</title>
+  <meta name="description" content="No Cubo Itaú, o Agent Speedrun expôs memória, guardrails, runtime e o tipo de estrutura que sustenta um agente quando a demo acaba.">
+  <link rel="stylesheet" href="/style.css?v=af10d41536">
+  <script src="/assets/js/clarity.js?v=b9b7739aa6" defer></script>
+  <link rel="canonical" href="https://bolivaralencastro.com.br/blog/agent-speedrun-bedrock-agentcore-e-o-que-ficou-do-workshop-no-cubo.html">
+  <meta name="author" content="Bolívar Alencastro">
+  <meta name="generator" content="Handcrafted HTML">
+  <link rel="webmention" href="https://webmention.io/bolivaralencastro.com.br/webmention">
+  <link rel="pingback" href="https://webmention.io/bolivaralencastro.com.br/xmlrpc">
+  <link rel="me" href="https://github.com/bolivaralencastro">
+  <link rel="me" href="https://www.instagram.com/bolivar.alencastro/">
+  <link rel="me" href="https://www.linkedin.com/in/bolivaralencastro/">
+
+  <meta property="og:title" content="No Cubo, o Agent Speedrun expôs a infraestrutura por trás de um agente utilizável">
+  <meta property="og:description" content="No Cubo Itaú, o Agent Speedrun expôs memória, guardrails, runtime e o tipo de estrutura que sustenta um agente quando a demo acaba.">
+  <meta property="og:url" content="https://bolivaralencastro.com.br/blog/agent-speedrun-bedrock-agentcore-e-o-que-ficou-do-workshop-no-cubo.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://bolivaralencastro.com.br/assets/images/blog/agent-speedrun-bedrock-agentcore-e-o-que-ficou-do-workshop-no-cubo/cover.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="No Cubo, o Agent Speedrun expôs a infraestrutura por trás de um agente utilizável">
+  <meta name="twitter:description" content="No Cubo Itaú, o Agent Speedrun expôs memória, guardrails, runtime e o tipo de estrutura que sustenta um agente quando a demo acaba.">
+  <meta name="twitter:image" content="https://bolivaralencastro.com.br/assets/images/blog/agent-speedrun-bedrock-agentcore-e-o-que-ficou-do-workshop-no-cubo/cover.webp">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "No Cubo, o Agent Speedrun expôs a infraestrutura por trás de um agente utilizável",
+    "description": "No Cubo Itaú, o Agent Speedrun expôs memória, guardrails, runtime e o tipo de estrutura que sustenta um agente quando a demo acaba.",
+    "mainEntityOfPage": "https://bolivaralencastro.com.br/blog/agent-speedrun-bedrock-agentcore-e-o-que-ficou-do-workshop-no-cubo.html",
+    "url": "https://bolivaralencastro.com.br/blog/agent-speedrun-bedrock-agentcore-e-o-que-ficou-do-workshop-no-cubo.html",
+    "image": "https://bolivaralencastro.com.br/assets/images/blog/agent-speedrun-bedrock-agentcore-e-o-que-ficou-do-workshop-no-cubo/cover.webp",
+    "datePublished": "2026-04-18",
+    "dateModified": "2026-04-18",
+    "author": {
+      "@type": "Person",
+      "name": "Bolívar Alencastro"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Bolívar Alencastro"
+    }
+  }
+  </script>
+  <meta name="view-transition" content="same-origin">
+</head>
+<body>
+  <div class="grain"></div>
+  <a href="#main" class="skip-link">Pular para o conteúdo</a>
+
+  <header class="grid">
+    <div class="brand col-7"><a href="/" class="brand-link" aria-label="Ir para a página inicial"><span class="brand-mark" aria-hidden="true"><span class="dot dot-blue"></span></span><strong>Bolívar Alencastro</strong></a></div>
+    <nav class="col-5" aria-label="Navegação principal">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/projects.html">Projects</a></li>
+        <li><a href="/blog.html" aria-current="page">Blog</a></li>
+        <li><a href="/now.html">Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="grid">
+    <article class="h-entry col-12">
+      <h1 class="p-name col-9">No Cubo, o Agent Speedrun expôs a infraestrutura por trás de um agente utilizável</h1>
+      <div class="post-meta col-12">
+        <time class="dt-published" datetime="2026-04-18">18 Abr 2026</time>
+        <span class="meta-separator" aria-hidden="true">•</span>
+        <span class="p-category">AI Workflow</span>
+        <span class="meta-separator" aria-hidden="true">•</span>
+        <span class="reading-time">5 min de leitura</span>
+        <span class="meta-separator" aria-hidden="true">•</span>
+        <a class="u-url" href="/blog/agent-speedrun-bedrock-agentcore-e-o-que-ficou-do-workshop-no-cubo.html">permalink</a>
+      </div>
+      <p class="p-summary col-8">No Cubo Itaú, o Agent Speedrun expôs memória, guardrails, runtime e o tipo de estrutura que sustenta um agente quando a demo acaba.</p>
+
+      <img class="col-12" src="/assets/images/blog/agent-speedrun-bedrock-agentcore-e-o-que-ficou-do-workshop-no-cubo/cover.webp" alt="Arte editorial do post sobre o workshop Agent Speedrun no Cubo" width="1600" height="901" loading="lazy" decoding="async">
+
+      <div class="e-content col-8 section-block">
+        <p>Na sexta-feira, 17 de abril de 2026, participei do <strong>Agent Speedrun: de horas para minutos</strong>, no <a href="https://www.linkedin.com/company/cubo-network/" rel="noopener noreferrer" target="_blank">Cubo Itaú</a>, em São Paulo. O encontro foi organizado por <a href="https://www.linkedin.com/in/dug-hilpert/" rel="noopener noreferrer" target="_blank"><strong>Eduardo “Dug” Hilpert</strong></a> e conduzido por <a href="https://www.linkedin.com/in/vitorguimap" rel="noopener noreferrer" target="_blank"><strong>Vitor Guimarães</strong></a> e <a href="https://www.linkedin.com/in/lucnun/" rel="noopener noreferrer" target="_blank"><strong>Lucas Nunes</strong></a>, da <a href="https://www.linkedin.com/company/dnxbrasil" rel="noopener noreferrer" target="_blank"><strong>DNX Brasil</strong></a>. A promessa do título era velocidade. O ponto mais interessante, porém, apareceu em outro lugar: na infraestrutura que torna um agente utilizável fora da demo.</p>
+
+        <img src="/assets/images/blog/agent-speedrun-bedrock-agentcore-e-o-que-ficou-do-workshop-no-cubo/agent-speedrun-bedrock-agentcore-cubo-galeria-01.webp" alt="Três registros do workshop Agent Speedrun no Cubo, com participantes, projeção e ambiente do encontro" width="2400" height="1423" loading="lazy" decoding="async">
+
+        <p>Ao longo do workshop, a stack da <a href="https://aws.amazon.com/bedrock/" rel="noopener noreferrer" target="_blank">Amazon Bedrock</a> foi apresentada menos como vitrine de modelos e mais como um arranjo operacional para agentes: ferramentas, memória, políticas, runtime, guardrails e observabilidade. A intuição geral era simples. O que faz um agente sair do campo da curiosidade e entrar no da utilidade não é apenas a LLM; é o conjunto de restrições e capacidades ao redor dela.</p>
+
+        <h2>Dois speedruns, uma tese</h2>
+        <p>Na prática, isso apareceu em dois labs do workshop <a href="https://catalog.us-east-1.prod.workshops.aws/event/dashboard/en-US/workshop/20-create-an-agent" rel="noopener noreferrer" target="_blank">Create an Agent</a>. No <strong>Lab 01</strong>, montamos um agente de suporte ao cliente com <em>custom tools</em>, busca web, base de conhecimento e um prompt de sistema suficientemente organizado para coordenar essas peças. No <strong>Lab 02</strong>, o mesmo agente ganhou <a href="https://aws.amazon.com/bedrock/agentcore/" rel="noopener noreferrer" target="_blank">AgentCore</a> Memory: memória de curto prazo, memória de longo prazo e recuperação semântica de interações anteriores.</p>
+
+        <img src="/assets/images/blog/agent-speedrun-bedrock-agentcore-e-o-que-ficou-do-workshop-no-cubo/agent-speedrun-bedrock-agentcore-cubo-galeria-02.webp" alt="Composição com três cenas do workshop mostrando a plateia, a apresentação e o espaço no Cubo Itaú" width="2400" height="1423" loading="lazy" decoding="async">
+
+        <p>Essa sequência foi didática porque deslocou o problema. A pergunta deixou de ser “como fazer a IA responder?” e passou a ser “como fazer esse agente lembrar, agir e operar com alguma confiabilidade?”. A velocidade do speedrun não vinha de improvisar melhor. Vinha de trabalhar sobre blocos já pensados para produção.</p>
+
+        <h2>O que apareceu com mais clareza</h2>
+        <p>O workshop insistiu em alguns pontos que me pareceram mais importantes do que o discurso usual sobre “IA mais poderosa”. Um agente útil precisa de <strong>memória</strong> para não recomeçar do zero, de <strong>tools</strong> para sair da superfície do texto, de <strong>políticas e identidade</strong> para não acessar tudo o que pode, e de <strong>guardrails</strong> para não se desviar do escopo quando encontra inputs ambíguos ou maliciosos. Em outras palavras: precisa de arcabouço.</p>
+
+        <p>Esse ponto ficou ainda mais nítido nos exemplos de atendimento e nos alertas sobre <em>prompt attack</em>, exposição indevida de dados e risco reputacional. A mensagem era quase anti-hype: antes de pensar no brilho da interface, vale pensar em contenção, rastreabilidade e custo. Talvez seja justamente aí que comece uma engenharia de agentes mais séria.</p>
+
+        <img src="/assets/images/blog/agent-speedrun-bedrock-agentcore-e-o-que-ficou-do-workshop-no-cubo/agent-speedrun-bedrock-agentcore-cubo-galeria-03.webp" alt="Sequência de três imagens do evento com slides, participantes e detalhes da dinâmica do workshop" width="2400" height="1423" loading="lazy" decoding="async">
+
+        <h2>Kiro entrou como sintoma de uma mudança maior</h2>
+        <p>Foi também nesse contexto que achei interessante conhecer o <a href="https://kiro.dev/" rel="noopener noreferrer" target="_blank">Kiro</a>, a partir do compartilhamento do Vitor. O que chamou atenção não foi apenas a ideia de um fork do VS Code com IA. Foi o fato de ele aparecer como parte de uma mesma família de ferramentas que tentam organizar melhor a relação entre modelo, contexto, ferramentas, memória e fluxo de execução.</p>
+
+        <img src="/assets/images/blog/agent-speedrun-bedrock-agentcore-e-o-que-ficou-do-workshop-no-cubo/agent-speedrun-bedrock-agentcore-cubo-galeria-04.webp" alt="Montagem final com três registros do workshop Agent Speedrun no Cubo, incluindo tela, público e ambiente" width="2400" height="1423" loading="lazy" decoding="async">
+
+        <p>Saí do Cubo com uma impressão parecida à que tive em outros encontros recentes sobre IA: o centro de gravidade está mudando. Menos fascínio por um chat “que responde tudo”, mais interesse por ambientes e arquiteturas que disciplinam como essa resposta é produzida. Se essa hipótese estiver correta, o próximo diferencial competitivo não será só o modelo. Será o modo como cada stack monta o seu próprio <em>harness</em>.</p>
+
+        <img src="/assets/images/blog/agent-speedrun-bedrock-agentcore-e-o-que-ficou-do-workshop-no-cubo/agent-speedrun-bedrock-agentcore-cubo-workshop-photo.webp" alt="Autorretrato no elevador após o workshop Agent Speedrun no Cubo Itaú" width="900" height="1600" loading="lazy" decoding="async">
+
+        <section class="author-card h-card" aria-label="Sobre o autor">
+          <p class="author-card-title">Sobre o autor</p>
+          <div class="author-card-inner">
+          <img class="author-card-photo u-photo" src="/assets/images/author/bolivar-alencastro.webp" alt="Foto de Bolívar Alencastro" width="641" height="640" loading="lazy">
+          <div class="author-card-body">
+            <h3 class="author-card-name p-name"><a class="u-url" href="/about.html">Bolívar Alencastro</a></h3>
+            <p class="author-card-copy p-note">Product Designer em São Paulo, escrevendo sobre produto, interfaces e, cada vez mais, sobre o tipo de estrutura que faz agentes parecerem menos truque de palco e mais software de verdade.</p>
+            <ul class="author-card-links" aria-label="Redes sociais do autor">
+              <li><a rel="me noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/bolivaralencastro/">LinkedIn</a></li>
+              <li><a rel="me noopener noreferrer" target="_blank" href="https://www.instagram.com/bolivar.alencastro/">Instagram</a></li>
+            </ul>
+          </div>
+          </div>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <footer class="grid">
+    <p class="col-9">&copy; 2026 Bolívar Alencastro. Design HTML-first.</p>
+    <nav class="footer-links col-3" aria-label="Links do rodapé">
+      <ul>
+        <li><a href="/feed.xml" rel="alternate">RSS Feed</a></li>
+        <li><a href="/sitemap.xml">Sitemap</a></li>
+        <li><a href="/humans.txt">Humans</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
