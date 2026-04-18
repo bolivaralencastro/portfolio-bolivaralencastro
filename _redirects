@@ -1,5 +1,7 @@
 http://bolivaralencastro.com.br/* https://bolivaralencastro.com.br/:splat 301!
 http://www.bolivaralencastro.com.br/* https://bolivaralencastro.com.br/:splat 301!
 https://www.bolivaralencastro.com.br/* https://bolivaralencastro.com.br/:splat 301!
+/blog /blog.html 301!
+/blog/ /blog.html 301!
 /curriculo /about.html 301!
 /curriculo/ /about.html 301!

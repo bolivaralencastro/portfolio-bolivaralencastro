@@ -4,7 +4,7 @@
   <subtitle>Product Design e Arquitetura Web Nativa</subtitle>
   <link href="https://bolivaralencastro.com.br/feed.xml" rel="self"/>
   <link href="https://bolivaralencastro.com.br/blog.html" rel="alternate"/>
-  <updated>2026-04-12T00:00:00Z</updated>
+  <updated>2026-04-18T00:00:00Z</updated>
   <id>https://bolivaralencastro.com.br/feed.xml</id>
   <author>
     <name>Bolívar Alencastro</name>
@@ -13,6 +13,16 @@
   <contributor>
     <name>Bolivar Alencastro</name>
   </contributor>
+
+  <entry>
+    <title>No Cubo, o Agent Speedrun expôs a infraestrutura por trás de um agente utilizável</title>
+    <link href="https://bolivaralencastro.com.br/blog/agent-speedrun-bedrock-agentcore-e-o-que-ficou-do-workshop-no-cubo.html" rel="alternate"/>
+    <id>https://bolivaralencastro.com.br/blog/agent-speedrun-bedrock-agentcore-e-o-que-ficou-do-workshop-no-cubo.html</id>
+    <published>2026-04-18T00:00:00Z</published>
+    <updated>2026-04-18T00:00:00Z</updated>
+    <summary>No Cubo Itaú, o Agent Speedrun expôs memória, guardrails, runtime e o tipo de estrutura que sustenta um agente quando a demo acaba.</summary>
+    <content type="html">&lt;p&gt;Na sexta-feira, 17 de abril de 2026, participei do Agent Speedrun: de horas para minutos, no Cubo Itaú, em São Paulo. O encontro foi organizado por Eduardo “Dug” Hilpert e conduzido por Vitor Guimarães e Lucas Nunes, da DNX Brasil. A promessa do título era velocidade. O ponto mais interessante, porém, apareceu em outro lugar: na infraestrutura que torna um agente utilizável fora da demo.&lt;/p&gt;</content>
+  </entry>
 
   <entry>
     <title>GitHub Copilot, contexto e o que ficou do workshop na FIAP</title>
