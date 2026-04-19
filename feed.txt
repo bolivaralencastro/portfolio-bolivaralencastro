@@ -25,6 +25,16 @@
   </entry>
 
   <entry>
+    <title>Quando infraestrutura, automação, interface e voz entram na mesma aplicação</title>
+    <link href="https://bolivaralencastro.com.br/blog/oracle-n8n-vercel-elevenlabs-e-a-stack-ai-first-no-cubo.html" rel="alternate"/>
+    <id>https://bolivaralencastro.com.br/blog/oracle-n8n-vercel-elevenlabs-e-a-stack-ai-first-no-cubo.html</id>
+    <published>2026-04-14T00:00:00Z</published>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <summary>No evento promovido pela Oracle no Cubo Itaú, OCI, n8n, Vercel e ElevenLabs apareceram como partes de uma mesma arquitetura: infraestrutura, automação, interface e voz.</summary>
+    <content type="html">&lt;p&gt;Na terça-feira, 14 de abril de 2026, participei do Build AI-First Applications: Fast, Scalable &amp; Autonomous, no Cubo Itaú, em São Paulo. O evento reuniu Oracle e Venture Miner Academy em uma jornada de desenvolvimento completa: da infraestrutura até a aplicação. A stack anunciada era direta e bastante sintomática do momento: Oracle, n8n, Vercel e ElevenLabs.&lt;/p&gt;</content>
+  </entry>
+
+  <entry>
     <title>GitHub Copilot, contexto e o que ficou do workshop na FIAP</title>
     <link href="https://bolivaralencastro.com.br/blog/github-copilot-contexto-e-o-que-ficou-do-workshop-na-fiap.html" rel="alternate"/>
     <id>https://bolivaralencastro.com.br/blog/github-copilot-contexto-e-o-que-ficou-do-workshop-na-fiap.html</id>
