@@ -17,6 +17,7 @@ import sys
 import json
 import re
 import ssl
+import time
 import argparse
 import urllib.request
 import urllib.parse
@@ -34,6 +35,8 @@ ROOT = Path(__file__).parent.parent
 BLOG_DIR = ROOT / "blog"
 ENV_FILE = ROOT / ".env"
 BASE_URL = "https://bolivaralencastro.com.br"
+STATE_DIR = ROOT / ".social_publish_state"
+LINKEDIN_STATE_FILE = STATE_DIR / "linkedin_last_publish.json"
 
 
 def load_env() -> dict:
@@ -196,6 +199,46 @@ def format_post_text(meta: dict) -> str:
     )
 
 
+def build_publish_signature(author_urn: str, meta: dict) -> str:
+    """Assinatura estável para detectar repost acidental do mesmo conteúdo."""
+    return "|".join(
+        [
+            author_urn,
+            meta.get("slug", ""),
+            meta.get("url", ""),
+            meta.get("description", ""),
+        ]
+    )
+
+
+def is_recent_duplicate(signature: str, window_seconds: int = 3600) -> bool:
+    """Retorna True se o último publish local tiver a mesma assinatura em janela recente."""
+    if not LINKEDIN_STATE_FILE.exists():
+        return False
+    try:
+        data = json.loads(LINKEDIN_STATE_FILE.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return False
+
+    last_sig = data.get("signature", "")
+    last_ts = int(data.get("timestamp", 0))
+    if not last_sig or not last_ts:
+        return False
+
+    return last_sig == signature and (time.time() - last_ts) <= window_seconds
+
+
+def save_publish_state(signature: str, share_urn: str):
+    """Salva estado local do último publish para evitar duplicações acidentais."""
+    STATE_DIR.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "signature": signature,
+        "timestamp": int(time.time()),
+        "share_urn": share_urn,
+    }
+    LINKEDIN_STATE_FILE.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
 def publish_post(token: str, author_urn: str, meta: dict, image_urn: str | None = None) -> str:
     """Publica o post e retorna o URN do share criado."""
     payload: dict = {
@@ -241,6 +284,11 @@ def main():
     parser = argparse.ArgumentParser(description="Publica post do blog no LinkedIn")
     parser.add_argument("--dry-run", action="store_true", help="Mostra o texto sem publicar")
     parser.add_argument("--slug", help="Slug do post específico (ex: meu-post)")
+    parser.add_argument(
+        "--allow-duplicate",
+        action="store_true",
+        help="Permite publicar conteúdo idêntico ao último post recente",
+    )
     args = parser.parse_args()
 
     env = load_env()
@@ -284,6 +332,12 @@ def main():
 
     print(f"👤 Author: {author_urn}")
 
+    signature = build_publish_signature(author_urn, meta)
+    if not args.allow_duplicate and is_recent_duplicate(signature):
+        print("⚠️  Publicação bloqueada para evitar duplicata acidental.")
+        print("   Use --allow-duplicate se quiser publicar o mesmo conteúdo novamente.")
+        sys.exit(1)
+
     image_urn = None
     if meta["image_path"]:
         print("🖼️  Registrando upload de imagem...")
@@ -299,6 +353,7 @@ def main():
     print("📤 Publicando...")
     try:
         share_urn = publish_post(token, author_urn, meta, image_urn)
+        save_publish_state(signature, share_urn)
         print(f"\n✅ Publicado com sucesso!")
         if share_urn:
             print(f"   URN: {share_urn}")
