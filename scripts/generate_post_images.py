@@ -44,8 +44,8 @@ except ImportError:
 ROOT = Path(__file__).parent.parent
 ENV_FILE = ROOT / ".env"
 
-IMAGE_MODEL = "openai/gpt-5.4-image-2"
-PROMPT_MODEL = "google/gemini-2.0-flash-001"  # barato e rápido
+DEFAULT_IMAGE_MODEL = "openai/gpt-5.4-image-2"
+DEFAULT_PROMPT_MODEL = "google/gemini-2.0-flash-001"  # barato e rápido
 
 PRESETS = {
     "cover":  (1400, 787),
@@ -53,10 +53,73 @@ PRESETS = {
     "inline": (1200, 675),
 }
 
-EDITORIAL_SUFFIX = (
-    " Flat vector illustration style. Dark charcoal background. "
-    "Blue and teal accent colors. No readable text or labels. "
-    "Clean, minimal, modern editorial feel."
+STYLE_PROFILES = {
+    "default": (
+        "Flat vector illustration style. Dark charcoal background. "
+        "Blue and teal accent colors. Clean, minimal, modern editorial feel."
+    ),
+    "diagrammatic": (
+        "Diagrammatic editorial style with strong geometric structure. "
+        "Dark slate background, cyan accents, crisp contours, controlled density."
+    ),
+    "newsprint-collage": (
+        "Magazine-like editorial collage style with cutout shapes and paper texture cues. "
+        "Bold contrast and limited palette, modern but tactile."
+    ),
+    "constructivist": (
+        "Constructivist poster-inspired editorial style with assertive diagonals, "
+        "angular forms, and high-contrast composition."
+    ),
+    "surrealist-portrait": (
+        "Extreme asymmetric close-up composition with deliberate scale distortion. "
+        "Dramatic high-contrast shadow masses against bright highlight zones. "
+        "Restricted saturated palette. Hyper-detailed focal textures contrasted against "
+        "grainy abstract color fields. Surrealist editorial art direction."
+    ),
+    "painterly-landscape": (
+        "Visible impasto brushstrokes and palette-knife texture throughout. "
+        "Broken warm-cool color transitions — ochre against ultramarine. "
+        "Asymmetric low-horizon composition with atmospheric perspective. "
+        "Painterly abstraction over photorealism. No photographic sharpness."
+    ),
+    "pop-editorial": (
+        "Artificial staged backdrop — hand-painted flat panel behind subject. "
+        "High-saturation limited palette: royal blue, red accent, cream. "
+        "Harsh direct frontal lighting, flattened color planes. "
+        "Tactile material texture emphasis. Subtle film grain. "
+        "Poster-like composition with strong graphic intent."
+    ),
+    "electron-monochrome": (
+        "Hyper-fisheye lens distortion filling the entire frame, no vignetting, no edge blur. "
+        "Extreme monochromatic tonal range from blown-out whites to dense blacks. "
+        "Ultra-fine filamentary micro-texture as if imaged by scanning electron microscope "
+        "at 10,000x magnification. Radial spiral vortex composition. "
+        "No color, no warm tones, no atmospheric haze."
+    ),
+    "garden-microscope": (
+        "Maximum chromatic saturation with harmonious palette — emerald, burnt orange, "
+        "lime green, burgundy, teal — at uniform luminosity. "
+        "Ultra-fine pointillist micro-texture on every surface: moss, raked sand, stone, foliage. "
+        "Soft isometric overhead perspective, no sky, no horizon. "
+        "Flat diffuse lighting with no directional shadows. "
+        "Frame entirely filled with subject, zero negative space."
+    ),
+    "fantasy-fashion": (
+        "Hyper-low angle portrait (camera below chin looking up), slight wide-angle distortion "
+        "without vignetting. Cool D65 white balance — zero warm cast, zero golden hour. "
+        "Deliberate warm-cool palette tension: deep red or burgundy against electric blue or teal. "
+        "Fantasy costume elements rendered as tactile real-world materials with "
+        "ultra-fine fabric texture detail — individual threads, velvet pile direction, "
+        "translucent wing venation. Dramatic single-source cool top-front key light "
+        "with hard shadow fall-off, no warm bounce. "
+        "Autumnal background with orange-blue color separation at depth. "
+        "Biomimetic skin clarity and 0.3mm sparkle micro-detail on reflective surfaces."
+    ),
+}
+
+ANTI_GENERIC_SUFFIX = (
+    " No readable text or labels. Avoid generic stock AI iconography, random neon particles, "
+    "lens flare, and corporate 3D clipart aesthetics."
 )
 
 
@@ -107,10 +170,10 @@ def extract_post_content(html_path: Path) -> dict:
     }
 
 
-def call_text_model(prompt: str, api_key: str, max_tokens: int = 1024) -> str:
+def call_text_model(prompt: str, api_key: str, model: str, max_tokens: int = 1024) -> str:
     """Chama modelo de texto via OpenRouter."""
     payload = json.dumps({
-        "model": PROMPT_MODEL,
+        "model": model,
         "messages": [{"role": "user", "content": prompt}],
         "max_tokens": max_tokens,
     }).encode()
@@ -130,12 +193,22 @@ def call_text_model(prompt: str, api_key: str, max_tokens: int = 1024) -> str:
     return result["choices"][0]["message"]["content"].strip()
 
 
-def generate_prompts(post: dict, n_inline: int, api_key: str) -> dict:
+def generate_prompts(
+    post: dict,
+    n_inline: int,
+    api_key: str,
+    prompt_model: str,
+    style: str,
+    style_notes: str,
+) -> dict:
     """
     Usa modelo de texto barato para gerar prompts visuais contextualizados.
     Retorna dict com chaves: cover, card, inline (lista).
     """
     sections_str = "\n".join(f"- {s}" for s in post["sections"]) if post["sections"] else "(sem seções)"
+
+    art_direction = STYLE_PROFILES.get(style, STYLE_PROFILES["default"])
+    style_appendix = style_notes.strip()
 
     system_prompt = f"""Você é um diretor de arte editorial para um blog de tecnologia.
 Dado o conteúdo de um post, crie prompts em inglês para geração de imagens editoriais.
@@ -146,9 +219,14 @@ Descrição: {post['description']}
 Seções: {sections_str}
 Resumo do conteúdo: {post['text'][:800]}
 
+Direção de arte desejada:
+- Base: {art_direction}
+- Notas adicionais: {style_appendix if style_appendix else '(nenhuma)'}
+
 Gere exatamente {2 + n_inline} prompts no formato JSON abaixo.
-Cada prompt deve descrever APENAS o conteúdo visual (não o estilo — o estilo já será aplicado automaticamente).
-Seja específico: formas, elementos, relações espaciais, metáforas visuais do tema.
+Cada prompt deve descrever conteúdo visual E composição coerente com a direção de arte.
+Seja específico: formas, elementos, relações espaciais, metáforas visuais do tema,
+hierarquia visual e enquadramento.
 
 {{
   "cover": "prompt para a imagem de capa (16:9, mais impactante e representativa do post)",
@@ -162,7 +240,7 @@ Seja específico: formas, elementos, relações espaciais, metáforas visuais do
 
 Retorne APENAS o JSON, sem markdown, sem explicação."""
 
-    raw = call_text_model(system_prompt, api_key)
+    raw = call_text_model(system_prompt, api_key, prompt_model)
 
     # Extrai JSON mesmo se vier com ```json ... ```
     json_m = re.search(r'\{.*\}', raw, re.DOTALL)
@@ -180,12 +258,23 @@ Retorne APENAS o JSON, sem markdown, sem explicação."""
     return data
 
 
-def generate_image_bytes(prompt: str, api_key: str) -> bytes:
+def generate_image_bytes(
+    prompt: str,
+    api_key: str,
+    image_model: str,
+    style: str,
+    style_notes: str,
+    anti_generic: bool,
+) -> bytes:
     """Gera imagem via OpenRouter e retorna bytes brutos."""
+    style_suffix = STYLE_PROFILES.get(style, STYLE_PROFILES["default"])
+    extra = f" {style_notes.strip()}" if style_notes.strip() else ""
+    anti = ANTI_GENERIC_SUFFIX if anti_generic else ""
+
     payload = json.dumps({
-        "model": IMAGE_MODEL,
+        "model": image_model,
         "modalities": ["text", "image"],
-        "messages": [{"role": "user", "content": prompt + EDITORIAL_SUFFIX}],
+        "messages": [{"role": "user", "content": f"{prompt} {style_suffix}{extra}{anti}"}],
         "max_tokens": 4096,
     }).encode()
 
@@ -234,6 +323,15 @@ def save_webp(img_bytes: bytes, dest: Path, width: int, height: int, quality: in
     img.save(str(dest), "webp", quality=quality)
 
 
+def save_jpg_from_webp(src_webp: Path, dest_jpg: Path, quality: int = 92):
+    """Converte um webp local para JPG (útil para Instagram Graph API)."""
+    if not HAS_PIL:
+        return
+    img = Image.open(src_webp).convert("RGB")
+    dest_jpg.parent.mkdir(parents=True, exist_ok=True)
+    img.save(str(dest_jpg), "JPEG", quality=quality)
+
+
 def make_img_tag(path: Path, alt: str, width: int, height: int) -> str:
     rel = path.relative_to(ROOT)
     return (
@@ -246,17 +344,32 @@ def make_img_tag(path: Path, alt: str, width: int, height: int) -> str:
 # Core
 # ──────────────────────────────────────────────
 
-def run(html_path: Path, n_inline: int, only: str | None, dry_run: bool, quality: int, api_key: str):
+def run(
+    html_path: Path,
+    n_inline: int,
+    only: str | None,
+    dry_run: bool,
+    quality: int,
+    api_key: str,
+    style: str,
+    style_notes: str,
+    prompt_model: str,
+    image_model: str,
+    anti_generic: bool,
+):
     post = extract_post_content(html_path)
     slug = post["slug"]
     assets_dir = ROOT / "assets" / "images" / "blog" / slug
 
     print(f"\n📄 Post: {post['title']}")
     print(f"📁 Assets: assets/images/blog/{slug}/\n")
+    print(f"🎛️  Estilo: {style}")
+    print(f"🧠 Prompt model: {prompt_model}")
+    print(f"🖼️  Image model: {image_model}\n")
 
     # ── Gerar prompts ──
     print("💬 Gerando prompts com modelo de texto...")
-    prompts = generate_prompts(post, n_inline, api_key)
+    prompts = generate_prompts(post, n_inline, api_key, prompt_model, style, style_notes)
 
     jobs = []  # (nome, preset, prompt, dest_path)
 
@@ -290,8 +403,20 @@ def run(html_path: Path, n_inline: int, only: str | None, dry_run: bool, quality
     def generate_job(job):
         name, preset, prompt, dest = job
         w, h = PRESETS[preset]
-        img_bytes = generate_image_bytes(prompt, api_key)
+        img_bytes = generate_image_bytes(
+            prompt,
+            api_key,
+            image_model,
+            style,
+            style_notes,
+            anti_generic,
+        )
         save_webp(img_bytes, dest, w, h, quality)
+
+        # Gera card.jpg automaticamente para compatibilidade com Instagram.
+        if name == "card" and dest.suffix.lower() == ".webp":
+            save_jpg_from_webp(dest, dest.with_suffix(".jpg"))
+
         return name, dest, w, h
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
@@ -346,6 +471,16 @@ def main():
                         help="Mostra os prompts sem gerar imagens")
     parser.add_argument("--quality", type=int, default=85,
                         help="Qualidade webp 1-100 (padrão: 85)")
+    parser.add_argument("--style", choices=STYLE_PROFILES.keys(), default="default",
+                        help="Perfil de direção de arte (padrão: default)")
+    parser.add_argument("--style-notes", default="",
+                        help="Notas extras de direção de arte para anexar ao prompt")
+    parser.add_argument("--prompt-model", default=DEFAULT_PROMPT_MODEL,
+                        help="Modelo para gerar prompts (padrão: google/gemini-2.0-flash-001)")
+    parser.add_argument("--image-model", default=DEFAULT_IMAGE_MODEL,
+                        help="Modelo para gerar imagem (padrão: openai/gpt-5.4-image-2)")
+    parser.add_argument("--no-anti-generic", action="store_true",
+                        help="Desativa restrições anti visual genérico")
     args = parser.parse_args()
 
     env = load_env()
@@ -361,7 +496,19 @@ def main():
         print(f"❌ Post não encontrado: {html_path}")
         sys.exit(1)
 
-    run(html_path, args.inline, args.only, args.dry_run, args.quality, api_key)
+    run(
+        html_path,
+        args.inline,
+        args.only,
+        args.dry_run,
+        args.quality,
+        api_key,
+        args.style,
+        args.style_notes,
+        args.prompt_model,
+        args.image_model,
+        not args.no_anti_generic,
+    )
 
 
 if __name__ == "__main__":

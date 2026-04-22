@@ -21,7 +21,7 @@ BASE_URL_DEFAULT = "https://bolivaralencastro.com.br"
 ROOT_PAGES = ["index.html", "about.html", "blog.html", "projects.html", "now.html"]
 FEED_AUTHOR_NAME = "Bolívar Alencastro"
 FEED_AUTHOR_FALLBACK = "Bolivar Alencastro"
-LISTING_CARD_FILENAMES = ("card.webp", "cover.webp")
+LISTING_CARD_FILENAMES = ("card.png", "card.webp", "cover.png", "cover.webp")
 LISTING_CARD_WIDTH = 960
 LISTING_CARD_HEIGHT = 540
 VERSIONED_ASSETS = {
@@ -520,7 +520,7 @@ def resolve_listing_cover(url: str, base_url: str, repo_root: pathlib.Path) -> d
         candidate = source_asset.with_name(filename)
         if candidate.exists():
             result = {"path": f"/{candidate.relative_to(repo_root).as_posix()}", "width": None, "height": None}
-            if filename == "card.webp":
+            if filename in {"card.png", "card.webp"}:
                 result["width"] = LISTING_CARD_WIDTH
                 result["height"] = LISTING_CARD_HEIGHT
             return result
