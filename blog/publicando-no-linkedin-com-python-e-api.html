@@ -97,7 +97,7 @@
 
         <p>O segundo tropeço foi mais instrutivo. Com o endpoint correto, a chamada retornou um <code>422 Unprocessable Entity</code> com esta mensagem:</p>
 
-        <pre><code>author value urn:li:person:FptyQBlmzW is of type member.
+        <pre><code>author value urn:li:person:********** is of type member.
 Allowed URN types: urn:li:company, urn:li:member</code></pre>
 
         <p>A API sinalizava que o prefixo do URN estava errado — e, ao fazer isso, revelou o identificador correto no próprio corpo do erro. Pessoas físicas usam <code>urn:li:member:{id}</code>, não <code>urn:li:person:{id}</code>. O <code>id</code> numérico aparece no painel do LinkedIn Developer. Uma vez corrigido o prefixo, a publicação funcionou.</p>
