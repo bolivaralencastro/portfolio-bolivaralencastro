@@ -2,63 +2,53 @@
 name: image-generator
 description: >
   Gera imagens editoriais para posts do blog via OpenRouter (openai/gpt-5.4-image-2).
-  Use quando a tarefa envolve criar cover, card ou imagens inline para um post.
-  Chama o script diretamente — não faz chamadas de API manualmente.
+  Use quando a tarefa envolve criar imagens para um post. Para um post novo completo,
+  use generate_post_images.py que gera tudo automaticamente. Para imagens avulsas
+  com prompt específico, use generate_image.py.
 ---
 
 # Image Generator Skill
 
-Gera imagens webp editoriais em um único comando CLI. Não consome tokens de contexto com base64.
+Dois scripts disponíveis dependendo do contexto:
 
-## Pré-requisitos
+## Para posts novos — `generate_post_images.py` (recomendado)
 
-- `OPENROUTER_API_KEY` no `.env`
-- `Pillow` instalado: `pip3 install Pillow`
-- `certifi` instalado: `pip3 install certifi`
-
-## Comandos
+Lê o HTML do post, gera prompts visuais com modelo de texto barato e cria todas as imagens em paralelo.
 
 ```bash
-# Cover do post (1400x787)
-python3 scripts/generate_image.py "descrição visual" meu-slug/cover --preset cover
+# Ver prompts antes de gastar (sem custo de imagem)
+python3 scripts/generate_post_images.py blog/<slug>.html --dry-run
 
-# Card social (960x540)
-python3 scripts/generate_image.py "descrição visual" meu-slug/card --preset card
+# Gerar cover + card + 2 inline (padrão)
+python3 scripts/generate_post_images.py blog/<slug>.html
 
-# Imagem inline no corpo do post (1200x675)
-python3 scripts/generate_image.py "descrição visual" meu-slug/nome-da-imagem --preset inline
+# Gerar cover + card + 3 inline
+python3 scripts/generate_post_images.py blog/<slug>.html --inline 3
 
-# Path absoluto ou relativo
+# Gerar só a cover
+python3 scripts/generate_post_images.py blog/<slug>.html --only cover
+```
+
+**Saída:** salva webps em `assets/images/blog/<slug>/` e imprime `<img>` tags prontas para colar no HTML.
+
+## Para imagens avulsas — `generate_image.py`
+
+Quando o prompt é específico e conhecido de antemão.
+
+```bash
+# Usando preset
+python3 scripts/generate_image.py "descrição visual" slug/nome --preset cover
+python3 scripts/generate_image.py "descrição visual" slug/nome --preset card
+python3 scripts/generate_image.py "descrição visual" slug/nome --preset inline
+
+# Path direto
 python3 scripts/generate_image.py "descrição" assets/images/blog/slug/img.webp
 
-# Listar presets
+# Listar presets disponíveis
 python3 scripts/generate_image.py --list-presets
 ```
 
-### Resolução de path
-
-- `slug/nome` (sem extensão) → `assets/images/blog/slug/nome.webp` criado automaticamente
-- Path com extensão → usado como está (relativo ao root do projeto)
-
-## Como escrever bons prompts
-
-O script adiciona automaticamente contexto editorial padrão:
-> "Dark charcoal background. Flat vector graphic style. Blue and teal accents. No readable text."
-
-Então o prompt deve descrever **apenas o conteúdo visual**, sem repetir estilo:
-
-```
-✅ "Terminal window on the left, LinkedIn card on the right, connected by a data stream arrow"
-✅ "OAuth flow: browser with authorize button, curved arrow to local server icon"
-✅ "Three-step horizontal pipeline: HTML file → CLI checkmark → LinkedIn post"
-
-❌ "A dark, editorial, flat vector illustration of..."  # desnecessário
-❌ "Generate an image of..."  # desnecessário
-```
-
-Use `--raw-prompt` para desativar o contexto automático quando precisar de estilo diferente.
-
-## Presets disponíveis
+## Presets
 
 | Preset   | Dimensão   | Uso                          |
 |----------|------------|------------------------------|
@@ -67,21 +57,25 @@ Use `--raw-prompt` para desativar o contexto automático quando precisar de esti
 | `inline` | 1200×675   | Imagens no corpo do post     |
 | `square` | 800×800    | Uso geral                    |
 
-## Fluxo típico para novo post
+## Escrevendo prompts para `generate_image.py`
 
-```bash
-# 1. Gerar cover e card
-python3 scripts/generate_image.py "descrição do post" meu-slug/cover --preset cover
-python3 scripts/generate_image.py "variação para card" meu-slug/card --preset card
+O script injeta contexto editorial automaticamente (dark background, flat vector, blue/teal, no text).
+Descreva apenas o **conteúdo visual**:
 
-# 2. Gerar imagens inline (quantas precisar)
-python3 scripts/generate_image.py "step 1 do fluxo" meu-slug/fluxo-01 --preset inline
-python3 scripts/generate_image.py "detalhe técnico" meu-slug/detalhe-02 --preset inline
+```
+✅ "Terminal window on the left, LinkedIn card on the right, connected by a data stream"
+✅ "Three-step pipeline: HTML file → CLI checkmark → LinkedIn post"
+❌ "A dark editorial flat vector illustration of..."  # redundante
 ```
 
-## Notas
+Use `--raw-prompt` para desativar o contexto automático.
 
-- Cada chamada custa ~$0.22 (7024 image tokens no modelo gpt-5.4-image-2)
-- Tempo médio por imagem: 90–150 segundos
-- Arquivos PNG originais são descartados; só o webp final é mantido
-- A chave `OPENROUTER_API_KEY` fica no `.env` (gitignored)
+## Pré-requisitos
+
+- `OPENROUTER_API_KEY` no `.env`
+- `pip3 install Pillow certifi`
+
+## Custo estimado
+
+- ~$0.22 por imagem (modelo gpt-5.4-image-2)
+- Geração de prompts via `generate_post_images.py`: ~$0.001 (Gemini Flash)

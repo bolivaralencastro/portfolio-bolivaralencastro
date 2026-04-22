@@ -21,22 +21,47 @@ Read:
 ## Blog post workflow
 
 1. Define the slug and create `blog/<slug>.html`.
-2. Create or reuse an asset folder at `assets/images/blog/<slug>/`.
-3. Add the minimum metadata required by the repository:
-   - title
-   - description
-   - canonical
-   - `og:image`
-   - one `h1`
-   - `.p-summary`
-   - `time.dt-published`
-   - JSON-LD `BlogPosting`
-4. Link cited people, companies, products, events, and documentation when those references are public and stable.
-5. If images are used, optimize them for the web and prefer `webp`.
-6. Add contextual variation to the author card instead of reusing the same line everywhere.
-7. Run:
-   - `python3 scripts/build_site_metadata.py`
-   - `python3 scripts/validate_site.py`
+2. Write the full post content and metadata.
+3. Generate all images automatically:
+   ```bash
+   # Preview prompts first (no cost)
+   python3 scripts/generate_post_images.py blog/<slug>.html --inline 2 --dry-run
+
+   # Generate cover, card and inline images in parallel
+   python3 scripts/generate_post_images.py blog/<slug>.html --inline 2
+   ```
+4. Insert the printed `<img>` tags into the post body at the appropriate positions.
+5. If images were provided by the user (photos, screenshots), use `blog_image_workflow.py` to compose triptychs and convert to webp.
+6. Link cited people, companies, products, events, and documentation when those references are public and stable.
+7. Add contextual variation to the author card instead of reusing the same line everywhere.
+8. Run:
+   ```bash
+   python3 scripts/build_site_metadata.py
+   python3 scripts/validate_site.py
+   ```
+
+## Image generation reference
+
+`generate_post_images.py` reads the post HTML, uses a cheap text model to write contextual visual prompts, then generates all images in parallel via OpenRouter.
+
+| Flag | Effect |
+|------|--------|
+| `--inline N` | Number of inline images (default: 2) |
+| `--dry-run` | Shows prompts without generating images |
+| `--only cover\|card\|inline` | Generate only one image type |
+
+Output files land in `assets/images/blog/<slug>/` automatically.
+Use `generate_image.py` (singular) only when you need a one-off image with a specific prompt.
+
+## Publishing to LinkedIn (optional)
+
+```bash
+python3 scripts/linkedin_post.py              # latest post
+python3 scripts/linkedin_post.py --dry-run    # preview
+python3 scripts/linkedin_post.py --slug <slug>
+```
+
+Requires `LINKEDIN_ACCESS_TOKEN` in `.env`. If expired, run `linkedin_auth.py` first.
 
 ## Editing existing posts
 
