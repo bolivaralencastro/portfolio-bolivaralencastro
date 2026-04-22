@@ -4,7 +4,7 @@
   <subtitle>Product Design e Arquitetura Web Nativa</subtitle>
   <link href="https://bolivaralencastro.com.br/feed.xml" rel="self"/>
   <link href="https://bolivaralencastro.com.br/blog.html" rel="alternate"/>
-  <updated>2026-04-21T00:00:00Z</updated>
+  <updated>2026-04-22T00:00:00Z</updated>
   <id>https://bolivaralencastro.com.br/feed.xml</id>
   <author>
     <name>Bolívar Alencastro</name>
@@ -13,6 +13,16 @@
   <contributor>
     <name>Bolivar Alencastro</name>
   </contributor>
+
+  <entry>
+    <title>O que 30 dias de posts salvos me disseram sobre IA</title>
+    <link href="https://bolivaralencastro.com.br/blog/o-que-30-dias-de-posts-salvos-me-disseram-sobre-ia.html" rel="alternate"/>
+    <id>https://bolivaralencastro.com.br/blog/o-que-30-dias-de-posts-salvos-me-disseram-sobre-ia.html</id>
+    <published>2026-04-22T00:00:00Z</published>
+    <updated>2026-04-22T00:00:00Z</updated>
+    <summary>Salvei posts no LinkedIn por 30 dias. O acúmulo não virou hype — virou padrão. Cinco temas que apareceram com consistência: custo de uso, agentes em produção, MCP, voz como interface, e o Brasil na posição 61 de 116.</summary>
+    <content type="html">&lt;p&gt;Tenho o hábito de salvar posts no LinkedIn quando alguma coisa parece densa o suficiente para merecer atenção depois. Não é curadoria intencional — é mais um reflexo. Salvo, fecho a aba, e raramente volto.&lt;/p&gt;</content>
+  </entry>
 
   <entry>
     <title>Publicando no LinkedIn com Python e a REST API</title>
