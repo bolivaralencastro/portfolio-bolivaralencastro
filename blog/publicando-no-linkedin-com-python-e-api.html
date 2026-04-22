@@ -92,6 +92,8 @@
 
         <p>A autenticação usa <a href="https://learn.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow" rel="noopener noreferrer" target="_blank">OAuth 2.0 com Authorization Code Flow</a>. O script <code>scripts/linkedin_auth.py</code> sobe um servidor local na porta 8080 como callback, captura o código de autorização, troca pelo access token e salva em disco. O <code>linkedin_post.py</code> lê esse token e cuida do resto.</p>
 
+        <img src="/assets/images/blog/publicando-no-linkedin-com-python-e-api/oauth-flow.webp" alt="Diagrama do fluxo OAuth 2.0: browser abrindo a autorização e retornando o token para o servidor local na porta 8080" width="1200" height="675" loading="lazy" decoding="async">
+
         <h2>Os erros que ensinaram mais</h2>
         <p>A primeira tentativa de publicar usou o endpoint <code>/v2/ugcPosts</code> — que era o padrão documentado por anos. A resposta foi um <code>403 Forbidden</code> sem mensagem útil. O motivo, enterrado na documentação da LinkedIn, é que esse endpoint exige verificação de app de terceiros, que não se aplica a scripts pessoais. A solução foi migrar para a nova API <code>/rest/posts</code>, que funciona com o scope <code>w_member_social</code> sem nenhuma verificação adicional. Essa diferença não está sinalizada de forma óbvia — o <code>403</code> parece um problema de credencial, não de endpoint.</p>
 
@@ -101,6 +103,8 @@
 Allowed URN types: urn:li:company, urn:li:member</code></pre>
 
         <p>A API sinalizava que o prefixo do URN estava errado — e, ao fazer isso, revelou o identificador correto no próprio corpo do erro. Pessoas físicas usam <code>urn:li:member:{id}</code>, não <code>urn:li:person:{id}</code>. O <code>id</code> numérico aparece no painel do LinkedIn Developer. Uma vez corrigido o prefixo, a publicação funcionou.</p>
+
+        <img src="/assets/images/blog/publicando-no-linkedin-com-python-e-api/erro-422.webp" alt="Ilustração do erro 422 da API com lupa destacando a informação útil dentro do corpo do erro — o URN correto" width="1200" height="675" loading="lazy" decoding="async">
 
         <p>Um detalhe de ambiente: no macOS com Python 3.14+, as requisições HTTPS para a API falham por SSL sem intervenção explícita. A correção é instalar o <a href="https://pypi.org/project/certifi/" rel="noopener noreferrer" target="_blank">certifi</a> e injetar o bundle de certificados no início do script com <code>ssl.create_default_context(cafile=certifi.where())</code>.</p>
 
@@ -112,6 +116,8 @@ Allowed URN types: urn:li:company, urn:li:member</code></pre>
           <li><code>python3 scripts/build_site_metadata.py</code></li>
           <li><code>python3 scripts/linkedin_post.py</code></li>
         </ol>
+
+        <img src="/assets/images/blog/publicando-no-linkedin-com-python-e-api/pipeline.webp" alt="Pipeline de três etapas: arquivo HTML, comando no terminal com sucesso, e post publicado no LinkedIn" width="1200" height="675" loading="lazy" decoding="async">
 
         <p>O script também aceita <code>--dry-run</code> para simular a publicação sem postar de fato, e <code>--slug &lt;slug&gt;</code> para publicar um post específico em vez do mais recente. A saída no terminal confirma cada etapa: detecção do post, upload da imagem, publicação, URL do post publicado.</p>
 
