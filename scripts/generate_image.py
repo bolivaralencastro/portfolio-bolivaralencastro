@@ -55,6 +55,75 @@ PRESETS = {
 
 MODEL = "openai/gpt-5.4-image-2"
 
+STYLE_PROFILES = {
+    "default": (
+        "Dark charcoal background. Flat vector graphic style. "
+        "Blue and teal accent colors. Clean, minimal, modern editorial illustration."
+    ),
+    "diagrammatic": (
+        "Diagrammatic editorial style. Strong geometric blocks and clear visual hierarchy. "
+        "Dark slate background with cyan accents. Crisp edges and restrained detail."
+    ),
+    "newsprint-collage": (
+        "Editorial collage style inspired by magazine art direction. "
+        "Textured paper feeling, cutout shapes, bold contrast, limited palette."
+    ),
+    "constructivist": (
+        "Constructivist editorial poster style with angular forms and dynamic diagonals. "
+        "High contrast composition and assertive negative space."
+    ),
+    "surrealist-portrait": (
+        "Extreme asymmetric close-up composition with deliberate scale distortion. "
+        "Dramatic high-contrast shadow masses against bright highlight zones. "
+        "Restricted saturated palette. Hyper-detailed focal textures contrasted against "
+        "grainy abstract color fields. Surrealist editorial art direction."
+    ),
+    "painterly-landscape": (
+        "Visible impasto brushstrokes and palette-knife texture throughout. "
+        "Broken warm-cool color transitions — ochre against ultramarine. "
+        "Asymmetric low-horizon composition with atmospheric perspective. "
+        "Painterly abstraction over photorealism. No photographic sharpness."
+    ),
+    "pop-editorial": (
+        "Artificial staged backdrop — hand-painted flat panel behind subject. "
+        "High-saturation limited palette: royal blue, red accent, cream. "
+        "Harsh direct frontal lighting, flattened color planes. "
+        "Tactile material texture emphasis. Subtle film grain. "
+        "Poster-like composition with strong graphic intent."
+    ),
+    "electron-monochrome": (
+        "Hyper-fisheye lens distortion filling the entire frame, no vignetting, no edge blur. "
+        "Extreme monochromatic tonal range from blown-out whites to dense blacks. "
+        "Ultra-fine filamentary micro-texture as if imaged by scanning electron microscope "
+        "at 10,000x magnification. Radial spiral vortex composition. "
+        "No color, no warm tones, no atmospheric haze."
+    ),
+    "garden-microscope": (
+        "Maximum chromatic saturation with harmonious palette — emerald, burnt orange, "
+        "lime green, burgundy, teal — at uniform luminosity. "
+        "Ultra-fine pointillist micro-texture on every surface: moss, raked sand, stone, foliage. "
+        "Soft isometric overhead perspective, no sky, no horizon. "
+        "Flat diffuse lighting with no directional shadows. "
+        "Frame entirely filled with subject, zero negative space."
+    ),
+    "fantasy-fashion": (
+        "Hyper-low angle portrait (camera below chin looking up), slight wide-angle distortion "
+        "without vignetting. Cool D65 white balance — zero warm cast, zero golden hour. "
+        "Deliberate warm-cool palette tension: deep red or burgundy against electric blue or teal. "
+        "Fantasy costume elements rendered as tactile real-world materials with "
+        "ultra-fine fabric texture detail — individual threads, velvet pile direction, "
+        "translucent wing venation. Dramatic single-source cool top-front key light "
+        "with hard shadow fall-off, no warm bounce. "
+        "Autumnal background with orange-blue color separation at depth. "
+        "Biomimetic skin clarity and 0.3mm sparkle micro-detail on reflective surfaces."
+    ),
+}
+
+ANTI_GENERIC_SUFFIX = (
+    " Avoid generic stock AI iconography, floating random particles, lens flare, "
+    "and corporate 3D clipart aesthetics. No readable text or labels in the image."
+)
+
 
 def load_api_key() -> str:
     key = os.environ.get("OPENROUTER_API_KEY", "")
@@ -92,10 +161,10 @@ def resolve_output_path(raw: str) -> Path:
     return (p if p.is_absolute() else ROOT / p).with_suffix(".webp")
 
 
-def generate_image_b64(prompt: str, api_key: str) -> bytes:
+def generate_image_b64(prompt: str, api_key: str, model: str) -> bytes:
     """Chama a API e retorna os bytes brutos da imagem."""
     payload = json.dumps({
-        "model": MODEL,
+        "model": model,
         "modalities": ["text", "image"],
         "messages": [{"role": "user", "content": prompt}],
         "max_tokens": 4096,
@@ -153,13 +222,19 @@ def save_as_webp(img_bytes: bytes, dest: Path, width: int, height: int, quality:
     img.save(str(dest), "webp", quality=quality)
 
 
-def build_editorial_prompt(user_prompt: str) -> str:
-    """Adiciona contexto editorial padrão ao prompt do usuário."""
+def build_editorial_prompt(
+    user_prompt: str,
+    style: str,
+    style_notes: str,
+    use_anti_generic: bool,
+) -> str:
+    """Monta prompt editorial com perfil de estilo configurável."""
+    style_suffix = STYLE_PROFILES.get(style, STYLE_PROFILES["default"])
+    extra = f" {style_notes.strip()}" if style_notes.strip() else ""
+    anti = ANTI_GENERIC_SUFFIX if use_anti_generic else ""
     return (
         f"{user_prompt} "
-        "Dark charcoal background. Flat vector graphic style. "
-        "Blue and teal accent colors. No readable text or labels in the image. "
-        "Clean, minimal, modern editorial illustration."
+        f"{style_suffix}{extra}{anti}"
     )
 
 
@@ -178,6 +253,14 @@ def main():
     parser.add_argument("--quality", type=int, default=85, help="Qualidade webp 1-100 (padrão: 85)")
     parser.add_argument("--raw-prompt", action="store_true",
                         help="Usa o prompt exatamente como fornecido, sem contexto editorial")
+    parser.add_argument("--style", choices=STYLE_PROFILES.keys(), default="default",
+                        help="Perfil de direção de arte (padrão: default)")
+    parser.add_argument("--style-notes", default="",
+                        help="Notas extras de direção de arte para anexar ao prompt")
+    parser.add_argument("--no-anti-generic", action="store_true",
+                        help="Desativa as restrições anti visual genérico")
+    parser.add_argument("--model", default=MODEL,
+                        help="Modelo de imagem (padrão: openai/gpt-5.4-image-2)")
     parser.add_argument("--list-presets", action="store_true", help="Lista os presets disponíveis")
     args = parser.parse_args()
 
@@ -204,14 +287,21 @@ def main():
         h = args.height
 
     dest = resolve_output_path(args.output)
-    prompt = args.prompt if args.raw_prompt else build_editorial_prompt(args.prompt)
+    prompt = args.prompt if args.raw_prompt else build_editorial_prompt(
+        args.prompt,
+        args.style,
+        args.style_notes,
+        not args.no_anti_generic,
+    )
 
     print(f"🎨 Gerando imagem ({w}x{h})...")
+    print(f"   Estilo: {args.style}")
+    print(f"   Modelo: {args.model}")
     print(f"   Prompt: {prompt[:80]}{'...' if len(prompt) > 80 else ''}")
     print(f"   Destino: {dest.relative_to(ROOT) if dest.is_relative_to(ROOT) else dest}")
 
     try:
-        img_bytes = generate_image_b64(prompt, api_key)
+        img_bytes = generate_image_b64(prompt, api_key, args.model)
         save_as_webp(img_bytes, dest, w, h, args.quality)
         size_kb = dest.stat().st_size // 1024
         print(f"✅ Salvo: {dest.relative_to(ROOT) if dest.is_relative_to(ROOT) else dest} ({size_kb}KB)")
