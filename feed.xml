@@ -4,7 +4,7 @@
   <subtitle>Product Design e Arquitetura Web Nativa</subtitle>
   <link href="https://bolivaralencastro.com.br/feed.xml" rel="self"/>
   <link href="https://bolivaralencastro.com.br/blog.html" rel="alternate"/>
-  <updated>2026-04-18T00:00:00Z</updated>
+  <updated>2026-04-21T00:00:00Z</updated>
   <id>https://bolivaralencastro.com.br/feed.xml</id>
   <author>
     <name>Bolívar Alencastro</name>
@@ -15,6 +15,16 @@
   </contributor>
 
   <entry>
+    <title>Publicando no LinkedIn com Python e a REST API</title>
+    <link href="https://bolivaralencastro.com.br/blog/publicando-no-linkedin-com-python-e-api.html" rel="alternate"/>
+    <id>https://bolivaralencastro.com.br/blog/publicando-no-linkedin-com-python-e-api.html</id>
+    <published>2026-04-21T00:00:00Z</published>
+    <updated>2026-04-21T00:00:00Z</updated>
+    <summary>Um script Python que detecta o post mais recente, faz upload da imagem e publica no LinkedIn em um comando — o URN correto apareceu no corpo de um erro 422.</summary>
+    <content type="html">&lt;p&gt;Toda vez que publico um post novo, a etapa seguinte é abrir o LinkedIn, colar o link, escolher a imagem, escrever alguma coisa e postar. São dez minutos que sempre parecem desnecessários — não pelo esforço, mas porque toda informação para fazer isso já está no próprio blog. Então resolvi automatizar.&lt;/p&gt;</content>
+  </entry>
+
+  <entry>
     <title>No Cubo, o Agent Speedrun expôs a infraestrutura por trás de um agente utilizável</title>
     <link href="https://bolivaralencastro.com.br/blog/agent-speedrun-bedrock-agentcore-e-o-que-ficou-do-workshop-no-cubo.html" rel="alternate"/>
     <id>https://bolivaralencastro.com.br/blog/agent-speedrun-bedrock-agentcore-e-o-que-ficou-do-workshop-no-cubo.html</id>
@@ -22,6 +32,16 @@
     <updated>2026-04-18T00:00:00Z</updated>
     <summary>No Cubo Itaú, o Agent Speedrun expôs memória, guardrails, runtime e o tipo de estrutura que sustenta um agente quando a demo acaba.</summary>
     <content type="html">&lt;p&gt;Na sexta-feira, 17 de abril de 2026, participei do Agent Speedrun: de horas para minutos, no Cubo Itaú, em São Paulo. O encontro foi organizado por Eduardo “Dug” Hilpert e conduzido por Vitor Guimarães e Lucas Nunes, da DNX Brasil. A promessa do título era velocidade. O ponto mais interessante, porém, apareceu em outro lugar: na infraestrutura que torna um agente utilizável fora da demo.&lt;/p&gt;</content>
+  </entry>
+
+  <entry>
+    <title>Quando infraestrutura, automação, interface e voz entram na mesma aplicação</title>
+    <link href="https://bolivaralencastro.com.br/blog/oracle-n8n-vercel-elevenlabs-e-a-stack-ai-first-no-cubo.html" rel="alternate"/>
+    <id>https://bolivaralencastro.com.br/blog/oracle-n8n-vercel-elevenlabs-e-a-stack-ai-first-no-cubo.html</id>
+    <published>2026-04-14T00:00:00Z</published>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <summary>No evento promovido pela Oracle no Cubo Itaú, OCI, n8n, Vercel e ElevenLabs apareceram como partes de uma mesma arquitetura: infraestrutura, automação, interface e voz.</summary>
+    <content type="html">&lt;p&gt;Na terça-feira, 14 de abril de 2026, participei do Build AI-First Applications: Fast, Scalable &amp; Autonomous, no Cubo Itaú, em São Paulo. O evento reuniu Oracle e Venture Miner Academy em uma jornada de desenvolvimento completa: da infraestrutura até a aplicação. A stack anunciada era direta e bastante sintomática do momento: Oracle, n8n, Vercel e ElevenLabs.&lt;/p&gt;</content>
   </entry>
 
   <entry>
