@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publicando no LinkedIn com Python e a REST API - Blog</title>
+  <meta name="description" content="Um script Python que detecta o post mais recente, faz upload da imagem e publica no LinkedIn em um comando — o URN correto apareceu no corpo de um erro 422.">
+  <link rel="stylesheet" href="/style.css?v=af10d41536">
+  <script src="/assets/js/clarity.js?v=b9b7739aa6" defer></script>
+  <link rel="canonical" href="https://bolivaralencastro.com.br/blog/publicando-no-linkedin-com-python-e-api.html">
+  <meta name="author" content="Bolívar Alencastro">
+  <meta name="generator" content="Handcrafted HTML">
+  <link rel="webmention" href="https://webmention.io/bolivaralencastro.com.br/webmention">
+  <link rel="pingback" href="https://webmention.io/bolivaralencastro.com.br/xmlrpc">
+  <link rel="me" href="https://github.com/bolivaralencastro">
+  <link rel="me" href="https://www.instagram.com/bolivar.alencastro/">
+  <link rel="me" href="https://www.linkedin.com/in/bolivaralencastro/">
+
+  <meta property="og:title" content="Publicando no LinkedIn com Python e a REST API">
+  <meta property="og:description" content="Um script Python que detecta o post mais recente, faz upload da imagem e publica no LinkedIn em um comando — o URN correto apareceu no corpo de um erro 422.">
+  <meta property="og:url" content="https://bolivaralencastro.com.br/blog/publicando-no-linkedin-com-python-e-api.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://bolivaralencastro.com.br/assets/images/blog/publicando-no-linkedin-com-python-e-api/cover.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Publicando no LinkedIn com Python e a REST API">
+  <meta name="twitter:description" content="Um script Python que detecta o post mais recente, faz upload da imagem e publica no LinkedIn em um comando — o URN correto apareceu no corpo de um erro 422.">
+  <meta name="twitter:image" content="https://bolivaralencastro.com.br/assets/images/blog/publicando-no-linkedin-com-python-e-api/cover.webp">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Publicando no LinkedIn com Python e a REST API",
+    "description": "Um script Python que detecta o post mais recente, faz upload da imagem e publica no LinkedIn em um comando — o URN correto apareceu no corpo de um erro 422.",
+    "mainEntityOfPage": "https://bolivaralencastro.com.br/blog/publicando-no-linkedin-com-python-e-api.html",
+    "url": "https://bolivaralencastro.com.br/blog/publicando-no-linkedin-com-python-e-api.html",
+    "image": "https://bolivaralencastro.com.br/assets/images/blog/publicando-no-linkedin-com-python-e-api/cover.webp",
+    "datePublished": "2026-04-21",
+    "dateModified": "2026-04-21",
+    "author": {
+      "@type": "Person",
+      "name": "Bolívar Alencastro"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Bolívar Alencastro"
+    }
+  }
+  </script>
+  <meta name="view-transition" content="same-origin">
+</head>
+<body>
+  <div class="grain"></div>
+  <a href="#main" class="skip-link">Pular para o conteúdo</a>
+
+  <header class="grid">
+    <div class="brand col-7"><a href="/" class="brand-link" aria-label="Ir para a página inicial"><span class="brand-mark" aria-hidden="true"><span class="dot dot-blue"></span></span><strong>Bolívar Alencastro</strong></a></div>
+    <nav class="col-5" aria-label="Navegação principal">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/projects.html">Projects</a></li>
+        <li><a href="/blog.html" aria-current="page">Blog</a></li>
+        <li><a href="/now.html">Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="grid">
+    <article class="h-entry col-12">
+      <h1 class="p-name col-9">Publicando no LinkedIn com Python e a REST API</h1>
+      <div class="post-meta col-12">
+        <time class="dt-published" datetime="2026-04-21">21 Abr 2026</time>
+        <span class="meta-separator" aria-hidden="true">•</span>
+        <span class="p-category">Dev Tools</span>
+        <span class="meta-separator" aria-hidden="true">•</span>
+        <span class="reading-time">5 min de leitura</span>
+        <span class="meta-separator" aria-hidden="true">•</span>
+        <a class="u-url" href="/blog/publicando-no-linkedin-com-python-e-api.html">permalink</a>
+      </div>
+      <p class="p-summary col-8">Um script Python que detecta o post mais recente, faz upload da imagem e publica no LinkedIn em um comando — o URN correto apareceu no corpo de um erro 422.</p>
+
+      <img class="col-12" src="/assets/images/blog/publicando-no-linkedin-com-python-e-api/cover.webp" alt="Ilustração editorial mostrando terminal com saída de script Python conectado a um card do LinkedIn" width="1400" height="787" loading="lazy" decoding="async">
+
+      <div class="e-content col-8 section-block">
+        <p>Toda vez que publico um post novo, a etapa seguinte é abrir o LinkedIn, colar o link, escolher a imagem, escrever alguma coisa e postar. São dez minutos que sempre parecem desnecessários — não pelo esforço, mas porque toda informação para fazer isso já está no próprio blog. Então resolvi automatizar.</p>
+
+        <p>O resultado é <code>scripts/linkedin_post.py</code>: um script Python que lê o post mais recente do blog, faz upload da imagem de capa para a <a href="https://learn.microsoft.com/en-us/linkedin/" rel="noopener noreferrer" target="_blank">LinkedIn REST API</a> e publica em um único comando. A parte mais interessante do processo não foi a automação em si, mas o que apareceu ao longo do caminho.</p>
+
+        <h2>O que o script faz</h2>
+        <p>O fluxo tem três etapas. Primeiro, o script detecta automaticamente o post mais recente percorrendo todos os arquivos <code>blog/*.html</code> e lendo o atributo <code>datetime</code> das tags <code>&lt;time&gt;</code> — a mesma fonte que alimenta o feed RSS e a listagem do blog. Segundo, faz upload da imagem <code>card.webp</code> do post via <code>/rest/images?action=initializeUpload</code>, que retorna uma URL de upload e um URN de imagem para referenciar depois. Terceiro, publica via <code>POST /rest/posts</code> com o header <code>LinkedIn-Version: 202503</code>.</p>
+
+        <p>A autenticação usa <a href="https://learn.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow" rel="noopener noreferrer" target="_blank">OAuth 2.0 com Authorization Code Flow</a>. O script <code>scripts/linkedin_auth.py</code> sobe um servidor local na porta 8080 como callback, captura o código de autorização, troca pelo access token e salva em disco. O <code>linkedin_post.py</code> lê esse token e cuida do resto.</p>
+
+        <h2>Os erros que ensinaram mais</h2>
+        <p>A primeira tentativa de publicar usou o endpoint <code>/v2/ugcPosts</code> — que era o padrão documentado por anos. A resposta foi um <code>403 Forbidden</code> sem mensagem útil. O motivo, enterrado na documentação da LinkedIn, é que esse endpoint exige verificação de app de terceiros, que não se aplica a scripts pessoais. A solução foi migrar para a nova API <code>/rest/posts</code>, que funciona com o scope <code>w_member_social</code> sem nenhuma verificação adicional. Essa diferença não está sinalizada de forma óbvia — o <code>403</code> parece um problema de credencial, não de endpoint.</p>
+
+        <p>O segundo tropeço foi mais instrutivo. Com o endpoint correto, a chamada retornou um <code>422 Unprocessable Entity</code> com esta mensagem:</p>
+
+        <pre><code>author value urn:li:person:FptyQBlmzW is of type member.
+Allowed URN types: urn:li:company, urn:li:member</code></pre>
+
+        <p>A API sinalizava que o prefixo do URN estava errado — e, ao fazer isso, revelou o identificador correto no próprio corpo do erro. Pessoas físicas usam <code>urn:li:member:{id}</code>, não <code>urn:li:person:{id}</code>. O <code>id</code> numérico aparece no painel do LinkedIn Developer. Uma vez corrigido o prefixo, a publicação funcionou.</p>
+
+        <p>Um detalhe de ambiente: no macOS com Python 3.14+, as requisições HTTPS para a API falham por SSL sem intervenção explícita. A correção é instalar o <a href="https://pypi.org/project/certifi/" rel="noopener noreferrer" target="_blank">certifi</a> e injetar o bundle de certificados no início do script com <code>ssl.create_default_context(cafile=certifi.where())</code>.</p>
+
+        <h2>O fluxo funcionando</h2>
+        <p>Com tudo resolvido, o ciclo de publicação ficou assim:</p>
+
+        <ol>
+          <li>Escrever o post HTML no blog</li>
+          <li><code>python3 scripts/build_site_metadata.py</code></li>
+          <li><code>python3 scripts/linkedin_post.py</code></li>
+        </ol>
+
+        <p>O script também aceita <code>--dry-run</code> para simular a publicação sem postar de fato, e <code>--slug &lt;slug&gt;</code> para publicar um post específico em vez do mais recente. A saída no terminal confirma cada etapa: detecção do post, upload da imagem, publicação, URL do post publicado.</p>
+
+        <p>A <a href="https://learn.microsoft.com/en-us/linkedin/" rel="noopener noreferrer" target="_blank">LinkedIn REST API</a> tem documentação razoável, mas a distância entre o que está escrito e o que funciona para apps pessoais não verificados é suficiente para fazer alguns endpoints parecerem quebrados quando não estão. A migração de <code>/v2/ugcPosts</code> para <code>/rest/posts</code> não aparece como requisito óbvio em nenhum lugar central. O erro 422 foi mais útil do que qualquer página de docs.</p>
+
+        <section class="author-card h-card" aria-label="Sobre o autor">
+          <p class="author-card-title">Sobre o autor</p>
+          <div class="author-card-inner">
+          <img class="author-card-photo u-photo" src="/assets/images/author/bolivar-alencastro.webp" alt="Foto de Bolívar Alencastro" width="641" height="640" loading="lazy">
+          <div class="author-card-body">
+            <h3 class="author-card-name p-name"><a class="u-url" href="/about.html">Bolívar Alencastro</a></h3>
+            <p class="author-card-copy p-note">Product Designer em São Paulo que prefere automatizar a própria presença digital a terceirizar para uma ferramenta que decide o formato, o horário e o texto por você.</p>
+            <ul class="author-card-links" aria-label="Redes sociais do autor">
+              <li><a rel="me noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/bolivaralencastro/">LinkedIn</a></li>
+              <li><a rel="me noopener noreferrer" target="_blank" href="https://www.instagram.com/bolivar.alencastro/">Instagram</a></li>
+            </ul>
+          </div>
+          </div>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <footer class="grid">
+    <p class="col-9">&copy; 2026 Bolívar Alencastro. Design HTML-first.</p>
+    <nav class="footer-links col-3" aria-label="Links do rodapé">
+      <ul>
+        <li><a href="/feed.xml" rel="alternate">RSS Feed</a></li>
+        <li><a href="/sitemap.xml">Sitemap</a></li>
+        <li><a href="/humans.txt">Humans</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
