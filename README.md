@@ -6,6 +6,20 @@ Portfolio HTML-first publicado no GitHub Pages em `https://bolivaralencastro.com
 
 Este repositorio usa scripts Python (stdlib) para manter metadados, indices editoriais e URLs versionadas de assets sem CMS.
 
+## Camada agentica
+
+Este repositorio agora inclui uma camada minima de customizacao para fluxos agentic no VS Code e em outros agentes compatíveis:
+
+- `AGENTS.md`: regras gerais do workspace para agentes
+- `.github/copilot-instructions.md`: instrucoes sempre ativas para GitHub Copilot
+- `.github/instructions/blog-html.instructions.md`: convencoes especificas para `blog/*.html`
+- `.github/skills/portfolio-editorial/SKILL.md`: workflow editorial reutilizavel para posts e revisoes
+- `.github/skills/portfolio-blog-images/SKILL.md`: workflow reutilizavel para combinar imagens em trios e converter assets para webp
+- `.github/prompts/*.prompt.md`: prompts prontos para criar, revisar e adaptar blogposts
+- `.github/agents/blog-editor.agent.md`: agente editorial para estruturar e lapidar publicacoes do portfolio
+
+Esses arquivos nao substituem o `README`; eles tornam o contexto operacional do repositorio mais facil de carregar e reaproveitar em tarefas recorrentes.
+
 Arquivos, blocos e referencias gerados automaticamente:
 - `sitemap.xml`
 - `feed.xml`
@@ -21,6 +35,7 @@ Scripts:
 - `python scripts/build_site_metadata.py`: gera sitemap, feed, blocos auto-gerados e atualiza o versionamento de assets publicos.
 - `python scripts/build_site_metadata.py --check`: falha se os arquivos gerados ou as URLs versionadas de assets estiverem desatualizados.
 - `python scripts/validate_site.py`: valida SEO/editorial/integridade.
+- `python scripts/blog_image_workflow.py`: compoe tripticos horizontais sem corte e converte assets para `webp`.
 
 ## Analytics
 
@@ -45,11 +60,18 @@ Scripts:
   - roda em `pull_request` e `push`
   - executa `build_site_metadata.py --check`
   - executa `validate_site.py`
-- `.github/workflows/refresh-site-metadata.yml`
-  - roda em `push` para `main`
-  - regenera metadados e indices
-  - faz commit automatico quando houver mudancas nos arquivos gerados
-  - evita loop usando `if: github.actor != 'github-actions[bot]'`
+  - funciona como rede de seguranca remota, nao como gerador automatico de conteudo
+
+## Fluxo recomendado de publicacao
+
+Este repositorio segue um fluxo `local-first` para conteudo publicado:
+
+1. editar o HTML e os assets localmente
+2. rodar `python3 scripts/build_site_metadata.py`
+3. rodar `python3 scripts/validate_site.py`
+4. publicar somente depois que a validacao local estiver limpa
+
+Nao ha mais workflow de GitHub Actions fazendo commit automatico em `main`. Isso evita divergencias artificiais entre `main` local e remoto, reduz conflitos em arquivos gerados e combina melhor com um fluxo solo de publicacao direta.
 
 ## Como criar um novo post (`/blog/*.html`)
 
@@ -71,6 +93,13 @@ Heuristicas usadas no feed:
 - data: `time.dt-published[datetime]`
 - resumo: `.p-summary`, ou primeiro paragrafo de `.e-content`
 - trecho curto: primeiro paragrafo de `.e-content`
+
+## Regras de voz editorial
+
+- evitar estruturas de contraste automatico como `menos X, mais Y` e `nao foi X, foi Y`
+- evitar abstrair demais quando o texto pode nomear as camadas concretas
+- nao inflar workshop, meetup ou palestra como revelacao total quando o ponto real e reforco, clarificacao ou mudanca de escala
+- adaptar o card `Sobre o autor` ao tema do post com alguma inteligencia contextual
 
 ## Como criar um novo projeto (`/projects/*.html`)
 
@@ -98,3 +127,5 @@ python scripts/validate_site.py
 ```
 
 Se os comandos acima passarem, o PR tende a passar no CI.
+
+Se voce publica direto em `main`, a mesma regra vale: gere e valide localmente antes do push.

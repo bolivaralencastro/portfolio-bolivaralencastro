@@ -3,3 +3,5 @@ assets/.DS_Store
 assets/images/.DS_Store
 .referencias/
 referencias/
+.env
+.linkedin_token
