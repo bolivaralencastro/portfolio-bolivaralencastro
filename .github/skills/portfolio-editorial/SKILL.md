@@ -22,6 +22,9 @@ Read:
 
 1. Define the slug and create `blog/<slug>.html`.
 2. Write the full post content and metadata.
+   - Keep the long-form post precise, concrete, and structurally clear.
+   - Preserve authorial intent without forcing intimate tone in every paragraph.
+   - Prefer concrete observations and lived context over detached summaries.
 3. Generate all images automatically:
    ```bash
    # Preview prompts first (no cost)
@@ -39,6 +42,34 @@ Read:
    python3 scripts/build_site_metadata.py
    python3 scripts/validate_site.py
    ```
+9. Publish to social channels in order:
+   1) LinkedIn (preview + publish)
+   2) Instagram (preview + publish)
+
+## Social voice (derived text)
+
+Scope: this voice applies to the second text written for LinkedIn/Instagram,
+derived from the full post. It is not a requirement to make the full post
+itself equally intimate.
+
+Goal: unfold the long-form into a short social invitation that carries
+personal intention, proximity, and continuity.
+
+Rules:
+
+- Keep it short, fluid, and direct.
+- Sound like a person sharing work in progress, not a campaign announcement.
+- Make the author's intention legible (`o que estou construindo`, `por que publico aqui`).
+- Invite the reader into an ongoing space, not a one-off drop.
+- Replace abstract claims with concrete nouns and actions.
+- End with a clean CTA suited to each platform.
+
+Quick self-check before publishing social copy:
+
+- `desdobramento`: Does this read like a true unfolding of the full post, not a detached summary?
+- `pessoalidade`: Is the author present as someone talking with people, not at them?
+- `convite`: Is there a clear invitation to visit/read/follow the work?
+- `fluidez`: Can the text be read in one breath without corporate phrasing?
 
 ## Image generation reference
 
@@ -63,6 +94,41 @@ python3 scripts/linkedin_post.py --slug <slug>
 
 Requires `LINKEDIN_ACCESS_TOKEN` in `.env`. If expired, run `linkedin_auth.py` first.
 
+## Publishing to Instagram (optional)
+
+```bash
+python3 scripts/instagram_post.py              # latest post
+python3 scripts/instagram_post.py --dry-run    # preview
+python3 scripts/instagram_post.py --slug <slug>
+```
+
+Requires `INSTAGRAM_ACCESS_TOKEN` and `INSTAGRAM_USER_ID` in `.env`.
+If expired, run `python3 scripts/instagram_auth.py` first.
+
+Important: Instagram Graph API only accepts `JPG/PNG` by URL (`image_url`),
+not `WEBP`. The `generate_post_images.py` workflow now generates `card.jpg`
+automatically alongside `card.webp`.
+
+## Full publication order (recommended)
+
+```bash
+# 1) Write/update post HTML
+# 2) Generate images
+python3 scripts/generate_post_images.py blog/<slug>.html --inline 2
+
+# 3) Rebuild generated metadata and validate
+python3 scripts/build_site_metadata.py
+python3 scripts/validate_site.py
+
+# 4) Publish to LinkedIn
+python3 scripts/linkedin_post.py --dry-run --slug <slug>
+python3 scripts/linkedin_post.py --slug <slug>
+
+# 5) Publish to Instagram
+python3 scripts/instagram_post.py --dry-run --slug <slug>
+python3 scripts/instagram_post.py --slug <slug>
+```
+
 ## Editing existing posts
 
 - Preserve the established voice of the post.
@@ -76,8 +142,24 @@ Requires `LINKEDIN_ACCESS_TOKEN` in `.env`. If expired, run `linkedin_auth.py` f
 If asked for LinkedIn or other social copy:
 
 - Treat the site post as the canonical long-form version.
-- Compress to one short paragraph unless the user asks otherwise.
 - Keep the post rooted in the core idea, not in a changelog of details.
+- Default to short, direct invitations that sound personal and intentional.
+- Make the reader feel invited into an ongoing body of work, not into a one-off announcement.
+
+LinkedIn default:
+
+- 1 to 3 short paragraphs.
+- Tone: clear, personal, slightly informal, no corporate cadence.
+- Include direct site CTA with full URL.
+- Prefer explicit invitation to the author's own space/site.
+
+Instagram default:
+
+- 2 to 5 short lines.
+- Tone: warmer and more informal than LinkedIn, still precise.
+- Do not place URL in body as primary CTA; end with `link na bio` unless the user requests otherwise.
+- Prioritize intimacy and continuity (`espaço que venho construindo`, `processo em andamento`, `o que venho testando`).
+- Treat caption as conversation: less declarative broadcast, more personal sharing.
 
 ## Do not
 

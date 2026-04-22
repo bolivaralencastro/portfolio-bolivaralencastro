@@ -4,8 +4,8 @@ Publica o último post do blog no Instagram.
 
 Detecta automaticamente o post mais recente (por data no HTML),
 formata a legenda e publica via Instagram Graph API.
-A imagem usada é card.webp (ou cover.webp) já hospedada no site —
-não é necessário fazer upload, a API acessa a URL pública diretamente.
+A imagem usada deve ser JPG/PNG em URL pública (Instagram Graph API não
+aceita WEBP no image_url).
 
 Pré-requisitos:
     - Conta Instagram Business ou Creator
@@ -69,12 +69,16 @@ def extract_post_meta(html_path: Path) -> dict:
     slug = html_path.stem
     url = f"{BASE_URL}/blog/{slug}.html"
 
-    # Imagem: card.jpg (Instagram Graph API não aceita webp)
+    # Imagem: Instagram Graph API exige JPG/PNG acessível por URL pública.
+    # Usa raw.githubusercontent.com para evitar atraso de propagação no GitHub Pages.
     image_url = None
-    for candidate in ["card.jpg", "card.webp", "cover.jpg", "cover.webp"]:
+    for candidate in ["card.jpg", "cover.jpg", "card.png", "cover.png"]:
         local = ROOT / "assets" / "images" / "blog" / slug / candidate
         if local.exists():
-            image_url = f"{BASE_URL}/assets/images/blog/{slug}/{candidate}"
+            image_url = (
+                "https://raw.githubusercontent.com/"
+                f"bolivaralencastro/portfolio-bolivaralencastro/main/assets/images/blog/{slug}/{candidate}"
+            )
             break
 
     return {
@@ -217,7 +221,8 @@ def main():
         print(f"🖼️  Imagem: {meta['image_url']}")
     else:
         print("❌ Nenhuma imagem encontrada — Instagram exige imagem.")
-        print("   Gere card.webp com: python3 scripts/generate_post_images.py blog/<slug>.html --only card")
+        print("   Gere card.jpg com: python3 scripts/generate_post_images.py blog/<slug>.html --only card")
+        print("   (o script agora gera card.webp + card.jpg automaticamente)")
         sys.exit(1)
 
     print(f"\n--- Legenda ---\n{caption}\n---------------\n")

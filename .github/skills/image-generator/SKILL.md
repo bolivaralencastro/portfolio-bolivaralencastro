@@ -22,6 +22,12 @@ python3 scripts/generate_post_images.py blog/<slug>.html --dry-run
 # Gerar cover + card + 2 inline (padrão)
 python3 scripts/generate_post_images.py blog/<slug>.html
 
+# Gerar com direção de arte mais diagramática
+python3 scripts/generate_post_images.py blog/<slug>.html --style diagrammatic
+
+# Adicionar briefing de estilo do projeto
+python3 scripts/generate_post_images.py blog/<slug>.html --style-notes "bold asymmetry, dense composition, no empty center"
+
 # Gerar cover + card + 3 inline
 python3 scripts/generate_post_images.py blog/<slug>.html --inline 3
 
@@ -41,6 +47,11 @@ python3 scripts/generate_image.py "descrição visual" slug/nome --preset cover
 python3 scripts/generate_image.py "descrição visual" slug/nome --preset card
 python3 scripts/generate_image.py "descrição visual" slug/nome --preset inline
 
+# Controlando direção de arte e modelo
+python3 scripts/generate_image.py "descrição visual" slug/nome --preset cover --style constructivist
+python3 scripts/generate_image.py "descrição visual" slug/nome --style-notes "editorial collage, gritty paper texture"
+python3 scripts/generate_image.py "descrição visual" slug/nome --model openai/gpt-5.4-image-2
+
 # Path direto
 python3 scripts/generate_image.py "descrição" assets/images/blog/slug/img.webp
 
@@ -56,6 +67,16 @@ python3 scripts/generate_image.py --list-presets
 | `card`   | 960×540    | Card social (`card.webp`)    |
 | `inline` | 1200×675   | Imagens no corpo do post     |
 | `square` | 800×800    | Uso geral                    |
+
+## Alavancas de qualidade (novas)
+
+Os scripts agora permitem calibrar direção de arte:
+
+- `--style`: `default`, `diagrammatic`, `newsprint-collage`, `constructivist`
+- `--style-notes`: briefing adicional para amarrar o estilo ao post
+- `--no-anti-generic`: desativa bloqueios de visual genérico (normalmente mantenha ligado)
+- `--prompt-model` (apenas em `generate_post_images.py`): modelo que cria os prompts
+- `--image-model`: modelo final de geração de imagem
 
 ## Escrevendo prompts para `generate_image.py`
 
