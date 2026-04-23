@@ -291,8 +291,83 @@ def ensure_auto_block_before_token(content: str, block_name: str, anchor_token: 
     return content[:anchor_idx] + auto_block + content[anchor_idx:]
 
 
+def relocate_auto_block_before_token(content: str, block_name: str, anchor_token: str) -> str:
+    start_token = f"<!-- AUTO:{block_name}:start -->"
+    end_token = f"<!-- AUTO:{block_name}:end -->"
+    block_pattern = re.compile(
+        rf"\s*{re.escape(start_token)}.*?{re.escape(end_token)}\s*",
+        re.DOTALL,
+    )
+    stripped = block_pattern.sub("", content)
+    stripped = re.sub(
+        r"\s*<article class=\"e-content col-12 section-block\">\s*</article>\s*",
+        "\n",
+        stripped,
+    )
+    stripped = re.sub(
+        r"(<!-- AUTO:project-author-card:end -->\s*</article>)(?:\s*\1)+",
+        r"\1",
+        stripped,
+    )
+    return ensure_auto_block_before_token(stripped, block_name, anchor_token)
+
+
 def indent_html_block(block: str, prefix: str) -> str:
     return "\n".join(f"{prefix}{line}" if line else "" for line in block.splitlines())
+
+
+def build_standard_footer_html() -> str:
+    return "\n".join(
+        [
+            '<footer class="grid">',
+            '  <p class="col-9">&copy; 2026 Bolívar Alencastro. Design HTML-first.</p>',
+            '  <nav class="footer-links col-3" aria-label="Links do rodapé">',
+            '    <ul>',
+            '      <li><a href="/feed.xml" rel="alternate">RSS Feed</a></li>',
+            '      <li><a href="/sitemap.xml">Sitemap</a></li>',
+            '      <li><a href="/humans.txt">Humans</a></li>',
+            '    </ul>',
+            '  </nav>',
+            '</footer>',
+        ]
+    )
+
+
+def ensure_standard_footer(content: str) -> str:
+    footer_html = build_standard_footer_html()
+    footer_pattern = re.compile(r"\n?<footer class=\"grid\">.*?</footer>\s*", re.DOTALL)
+    if footer_pattern.search(content):
+        return footer_pattern.sub(f"\n{footer_html}\n", content, count=1)
+
+    body_close = "</body>"
+    body_idx = content.find(body_close)
+    if body_idx == -1:
+        raise BuildError("Missing </body> while applying standard footer")
+    return content[:body_idx] + f"{footer_html}\n" + content[body_idx:]
+
+
+def rewrite_project_detail_blocks(content: str, author_html: str, related_html: str) -> str:
+    content = ensure_auto_block_before_token(content, "project-author-card", "</article>")
+    content = relocate_auto_block_before_token(content, "project-related-projects", "</main>")
+
+    combined_pattern = re.compile(
+        r"\s*<!-- AUTO:project-author-card:start -->.*?<!-- AUTO:project-related-projects:end -->",
+        re.DOTALL,
+    )
+    replacement = "\n".join(
+        [
+            "        <!-- AUTO:project-author-card:start -->",
+            author_html,
+            "        <!-- AUTO:project-author-card:end -->",
+            "    </article>",
+            "    <!-- AUTO:project-related-projects:start -->",
+            related_html,
+            "    <!-- AUTO:project-related-projects:end -->",
+        ]
+    )
+    if combined_pattern.search(content):
+        return combined_pattern.sub(replacement, content, count=1)
+    raise BuildError("Could not rewrite project detail blocks")
 
 
 def format_pt_date_short(date_value: dt.datetime) -> str:
@@ -414,15 +489,12 @@ def build_related_projects_block(current_href: str, projects: list[dict], limit:
     if not related:
         return ""
 
-    cards_html = indent_html_block(build_projects_list_html(related), "      ")
+    cards_html = build_projects_list_html(related)
     return "\n".join(
         [
-            '<section class="section-block" aria-label="Outros projetos">',
-            '  <p class="author-card-title">Outros Projetos</p>',
-            '  <h2>Outros projetos</h2>',
-            '  <div class="grid">',
+            '<section class="grid col-12 section-block related-list" aria-label="Outros projetos">',
+            '  <h2 class="col-12">Outros Projetos</h2>',
             cards_html,
-            '  </div>',
             '</section>',
         ]
     )
@@ -444,28 +516,22 @@ def build_related_posts_block(current_href: str, posts: list[dict], limit: int =
             size_attrs = f' width="{post["listing_cover_width"]}" height="{post["listing_cover_height"]}"'
         card_lines.extend(
             [
-                '      <article class="post-item post-row col-12">',
-                f'        <a href="{href}" class="post-row-cover" aria-label="Abrir post: {title}">',
+                '      <article class="post-item col-4">',
+                f'        <a href="{href}" class="post-card-cover" aria-label="Abrir post: {title}">',
                 f'          <img src="{cover}" alt="Capa do post: {title}" loading="lazy" decoding="async"{size_attrs}>',
                 "        </a>",
-                '        <div class="post-row-body">',
-                f'          <h3><a href="{href}">{title}</a></h3>',
-                f'          <p>{summary}</p>',
-                "        </div>",
+                f'        <h3 class="p-name"><a href="{href}" class="u-url">{title}</a></h3>',
+                f'        <p class="post-card-summary">{summary}</p>',
                 "      </article>",
                 "",
             ]
         )
-
     cards_html = "\n".join(card_lines).rstrip()
     return "\n".join(
         [
-            '<section class="section-block" aria-label="Outras publicações">',
-            '  <p class="author-card-title">Outras Publicações</p>',
-            '  <h2>Outras publicações</h2>',
-            '  <div class="grid">',
+            '<section class="grid col-12 section-block related-list" aria-label="Outras publicações">',
+            '  <h2 class="col-12">Outras Publicações</h2>',
             cards_html,
-            '  </div>',
             '</section>',
         ]
     )
@@ -850,19 +916,18 @@ def main() -> int:
             build_related_posts_block(post["href"], posts, limit=3),
         )
         post_content = replace_auto_block(post_content, "post-related-projects", "")
+        post_content = ensure_standard_footer(post_content)
         post_detail_managed[post["path"]] = post_content
 
     project_detail_managed: dict[pathlib.Path, str] = {}
     for project in projects:
         project_content = project["path"].read_text(encoding="utf-8")
-        project_content = ensure_auto_block_before_token(project_content, "project-author-card", "</article>")
-        project_content = ensure_auto_block_before_token(project_content, "project-related-projects", "</article>")
-        project_content = replace_auto_block(project_content, "project-author-card", build_author_card_html())
-        project_content = replace_auto_block(
+        project_content = rewrite_project_detail_blocks(
             project_content,
-            "project-related-projects",
+            build_author_card_html(),
             build_related_projects_block(project["href"], projects, limit=3),
         )
+        project_content = ensure_standard_footer(project_content)
         project_detail_managed[project["path"]] = project_content
 
     changed: list[pathlib.Path] = []
