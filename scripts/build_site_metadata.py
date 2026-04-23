@@ -272,6 +272,29 @@ def replace_auto_block(content: str, block_name: str, inner_html: str) -> str:
     return content[:start_idx] + replacement + content[block_after_end:]
 
 
+def ensure_auto_block_before_token(content: str, block_name: str, anchor_token: str) -> str:
+    start_token = f"<!-- AUTO:{block_name}:start -->"
+    end_token = f"<!-- AUTO:{block_name}:end -->"
+    if start_token in content and end_token in content:
+        return content
+
+    anchor_idx = content.find(anchor_token)
+    if anchor_idx == -1:
+        raise BuildError(f"Missing anchor token '{anchor_token}' for block '{block_name}'")
+
+    line_start = content.rfind("\n", 0, anchor_idx) + 1
+    indent = content[line_start:anchor_idx]
+    auto_block = (
+        f"{indent}{start_token}\n"
+        f"{indent}{end_token}\n"
+    )
+    return content[:anchor_idx] + auto_block + content[anchor_idx:]
+
+
+def indent_html_block(block: str, prefix: str) -> str:
+    return "\n".join(f"{prefix}{line}" if line else "" for line in block.splitlines())
+
+
 def format_pt_date_short(date_value: dt.datetime) -> str:
     return date_value.strftime("%d/%m/%Y")
 
@@ -363,6 +386,89 @@ def build_latest_post_html(latest_post: dict) -> str:
 
 def build_featured_projects_html(projects: list[dict], limit: int = 3) -> str:
     return build_projects_list_html(projects[:limit])
+
+
+def build_author_card_html() -> str:
+    return "\n".join(
+        [
+            '<section class="author-card h-card" aria-label="Sobre o autor">',
+            '  <p class="author-card-title">Sobre o autor</p>',
+            '  <div class="author-card-inner">',
+            '    <img class="author-card-photo u-photo" src="/assets/images/author/bolivar-alencastro.webp" alt="Foto de Bolívar Alencastro" width="641" height="640" loading="lazy" decoding="async">',
+            '    <div class="author-card-body">',
+            '      <h3 class="author-card-name p-name"><a class="u-url" href="/about.html">Bolívar Alencastro</a></h3>',
+            '      <p class="author-card-copy p-note">Product Designer em São Paulo. Estruturo narrativas, interfaces e sistemas para transformar complexidade em decisões claras.</p>',
+            '      <ul class="author-card-links" aria-label="Redes sociais do autor">',
+            '        <li><a rel="me noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/bolivaralencastro/">LinkedIn</a></li>',
+            '        <li><a rel="me noopener noreferrer" target="_blank" href="https://www.instagram.com/bolivar.alencastro/">Instagram</a></li>',
+            '      </ul>',
+            '    </div>',
+            '  </div>',
+            '</section>',
+        ]
+    )
+
+
+def build_related_projects_block(current_href: str, projects: list[dict], limit: int = 3) -> str:
+    related = [project for project in projects if project["href"] != current_href][:limit]
+    if not related:
+        return ""
+
+    cards_html = indent_html_block(build_projects_list_html(related), "      ")
+    return "\n".join(
+        [
+            '<section class="section-block" aria-label="Outros projetos">',
+            '  <p class="author-card-title">Outros Projetos</p>',
+            '  <h2>Outros projetos</h2>',
+            '  <div class="grid">',
+            cards_html,
+            '  </div>',
+            '</section>',
+        ]
+    )
+
+
+def build_related_posts_block(current_href: str, posts: list[dict], limit: int = 3) -> str:
+    related = [post for post in posts if post["href"] != current_href][:limit]
+    if not related:
+        return ""
+
+    card_lines: list[str] = []
+    for post in related:
+        title = html.escape(post["title"])
+        summary = html.escape(post["summary"])
+        href = html.escape(post["href"])
+        cover = html.escape(post["listing_cover_html"])
+        size_attrs = ""
+        if post["listing_cover_width"] and post["listing_cover_height"]:
+            size_attrs = f' width="{post["listing_cover_width"]}" height="{post["listing_cover_height"]}"'
+        card_lines.extend(
+            [
+                '      <article class="post-item post-row col-12">',
+                f'        <a href="{href}" class="post-row-cover" aria-label="Abrir post: {title}">',
+                f'          <img src="{cover}" alt="Capa do post: {title}" loading="lazy" decoding="async"{size_attrs}>',
+                "        </a>",
+                '        <div class="post-row-body">',
+                f'          <h3><a href="{href}">{title}</a></h3>',
+                f'          <p>{summary}</p>',
+                "        </div>",
+                "      </article>",
+                "",
+            ]
+        )
+
+    cards_html = "\n".join(card_lines).rstrip()
+    return "\n".join(
+        [
+            '<section class="section-block" aria-label="Outras publicações">',
+            '  <p class="author-card-title">Outras Publicações</p>',
+            '  <h2>Outras publicações</h2>',
+            '  <div class="grid">',
+            cards_html,
+            '  </div>',
+            '</section>',
+        ]
+    )
 
 
 def build_blog_collection_jsonld(posts: list[dict], base_url: str) -> str:
@@ -734,6 +840,31 @@ def main() -> int:
     index_html = replace_auto_block(index_html, "featured-projects", featured_projects_inner)
     index_html = replace_auto_block(index_html, "latest-post", latest_post_inner)
 
+    post_detail_managed: dict[pathlib.Path, str] = {}
+    for post in posts:
+        post_content = post["path"].read_text(encoding="utf-8")
+        post_content = ensure_auto_block_before_token(post_content, "post-related-posts", "</article>")
+        post_content = replace_auto_block(
+            post_content,
+            "post-related-posts",
+            build_related_posts_block(post["href"], posts, limit=3),
+        )
+        post_content = replace_auto_block(post_content, "post-related-projects", "")
+        post_detail_managed[post["path"]] = post_content
+
+    project_detail_managed: dict[pathlib.Path, str] = {}
+    for project in projects:
+        project_content = project["path"].read_text(encoding="utf-8")
+        project_content = ensure_auto_block_before_token(project_content, "project-author-card", "</article>")
+        project_content = ensure_auto_block_before_token(project_content, "project-related-projects", "</article>")
+        project_content = replace_auto_block(project_content, "project-author-card", build_author_card_html())
+        project_content = replace_auto_block(
+            project_content,
+            "project-related-projects",
+            build_related_projects_block(project["href"], projects, limit=3),
+        )
+        project_detail_managed[project["path"]] = project_content
+
     changed: list[pathlib.Path] = []
     write_or_check(repo_root / "sitemap.xml", sitemap_content, args.check, changed)
     write_or_check(repo_root / "feed.xml", feed_content, args.check, changed)
@@ -744,6 +875,8 @@ def main() -> int:
         projects_html_path: projects_html,
         index_html_path: index_html,
     }
+    managed_pages.update(post_detail_managed)
+    managed_pages.update(project_detail_managed)
     public_pages = [repo_root / name for name in ROOT_PAGES]
     public_pages.extend(post_files)
     public_pages.extend(project_files)
