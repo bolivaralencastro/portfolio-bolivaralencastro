@@ -1,0 +1,5 @@
+Name,Performance,Accessibility,Best Practices,SEO,FCP,LCP,CLS,TBT,SI
+Home Mobile,0.76,1,0.77,1,0.9 s,1.3 s,0,"1,190 ms",2.4 s
+Home Desktop,1,1,0.77,1,0.3 s,0.4 s,0,0 ms,0.3 s
+Blog Mobile,1,1,1,1,0.9 s,1.9 s,0,0 ms,0.9 s
+Blog Desktop,1,1,0.77,1,0.2 s,0.4 s,0,0 ms,0.2 s
