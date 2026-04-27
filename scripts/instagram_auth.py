@@ -5,7 +5,7 @@ Configura credenciais para publicar no Instagram via Instagram Graph API.
 Fluxo usado:
     1. Gere um User Access Token no Graph API Explorer com:
        business_management, instagram_basic, instagram_content_publish,
-       pages_read_engagement, pages_show_list
+       instagram_manage_insights, pages_read_engagement, pages_show_list
     2. Execute este script passando o token curto.
     3. O script troca por token de longa duração, encontra a página conectada
        ao Instagram e salva no .env:

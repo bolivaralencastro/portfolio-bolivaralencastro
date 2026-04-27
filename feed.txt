@@ -4,7 +4,7 @@
   <subtitle>Product Design e Arquitetura Web Nativa</subtitle>
   <link href="https://bolivaralencastro.com.br/feed.xml" rel="self"/>
   <link href="https://bolivaralencastro.com.br/blog.html" rel="alternate"/>
-  <updated>2026-04-23T00:00:00Z</updated>
+  <updated>2026-04-27T00:00:00Z</updated>
   <id>https://bolivaralencastro.com.br/feed.xml</id>
   <author>
     <name>Bolívar Alencastro</name>
@@ -15,6 +15,16 @@
   </contributor>
 
   <entry>
+    <title>A IA nos bastidores: anotações da plateia no Demo Day da Tera</title>
+    <link href="https://bolivaralencastro.com.br/blog/demoday-tera.html" rel="alternate"/>
+    <id>https://bolivaralencastro.com.br/blog/demoday-tera.html</id>
+    <published>2026-04-27T00:00:00Z</published>
+    <updated>2026-04-27T00:00:00Z</updated>
+    <summary>Impressões sobre projetos, critério de uso e o fim do deslumbramento com a IA a partir da plateia do Demo Day da Tera.</summary>
+    <content type="html">&lt;p&gt;Fui ao Demo Day da Tera como ouvinte. O motivo principal era acompanhar a Cassiane Vilvert, minha companheira, que foi professora em uma das etapas da formação e, naquela noite na Casa B2Mamy Coworking, sentou na banca julgadora ao lado de Felipe Bedê para avaliar os trabalhos. Estar do outro lado, apenas observando a dinâmica, me deu um distanciamento útil.&lt;/p&gt;</content>
+  </entry>
+
+  <entry>
     <title>Ap 403: memória de um lugar</title>
     <link href="https://bolivaralencastro.com.br/blog/ap-403-memoria-de-um-lugar.html" rel="alternate"/>
     <id>https://bolivaralencastro.com.br/blog/ap-403-memoria-de-um-lugar.html</id>
@@ -22,6 +32,16 @@
     <updated>2026-04-23T00:00:00Z</updated>
     <summary>Um arquivo visual do apartamento 403 em Florianópolis: cenas, objetos, luzes e pequenas frases de um lugar vivido ao lado da UFSC e do Bugio Trindade.</summary>
     <content type="html">&lt;p&gt;Entre 2022 e 2023, eu mantive um perfil separado no Instagram para registrar o apartamento 403. A conta se chamava @a.403.p; depois virou @ca.175.sa, nome que ficou guardado para uma próxima publicação sobre a Casa 175, no Rio Tavares. A frequência nunca virou hábito, mas os 16 posts que ficaram guardam uma memória bastante precisa daquele lugar: mesa, cadeira, cama, plantas, quadros, louça, sapatos, luz entrando pela janela.&lt;/p&gt;</content>
+  </entry>
+
+  <entry>
+    <title>Com LLMs, cada página pode voltar a ter forma própria</title>
+    <link href="https://bolivaralencastro.com.br/blog/com-llms-cada-pagina-pode-voltar-a-ter-forma-propria.html" rel="alternate"/>
+    <id>https://bolivaralencastro.com.br/blog/com-llms-cada-pagina-pode-voltar-a-ter-forma-propria.html</id>
+    <published>2026-04-23T00:00:00Z</published>
+    <updated>2026-04-23T00:00:00Z</updated>
+    <summary>Se uma pessoa consegue pedir, ajustar e publicar uma página em HTML, CSS e JavaScript com muito menos atrito, a web pode voltar a ser um lugar menos padronizado e mais autoral.</summary>
+    <content type="html">&lt;p&gt;Durante muito tempo, publicar algo na internet ficou preso entre dois extremos ruins. De um lado, plataformas prontas, eficientes e previsíveis. Do outro, a promessa de liberdade total, geralmente acompanhada por horas demais de implementação, debug e manutenção. No meio disso, muita gente acabou aceitando o mesmo formato para quase tudo: card, grid, hero, botão, feed, scroll infinito.&lt;/p&gt;</content>
   </entry>
 
   <entry>

@@ -42,6 +42,8 @@ ENV_FILE = ROOT / ".env"
 BASE_URL = "https://bolivaralencastro.com.br"
 GRAPH_API = "https://graph.facebook.com/v25.0"
 
+UTM_MEDIUM = "social"
+
 
 def load_env() -> dict:
     env = {}
@@ -105,12 +107,24 @@ def find_latest_post() -> Path:
     return max(posts, key=post_date)
 
 
-def format_caption(meta: dict) -> str:
+def build_tracked_url(url: str, source: str, campaign: str) -> str:
+    """Anexa parâmetros UTM preservando querystring existente."""
+    parsed = urllib.parse.urlsplit(url)
+    pairs = urllib.parse.parse_qsl(parsed.query, keep_blank_values=True)
+    query_map = dict(pairs)
+    query_map["utm_source"] = source
+    query_map["utm_medium"] = UTM_MEDIUM
+    query_map["utm_campaign"] = campaign
+    new_query = urllib.parse.urlencode(query_map)
+    return urllib.parse.urlunsplit(parsed._replace(query=new_query))
+
+
+def format_caption(meta: dict, target_url: str) -> str:
     """Formata a legenda do post. Instagram não renderiza links clicáveis no caption — URL vai no final."""
     return (
         f"{meta['description']}\n\n"
         f"🔗 Link na bio ou acesse:\n"
-        f"{meta['url']}\n\n"
+        f"{target_url}\n\n"
         f"#blog #design #product #ai #tech"
     )
 
@@ -192,6 +206,11 @@ def main():
     parser = argparse.ArgumentParser(description="Publica post do blog no Instagram")
     parser.add_argument("--dry-run", action="store_true", help="Mostra sem publicar")
     parser.add_argument("--slug", help="Slug do post específico")
+    parser.add_argument(
+        "--no-utm",
+        action="store_true",
+        help="Não adiciona parâmetros UTM no link da legenda",
+    )
     args = parser.parse_args()
 
     env = load_env()
@@ -212,11 +231,14 @@ def main():
         post_path = find_latest_post()
 
     meta = extract_post_meta(post_path)
-    caption = format_caption(meta)
+    target_url = meta["url"]
+    if not args.no_utm:
+        target_url = build_tracked_url(meta["url"], "instagram", meta["slug"])
+    caption = format_caption(meta, target_url)
 
     print(f"\n📝 Post: {meta['title']}")
     print(f"📅 Data: {meta['date']}")
-    print(f"🔗 URL:  {meta['url']}")
+    print(f"🔗 URL:  {target_url}")
     if meta["image_url"]:
         print(f"🖼️  Imagem: {meta['image_url']}")
     else:

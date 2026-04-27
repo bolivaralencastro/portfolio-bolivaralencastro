@@ -855,6 +855,18 @@ img, picture {
   margin: var(--space-3) 0;
 }
 
+.image-gallery-triptych {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-1);
+  margin: var(--space-3) 0;
+
+  & img {
+    width: 100%;
+    margin: 0;
+  }
+}
+
 /* Image broken state: styled alt text as fallback (replaces image-fallback.js) */
 img {
   font-size: var(--text-xs);
@@ -921,6 +933,7 @@ img {
 }
 
 .e-content.is-swiss > .author-card,
+.e-content.is-swiss > .image-gallery-triptych,
 .e-content.is-swiss > img.col-12 {
   grid-column: span 12;
 }
