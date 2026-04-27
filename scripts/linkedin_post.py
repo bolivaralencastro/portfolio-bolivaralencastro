@@ -38,6 +38,8 @@ BASE_URL = "https://bolivaralencastro.com.br"
 STATE_DIR = ROOT / ".social_publish_state"
 LINKEDIN_STATE_FILE = STATE_DIR / "linkedin_last_publish.json"
 
+UTM_MEDIUM = "social"
+
 
 def load_env() -> dict:
     env = {}
@@ -191,11 +193,23 @@ def upload_image(upload_url: str, image_path: Path, token: str):
         resp.read()
 
 
-def format_post_text(meta: dict) -> str:
+def build_tracked_url(url: str, source: str, campaign: str) -> str:
+    """Anexa parâmetros UTM preservando querystring existente."""
+    parsed = urllib.parse.urlsplit(url)
+    pairs = urllib.parse.parse_qsl(parsed.query, keep_blank_values=True)
+    query_map = dict(pairs)
+    query_map["utm_source"] = source
+    query_map["utm_medium"] = UTM_MEDIUM
+    query_map["utm_campaign"] = campaign
+    new_query = urllib.parse.urlencode(query_map)
+    return urllib.parse.urlunsplit(parsed._replace(query=new_query))
+
+
+def format_post_text(meta: dict, target_url: str) -> str:
     return (
         f"{meta['description']}\n\n"
         f"Novo post no blog 👇\n"
-        f"{meta['url']}"
+        f"{target_url}"
     )
 
 
@@ -239,11 +253,17 @@ def save_publish_state(signature: str, share_urn: str):
     LINKEDIN_STATE_FILE.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-def publish_post(token: str, author_urn: str, meta: dict, image_urn: str | None = None) -> str:
+def publish_post(
+    token: str,
+    author_urn: str,
+    meta: dict,
+    target_url: str,
+    image_urn: str | None = None,
+) -> str:
     """Publica o post e retorna o URN do share criado."""
     payload: dict = {
         "author": author_urn,
-        "commentary": format_post_text(meta),
+        "commentary": format_post_text(meta, target_url),
         "visibility": "PUBLIC",
         "distribution": {
             "feedDistribution": "MAIN_FEED",
@@ -261,7 +281,7 @@ def publish_post(token: str, author_urn: str, meta: dict, image_urn: str | None 
         # Publica com card de artigo (link preview automático)
         payload["content"] = {
             "article": {
-                "source": meta["url"],
+                "source": target_url,
                 "title": meta["title"],
                 "description": meta["description"],
             }
@@ -289,6 +309,11 @@ def main():
         action="store_true",
         help="Permite publicar conteúdo idêntico ao último post recente",
     )
+    parser.add_argument(
+        "--no-utm",
+        action="store_true",
+        help="Não adiciona parâmetros UTM no link da publicação",
+    )
     args = parser.parse_args()
 
     env = load_env()
@@ -309,14 +334,18 @@ def main():
 
     meta = extract_post_meta(post_path)
 
+    target_url = meta["url"]
+    if not args.no_utm:
+        target_url = build_tracked_url(meta["url"], "linkedin", meta["slug"])
+
     print(f"\n📝 Post: {meta['title']}")
     print(f"📅 Data: {meta['date']}")
-    print(f"🔗 URL:  {meta['url']}")
+    print(f"🔗 URL:  {target_url}")
     if meta["image_path"]:
         print(f"🖼️  Imagem: {meta['image_path'].relative_to(ROOT)}")
     else:
         print(f"🖼️  Imagem: não encontrada (usará card de link)")
-    print(f"\n--- Texto da publicação ---\n{format_post_text(meta)}\n---------------------------\n")
+    print(f"\n--- Texto da publicação ---\n{format_post_text(meta, target_url)}\n---------------------------\n")
 
     if args.dry_run:
         print("🔍 Dry run: nada publicado.")
@@ -352,7 +381,7 @@ def main():
 
     print("📤 Publicando...")
     try:
-        share_urn = publish_post(token, author_urn, meta, image_urn)
+        share_urn = publish_post(token, author_urn, meta, target_url, image_urn)
         save_publish_state(signature, share_urn)
         print(f"\n✅ Publicado com sucesso!")
         if share_urn:

@@ -109,6 +109,20 @@ Important: Instagram Graph API only accepts `JPG/PNG` by URL (`image_url`),
 not `WEBP`. The `generate_post_images.py` workflow now generates `card.jpg`
 automatically alongside `card.webp`.
 
+## Publishing to X (optional)
+
+```bash
+python3 scripts/twitter_post.py                              # latest blog post
+python3 scripts/twitter_post.py --dry-run                    # preview
+python3 scripts/twitter_post.py --slug <slug>                # blog slug
+python3 scripts/twitter_post.py --kind project --slug <slug> # project slug
+python3 scripts/twitter_post.py --path about.html            # standalone page
+```
+
+Requires `X_API_KEY`, `X_API_SECRET`, `X_ACCESS_TOKEN` and
+`X_ACCESS_TOKEN_SECRET` in `.env`.
+If missing, run `python3 scripts/twitter_auth.py` first.
+
 ## Full publication order (recommended)
 
 ```bash
@@ -127,6 +141,10 @@ python3 scripts/linkedin_post.py --slug <slug>
 # 5) Publish to Instagram
 python3 scripts/instagram_post.py --dry-run --slug <slug>
 python3 scripts/instagram_post.py --slug <slug>
+
+# 6) Publish to X
+python3 scripts/twitter_post.py --dry-run --slug <slug>
+python3 scripts/twitter_post.py --slug <slug>
 ```
 
 ## Editing existing posts
