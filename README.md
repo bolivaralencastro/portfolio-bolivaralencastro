@@ -36,6 +36,7 @@ Scripts:
 - `python scripts/build_site_metadata.py --check`: falha se os arquivos gerados ou as URLs versionadas de assets estiverem desatualizados.
 - `python scripts/validate_site.py`: valida SEO/editorial/integridade.
 - `python scripts/blog_image_workflow.py`: compoe tripticos horizontais sem corte e converte assets para `webp`.
+- `python scripts/twitter_post.py`: publica conteudo do portfolio no X, com suporte a blog, projetos e paginas avulsas.
 
 ## Analytics
 
@@ -72,6 +73,81 @@ Este repositorio segue um fluxo `local-first` para conteudo publicado:
 4. publicar somente depois que a validacao local estiver limpa
 
 Nao ha mais workflow de GitHub Actions fazendo commit automatico em `main`. Isso evita divergencias artificiais entre `main` local e remoto, reduz conflitos em arquivos gerados e combina melhor com um fluxo solo de publicacao direta.
+
+## Publicacao social via CLI
+
+Fluxos locais disponiveis:
+
+- LinkedIn: `python3 scripts/linkedin_post.py`
+- Instagram: `python3 scripts/instagram_post.py`
+- X: `python3 scripts/twitter_post.py`
+
+Exemplos do X:
+
+```bash
+# ultimo post do blog
+python3 scripts/twitter_post.py --dry-run
+python3 scripts/twitter_post.py
+
+# projeto especifico
+python3 scripts/twitter_post.py --dry-run --kind project --slug keeps-learning-konquest
+python3 scripts/twitter_post.py --kind project --slug keeps-learning-konquest
+
+# pagina avulsa
+python3 scripts/twitter_post.py --dry-run --path about.html
+```
+
+Credenciais esperadas no `.env` para o X:
+
+```bash
+X_API_KEY=<api_key>
+X_API_SECRET=<api_secret>
+X_ACCESS_TOKEN=<access_token>
+X_ACCESS_TOKEN_SECRET=<access_token_secret>
+X_CALLBACK_URL=http://127.0.0.1:8080/callback
+X_USERNAME=<handle_opcional>
+```
+
+Na primeira configuracao, rode `python3 scripts/twitter_auth.py` para concluir o OAuth 1.0a e salvar os tokens no `.env`.
+
+## Jules (CLI + REST API)
+
+Instalacao do CLI:
+
+```bash
+npm install -g @google/jules
+jules version
+```
+
+Login no CLI (abre o navegador):
+
+```bash
+jules login
+```
+
+Onde adicionar a chave da API do Jules:
+
+- arquivo: `.env` na raiz do repositorio
+- variavel: `JULES_API_KEY`
+
+Exemplo:
+
+```bash
+JULES_API_KEY=<sua_chave_jules>
+```
+
+Teste rapido da API (listar repositorios conectados):
+
+```bash
+curl 'https://jules.googleapis.com/v1alpha/sources' \
+  -H "X-Goog-Api-Key: $JULES_API_KEY"
+```
+
+Se preferir, exporte a chave so na sessao atual do terminal:
+
+```bash
+export JULES_API_KEY="<sua_chave_jules>"
+```
 
 ## Como criar um novo post (`/blog/*.html`)
 
