@@ -519,7 +519,6 @@ Com @loratas</p>
       </div>
       <div class="lightbox-bottombar lightbox-ui">
         <div class="lightbox-copy">
-          <p class="lightbox-title"></p>
           <p class="lightbox-caption"></p>
         </div>
         <div class="lightbox-controls">
@@ -548,19 +547,24 @@ Com @loratas</p>
       )
     );
     var dialog = document.querySelector(".lightbox");
+    var pageMeta = document.querySelector(".meta");
 
     if (!images.length || !dialog || typeof dialog.showModal !== "function") {
       return;
     }
 
     var stageImage = dialog.querySelector(".lightbox-stage img");
-    var title = dialog.querySelector(".lightbox-title");
+    var meta = dialog.querySelector(".lightbox-meta");
     var caption = dialog.querySelector(".lightbox-caption");
     var closeButton = dialog.querySelector(".lightbox-close");
     var prevButton = dialog.querySelector(".lightbox-prev");
     var nextButton = dialog.querySelector(".lightbox-next");
     var activeIndex = 0;
     var uiTimer = null;
+
+    if (pageMeta) {
+      meta.textContent = pageMeta.textContent.trim();
+    }
 
     function showUi() {
       dialog.classList.add("is-ui-visible");
@@ -574,28 +578,16 @@ Com @loratas</p>
 
     function getLightboxCopy(image) {
       var section = image.closest(".project-section");
-      var title = "";
       var text = image.getAttribute("alt") || "";
 
       if (section) {
-        var heading = section.querySelector("h2");
         var postCaption = section.querySelector(".post-caption");
-        if (heading) {
-          title = heading.textContent.trim();
-        }
         if (postCaption) {
           text = postCaption.textContent.trim();
         }
       }
 
-      if (!title) {
-        title = "Soberania da Presença";
-      }
-
-      return {
-        title: title,
-        text: text || title
-      };
+      return text;
     }
 
     function render(index) {
@@ -605,8 +597,7 @@ Com @loratas</p>
 
       stageImage.src = image.currentSrc || image.src;
       stageImage.alt = image.alt;
-      title.textContent = copy.title;
-      caption.textContent = copy.text;
+      caption.textContent = copy;
       prevButton.disabled = images.length < 2;
       nextButton.disabled = images.length < 2;
       syncStageImageBounds();
