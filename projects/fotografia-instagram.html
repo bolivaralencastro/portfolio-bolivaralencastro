@@ -68,6 +68,7 @@
       height: 100%;
       object-fit: cover; /* Cover ensures the image fills the box while maintaining aspect ratio */
       display: block;
+      cursor: zoom-in;
     }
     .project-opening-image {
       margin: var(--space-7) 0;
@@ -80,6 +81,7 @@
       height: 100%;
       object-fit: cover;
       display: block;
+      cursor: zoom-in;
     }
     .full-grid {
       display: grid;
@@ -100,9 +102,105 @@
       object-fit: cover;
       display: block;
       transition: transform 0.3s ease;
+      cursor: zoom-in;
     }
     .grid-item:hover img {
       transform: scale(1.05);
+    }
+    .lightbox {
+      width: min(100vw, 1400px);
+      max-width: none;
+      height: 100vh;
+      max-height: none;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background: rgba(12, 12, 12, 0.96);
+      color: #fff;
+    }
+    .lightbox::backdrop {
+      background: rgba(12, 12, 12, 0.9);
+    }
+    .lightbox-inner {
+      position: relative;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      width: 100%;
+      height: 100%;
+      padding: var(--space-4);
+      gap: var(--space-3);
+    }
+    .lightbox-topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-2);
+    }
+    .lightbox-meta {
+      font-size: var(--text-sm);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.72);
+    }
+    .lightbox-close,
+    .lightbox-nav {
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      background: rgba(255, 255, 255, 0.08);
+      color: #fff;
+      cursor: pointer;
+      font: inherit;
+      transition: background var(--dur-fast) var(--ease-standard);
+    }
+    .lightbox-close:hover,
+    .lightbox-close:focus-visible,
+    .lightbox-nav:hover,
+    .lightbox-nav:focus-visible {
+      background: rgba(255, 255, 255, 0.16);
+    }
+    .lightbox-close {
+      min-width: 3rem;
+      min-height: 3rem;
+      padding: 0;
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+    .lightbox-stage {
+      min-height: 0;
+      display: grid;
+      place-items: center;
+    }
+    .lightbox-stage img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+    }
+    .lightbox-bottombar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-3);
+    }
+    .lightbox-caption {
+      max-width: 60ch;
+      margin: 0;
+      font-size: var(--text-md);
+      line-height: 1.5;
+      color: rgba(255, 255, 255, 0.84);
+    }
+    .lightbox-controls {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+    }
+    .lightbox-nav {
+      min-width: 3rem;
+      min-height: 3rem;
+      padding: 0;
+      font-size: 1.25rem;
+      line-height: 1;
     }
     .technical-note {
       margin-top: var(--space-10);
@@ -116,9 +214,20 @@
     @media (max-width: 900px) {
       .post-caption { grid-column: 1 / -1; }
       .grid-item { grid-column: span 4; }
+      .lightbox-bottombar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
     @media (max-width: 600px) {
       .grid-item { grid-column: span 6; }
+      .lightbox-inner {
+        padding: var(--space-2);
+      }
+      .lightbox-topbar,
+      .lightbox-bottombar {
+        gap: var(--space-2);
+      }
     }
   </style>
   <meta name="view-transition" content="same-origin">
@@ -274,9 +383,9 @@ Com @georgiaeula7</p>
     <!-- Post 7 -->
     <section class="col-12 project-section">
       <div class="grid">
-        <h2 class="col-12">07. Eleve-se</h2>
-        <div class="hero-image"><img src="/assets/images/projects/fotografia-instagram/17890040234882441.jpg" alt="Eleve-se - Hero"></div>
-        <p class="post-caption">Eleve-se
+        <h2 class="col-12">07. Eleva-se</h2>
+        <div class="hero-image"><img src="/assets/images/projects/fotografia-instagram/17890040234882441.jpg" alt="Eleva-se - Hero"></div>
+        <p class="post-caption">Eleva-se
 
 Com Hanna Feltrin e Frederico Elias</p>
       </div>
@@ -353,7 +462,25 @@ Com @loratas</p>
     <!-- AUTO:project-related-projects:end -->
 </main>
 
-  
+  <dialog class="lightbox" aria-label="Visualizacao ampliada de fotografia">
+    <div class="lightbox-inner">
+      <div class="lightbox-topbar">
+        <p class="lightbox-meta">Imagem ampliada</p>
+        <button type="button" class="lightbox-close" aria-label="Fechar visualizacao">×</button>
+      </div>
+      <div class="lightbox-stage">
+        <img src="" alt="Visualizacao ampliada da fotografia selecionada">
+      </div>
+      <div class="lightbox-bottombar">
+        <p class="lightbox-caption"></p>
+        <div class="lightbox-controls">
+          <button type="button" class="lightbox-nav lightbox-prev" aria-label="Imagem anterior">←</button>
+          <button type="button" class="lightbox-nav lightbox-next" aria-label="Proxima imagem">→</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
 <footer class="grid">
   <p class="col-9">&copy; 2026 Bolívar Alencastro. Design HTML-first.</p>
   <nav class="footer-links col-3" aria-label="Links do rodapé">
@@ -364,5 +491,122 @@ Com @loratas</p>
     </ul>
   </nav>
 </footer>
+<script>
+  (function () {
+    var images = Array.prototype.slice.call(
+      document.querySelectorAll(
+        ".project-opening-image img, .hero-image img, .grid-item img"
+      )
+    );
+    var dialog = document.querySelector(".lightbox");
+
+    if (!images.length || !dialog || typeof dialog.showModal !== "function") {
+      return;
+    }
+
+    var stageImage = dialog.querySelector(".lightbox-stage img");
+    var caption = dialog.querySelector(".lightbox-caption");
+    var closeButton = dialog.querySelector(".lightbox-close");
+    var prevButton = dialog.querySelector(".lightbox-prev");
+    var nextButton = dialog.querySelector(".lightbox-next");
+    var activeIndex = 0;
+
+    function getCaption(image) {
+      var section = image.closest(".project-section");
+      var title = "";
+      var text = image.getAttribute("alt") || "";
+
+      if (section) {
+        var heading = section.querySelector("h2");
+        var postCaption = section.querySelector(".post-caption");
+        if (heading) {
+          title = heading.textContent.trim();
+        }
+        if (postCaption) {
+          text = postCaption.textContent.trim();
+        }
+      }
+
+      if (!title) {
+        title = "Soberania da Presença";
+      }
+
+      return text ? title + " · " + text : title;
+    }
+
+    function render(index) {
+      activeIndex = index;
+      var image = images[activeIndex];
+
+      stageImage.src = image.currentSrc || image.src;
+      stageImage.alt = image.alt;
+      caption.textContent = getCaption(image);
+      prevButton.disabled = images.length < 2;
+      nextButton.disabled = images.length < 2;
+    }
+
+    function openLightbox(index) {
+      render(index);
+      dialog.showModal();
+      closeButton.focus();
+    }
+
+    function closeLightbox() {
+      dialog.close();
+      var source = images[activeIndex];
+      if (source) {
+        source.focus();
+      }
+    }
+
+    images.forEach(function (image, index) {
+      image.tabIndex = 0;
+      image.setAttribute("role", "button");
+      image.setAttribute("aria-label", "Ampliar imagem");
+
+      image.addEventListener("click", function () {
+        openLightbox(index);
+      });
+
+      image.addEventListener("keydown", function (event) {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          openLightbox(index);
+        }
+      });
+    });
+
+    closeButton.addEventListener("click", closeLightbox);
+
+    prevButton.addEventListener("click", function () {
+      render((activeIndex - 1 + images.length) % images.length);
+    });
+
+    nextButton.addEventListener("click", function () {
+      render((activeIndex + 1) % images.length);
+    });
+
+    dialog.addEventListener("click", function (event) {
+      if (event.target === dialog) {
+        closeLightbox();
+      }
+    });
+
+    dialog.addEventListener("keydown", function (event) {
+      if (event.key === "ArrowLeft") {
+        event.preventDefault();
+        render((activeIndex - 1 + images.length) % images.length);
+      }
+      if (event.key === "ArrowRight") {
+        event.preventDefault();
+        render((activeIndex + 1) % images.length);
+      }
+    });
+
+    dialog.addEventListener("close", function () {
+      stageImage.src = "";
+    });
+  })();
+</script>
 </body>
 </html>
