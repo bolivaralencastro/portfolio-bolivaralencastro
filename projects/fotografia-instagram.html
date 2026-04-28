@@ -126,25 +126,38 @@
     }
     .lightbox-inner {
       position: relative;
-      display: grid;
-      grid-template-rows: auto minmax(0, 1fr) auto;
       width: 100%;
       height: 100dvh;
-      padding: var(--space-4);
-      gap: var(--space-3);
       overflow: hidden;
     }
+    .lightbox-ui {
+      position: absolute;
+      left: var(--space-4);
+      right: var(--space-4);
+      z-index: 2;
+      opacity: 0;
+      transition: opacity var(--dur-med) var(--ease-standard);
+    }
+    .lightbox.is-ui-visible .lightbox-ui,
+    .lightbox:focus-within .lightbox-ui {
+      opacity: 1;
+    }
     .lightbox-topbar {
+      top: var(--space-4);
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: var(--space-2);
+      pointer-events: none;
     }
     .lightbox-meta {
       font-size: var(--text-sm);
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: rgba(255, 255, 255, 0.72);
+      margin: 0;
+      padding: 0.5rem 0.75rem;
+      background: linear-gradient(90deg, rgba(12, 12, 12, 0.82), rgba(12, 12, 12, 0));
     }
     .lightbox-close,
     .lightbox-nav {
@@ -154,6 +167,8 @@
       cursor: pointer;
       font: inherit;
       transition: background var(--dur-fast) var(--ease-standard);
+      pointer-events: auto;
+      backdrop-filter: blur(12px);
     }
     .lightbox-close:hover,
     .lightbox-close:focus-visible,
@@ -169,10 +184,12 @@
       line-height: 1;
     }
     .lightbox-stage {
-      min-height: 0;
+      width: 100%;
+      height: 100%;
       display: grid;
       place-items: center;
       overflow: hidden;
+      padding: var(--space-4);
     }
     .lightbox-stage img {
       width: auto;
@@ -185,13 +202,30 @@
       box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
     }
     .lightbox-bottombar {
+      bottom: var(--space-4);
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       justify-content: space-between;
       gap: var(--space-3);
+      pointer-events: none;
+    }
+    .lightbox-copy {
+      display: grid;
+      gap: 0.35rem;
+      max-width: min(62ch, 70vw);
+      padding: 0.75rem 0.9rem;
+      background: linear-gradient(180deg, rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.84));
+      backdrop-filter: blur(12px);
+      pointer-events: auto;
+    }
+    .lightbox-title {
+      margin: 0;
+      font-size: var(--text-sm);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.68);
     }
     .lightbox-caption {
-      max-width: 60ch;
       margin: 0;
       font-size: var(--text-md);
       line-height: 1.5;
@@ -225,16 +259,22 @@
         flex-direction: column;
         align-items: flex-start;
       }
+      .lightbox-copy {
+        max-width: 100%;
+      }
     }
     @media (max-width: 600px) {
       .grid-item { grid-column: span 6; }
       .lightbox-inner {
-        padding: var(--space-2);
+        height: 100vh;
       }
-      .lightbox-topbar,
-      .lightbox-bottombar {
-        gap: var(--space-2);
+      .lightbox-ui {
+        left: var(--space-2);
+        right: var(--space-2);
       }
+      .lightbox-topbar { top: var(--space-2); }
+      .lightbox-bottombar { bottom: var(--space-2); gap: var(--space-2); }
+      .lightbox-stage { padding: var(--space-2); }
     }
   </style>
   <meta name="view-transition" content="same-origin">
@@ -471,15 +511,18 @@ Com @loratas</p>
 
   <dialog class="lightbox" aria-label="Visualizacao ampliada de fotografia">
     <div class="lightbox-inner">
-      <div class="lightbox-topbar">
+      <div class="lightbox-topbar lightbox-ui">
         <p class="lightbox-meta">Imagem ampliada</p>
         <button type="button" class="lightbox-close" aria-label="Fechar visualizacao">×</button>
       </div>
       <div class="lightbox-stage">
         <img src="" alt="Visualizacao ampliada da fotografia selecionada">
       </div>
-      <div class="lightbox-bottombar">
-        <p class="lightbox-caption"></p>
+      <div class="lightbox-bottombar lightbox-ui">
+        <div class="lightbox-copy">
+          <p class="lightbox-title"></p>
+          <p class="lightbox-caption"></p>
+        </div>
         <div class="lightbox-controls">
           <button type="button" class="lightbox-nav lightbox-prev" aria-label="Imagem anterior">←</button>
           <button type="button" class="lightbox-nav lightbox-next" aria-label="Proxima imagem">→</button>
@@ -512,13 +555,25 @@ Com @loratas</p>
     }
 
     var stageImage = dialog.querySelector(".lightbox-stage img");
+    var title = dialog.querySelector(".lightbox-title");
     var caption = dialog.querySelector(".lightbox-caption");
     var closeButton = dialog.querySelector(".lightbox-close");
     var prevButton = dialog.querySelector(".lightbox-prev");
     var nextButton = dialog.querySelector(".lightbox-next");
     var activeIndex = 0;
+    var uiTimer = null;
 
-    function getCaption(image) {
+    function showUi() {
+      dialog.classList.add("is-ui-visible");
+      window.clearTimeout(uiTimer);
+      uiTimer = window.setTimeout(function () {
+        if (dialog.open) {
+          dialog.classList.remove("is-ui-visible");
+        }
+      }, 1400);
+    }
+
+    function getLightboxCopy(image) {
       var section = image.closest(".project-section");
       var title = "";
       var text = image.getAttribute("alt") || "";
@@ -538,16 +593,21 @@ Com @loratas</p>
         title = "Soberania da Presença";
       }
 
-      return text ? title + " · " + text : title;
+      return {
+        title: title,
+        text: text || title
+      };
     }
 
     function render(index) {
       activeIndex = index;
       var image = images[activeIndex];
+      var copy = getLightboxCopy(image);
 
       stageImage.src = image.currentSrc || image.src;
       stageImage.alt = image.alt;
-      caption.textContent = getCaption(image);
+      title.textContent = copy.title;
+      caption.textContent = copy.text;
       prevButton.disabled = images.length < 2;
       nextButton.disabled = images.length < 2;
       syncStageImageBounds();
@@ -562,11 +622,13 @@ Com @loratas</p>
     function openLightbox(index) {
       render(index);
       dialog.showModal();
+      showUi();
       closeButton.focus();
     }
 
     function closeLightbox() {
       dialog.close();
+      window.clearTimeout(uiTimer);
       var source = images[activeIndex];
       if (source) {
         source.focus();
@@ -594,19 +656,27 @@ Com @loratas</p>
 
     prevButton.addEventListener("click", function () {
       render((activeIndex - 1 + images.length) % images.length);
+      showUi();
     });
 
     nextButton.addEventListener("click", function () {
       render((activeIndex + 1) % images.length);
+      showUi();
     });
 
     dialog.addEventListener("click", function (event) {
       if (event.target === dialog) {
         closeLightbox();
       }
+      showUi();
+    });
+
+    dialog.addEventListener("mousemove", function () {
+      showUi();
     });
 
     dialog.addEventListener("keydown", function (event) {
+      showUi();
       if (event.key === "ArrowLeft") {
         event.preventDefault();
         render((activeIndex - 1 + images.length) % images.length);
@@ -618,6 +688,7 @@ Com @loratas</p>
     });
 
     dialog.addEventListener("close", function () {
+      dialog.classList.remove("is-ui-visible");
       stageImage.src = "";
       stageImage.style.maxWidth = "";
       stageImage.style.maxHeight = "";
