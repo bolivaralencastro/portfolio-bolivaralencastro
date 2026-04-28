@@ -17,7 +17,7 @@
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/projects.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-04-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -133,6 +133,11 @@
   <url>
     <loc>https://bolivaralencastro.com.br/projects/retratos-ufsc-florianopolis.html</loc>
     <lastmod>2026-04-27</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bolivaralencastro.com.br/projects/fotografia-instagram.html</loc>
+    <lastmod>2026-04-28</lastmod>
     <priority>0.7</priority>
   </url>
 </urlset>
