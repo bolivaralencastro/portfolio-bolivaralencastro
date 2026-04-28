@@ -27,6 +27,7 @@ LISTING_CARD_HEIGHT = 540
 VERSIONED_ASSETS = {
     "/style.css": pathlib.Path("style.css"),
     "/assets/js/clarity.js": pathlib.Path("assets/js/clarity.js"),
+    "/assets/js/lightbox.js": pathlib.Path("assets/js/lightbox.js"),
 }
 
 
@@ -727,10 +728,25 @@ def replace_asset_reference(html_content: str, attr_name: str, public_path: str,
     return pattern.sub(rf"\1{versioned_url}\2", html_content)
 
 
+def ensure_script_reference(html_content: str, public_path: str, defer: bool = True) -> str:
+    if public_path in html_content:
+        return html_content
+
+    head_close = "</head>"
+    head_idx = html_content.find(head_close)
+    if head_idx == -1:
+        raise BuildError(f"Missing </head> while injecting script {public_path}")
+
+    defer_attr = " defer" if defer else ""
+    snippet = f'  <script src="{public_path}"{defer_attr}></script>\n'
+    return html_content[:head_idx] + snippet + html_content[head_idx:]
+
+
 def apply_versioned_asset_refs(html_content: str, versions: dict[str, str]) -> str:
     updated = html_content
     updated = replace_asset_reference(updated, "href", "/style.css", versions["/style.css"])
     updated = replace_asset_reference(updated, "src", "/assets/js/clarity.js", versions["/assets/js/clarity.js"])
+    updated = replace_asset_reference(updated, "src", "/assets/js/lightbox.js", versions["/assets/js/lightbox.js"])
     return updated
 
 
@@ -950,6 +966,7 @@ def main() -> int:
         source_html = managed_pages.get(page_path)
         if source_html is None:
             source_html = page_path.read_text(encoding="utf-8")
+        source_html = ensure_script_reference(source_html, "/assets/js/lightbox.js")
         versioned_html = apply_versioned_asset_refs(source_html, asset_versions)
         write_or_check(page_path, versioned_html, args.check, changed)
 
