@@ -4,7 +4,7 @@
   <subtitle>Product Design e Arquitetura Web Nativa</subtitle>
   <link href="https://bolivaralencastro.com.br/feed.xml" rel="self"/>
   <link href="https://bolivaralencastro.com.br/blog.html" rel="alternate"/>
-  <updated>2026-04-27T00:00:00Z</updated>
+  <updated>2026-04-30T00:00:00Z</updated>
   <id>https://bolivaralencastro.com.br/feed.xml</id>
   <author>
     <name>Bolívar Alencastro</name>
@@ -13,6 +13,16 @@
   <contributor>
     <name>Bolivar Alencastro</name>
   </contributor>
+
+  <entry>
+    <title>Em direção à empresa AI First: Lições do Notion, Fhinck e Gabriel no Distrito</title>
+    <link href="https://bolivaralencastro.com.br/blog/em-direcao-a-empresa-ai-first-distrito.html" rel="alternate"/>
+    <id>https://bolivaralencastro.com.br/blog/em-direcao-a-empresa-ai-first-distrito.html</id>
+    <published>2026-04-30T00:00:00Z</published>
+    <updated>2026-04-30T00:00:00Z</updated>
+    <summary>O que significa ser uma empresa AI First? Ontem, no Distrito, a resposta envolveu construir segundos cérebros para LLMs e reescrever a Lei de Conway.</summary>
+    <content type="html">&lt;p&gt;A transição para modelos baseados em inteligência artificial costuma ser narrada como a adoção de uma nova ferramenta. Você mantém o fluxo atual e adiciona um atalho. Ontem, no Distrito, durante um encontro focado no impacto da IA na gestão e na engenharia, a tônica foi inversa: a inteligência artificial exige desmontar a estrutura original.&lt;/p&gt;</content>
+  </entry>
 
   <entry>
     <title>A IA nos bastidores: anotações da plateia no Demo Day da Tera</title>
