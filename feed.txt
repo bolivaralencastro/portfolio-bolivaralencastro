@@ -20,8 +20,8 @@
     <id>https://bolivaralencastro.com.br/blog/em-direcao-a-empresa-ai-first-distrito.html</id>
     <published>2026-04-30T00:00:00Z</published>
     <updated>2026-04-30T00:00:00Z</updated>
-    <summary>O que significa ser uma empresa AI First? Ontem, no Distrito, a resposta envolveu construir segundos cérebros para LLMs e reescrever a Lei de Conway.</summary>
-    <content type="html">&lt;p&gt;A transição para modelos baseados em inteligência artificial costuma ser narrada como a adoção de uma nova ferramenta. Você mantém o fluxo atual e adiciona um atalho. Ontem, no Distrito, durante um encontro focado no impacto da IA na gestão e na engenharia, a tônica foi inversa: a inteligência artificial exige desmontar a estrutura original.&lt;/p&gt;</content>
+    <summary>O que significa ser uma empresa AI First? No Gen AI Lab do Distrito, a resposta envolveu construir segundos cérebros para LLMs e reescrever a Lei de Conway.</summary>
+    <content type="html">&lt;p&gt;A transição para modelos baseados em inteligência artificial costuma ser narrada como a adoção de uma nova ferramenta. Você mantém o fluxo atual e adiciona um atalho. No Distrito, em 29 de abril, durante um encontro focado no impacto da IA na gestão e na engenharia, a tônica foi inversa: a inteligência artificial exige desmontar a estrutura original.&lt;/p&gt;</content>
   </entry>
 
   <entry>
