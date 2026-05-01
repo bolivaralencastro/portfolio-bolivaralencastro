@@ -896,7 +896,22 @@ img {
 /* ---------- Speaker Highlights & Quotes ---------- */
 
 .speaker-highlight {
-  display: contents;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--space-2);
+  align-items: center;
+}
+
+.speaker-highlight > .col-8 {
+  grid-column: span 8;
+  display: grid;
+  gap: var(--space-2);
+  align-content: start;
+}
+
+.speaker-highlight > .col-8 h2 {
+  margin-top: 0;
 }
 
 .speaker-highlight-image {
@@ -905,7 +920,7 @@ img {
 }
 
 .speaker-quote {
-  grid-column: 10 / span 3;
+  grid-column: 9 / span 4;
   align-self: center;
   margin: 0;
   display: flex;
