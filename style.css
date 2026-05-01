@@ -734,6 +734,14 @@ a {
   }
 }
 
+/* Swiss layout: 12 colunas, preenchimento denso para que a quote
+   na col 10-12 não crie uma linha exclusiva empurrando o texto */
+.e-content.is-swiss {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-auto-flow: dense;
+  align-items: start;
+}
+
 /* ---------- Syndication ---------- */
 
 .syndication {
@@ -914,8 +922,8 @@ img {
   position: relative;
 }
 
-.speaker-quote-text::before { content: "“"; }
-.speaker-quote-text::after { content: "”"; }
+.speaker-quote-text::before { content: "\201c"; }
+.speaker-quote-text::after { content: "\201d"; }
 
 .speaker-quote-name {
   display: block;
@@ -938,10 +946,30 @@ img {
   grid-column: span 12;
 }
 
+/* A quote ocupa col 10-12 e é posicionada pelo grid denso junto
+   aos elementos de texto sem criar linha exclusiva */
+.e-content.is-swiss .speaker-quote {
+  grid-column: 10 / span 3;
+  grid-row: span 2;
+  align-self: start;
+  margin-top: var(--space-3);
+}
+
 @media (max-width: 900px) {
   .speaker-quote {
     grid-column: span 12;
+    grid-row: auto;
     margin: 0.75rem 0 1.5rem;
+  }
+
+  .e-content.is-swiss {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .e-content.is-swiss .speaker-quote {
+    grid-column: span 12;
+    grid-row: auto;
+    margin-top: 0;
   }
 
   .e-content.is-swiss > *:not(.speaker-highlight) {
