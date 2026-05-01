@@ -96,6 +96,7 @@
           <div class="col-8">
             <h2>O Contexto como Infraestrutura</h2>
             <p>Como <a href="/blog/github-copilot-contexto-e-o-que-ficou-do-workshop-na-fiap.html">já havia ficado claro quando discutimos o GitHub Copilot</a>, para que modelos de linguagem funcionem além de sua base de treinamento estática, eles precisam de contexto atualizado e legível. A limitação imediata de plugar o ChatGPT em um Google Drive é a natureza dos arquivos: apresentações e planilhas exigem interpretação de layout antes da extração de dados. O conhecimento fica preso no formato.</p>
+            <p>No evento, a adoção do Notion foi descrita não como um sistema de organização visual para humanos, mas como um banco de dados estruturado em texto desenhado para ser consumido por APIs. O conceito de &ldquo;segundo cérebro&rdquo;, que antes servia para aliviar a carga cognitiva pessoal, escala para a infraestrutura da empresa. Quando as informações estão nativamente em <em>markdown</em> ou blocos estruturados, os agentes de IA ganham a capacidade de acessar o contexto histórico e operacional sem fricção, tornando-se precisos.</p>
           </div>
           <aside class="speaker-quote" aria-label="Destaque de Gustavo Araújo">
             <p class="speaker-quote-text">Não tem como você construir um segundo cérebro só com um hard drive e uma IA. Você precisa de um lugar para armazenar conhecimento em formato de texto.</p>
@@ -103,12 +104,12 @@
           </aside>
         </div>
 
-        <p>No evento, a adoção do Notion foi descrita não como um sistema de organização visual para humanos, mas como um banco de dados estruturado em texto desenhado para ser consumido por APIs. O conceito de "segundo cérebro", que antes servia para aliviar a carga cognitiva pessoal, escala para a infraestrutura da empresa. Quando as informações estão nativamente em <em>markdown</em> ou blocos estruturados, os agentes de IA ganham a capacidade de acessar o contexto histórico e operacional sem fricção, tornando-se precisos.</p>
-
         <div class="speaker-highlight">
           <div class="col-8">
             <h2>APIs Acima de Interfaces</h2>
             <p>A Fhinck tomou a decisão radical de operar como uma empresa <em>AI First</em> há três anos, quando as capacidades dos modelos ainda geravam ceticismo. Paulo Castello — que subiu ao palco usando seus discretos <a href="https://www.evenrealities.com/smart-glasses/selection" rel="noopener noreferrer" target="_blank">smart glasses da Even Realities</a>, rendendo piadas de que estaria &ldquo;colando&rdquo; durante a apresentação — descreveu o desgaste inicial dessa escolha: metade da equipe saiu por rejeitar a premissa de que agentes autônomos assumiriam o papel central no desenvolvimento e na execução de processos.</p>
+            <p>A consequência imediata de colocar a máquina para executar fluxos no <a href="/blog/oracle-n8n-vercel-elevenlabs-e-a-stack-ai-first-no-cubo.html">n8n</a> foi a obsolescência da interface gráfica. Ferramentas consolidadas como o Jira foram substituídas porque, embora tivessem uma interface familiar para humanos, ofereciam integrações ineficientes para agentes. A nova métrica de avaliação de software corporativo passou a ser a qualidade de sua API e sua aderência ao padrão MCP (Model Context Protocol).</p>
+            <p>A Fhinck hoje opera com o Notion como sistema operacional e repositório central, onde os agentes leem o que são, para quem trabalham e o que devem executar. Há até mesmo um <em>Agent Builder</em>: uma inteligência artificial designada apenas para gerenciar, aprovar, cobrar e supervisionar as outras dezenas de agentes que operam simultaneamente no desenvolvimento de software.</p>
           </div>
           <aside class="speaker-quote" aria-label="Destaque de Paulo Castello">
             <p class="speaker-quote-text">Toda escolha de sistema dentro da empresa não vai mais ser pela interface bonitinha. Os sistemas precisam ser API First.</p>
@@ -116,26 +117,20 @@
           </aside>
         </div>
 
-        <p>A consequência imediata de colocar a máquina para executar fluxos no n8n (ferramenta que <a href="/blog/oracle-n8n-vercel-elevenlabs-e-a-stack-ai-first-no-cubo.html">tem se consolidado como peça-chave de orquestração AI First</a>) foi a obsolescência da interface gráfica. Ferramentas consolidadas como o Jira foram substituídas porque, embora tivessem uma interface familiar para humanos, ofereciam integrações ineficientes para agentes. A nova métrica de avaliação de software corporativo passou a ser a qualidade de sua API e sua aderência ao padrão MCP (Model Context Protocol).</p>
-
-        <p>A Fhinck hoje opera com o Notion como sistema operacional e repositório central, onde os agentes leem o que são, para quem trabalham e o que devem executar. Há até mesmo um <em>Agent Builder</em>: uma inteligência artificial designada apenas para gerenciar, aprovar, cobrar e supervisionar as outras dezenas de agentes que operam simultaneamente no desenvolvimento de software.</p>
-
         <img src="/assets/images/blog/em-direcao-a-empresa-ai-first-distrito/distrito-galeria-02.webp" alt="Composição com três imagens das apresentações sobre a integração de agentes e ferramentas corporativas" width="2400" height="1422" loading="lazy" decoding="async">
 
         <div class="speaker-highlight">
           <div class="col-8">
             <h2>A Nova Lei de Conway</h2>
             <p>Na Gabriel, a transição exigiu renegociar o pacto de trabalho das áreas de tecnologia. Vitor Finger detalhou como a velocidade imposta pelos novos fluxos quebrou premissas fundamentais da engenharia tradicional. Se o custo e o tempo para gerar código caem drasticamente, a prática de preservar e evoluir sistemas legados dá lugar à disposição de descartar e reescrever código sem apego.</p>
+            <p>A mudança estrutural atingiu o modelo de gestão. A divisão clássica entre Produto (o que construir) e Engenharia (como construir) perde sentido quando a execução técnica se torna rápida e autônoma. A Gabriel unificou a liderança dessas frentes. O gargalo deixou de ser a capacidade de codificar e passou a ser a capacidade de fornecer contexto correto e validar o resultado das máquinas.</p>
+            <p>Para organizar essa validação, a Gabriel passou a usar agentes para criticar o planejamento. Antes de um plano chegar à gestão, um robô emula a perspectiva do CEO exigindo retorno financeiro, outro emula o CPO focado no cliente e um terceiro atua como CTO alertando sobre escalabilidade. Essa fricção artificial garante que o humano responsável entregue propostas já estressadas sob múltiplos pontos de vista, acelerando a aprovação final.</p>
           </div>
           <aside class="speaker-quote" aria-label="Destaque de Vitor Finger">
             <p class="speaker-quote-text">A estrutura definida da organização define como o software é feito. Dependendo do que eu quero fazer, eu tenho que mexer nas estruturas.</p>
             <span class="speaker-quote-name">Vitor Finger, Gabriel</span>
           </aside>
         </div>
-
-        <p>A mudança estrutural atingiu o modelo de gestão. A divisão clássica entre Produto (o que construir) e Engenharia (como construir) perde sentido quando a execução técnica se torna rápida e autônoma. A Gabriel unificou a liderança dessas frentes. O gargalo deixou de ser a capacidade de codificar e passou a ser a capacidade de fornecer contexto correto e validar o resultado das máquinas.</p>
-
-        <p>Para organizar essa validação, a Gabriel passou a usar agentes para criticar o planejamento. Antes de um plano chegar à gestão, um robô emula a perspectiva do CEO exigindo retorno financeiro, outro emula o CPO focado no cliente e um terceiro atua como CTO alertando sobre escalabilidade. Essa fricção artificial garante que o humano responsável entregue propostas já estressadas sob múltiplos pontos de vista, acelerando a aprovação final.</p>
 
         <h2>A Máquina como Treinadora</h2>
         <p>Nem tudo pode ser executado por agentes, especialmente no contexto sensível da segurança pública operado pela central 24 horas da Gabriel. Pessoas ainda precisam atender a chamados críticos. Mas o processo de treinar esses humanos foi invertido: em vez de ler manuais, os operadores praticam com bots que simulam usuários desesperados ou síndicos resistentes à tecnologia.</p>
