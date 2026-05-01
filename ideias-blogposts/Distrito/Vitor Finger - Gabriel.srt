@@ -1,0 +1,2003 @@
+1
+00:00:00,000 --> 00:00:00,700
+Olha o mestre.
+
+2
+00:00:01,200 --> 00:00:01,600
+Vítor.
+
+3
+00:00:01,700 --> 00:00:02,100
+Vamos lá?
+
+4
+00:00:02,200 --> 00:00:02,600
+Vem cá, cara.
+
+5
+00:00:02,600 --> 00:00:03,000
+Fica à vontade.
+
+6
+00:00:03,000 --> 00:00:03,500
+Você vai usar o lugar lá alguma coisa ou não?
+
+7
+00:00:03,600 --> 00:00:03,800
+Ah, vai usar aqui.
+
+8
+00:00:03,900 --> 00:00:04,100
+Ah, tá aqui já.
+
+9
+00:00:04,100 --> 00:00:04,300
+Já tá na tela.
+
+10
+00:00:04,300 --> 00:00:04,400
+Tá bom.
+
+11
+00:00:04,600 --> 00:00:04,800
+Aí é bom que não fica.
+
+12
+00:00:05,000 --> 00:00:05,100
+Oi.
+
+13
+00:00:05,300 --> 00:00:05,600
+Ah, essa altura é boa.
+
+14
+00:00:06,000 --> 00:00:06,500
+E aí, pessoal? Tudo bem?
+
+15
+00:00:07,000 --> 00:00:07,700
+Sou Vítor, conhecido por ter tentado desligar o Notion lá na Gabriel.
+
+16
+00:00:07,700 --> 00:00:08,000
+Não consegui.
+
+17
+00:00:08,000 --> 00:00:08,600
+Mas em defesa do Notion, fui cliente na pessoa física.
+
+18
+00:00:08,600 --> 00:00:09,100
+Inclusive, também fiz meu dashboard individual.
+
+19
+00:00:09,100 --> 00:00:09,600
+Bem sofisticado, não tão focado em saúde, mas no financeiro.
+
+20
+00:00:09,600 --> 00:00:10,000
+E leituras também.
+
+21
+00:00:10,000 --> 00:00:10,400
+Aí tudo que eu ia lendo, anotava.
+
+22
+00:00:10,400 --> 00:00:11,000
+Tenho até hoje histórico, acho que desde 2020, as leituras que eu fiz.
+
+23
+00:00:11,000 --> 00:00:11,400
+Eu vou lá, anoto, faço um resumo.
+
+24
+00:00:11,600 --> 00:00:12,000
+Boa. Pessoal, vamos falar um pouquinho da
+
+25
+00:00:12,000 --> 00:00:12,500
+Gabriel e como a gente tá usando.
+
+26
+00:00:12,500 --> 00:00:12,900
+Antes, só uma dúvida rápida.
+
+27
+00:00:13,000 --> 00:00:13,600
+A nível de quem trabalha com o quê? Quem aqui é da área de tecnologia?
+
+28
+00:00:13,600 --> 00:00:14,000
+Efetivamente, produto, engenharia?
+
+29
+00:00:14,100 --> 00:00:14,400
+Duas mãos tímidas ali atrás.
+
+30
+00:00:14,500 --> 00:00:14,900
+Vendas e marketing, tem gente?
+
+31
+00:00:15,100 --> 00:00:15,300
+Tá aí.
+
+32
+00:00:15,300 --> 00:00:15,600
+Founder, faz tudo.
+
+33
+00:00:16,200 --> 00:00:16,400
+É isso.
+
+34
+00:00:16,600 --> 00:00:17,100
+Cara, Gabriel, vocês podem conhecer talvez pelos
+
+35
+00:00:17,100 --> 00:00:17,600
+pelas câmeras apontadas para a rua com uma corzinha verde ao redor das câmeras.
+
+36
+00:00:17,700 --> 00:00:18,300
+Mas nada mais é do que uma empresa tentando humildemente ajudar a resolver o problema da segurança pública.
+
+37
+00:00:18,300 --> 00:00:18,600
+De forma privada.
+
+38
+00:00:18,600 --> 00:00:19,100
+A forma como a gente faz isso é interpretando o que acontece nas ruas.
+
+39
+00:00:19,200 --> 00:00:19,600
+Então, cada camaleão, que é o nome dessas câmeras que vocês veem.
+
+40
+00:00:19,700 --> 00:00:20,000
+Ele é responsável por gravar.
+
+41
+00:00:20,000 --> 00:00:20,400
+Então a gente tá enxergando o que acontece.
+
+42
+00:00:20,400 --> 00:00:20,800
+E responsável por estruturar dados.
+
+43
+00:00:20,800 --> 00:00:21,300
+Então a gente tá lendo placa de veículo 24 horas por dia.
+
+44
+00:00:21,300 --> 00:00:21,800
+São mais de 100 milhões de placas lidas.
+
+45
+00:00:21,800 --> 00:00:22,200
+Placas não, porque são detecções, né?
+
+46
+00:00:22,200 --> 00:00:22,500
+Um carro é detectado várias vezes.
+
+47
+00:00:22,500 --> 00:00:23,000
+Mas mais de 100 milhões de detecções.
+
+48
+00:00:23,000 --> 00:00:23,500
+Essas detecções são integradas às autoridades.
+
+49
+00:00:23,500 --> 00:00:24,000
+Então, passou um carro roubado, o camaleão avisa a autoridade.
+
+50
+00:00:24,000 --> 00:00:24,400
+E vai lá, a rota, atrás desse veículo.
+
+51
+00:00:24,500 --> 00:00:24,900
+Do outro lado, a gente tem a central 24 horas.
+
+52
+00:00:24,900 --> 00:00:25,400
+Então, sim, infelizmente, algum de vocês, eventualmente, tiver
+
+53
+00:00:25,400 --> 00:00:25,900
+um assalto, um roubo, qualquer coisa, liguem para 0800 Gabriel.
+
+54
+00:00:25,900 --> 00:00:26,400
+Literalmente Gabriel, que nem nas propagandas antigamente.
+
+55
+00:00:26,400 --> 00:00:27,000
+Que a gente tem uma central 24 horas aqui em Pinheiros, que vai atender vocês e ajudar com o que for necessário.
+
+56
+00:00:27,200 --> 00:00:27,500
+Isso é a Gabriel.
+
+57
+00:00:27,500 --> 00:00:27,900
+São 17.500 câmeras, entre 10 cidades hoje.
+
+58
+00:00:27,900 --> 00:00:28,400
+São Paulo, Rio de Janeiro e BH, e algumas cidades ao redor, né?
+
+59
+00:00:28,400 --> 00:00:28,800
+Então, aqui, toda ABC Paulista, Guarulhos, Barueri.
+
+60
+00:00:28,800 --> 00:00:29,200
+E Osasco, aí Rio de Janeiro tem Niterói na frente.
+
+61
+00:00:29,200 --> 00:00:29,700
+Que se não falar em Niterói, o Niterói, o Niteróiense, a pessoa de Niterói, ela fica triste.
+
+62
+00:00:29,700 --> 00:00:29,900
+Não, é Rio de Janeiro.
+
+63
+00:00:29,900 --> 00:00:30,100
+E BH, só BH.
+
+64
+00:00:30,300 --> 00:00:30,500
+Isso é Gabriel.
+
+65
+00:00:30,700 --> 00:00:31,100
+Dado isso, o na virada do ano, eu tive uma
+
+66
+00:00:31,400 --> 00:00:31,900
+Eu acordei em 1º de janeiro com uma ansiedade no meu peito, porque a gente começou a ver no mercado.
+
+67
+00:00:31,900 --> 00:00:32,500
+E aí, tô vendo o X, tô vendo o Reddit, as empresas de tecnologia falando sobre o que tá acontecendo no mundo.
+
+68
+00:00:32,500 --> 00:00:33,100
+E agora, engenharia não se faz mais dessa forma, e as empresas têm que virar AI first.
+
+69
+00:00:33,100 --> 00:00:33,500
+Algumas desde o início, né? Que nem o Paulo estava trazendo aqui.
+
+70
+00:00:33,500 --> 00:00:34,200
+Outras aproveitaram, principalmente esses, a virada do ano, quando você tem Natal e Ano Novo, começaram a usar Cloud Code.
+
+71
+00:00:34,200 --> 00:00:34,700
+Começaram a ver que eu posso pedir uma coisa desestruturada e vem uma ferramenta à minha disposição.
+
+72
+00:00:34,700 --> 00:00:35,100
+Porque os modelos evoluíram muito.
+
+73
+00:00:35,100 --> 00:00:35,500
+Então o mercado entrou nesse fervor.
+
+74
+00:00:35,500 --> 00:00:36,000
+E como eu sou o CPO da Gabriel, então eu toco toda a área de produto e engenharia, que a gente unificou tudo lá na empresa.
+
+75
+00:00:36,000 --> 00:00:36,500
+A gente resolveu olhar para isso com mais afinco.
+
+76
+00:00:36,500 --> 00:00:36,900
+Já era algo sendo visto, né, Gabriel.
+
+77
+00:00:36,900 --> 00:00:37,200
+Mas a gente resolveu acelerar de verdade.
+
+78
+00:00:37,200 --> 00:00:37,700
+E aí, o que eu quero contar um pouco aqui são os aprendizados que a gente teve.
+
+79
+00:00:37,700 --> 00:00:38,000
+Tá? Depois do happy hour, a gente pode falar.
+
+80
+00:00:38,000 --> 00:00:38,500
+Das minúcias, quem tiver dúvidas, também a gente pode discutir.
+
+81
+00:00:38,500 --> 00:00:39,100
+Mas eu fui batendo cabeça muito ao longo do primeiro trimestre.
+
+82
+00:00:39,100 --> 00:00:39,700
+Porque os conteúdos que eu via no mercado, eles eram muito focados nas empresas de fora.
+
+83
+00:00:39,700 --> 00:00:40,100
+Né? Então você vê lá no X, a Ramp, que fala bastante sobre como eles estão usando.
+
+84
+00:00:40,100 --> 00:00:40,700
+Lá no seu escritório em Nova York, com muito mais dinheiro e pessoas extremamente qualificadas.
+
+85
+00:00:40,700 --> 00:00:41,400
+Eu pensava, cara, como que na Gabriel, com 200 pessoas, na realidade do Brasil, eu traduzo aquilo que tá lá fora?
+
+86
+00:00:41,400 --> 00:00:41,700
+Porque acontece.
+
+87
+00:00:41,700 --> 00:00:42,300
+E aí eu fui falar com outros empreendedores aqui de São Paulo, fui falar com empresas do mesmo tamanho da Gabriel.
+
+88
+00:00:42,300 --> 00:00:42,800
+E alguns desses aprendizados são o que a gente vai ver aqui.
+
+89
+00:00:42,800 --> 00:00:43,400
+Mas principalmente, até uma coisa que o Paulo estava comentando, o principal desafio é que tudo ficou mais rápido.
+
+90
+00:00:43,400 --> 00:00:44,000
+E aí, essa velocidade, que não era só na nossa cabeça, porque é quase exaustivo ficar com o Cloud Code aberto.
+
+91
+00:00:44,000 --> 00:00:44,500
+Porque você pode fazer tudo.
+
+92
+00:00:44,500 --> 00:00:45,100
+Tem um texto maravilhoso do Matt Schumer, que é um desenvolvedor, e ele fala sobre como as mudanças estão impactando a vida dos desenvolvedores.
+
+93
+00:00:45,100 --> 00:00:45,600
+E uma coisa que ele fala é que os seus sonhos ficaram mais próximos.
+
+94
+00:00:45,600 --> 00:00:46,100
+É isso, eu posso chegar pro Cloud Code e falar, me cria um aplicativo igual o Tibia.
+
+95
+00:00:46,100 --> 00:00:46,700
+E aí eu vou ter lá, na minha memória infantil, de quando eu jogava Tibia, sendo sanada por algo que eu criei.
+
+96
+00:00:46,700 --> 00:00:46,900
+É impressionante isso.
+
+97
+00:00:46,900 --> 00:00:47,100
+E a gente pode começar a fazer muitas coisas.
+
+98
+00:00:47,100 --> 00:00:47,400
+Então é cansativo, é muito rápido.
+
+99
+00:00:47,400 --> 00:00:48,000
+E aí a gente olhou para a organização e falou, isso aqui, de forma desestruturada, vai ter gente indo muito rápido.
+
+100
+00:00:48,000 --> 00:00:48,500
+Eventualmente botando a cabeça na parede.
+
+101
+00:00:48,500 --> 00:00:49,000
+Vai ter gente que vai ter medo, que não vai saber o que fazer.
+
+102
+00:00:49,000 --> 00:00:49,600
+Então, como que a gente organiza? Como que a gente cria mecanismos para nossa empresa conseguir funcionar nesse mundo extremamente rápido e desorganizado?
+
+103
+00:00:49,800 --> 00:00:50,200
+E aí, são quatro tópicos.
+
+104
+00:00:50,300 --> 00:00:50,900
+Eu vou falar sobre como a gente usa Notion como base de conhecimento.
+
+105
+00:00:50,900 --> 00:00:51,300
+Então é muito parecido com o que foi mostrado aqui.
+
+106
+00:00:51,300 --> 00:00:51,700
+Mas eu vou só reforçar o nosso caso de uso.
+
+107
+00:00:51,800 --> 00:00:52,200
+Os bots de treinamento do time.
+
+108
+00:00:52,200 --> 00:00:52,900
+Então, embora tenha, e eu concordo, não é uma posição contrária a isso, tem que automatizar muito o fluxo de relacionamento.
+
+109
+00:00:52,900 --> 00:00:53,400
+E o SDR é autônomo, qualificador de leads.
+
+110
+00:00:53,400 --> 00:00:54,000
+Mas cara, Gabriel trabalha com algo muito sensível, né? Você foi assaltado, quer um ser humano ou um bot te atendendo?
+
+111
+00:00:54,000 --> 00:00:54,300
+Isso aí são coisas que a gente vai ter sempre.
+
+112
+00:00:54,300 --> 00:00:54,800
+Com a equipe de seres humanos operando.
+
+113
+00:00:54,800 --> 00:00:55,300
+Como que eu pego esse ser humano e eu potencializo ele?
+
+114
+00:00:55,300 --> 00:00:55,800
+Então tem um desafio de como treinar melhor, como rampá-lo com mais velocidade, usando IA.
+
+115
+00:00:55,900 --> 00:00:56,300
+Aí tem a parte de planejamento.
+
+116
+00:00:56,300 --> 00:00:57,000
+Essa, particularmente, foi uma grande dor minha, resolvida com inteligência artificial.
+
+117
+00:00:57,000 --> 00:00:57,500
+Eu vou entrar como a gente mudou a maneira de fazer planejamento de produto na Gabriel.
+
+118
+00:00:57,500 --> 00:00:57,900
+Para todo mundo, não só para mim.
+
+119
+00:00:57,900 --> 00:00:58,300
+Então, para a equipe de produto, como a gente começou a fazer.
+
+120
+00:00:58,300 --> 00:00:58,700
+E aí, no fim, mudanças organizacionais.
+
+121
+00:00:58,700 --> 00:00:59,100
+Isso aqui também é outra coisa que me ajudou muito.
+
+122
+00:00:59,100 --> 00:00:59,700
+Mas quais mudanças a gente teve que fazer nas áreas para conseguir operar melhor com inteligência artificial.
+
+123
+00:00:59,900 --> 00:01:00,200
+E aí, sobre base de conhecimento, né?
+
+124
+00:01:00,400 --> 00:01:00,900
+O real desafio da Gabriel, a gente tem muita ligação.
+
+125
+00:01:00,900 --> 00:01:01,300
+Então, imaginem essa central que eu estava falando para vocês.
+
+126
+00:01:01,300 --> 00:01:01,700
+São 6.000 chamadas, e aí, não caem em chamadas.
+
+127
+00:01:01,700 --> 00:01:02,100
+Como telefone, WhatsApp, e-mail, mas são 6.000 contatos sendo realizados ao longo de um mês.
+
+128
+00:01:02,100 --> 00:01:02,600
+200 por dia, de 12 tópicos diferentes, com 40 protocolos distintos.
+
+129
+00:01:02,600 --> 00:01:03,100
+Cada um com seu nível de intensidade.
+
+130
+00:01:03,100 --> 00:01:03,500
+Tem muita coisa acontecendo.
+
+131
+00:01:03,500 --> 00:01:03,900
+Então, as coisas vão mudando, os modos de fazer.
+
+132
+00:01:03,900 --> 00:01:04,300
+A documentação que era válida, não é mais válida.
+
+133
+00:01:04,300 --> 00:01:04,700
+Então é algo muito fácil de ficar caótico.
+
+134
+00:01:04,700 --> 00:01:05,200
+E a gente precisava centralizar essa informação em algum lugar que fosse acessível pela máquina, de forma estruturada.
+
+135
+00:01:05,200 --> 00:01:05,600
+Mas também pelo ser humano.
+
+136
+00:01:05,600 --> 00:01:06,000
+Porque a gente não podia transformar algo totalmente agêntico.
+
+137
+00:01:06,000 --> 00:01:06,500
+Então, a gente começou criando uma, no Cloud Code mesmo, mas usando interface do Cloud.
+
+138
+00:01:06,500 --> 00:01:07,000
+A gente cria uma interface de perguntas em linguagem natural para o operador.
+
+139
+00:01:07,000 --> 00:01:07,500
+Então, imagina ele lá, podendo perguntar, como é que é o protocolo de compartilhamento de imagens?
+
+140
+00:01:07,500 --> 00:01:08,000
+Eu quero, alguém me ligou e dizendo, fui assaltado aqui na Doutor Virgílio.
+
+141
+00:01:08,000 --> 00:01:08,400
+Eu posso, não posso passar imagem para as pessoas?
+
+142
+00:01:08,400 --> 00:01:08,800
+Existem regras, existem fluxos, tem que entender cada um deles.
+
+143
+00:01:08,800 --> 00:01:09,200
+A gente cria essa interface, mas o padrão de uma interface dessas é que você tem que subir um monte de PDF.
+
+144
+00:01:09,200 --> 00:01:09,700
+Então, vai lá, tem várias documentações, exporta essa documentação como PDF, sobe nessa plataforma.
+
+145
+00:01:09,700 --> 00:01:10,000
+E aí a pessoa fica lá consumindo.
+
+146
+00:01:10,000 --> 00:01:10,500
+Mas são 12 macroáreas com 40 protocolos diferentes.
+
+147
+00:01:10,500 --> 00:01:10,900
+Cada um sendo atualizado.
+
+148
+00:01:10,900 --> 00:01:11,200
+O trabalho que faz essa atualização.
+
+149
+00:08:00,000 --> 00:08:02,260
+a chance de dar errado é muito alto. Aí que a gente chega no Notion como esse motor intermediário.
+
+150
+00:08:02,260 --> 00:08:10,000
+Então o Notion ele é hoje para as pessoas que consomem informações via essas interfaces na Gabriel, o centralizador da informação.
+
+151
+00:08:10,000 --> 00:08:16,000
+E a razão pela qual a gente escolheu o Notion não é só porque ele é bom com agentes, porque existem outras ferramentas que fazem isso.
+
+152
+00:08:16,000 --> 00:08:22,000
+A gente poderia ter estruturado, cara, no GitHub de uma forma totalmente não palatável para o ser humano, mas totalmente palatável para um agente.
+
+153
+00:08:22,000 --> 00:08:27,000
+Mas eu preciso que o vendedor que tá na rua também consiga ler a documentação, que a pessoa de produto consiga ler essa documentação.
+
+154
+00:08:27,000 --> 00:08:32,000
+Então o Notion ele faz um ótimo meio-campo nesse jogo entre robôs e seres humanos.
+
+155
+00:08:32,000 --> 00:08:35,000
+Por isso a gente escolheu o Notion como esse intermediário.
+
+156
+00:08:35,000 --> 00:08:40,000
+Isso aqui é um exemplo de tudo que vai lá dentro hoje, então tudo que é informação da nossa central 24 horas.
+
+157
+00:08:40,000 --> 00:08:43,000
+Como ela funciona, a parte de documentação de produto, dúvidas jurídicas.
+
+158
+00:08:43,000 --> 00:08:47,000
+Ah, e a LGPD, Gabriel, tá lá sanada a dúvida, então vocês podem ligar e a pessoa vai saber o que responder.
+
+159
+00:08:47,000 --> 00:08:50,000
+Marketing, operações, tudo isso acessível tanto para os chatbots quanto para as pessoas.
+
+160
+00:08:50,000 --> 00:08:54,000
+Notion foi a plataforma que a gente encontrou para conseguir fazer esse jogo entre robôs e seres humanos.
+
+161
+00:08:54,000 --> 00:08:56,000
+Dado isso, isso aí.
+
+162
+00:08:56,000 --> 00:08:58,000
+Ah, ponto importante, foi feito pela IA, toda a apresentação.
+
+163
+00:08:58,000 --> 00:09:01,000
+Então eu tô descobrindo partes dos slides com vocês.
+
+164
+00:09:01,000 --> 00:09:04,000
+Eu pedi para eles fazerem, a IA fazendo, no caso.
+
+165
+00:09:04,000 --> 00:09:08,000
+E ela tá, o cara, ficou maravilhoso, que usem depois o Cloud Design, uma dica honesta, é maravilhoso para isso.
+
+166
+00:09:08,000 --> 00:09:13,000
+Segundo ponto, a gente resolveu o problema da documentação num único lugar e a gente agora tem onde consultar.
+
+167
+00:09:13,000 --> 00:09:20,000
+Só que para um operador, seja ele da central, seja ele de um time de vendas, ele conseguir fazer aquilo de forma fluida, que não fique consultando o tempo todo, ele tem que ser treinado.
+
+168
+00:09:20,000 --> 00:09:23,000
+E aí que vem a parte da gente usar IA para treinar o usuário.
+
+169
+00:09:23,000 --> 00:09:27,000
+A gente criou dois chats, como se fosse WhatsApp, que você consegue interagir com bots.
+
+170
+00:09:27,000 --> 00:09:34,000
+Que tão emulando os clientes, que tão emulando os leads, então para a parte de vendas, os leads, para a central, o trans e o cliente que tem alguma dor.
+
+171
+00:09:34,000 --> 00:09:40,000
+E o operador ali, ele fica conversando com esse bot, fingindo que tá resolvendo algum problema. Então é como se fosse um role play.
+
+172
+00:09:40,000 --> 00:09:50,000
+Existe lá um desafio que você tem que, sei lá, vender para o seu Zé, que é um síndico profissional de pinheiros, que tem cinco condomínios e a maior dor dele é que ele não entende de tecnologia.
+
+173
+00:09:50,000 --> 00:09:57,000
+Isso tudo é o bot, com esse conhecimento que vai emulando com base no que ele tem como preset ali, para interagir com essa pessoa e treinando.
+
+174
+00:09:57,000 --> 00:10:02,000
+Então a gente criou essas máquinas de treinamento para aumentar a rampagem do time, a velocidade de rampagem do time.
+
+175
+00:10:02,000 --> 00:10:07,000
+E isso tem sido fundamental para a gente conseguir fazer eles acompanharem a velocidade.
+
+176
+00:10:07,000 --> 00:10:13,000
+Porque enquanto aquele primeiro é bom para garantir que a documentação tá uníssona, esse aqui é bom para garantir que eles aprenderam.
+
+177
+00:10:13,000 --> 00:10:21,000
+E aí depois que ele faz essa interação, tanto na parte de vendas quanto na parte da central, existe todo um feedback estruturado que o próprio bot dá para ele, falando: "Ó, você trouxe conteúdo correto, mas a abordagem não foi a melhor.
+
+178
+00:10:21,000 --> 00:10:27,000
+Ou você errou tais tópicos por conta de tal detalhe que tá aqui nessa documentação."
+
+179
+00:10:27,000 --> 00:10:31,000
+Então é basicamente um coach um a um que tem com os vendedores.
+
+180
+00:10:31,000 --> 00:10:36,000
+Isso aqui é potencializar o trabalho do coordenador de vendas, do coordenador da central.
+
+181
+00:10:36,000 --> 00:10:42,000
+Que no limite, e aí nada a ver com a empresa, né? Muito diferente do que o chat faz com as crianças estudando, né?
+
+182
+00:10:42,000 --> 00:10:47,000
+O melhor, a melhor forma de aprender é ter um professor particular. A IA virou professor particular de muitas pessoas.
+
+183
+00:10:47,000 --> 00:10:50,000
+Isso é maravilhoso. O que é horrível de falar, faz meu tema de casa e repassar.
+
+184
+00:10:50,000 --> 00:10:53,000
+Isso é a mesma coisa. Então ele vai te avaliar, ele vai trocar ideia e vai ajudar o operador a performar melhor.
+
+185
+00:10:53,000 --> 00:10:59,000
+Isso são duas formas que a gente achou de fazer com que a operação da Gabriel, que não tem nada a ver com tecnologia, conseguisse fluir melhor.
+
+186
+00:10:59,000 --> 00:11:02,000
+Das minhas dores agora, enquanto uma pessoa da área de tecnologia.
+
+187
+00:11:02,000 --> 00:11:08,000
+Por muito tempo, o desafio que a gente teve foi como eu pego uma equipe de produto e faço com que cada pessoa tenha um planejamento para o seu próprio produto, para sua squad.
+
+188
+00:11:08,000 --> 00:11:15,000
+Que faça sentido com a visão da empresa, com a visão que a gente tem para a área de tecnologia, sendo que eu tenho várias pessoas diferentes, né?
+
+189
+00:11:15,000 --> 00:11:17,000
+Não são robôs, são seres humanos.
+
+190
+00:11:17,000 --> 00:11:27,000
+Então, como que aquele product manager júnior, que acabou de entrar no mercado de trabalho, aquele sênior que veio de uma empresa totalmente diferente da Gabriel, e essa pessoa que tá desde o início na Gabriel, nunca foi de produto e migrou agora para a área, como que cada um vai fazer um planejamento coerente tanto com a visão da área, quanto com o template que a gente precisa?
+
+191
+00:11:27,000 --> 00:11:34,000
+E o maior desafio do processo, quando a gente tenta encaixar tudo em caixinhas, é que ele limita para baixo e para cima, né?
+
+192
+00:11:34,000 --> 00:11:38,000
+Então você pode botar um template duro e falar, é só preencher isso daqui.
+
+193
+00:11:38,000 --> 00:11:42,000
+Vai garantir o mínimo, então a pessoa não vai deixar de entregar aquilo, mas você capa o máximo também.
+
+194
+00:11:42,000 --> 00:11:48,000
+Porque se ela quiser fazer algo diferente, tiver alguma ideia, é muito difícil, né? É um sistema educacional diferente, é como a escola.
+
+195
+00:11:48,000 --> 00:11:53,000
+Você chega na escola, você vai passar nas provas, então vai ter o mínimo de conhecimento, mas um aluno exímio, ele vai chegar no máximo no 10.
+
+196
+00:11:53,000 --> 00:11:55,000
+Ele não tem como passar daquilo.
+
+197
+00:11:55,000 --> 00:11:58,000
+O que a IA nos permite é balizar o mínimo.
+
+198
+00:11:58,000 --> 00:12:02,000
+Então a gente criou um fluxo, e isso aqui é a forma mais, eu juro que eu tentei deixar simples.
+
+199
+00:12:02,000 --> 00:12:05,000
+Essa aqui é mais simples, mas essa aqui é o que eu gosto.
+
+200
+00:12:05,000 --> 00:12:07,000
+Vamos para o simples antes.
+
+201
+00:12:07,000 --> 00:12:14,000
+A gente criou um fluxo com agentes e skills do Cloud Code, que nos ajudam a padronizar a forma de fazer um planejamento.
+
+202
+00:12:14,000 --> 00:12:17,000
+O que que é isso?
+
+203
+00:12:17,000 --> 00:12:22,000
+Existem skills específicos para fazer o planejamento, então da mesma forma que o Paulo estava interagindo ali com a máquina.
+
+204
+00:12:22,000 --> 00:12:27,000
+E aí ele falava: "Ah, eu quero fazer tal coisa." Aí ela falou: "Tá aqui, mas tu quer mais alguma coisa?"
+
+205
+00:12:27,000 --> 00:12:30,000
+Ele responde: "Ah, eu quero tal coisa também."
+
+206
+00:12:30,000 --> 00:12:34,000
+E ele vai conversando, a gente criou skills de planejamento.
+
+207
+00:12:34,000 --> 00:12:37,000
+Que aí você ativa o skill, ele vai perguntar: "Tá, o que que tu quer fazer de planejamento?"
+
+208
+00:12:37,000 --> 00:12:39,000
+Qual é o teu produto?
+
+209
+00:12:39,000 --> 00:12:42,000
+Aí ele começa a descrever o produto, aí ele vai perguntando: "Tá, e o seu objetivo?"
+
+210
+00:12:42,000 --> 00:12:47,000
+E vai interagindo como se fosse uma conversa minha com a pessoa, mas além desses skills que padronizam a interação.
+
+211
+00:12:47,000 --> 00:12:52,000
+Existe toda a parte de docs e contexto que fui eu quem fiz.
+
+212
+00:12:52,000 --> 00:12:57,000
+Então eu, enquanto uma liderança da área, eu defini contextos do que que é a visão de produto da Gabriel.
+
+213
+00:12:57,000 --> 00:13:01,000
+Do que que é o problema de negócio que a gente vai resolver em 2026, objetivos da empresa.
+
+214
+00:13:01,000 --> 00:13:07,000
+E esse skill, e aí agora sim, vou passar para a parte mais chata, mas esses skills aqui de planejamento, que é o quarter plan, ele consome todos os contextos definidos por mim.
+
+215
+00:13:07,000 --> 00:13:13,000
+Ele consome ali embaixo, o Notion, através de uma API, então ele pega tudo que é conteúdo que tem no Notion, seja de documentação, seja de tarefas, porque dá para ver na gestão de tarefas.
+
+216
+00:13:13,000 --> 00:13:20,000
+O que que a pessoa deixou de fazer do quarter anterior e não passou para o próximo, ele pega tudo que tem de documentação de produto, e aí essa mesma lógica de ter um skill interagindo, que ele vai criando uma documentação.
+
+217
+00:13:20,000 --> 00:13:24,000
+Que no fim é o planejamento, né? É uma documentação do que vai ser feito.
+
+218
+00:13:24,000 --> 00:13:30,000
+A gente faz para outras frentes, que nem a estratégia do produto. Então existe uma documentação feita, padronizada para todos os produtos da Gabriel, que foi feita com base nessas interações com skill.
+
+219
+00:13:30,000 --> 00:13:36,000
+E aí ele consegue pegando esses documentos, criar o seu planejamento no template pré-definido.
+
+220
+00:13:36,000 --> 00:13:40,000
+E além disso, eu facilitei a minha vida depois.
+
+221
+00:13:40,000 --> 00:13:45,000
+Eu criei uma skill de revisão, que emula como se fosse um CEO, um CPO e um CTO.
+
+222
+00:13:45,000 --> 00:13:50,000
+Cada um criticando esse planejamento com vieses totalmente diferentes, parecido com os clientes, né?
+
+223
+00:13:50,000 --> 00:13:54,000
+Então eu crio lá um fluxo, eu emulo três clientes e eu vejo se o fluxo funciona ou não.
+
+224
+00:13:54,000 --> 00:14:00,000
+Eu crio um planejamento, eu emulo um CEO, o CPO e o CTO, cada um com um viés totalmente diferente.
+
+225
+00:14:00,000 --> 00:14:05,000
+O CEO normalmente falava: "Ah, falta métricas financeiras, não tô vendo o impacto no negócio."
+
+226
+00:14:05,000 --> 00:14:09,000
+Aí o CPO falava: "Cadê o cliente? Falta cuidado com o cliente."
+
+227
+00:14:09,000 --> 00:14:12,000
+O CTO diz: "Isso não é escalável."
+
+228
+00:14:12,000 --> 00:14:18,000
+Aí no fim, esse mesmo skill pondera os três resultados e devolve para a pessoa antes de chegar em mim, para aí sim ela revisar o planejamento e vem uma versão já refinada, padronizada com todo o contexto.
+
+229
+00:16:00,000 --> 00:16:01,230
+que a gente tem da Gabriela ali dentro, que eu consigo avaliar e aí a minha opinião honesta, pessoas que não tinham nenhuma capacidade de fazer algo daquele calibre conseguiram fazer em uma interação, porque a organização das informações está estruturada.
+
+230
+00:16:01,230 --> 00:16:03,750
+Então, o que realmente mudou para isso ser algo produtivo é que a gente tem documentações muito bem feitas, com detalhamento necessário, tanto no Notion, e aí algumas coisas fora, mas na documentação em Markdown, que é a mesma lógica do que o Notion usa.
+
+231
+00:16:03,750 --> 00:16:04,770
+E elas são consumidas pela IA que tá interagindo com a pessoa.
+
+232
+00:16:04,770 --> 00:16:05,250
+Contexto é a coisa mais importante para IA.
+
+233
+00:16:05,250 --> 00:16:06,030
+É magnífico e é impressionante quando a gente fala algo sem nenhum tipo de contexto.
+
+234
+00:16:06,030 --> 00:16:07,050
+Eu gostaria de criar um jogo da cobrinha, e ele vai lá e faz o jogo da cobrinha, mas ele é muito fácil de chegar num limite de impressionar.
+
+235
+00:16:07,050 --> 00:16:08,250
+Então, eu fiz o jogo da cobrinha, tá, e agora faz o mais legal. Ele não sabe o que que é mais legal, ele não sabe o que que vocês acham que é legal.
+
+236
+00:16:08,250 --> 00:16:09,030
+Me impressiona, me lembra a época que eu trabalhava com marketing e falava, falta um Tchan na peça.
+
+237
+00:16:09,030 --> 00:16:09,330
+O que que é o Tchan?
+
+238
+00:16:09,330 --> 00:16:10,050
+Então, o contexto é o que a gente precisa dar para a máquina saber o que fazer.
+
+239
+00:16:10,050 --> 00:16:10,530
+É um monte de um e zero, ela não entende nada do ser humano.
+
+240
+00:16:10,530 --> 00:16:11,010
+Mas ela é muito boa em deduzir, né? No fim é isso que ela faz.
+
+241
+00:16:11,010 --> 00:16:11,370
+Ela deduz o que que é a próxima coisa.
+
+242
+00:16:11,370 --> 00:16:11,790
+Então, quanto mais contexto, melhor.
+
+243
+00:16:11,790 --> 00:16:12,330
+Se eu sou dono desse contexto, eu vou ficar muito mais feliz depois.
+
+244
+00:16:12,330 --> 00:16:13,590
+Então, eu fiz essa mistura entre o que eu gostaria de visão, o que o PM quer de visão de produto, e eu, isso aqui foi a coisa que mudou minha vida no trimestre, tá?
+
+245
+00:16:13,590 --> 00:16:14,550
+Se vocês puderem fazer algo parecido com isso nas empresas de vocês, foi a coisa que melhorou o Gabriel.
+
+246
+00:16:14,550 --> 00:16:15,750
+Ter visões ousadas de produto, coerentes com a nossa estratégia, de pessoas que não teriam naquele momento a capacidade de fazer isso.
+
+247
+00:16:15,750 --> 00:16:16,170
+Isso nivela muito bem e ajuda muito todo mundo.
+
+248
+00:16:16,170 --> 00:16:16,710
+E aí, por fim, existe muita mudança acontecendo.
+
+249
+00:16:16,710 --> 00:16:17,910
+E aí o, tem uma lei da engenharia que eles chamam de Lei de Conway, né? Que fala que a estrutura definida da organização vai definir como um software é definido, é feito.
+
+250
+00:16:17,910 --> 00:16:18,750
+Então, se você tem duas estruturas apartadas, provavelmente o software vai ser feito de duas formas apartadas também.
+
+251
+00:16:18,750 --> 00:16:19,470
+Se a gente olha o contrário disso, dependendo do que eu quero fazer, eu tenho que mexer nas estruturas.
+
+252
+00:16:19,470 --> 00:16:20,190
+E no fim, o que a gente queria fazer era muito diferente do ano passado.
+
+253
+00:16:20,190 --> 00:16:20,730
+Eu queria produzir mais rápido, eu queria mais liberdade para ponta.
+
+254
+00:16:20,730 --> 00:16:21,390
+Eu queria menos alteração de contexto entre as pessoas para poder ficar lá, 20 agentes ao mesmo tempo iterando.
+
+255
+00:16:21,390 --> 00:16:22,050
+Se isso é verdade, a gente precisava mudar a forma de trabalhar dentro da Gabriela.
+
+256
+00:16:22,050 --> 00:16:22,650
+Especificamente aqui na área de tecnologia, que aí o que a gente fez foi novos combinados.
+
+257
+00:16:22,650 --> 00:16:23,550
+Então, definir com clareza o que que é esperado da equipe de cada um de tecnologia nesse novo mundo.
+
+258
+00:16:23,550 --> 00:16:24,450
+Porque é muito angustiante para a pessoa que tá cinco anos trabalhando de uma forma, de repente chega um diretor da empresa e fala, agora tem que ser mais rápido.
+
+259
+00:16:24,450 --> 00:16:25,010
+Tá, mas o que que é mais rápido? O que que, o que que eu tenho que mudar para conseguir ser mais rápido?
+
+260
+00:16:25,010 --> 00:16:25,950
+Como se estivesse andando de carro numa estrada, tá vindo um caminhão a 120 por hora, você tá 80 e fala, acelera. Tá, mas não tem um cinto de segurança, não tem nada.
+
+261
+00:16:25,950 --> 00:16:26,430
+Então, a pessoa fica ansiosa sem saber como trabalhar com isso.
+
+262
+00:16:26,430 --> 00:16:27,090
+Então, combinados claros é algo importante. Eu vou passar aqui os que a gente fez na Gabriela.
+
+263
+00:16:27,090 --> 00:16:27,570
+Novo modelo de trabalho. Isso aqui é muito específico de produto, mas eu vou passar.
+
+264
+00:16:27,570 --> 00:16:28,170
+E aí interpretem o que que faz sentido, porque eu acho que tem insights que saem disso.
+
+265
+00:16:28,170 --> 00:16:28,770
+E por fim, novo modelo de gestão. Aqui também eu convido áreas que não sejam de tecnologia a pensar o que que impacta.
+
+266
+00:16:28,770 --> 00:16:29,790
+Mas para nós, essa mudança, ela é muito grande do que é acostumado no mundo de tecnologia, então imagino que tenham várias analogias possíveis em outras áreas.
+
+267
+00:16:29,790 --> 00:16:30,150
+Mas sobre novos combinados, esses são os quatro combinados que eu fiz com a equipe.
+
+268
+00:16:30,150 --> 00:16:30,570
+Primeiro deles sobre velocidade.
+
+269
+00:16:30,570 --> 00:16:31,350
+Então, por mais que a gente queira que velocidade seja algo a ser priorizado, tem que deixar isso claro.
+
+270
+00:16:31,350 --> 00:16:31,830
+Porque senão a pessoa vai continuar com os combinados antigos.
+
+271
+00:16:31,830 --> 00:16:32,790
+Existe uma premissa gigante em desenvolvimento de software que é, tu não vai jogar tudo fora, tu vai aprender com aquele código antigo e construir em cima dele.
+
+272
+00:16:32,790 --> 00:16:33,750
+Só que com Cloud Code, tu pode jogar tudo fora, e tu pode construir agora, para daqui a seis meses jogar tudo fora.
+
+273
+00:16:33,750 --> 00:16:34,170
+Então, é muito mais fácil de ficar iterando.
+
+274
+00:16:34,170 --> 00:16:34,650
+Esse foi um dos combinados que a gente fez, velocidade.
+
+275
+00:16:34,650 --> 00:16:35,010
+Se tu tiver que trocar tudo daqui a seis meses, tá tudo bem.
+
+276
+00:16:35,010 --> 00:16:35,550
+Segundo combinado, que é consequência da velocidade, vai quebrar mais.
+
+277
+00:16:35,550 --> 00:16:36,210
+E a gente tá vendo isso em grandes plataformas, tá? O próprio Cloud Code é um exemplo.
+
+278
+00:16:36,210 --> 00:16:36,750
+Ele não tava funcionando ontem. Ontem à tarde, Cloud Code caiu no mundo inteiro.
+
+279
+00:16:36,750 --> 00:16:37,590
+Porque eles estão testando coisa, estão iterando coisa, a própria AWS começou a ter mais quedas por conta do, da velocidade de deploy e coisas que estão sendo colocadas para fora, é natural.
+
+280
+00:16:37,590 --> 00:16:38,250
+Então, a gente tem que aceitar mais a perda de performance eventual, cair o software.
+
+281
+00:16:38,250 --> 00:16:38,610
+Só que tem que saber onde.
+
+282
+00:16:38,610 --> 00:16:39,510
+Então, se eu tenho uma parte de cobranças financeiras, que todo mês eu vou rodar, todo o billing da Gabriela, talvez não é o melhor lugar para ser usado.
+
+283
+00:16:39,510 --> 00:16:40,050
+Vamos tentar ser usado num aplicativo, que se cair, cara, a gente mandou um push errado hoje, sem querer.
+
+284
+00:16:40,050 --> 00:16:40,350
+Porque o Cloud mandou, a gente tá testando uma coisa e falou, mandei.
+
+285
+00:16:40,350 --> 00:16:40,890
+Aí isso aí não impacta tanto. Ah, você viu lá um alerta dizendo que teve algo na sua região, tudo bem.
+
+286
+00:16:40,890 --> 00:16:41,370
+Mas se a API financeira quebra, é muito pior.
+
+287
+00:16:41,370 --> 00:16:41,910
+Então, saber onde pode errar também é muito importante.
+
+288
+00:16:41,910 --> 00:16:42,270
+E ter essa clareza. Acelera, nesse lugar aqui.
+
+289
+00:16:42,270 --> 00:16:42,510
+Esse aqui vai com mais calma.
+
+290
+00:16:42,510 --> 00:16:42,870
+Terceiro ponto, testar mais.
+
+291
+00:16:42,870 --> 00:16:43,590
+Isso aí é outra consequência de produzir coisas muito rápidas, a gente tem que ficar validando, validando.
+
+292
+00:16:43,590 --> 00:16:44,190
+Gostei muito do que o Paulo tava mostrando, porque a ideia de você fazer um fluxo e validar emulando clientes é o que dá para fazer no mundo de negócios, né?
+
+293
+00:16:44,190 --> 00:16:44,670
+No fim, é o que eu fiz no planejamento também.
+
+294
+00:16:44,670 --> 00:16:45,150
+Então, se vai ser fácil e rápido fazer um planejamento, valida.
+
+295
+00:16:45,150 --> 00:16:45,510
+Então, criem sempre mecanismos, skills, agentes de validação das coisas que estão sendo feitas.
+
+296
+00:16:45,510 --> 00:16:46,470
+Porque aí você pode ter mais liberdade na criação, jogar coisas com menos confiança de que ela vai funcionar, porque vai ter uma coisa dura ali validando, que é o seu skill, seu agente de validação que tá testando, tá vendo se funciona.
+
+297
+00:16:46,470 --> 00:16:47,190
+E aí, por fim, gerar valor em partes. Isso aqui também ajuda muito.
+
+298
+00:16:47,190 --> 00:16:48,030
+Ao invés de fazer uma grande entrega, porque você tem o vislumbre de fazer uma nova, um fluxo inteiro de SDR para conseguir chegar com a venda feita online.
+
+299
+00:16:48,030 --> 00:16:48,390
+Maravilhoso. Provavelmente, se você tentar fazer tudo, vai demorar uma semana, vai chegar no fim, vai ter alguma coisa no meio não funcionando bem.
+
+300
+00:16:48,390 --> 00:16:48,990
+Entregue em partes. Faz primeiro qualificação de lead, depois o funil de vendas, e vai juntando essas coisas.
+
+301
+00:16:48,990 --> 00:16:49,650
+Entregar em parte ajuda a não quebrar tudo de uma vez, e também ajuda a ver o valor mais rápido, porque aí vai dando a gasolina, né?
+
+302
+00:16:49,650 --> 00:16:50,190
+Então, você vai criando ali, vendo que funciona, vai para o próximo passo, vê que funciona, é até mais divertido de fazer.
+
+303
+00:16:50,190 --> 00:16:50,550
+Isso foi a mudança de combinados.
+
+304
+00:16:50,550 --> 00:16:50,850
+A próxima parte do shape up.
+
+305
+00:16:50,850 --> 00:16:51,450
+Como funciona normalmente o desenvolvimento de tecnologia são por sprints, e muitas áreas começaram a fazer isso, né?
+
+306
+00:16:51,450 --> 00:16:52,010
+Então, eu lembro que o, eu toquei já várias áreas da Gabriela, marketing, vendas, produto, agora tecnologia.
+
+307
+00:16:52,010 --> 00:16:52,650
+E na época em marketing, a gente fazia isso também. A gente criava sprints, duas semanas para fazer alguns projetos.
+
+308
+00:16:52,650 --> 00:16:53,130
+Aí fazer revisão, depois um planejamento.
+
+309
+00:16:53,130 --> 00:16:53,850
+Então, essa lógica de Scrum, de você fazer duas semanas e ficar iterando durante o ciclo.
+
+310
+00:16:53,850 --> 00:16:54,150
+Ela é muito normal dentro de engenharia.
+
+311
+00:16:54,150 --> 00:16:54,450
+Só que existem outras formas de trabalhar.
+
+312
+00:16:54,450 --> 00:16:55,050
+E existe uma forma que se chama Shape Up, que ela é específica lá da galera do Basecamp, que é um software norte-americano.
+
+313
+00:16:55,050 --> 00:16:55,650
+E ela é muito usada, era muito usada por desenvolvedores seniors.
+
+314
+00:16:55,650 --> 00:16:56,310
+Porque ela depende de ter um nível de senioridade alto suficiente para ser autônomo, para conseguir criticar, para ter mais independência.
+
+315
+00:16:56,310 --> 00:16:56,790
+Isso era muito difícil para desenvolvedores juniors.
+
+316
+00:16:56,790 --> 00:16:57,750
+Só que com a IA, com Cloud Code, ficou muito mais fácil deles terem segurança e autonomia. Então, modelos que não funcionavam com pessoas juniores, estão começando a funcionar.
+
+317
+00:16:57,750 --> 00:16:58,470
+E aí o meu, minha provocação aqui é, quais são as premissas que vocês têm de combinados e formatos que funcionavam com algumas especificações que hoje, talvez, não seja mais verdade.
+
+318
+00:16:58,470 --> 00:16:59,310
+E aí, tentem isso novamente, que a gente tentou em 2025, que não funcionava, hoje tá funcionando. Eu tentei esse modelo e não deu certo.
+
+319
+00:16:59,310 --> 00:16:59,790
+Hoje eu tô tentando e tá dando certo.
+
+320
+00:16:59,790 --> 00:16:59,790
+Então, voltem nessas premissas que vocês têm na cabeça e testem de novo no mundo da IA, que é totalmente diferente.
+
+321
+00:24:00,000 --> 00:24:01,230
+Então isso foi outra comunidade nossa de mudar a maneira de fazer engenharia.
+
+322
+00:24:01,230 --> 00:24:10,530
+E aí por fim, engenharia e produto normalmente existem liderança separadas, né? Então uma área de tecnologia tem uma frente de produto e uma frente de engenharia, elas são áreas irmãs e fica todo mundo dividindo as tarefas.
+
+323
+00:24:10,530 --> 00:24:17,730
+Um, dando a visão do produto, o que que vai ser desenvolvido, desenvolvido, o outro dando como a gente vai fazer.
+
+324
+00:24:17,730 --> 00:24:21,330
+Aí ele explica quanto tempo vai demorar, quanto vai custar.
+
+325
+00:24:21,330 --> 00:24:27,930
+E isso normalmente gera silos, decisões separadas, faz com que muitas bolas tenham que ser divididas e eventualmente aparadas.
+
+326
+00:24:27,930 --> 00:24:30,730
+Nesse mundo de IA, em tecnologia, e aí muitas áreas estão começando a sofrer isso.
+
+327
+00:24:30,730 --> 00:24:34,930
+Qual é a diferença hoje de vendas e marketing? Cada vez mais difícil desenhar onde acaba um e começa o outro.
+
+328
+00:24:34,930 --> 00:24:36,330
+Produto e engenharia também.
+
+329
+00:24:36,330 --> 00:24:38,730
+Então a gente resolveu facilitar e acabou com a gestão intermediária de duas áreas.
+
+330
+00:24:38,730 --> 00:24:40,730
+Juntou numa só e hoje existe só uma gestão para as duas áreas.
+
+331
+00:24:40,730 --> 00:24:47,730
+Então cada tribo da Gabriel, que tem lá seus infinitos, infinitos, é difícil, né? Inúmeros produtos, a gente tem uma gestão intermediária única.
+
+332
+00:24:47,730 --> 00:24:50,730
+Que cuida tanto de engenharia quanto produto.
+
+333
+00:24:50,730 --> 00:24:56,730
+Como a gente tem mais capacidade de entender contexto e de fazer coisas, ficou mais fácil de gerir também áreas distintas e queimar essas cadeiras de gestão que antes tinham papéis diferentes.
+
+334
+00:24:56,730 --> 00:24:58,330
+Faz sentido, né?
+
+335
+00:24:58,330 --> 00:25:01,330
+E aí eu provoco vocês a fazerem a mesma coisa.
+
+336
+00:25:01,330 --> 00:25:05,330
+O que que são os modelos de gestão que vocês seguem, que funcionam em 2025, que talvez 26 não precisem.
+
+337
+00:25:05,330 --> 00:25:07,330
+Isso aqui funcionou muito bem para nós.
+
+338
+00:25:07,330 --> 00:25:11,330
+Unificar engenharia e produto, não no desenvolvedor, que eles são pessoas distintas.
+
+339
+00:25:11,330 --> 00:25:16,330
+A Antrópica é um exemplo que fala que tem pessoa de tecnologia, se é produto, se é design, se é engenharia, tanto faz.
+
+340
+00:25:16,330 --> 00:25:19,330
+A gente ainda tem cadeiras separadas, mas a gestão já é unificada.
+
+341
+00:25:21,030 --> 00:25:22,530
+E no fim é isso.
+
+342
+00:25:22,530 --> 00:25:27,330
+Os quatro aprendizados foram esses, então a gente viu que precisava assim, aprender a organizar a informação de forma mais estruturada.
+
+343
+00:25:27,330 --> 00:25:30,330
+Tanto o humano quanto o robô.
+
+344
+00:25:30,330 --> 00:25:33,330
+A gente precisava aprender a treinar o ser humano como robô.
+
+345
+00:25:33,330 --> 00:25:35,330
+A partir dessa organização.
+
+346
+00:25:35,330 --> 00:25:40,330
+A gente mudou os combinados que a gente tinha, a gente mudou o modelo de gestão, a gente mudou a a gestão como um todo, né? Então o modelo de gestão, os combinados.
+
+347
+00:25:40,330 --> 00:25:42,330
+O modo de fazer.
+
+348
+00:25:42,330 --> 00:25:47,330
+E o planejamento de P2, que agora a gente faz totalmente automatizado com interações.
+
+349
+00:25:47,330 --> 00:25:51,330
+E isso tudo é como a IA tem mudado a forma da Gabriel de fazer tecnologia.
+
+350
+00:25:52,030 --> 00:25:54,330
+Bom, corra sobre, vamos pro happy hour.
+
+351
+00:25:54,330 --> 00:25:58,330
+Mas a ideia era trazer um pouco desse aprendizado que a gente teve vivendo na pele e usar a IA na Gabriel.
+
+352
+00:25:58,330 --> 00:26:03,330
+E aí espero que tenha sido, pelo menos inspirador aí para quem não é de tecnologia, porque pode ter algumas sementes que vão plantadas na cabeça agora.
+
+353
+00:26:04,330 --> 00:26:05,330
+Chegou.
+
+354
+00:26:06,030 --> 00:26:07,330
+Obrigado.
+
+355
+00:26:08,030 --> 00:26:10,330
+Pessoal, temos alguns minutinhos ainda.
+
+356
+00:26:11,030 --> 00:26:13,330
+Um pouco da questão do
+
+357
+00:26:13,330 --> 00:26:16,330
+Você falou um pouco da questão ali de
+
+358
+00:26:16,330 --> 00:26:20,330
+E o Victor também que falou em relação ao Notion por trás, enfim.
+
+359
+00:26:20,330 --> 00:26:23,330
+Como é que você enxerga essa esse movimento de
+
+360
+00:26:23,330 --> 00:26:27,330
+Ou seja, acaba que a fim que talvez fez uma camada em volta do Notion ali.
+
+361
+00:26:27,330 --> 00:26:31,330
+Ou também, obviamente aconteceu isso, mas outras ferramentas também surgiram ao redor do Notion também.
+
+362
+00:26:31,330 --> 00:26:33,330
+Como é que você vê isso?
+
+363
+00:26:33,330 --> 00:26:37,330
+Porque pode ser uma decisão talvez que lá atrás funcionava.
+
+364
+00:26:37,330 --> 00:26:41,330
+E hora que pediu que estamos pelo movimento rápido que tá acontecendo, de tudo isso.
+
+365
+00:26:41,330 --> 00:26:45,330
+Né? O Cloud Code, vocês mesmo, como ele fala, que o Victor falou, do Paulo Rhan, que realmente aconteceu isso mesmo.
+
+366
+00:26:45,330 --> 00:26:50,330
+A gente sente na pele, exatamente isso, quando você no final do ano você vai, você volta, você pode ter que esperar um pouco, ah, e coisas que não estavam funcionando o ano passado, como é que funciona.
+
+367
+00:26:50,330 --> 00:26:52,330
+Então a pergunta é:
+
+368
+00:26:52,330 --> 00:26:56,330
+Essa questão da integração, de você ter sistemas e a camada por cima, você achar que é uma tendência.
+
+369
+00:26:56,330 --> 00:26:58,330
+É uma coisa válida ou você tá no meio do caminho?
+
+370
+00:26:58,330 --> 00:27:00,330
+Não sei se eu fui claro, mas
+
+371
+00:27:00,330 --> 00:27:02,330
+Eu sei que é um risco talvez, de você ter isso.
+
+372
+00:27:02,330 --> 00:27:06,330
+Porque ao mesmo tempo você pode construir uma coisa com Cloud Code por trás ali, né, diretamente, né?
+
+373
+00:27:07,030 --> 00:27:08,330
+Sim.
+
+374
+00:27:08,330 --> 00:27:11,330
+Eu acho que tem, tem
+
+375
+00:27:11,330 --> 00:27:14,330
+São várias camadas, né? Eu acho que tudo vai acontecer ao mesmo tempo.
+
+376
+00:27:14,330 --> 00:27:17,330
+Então você vai continuar com alguns sistemas
+
+377
+00:27:17,330 --> 00:27:21,330
+Tão super bem estruturados e não tem por que você substituir.
+
+378
+00:27:21,330 --> 00:27:24,330
+Então, eu acho que o Notion hoje é um desses sistemas.
+
+379
+00:27:24,330 --> 00:27:27,330
+Não tem por que a gente tentar replicar um Notion.
+
+380
+00:27:27,330 --> 00:27:31,330
+Sendo que ele já tá tão bem estruturado e ele avança tão, tantos quem usa Notion vai ver que a cada
+
+381
+00:27:31,330 --> 00:27:35,330
+Teve um, teve uma época que estava enchendo o saco, sabe? Todo dia quando eu abri o Notion, apareceu um pop-up para atualizar o software.
+
+382
+00:27:35,330 --> 00:27:38,330
+E atualizando todo dia, tinha a versão nova, né?
+
+383
+00:27:38,330 --> 00:27:41,330
+É, mas isso significa avanço.
+
+384
+00:27:41,330 --> 00:27:44,330
+Avanço em escala gigantesca.
+
+385
+00:27:44,330 --> 00:27:48,330
+Então, é, tem alguns sistemas que talvez não valham a pena você mexer.
+
+386
+00:27:48,330 --> 00:27:51,330
+É melhor você manter ele, mesmo que você ainda não, não trabalha, mas na interface deles.
+
+387
+00:27:51,330 --> 00:27:56,330
+Que é o nosso caso, que agora como a gente tem um time de agentes que trabalham, deixa que eles vão lá e constroem tudo que precisa construir, atualiza tudo que tem que atualizar.
+
+388
+00:27:56,330 --> 00:27:58,330
+Tem outros tipos de sistema
+
+389
+00:27:58,330 --> 00:28:01,330
+Que talvez você vai querer fazer em casa.
+
+390
+00:28:01,330 --> 00:28:04,330
+Porque, por exemplo, se você vai comprar um Salesforce
+
+391
+00:28:04,330 --> 00:28:08,330
+Às vezes você vai pagar 100% por Cloud Code, possivelmente dá cinco, né?
+
+392
+00:28:08,330 --> 00:28:12,330
+E com esse super difícil, caro, pra customizar. E você já conhece todo o processo na tua cabeça.
+
+393
+00:28:12,330 --> 00:28:15,330
+Você já sabe, você já sabe o que que você precisa.
+
+394
+00:28:15,330 --> 00:28:20,330
+E aí vale muito mais a pena você sentar e programar o Cloud Code e programar o sistema em si.
+
+395
+00:28:20,330 --> 00:28:23,330
+E vão ter questões híbridas, que é assim, ah, a gente descobriu sistemas dentro do Notion.
+
+396
+00:28:23,330 --> 00:28:27,330
+Né? Que usando só o Notion como base de dados, né?
+
+397
+00:28:27,330 --> 00:28:30,330
+É, eu acho que as são várias camadas.
+
+398
+00:28:30,330 --> 00:28:33,330
+Eu acho que não tem um uma coisa certinha.
+
+399
+00:28:33,330 --> 00:28:38,330
+Eu acho que para cada tipo de situação, você vai fazer uma avaliação do que que vale a pena, o que que não vale a pena, entendeu?
+
+400
+00:28:38,330 --> 00:28:40,330
+Não sei se
+
+401
+00:28:40,330 --> 00:28:41,330
+Não, perfeito.
+
+402
+00:28:41,330 --> 00:28:42,330
+Ficou bem claro.
+
+403
+00:28:42,330 --> 00:28:45,330
+E aí, aproveitando que o pessoal falou do óculos aí, ficou
+
+404
+00:28:46,030 --> 00:28:47,330
+Queria fazer uma pergunta aqui.
+
+405
+00:28:47,330 --> 00:28:50,330
+Oi, tudo bem? O Paulo comentou na fala dele sobre a gestão na mudança.
+
+406
+00:28:50,330 --> 00:28:53,330
+É, eu agora quero ouvir de você, Victor, o que é que fez o teu time adotar de fato.
+
+407
+00:28:53,330 --> 00:28:57,330
+Porque eu percebo que as pessoas estão muito ansiosas, né, com a velocidade das tecnologias.
+
+408
+00:28:57,330 --> 00:29:02,330
+E como é que foi a gestão de mudança lá na Gabriel? Foi a dor? Foi a facilidade em usar ferramentas?
+
+409
+00:29:02,330 --> 00:29:04,330
+Foi liderança? Como foi esse processo?
+
+410
+00:29:04,330 --> 00:29:07,330
+Bom, tem, a gente teve sorte de não ter nenhum grande detrator.
+
+411
+00:29:07,330 --> 00:29:11,330
+Porque a gente também tentou muito depois, o Paulo fez uma epopeia vanguardista, então imagina em 2022, 23 fazer isso.
+
+412
+00:29:11,330 --> 00:29:14,330
+Provavelmente eu ia ter a mesma dificuldade.
+
+413
+00:29:14,330 --> 00:29:17,330
+Quando virou o ano, o primeiro chamaris que a gente teve foi a mudança de perfil das pessoas.
+
+414
+00:29:17,330 --> 00:29:21,330
+Imagina que a gente tem lá 40 engenheiros, desses, talvez uns cinco foram aqueles que proativamente foram atrás durante a virada do ano.
+
+415
+00:29:21,330 --> 00:29:25,330
+Chegaram em janeiro, falaram, cara, o mundo mudou, tem que fazer tudo diferente.
+
+416
+00:29:25,330 --> 00:29:27,330
+Então, a primeira mudança foi identificação de perfil.
+
+417
+00:29:27,330 --> 00:29:31,330
+Sobrou ali 35 que estavam nesse meio de, putz, não sei exatamente o que fazer.
+
+418
+00:29:31,330 --> 00:29:33,330
+Segundo ponto foi processos.
+
+419
+00:29:33,330 --> 00:29:37,330
+Então a gente teve que sentar, e a gente fez isso em janeiro inteiro, não foi algo de um final de semana.
+
+420
+00:29:37,330 --> 00:29:41,330
+A gente tinha que entender, e aí em cara gente, como tanto eu, mas todos os gestores intermediários, gente de produto, tinha que entender como funcionava para passar para a equipe o que que era esperado deles.
+
+421
+00:29:41,330 --> 00:29:45,330
+E aí a gente passou o mês inteiro fazendo isso para ter um workflow desenhado.
+
+422
+00:29:45,330 --> 00:29:49,330
+Vocês vão começar a desenvolver dessa forma.
+
+423
+00:29:49,330 --> 00:29:53,330
+Então, o primeiro você começa interagindo, usando um skill de PRD, no qual vai discutir as funcionalidades do produto.
+
+424
+00:29:53,330 --> 00:29:57,330
+Aí vai ter alguma outra skill de desenvolvimento que vai fazer o código, então você não é mais um artesão de código, você é um validador de código.
+
+425
+00:29:57,330 --> 00:30:01,330
+Aceita isso? E aí depois vem aqui a parte de validações e guardrails que você também vai executar.
+
+426
+00:30:01,330 --> 00:30:05,330
+Quando a gente desenha esse workflow e entrega, aí mais metade da equipe vai, porque eles sabem o que tem que ser feito.
+
+427
+00:30:05,330 --> 00:30:09,330
+E a outra metade, menos cinco pessoas, foram assim, a gente teve que fazer gestão com elas.
+
+428
+00:30:09,330 --> 00:30:10,330
+E aí você pega
+
+429
+00:32:00,000 --> 00:32:01,760
+é um perfil que é um pouco mais conservador com um processo que já existe, fala, tá, daqui pra frente é assim.
+
+430
+00:32:01,001 --> 00:32:01,003
+Seria bom, né?
+
+431
+00:32:01,003 --> 00:32:01,005
+Seria ótimo, cara.
+
+432
+00:32:01,005 --> 00:32:01,007
+Seria ótimo, mas não rola.
+
+433
+00:32:01,007 --> 00:32:01,009
+É, mas ele esse óculos ele tem um SDK.
+
+434
+00:32:01,009 --> 00:32:01,011
+Então que é um, é um framework pra você desenvolver software em cima dele.
+
+435
+00:32:01,011 --> 00:32:01,013
+Isso é uma coisa muito legal.
+
+436
+00:32:01,013 --> 00:32:01,015
+Porque agora eu posso botar gente de IA pra criar nossos próprios aplicativos.
+
+437
+00:32:01,015 --> 00:32:01,017
+Os nossos próprios aplicativos.
+
+438
+00:32:01,017 --> 00:32:01,019
+Então por isso que eu tomei essa decisão de usar o óculos.
+
+439
+00:32:01,019 --> 00:32:01,021
+Mas assim, não é uma coisa assim que você vai gastar dinheiro e se você não quiser só pra brincar.
+
+440
+00:32:01,021 --> 00:32:01,023
+É, você vai se frustrar bastante.
+
+441
+00:32:01,023 --> 00:32:01,025
+Daqui a uns dois anos e tal, aí eu acho que o negócio vai começar.
+
+442
+00:32:01,025 --> 00:32:01,027
+É igual o iPhone 1.
+
+443
+00:32:01,027 --> 00:32:01,029
+O iPhone 1 não tinha nem app.
+
+444
+00:32:01,029 --> 00:32:01,031
+Né? Quem não lembra, não tinha app, não tinha 3G.
+
+445
+00:32:01,031 --> 00:32:01,033
+Né? Enquanto outro celular já tinha 3G.
+
+446
+00:32:01,033 --> 00:32:01,035
+Então é um pouco early adopter agora pra isso daí.
+
+447
+00:32:01,035 --> 00:32:01,037
+É o G2 da Viver Realities.
+
+448
+00:32:01,037 --> 00:32:01,039
+Vamos comprar, vamos comprar o patrocínio do G2.
+
+449
+00:32:01,039 --> 00:32:01,041
+É isso.
+
+450
+00:32:01,041 --> 00:32:01,043
+Mas se alguém quiser experimentar, eu mostro aqui.
+
+451
+00:32:01,043 --> 00:32:01,045
+Porque eu mostro como é que funciona, só pra ter uma ideia assim do.
+
+452
+00:32:01,045 --> 00:32:01,047
+Maravilha, pessoal.
+
+453
+00:32:01,047 --> 00:32:01,049
+A gente vai encerrar.
+
+454
+00:32:01,049 --> 00:32:01,051
+Obrigado, gente.
+
+455
+00:32:01,760 --> 00:32:03,920
+Eu vou te ajudar mostrando, então vou fazer e a gente fez isso, barcode. Pega uma pessoa, deixa do teu lado e fala, olha, eu faria o que tu fez dessa forma.
+
+456
+00:32:03,920 --> 00:32:04,560
+E mostra pra ela como funciona.
+
+457
+00:32:04,560 --> 00:32:06,240
+Normalmente é muito, é um efeito impressionante pra pessoa.
+
+458
+00:32:06,240 --> 00:32:07,320
+Porque ela não é cética, ela só nunca viu aquilo funcionando.
+
+459
+00:32:07,320 --> 00:32:09,720
+E quando tu mostra aquilo funcionando, é que nem a primeira vez que a gente fala, ah, pede o jogo da cobrinha, viu o jogo da cobrinha e fala, caramba, dá pra fazer isso.
+
+460
+00:32:09,720 --> 00:32:11,960
+Então as pessoas que demoraram mais nesse momento de mostrar como funcionava, elas foram pra frente.
+
+461
+00:32:11,960 --> 00:32:13,760
+O que a gente não teve, que seria o grande problema, o detrator.
+
+462
+00:32:13,760 --> 00:32:15,760
+Que é a pessoa que fala, não, mas ele nunca vai fazer, que nem eu, não pode.
+
+463
+00:32:15,760 --> 00:32:17,760
+E aí a gente deu sorte de não ter isso, pelo menos em 2026, talvez tivesse antigamente.
+
+464
+00:32:17,760 --> 00:32:18,560
+Mas foi isso, é perfil, processo e gestão.
+
+465
+00:32:18,560 --> 00:32:19,160
+Maravilha, pessoal.
+
+466
+00:32:19,160 --> 00:32:20,760
+Queria agradecer a presença de todo mundo, pelo esse evento, esse espetáculo.
+
+467
+00:32:20,760 --> 00:32:21,360
+Obrigado, Paulo, obrigado, Vítor, obrigado, Arthur.
+
+468
+00:32:21,360 --> 00:32:22,000
+Paulo, vai falar de novo.
+
+469
+00:32:22,000 --> 00:32:22,760
+Estão pressionando com isso, Paulo.
+
+470
+00:32:22,760 --> 00:32:23,600
+Vamos encerrar com essa explicação aí.
+
+471
+00:32:23,600 --> 00:32:24,600
+É, bom, primeiro é assim, eu sou muito, eu me provoco a ser early adopter.
+
+472
+00:32:24,600 --> 00:32:25,760
+Então, hoje em dia, com um smart glass, vai ser furada, tá?
+
+473
+00:32:25,760 --> 00:32:26,360
+Então vai ser.
+
+474
+00:32:26,360 --> 00:32:27,000
+É, porque tá tudo muito novo.
+
+475
+00:32:27,000 --> 00:32:28,000
+Então, qual foi a escolha que eu fiz?
+
+476
+00:32:28,000 --> 00:32:29,400
+Tinha o Ray-Ban, só que eu achei que o Ray-Ban ia ficar meu rosto muito pequeno, porque ele é muito grosso.
+
+477
+00:32:29,400 --> 00:32:30,000
+A o frame dele.
+
+478
+00:32:30,000 --> 00:32:31,600
+Então fiquei estudando os smart glasses que tinham, é, e aí com a, o que que tem sido a minha, minha cabeça em relação a gadget.
+
+479
+00:32:31,600 --> 00:32:32,400
+Tem que ter API.
+
+480
+00:32:32,400 --> 00:32:34,600
+Porque se não tiver API, eu não consigo conectar, usar a gente de IA pra poder fazer as coisas que eu quero, que eu quero fazer.
+
+481
+00:32:34,600 --> 00:32:36,400
+Esse óculos aqui, ele se chama G2, da Viver Realities.
+
+482
+00:32:36,400 --> 00:32:37,600
+Eu acho que eles são chineses, tá?
+
+483
+00:32:37,600 --> 00:32:39,000
+Então nesse momento, todos vocês estão sendo monitorados pela China.
+
+484
+00:32:39,000 --> 00:32:40,600
+É, mas o óculos ele não tem câmera, é, então ele tem uma questão de privacidade um pouco melhor.
+
+485
+00:32:40,600 --> 00:32:41,400
+É, mas ele tem microfone, né?
+
+486
+00:32:41,400 --> 00:32:43,000
+E aqui dentro, ele tem um visor que quando eu acesso, olhando pra cima, parece um, parece uma pessoa que tá fazendo download.
+
+487
+00:32:43,000 --> 00:32:43,600
+Lá no meu phone, né?
+
+488
+00:32:43,600 --> 00:32:44,200
+Eu faço assim.
+
+489
+00:32:44,200 --> 00:32:46,600
+E pronto, aí aparece um visor pra mim, pra vocês não devem estar aparecendo nada, pra mim tá aparecendo aqui a minha agenda de, de reunião com todos os tópicos que eu tenho.
+
+490
+00:32:46,600 --> 00:32:48,000
+E se eu for passando aqui por trás, ele vai passando outros, ah, tarefas, notícias, uma série de coisas.
+
+491
+00:32:48,000 --> 00:32:49,400
+Eu também consigo acessar a IA aqui, que é muito boa.
+
+492
+00:32:49,400 --> 00:32:50,600
+Então posso fazer perguntas pra ela, mas só que ela vai me mostrando em texto, ela não tem áudio.
+
+493
+00:32:50,600 --> 00:32:51,400
+Não me envia som.
+
+494
+00:32:51,400 --> 00:32:53,000
+É, mas ela vai mostrando por texto, e até agora, a aplicabilidade prática mesmo que eu já vi, foi tradução automática.
+
+495
+00:32:53,000 --> 00:32:55,000
+Então eu posso colocar em qualquer linguagem, e aí de repente eu ver, eu fiquei pra testar, eu fiquei assistindo um jornal, um telejornal do Japão.
+
+496
+00:32:55,000 --> 00:32:56,400
+E aí eu, olhando pra tela do computador, aí a apresentadora lá falando lá, sobre uma vila local de pescadores, não sei o quê.
+
+497
+00:32:56,400 --> 00:32:57,600
+E eu lendo tudo em português.
+
+498
+00:32:57,600 --> 00:32:58,000
+Praticamente em tempo real.
+
+499
+00:32:58,000 --> 00:32:59,000
+Ontem eu fui pra um show de rock, não rola.
+
+500
+00:32:59,000 --> 00:32:59,600
+O rock é muito rápido.
+
+501
+00:32:59,600 --> 00:32:59,600
+Então não rola, não rola, não rola.

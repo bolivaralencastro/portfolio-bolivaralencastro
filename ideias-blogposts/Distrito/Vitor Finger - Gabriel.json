@@ -1,0 +1,2512 @@
+{
+  "source_audio": "input/Vitor Finger - Gabriel.m4a",
+  "duration_seconds": 2218.069,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 0.7,
+      "text": "Olha o mestre."
+    },
+    {
+      "start": 1.2,
+      "end": 1.6,
+      "text": "Vítor."
+    },
+    {
+      "start": 1.7,
+      "end": 2.1,
+      "text": "Vamos lá?"
+    },
+    {
+      "start": 2.2,
+      "end": 2.6,
+      "text": "Vem cá, cara."
+    },
+    {
+      "start": 2.6,
+      "end": 3.0,
+      "text": "Fica à vontade."
+    },
+    {
+      "start": 3.0,
+      "end": 3.5,
+      "text": "Você vai usar o lugar lá alguma coisa ou não?"
+    },
+    {
+      "start": 3.6,
+      "end": 3.8,
+      "text": "Ah, vai usar aqui."
+    },
+    {
+      "start": 3.9,
+      "end": 4.1,
+      "text": "Ah, tá aqui já."
+    },
+    {
+      "start": 4.1,
+      "end": 4.3,
+      "text": "Já tá na tela."
+    },
+    {
+      "start": 4.3,
+      "end": 4.4,
+      "text": "Tá bom."
+    },
+    {
+      "start": 4.6,
+      "end": 4.8,
+      "text": "Aí é bom que não fica."
+    },
+    {
+      "start": 5.0,
+      "end": 5.1,
+      "text": "Oi."
+    },
+    {
+      "start": 5.3,
+      "end": 5.6,
+      "text": "Ah, essa altura é boa."
+    },
+    {
+      "start": 6.0,
+      "end": 6.5,
+      "text": "E aí, pessoal? Tudo bem?"
+    },
+    {
+      "start": 7.0,
+      "end": 7.7,
+      "text": "Sou Vítor, conhecido por ter tentado desligar o Notion lá na Gabriel."
+    },
+    {
+      "start": 7.7,
+      "end": 8.0,
+      "text": "Não consegui."
+    },
+    {
+      "start": 8.0,
+      "end": 8.6,
+      "text": "Mas em defesa do Notion, fui cliente na pessoa física."
+    },
+    {
+      "start": 8.6,
+      "end": 9.1,
+      "text": "Inclusive, também fiz meu dashboard individual."
+    },
+    {
+      "start": 9.1,
+      "end": 9.6,
+      "text": "Bem sofisticado, não tão focado em saúde, mas no financeiro."
+    },
+    {
+      "start": 9.6,
+      "end": 10.0,
+      "text": "E leituras também."
+    },
+    {
+      "start": 10.0,
+      "end": 10.4,
+      "text": "Aí tudo que eu ia lendo, anotava."
+    },
+    {
+      "start": 10.4,
+      "end": 11.0,
+      "text": "Tenho até hoje histórico, acho que desde 2020, as leituras que eu fiz."
+    },
+    {
+      "start": 11.0,
+      "end": 11.4,
+      "text": "Eu vou lá, anoto, faço um resumo."
+    },
+    {
+      "start": 11.6,
+      "end": 12.0,
+      "text": "Boa. Pessoal, vamos falar um pouquinho da"
+    },
+    {
+      "start": 12.0,
+      "end": 12.5,
+      "text": "Gabriel e como a gente tá usando."
+    },
+    {
+      "start": 12.5,
+      "end": 12.9,
+      "text": "Antes, só uma dúvida rápida."
+    },
+    {
+      "start": 13.0,
+      "end": 13.6,
+      "text": "A nível de quem trabalha com o quê? Quem aqui é da área de tecnologia?"
+    },
+    {
+      "start": 13.6,
+      "end": 14.0,
+      "text": "Efetivamente, produto, engenharia?"
+    },
+    {
+      "start": 14.1,
+      "end": 14.4,
+      "text": "Duas mãos tímidas ali atrás."
+    },
+    {
+      "start": 14.5,
+      "end": 14.9,
+      "text": "Vendas e marketing, tem gente?"
+    },
+    {
+      "start": 15.1,
+      "end": 15.3,
+      "text": "Tá aí."
+    },
+    {
+      "start": 15.3,
+      "end": 15.6,
+      "text": "Founder, faz tudo."
+    },
+    {
+      "start": 16.2,
+      "end": 16.4,
+      "text": "É isso."
+    },
+    {
+      "start": 16.6,
+      "end": 17.1,
+      "text": "Cara, Gabriel, vocês podem conhecer talvez pelos"
+    },
+    {
+      "start": 17.1,
+      "end": 17.6,
+      "text": "pelas câmeras apontadas para a rua com uma corzinha verde ao redor das câmeras."
+    },
+    {
+      "start": 17.7,
+      "end": 18.3,
+      "text": "Mas nada mais é do que uma empresa tentando humildemente ajudar a resolver o problema da segurança pública."
+    },
+    {
+      "start": 18.3,
+      "end": 18.6,
+      "text": "De forma privada."
+    },
+    {
+      "start": 18.6,
+      "end": 19.1,
+      "text": "A forma como a gente faz isso é interpretando o que acontece nas ruas."
+    },
+    {
+      "start": 19.2,
+      "end": 19.6,
+      "text": "Então, cada camaleão, que é o nome dessas câmeras que vocês veem."
+    },
+    {
+      "start": 19.7,
+      "end": 20.0,
+      "text": "Ele é responsável por gravar."
+    },
+    {
+      "start": 20.0,
+      "end": 20.4,
+      "text": "Então a gente tá enxergando o que acontece."
+    },
+    {
+      "start": 20.4,
+      "end": 20.8,
+      "text": "E responsável por estruturar dados."
+    },
+    {
+      "start": 20.8,
+      "end": 21.3,
+      "text": "Então a gente tá lendo placa de veículo 24 horas por dia."
+    },
+    {
+      "start": 21.3,
+      "end": 21.8,
+      "text": "São mais de 100 milhões de placas lidas."
+    },
+    {
+      "start": 21.8,
+      "end": 22.2,
+      "text": "Placas não, porque são detecções, né?"
+    },
+    {
+      "start": 22.2,
+      "end": 22.5,
+      "text": "Um carro é detectado várias vezes."
+    },
+    {
+      "start": 22.5,
+      "end": 23.0,
+      "text": "Mas mais de 100 milhões de detecções."
+    },
+    {
+      "start": 23.0,
+      "end": 23.5,
+      "text": "Essas detecções são integradas às autoridades."
+    },
+    {
+      "start": 23.5,
+      "end": 24.0,
+      "text": "Então, passou um carro roubado, o camaleão avisa a autoridade."
+    },
+    {
+      "start": 24.0,
+      "end": 24.4,
+      "text": "E vai lá, a rota, atrás desse veículo."
+    },
+    {
+      "start": 24.5,
+      "end": 24.9,
+      "text": "Do outro lado, a gente tem a central 24 horas."
+    },
+    {
+      "start": 24.9,
+      "end": 25.4,
+      "text": "Então, sim, infelizmente, algum de vocês, eventualmente, tiver"
+    },
+    {
+      "start": 25.4,
+      "end": 25.9,
+      "text": "um assalto, um roubo, qualquer coisa, liguem para 0800 Gabriel."
+    },
+    {
+      "start": 25.9,
+      "end": 26.4,
+      "text": "Literalmente Gabriel, que nem nas propagandas antigamente."
+    },
+    {
+      "start": 26.4,
+      "end": 27.0,
+      "text": "Que a gente tem uma central 24 horas aqui em Pinheiros, que vai atender vocês e ajudar com o que for necessário."
+    },
+    {
+      "start": 27.2,
+      "end": 27.5,
+      "text": "Isso é a Gabriel."
+    },
+    {
+      "start": 27.5,
+      "end": 27.9,
+      "text": "São 17.500 câmeras, entre 10 cidades hoje."
+    },
+    {
+      "start": 27.9,
+      "end": 28.4,
+      "text": "São Paulo, Rio de Janeiro e BH, e algumas cidades ao redor, né?"
+    },
+    {
+      "start": 28.4,
+      "end": 28.8,
+      "text": "Então, aqui, toda ABC Paulista, Guarulhos, Barueri."
+    },
+    {
+      "start": 28.8,
+      "end": 29.2,
+      "text": "E Osasco, aí Rio de Janeiro tem Niterói na frente."
+    },
+    {
+      "start": 29.2,
+      "end": 29.7,
+      "text": "Que se não falar em Niterói, o Niterói, o Niteróiense, a pessoa de Niterói, ela fica triste."
+    },
+    {
+      "start": 29.7,
+      "end": 29.9,
+      "text": "Não, é Rio de Janeiro."
+    },
+    {
+      "start": 29.9,
+      "end": 30.1,
+      "text": "E BH, só BH."
+    },
+    {
+      "start": 30.3,
+      "end": 30.5,
+      "text": "Isso é Gabriel."
+    },
+    {
+      "start": 30.7,
+      "end": 31.1,
+      "text": "Dado isso, o na virada do ano, eu tive uma"
+    },
+    {
+      "start": 31.4,
+      "end": 31.9,
+      "text": "Eu acordei em 1º de janeiro com uma ansiedade no meu peito, porque a gente começou a ver no mercado."
+    },
+    {
+      "start": 31.9,
+      "end": 32.5,
+      "text": "E aí, tô vendo o X, tô vendo o Reddit, as empresas de tecnologia falando sobre o que tá acontecendo no mundo."
+    },
+    {
+      "start": 32.5,
+      "end": 33.1,
+      "text": "E agora, engenharia não se faz mais dessa forma, e as empresas têm que virar AI first."
+    },
+    {
+      "start": 33.1,
+      "end": 33.5,
+      "text": "Algumas desde o início, né? Que nem o Paulo estava trazendo aqui."
+    },
+    {
+      "start": 33.5,
+      "end": 34.2,
+      "text": "Outras aproveitaram, principalmente esses, a virada do ano, quando você tem Natal e Ano Novo, começaram a usar Cloud Code."
+    },
+    {
+      "start": 34.2,
+      "end": 34.7,
+      "text": "Começaram a ver que eu posso pedir uma coisa desestruturada e vem uma ferramenta à minha disposição."
+    },
+    {
+      "start": 34.7,
+      "end": 35.1,
+      "text": "Porque os modelos evoluíram muito."
+    },
+    {
+      "start": 35.1,
+      "end": 35.5,
+      "text": "Então o mercado entrou nesse fervor."
+    },
+    {
+      "start": 35.5,
+      "end": 36.0,
+      "text": "E como eu sou o CPO da Gabriel, então eu toco toda a área de produto e engenharia, que a gente unificou tudo lá na empresa."
+    },
+    {
+      "start": 36.0,
+      "end": 36.5,
+      "text": "A gente resolveu olhar para isso com mais afinco."
+    },
+    {
+      "start": 36.5,
+      "end": 36.9,
+      "text": "Já era algo sendo visto, né, Gabriel."
+    },
+    {
+      "start": 36.9,
+      "end": 37.2,
+      "text": "Mas a gente resolveu acelerar de verdade."
+    },
+    {
+      "start": 37.2,
+      "end": 37.7,
+      "text": "E aí, o que eu quero contar um pouco aqui são os aprendizados que a gente teve."
+    },
+    {
+      "start": 37.7,
+      "end": 38.0,
+      "text": "Tá? Depois do happy hour, a gente pode falar."
+    },
+    {
+      "start": 38.0,
+      "end": 38.5,
+      "text": "Das minúcias, quem tiver dúvidas, também a gente pode discutir."
+    },
+    {
+      "start": 38.5,
+      "end": 39.1,
+      "text": "Mas eu fui batendo cabeça muito ao longo do primeiro trimestre."
+    },
+    {
+      "start": 39.1,
+      "end": 39.7,
+      "text": "Porque os conteúdos que eu via no mercado, eles eram muito focados nas empresas de fora."
+    },
+    {
+      "start": 39.7,
+      "end": 40.1,
+      "text": "Né? Então você vê lá no X, a Ramp, que fala bastante sobre como eles estão usando."
+    },
+    {
+      "start": 40.1,
+      "end": 40.7,
+      "text": "Lá no seu escritório em Nova York, com muito mais dinheiro e pessoas extremamente qualificadas."
+    },
+    {
+      "start": 40.7,
+      "end": 41.4,
+      "text": "Eu pensava, cara, como que na Gabriel, com 200 pessoas, na realidade do Brasil, eu traduzo aquilo que tá lá fora?"
+    },
+    {
+      "start": 41.4,
+      "end": 41.7,
+      "text": "Porque acontece."
+    },
+    {
+      "start": 41.7,
+      "end": 42.3,
+      "text": "E aí eu fui falar com outros empreendedores aqui de São Paulo, fui falar com empresas do mesmo tamanho da Gabriel."
+    },
+    {
+      "start": 42.3,
+      "end": 42.8,
+      "text": "E alguns desses aprendizados são o que a gente vai ver aqui."
+    },
+    {
+      "start": 42.8,
+      "end": 43.4,
+      "text": "Mas principalmente, até uma coisa que o Paulo estava comentando, o principal desafio é que tudo ficou mais rápido."
+    },
+    {
+      "start": 43.4,
+      "end": 44.0,
+      "text": "E aí, essa velocidade, que não era só na nossa cabeça, porque é quase exaustivo ficar com o Cloud Code aberto."
+    },
+    {
+      "start": 44.0,
+      "end": 44.5,
+      "text": "Porque você pode fazer tudo."
+    },
+    {
+      "start": 44.5,
+      "end": 45.1,
+      "text": "Tem um texto maravilhoso do Matt Schumer, que é um desenvolvedor, e ele fala sobre como as mudanças estão impactando a vida dos desenvolvedores."
+    },
+    {
+      "start": 45.1,
+      "end": 45.6,
+      "text": "E uma coisa que ele fala é que os seus sonhos ficaram mais próximos."
+    },
+    {
+      "start": 45.6,
+      "end": 46.1,
+      "text": "É isso, eu posso chegar pro Cloud Code e falar, me cria um aplicativo igual o Tibia."
+    },
+    {
+      "start": 46.1,
+      "end": 46.7,
+      "text": "E aí eu vou ter lá, na minha memória infantil, de quando eu jogava Tibia, sendo sanada por algo que eu criei."
+    },
+    {
+      "start": 46.7,
+      "end": 46.9,
+      "text": "É impressionante isso."
+    },
+    {
+      "start": 46.9,
+      "end": 47.1,
+      "text": "E a gente pode começar a fazer muitas coisas."
+    },
+    {
+      "start": 47.1,
+      "end": 47.4,
+      "text": "Então é cansativo, é muito rápido."
+    },
+    {
+      "start": 47.4,
+      "end": 48.0,
+      "text": "E aí a gente olhou para a organização e falou, isso aqui, de forma desestruturada, vai ter gente indo muito rápido."
+    },
+    {
+      "start": 48.0,
+      "end": 48.5,
+      "text": "Eventualmente botando a cabeça na parede."
+    },
+    {
+      "start": 48.5,
+      "end": 49.0,
+      "text": "Vai ter gente que vai ter medo, que não vai saber o que fazer."
+    },
+    {
+      "start": 49.0,
+      "end": 49.6,
+      "text": "Então, como que a gente organiza? Como que a gente cria mecanismos para nossa empresa conseguir funcionar nesse mundo extremamente rápido e desorganizado?"
+    },
+    {
+      "start": 49.8,
+      "end": 50.2,
+      "text": "E aí, são quatro tópicos."
+    },
+    {
+      "start": 50.3,
+      "end": 50.9,
+      "text": "Eu vou falar sobre como a gente usa Notion como base de conhecimento."
+    },
+    {
+      "start": 50.9,
+      "end": 51.3,
+      "text": "Então é muito parecido com o que foi mostrado aqui."
+    },
+    {
+      "start": 51.3,
+      "end": 51.7,
+      "text": "Mas eu vou só reforçar o nosso caso de uso."
+    },
+    {
+      "start": 51.8,
+      "end": 52.2,
+      "text": "Os bots de treinamento do time."
+    },
+    {
+      "start": 52.2,
+      "end": 52.9,
+      "text": "Então, embora tenha, e eu concordo, não é uma posição contrária a isso, tem que automatizar muito o fluxo de relacionamento."
+    },
+    {
+      "start": 52.9,
+      "end": 53.4,
+      "text": "E o SDR é autônomo, qualificador de leads."
+    },
+    {
+      "start": 53.4,
+      "end": 54.0,
+      "text": "Mas cara, Gabriel trabalha com algo muito sensível, né? Você foi assaltado, quer um ser humano ou um bot te atendendo?"
+    },
+    {
+      "start": 54.0,
+      "end": 54.3,
+      "text": "Isso aí são coisas que a gente vai ter sempre."
+    },
+    {
+      "start": 54.3,
+      "end": 54.8,
+      "text": "Com a equipe de seres humanos operando."
+    },
+    {
+      "start": 54.8,
+      "end": 55.3,
+      "text": "Como que eu pego esse ser humano e eu potencializo ele?"
+    },
+    {
+      "start": 55.3,
+      "end": 55.8,
+      "text": "Então tem um desafio de como treinar melhor, como rampá-lo com mais velocidade, usando IA."
+    },
+    {
+      "start": 55.9,
+      "end": 56.3,
+      "text": "Aí tem a parte de planejamento."
+    },
+    {
+      "start": 56.3,
+      "end": 57.0,
+      "text": "Essa, particularmente, foi uma grande dor minha, resolvida com inteligência artificial."
+    },
+    {
+      "start": 57.0,
+      "end": 57.5,
+      "text": "Eu vou entrar como a gente mudou a maneira de fazer planejamento de produto na Gabriel."
+    },
+    {
+      "start": 57.5,
+      "end": 57.9,
+      "text": "Para todo mundo, não só para mim."
+    },
+    {
+      "start": 57.9,
+      "end": 58.3,
+      "text": "Então, para a equipe de produto, como a gente começou a fazer."
+    },
+    {
+      "start": 58.3,
+      "end": 58.7,
+      "text": "E aí, no fim, mudanças organizacionais."
+    },
+    {
+      "start": 58.7,
+      "end": 59.1,
+      "text": "Isso aqui também é outra coisa que me ajudou muito."
+    },
+    {
+      "start": 59.1,
+      "end": 59.7,
+      "text": "Mas quais mudanças a gente teve que fazer nas áreas para conseguir operar melhor com inteligência artificial."
+    },
+    {
+      "start": 59.9,
+      "end": 60.2,
+      "text": "E aí, sobre base de conhecimento, né?"
+    },
+    {
+      "start": 60.4,
+      "end": 60.9,
+      "text": "O real desafio da Gabriel, a gente tem muita ligação."
+    },
+    {
+      "start": 60.9,
+      "end": 61.3,
+      "text": "Então, imaginem essa central que eu estava falando para vocês."
+    },
+    {
+      "start": 61.3,
+      "end": 61.7,
+      "text": "São 6.000 chamadas, e aí, não caem em chamadas."
+    },
+    {
+      "start": 61.7,
+      "end": 62.1,
+      "text": "Como telefone, WhatsApp, e-mail, mas são 6.000 contatos sendo realizados ao longo de um mês."
+    },
+    {
+      "start": 62.1,
+      "end": 62.6,
+      "text": "200 por dia, de 12 tópicos diferentes, com 40 protocolos distintos."
+    },
+    {
+      "start": 62.6,
+      "end": 63.1,
+      "text": "Cada um com seu nível de intensidade."
+    },
+    {
+      "start": 63.1,
+      "end": 63.5,
+      "text": "Tem muita coisa acontecendo."
+    },
+    {
+      "start": 63.5,
+      "end": 63.9,
+      "text": "Então, as coisas vão mudando, os modos de fazer."
+    },
+    {
+      "start": 63.9,
+      "end": 64.3,
+      "text": "A documentação que era válida, não é mais válida."
+    },
+    {
+      "start": 64.3,
+      "end": 64.7,
+      "text": "Então é algo muito fácil de ficar caótico."
+    },
+    {
+      "start": 64.7,
+      "end": 65.2,
+      "text": "E a gente precisava centralizar essa informação em algum lugar que fosse acessível pela máquina, de forma estruturada."
+    },
+    {
+      "start": 65.2,
+      "end": 65.6,
+      "text": "Mas também pelo ser humano."
+    },
+    {
+      "start": 65.6,
+      "end": 66.0,
+      "text": "Porque a gente não podia transformar algo totalmente agêntico."
+    },
+    {
+      "start": 66.0,
+      "end": 66.5,
+      "text": "Então, a gente começou criando uma, no Cloud Code mesmo, mas usando interface do Cloud."
+    },
+    {
+      "start": 66.5,
+      "end": 67.0,
+      "text": "A gente cria uma interface de perguntas em linguagem natural para o operador."
+    },
+    {
+      "start": 67.0,
+      "end": 67.5,
+      "text": "Então, imagina ele lá, podendo perguntar, como é que é o protocolo de compartilhamento de imagens?"
+    },
+    {
+      "start": 67.5,
+      "end": 68.0,
+      "text": "Eu quero, alguém me ligou e dizendo, fui assaltado aqui na Doutor Virgílio."
+    },
+    {
+      "start": 68.0,
+      "end": 68.4,
+      "text": "Eu posso, não posso passar imagem para as pessoas?"
+    },
+    {
+      "start": 68.4,
+      "end": 68.8,
+      "text": "Existem regras, existem fluxos, tem que entender cada um deles."
+    },
+    {
+      "start": 68.8,
+      "end": 69.2,
+      "text": "A gente cria essa interface, mas o padrão de uma interface dessas é que você tem que subir um monte de PDF."
+    },
+    {
+      "start": 69.2,
+      "end": 69.7,
+      "text": "Então, vai lá, tem várias documentações, exporta essa documentação como PDF, sobe nessa plataforma."
+    },
+    {
+      "start": 69.7,
+      "end": 70.0,
+      "text": "E aí a pessoa fica lá consumindo."
+    },
+    {
+      "start": 70.0,
+      "end": 70.5,
+      "text": "Mas são 12 macroáreas com 40 protocolos diferentes."
+    },
+    {
+      "start": 70.5,
+      "end": 70.9,
+      "text": "Cada um sendo atualizado."
+    },
+    {
+      "start": 70.9,
+      "end": 71.2,
+      "text": "O trabalho que faz essa atualização."
+    },
+    {
+      "start": 480.0,
+      "end": 482.26,
+      "text": "a chance de dar errado é muito alto. Aí que a gente chega no Notion como esse motor intermediário."
+    },
+    {
+      "start": 482.26,
+      "end": 490.0,
+      "text": "Então o Notion ele é hoje para as pessoas que consomem informações via essas interfaces na Gabriel, o centralizador da informação."
+    },
+    {
+      "start": 490.0,
+      "end": 496.0,
+      "text": "E a razão pela qual a gente escolheu o Notion não é só porque ele é bom com agentes, porque existem outras ferramentas que fazem isso."
+    },
+    {
+      "start": 496.0,
+      "end": 502.0,
+      "text": "A gente poderia ter estruturado, cara, no GitHub de uma forma totalmente não palatável para o ser humano, mas totalmente palatável para um agente."
+    },
+    {
+      "start": 502.0,
+      "end": 507.0,
+      "text": "Mas eu preciso que o vendedor que tá na rua também consiga ler a documentação, que a pessoa de produto consiga ler essa documentação."
+    },
+    {
+      "start": 507.0,
+      "end": 512.0,
+      "text": "Então o Notion ele faz um ótimo meio-campo nesse jogo entre robôs e seres humanos."
+    },
+    {
+      "start": 512.0,
+      "end": 515.0,
+      "text": "Por isso a gente escolheu o Notion como esse intermediário."
+    },
+    {
+      "start": 515.0,
+      "end": 520.0,
+      "text": "Isso aqui é um exemplo de tudo que vai lá dentro hoje, então tudo que é informação da nossa central 24 horas."
+    },
+    {
+      "start": 520.0,
+      "end": 523.0,
+      "text": "Como ela funciona, a parte de documentação de produto, dúvidas jurídicas."
+    },
+    {
+      "start": 523.0,
+      "end": 527.0,
+      "text": "Ah, e a LGPD, Gabriel, tá lá sanada a dúvida, então vocês podem ligar e a pessoa vai saber o que responder."
+    },
+    {
+      "start": 527.0,
+      "end": 530.0,
+      "text": "Marketing, operações, tudo isso acessível tanto para os chatbots quanto para as pessoas."
+    },
+    {
+      "start": 530.0,
+      "end": 534.0,
+      "text": "Notion foi a plataforma que a gente encontrou para conseguir fazer esse jogo entre robôs e seres humanos."
+    },
+    {
+      "start": 534.0,
+      "end": 536.0,
+      "text": "Dado isso, isso aí."
+    },
+    {
+      "start": 536.0,
+      "end": 538.0,
+      "text": "Ah, ponto importante, foi feito pela IA, toda a apresentação."
+    },
+    {
+      "start": 538.0,
+      "end": 541.0,
+      "text": "Então eu tô descobrindo partes dos slides com vocês."
+    },
+    {
+      "start": 541.0,
+      "end": 544.0,
+      "text": "Eu pedi para eles fazerem, a IA fazendo, no caso."
+    },
+    {
+      "start": 544.0,
+      "end": 548.0,
+      "text": "E ela tá, o cara, ficou maravilhoso, que usem depois o Cloud Design, uma dica honesta, é maravilhoso para isso."
+    },
+    {
+      "start": 548.0,
+      "end": 553.0,
+      "text": "Segundo ponto, a gente resolveu o problema da documentação num único lugar e a gente agora tem onde consultar."
+    },
+    {
+      "start": 553.0,
+      "end": 560.0,
+      "text": "Só que para um operador, seja ele da central, seja ele de um time de vendas, ele conseguir fazer aquilo de forma fluida, que não fique consultando o tempo todo, ele tem que ser treinado."
+    },
+    {
+      "start": 560.0,
+      "end": 563.0,
+      "text": "E aí que vem a parte da gente usar IA para treinar o usuário."
+    },
+    {
+      "start": 563.0,
+      "end": 567.0,
+      "text": "A gente criou dois chats, como se fosse WhatsApp, que você consegue interagir com bots."
+    },
+    {
+      "start": 567.0,
+      "end": 574.0,
+      "text": "Que tão emulando os clientes, que tão emulando os leads, então para a parte de vendas, os leads, para a central, o trans e o cliente que tem alguma dor."
+    },
+    {
+      "start": 574.0,
+      "end": 580.0,
+      "text": "E o operador ali, ele fica conversando com esse bot, fingindo que tá resolvendo algum problema. Então é como se fosse um role play."
+    },
+    {
+      "start": 580.0,
+      "end": 590.0,
+      "text": "Existe lá um desafio que você tem que, sei lá, vender para o seu Zé, que é um síndico profissional de pinheiros, que tem cinco condomínios e a maior dor dele é que ele não entende de tecnologia."
+    },
+    {
+      "start": 590.0,
+      "end": 597.0,
+      "text": "Isso tudo é o bot, com esse conhecimento que vai emulando com base no que ele tem como preset ali, para interagir com essa pessoa e treinando."
+    },
+    {
+      "start": 597.0,
+      "end": 602.0,
+      "text": "Então a gente criou essas máquinas de treinamento para aumentar a rampagem do time, a velocidade de rampagem do time."
+    },
+    {
+      "start": 602.0,
+      "end": 607.0,
+      "text": "E isso tem sido fundamental para a gente conseguir fazer eles acompanharem a velocidade."
+    },
+    {
+      "start": 607.0,
+      "end": 613.0,
+      "text": "Porque enquanto aquele primeiro é bom para garantir que a documentação tá uníssona, esse aqui é bom para garantir que eles aprenderam."
+    },
+    {
+      "start": 613.0,
+      "end": 621.0,
+      "text": "E aí depois que ele faz essa interação, tanto na parte de vendas quanto na parte da central, existe todo um feedback estruturado que o próprio bot dá para ele, falando: \"Ó, você trouxe conteúdo correto, mas a abordagem não foi a melhor."
+    },
+    {
+      "start": 621.0,
+      "end": 627.0,
+      "text": "Ou você errou tais tópicos por conta de tal detalhe que tá aqui nessa documentação.\""
+    },
+    {
+      "start": 627.0,
+      "end": 631.0,
+      "text": "Então é basicamente um coach um a um que tem com os vendedores."
+    },
+    {
+      "start": 631.0,
+      "end": 636.0,
+      "text": "Isso aqui é potencializar o trabalho do coordenador de vendas, do coordenador da central."
+    },
+    {
+      "start": 636.0,
+      "end": 642.0,
+      "text": "Que no limite, e aí nada a ver com a empresa, né? Muito diferente do que o chat faz com as crianças estudando, né?"
+    },
+    {
+      "start": 642.0,
+      "end": 647.0,
+      "text": "O melhor, a melhor forma de aprender é ter um professor particular. A IA virou professor particular de muitas pessoas."
+    },
+    {
+      "start": 647.0,
+      "end": 650.0,
+      "text": "Isso é maravilhoso. O que é horrível de falar, faz meu tema de casa e repassar."
+    },
+    {
+      "start": 650.0,
+      "end": 653.0,
+      "text": "Isso é a mesma coisa. Então ele vai te avaliar, ele vai trocar ideia e vai ajudar o operador a performar melhor."
+    },
+    {
+      "start": 653.0,
+      "end": 659.0,
+      "text": "Isso são duas formas que a gente achou de fazer com que a operação da Gabriel, que não tem nada a ver com tecnologia, conseguisse fluir melhor."
+    },
+    {
+      "start": 659.0,
+      "end": 662.0,
+      "text": "Das minhas dores agora, enquanto uma pessoa da área de tecnologia."
+    },
+    {
+      "start": 662.0,
+      "end": 668.0,
+      "text": "Por muito tempo, o desafio que a gente teve foi como eu pego uma equipe de produto e faço com que cada pessoa tenha um planejamento para o seu próprio produto, para sua squad."
+    },
+    {
+      "start": 668.0,
+      "end": 675.0,
+      "text": "Que faça sentido com a visão da empresa, com a visão que a gente tem para a área de tecnologia, sendo que eu tenho várias pessoas diferentes, né?"
+    },
+    {
+      "start": 675.0,
+      "end": 677.0,
+      "text": "Não são robôs, são seres humanos."
+    },
+    {
+      "start": 677.0,
+      "end": 687.0,
+      "text": "Então, como que aquele product manager júnior, que acabou de entrar no mercado de trabalho, aquele sênior que veio de uma empresa totalmente diferente da Gabriel, e essa pessoa que tá desde o início na Gabriel, nunca foi de produto e migrou agora para a área, como que cada um vai fazer um planejamento coerente tanto com a visão da área, quanto com o template que a gente precisa?"
+    },
+    {
+      "start": 687.0,
+      "end": 694.0,
+      "text": "E o maior desafio do processo, quando a gente tenta encaixar tudo em caixinhas, é que ele limita para baixo e para cima, né?"
+    },
+    {
+      "start": 694.0,
+      "end": 698.0,
+      "text": "Então você pode botar um template duro e falar, é só preencher isso daqui."
+    },
+    {
+      "start": 698.0,
+      "end": 702.0,
+      "text": "Vai garantir o mínimo, então a pessoa não vai deixar de entregar aquilo, mas você capa o máximo também."
+    },
+    {
+      "start": 702.0,
+      "end": 708.0,
+      "text": "Porque se ela quiser fazer algo diferente, tiver alguma ideia, é muito difícil, né? É um sistema educacional diferente, é como a escola."
+    },
+    {
+      "start": 708.0,
+      "end": 713.0,
+      "text": "Você chega na escola, você vai passar nas provas, então vai ter o mínimo de conhecimento, mas um aluno exímio, ele vai chegar no máximo no 10."
+    },
+    {
+      "start": 713.0,
+      "end": 715.0,
+      "text": "Ele não tem como passar daquilo."
+    },
+    {
+      "start": 715.0,
+      "end": 718.0,
+      "text": "O que a IA nos permite é balizar o mínimo."
+    },
+    {
+      "start": 718.0,
+      "end": 722.0,
+      "text": "Então a gente criou um fluxo, e isso aqui é a forma mais, eu juro que eu tentei deixar simples."
+    },
+    {
+      "start": 722.0,
+      "end": 725.0,
+      "text": "Essa aqui é mais simples, mas essa aqui é o que eu gosto."
+    },
+    {
+      "start": 725.0,
+      "end": 727.0,
+      "text": "Vamos para o simples antes."
+    },
+    {
+      "start": 727.0,
+      "end": 734.0,
+      "text": "A gente criou um fluxo com agentes e skills do Cloud Code, que nos ajudam a padronizar a forma de fazer um planejamento."
+    },
+    {
+      "start": 734.0,
+      "end": 737.0,
+      "text": "O que que é isso?"
+    },
+    {
+      "start": 737.0,
+      "end": 742.0,
+      "text": "Existem skills específicos para fazer o planejamento, então da mesma forma que o Paulo estava interagindo ali com a máquina."
+    },
+    {
+      "start": 742.0,
+      "end": 747.0,
+      "text": "E aí ele falava: \"Ah, eu quero fazer tal coisa.\" Aí ela falou: \"Tá aqui, mas tu quer mais alguma coisa?\""
+    },
+    {
+      "start": 747.0,
+      "end": 750.0,
+      "text": "Ele responde: \"Ah, eu quero tal coisa também.\""
+    },
+    {
+      "start": 750.0,
+      "end": 754.0,
+      "text": "E ele vai conversando, a gente criou skills de planejamento."
+    },
+    {
+      "start": 754.0,
+      "end": 757.0,
+      "text": "Que aí você ativa o skill, ele vai perguntar: \"Tá, o que que tu quer fazer de planejamento?\""
+    },
+    {
+      "start": 757.0,
+      "end": 759.0,
+      "text": "Qual é o teu produto?"
+    },
+    {
+      "start": 759.0,
+      "end": 762.0,
+      "text": "Aí ele começa a descrever o produto, aí ele vai perguntando: \"Tá, e o seu objetivo?\""
+    },
+    {
+      "start": 762.0,
+      "end": 767.0,
+      "text": "E vai interagindo como se fosse uma conversa minha com a pessoa, mas além desses skills que padronizam a interação."
+    },
+    {
+      "start": 767.0,
+      "end": 772.0,
+      "text": "Existe toda a parte de docs e contexto que fui eu quem fiz."
+    },
+    {
+      "start": 772.0,
+      "end": 777.0,
+      "text": "Então eu, enquanto uma liderança da área, eu defini contextos do que que é a visão de produto da Gabriel."
+    },
+    {
+      "start": 777.0,
+      "end": 781.0,
+      "text": "Do que que é o problema de negócio que a gente vai resolver em 2026, objetivos da empresa."
+    },
+    {
+      "start": 781.0,
+      "end": 787.0,
+      "text": "E esse skill, e aí agora sim, vou passar para a parte mais chata, mas esses skills aqui de planejamento, que é o quarter plan, ele consome todos os contextos definidos por mim."
+    },
+    {
+      "start": 787.0,
+      "end": 793.0,
+      "text": "Ele consome ali embaixo, o Notion, através de uma API, então ele pega tudo que é conteúdo que tem no Notion, seja de documentação, seja de tarefas, porque dá para ver na gestão de tarefas."
+    },
+    {
+      "start": 793.0,
+      "end": 800.0,
+      "text": "O que que a pessoa deixou de fazer do quarter anterior e não passou para o próximo, ele pega tudo que tem de documentação de produto, e aí essa mesma lógica de ter um skill interagindo, que ele vai criando uma documentação."
+    },
+    {
+      "start": 800.0,
+      "end": 804.0,
+      "text": "Que no fim é o planejamento, né? É uma documentação do que vai ser feito."
+    },
+    {
+      "start": 804.0,
+      "end": 810.0,
+      "text": "A gente faz para outras frentes, que nem a estratégia do produto. Então existe uma documentação feita, padronizada para todos os produtos da Gabriel, que foi feita com base nessas interações com skill."
+    },
+    {
+      "start": 810.0,
+      "end": 816.0,
+      "text": "E aí ele consegue pegando esses documentos, criar o seu planejamento no template pré-definido."
+    },
+    {
+      "start": 816.0,
+      "end": 820.0,
+      "text": "E além disso, eu facilitei a minha vida depois."
+    },
+    {
+      "start": 820.0,
+      "end": 825.0,
+      "text": "Eu criei uma skill de revisão, que emula como se fosse um CEO, um CPO e um CTO."
+    },
+    {
+      "start": 825.0,
+      "end": 830.0,
+      "text": "Cada um criticando esse planejamento com vieses totalmente diferentes, parecido com os clientes, né?"
+    },
+    {
+      "start": 830.0,
+      "end": 834.0,
+      "text": "Então eu crio lá um fluxo, eu emulo três clientes e eu vejo se o fluxo funciona ou não."
+    },
+    {
+      "start": 834.0,
+      "end": 840.0,
+      "text": "Eu crio um planejamento, eu emulo um CEO, o CPO e o CTO, cada um com um viés totalmente diferente."
+    },
+    {
+      "start": 840.0,
+      "end": 845.0,
+      "text": "O CEO normalmente falava: \"Ah, falta métricas financeiras, não tô vendo o impacto no negócio.\""
+    },
+    {
+      "start": 845.0,
+      "end": 849.0,
+      "text": "Aí o CPO falava: \"Cadê o cliente? Falta cuidado com o cliente.\""
+    },
+    {
+      "start": 849.0,
+      "end": 852.0,
+      "text": "O CTO diz: \"Isso não é escalável.\""
+    },
+    {
+      "start": 852.0,
+      "end": 858.0,
+      "text": "Aí no fim, esse mesmo skill pondera os três resultados e devolve para a pessoa antes de chegar em mim, para aí sim ela revisar o planejamento e vem uma versão já refinada, padronizada com todo o contexto."
+    },
+    {
+      "start": 960.0,
+      "end": 961.23,
+      "text": "que a gente tem da Gabriela ali dentro, que eu consigo avaliar e aí a minha opinião honesta, pessoas que não tinham nenhuma capacidade de fazer algo daquele calibre conseguiram fazer em uma interação, porque a organização das informações está estruturada."
+    },
+    {
+      "start": 961.23,
+      "end": 963.75,
+      "text": "Então, o que realmente mudou para isso ser algo produtivo é que a gente tem documentações muito bem feitas, com detalhamento necessário, tanto no Notion, e aí algumas coisas fora, mas na documentação em Markdown, que é a mesma lógica do que o Notion usa."
+    },
+    {
+      "start": 963.75,
+      "end": 964.77,
+      "text": "E elas são consumidas pela IA que tá interagindo com a pessoa."
+    },
+    {
+      "start": 964.77,
+      "end": 965.25,
+      "text": "Contexto é a coisa mais importante para IA."
+    },
+    {
+      "start": 965.25,
+      "end": 966.03,
+      "text": "É magnífico e é impressionante quando a gente fala algo sem nenhum tipo de contexto."
+    },
+    {
+      "start": 966.03,
+      "end": 967.05,
+      "text": "Eu gostaria de criar um jogo da cobrinha, e ele vai lá e faz o jogo da cobrinha, mas ele é muito fácil de chegar num limite de impressionar."
+    },
+    {
+      "start": 967.05,
+      "end": 968.25,
+      "text": "Então, eu fiz o jogo da cobrinha, tá, e agora faz o mais legal. Ele não sabe o que que é mais legal, ele não sabe o que que vocês acham que é legal."
+    },
+    {
+      "start": 968.25,
+      "end": 969.03,
+      "text": "Me impressiona, me lembra a época que eu trabalhava com marketing e falava, falta um Tchan na peça."
+    },
+    {
+      "start": 969.03,
+      "end": 969.33,
+      "text": "O que que é o Tchan?"
+    },
+    {
+      "start": 969.33,
+      "end": 970.05,
+      "text": "Então, o contexto é o que a gente precisa dar para a máquina saber o que fazer."
+    },
+    {
+      "start": 970.05,
+      "end": 970.53,
+      "text": "É um monte de um e zero, ela não entende nada do ser humano."
+    },
+    {
+      "start": 970.53,
+      "end": 971.01,
+      "text": "Mas ela é muito boa em deduzir, né? No fim é isso que ela faz."
+    },
+    {
+      "start": 971.01,
+      "end": 971.37,
+      "text": "Ela deduz o que que é a próxima coisa."
+    },
+    {
+      "start": 971.37,
+      "end": 971.79,
+      "text": "Então, quanto mais contexto, melhor."
+    },
+    {
+      "start": 971.79,
+      "end": 972.33,
+      "text": "Se eu sou dono desse contexto, eu vou ficar muito mais feliz depois."
+    },
+    {
+      "start": 972.33,
+      "end": 973.59,
+      "text": "Então, eu fiz essa mistura entre o que eu gostaria de visão, o que o PM quer de visão de produto, e eu, isso aqui foi a coisa que mudou minha vida no trimestre, tá?"
+    },
+    {
+      "start": 973.59,
+      "end": 974.55,
+      "text": "Se vocês puderem fazer algo parecido com isso nas empresas de vocês, foi a coisa que melhorou o Gabriel."
+    },
+    {
+      "start": 974.55,
+      "end": 975.75,
+      "text": "Ter visões ousadas de produto, coerentes com a nossa estratégia, de pessoas que não teriam naquele momento a capacidade de fazer isso."
+    },
+    {
+      "start": 975.75,
+      "end": 976.17,
+      "text": "Isso nivela muito bem e ajuda muito todo mundo."
+    },
+    {
+      "start": 976.17,
+      "end": 976.71,
+      "text": "E aí, por fim, existe muita mudança acontecendo."
+    },
+    {
+      "start": 976.71,
+      "end": 977.91,
+      "text": "E aí o, tem uma lei da engenharia que eles chamam de Lei de Conway, né? Que fala que a estrutura definida da organização vai definir como um software é definido, é feito."
+    },
+    {
+      "start": 977.91,
+      "end": 978.75,
+      "text": "Então, se você tem duas estruturas apartadas, provavelmente o software vai ser feito de duas formas apartadas também."
+    },
+    {
+      "start": 978.75,
+      "end": 979.47,
+      "text": "Se a gente olha o contrário disso, dependendo do que eu quero fazer, eu tenho que mexer nas estruturas."
+    },
+    {
+      "start": 979.47,
+      "end": 980.19,
+      "text": "E no fim, o que a gente queria fazer era muito diferente do ano passado."
+    },
+    {
+      "start": 980.19,
+      "end": 980.73,
+      "text": "Eu queria produzir mais rápido, eu queria mais liberdade para ponta."
+    },
+    {
+      "start": 980.73,
+      "end": 981.39,
+      "text": "Eu queria menos alteração de contexto entre as pessoas para poder ficar lá, 20 agentes ao mesmo tempo iterando."
+    },
+    {
+      "start": 981.39,
+      "end": 982.05,
+      "text": "Se isso é verdade, a gente precisava mudar a forma de trabalhar dentro da Gabriela."
+    },
+    {
+      "start": 982.05,
+      "end": 982.65,
+      "text": "Especificamente aqui na área de tecnologia, que aí o que a gente fez foi novos combinados."
+    },
+    {
+      "start": 982.65,
+      "end": 983.55,
+      "text": "Então, definir com clareza o que que é esperado da equipe de cada um de tecnologia nesse novo mundo."
+    },
+    {
+      "start": 983.55,
+      "end": 984.45,
+      "text": "Porque é muito angustiante para a pessoa que tá cinco anos trabalhando de uma forma, de repente chega um diretor da empresa e fala, agora tem que ser mais rápido."
+    },
+    {
+      "start": 984.45,
+      "end": 985.01,
+      "text": "Tá, mas o que que é mais rápido? O que que, o que que eu tenho que mudar para conseguir ser mais rápido?"
+    },
+    {
+      "start": 985.01,
+      "end": 985.95,
+      "text": "Como se estivesse andando de carro numa estrada, tá vindo um caminhão a 120 por hora, você tá 80 e fala, acelera. Tá, mas não tem um cinto de segurança, não tem nada."
+    },
+    {
+      "start": 985.95,
+      "end": 986.43,
+      "text": "Então, a pessoa fica ansiosa sem saber como trabalhar com isso."
+    },
+    {
+      "start": 986.43,
+      "end": 987.09,
+      "text": "Então, combinados claros é algo importante. Eu vou passar aqui os que a gente fez na Gabriela."
+    },
+    {
+      "start": 987.09,
+      "end": 987.57,
+      "text": "Novo modelo de trabalho. Isso aqui é muito específico de produto, mas eu vou passar."
+    },
+    {
+      "start": 987.57,
+      "end": 988.17,
+      "text": "E aí interpretem o que que faz sentido, porque eu acho que tem insights que saem disso."
+    },
+    {
+      "start": 988.17,
+      "end": 988.77,
+      "text": "E por fim, novo modelo de gestão. Aqui também eu convido áreas que não sejam de tecnologia a pensar o que que impacta."
+    },
+    {
+      "start": 988.77,
+      "end": 989.79,
+      "text": "Mas para nós, essa mudança, ela é muito grande do que é acostumado no mundo de tecnologia, então imagino que tenham várias analogias possíveis em outras áreas."
+    },
+    {
+      "start": 989.79,
+      "end": 990.15,
+      "text": "Mas sobre novos combinados, esses são os quatro combinados que eu fiz com a equipe."
+    },
+    {
+      "start": 990.15,
+      "end": 990.57,
+      "text": "Primeiro deles sobre velocidade."
+    },
+    {
+      "start": 990.57,
+      "end": 991.35,
+      "text": "Então, por mais que a gente queira que velocidade seja algo a ser priorizado, tem que deixar isso claro."
+    },
+    {
+      "start": 991.35,
+      "end": 991.83,
+      "text": "Porque senão a pessoa vai continuar com os combinados antigos."
+    },
+    {
+      "start": 991.83,
+      "end": 992.79,
+      "text": "Existe uma premissa gigante em desenvolvimento de software que é, tu não vai jogar tudo fora, tu vai aprender com aquele código antigo e construir em cima dele."
+    },
+    {
+      "start": 992.79,
+      "end": 993.75,
+      "text": "Só que com Cloud Code, tu pode jogar tudo fora, e tu pode construir agora, para daqui a seis meses jogar tudo fora."
+    },
+    {
+      "start": 993.75,
+      "end": 994.17,
+      "text": "Então, é muito mais fácil de ficar iterando."
+    },
+    {
+      "start": 994.17,
+      "end": 994.65,
+      "text": "Esse foi um dos combinados que a gente fez, velocidade."
+    },
+    {
+      "start": 994.65,
+      "end": 995.01,
+      "text": "Se tu tiver que trocar tudo daqui a seis meses, tá tudo bem."
+    },
+    {
+      "start": 995.01,
+      "end": 995.55,
+      "text": "Segundo combinado, que é consequência da velocidade, vai quebrar mais."
+    },
+    {
+      "start": 995.55,
+      "end": 996.21,
+      "text": "E a gente tá vendo isso em grandes plataformas, tá? O próprio Cloud Code é um exemplo."
+    },
+    {
+      "start": 996.21,
+      "end": 996.75,
+      "text": "Ele não tava funcionando ontem. Ontem à tarde, Cloud Code caiu no mundo inteiro."
+    },
+    {
+      "start": 996.75,
+      "end": 997.59,
+      "text": "Porque eles estão testando coisa, estão iterando coisa, a própria AWS começou a ter mais quedas por conta do, da velocidade de deploy e coisas que estão sendo colocadas para fora, é natural."
+    },
+    {
+      "start": 997.59,
+      "end": 998.25,
+      "text": "Então, a gente tem que aceitar mais a perda de performance eventual, cair o software."
+    },
+    {
+      "start": 998.25,
+      "end": 998.61,
+      "text": "Só que tem que saber onde."
+    },
+    {
+      "start": 998.61,
+      "end": 999.51,
+      "text": "Então, se eu tenho uma parte de cobranças financeiras, que todo mês eu vou rodar, todo o billing da Gabriela, talvez não é o melhor lugar para ser usado."
+    },
+    {
+      "start": 999.51,
+      "end": 1000.05,
+      "text": "Vamos tentar ser usado num aplicativo, que se cair, cara, a gente mandou um push errado hoje, sem querer."
+    },
+    {
+      "start": 1000.05,
+      "end": 1000.35,
+      "text": "Porque o Cloud mandou, a gente tá testando uma coisa e falou, mandei."
+    },
+    {
+      "start": 1000.35,
+      "end": 1000.89,
+      "text": "Aí isso aí não impacta tanto. Ah, você viu lá um alerta dizendo que teve algo na sua região, tudo bem."
+    },
+    {
+      "start": 1000.89,
+      "end": 1001.37,
+      "text": "Mas se a API financeira quebra, é muito pior."
+    },
+    {
+      "start": 1001.37,
+      "end": 1001.91,
+      "text": "Então, saber onde pode errar também é muito importante."
+    },
+    {
+      "start": 1001.91,
+      "end": 1002.27,
+      "text": "E ter essa clareza. Acelera, nesse lugar aqui."
+    },
+    {
+      "start": 1002.27,
+      "end": 1002.51,
+      "text": "Esse aqui vai com mais calma."
+    },
+    {
+      "start": 1002.51,
+      "end": 1002.87,
+      "text": "Terceiro ponto, testar mais."
+    },
+    {
+      "start": 1002.87,
+      "end": 1003.59,
+      "text": "Isso aí é outra consequência de produzir coisas muito rápidas, a gente tem que ficar validando, validando."
+    },
+    {
+      "start": 1003.59,
+      "end": 1004.19,
+      "text": "Gostei muito do que o Paulo tava mostrando, porque a ideia de você fazer um fluxo e validar emulando clientes é o que dá para fazer no mundo de negócios, né?"
+    },
+    {
+      "start": 1004.19,
+      "end": 1004.67,
+      "text": "No fim, é o que eu fiz no planejamento também."
+    },
+    {
+      "start": 1004.67,
+      "end": 1005.15,
+      "text": "Então, se vai ser fácil e rápido fazer um planejamento, valida."
+    },
+    {
+      "start": 1005.15,
+      "end": 1005.51,
+      "text": "Então, criem sempre mecanismos, skills, agentes de validação das coisas que estão sendo feitas."
+    },
+    {
+      "start": 1005.51,
+      "end": 1006.47,
+      "text": "Porque aí você pode ter mais liberdade na criação, jogar coisas com menos confiança de que ela vai funcionar, porque vai ter uma coisa dura ali validando, que é o seu skill, seu agente de validação que tá testando, tá vendo se funciona."
+    },
+    {
+      "start": 1006.47,
+      "end": 1007.19,
+      "text": "E aí, por fim, gerar valor em partes. Isso aqui também ajuda muito."
+    },
+    {
+      "start": 1007.19,
+      "end": 1008.03,
+      "text": "Ao invés de fazer uma grande entrega, porque você tem o vislumbre de fazer uma nova, um fluxo inteiro de SDR para conseguir chegar com a venda feita online."
+    },
+    {
+      "start": 1008.03,
+      "end": 1008.39,
+      "text": "Maravilhoso. Provavelmente, se você tentar fazer tudo, vai demorar uma semana, vai chegar no fim, vai ter alguma coisa no meio não funcionando bem."
+    },
+    {
+      "start": 1008.39,
+      "end": 1008.99,
+      "text": "Entregue em partes. Faz primeiro qualificação de lead, depois o funil de vendas, e vai juntando essas coisas."
+    },
+    {
+      "start": 1008.99,
+      "end": 1009.65,
+      "text": "Entregar em parte ajuda a não quebrar tudo de uma vez, e também ajuda a ver o valor mais rápido, porque aí vai dando a gasolina, né?"
+    },
+    {
+      "start": 1009.65,
+      "end": 1010.19,
+      "text": "Então, você vai criando ali, vendo que funciona, vai para o próximo passo, vê que funciona, é até mais divertido de fazer."
+    },
+    {
+      "start": 1010.19,
+      "end": 1010.55,
+      "text": "Isso foi a mudança de combinados."
+    },
+    {
+      "start": 1010.55,
+      "end": 1010.85,
+      "text": "A próxima parte do shape up."
+    },
+    {
+      "start": 1010.85,
+      "end": 1011.45,
+      "text": "Como funciona normalmente o desenvolvimento de tecnologia são por sprints, e muitas áreas começaram a fazer isso, né?"
+    },
+    {
+      "start": 1011.45,
+      "end": 1012.01,
+      "text": "Então, eu lembro que o, eu toquei já várias áreas da Gabriela, marketing, vendas, produto, agora tecnologia."
+    },
+    {
+      "start": 1012.01,
+      "end": 1012.65,
+      "text": "E na época em marketing, a gente fazia isso também. A gente criava sprints, duas semanas para fazer alguns projetos."
+    },
+    {
+      "start": 1012.65,
+      "end": 1013.13,
+      "text": "Aí fazer revisão, depois um planejamento."
+    },
+    {
+      "start": 1013.13,
+      "end": 1013.85,
+      "text": "Então, essa lógica de Scrum, de você fazer duas semanas e ficar iterando durante o ciclo."
+    },
+    {
+      "start": 1013.85,
+      "end": 1014.15,
+      "text": "Ela é muito normal dentro de engenharia."
+    },
+    {
+      "start": 1014.15,
+      "end": 1014.45,
+      "text": "Só que existem outras formas de trabalhar."
+    },
+    {
+      "start": 1014.45,
+      "end": 1015.05,
+      "text": "E existe uma forma que se chama Shape Up, que ela é específica lá da galera do Basecamp, que é um software norte-americano."
+    },
+    {
+      "start": 1015.05,
+      "end": 1015.65,
+      "text": "E ela é muito usada, era muito usada por desenvolvedores seniors."
+    },
+    {
+      "start": 1015.65,
+      "end": 1016.31,
+      "text": "Porque ela depende de ter um nível de senioridade alto suficiente para ser autônomo, para conseguir criticar, para ter mais independência."
+    },
+    {
+      "start": 1016.31,
+      "end": 1016.79,
+      "text": "Isso era muito difícil para desenvolvedores juniors."
+    },
+    {
+      "start": 1016.79,
+      "end": 1017.75,
+      "text": "Só que com a IA, com Cloud Code, ficou muito mais fácil deles terem segurança e autonomia. Então, modelos que não funcionavam com pessoas juniores, estão começando a funcionar."
+    },
+    {
+      "start": 1017.75,
+      "end": 1018.47,
+      "text": "E aí o meu, minha provocação aqui é, quais são as premissas que vocês têm de combinados e formatos que funcionavam com algumas especificações que hoje, talvez, não seja mais verdade."
+    },
+    {
+      "start": 1018.47,
+      "end": 1019.31,
+      "text": "E aí, tentem isso novamente, que a gente tentou em 2025, que não funcionava, hoje tá funcionando. Eu tentei esse modelo e não deu certo."
+    },
+    {
+      "start": 1019.31,
+      "end": 1019.79,
+      "text": "Hoje eu tô tentando e tá dando certo."
+    },
+    {
+      "start": 1019.79,
+      "end": 1019.79,
+      "text": "Então, voltem nessas premissas que vocês têm na cabeça e testem de novo no mundo da IA, que é totalmente diferente."
+    },
+    {
+      "start": 1440.0,
+      "end": 1441.23,
+      "text": "Então isso foi outra comunidade nossa de mudar a maneira de fazer engenharia."
+    },
+    {
+      "start": 1441.23,
+      "end": 1450.53,
+      "text": "E aí por fim, engenharia e produto normalmente existem liderança separadas, né? Então uma área de tecnologia tem uma frente de produto e uma frente de engenharia, elas são áreas irmãs e fica todo mundo dividindo as tarefas."
+    },
+    {
+      "start": 1450.53,
+      "end": 1457.73,
+      "text": "Um, dando a visão do produto, o que que vai ser desenvolvido, desenvolvido, o outro dando como a gente vai fazer."
+    },
+    {
+      "start": 1457.73,
+      "end": 1461.33,
+      "text": "Aí ele explica quanto tempo vai demorar, quanto vai custar."
+    },
+    {
+      "start": 1461.33,
+      "end": 1467.93,
+      "text": "E isso normalmente gera silos, decisões separadas, faz com que muitas bolas tenham que ser divididas e eventualmente aparadas."
+    },
+    {
+      "start": 1467.93,
+      "end": 1470.73,
+      "text": "Nesse mundo de IA, em tecnologia, e aí muitas áreas estão começando a sofrer isso."
+    },
+    {
+      "start": 1470.73,
+      "end": 1474.93,
+      "text": "Qual é a diferença hoje de vendas e marketing? Cada vez mais difícil desenhar onde acaba um e começa o outro."
+    },
+    {
+      "start": 1474.93,
+      "end": 1476.33,
+      "text": "Produto e engenharia também."
+    },
+    {
+      "start": 1476.33,
+      "end": 1478.73,
+      "text": "Então a gente resolveu facilitar e acabou com a gestão intermediária de duas áreas."
+    },
+    {
+      "start": 1478.73,
+      "end": 1480.73,
+      "text": "Juntou numa só e hoje existe só uma gestão para as duas áreas."
+    },
+    {
+      "start": 1480.73,
+      "end": 1487.73,
+      "text": "Então cada tribo da Gabriel, que tem lá seus infinitos, infinitos, é difícil, né? Inúmeros produtos, a gente tem uma gestão intermediária única."
+    },
+    {
+      "start": 1487.73,
+      "end": 1490.73,
+      "text": "Que cuida tanto de engenharia quanto produto."
+    },
+    {
+      "start": 1490.73,
+      "end": 1496.73,
+      "text": "Como a gente tem mais capacidade de entender contexto e de fazer coisas, ficou mais fácil de gerir também áreas distintas e queimar essas cadeiras de gestão que antes tinham papéis diferentes."
+    },
+    {
+      "start": 1496.73,
+      "end": 1498.33,
+      "text": "Faz sentido, né?"
+    },
+    {
+      "start": 1498.33,
+      "end": 1501.33,
+      "text": "E aí eu provoco vocês a fazerem a mesma coisa."
+    },
+    {
+      "start": 1501.33,
+      "end": 1505.33,
+      "text": "O que que são os modelos de gestão que vocês seguem, que funcionam em 2025, que talvez 26 não precisem."
+    },
+    {
+      "start": 1505.33,
+      "end": 1507.33,
+      "text": "Isso aqui funcionou muito bem para nós."
+    },
+    {
+      "start": 1507.33,
+      "end": 1511.33,
+      "text": "Unificar engenharia e produto, não no desenvolvedor, que eles são pessoas distintas."
+    },
+    {
+      "start": 1511.33,
+      "end": 1516.33,
+      "text": "A Antrópica é um exemplo que fala que tem pessoa de tecnologia, se é produto, se é design, se é engenharia, tanto faz."
+    },
+    {
+      "start": 1516.33,
+      "end": 1519.33,
+      "text": "A gente ainda tem cadeiras separadas, mas a gestão já é unificada."
+    },
+    {
+      "start": 1521.03,
+      "end": 1522.53,
+      "text": "E no fim é isso."
+    },
+    {
+      "start": 1522.53,
+      "end": 1527.33,
+      "text": "Os quatro aprendizados foram esses, então a gente viu que precisava assim, aprender a organizar a informação de forma mais estruturada."
+    },
+    {
+      "start": 1527.33,
+      "end": 1530.33,
+      "text": "Tanto o humano quanto o robô."
+    },
+    {
+      "start": 1530.33,
+      "end": 1533.33,
+      "text": "A gente precisava aprender a treinar o ser humano como robô."
+    },
+    {
+      "start": 1533.33,
+      "end": 1535.33,
+      "text": "A partir dessa organização."
+    },
+    {
+      "start": 1535.33,
+      "end": 1540.33,
+      "text": "A gente mudou os combinados que a gente tinha, a gente mudou o modelo de gestão, a gente mudou a a gestão como um todo, né? Então o modelo de gestão, os combinados."
+    },
+    {
+      "start": 1540.33,
+      "end": 1542.33,
+      "text": "O modo de fazer."
+    },
+    {
+      "start": 1542.33,
+      "end": 1547.33,
+      "text": "E o planejamento de P2, que agora a gente faz totalmente automatizado com interações."
+    },
+    {
+      "start": 1547.33,
+      "end": 1551.33,
+      "text": "E isso tudo é como a IA tem mudado a forma da Gabriel de fazer tecnologia."
+    },
+    {
+      "start": 1552.03,
+      "end": 1554.33,
+      "text": "Bom, corra sobre, vamos pro happy hour."
+    },
+    {
+      "start": 1554.33,
+      "end": 1558.33,
+      "text": "Mas a ideia era trazer um pouco desse aprendizado que a gente teve vivendo na pele e usar a IA na Gabriel."
+    },
+    {
+      "start": 1558.33,
+      "end": 1563.33,
+      "text": "E aí espero que tenha sido, pelo menos inspirador aí para quem não é de tecnologia, porque pode ter algumas sementes que vão plantadas na cabeça agora."
+    },
+    {
+      "start": 1564.33,
+      "end": 1565.33,
+      "text": "Chegou."
+    },
+    {
+      "start": 1566.03,
+      "end": 1567.33,
+      "text": "Obrigado."
+    },
+    {
+      "start": 1568.03,
+      "end": 1570.33,
+      "text": "Pessoal, temos alguns minutinhos ainda."
+    },
+    {
+      "start": 1571.03,
+      "end": 1573.33,
+      "text": "Um pouco da questão do"
+    },
+    {
+      "start": 1573.33,
+      "end": 1576.33,
+      "text": "Você falou um pouco da questão ali de"
+    },
+    {
+      "start": 1576.33,
+      "end": 1580.33,
+      "text": "E o Victor também que falou em relação ao Notion por trás, enfim."
+    },
+    {
+      "start": 1580.33,
+      "end": 1583.33,
+      "text": "Como é que você enxerga essa esse movimento de"
+    },
+    {
+      "start": 1583.33,
+      "end": 1587.33,
+      "text": "Ou seja, acaba que a fim que talvez fez uma camada em volta do Notion ali."
+    },
+    {
+      "start": 1587.33,
+      "end": 1591.33,
+      "text": "Ou também, obviamente aconteceu isso, mas outras ferramentas também surgiram ao redor do Notion também."
+    },
+    {
+      "start": 1591.33,
+      "end": 1593.33,
+      "text": "Como é que você vê isso?"
+    },
+    {
+      "start": 1593.33,
+      "end": 1597.33,
+      "text": "Porque pode ser uma decisão talvez que lá atrás funcionava."
+    },
+    {
+      "start": 1597.33,
+      "end": 1601.33,
+      "text": "E hora que pediu que estamos pelo movimento rápido que tá acontecendo, de tudo isso."
+    },
+    {
+      "start": 1601.33,
+      "end": 1605.33,
+      "text": "Né? O Cloud Code, vocês mesmo, como ele fala, que o Victor falou, do Paulo Rhan, que realmente aconteceu isso mesmo."
+    },
+    {
+      "start": 1605.33,
+      "end": 1610.33,
+      "text": "A gente sente na pele, exatamente isso, quando você no final do ano você vai, você volta, você pode ter que esperar um pouco, ah, e coisas que não estavam funcionando o ano passado, como é que funciona."
+    },
+    {
+      "start": 1610.33,
+      "end": 1612.33,
+      "text": "Então a pergunta é:"
+    },
+    {
+      "start": 1612.33,
+      "end": 1616.33,
+      "text": "Essa questão da integração, de você ter sistemas e a camada por cima, você achar que é uma tendência."
+    },
+    {
+      "start": 1616.33,
+      "end": 1618.33,
+      "text": "É uma coisa válida ou você tá no meio do caminho?"
+    },
+    {
+      "start": 1618.33,
+      "end": 1620.33,
+      "text": "Não sei se eu fui claro, mas"
+    },
+    {
+      "start": 1620.33,
+      "end": 1622.33,
+      "text": "Eu sei que é um risco talvez, de você ter isso."
+    },
+    {
+      "start": 1622.33,
+      "end": 1626.33,
+      "text": "Porque ao mesmo tempo você pode construir uma coisa com Cloud Code por trás ali, né, diretamente, né?"
+    },
+    {
+      "start": 1627.03,
+      "end": 1628.33,
+      "text": "Sim."
+    },
+    {
+      "start": 1628.33,
+      "end": 1631.33,
+      "text": "Eu acho que tem, tem"
+    },
+    {
+      "start": 1631.33,
+      "end": 1634.33,
+      "text": "São várias camadas, né? Eu acho que tudo vai acontecer ao mesmo tempo."
+    },
+    {
+      "start": 1634.33,
+      "end": 1637.33,
+      "text": "Então você vai continuar com alguns sistemas"
+    },
+    {
+      "start": 1637.33,
+      "end": 1641.33,
+      "text": "Tão super bem estruturados e não tem por que você substituir."
+    },
+    {
+      "start": 1641.33,
+      "end": 1644.33,
+      "text": "Então, eu acho que o Notion hoje é um desses sistemas."
+    },
+    {
+      "start": 1644.33,
+      "end": 1647.33,
+      "text": "Não tem por que a gente tentar replicar um Notion."
+    },
+    {
+      "start": 1647.33,
+      "end": 1651.33,
+      "text": "Sendo que ele já tá tão bem estruturado e ele avança tão, tantos quem usa Notion vai ver que a cada"
+    },
+    {
+      "start": 1651.33,
+      "end": 1655.33,
+      "text": "Teve um, teve uma época que estava enchendo o saco, sabe? Todo dia quando eu abri o Notion, apareceu um pop-up para atualizar o software."
+    },
+    {
+      "start": 1655.33,
+      "end": 1658.33,
+      "text": "E atualizando todo dia, tinha a versão nova, né?"
+    },
+    {
+      "start": 1658.33,
+      "end": 1661.33,
+      "text": "É, mas isso significa avanço."
+    },
+    {
+      "start": 1661.33,
+      "end": 1664.33,
+      "text": "Avanço em escala gigantesca."
+    },
+    {
+      "start": 1664.33,
+      "end": 1668.33,
+      "text": "Então, é, tem alguns sistemas que talvez não valham a pena você mexer."
+    },
+    {
+      "start": 1668.33,
+      "end": 1671.33,
+      "text": "É melhor você manter ele, mesmo que você ainda não, não trabalha, mas na interface deles."
+    },
+    {
+      "start": 1671.33,
+      "end": 1676.33,
+      "text": "Que é o nosso caso, que agora como a gente tem um time de agentes que trabalham, deixa que eles vão lá e constroem tudo que precisa construir, atualiza tudo que tem que atualizar."
+    },
+    {
+      "start": 1676.33,
+      "end": 1678.33,
+      "text": "Tem outros tipos de sistema"
+    },
+    {
+      "start": 1678.33,
+      "end": 1681.33,
+      "text": "Que talvez você vai querer fazer em casa."
+    },
+    {
+      "start": 1681.33,
+      "end": 1684.33,
+      "text": "Porque, por exemplo, se você vai comprar um Salesforce"
+    },
+    {
+      "start": 1684.33,
+      "end": 1688.33,
+      "text": "Às vezes você vai pagar 100% por Cloud Code, possivelmente dá cinco, né?"
+    },
+    {
+      "start": 1688.33,
+      "end": 1692.33,
+      "text": "E com esse super difícil, caro, pra customizar. E você já conhece todo o processo na tua cabeça."
+    },
+    {
+      "start": 1692.33,
+      "end": 1695.33,
+      "text": "Você já sabe, você já sabe o que que você precisa."
+    },
+    {
+      "start": 1695.33,
+      "end": 1700.33,
+      "text": "E aí vale muito mais a pena você sentar e programar o Cloud Code e programar o sistema em si."
+    },
+    {
+      "start": 1700.33,
+      "end": 1703.33,
+      "text": "E vão ter questões híbridas, que é assim, ah, a gente descobriu sistemas dentro do Notion."
+    },
+    {
+      "start": 1703.33,
+      "end": 1707.33,
+      "text": "Né? Que usando só o Notion como base de dados, né?"
+    },
+    {
+      "start": 1707.33,
+      "end": 1710.33,
+      "text": "É, eu acho que as são várias camadas."
+    },
+    {
+      "start": 1710.33,
+      "end": 1713.33,
+      "text": "Eu acho que não tem um uma coisa certinha."
+    },
+    {
+      "start": 1713.33,
+      "end": 1718.33,
+      "text": "Eu acho que para cada tipo de situação, você vai fazer uma avaliação do que que vale a pena, o que que não vale a pena, entendeu?"
+    },
+    {
+      "start": 1718.33,
+      "end": 1720.33,
+      "text": "Não sei se"
+    },
+    {
+      "start": 1720.33,
+      "end": 1721.33,
+      "text": "Não, perfeito."
+    },
+    {
+      "start": 1721.33,
+      "end": 1722.33,
+      "text": "Ficou bem claro."
+    },
+    {
+      "start": 1722.33,
+      "end": 1725.33,
+      "text": "E aí, aproveitando que o pessoal falou do óculos aí, ficou"
+    },
+    {
+      "start": 1726.03,
+      "end": 1727.33,
+      "text": "Queria fazer uma pergunta aqui."
+    },
+    {
+      "start": 1727.33,
+      "end": 1730.33,
+      "text": "Oi, tudo bem? O Paulo comentou na fala dele sobre a gestão na mudança."
+    },
+    {
+      "start": 1730.33,
+      "end": 1733.33,
+      "text": "É, eu agora quero ouvir de você, Victor, o que é que fez o teu time adotar de fato."
+    },
+    {
+      "start": 1733.33,
+      "end": 1737.33,
+      "text": "Porque eu percebo que as pessoas estão muito ansiosas, né, com a velocidade das tecnologias."
+    },
+    {
+      "start": 1737.33,
+      "end": 1742.33,
+      "text": "E como é que foi a gestão de mudança lá na Gabriel? Foi a dor? Foi a facilidade em usar ferramentas?"
+    },
+    {
+      "start": 1742.33,
+      "end": 1744.33,
+      "text": "Foi liderança? Como foi esse processo?"
+    },
+    {
+      "start": 1744.33,
+      "end": 1747.33,
+      "text": "Bom, tem, a gente teve sorte de não ter nenhum grande detrator."
+    },
+    {
+      "start": 1747.33,
+      "end": 1751.33,
+      "text": "Porque a gente também tentou muito depois, o Paulo fez uma epopeia vanguardista, então imagina em 2022, 23 fazer isso."
+    },
+    {
+      "start": 1751.33,
+      "end": 1754.33,
+      "text": "Provavelmente eu ia ter a mesma dificuldade."
+    },
+    {
+      "start": 1754.33,
+      "end": 1757.33,
+      "text": "Quando virou o ano, o primeiro chamaris que a gente teve foi a mudança de perfil das pessoas."
+    },
+    {
+      "start": 1757.33,
+      "end": 1761.33,
+      "text": "Imagina que a gente tem lá 40 engenheiros, desses, talvez uns cinco foram aqueles que proativamente foram atrás durante a virada do ano."
+    },
+    {
+      "start": 1761.33,
+      "end": 1765.33,
+      "text": "Chegaram em janeiro, falaram, cara, o mundo mudou, tem que fazer tudo diferente."
+    },
+    {
+      "start": 1765.33,
+      "end": 1767.33,
+      "text": "Então, a primeira mudança foi identificação de perfil."
+    },
+    {
+      "start": 1767.33,
+      "end": 1771.33,
+      "text": "Sobrou ali 35 que estavam nesse meio de, putz, não sei exatamente o que fazer."
+    },
+    {
+      "start": 1771.33,
+      "end": 1773.33,
+      "text": "Segundo ponto foi processos."
+    },
+    {
+      "start": 1773.33,
+      "end": 1777.33,
+      "text": "Então a gente teve que sentar, e a gente fez isso em janeiro inteiro, não foi algo de um final de semana."
+    },
+    {
+      "start": 1777.33,
+      "end": 1781.33,
+      "text": "A gente tinha que entender, e aí em cara gente, como tanto eu, mas todos os gestores intermediários, gente de produto, tinha que entender como funcionava para passar para a equipe o que que era esperado deles."
+    },
+    {
+      "start": 1781.33,
+      "end": 1785.33,
+      "text": "E aí a gente passou o mês inteiro fazendo isso para ter um workflow desenhado."
+    },
+    {
+      "start": 1785.33,
+      "end": 1789.33,
+      "text": "Vocês vão começar a desenvolver dessa forma."
+    },
+    {
+      "start": 1789.33,
+      "end": 1793.33,
+      "text": "Então, o primeiro você começa interagindo, usando um skill de PRD, no qual vai discutir as funcionalidades do produto."
+    },
+    {
+      "start": 1793.33,
+      "end": 1797.33,
+      "text": "Aí vai ter alguma outra skill de desenvolvimento que vai fazer o código, então você não é mais um artesão de código, você é um validador de código."
+    },
+    {
+      "start": 1797.33,
+      "end": 1801.33,
+      "text": "Aceita isso? E aí depois vem aqui a parte de validações e guardrails que você também vai executar."
+    },
+    {
+      "start": 1801.33,
+      "end": 1805.33,
+      "text": "Quando a gente desenha esse workflow e entrega, aí mais metade da equipe vai, porque eles sabem o que tem que ser feito."
+    },
+    {
+      "start": 1805.33,
+      "end": 1809.33,
+      "text": "E a outra metade, menos cinco pessoas, foram assim, a gente teve que fazer gestão com elas."
+    },
+    {
+      "start": 1809.33,
+      "end": 1810.33,
+      "text": "E aí você pega"
+    },
+    {
+      "start": 1920.0,
+      "end": 1921.76,
+      "text": "é um perfil que é um pouco mais conservador com um processo que já existe, fala, tá, daqui pra frente é assim."
+    },
+    {
+      "start": 1921.001,
+      "end": 1921.003,
+      "text": "Seria bom, né?"
+    },
+    {
+      "start": 1921.003,
+      "end": 1921.005,
+      "text": "Seria ótimo, cara."
+    },
+    {
+      "start": 1921.005,
+      "end": 1921.007,
+      "text": "Seria ótimo, mas não rola."
+    },
+    {
+      "start": 1921.007,
+      "end": 1921.009,
+      "text": "É, mas ele esse óculos ele tem um SDK."
+    },
+    {
+      "start": 1921.009,
+      "end": 1921.011,
+      "text": "Então que é um, é um framework pra você desenvolver software em cima dele."
+    },
+    {
+      "start": 1921.011,
+      "end": 1921.013,
+      "text": "Isso é uma coisa muito legal."
+    },
+    {
+      "start": 1921.013,
+      "end": 1921.015,
+      "text": "Porque agora eu posso botar gente de IA pra criar nossos próprios aplicativos."
+    },
+    {
+      "start": 1921.015,
+      "end": 1921.017,
+      "text": "Os nossos próprios aplicativos."
+    },
+    {
+      "start": 1921.017,
+      "end": 1921.019,
+      "text": "Então por isso que eu tomei essa decisão de usar o óculos."
+    },
+    {
+      "start": 1921.019,
+      "end": 1921.021,
+      "text": "Mas assim, não é uma coisa assim que você vai gastar dinheiro e se você não quiser só pra brincar."
+    },
+    {
+      "start": 1921.021,
+      "end": 1921.023,
+      "text": "É, você vai se frustrar bastante."
+    },
+    {
+      "start": 1921.023,
+      "end": 1921.025,
+      "text": "Daqui a uns dois anos e tal, aí eu acho que o negócio vai começar."
+    },
+    {
+      "start": 1921.025,
+      "end": 1921.027,
+      "text": "É igual o iPhone 1."
+    },
+    {
+      "start": 1921.027,
+      "end": 1921.029,
+      "text": "O iPhone 1 não tinha nem app."
+    },
+    {
+      "start": 1921.029,
+      "end": 1921.031,
+      "text": "Né? Quem não lembra, não tinha app, não tinha 3G."
+    },
+    {
+      "start": 1921.031,
+      "end": 1921.033,
+      "text": "Né? Enquanto outro celular já tinha 3G."
+    },
+    {
+      "start": 1921.033,
+      "end": 1921.035,
+      "text": "Então é um pouco early adopter agora pra isso daí."
+    },
+    {
+      "start": 1921.035,
+      "end": 1921.037,
+      "text": "É o G2 da Viver Realities."
+    },
+    {
+      "start": 1921.037,
+      "end": 1921.039,
+      "text": "Vamos comprar, vamos comprar o patrocínio do G2."
+    },
+    {
+      "start": 1921.039,
+      "end": 1921.041,
+      "text": "É isso."
+    },
+    {
+      "start": 1921.041,
+      "end": 1921.043,
+      "text": "Mas se alguém quiser experimentar, eu mostro aqui."
+    },
+    {
+      "start": 1921.043,
+      "end": 1921.045,
+      "text": "Porque eu mostro como é que funciona, só pra ter uma ideia assim do."
+    },
+    {
+      "start": 1921.045,
+      "end": 1921.047,
+      "text": "Maravilha, pessoal."
+    },
+    {
+      "start": 1921.047,
+      "end": 1921.049,
+      "text": "A gente vai encerrar."
+    },
+    {
+      "start": 1921.049,
+      "end": 1921.051,
+      "text": "Obrigado, gente."
+    },
+    {
+      "start": 1921.76,
+      "end": 1923.92,
+      "text": "Eu vou te ajudar mostrando, então vou fazer e a gente fez isso, barcode. Pega uma pessoa, deixa do teu lado e fala, olha, eu faria o que tu fez dessa forma."
+    },
+    {
+      "start": 1923.92,
+      "end": 1924.56,
+      "text": "E mostra pra ela como funciona."
+    },
+    {
+      "start": 1924.56,
+      "end": 1926.24,
+      "text": "Normalmente é muito, é um efeito impressionante pra pessoa."
+    },
+    {
+      "start": 1926.24,
+      "end": 1927.32,
+      "text": "Porque ela não é cética, ela só nunca viu aquilo funcionando."
+    },
+    {
+      "start": 1927.32,
+      "end": 1929.72,
+      "text": "E quando tu mostra aquilo funcionando, é que nem a primeira vez que a gente fala, ah, pede o jogo da cobrinha, viu o jogo da cobrinha e fala, caramba, dá pra fazer isso."
+    },
+    {
+      "start": 1929.72,
+      "end": 1931.96,
+      "text": "Então as pessoas que demoraram mais nesse momento de mostrar como funcionava, elas foram pra frente."
+    },
+    {
+      "start": 1931.96,
+      "end": 1933.76,
+      "text": "O que a gente não teve, que seria o grande problema, o detrator."
+    },
+    {
+      "start": 1933.76,
+      "end": 1935.76,
+      "text": "Que é a pessoa que fala, não, mas ele nunca vai fazer, que nem eu, não pode."
+    },
+    {
+      "start": 1935.76,
+      "end": 1937.76,
+      "text": "E aí a gente deu sorte de não ter isso, pelo menos em 2026, talvez tivesse antigamente."
+    },
+    {
+      "start": 1937.76,
+      "end": 1938.56,
+      "text": "Mas foi isso, é perfil, processo e gestão."
+    },
+    {
+      "start": 1938.56,
+      "end": 1939.16,
+      "text": "Maravilha, pessoal."
+    },
+    {
+      "start": 1939.16,
+      "end": 1940.76,
+      "text": "Queria agradecer a presença de todo mundo, pelo esse evento, esse espetáculo."
+    },
+    {
+      "start": 1940.76,
+      "end": 1941.36,
+      "text": "Obrigado, Paulo, obrigado, Vítor, obrigado, Arthur."
+    },
+    {
+      "start": 1941.36,
+      "end": 1942.0,
+      "text": "Paulo, vai falar de novo."
+    },
+    {
+      "start": 1942.0,
+      "end": 1942.76,
+      "text": "Estão pressionando com isso, Paulo."
+    },
+    {
+      "start": 1942.76,
+      "end": 1943.6,
+      "text": "Vamos encerrar com essa explicação aí."
+    },
+    {
+      "start": 1943.6,
+      "end": 1944.6,
+      "text": "É, bom, primeiro é assim, eu sou muito, eu me provoco a ser early adopter."
+    },
+    {
+      "start": 1944.6,
+      "end": 1945.76,
+      "text": "Então, hoje em dia, com um smart glass, vai ser furada, tá?"
+    },
+    {
+      "start": 1945.76,
+      "end": 1946.36,
+      "text": "Então vai ser."
+    },
+    {
+      "start": 1946.36,
+      "end": 1947.0,
+      "text": "É, porque tá tudo muito novo."
+    },
+    {
+      "start": 1947.0,
+      "end": 1948.0,
+      "text": "Então, qual foi a escolha que eu fiz?"
+    },
+    {
+      "start": 1948.0,
+      "end": 1949.4,
+      "text": "Tinha o Ray-Ban, só que eu achei que o Ray-Ban ia ficar meu rosto muito pequeno, porque ele é muito grosso."
+    },
+    {
+      "start": 1949.4,
+      "end": 1950.0,
+      "text": "A o frame dele."
+    },
+    {
+      "start": 1950.0,
+      "end": 1951.6,
+      "text": "Então fiquei estudando os smart glasses que tinham, é, e aí com a, o que que tem sido a minha, minha cabeça em relação a gadget."
+    },
+    {
+      "start": 1951.6,
+      "end": 1952.4,
+      "text": "Tem que ter API."
+    },
+    {
+      "start": 1952.4,
+      "end": 1954.6,
+      "text": "Porque se não tiver API, eu não consigo conectar, usar a gente de IA pra poder fazer as coisas que eu quero, que eu quero fazer."
+    },
+    {
+      "start": 1954.6,
+      "end": 1956.4,
+      "text": "Esse óculos aqui, ele se chama G2, da Viver Realities."
+    },
+    {
+      "start": 1956.4,
+      "end": 1957.6,
+      "text": "Eu acho que eles são chineses, tá?"
+    },
+    {
+      "start": 1957.6,
+      "end": 1959.0,
+      "text": "Então nesse momento, todos vocês estão sendo monitorados pela China."
+    },
+    {
+      "start": 1959.0,
+      "end": 1960.6,
+      "text": "É, mas o óculos ele não tem câmera, é, então ele tem uma questão de privacidade um pouco melhor."
+    },
+    {
+      "start": 1960.6,
+      "end": 1961.4,
+      "text": "É, mas ele tem microfone, né?"
+    },
+    {
+      "start": 1961.4,
+      "end": 1963.0,
+      "text": "E aqui dentro, ele tem um visor que quando eu acesso, olhando pra cima, parece um, parece uma pessoa que tá fazendo download."
+    },
+    {
+      "start": 1963.0,
+      "end": 1963.6,
+      "text": "Lá no meu phone, né?"
+    },
+    {
+      "start": 1963.6,
+      "end": 1964.2,
+      "text": "Eu faço assim."
+    },
+    {
+      "start": 1964.2,
+      "end": 1966.6,
+      "text": "E pronto, aí aparece um visor pra mim, pra vocês não devem estar aparecendo nada, pra mim tá aparecendo aqui a minha agenda de, de reunião com todos os tópicos que eu tenho."
+    },
+    {
+      "start": 1966.6,
+      "end": 1968.0,
+      "text": "E se eu for passando aqui por trás, ele vai passando outros, ah, tarefas, notícias, uma série de coisas."
+    },
+    {
+      "start": 1968.0,
+      "end": 1969.4,
+      "text": "Eu também consigo acessar a IA aqui, que é muito boa."
+    },
+    {
+      "start": 1969.4,
+      "end": 1970.6,
+      "text": "Então posso fazer perguntas pra ela, mas só que ela vai me mostrando em texto, ela não tem áudio."
+    },
+    {
+      "start": 1970.6,
+      "end": 1971.4,
+      "text": "Não me envia som."
+    },
+    {
+      "start": 1971.4,
+      "end": 1973.0,
+      "text": "É, mas ela vai mostrando por texto, e até agora, a aplicabilidade prática mesmo que eu já vi, foi tradução automática."
+    },
+    {
+      "start": 1973.0,
+      "end": 1975.0,
+      "text": "Então eu posso colocar em qualquer linguagem, e aí de repente eu ver, eu fiquei pra testar, eu fiquei assistindo um jornal, um telejornal do Japão."
+    },
+    {
+      "start": 1975.0,
+      "end": 1976.4,
+      "text": "E aí eu, olhando pra tela do computador, aí a apresentadora lá falando lá, sobre uma vila local de pescadores, não sei o quê."
+    },
+    {
+      "start": 1976.4,
+      "end": 1977.6,
+      "text": "E eu lendo tudo em português."
+    },
+    {
+      "start": 1977.6,
+      "end": 1978.0,
+      "text": "Praticamente em tempo real."
+    },
+    {
+      "start": 1978.0,
+      "end": 1979.0,
+      "text": "Ontem eu fui pra um show de rock, não rola."
+    },
+    {
+      "start": 1979.0,
+      "end": 1979.6,
+      "text": "O rock é muito rápido."
+    },
+    {
+      "start": 1979.6,
+      "end": 1979.6,
+      "text": "Então não rola, não rola, não rola."
+    }
+  ],
+  "transcript": "Olha o mestre. Vítor. Vamos lá? Vem cá, cara. Fica à vontade. Você vai usar o lugar lá alguma coisa ou não? Ah, vai usar aqui. Ah, tá aqui já. Já tá na tela. Tá bom. Aí é bom que não fica. Oi. Ah, essa altura é boa. E aí, pessoal? Tudo bem? Sou Vítor, conhecido por ter tentado desligar o Notion lá na Gabriel. Não consegui. Mas em defesa do Notion, fui cliente na pessoa física. Inclusive, também fiz meu dashboard individual. Bem sofisticado, não tão focado em saúde, mas no financeiro. E leituras também. Aí tudo que eu ia lendo, anotava. Tenho até hoje histórico, acho que desde 2020, as leituras que eu fiz. Eu vou lá, anoto, faço um resumo. Boa. Pessoal, vamos falar um pouquinho da Gabriel e como a gente tá usando. Antes, só uma dúvida rápida. A nível de quem trabalha com o quê? Quem aqui é da área de tecnologia? Efetivamente, produto, engenharia? Duas mãos tímidas ali atrás. Vendas e marketing, tem gente? Tá aí. Founder, faz tudo. É isso. Cara, Gabriel, vocês podem conhecer talvez pelos pelas câmeras apontadas para a rua com uma corzinha verde ao redor das câmeras. Mas nada mais é do que uma empresa tentando humildemente ajudar a resolver o problema da segurança pública. De forma privada. A forma como a gente faz isso é interpretando o que acontece nas ruas. Então, cada camaleão, que é o nome dessas câmeras que vocês veem. Ele é responsável por gravar. Então a gente tá enxergando o que acontece. E responsável por estruturar dados. Então a gente tá lendo placa de veículo 24 horas por dia. São mais de 100 milhões de placas lidas. Placas não, porque são detecções, né? Um carro é detectado várias vezes. Mas mais de 100 milhões de detecções. Essas detecções são integradas às autoridades. Então, passou um carro roubado, o camaleão avisa a autoridade. E vai lá, a rota, atrás desse veículo. Do outro lado, a gente tem a central 24 horas. Então, sim, infelizmente, algum de vocês, eventualmente, tiver um assalto, um roubo, qualquer coisa, liguem para 0800 Gabriel. Literalmente Gabriel, que nem nas propagandas antigamente. Que a gente tem uma central 24 horas aqui em Pinheiros, que vai atender vocês e ajudar com o que for necessário. Isso é a Gabriel. São 17.500 câmeras, entre 10 cidades hoje. São Paulo, Rio de Janeiro e BH, e algumas cidades ao redor, né? Então, aqui, toda ABC Paulista, Guarulhos, Barueri. E Osasco, aí Rio de Janeiro tem Niterói na frente. Que se não falar em Niterói, o Niterói, o Niteróiense, a pessoa de Niterói, ela fica triste. Não, é Rio de Janeiro. E BH, só BH. Isso é Gabriel. Dado isso, o na virada do ano, eu tive uma Eu acordei em 1º de janeiro com uma ansiedade no meu peito, porque a gente começou a ver no mercado. E aí, tô vendo o X, tô vendo o Reddit, as empresas de tecnologia falando sobre o que tá acontecendo no mundo. E agora, engenharia não se faz mais dessa forma, e as empresas têm que virar AI first. Algumas desde o início, né? Que nem o Paulo estava trazendo aqui. Outras aproveitaram, principalmente esses, a virada do ano, quando você tem Natal e Ano Novo, começaram a usar Cloud Code. Começaram a ver que eu posso pedir uma coisa desestruturada e vem uma ferramenta à minha disposição. Porque os modelos evoluíram muito. Então o mercado entrou nesse fervor. E como eu sou o CPO da Gabriel, então eu toco toda a área de produto e engenharia, que a gente unificou tudo lá na empresa. A gente resolveu olhar para isso com mais afinco. Já era algo sendo visto, né, Gabriel. Mas a gente resolveu acelerar de verdade. E aí, o que eu quero contar um pouco aqui são os aprendizados que a gente teve. Tá? Depois do happy hour, a gente pode falar. Das minúcias, quem tiver dúvidas, também a gente pode discutir. Mas eu fui batendo cabeça muito ao longo do primeiro trimestre. Porque os conteúdos que eu via no mercado, eles eram muito focados nas empresas de fora. Né? Então você vê lá no X, a Ramp, que fala bastante sobre como eles estão usando. Lá no seu escritório em Nova York, com muito mais dinheiro e pessoas extremamente qualificadas. Eu pensava, cara, como que na Gabriel, com 200 pessoas, na realidade do Brasil, eu traduzo aquilo que tá lá fora? Porque acontece. E aí eu fui falar com outros empreendedores aqui de São Paulo, fui falar com empresas do mesmo tamanho da Gabriel. E alguns desses aprendizados são o que a gente vai ver aqui. Mas principalmente, até uma coisa que o Paulo estava comentando, o principal desafio é que tudo ficou mais rápido. E aí, essa velocidade, que não era só na nossa cabeça, porque é quase exaustivo ficar com o Cloud Code aberto. Porque você pode fazer tudo. Tem um texto maravilhoso do Matt Schumer, que é um desenvolvedor, e ele fala sobre como as mudanças estão impactando a vida dos desenvolvedores. E uma coisa que ele fala é que os seus sonhos ficaram mais próximos. É isso, eu posso chegar pro Cloud Code e falar, me cria um aplicativo igual o Tibia. E aí eu vou ter lá, na minha memória infantil, de quando eu jogava Tibia, sendo sanada por algo que eu criei. É impressionante isso. E a gente pode começar a fazer muitas coisas. Então é cansativo, é muito rápido. E aí a gente olhou para a organização e falou, isso aqui, de forma desestruturada, vai ter gente indo muito rápido. Eventualmente botando a cabeça na parede. Vai ter gente que vai ter medo, que não vai saber o que fazer. Então, como que a gente organiza? Como que a gente cria mecanismos para nossa empresa conseguir funcionar nesse mundo extremamente rápido e desorganizado? E aí, são quatro tópicos. Eu vou falar sobre como a gente usa Notion como base de conhecimento. Então é muito parecido com o que foi mostrado aqui. Mas eu vou só reforçar o nosso caso de uso. Os bots de treinamento do time. Então, embora tenha, e eu concordo, não é uma posição contrária a isso, tem que automatizar muito o fluxo de relacionamento. E o SDR é autônomo, qualificador de leads. Mas cara, Gabriel trabalha com algo muito sensível, né? Você foi assaltado, quer um ser humano ou um bot te atendendo? Isso aí são coisas que a gente vai ter sempre. Com a equipe de seres humanos operando. Como que eu pego esse ser humano e eu potencializo ele? Então tem um desafio de como treinar melhor, como rampá-lo com mais velocidade, usando IA. Aí tem a parte de planejamento. Essa, particularmente, foi uma grande dor minha, resolvida com inteligência artificial. Eu vou entrar como a gente mudou a maneira de fazer planejamento de produto na Gabriel. Para todo mundo, não só para mim. Então, para a equipe de produto, como a gente começou a fazer. E aí, no fim, mudanças organizacionais. Isso aqui também é outra coisa que me ajudou muito. Mas quais mudanças a gente teve que fazer nas áreas para conseguir operar melhor com inteligência artificial. E aí, sobre base de conhecimento, né? O real desafio da Gabriel, a gente tem muita ligação. Então, imaginem essa central que eu estava falando para vocês. São 6.000 chamadas, e aí, não caem em chamadas. Como telefone, WhatsApp, e-mail, mas são 6.000 contatos sendo realizados ao longo de um mês. 200 por dia, de 12 tópicos diferentes, com 40 protocolos distintos. Cada um com seu nível de intensidade. Tem muita coisa acontecendo. Então, as coisas vão mudando, os modos de fazer. A documentação que era válida, não é mais válida. Então é algo muito fácil de ficar caótico. E a gente precisava centralizar essa informação em algum lugar que fosse acessível pela máquina, de forma estruturada. Mas também pelo ser humano. Porque a gente não podia transformar algo totalmente agêntico. Então, a gente começou criando uma, no Cloud Code mesmo, mas usando interface do Cloud. A gente cria uma interface de perguntas em linguagem natural para o operador. Então, imagina ele lá, podendo perguntar, como é que é o protocolo de compartilhamento de imagens? Eu quero, alguém me ligou e dizendo, fui assaltado aqui na Doutor Virgílio. Eu posso, não posso passar imagem para as pessoas? Existem regras, existem fluxos, tem que entender cada um deles. A gente cria essa interface, mas o padrão de uma interface dessas é que você tem que subir um monte de PDF. Então, vai lá, tem várias documentações, exporta essa documentação como PDF, sobe nessa plataforma. E aí a pessoa fica lá consumindo. Mas são 12 macroáreas com 40 protocolos diferentes. Cada um sendo atualizado. O trabalho que faz essa atualização. a chance de dar errado é muito alto. Aí que a gente chega no Notion como esse motor intermediário. Então o Notion ele é hoje para as pessoas que consomem informações via essas interfaces na Gabriel, o centralizador da informação. E a razão pela qual a gente escolheu o Notion não é só porque ele é bom com agentes, porque existem outras ferramentas que fazem isso. A gente poderia ter estruturado, cara, no GitHub de uma forma totalmente não palatável para o ser humano, mas totalmente palatável para um agente. Mas eu preciso que o vendedor que tá na rua também consiga ler a documentação, que a pessoa de produto consiga ler essa documentação. Então o Notion ele faz um ótimo meio-campo nesse jogo entre robôs e seres humanos. Por isso a gente escolheu o Notion como esse intermediário. Isso aqui é um exemplo de tudo que vai lá dentro hoje, então tudo que é informação da nossa central 24 horas. Como ela funciona, a parte de documentação de produto, dúvidas jurídicas. Ah, e a LGPD, Gabriel, tá lá sanada a dúvida, então vocês podem ligar e a pessoa vai saber o que responder. Marketing, operações, tudo isso acessível tanto para os chatbots quanto para as pessoas. Notion foi a plataforma que a gente encontrou para conseguir fazer esse jogo entre robôs e seres humanos. Dado isso, isso aí. Ah, ponto importante, foi feito pela IA, toda a apresentação. Então eu tô descobrindo partes dos slides com vocês. Eu pedi para eles fazerem, a IA fazendo, no caso. E ela tá, o cara, ficou maravilhoso, que usem depois o Cloud Design, uma dica honesta, é maravilhoso para isso. Segundo ponto, a gente resolveu o problema da documentação num único lugar e a gente agora tem onde consultar. Só que para um operador, seja ele da central, seja ele de um time de vendas, ele conseguir fazer aquilo de forma fluida, que não fique consultando o tempo todo, ele tem que ser treinado. E aí que vem a parte da gente usar IA para treinar o usuário. A gente criou dois chats, como se fosse WhatsApp, que você consegue interagir com bots. Que tão emulando os clientes, que tão emulando os leads, então para a parte de vendas, os leads, para a central, o trans e o cliente que tem alguma dor. E o operador ali, ele fica conversando com esse bot, fingindo que tá resolvendo algum problema. Então é como se fosse um role play. Existe lá um desafio que você tem que, sei lá, vender para o seu Zé, que é um síndico profissional de pinheiros, que tem cinco condomínios e a maior dor dele é que ele não entende de tecnologia. Isso tudo é o bot, com esse conhecimento que vai emulando com base no que ele tem como preset ali, para interagir com essa pessoa e treinando. Então a gente criou essas máquinas de treinamento para aumentar a rampagem do time, a velocidade de rampagem do time. E isso tem sido fundamental para a gente conseguir fazer eles acompanharem a velocidade. Porque enquanto aquele primeiro é bom para garantir que a documentação tá uníssona, esse aqui é bom para garantir que eles aprenderam. E aí depois que ele faz essa interação, tanto na parte de vendas quanto na parte da central, existe todo um feedback estruturado que o próprio bot dá para ele, falando: \"Ó, você trouxe conteúdo correto, mas a abordagem não foi a melhor. Ou você errou tais tópicos por conta de tal detalhe que tá aqui nessa documentação.\" Então é basicamente um coach um a um que tem com os vendedores. Isso aqui é potencializar o trabalho do coordenador de vendas, do coordenador da central. Que no limite, e aí nada a ver com a empresa, né? Muito diferente do que o chat faz com as crianças estudando, né? O melhor, a melhor forma de aprender é ter um professor particular. A IA virou professor particular de muitas pessoas. Isso é maravilhoso. O que é horrível de falar, faz meu tema de casa e repassar. Isso é a mesma coisa. Então ele vai te avaliar, ele vai trocar ideia e vai ajudar o operador a performar melhor. Isso são duas formas que a gente achou de fazer com que a operação da Gabriel, que não tem nada a ver com tecnologia, conseguisse fluir melhor. Das minhas dores agora, enquanto uma pessoa da área de tecnologia. Por muito tempo, o desafio que a gente teve foi como eu pego uma equipe de produto e faço com que cada pessoa tenha um planejamento para o seu próprio produto, para sua squad. Que faça sentido com a visão da empresa, com a visão que a gente tem para a área de tecnologia, sendo que eu tenho várias pessoas diferentes, né? Não são robôs, são seres humanos. Então, como que aquele product manager júnior, que acabou de entrar no mercado de trabalho, aquele sênior que veio de uma empresa totalmente diferente da Gabriel, e essa pessoa que tá desde o início na Gabriel, nunca foi de produto e migrou agora para a área, como que cada um vai fazer um planejamento coerente tanto com a visão da área, quanto com o template que a gente precisa? E o maior desafio do processo, quando a gente tenta encaixar tudo em caixinhas, é que ele limita para baixo e para cima, né? Então você pode botar um template duro e falar, é só preencher isso daqui. Vai garantir o mínimo, então a pessoa não vai deixar de entregar aquilo, mas você capa o máximo também. Porque se ela quiser fazer algo diferente, tiver alguma ideia, é muito difícil, né? É um sistema educacional diferente, é como a escola. Você chega na escola, você vai passar nas provas, então vai ter o mínimo de conhecimento, mas um aluno exímio, ele vai chegar no máximo no 10. Ele não tem como passar daquilo. O que a IA nos permite é balizar o mínimo. Então a gente criou um fluxo, e isso aqui é a forma mais, eu juro que eu tentei deixar simples. Essa aqui é mais simples, mas essa aqui é o que eu gosto. Vamos para o simples antes. A gente criou um fluxo com agentes e skills do Cloud Code, que nos ajudam a padronizar a forma de fazer um planejamento. O que que é isso? Existem skills específicos para fazer o planejamento, então da mesma forma que o Paulo estava interagindo ali com a máquina. E aí ele falava: \"Ah, eu quero fazer tal coisa.\" Aí ela falou: \"Tá aqui, mas tu quer mais alguma coisa?\" Ele responde: \"Ah, eu quero tal coisa também.\" E ele vai conversando, a gente criou skills de planejamento. Que aí você ativa o skill, ele vai perguntar: \"Tá, o que que tu quer fazer de planejamento?\" Qual é o teu produto? Aí ele começa a descrever o produto, aí ele vai perguntando: \"Tá, e o seu objetivo?\" E vai interagindo como se fosse uma conversa minha com a pessoa, mas além desses skills que padronizam a interação. Existe toda a parte de docs e contexto que fui eu quem fiz. Então eu, enquanto uma liderança da área, eu defini contextos do que que é a visão de produto da Gabriel. Do que que é o problema de negócio que a gente vai resolver em 2026, objetivos da empresa. E esse skill, e aí agora sim, vou passar para a parte mais chata, mas esses skills aqui de planejamento, que é o quarter plan, ele consome todos os contextos definidos por mim. Ele consome ali embaixo, o Notion, através de uma API, então ele pega tudo que é conteúdo que tem no Notion, seja de documentação, seja de tarefas, porque dá para ver na gestão de tarefas. O que que a pessoa deixou de fazer do quarter anterior e não passou para o próximo, ele pega tudo que tem de documentação de produto, e aí essa mesma lógica de ter um skill interagindo, que ele vai criando uma documentação. Que no fim é o planejamento, né? É uma documentação do que vai ser feito. A gente faz para outras frentes, que nem a estratégia do produto. Então existe uma documentação feita, padronizada para todos os produtos da Gabriel, que foi feita com base nessas interações com skill. E aí ele consegue pegando esses documentos, criar o seu planejamento no template pré-definido. E além disso, eu facilitei a minha vida depois. Eu criei uma skill de revisão, que emula como se fosse um CEO, um CPO e um CTO. Cada um criticando esse planejamento com vieses totalmente diferentes, parecido com os clientes, né? Então eu crio lá um fluxo, eu emulo três clientes e eu vejo se o fluxo funciona ou não. Eu crio um planejamento, eu emulo um CEO, o CPO e o CTO, cada um com um viés totalmente diferente. O CEO normalmente falava: \"Ah, falta métricas financeiras, não tô vendo o impacto no negócio.\" Aí o CPO falava: \"Cadê o cliente? Falta cuidado com o cliente.\" O CTO diz: \"Isso não é escalável.\" Aí no fim, esse mesmo skill pondera os três resultados e devolve para a pessoa antes de chegar em mim, para aí sim ela revisar o planejamento e vem uma versão já refinada, padronizada com todo o contexto. que a gente tem da Gabriela ali dentro, que eu consigo avaliar e aí a minha opinião honesta, pessoas que não tinham nenhuma capacidade de fazer algo daquele calibre conseguiram fazer em uma interação, porque a organização das informações está estruturada. Então, o que realmente mudou para isso ser algo produtivo é que a gente tem documentações muito bem feitas, com detalhamento necessário, tanto no Notion, e aí algumas coisas fora, mas na documentação em Markdown, que é a mesma lógica do que o Notion usa. E elas são consumidas pela IA que tá interagindo com a pessoa. Contexto é a coisa mais importante para IA. É magnífico e é impressionante quando a gente fala algo sem nenhum tipo de contexto. Eu gostaria de criar um jogo da cobrinha, e ele vai lá e faz o jogo da cobrinha, mas ele é muito fácil de chegar num limite de impressionar. Então, eu fiz o jogo da cobrinha, tá, e agora faz o mais legal. Ele não sabe o que que é mais legal, ele não sabe o que que vocês acham que é legal. Me impressiona, me lembra a época que eu trabalhava com marketing e falava, falta um Tchan na peça. O que que é o Tchan? Então, o contexto é o que a gente precisa dar para a máquina saber o que fazer. É um monte de um e zero, ela não entende nada do ser humano. Mas ela é muito boa em deduzir, né? No fim é isso que ela faz. Ela deduz o que que é a próxima coisa. Então, quanto mais contexto, melhor. Se eu sou dono desse contexto, eu vou ficar muito mais feliz depois. Então, eu fiz essa mistura entre o que eu gostaria de visão, o que o PM quer de visão de produto, e eu, isso aqui foi a coisa que mudou minha vida no trimestre, tá? Se vocês puderem fazer algo parecido com isso nas empresas de vocês, foi a coisa que melhorou o Gabriel. Ter visões ousadas de produto, coerentes com a nossa estratégia, de pessoas que não teriam naquele momento a capacidade de fazer isso. Isso nivela muito bem e ajuda muito todo mundo. E aí, por fim, existe muita mudança acontecendo. E aí o, tem uma lei da engenharia que eles chamam de Lei de Conway, né? Que fala que a estrutura definida da organização vai definir como um software é definido, é feito. Então, se você tem duas estruturas apartadas, provavelmente o software vai ser feito de duas formas apartadas também. Se a gente olha o contrário disso, dependendo do que eu quero fazer, eu tenho que mexer nas estruturas. E no fim, o que a gente queria fazer era muito diferente do ano passado. Eu queria produzir mais rápido, eu queria mais liberdade para ponta. Eu queria menos alteração de contexto entre as pessoas para poder ficar lá, 20 agentes ao mesmo tempo iterando. Se isso é verdade, a gente precisava mudar a forma de trabalhar dentro da Gabriela. Especificamente aqui na área de tecnologia, que aí o que a gente fez foi novos combinados. Então, definir com clareza o que que é esperado da equipe de cada um de tecnologia nesse novo mundo. Porque é muito angustiante para a pessoa que tá cinco anos trabalhando de uma forma, de repente chega um diretor da empresa e fala, agora tem que ser mais rápido. Tá, mas o que que é mais rápido? O que que, o que que eu tenho que mudar para conseguir ser mais rápido? Como se estivesse andando de carro numa estrada, tá vindo um caminhão a 120 por hora, você tá 80 e fala, acelera. Tá, mas não tem um cinto de segurança, não tem nada. Então, a pessoa fica ansiosa sem saber como trabalhar com isso. Então, combinados claros é algo importante. Eu vou passar aqui os que a gente fez na Gabriela. Novo modelo de trabalho. Isso aqui é muito específico de produto, mas eu vou passar. E aí interpretem o que que faz sentido, porque eu acho que tem insights que saem disso. E por fim, novo modelo de gestão. Aqui também eu convido áreas que não sejam de tecnologia a pensar o que que impacta. Mas para nós, essa mudança, ela é muito grande do que é acostumado no mundo de tecnologia, então imagino que tenham várias analogias possíveis em outras áreas. Mas sobre novos combinados, esses são os quatro combinados que eu fiz com a equipe. Primeiro deles sobre velocidade. Então, por mais que a gente queira que velocidade seja algo a ser priorizado, tem que deixar isso claro. Porque senão a pessoa vai continuar com os combinados antigos. Existe uma premissa gigante em desenvolvimento de software que é, tu não vai jogar tudo fora, tu vai aprender com aquele código antigo e construir em cima dele. Só que com Cloud Code, tu pode jogar tudo fora, e tu pode construir agora, para daqui a seis meses jogar tudo fora. Então, é muito mais fácil de ficar iterando. Esse foi um dos combinados que a gente fez, velocidade. Se tu tiver que trocar tudo daqui a seis meses, tá tudo bem. Segundo combinado, que é consequência da velocidade, vai quebrar mais. E a gente tá vendo isso em grandes plataformas, tá? O próprio Cloud Code é um exemplo. Ele não tava funcionando ontem. Ontem à tarde, Cloud Code caiu no mundo inteiro. Porque eles estão testando coisa, estão iterando coisa, a própria AWS começou a ter mais quedas por conta do, da velocidade de deploy e coisas que estão sendo colocadas para fora, é natural. Então, a gente tem que aceitar mais a perda de performance eventual, cair o software. Só que tem que saber onde. Então, se eu tenho uma parte de cobranças financeiras, que todo mês eu vou rodar, todo o billing da Gabriela, talvez não é o melhor lugar para ser usado. Vamos tentar ser usado num aplicativo, que se cair, cara, a gente mandou um push errado hoje, sem querer. Porque o Cloud mandou, a gente tá testando uma coisa e falou, mandei. Aí isso aí não impacta tanto. Ah, você viu lá um alerta dizendo que teve algo na sua região, tudo bem. Mas se a API financeira quebra, é muito pior. Então, saber onde pode errar também é muito importante. E ter essa clareza. Acelera, nesse lugar aqui. Esse aqui vai com mais calma. Terceiro ponto, testar mais. Isso aí é outra consequência de produzir coisas muito rápidas, a gente tem que ficar validando, validando. Gostei muito do que o Paulo tava mostrando, porque a ideia de você fazer um fluxo e validar emulando clientes é o que dá para fazer no mundo de negócios, né? No fim, é o que eu fiz no planejamento também. Então, se vai ser fácil e rápido fazer um planejamento, valida. Então, criem sempre mecanismos, skills, agentes de validação das coisas que estão sendo feitas. Porque aí você pode ter mais liberdade na criação, jogar coisas com menos confiança de que ela vai funcionar, porque vai ter uma coisa dura ali validando, que é o seu skill, seu agente de validação que tá testando, tá vendo se funciona. E aí, por fim, gerar valor em partes. Isso aqui também ajuda muito. Ao invés de fazer uma grande entrega, porque você tem o vislumbre de fazer uma nova, um fluxo inteiro de SDR para conseguir chegar com a venda feita online. Maravilhoso. Provavelmente, se você tentar fazer tudo, vai demorar uma semana, vai chegar no fim, vai ter alguma coisa no meio não funcionando bem. Entregue em partes. Faz primeiro qualificação de lead, depois o funil de vendas, e vai juntando essas coisas. Entregar em parte ajuda a não quebrar tudo de uma vez, e também ajuda a ver o valor mais rápido, porque aí vai dando a gasolina, né? Então, você vai criando ali, vendo que funciona, vai para o próximo passo, vê que funciona, é até mais divertido de fazer. Isso foi a mudança de combinados. A próxima parte do shape up. Como funciona normalmente o desenvolvimento de tecnologia são por sprints, e muitas áreas começaram a fazer isso, né? Então, eu lembro que o, eu toquei já várias áreas da Gabriela, marketing, vendas, produto, agora tecnologia. E na época em marketing, a gente fazia isso também. A gente criava sprints, duas semanas para fazer alguns projetos. Aí fazer revisão, depois um planejamento. Então, essa lógica de Scrum, de você fazer duas semanas e ficar iterando durante o ciclo. Ela é muito normal dentro de engenharia. Só que existem outras formas de trabalhar. E existe uma forma que se chama Shape Up, que ela é específica lá da galera do Basecamp, que é um software norte-americano. E ela é muito usada, era muito usada por desenvolvedores seniors. Porque ela depende de ter um nível de senioridade alto suficiente para ser autônomo, para conseguir criticar, para ter mais independência. Isso era muito difícil para desenvolvedores juniors. Só que com a IA, com Cloud Code, ficou muito mais fácil deles terem segurança e autonomia. Então, modelos que não funcionavam com pessoas juniores, estão começando a funcionar. E aí o meu, minha provocação aqui é, quais são as premissas que vocês têm de combinados e formatos que funcionavam com algumas especificações que hoje, talvez, não seja mais verdade. E aí, tentem isso novamente, que a gente tentou em 2025, que não funcionava, hoje tá funcionando. Eu tentei esse modelo e não deu certo. Hoje eu tô tentando e tá dando certo. Então, voltem nessas premissas que vocês têm na cabeça e testem de novo no mundo da IA, que é totalmente diferente. Então isso foi outra comunidade nossa de mudar a maneira de fazer engenharia. E aí por fim, engenharia e produto normalmente existem liderança separadas, né? Então uma área de tecnologia tem uma frente de produto e uma frente de engenharia, elas são áreas irmãs e fica todo mundo dividindo as tarefas. Um, dando a visão do produto, o que que vai ser desenvolvido, desenvolvido, o outro dando como a gente vai fazer. Aí ele explica quanto tempo vai demorar, quanto vai custar. E isso normalmente gera silos, decisões separadas, faz com que muitas bolas tenham que ser divididas e eventualmente aparadas. Nesse mundo de IA, em tecnologia, e aí muitas áreas estão começando a sofrer isso. Qual é a diferença hoje de vendas e marketing? Cada vez mais difícil desenhar onde acaba um e começa o outro. Produto e engenharia também. Então a gente resolveu facilitar e acabou com a gestão intermediária de duas áreas. Juntou numa só e hoje existe só uma gestão para as duas áreas. Então cada tribo da Gabriel, que tem lá seus infinitos, infinitos, é difícil, né? Inúmeros produtos, a gente tem uma gestão intermediária única. Que cuida tanto de engenharia quanto produto. Como a gente tem mais capacidade de entender contexto e de fazer coisas, ficou mais fácil de gerir também áreas distintas e queimar essas cadeiras de gestão que antes tinham papéis diferentes. Faz sentido, né? E aí eu provoco vocês a fazerem a mesma coisa. O que que são os modelos de gestão que vocês seguem, que funcionam em 2025, que talvez 26 não precisem. Isso aqui funcionou muito bem para nós. Unificar engenharia e produto, não no desenvolvedor, que eles são pessoas distintas. A Antrópica é um exemplo que fala que tem pessoa de tecnologia, se é produto, se é design, se é engenharia, tanto faz. A gente ainda tem cadeiras separadas, mas a gestão já é unificada. E no fim é isso. Os quatro aprendizados foram esses, então a gente viu que precisava assim, aprender a organizar a informação de forma mais estruturada. Tanto o humano quanto o robô. A gente precisava aprender a treinar o ser humano como robô. A partir dessa organização. A gente mudou os combinados que a gente tinha, a gente mudou o modelo de gestão, a gente mudou a a gestão como um todo, né? Então o modelo de gestão, os combinados. O modo de fazer. E o planejamento de P2, que agora a gente faz totalmente automatizado com interações. E isso tudo é como a IA tem mudado a forma da Gabriel de fazer tecnologia. Bom, corra sobre, vamos pro happy hour. Mas a ideia era trazer um pouco desse aprendizado que a gente teve vivendo na pele e usar a IA na Gabriel. E aí espero que tenha sido, pelo menos inspirador aí para quem não é de tecnologia, porque pode ter algumas sementes que vão plantadas na cabeça agora. Chegou. Obrigado. Pessoal, temos alguns minutinhos ainda. Um pouco da questão do Você falou um pouco da questão ali de E o Victor também que falou em relação ao Notion por trás, enfim. Como é que você enxerga essa esse movimento de Ou seja, acaba que a fim que talvez fez uma camada em volta do Notion ali. Ou também, obviamente aconteceu isso, mas outras ferramentas também surgiram ao redor do Notion também. Como é que você vê isso? Porque pode ser uma decisão talvez que lá atrás funcionava. E hora que pediu que estamos pelo movimento rápido que tá acontecendo, de tudo isso. Né? O Cloud Code, vocês mesmo, como ele fala, que o Victor falou, do Paulo Rhan, que realmente aconteceu isso mesmo. A gente sente na pele, exatamente isso, quando você no final do ano você vai, você volta, você pode ter que esperar um pouco, ah, e coisas que não estavam funcionando o ano passado, como é que funciona. Então a pergunta é: Essa questão da integração, de você ter sistemas e a camada por cima, você achar que é uma tendência. É uma coisa válida ou você tá no meio do caminho? Não sei se eu fui claro, mas Eu sei que é um risco talvez, de você ter isso. Porque ao mesmo tempo você pode construir uma coisa com Cloud Code por trás ali, né, diretamente, né? Sim. Eu acho que tem, tem São várias camadas, né? Eu acho que tudo vai acontecer ao mesmo tempo. Então você vai continuar com alguns sistemas Tão super bem estruturados e não tem por que você substituir. Então, eu acho que o Notion hoje é um desses sistemas. Não tem por que a gente tentar replicar um Notion. Sendo que ele já tá tão bem estruturado e ele avança tão, tantos quem usa Notion vai ver que a cada Teve um, teve uma época que estava enchendo o saco, sabe? Todo dia quando eu abri o Notion, apareceu um pop-up para atualizar o software. E atualizando todo dia, tinha a versão nova, né? É, mas isso significa avanço. Avanço em escala gigantesca. Então, é, tem alguns sistemas que talvez não valham a pena você mexer. É melhor você manter ele, mesmo que você ainda não, não trabalha, mas na interface deles. Que é o nosso caso, que agora como a gente tem um time de agentes que trabalham, deixa que eles vão lá e constroem tudo que precisa construir, atualiza tudo que tem que atualizar. Tem outros tipos de sistema Que talvez você vai querer fazer em casa. Porque, por exemplo, se você vai comprar um Salesforce Às vezes você vai pagar 100% por Cloud Code, possivelmente dá cinco, né? E com esse super difícil, caro, pra customizar. E você já conhece todo o processo na tua cabeça. Você já sabe, você já sabe o que que você precisa. E aí vale muito mais a pena você sentar e programar o Cloud Code e programar o sistema em si. E vão ter questões híbridas, que é assim, ah, a gente descobriu sistemas dentro do Notion. Né? Que usando só o Notion como base de dados, né? É, eu acho que as são várias camadas. Eu acho que não tem um uma coisa certinha. Eu acho que para cada tipo de situação, você vai fazer uma avaliação do que que vale a pena, o que que não vale a pena, entendeu? Não sei se Não, perfeito. Ficou bem claro. E aí, aproveitando que o pessoal falou do óculos aí, ficou Queria fazer uma pergunta aqui. Oi, tudo bem? O Paulo comentou na fala dele sobre a gestão na mudança. É, eu agora quero ouvir de você, Victor, o que é que fez o teu time adotar de fato. Porque eu percebo que as pessoas estão muito ansiosas, né, com a velocidade das tecnologias. E como é que foi a gestão de mudança lá na Gabriel? Foi a dor? Foi a facilidade em usar ferramentas? Foi liderança? Como foi esse processo? Bom, tem, a gente teve sorte de não ter nenhum grande detrator. Porque a gente também tentou muito depois, o Paulo fez uma epopeia vanguardista, então imagina em 2022, 23 fazer isso. Provavelmente eu ia ter a mesma dificuldade. Quando virou o ano, o primeiro chamaris que a gente teve foi a mudança de perfil das pessoas. Imagina que a gente tem lá 40 engenheiros, desses, talvez uns cinco foram aqueles que proativamente foram atrás durante a virada do ano. Chegaram em janeiro, falaram, cara, o mundo mudou, tem que fazer tudo diferente. Então, a primeira mudança foi identificação de perfil. Sobrou ali 35 que estavam nesse meio de, putz, não sei exatamente o que fazer. Segundo ponto foi processos. Então a gente teve que sentar, e a gente fez isso em janeiro inteiro, não foi algo de um final de semana. A gente tinha que entender, e aí em cara gente, como tanto eu, mas todos os gestores intermediários, gente de produto, tinha que entender como funcionava para passar para a equipe o que que era esperado deles. E aí a gente passou o mês inteiro fazendo isso para ter um workflow desenhado. Vocês vão começar a desenvolver dessa forma. Então, o primeiro você começa interagindo, usando um skill de PRD, no qual vai discutir as funcionalidades do produto. Aí vai ter alguma outra skill de desenvolvimento que vai fazer o código, então você não é mais um artesão de código, você é um validador de código. Aceita isso? E aí depois vem aqui a parte de validações e guardrails que você também vai executar. Quando a gente desenha esse workflow e entrega, aí mais metade da equipe vai, porque eles sabem o que tem que ser feito. E a outra metade, menos cinco pessoas, foram assim, a gente teve que fazer gestão com elas. E aí você pega é um perfil que é um pouco mais conservador com um processo que já existe, fala, tá, daqui pra frente é assim. Seria bom, né? Seria ótimo, cara. Seria ótimo, mas não rola. É, mas ele esse óculos ele tem um SDK. Então que é um, é um framework pra você desenvolver software em cima dele. Isso é uma coisa muito legal. Porque agora eu posso botar gente de IA pra criar nossos próprios aplicativos. Os nossos próprios aplicativos. Então por isso que eu tomei essa decisão de usar o óculos. Mas assim, não é uma coisa assim que você vai gastar dinheiro e se você não quiser só pra brincar. É, você vai se frustrar bastante. Daqui a uns dois anos e tal, aí eu acho que o negócio vai começar. É igual o iPhone 1. O iPhone 1 não tinha nem app. Né? Quem não lembra, não tinha app, não tinha 3G. Né? Enquanto outro celular já tinha 3G. Então é um pouco early adopter agora pra isso daí. É o G2 da Viver Realities. Vamos comprar, vamos comprar o patrocínio do G2. É isso. Mas se alguém quiser experimentar, eu mostro aqui. Porque eu mostro como é que funciona, só pra ter uma ideia assim do. Maravilha, pessoal. A gente vai encerrar. Obrigado, gente. Eu vou te ajudar mostrando, então vou fazer e a gente fez isso, barcode. Pega uma pessoa, deixa do teu lado e fala, olha, eu faria o que tu fez dessa forma. E mostra pra ela como funciona. Normalmente é muito, é um efeito impressionante pra pessoa. Porque ela não é cética, ela só nunca viu aquilo funcionando. E quando tu mostra aquilo funcionando, é que nem a primeira vez que a gente fala, ah, pede o jogo da cobrinha, viu o jogo da cobrinha e fala, caramba, dá pra fazer isso. Então as pessoas que demoraram mais nesse momento de mostrar como funcionava, elas foram pra frente. O que a gente não teve, que seria o grande problema, o detrator. Que é a pessoa que fala, não, mas ele nunca vai fazer, que nem eu, não pode. E aí a gente deu sorte de não ter isso, pelo menos em 2026, talvez tivesse antigamente. Mas foi isso, é perfil, processo e gestão. Maravilha, pessoal. Queria agradecer a presença de todo mundo, pelo esse evento, esse espetáculo. Obrigado, Paulo, obrigado, Vítor, obrigado, Arthur. Paulo, vai falar de novo. Estão pressionando com isso, Paulo. Vamos encerrar com essa explicação aí. É, bom, primeiro é assim, eu sou muito, eu me provoco a ser early adopter. Então, hoje em dia, com um smart glass, vai ser furada, tá? Então vai ser. É, porque tá tudo muito novo. Então, qual foi a escolha que eu fiz? Tinha o Ray-Ban, só que eu achei que o Ray-Ban ia ficar meu rosto muito pequeno, porque ele é muito grosso. A o frame dele. Então fiquei estudando os smart glasses que tinham, é, e aí com a, o que que tem sido a minha, minha cabeça em relação a gadget. Tem que ter API. Porque se não tiver API, eu não consigo conectar, usar a gente de IA pra poder fazer as coisas que eu quero, que eu quero fazer. Esse óculos aqui, ele se chama G2, da Viver Realities. Eu acho que eles são chineses, tá? Então nesse momento, todos vocês estão sendo monitorados pela China. É, mas o óculos ele não tem câmera, é, então ele tem uma questão de privacidade um pouco melhor. É, mas ele tem microfone, né? E aqui dentro, ele tem um visor que quando eu acesso, olhando pra cima, parece um, parece uma pessoa que tá fazendo download. Lá no meu phone, né? Eu faço assim. E pronto, aí aparece um visor pra mim, pra vocês não devem estar aparecendo nada, pra mim tá aparecendo aqui a minha agenda de, de reunião com todos os tópicos que eu tenho. E se eu for passando aqui por trás, ele vai passando outros, ah, tarefas, notícias, uma série de coisas. Eu também consigo acessar a IA aqui, que é muito boa. Então posso fazer perguntas pra ela, mas só que ela vai me mostrando em texto, ela não tem áudio. Não me envia som. É, mas ela vai mostrando por texto, e até agora, a aplicabilidade prática mesmo que eu já vi, foi tradução automática. Então eu posso colocar em qualquer linguagem, e aí de repente eu ver, eu fiquei pra testar, eu fiquei assistindo um jornal, um telejornal do Japão. E aí eu, olhando pra tela do computador, aí a apresentadora lá falando lá, sobre uma vila local de pescadores, não sei o quê. E eu lendo tudo em português. Praticamente em tempo real. Ontem eu fui pra um show de rock, não rola. O rock é muito rápido. Então não rola, não rola, não rola."
+}

@@ -1,0 +1,223 @@
+1
+00:00:00,000 --> 00:00:01,230
+Boa tarde, pessoal, tudo bem? Obrigado pela presença, sejam bem-vindos todos.
+
+2
+00:00:01,230 --> 00:00:10,530
+Ao distrito, como vocês conhecem, sou o Bernardo, sou do time de comunidade daqui do distrito. Então, sou ponto de contato das startups residentes e uma das cabeças que vai desenhando as iniciativas para fazer essas conexões estratégicas.
+
+3
+00:00:10,530 --> 00:00:14,070
+Eu vou compartilhar aqui com vocês a agenda, para vocês terem uma ideia de cronograma e do nosso guia desse papo.
+
+4
+00:00:14,070 --> 00:00:20,730
+A gente vai começar com uma abertura com a Mari Razo sobre o DNA Lab, que é o nosso programa de de startup para fazer essas conexões com startups de IA generativa.
+
+5
+00:00:20,730 --> 00:00:27,930
+A gente pula pro pro Notion, pro Arthur apresentar um pouco, tanto uma apresentação institucional, também para vocês visualizarem sobre produtividade e inovação.
+
+6
+00:00:27,930 --> 00:00:36,630
+A gente depois a gente avança pra IA, que é a Gabi, que tá na gestão de tarefa, com o Gus e o Paulo para apresentar um pouco mais de gestão na prática.
+
+7
+00:00:36,630 --> 00:00:43,230
+E depois a gente tem o Victor, eh, fazendo mostrando um case, né, tipo da Gabi, e como a IA transformou o operacional.
+
+8
+00:00:43,230 --> 00:00:45,330
+Então, sejam muito bem-vindos, bom evento.
+
+9
+00:00:45,330 --> 00:00:46,330
+Mário, com você.
+
+10
+00:00:47,730 --> 00:00:49,030
+Oi gente, tudo bem com vocês?
+
+11
+00:00:49,030 --> 00:00:52,030
+Oi, eu sou a Mari, para quem não me conhece, Mari Razo.
+
+12
+00:00:52,030 --> 00:00:57,630
+Sou gerente de ecossistema aqui do distrito, me juntei ao time há cinco meses para assumir.
+
+13
+00:00:57,630 --> 00:01:01,330
+Ah, programa de IA Lab, nossa BU de ecossistema, não sei se todos vocês conhecem um pouquinho de distrito.
+
+14
+00:01:01,330 --> 00:01:03,030
+Então, vou dar um quick update.
+
+15
+00:01:03,030 --> 00:01:13,230
+O distrito é uma empresa que entra para ajudar as empresas em geral a fazer e passar por toda a transformação cognitiva em inteligência artificial.
+
+16
+00:01:13,230 --> 00:01:22,530
+A gente hoje atua num foco muito grande de Enterprise AI, através de quatro unidades de negócio que se relacionam e que criam um flywheel muito único no que tange inteligência artificial no mercado.
+
+17
+00:01:22,530 --> 00:01:30,030
+A gente começa com ecossistema, que é a unidade de negócio que eu fico responsável, que é onde tudo começa, né? As tendências, as inovações, as conexões, os eventos, iniciativas.
+
+18
+00:01:30,030 --> 00:01:33,030
+Eu vou contar um pouquinho mais para vocês sobre isso.
+
+19
+00:01:33,030 --> 00:01:41,730
+A gente tem uma área de education, que é de capacitação para lideranças, onde a gente entra realmente dentro das empresas e faz aí uma trilha de capacitação em inteligência artificial.
+
+20
+00:01:41,730 --> 00:01:46,530
+A gente acredita bastante que essa capacitação vem muito junto dos outros programas que a gente tem.
+
+21
+00:01:46,530 --> 00:01:57,930
+A gente tem uma área de estratégia, que é a estratégia de transformação, que entra nas corporações para ajudar tanto em advisory board, quanto em nas esteiras de inovação como um todo, desafios abertos, e toda, toda relação que essas empresas tenham aí com o mercado.
+
+22
+00:01:57,930 --> 00:02:03,330
+Então, eles fazem hunting de startups, eles ajudam realmente em absolutamente tudo que envolve a inovação.
+
+23
+00:02:03,330 --> 00:02:11,730
+E a gente tem a área de tech implementation, tech expertise, que fica com o Gus, que entra dentro das empresas para realmente implementar IA's proprietárias, né?
+
+24
+00:02:11,730 --> 00:02:18,930
+Então, através desse flywheel, hoje o distrito consegue atuar em todas as frentes com as empresas.
+
+25
+00:02:18,930 --> 00:02:24,330
+A gente consegue fazer plug and plays de startups e de soluções que existam com o mercado.
+
+26
+00:02:24,330 --> 00:02:28,330
+A gente consegue fazer huntings com soluções e caso a gente não encontre isso, a gente consegue entrar dentro da empresa e efetivamente fazer uma implementação de IA proprietária.
+
+27
+00:02:28,330 --> 00:02:35,730
+Dentro dessa unidade de negócio de ecossistema, a gente tem dois principais produtos, um deles é o nosso AI Transformation Hub, que é o prédio e essa infraestrutura que a gente tem.
+
+28
+00:02:35,730 --> 00:02:45,330
+Aqui a gente tem tanto estúdios privativos de empresas que queiram estabelecer seus escritórios aqui, seus negócios aqui, participar muito além de workspace do ecossistema.
+
+29
+00:02:45,330 --> 00:02:51,330
+E a gente tem o programa de IA Lab, que é um programa que reúne principalmente startups, investidores, tech providers e corporações.
+
+30
+00:02:51,330 --> 00:02:56,330
+Para fazer com que esse ecossistema também se desenvolva.
+
+31
+00:02:56,330 --> 00:03:05,730
+Hoje a gente tem 78 startups de IA residentes dentro do programa, nas suas mais diferentes funções, estágios de investimento.
+
+32
+00:03:05,730 --> 00:03:14,730
+A gente tem desde startups que têm um founder e IA estando desenvolvida, então num papel mais de observer, quando empresas que já estão aí no series A plus e que estão aqui dentro para continuar desenvolvendo os seus negócios.
+
+33
+00:03:14,730 --> 00:03:19,730
+E a gente também tem startups aí de diversos formatos.
+
+34
+00:03:19,730 --> 00:03:25,730
+Então, tanto em maturidade de inteligência artificial e implementação das soluções de IA, quanto em investment stage, a gente tem empresas aí em diferentes formatos.
+
+35
+00:03:25,730 --> 00:03:31,730
+Tem algumas aqui que ainda estão faltantes, que a gente ainda não atualizou desse última, desse último mês.
+
+36
+00:03:31,730 --> 00:03:34,730
+Acho que você, né, Luana, não tá aqui.
+
+37
+00:03:34,730 --> 00:03:40,730
+Mas a gente, a gente tem empresas entrando, e obviamente saindo pelo ciclo das startups, mensalmente.
+
+38
+00:03:40,730 --> 00:03:46,730
+A gente tem o objetivo de trazer cada vez mais empresas para estarem aqui.
+
+39
+00:03:46,730 --> 00:03:56,730
+O grande foco do programa é trazer empresas que tenham produtos e soluções aplicáveis em inteligência artificial. Então, além de ajudar essas empresas a se desenvolverem através das iniciativas e tudo que a gente consegue trazer como ecossistema.
+
+40
+00:03:56,730 --> 00:04:03,730
+A gente tem um papel muito grande, muito ativo em ajudar essas empresas a gerarem relações comerciais através dessas corporações que também fazem parte do programa.
+
+41
+00:04:03,730 --> 00:04:10,730
+Então, hoje a gente tem tech providers, Oracle, Nvidia, Microsoft, AWS, Notion, que vem pra cá tanto com as suas expertises técnicas, eles vêm falar sobre LLM, computing, diversos pontos lá dentro dos seus times tecnológicos.
+
+42
+00:04:10,730 --> 00:04:18,730
+Quanto claramente evangelizar a comunidade que tá aqui hoje, né? São startups de IA que vão expandir, que vão crescer em potencial de cloud, etc.
+
+43
+00:04:18,730 --> 00:04:20,730
+E eles estão aqui hoje.
+
+44
+00:04:20,730 --> 00:04:27,730
+A gente tem as empresas inovadoras que usam muito Lamb como first and ground de negócios que elas podem trazer pra dentro, dentro de inovação.
+
+45
+00:04:27,730 --> 00:04:33,730
+Então, a gente faz pitch days, a gente faz visitas programadas, que é justamente um ponto de conseguir criar as conexões reais entre as startups que têm soluções e as corporações que têm desafios claros de negócio.
+
+46
+00:04:33,730 --> 00:04:40,730
+Então, a gente tem pitch days de IA para finanças, IA para marketing, e a gente consegue assim expor como uma vitrine as startups e ajudar as corporações a trazerem soluções que já existem no mercado e que talvez elas não conheçam para ajudá-las.
+
+47
+00:04:40,730 --> 00:04:48,730
+A gente tem uma relação grande também com os fundos de venture capital, todo mês a gente tem um evento que chama VC meeting, que a gente traz um fundo ou uma aceleradora para estar próximo.
+
+48
+00:04:48,730 --> 00:04:55,730
+É um win-win muito forte para os fundos estarem aqui, entenderem também o que que tá acontecendo dentro desse ecossistema, e obviamente para o empreendedor é muito interessante começar uma relação com o fundo.
+
+49
+00:04:55,730 --> 00:05:02,730
+A gente sabe que uma relação de investimento, ela começa muito antes, em um mapeamento, numa tese, muito antes de efetivamente acontecer.
+
+50
+00:05:02,730 --> 00:05:08,730
+O DNA Lab é o primeiro laboratório de IA generativa no país, a gente tem mais de 15 corporações conectadas, mais de 15 fundos.
+
+51
+00:05:08,730 --> 00:05:13,730
+A gente fez mais de 50 iniciativas nos últimos tempos.
+
+52
+00:05:13,730 --> 00:05:17,730
+Geramos mais de 100 oportunidades comerciais.
+
+53
+00:05:17,730 --> 00:05:25,730
+Então, é uma oportunidade muito bacana para empresas que estejam desenvolvendo produtos e soluções com IA, caso vocês estejam e não façam parte do Lab, podem falar comigo depois.
+
+54
+00:05:25,730 --> 00:05:31,730
+Caso vocês conheçam startups que estão nesse movimento, a gente quer cada vez mais expandir aí e conseguir transformar esse ecossistema.
+
+55
+00:05:31,730 --> 00:05:33,730
+Muito obrigada.
+
+56
+00:05:33,730 --> 00:05:35,730
+Vocês têm alguma dúvida?

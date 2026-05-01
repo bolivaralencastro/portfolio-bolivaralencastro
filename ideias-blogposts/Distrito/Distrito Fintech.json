@@ -1,0 +1,287 @@
+{
+  "source_audio": "input/Distrito Fintech.m4a",
+  "duration_seconds": 456.875,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 1.23,
+      "text": "Boa tarde, pessoal, tudo bem? Obrigado pela presença, sejam bem-vindos todos."
+    },
+    {
+      "start": 1.23,
+      "end": 10.53,
+      "text": "Ao distrito, como vocês conhecem, sou o Bernardo, sou do time de comunidade daqui do distrito. Então, sou ponto de contato das startups residentes e uma das cabeças que vai desenhando as iniciativas para fazer essas conexões estratégicas."
+    },
+    {
+      "start": 10.53,
+      "end": 14.07,
+      "text": "Eu vou compartilhar aqui com vocês a agenda, para vocês terem uma ideia de cronograma e do nosso guia desse papo."
+    },
+    {
+      "start": 14.07,
+      "end": 20.73,
+      "text": "A gente vai começar com uma abertura com a Mari Razo sobre o DNA Lab, que é o nosso programa de de startup para fazer essas conexões com startups de IA generativa."
+    },
+    {
+      "start": 20.73,
+      "end": 27.93,
+      "text": "A gente pula pro pro Notion, pro Arthur apresentar um pouco, tanto uma apresentação institucional, também para vocês visualizarem sobre produtividade e inovação."
+    },
+    {
+      "start": 27.93,
+      "end": 36.63,
+      "text": "A gente depois a gente avança pra IA, que é a Gabi, que tá na gestão de tarefa, com o Gus e o Paulo para apresentar um pouco mais de gestão na prática."
+    },
+    {
+      "start": 36.63,
+      "end": 43.23,
+      "text": "E depois a gente tem o Victor, eh, fazendo mostrando um case, né, tipo da Gabi, e como a IA transformou o operacional."
+    },
+    {
+      "start": 43.23,
+      "end": 45.33,
+      "text": "Então, sejam muito bem-vindos, bom evento."
+    },
+    {
+      "start": 45.33,
+      "end": 46.33,
+      "text": "Mário, com você."
+    },
+    {
+      "start": 47.73,
+      "end": 49.03,
+      "text": "Oi gente, tudo bem com vocês?"
+    },
+    {
+      "start": 49.03,
+      "end": 52.03,
+      "text": "Oi, eu sou a Mari, para quem não me conhece, Mari Razo."
+    },
+    {
+      "start": 52.03,
+      "end": 57.63,
+      "text": "Sou gerente de ecossistema aqui do distrito, me juntei ao time há cinco meses para assumir."
+    },
+    {
+      "start": 57.63,
+      "end": 61.33,
+      "text": "Ah, programa de IA Lab, nossa BU de ecossistema, não sei se todos vocês conhecem um pouquinho de distrito."
+    },
+    {
+      "start": 61.33,
+      "end": 63.03,
+      "text": "Então, vou dar um quick update."
+    },
+    {
+      "start": 63.03,
+      "end": 73.23,
+      "text": "O distrito é uma empresa que entra para ajudar as empresas em geral a fazer e passar por toda a transformação cognitiva em inteligência artificial."
+    },
+    {
+      "start": 73.23,
+      "end": 82.53,
+      "text": "A gente hoje atua num foco muito grande de Enterprise AI, através de quatro unidades de negócio que se relacionam e que criam um flywheel muito único no que tange inteligência artificial no mercado."
+    },
+    {
+      "start": 82.53,
+      "end": 90.03,
+      "text": "A gente começa com ecossistema, que é a unidade de negócio que eu fico responsável, que é onde tudo começa, né? As tendências, as inovações, as conexões, os eventos, iniciativas."
+    },
+    {
+      "start": 90.03,
+      "end": 93.03,
+      "text": "Eu vou contar um pouquinho mais para vocês sobre isso."
+    },
+    {
+      "start": 93.03,
+      "end": 101.73,
+      "text": "A gente tem uma área de education, que é de capacitação para lideranças, onde a gente entra realmente dentro das empresas e faz aí uma trilha de capacitação em inteligência artificial."
+    },
+    {
+      "start": 101.73,
+      "end": 106.53,
+      "text": "A gente acredita bastante que essa capacitação vem muito junto dos outros programas que a gente tem."
+    },
+    {
+      "start": 106.53,
+      "end": 117.93,
+      "text": "A gente tem uma área de estratégia, que é a estratégia de transformação, que entra nas corporações para ajudar tanto em advisory board, quanto em nas esteiras de inovação como um todo, desafios abertos, e toda, toda relação que essas empresas tenham aí com o mercado."
+    },
+    {
+      "start": 117.93,
+      "end": 123.33,
+      "text": "Então, eles fazem hunting de startups, eles ajudam realmente em absolutamente tudo que envolve a inovação."
+    },
+    {
+      "start": 123.33,
+      "end": 131.73,
+      "text": "E a gente tem a área de tech implementation, tech expertise, que fica com o Gus, que entra dentro das empresas para realmente implementar IA's proprietárias, né?"
+    },
+    {
+      "start": 131.73,
+      "end": 138.93,
+      "text": "Então, através desse flywheel, hoje o distrito consegue atuar em todas as frentes com as empresas."
+    },
+    {
+      "start": 138.93,
+      "end": 144.33,
+      "text": "A gente consegue fazer plug and plays de startups e de soluções que existam com o mercado."
+    },
+    {
+      "start": 144.33,
+      "end": 148.33,
+      "text": "A gente consegue fazer huntings com soluções e caso a gente não encontre isso, a gente consegue entrar dentro da empresa e efetivamente fazer uma implementação de IA proprietária."
+    },
+    {
+      "start": 148.33,
+      "end": 155.73,
+      "text": "Dentro dessa unidade de negócio de ecossistema, a gente tem dois principais produtos, um deles é o nosso AI Transformation Hub, que é o prédio e essa infraestrutura que a gente tem."
+    },
+    {
+      "start": 155.73,
+      "end": 165.33,
+      "text": "Aqui a gente tem tanto estúdios privativos de empresas que queiram estabelecer seus escritórios aqui, seus negócios aqui, participar muito além de workspace do ecossistema."
+    },
+    {
+      "start": 165.33,
+      "end": 171.33,
+      "text": "E a gente tem o programa de IA Lab, que é um programa que reúne principalmente startups, investidores, tech providers e corporações."
+    },
+    {
+      "start": 171.33,
+      "end": 176.33,
+      "text": "Para fazer com que esse ecossistema também se desenvolva."
+    },
+    {
+      "start": 176.33,
+      "end": 185.73,
+      "text": "Hoje a gente tem 78 startups de IA residentes dentro do programa, nas suas mais diferentes funções, estágios de investimento."
+    },
+    {
+      "start": 185.73,
+      "end": 194.73,
+      "text": "A gente tem desde startups que têm um founder e IA estando desenvolvida, então num papel mais de observer, quando empresas que já estão aí no series A plus e que estão aqui dentro para continuar desenvolvendo os seus negócios."
+    },
+    {
+      "start": 194.73,
+      "end": 199.73,
+      "text": "E a gente também tem startups aí de diversos formatos."
+    },
+    {
+      "start": 199.73,
+      "end": 205.73,
+      "text": "Então, tanto em maturidade de inteligência artificial e implementação das soluções de IA, quanto em investment stage, a gente tem empresas aí em diferentes formatos."
+    },
+    {
+      "start": 205.73,
+      "end": 211.73,
+      "text": "Tem algumas aqui que ainda estão faltantes, que a gente ainda não atualizou desse última, desse último mês."
+    },
+    {
+      "start": 211.73,
+      "end": 214.73,
+      "text": "Acho que você, né, Luana, não tá aqui."
+    },
+    {
+      "start": 214.73,
+      "end": 220.73,
+      "text": "Mas a gente, a gente tem empresas entrando, e obviamente saindo pelo ciclo das startups, mensalmente."
+    },
+    {
+      "start": 220.73,
+      "end": 226.73,
+      "text": "A gente tem o objetivo de trazer cada vez mais empresas para estarem aqui."
+    },
+    {
+      "start": 226.73,
+      "end": 236.73,
+      "text": "O grande foco do programa é trazer empresas que tenham produtos e soluções aplicáveis em inteligência artificial. Então, além de ajudar essas empresas a se desenvolverem através das iniciativas e tudo que a gente consegue trazer como ecossistema."
+    },
+    {
+      "start": 236.73,
+      "end": 243.73,
+      "text": "A gente tem um papel muito grande, muito ativo em ajudar essas empresas a gerarem relações comerciais através dessas corporações que também fazem parte do programa."
+    },
+    {
+      "start": 243.73,
+      "end": 250.73,
+      "text": "Então, hoje a gente tem tech providers, Oracle, Nvidia, Microsoft, AWS, Notion, que vem pra cá tanto com as suas expertises técnicas, eles vêm falar sobre LLM, computing, diversos pontos lá dentro dos seus times tecnológicos."
+    },
+    {
+      "start": 250.73,
+      "end": 258.73,
+      "text": "Quanto claramente evangelizar a comunidade que tá aqui hoje, né? São startups de IA que vão expandir, que vão crescer em potencial de cloud, etc."
+    },
+    {
+      "start": 258.73,
+      "end": 260.73,
+      "text": "E eles estão aqui hoje."
+    },
+    {
+      "start": 260.73,
+      "end": 267.73,
+      "text": "A gente tem as empresas inovadoras que usam muito Lamb como first and ground de negócios que elas podem trazer pra dentro, dentro de inovação."
+    },
+    {
+      "start": 267.73,
+      "end": 273.73,
+      "text": "Então, a gente faz pitch days, a gente faz visitas programadas, que é justamente um ponto de conseguir criar as conexões reais entre as startups que têm soluções e as corporações que têm desafios claros de negócio."
+    },
+    {
+      "start": 273.73,
+      "end": 280.73,
+      "text": "Então, a gente tem pitch days de IA para finanças, IA para marketing, e a gente consegue assim expor como uma vitrine as startups e ajudar as corporações a trazerem soluções que já existem no mercado e que talvez elas não conheçam para ajudá-las."
+    },
+    {
+      "start": 280.73,
+      "end": 288.73,
+      "text": "A gente tem uma relação grande também com os fundos de venture capital, todo mês a gente tem um evento que chama VC meeting, que a gente traz um fundo ou uma aceleradora para estar próximo."
+    },
+    {
+      "start": 288.73,
+      "end": 295.73,
+      "text": "É um win-win muito forte para os fundos estarem aqui, entenderem também o que que tá acontecendo dentro desse ecossistema, e obviamente para o empreendedor é muito interessante começar uma relação com o fundo."
+    },
+    {
+      "start": 295.73,
+      "end": 302.73,
+      "text": "A gente sabe que uma relação de investimento, ela começa muito antes, em um mapeamento, numa tese, muito antes de efetivamente acontecer."
+    },
+    {
+      "start": 302.73,
+      "end": 308.73,
+      "text": "O DNA Lab é o primeiro laboratório de IA generativa no país, a gente tem mais de 15 corporações conectadas, mais de 15 fundos."
+    },
+    {
+      "start": 308.73,
+      "end": 313.73,
+      "text": "A gente fez mais de 50 iniciativas nos últimos tempos."
+    },
+    {
+      "start": 313.73,
+      "end": 317.73,
+      "text": "Geramos mais de 100 oportunidades comerciais."
+    },
+    {
+      "start": 317.73,
+      "end": 325.73,
+      "text": "Então, é uma oportunidade muito bacana para empresas que estejam desenvolvendo produtos e soluções com IA, caso vocês estejam e não façam parte do Lab, podem falar comigo depois."
+    },
+    {
+      "start": 325.73,
+      "end": 331.73,
+      "text": "Caso vocês conheçam startups que estão nesse movimento, a gente quer cada vez mais expandir aí e conseguir transformar esse ecossistema."
+    },
+    {
+      "start": 331.73,
+      "end": 333.73,
+      "text": "Muito obrigada."
+    },
+    {
+      "start": 333.73,
+      "end": 335.73,
+      "text": "Vocês têm alguma dúvida?"
+    }
+  ],
+  "transcript": "Boa tarde, pessoal, tudo bem? Obrigado pela presença, sejam bem-vindos todos. Ao distrito, como vocês conhecem, sou o Bernardo, sou do time de comunidade daqui do distrito. Então, sou ponto de contato das startups residentes e uma das cabeças que vai desenhando as iniciativas para fazer essas conexões estratégicas. Eu vou compartilhar aqui com vocês a agenda, para vocês terem uma ideia de cronograma e do nosso guia desse papo. A gente vai começar com uma abertura com a Mari Razo sobre o DNA Lab, que é o nosso programa de de startup para fazer essas conexões com startups de IA generativa. A gente pula pro pro Notion, pro Arthur apresentar um pouco, tanto uma apresentação institucional, também para vocês visualizarem sobre produtividade e inovação. A gente depois a gente avança pra IA, que é a Gabi, que tá na gestão de tarefa, com o Gus e o Paulo para apresentar um pouco mais de gestão na prática. E depois a gente tem o Victor, eh, fazendo mostrando um case, né, tipo da Gabi, e como a IA transformou o operacional. Então, sejam muito bem-vindos, bom evento. Mário, com você. Oi gente, tudo bem com vocês? Oi, eu sou a Mari, para quem não me conhece, Mari Razo. Sou gerente de ecossistema aqui do distrito, me juntei ao time há cinco meses para assumir. Ah, programa de IA Lab, nossa BU de ecossistema, não sei se todos vocês conhecem um pouquinho de distrito. Então, vou dar um quick update. O distrito é uma empresa que entra para ajudar as empresas em geral a fazer e passar por toda a transformação cognitiva em inteligência artificial. A gente hoje atua num foco muito grande de Enterprise AI, através de quatro unidades de negócio que se relacionam e que criam um flywheel muito único no que tange inteligência artificial no mercado. A gente começa com ecossistema, que é a unidade de negócio que eu fico responsável, que é onde tudo começa, né? As tendências, as inovações, as conexões, os eventos, iniciativas. Eu vou contar um pouquinho mais para vocês sobre isso. A gente tem uma área de education, que é de capacitação para lideranças, onde a gente entra realmente dentro das empresas e faz aí uma trilha de capacitação em inteligência artificial. A gente acredita bastante que essa capacitação vem muito junto dos outros programas que a gente tem. A gente tem uma área de estratégia, que é a estratégia de transformação, que entra nas corporações para ajudar tanto em advisory board, quanto em nas esteiras de inovação como um todo, desafios abertos, e toda, toda relação que essas empresas tenham aí com o mercado. Então, eles fazem hunting de startups, eles ajudam realmente em absolutamente tudo que envolve a inovação. E a gente tem a área de tech implementation, tech expertise, que fica com o Gus, que entra dentro das empresas para realmente implementar IA's proprietárias, né? Então, através desse flywheel, hoje o distrito consegue atuar em todas as frentes com as empresas. A gente consegue fazer plug and plays de startups e de soluções que existam com o mercado. A gente consegue fazer huntings com soluções e caso a gente não encontre isso, a gente consegue entrar dentro da empresa e efetivamente fazer uma implementação de IA proprietária. Dentro dessa unidade de negócio de ecossistema, a gente tem dois principais produtos, um deles é o nosso AI Transformation Hub, que é o prédio e essa infraestrutura que a gente tem. Aqui a gente tem tanto estúdios privativos de empresas que queiram estabelecer seus escritórios aqui, seus negócios aqui, participar muito além de workspace do ecossistema. E a gente tem o programa de IA Lab, que é um programa que reúne principalmente startups, investidores, tech providers e corporações. Para fazer com que esse ecossistema também se desenvolva. Hoje a gente tem 78 startups de IA residentes dentro do programa, nas suas mais diferentes funções, estágios de investimento. A gente tem desde startups que têm um founder e IA estando desenvolvida, então num papel mais de observer, quando empresas que já estão aí no series A plus e que estão aqui dentro para continuar desenvolvendo os seus negócios. E a gente também tem startups aí de diversos formatos. Então, tanto em maturidade de inteligência artificial e implementação das soluções de IA, quanto em investment stage, a gente tem empresas aí em diferentes formatos. Tem algumas aqui que ainda estão faltantes, que a gente ainda não atualizou desse última, desse último mês. Acho que você, né, Luana, não tá aqui. Mas a gente, a gente tem empresas entrando, e obviamente saindo pelo ciclo das startups, mensalmente. A gente tem o objetivo de trazer cada vez mais empresas para estarem aqui. O grande foco do programa é trazer empresas que tenham produtos e soluções aplicáveis em inteligência artificial. Então, além de ajudar essas empresas a se desenvolverem através das iniciativas e tudo que a gente consegue trazer como ecossistema. A gente tem um papel muito grande, muito ativo em ajudar essas empresas a gerarem relações comerciais através dessas corporações que também fazem parte do programa. Então, hoje a gente tem tech providers, Oracle, Nvidia, Microsoft, AWS, Notion, que vem pra cá tanto com as suas expertises técnicas, eles vêm falar sobre LLM, computing, diversos pontos lá dentro dos seus times tecnológicos. Quanto claramente evangelizar a comunidade que tá aqui hoje, né? São startups de IA que vão expandir, que vão crescer em potencial de cloud, etc. E eles estão aqui hoje. A gente tem as empresas inovadoras que usam muito Lamb como first and ground de negócios que elas podem trazer pra dentro, dentro de inovação. Então, a gente faz pitch days, a gente faz visitas programadas, que é justamente um ponto de conseguir criar as conexões reais entre as startups que têm soluções e as corporações que têm desafios claros de negócio. Então, a gente tem pitch days de IA para finanças, IA para marketing, e a gente consegue assim expor como uma vitrine as startups e ajudar as corporações a trazerem soluções que já existem no mercado e que talvez elas não conheçam para ajudá-las. A gente tem uma relação grande também com os fundos de venture capital, todo mês a gente tem um evento que chama VC meeting, que a gente traz um fundo ou uma aceleradora para estar próximo. É um win-win muito forte para os fundos estarem aqui, entenderem também o que que tá acontecendo dentro desse ecossistema, e obviamente para o empreendedor é muito interessante começar uma relação com o fundo. A gente sabe que uma relação de investimento, ela começa muito antes, em um mapeamento, numa tese, muito antes de efetivamente acontecer. O DNA Lab é o primeiro laboratório de IA generativa no país, a gente tem mais de 15 corporações conectadas, mais de 15 fundos. A gente fez mais de 50 iniciativas nos últimos tempos. Geramos mais de 100 oportunidades comerciais. Então, é uma oportunidade muito bacana para empresas que estejam desenvolvendo produtos e soluções com IA, caso vocês estejam e não façam parte do Lab, podem falar comigo depois. Caso vocês conheçam startups que estão nesse movimento, a gente quer cada vez mais expandir aí e conseguir transformar esse ecossistema. Muito obrigada. Vocês têm alguma dúvida?"
+}

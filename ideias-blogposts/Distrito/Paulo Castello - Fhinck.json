@@ -1,0 +1,2832 @@
+{
+  "source_audio": "input/Paulo Castello - Fhinck.m4a",
+  "duration_seconds": 2795.093,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 0.7,
+      "text": "Sulevi, esse é o meu."
+    },
+    {
+      "start": 0.7,
+      "end": 1.7,
+      "text": "Vem cá, Paulão, é, gente, vamos lá."
+    },
+    {
+      "start": 1.7,
+      "end": 3.2,
+      "text": "Eu vou, eu vou basicamente falar como é que eu tô usando Notion."
+    },
+    {
+      "start": 3.2,
+      "end": 4.1,
+      "text": "Né? É, e por quê? Por que que eu uso Notion?"
+    },
+    {
+      "start": 4.1,
+      "end": 6.5,
+      "text": "E, e uso, assim, antes de usar na empresa, uso na física também há muito tempo."
+    },
+    {
+      "start": 6.5,
+      "end": 7.5,
+      "text": "Né? E antes do Arthur chegar no Notion."
+    },
+    {
+      "start": 7.5,
+      "end": 8.1,
+      "text": "Né? Então, bem antes, bem antes."
+    },
+    {
+      "start": 8.1,
+      "end": 10.5,
+      "text": "E o Paulo, esse cara aqui, ele tem uma empresa praticamente autônoma."
+    },
+    {
+      "start": 10.5,
+      "end": 11.1,
+      "text": "Tá? Que roda com AI agents."
+    },
+    {
+      "start": 11.1,
+      "end": 13.2,
+      "text": "Então, e ele usa o Notion pra gerir o business inteiro."
+    },
+    {
+      "start": 13.2,
+      "end": 14.7,
+      "text": "Tá? Então, acho que ele vai demonstrar aqui um pouquinho."
+    },
+    {
+      "start": 14.7,
+      "end": 16.7,
+      "text": "Né? O que o Paulo tem pra mostrar, acho que é muito mais interessante."
+    },
+    {
+      "start": 16.7,
+      "end": 18.2,
+      "text": "É, então, enquanto ele vai conectando, eu queria só falar por que que eu encontrei no Notion."
+    },
+    {
+      "start": 18.2,
+      "end": 20.9,
+      "text": "A única solução de mercado pro momento de AI que a gente tá vivendo."
+    },
+    {
+      "start": 20.9,
+      "end": 21.3,
+      "text": "Tá?"
+    },
+    {
+      "start": 21.3,
+      "end": 22.1,
+      "text": "Então, assim, qual que era a minha saga?"
+    },
+    {
+      "start": 22.1,
+      "end": 23.5,
+      "text": "Eu queria montar um segundo cérebro."
+    },
+    {
+      "start": 23.5,
+      "end": 24.1,
+      "text": "Basicamente."
+    },
+    {
+      "start": 24.1,
+      "end": 25.7,
+      "text": "Né? Então, obviamente não dá pra você lembrar de tudo."
+    },
+    {
+      "start": 25.7,
+      "end": 27.1,
+      "text": "Você esquece as coisas, eu queria ficar também mais, mais esperto."
+    },
+    {
+      "start": 27.1,
+      "end": 28.2,
+      "text": "Né? Em tudo que eu tava fazendo."
+    },
+    {
+      "start": 28.2,
+      "end": 30.5,
+      "text": "Né? Gestão de saúde, gestão financeira, pessoal, e queria montar um segundo cérebro."
+    },
+    {
+      "start": 30.5,
+      "end": 31.1,
+      "text": "Basicamente."
+    },
+    {
+      "start": 31.1,
+      "end": 33.7,
+      "text": "E eu percebi que o chat GPT ou o Claude, que eu tava usando."
+    },
+    {
+      "start": 33.7,
+      "end": 35.7,
+      "text": "Não foram desenhados para ser esse segundo cérebro."
+    },
+    {
+      "start": 35.7,
+      "end": 37.1,
+      "text": "O que esses, né, o que essas plataformas de AI têm."
+    },
+    {
+      "start": 37.1,
+      "end": 39.3,
+      "text": "Elas têm ali um contexto que ela vai aprendendo de você, mas são pequenas coisas."
+    },
+    {
+      "start": 39.3,
+      "end": 41.5,
+      "text": "Se você entrar lá dentro, inclusive pra ver a memória, que essas ferramentas gravam de você."
+    },
+    {
+      "start": 41.5,
+      "end": 42.5,
+      "text": "Vocês vão ver pequenos parágrafos."
+    },
+    {
+      "start": 42.5,
+      "end": 43.1,
+      "text": "Né?"
+    },
+    {
+      "start": 43.1,
+      "end": 45.3,
+      "text": "Então, aquelas ferramentas não foram feitas pra armazenar informação."
+    },
+    {
+      "start": 45.3,
+      "end": 46.3,
+      "text": "E eu falei, legal, então eu vou conectar no Google Drive."
+    },
+    {
+      "start": 46.3,
+      "end": 47.7,
+      "text": "O meu chat GPT, e eu vou fazer isso meu segundo cérebro."
+    },
+    {
+      "start": 47.7,
+      "end": 48.3,
+      "text": "Né?"
+    },
+    {
+      "start": 48.3,
+      "end": 50.3,
+      "text": "Então, assim, tudo que eu tiver de documento, eu jogo no Google Drive."
+    },
+    {
+      "start": 50.3,
+      "end": 51.6,
+      "text": "E uso o chat GPT pra navegar nele."
+    },
+    {
+      "start": 51.6,
+      "end": 52.2,
+      "text": "Não funciona também."
+    },
+    {
+      "start": 52.2,
+      "end": 53.1,
+      "text": "Por quê? Porque o arquivo que tá no Google Drive."
+    },
+    {
+      "start": 53.1,
+      "end": 55.1,
+      "text": "Ele é um arquivo hard, é um PowerPoint, ele é um Word, né?"
+    },
+    {
+      "start": 55.1,
+      "end": 57.5,
+      "text": "Então, a AI não acessa aquilo de maneira tão clean quanto a gente acha que acessa."
+    },
+    {
+      "start": 57.5,
+      "end": 59.1,
+      "text": "E aí eu comecei a pesquisar ferramentas de conhecimento."
+    },
+    {
+      "start": 59.1,
+      "end": 61.5,
+      "text": "Que pudessem de fato ser rapidamente acessíveis por uma AI e me trazer sempre aquele conhecimento que eu precisava."
+    },
+    {
+      "start": 61.5,
+      "end": 63.7,
+      "text": "E aí basicamente cheguei no Notion e mais duas opções que existem no mercado são pouquíssimas."
+    },
+    {
+      "start": 63.7,
+      "end": 64.4,
+      "text": "Tá?"
+    },
+    {
+      "start": 64.4,
+      "end": 66.4,
+      "text": "É, e acabei adotando o Notion como segundo cérebro de AI, basicamente."
+    },
+    {
+      "start": 66.4,
+      "end": 67.2,
+      "text": "Então."
+    },
+    {
+      "start": 67.2,
+      "end": 68.1,
+      "text": "Acho que é um super projeto pessoal."
+    },
+    {
+      "start": 68.1,
+      "end": 69.4,
+      "text": "Que, assim, não tô nem falando da empresa, mas se vocês quiserem construir um segundo cérebro."
+    },
+    {
+      "start": 69.4,
+      "end": 70.1,
+      "text": "Né?"
+    },
+    {
+      "start": 70.1,
+      "end": 71.7,
+      "text": "Usem o Notion como uma tentativa, de verdade, pra mim funcionou."
+    },
+    {
+      "start": 71.7,
+      "end": 72.7,
+      "text": "Qual que é a diferença do Google Drive pro Notion?"
+    },
+    {
+      "start": 72.7,
+      "end": 74.1,
+      "text": "O Notion, você tem o conteúdo em texto."
+    },
+    {
+      "start": 74.1,
+      "end": 75.1,
+      "text": "Né? Você tem o conhecimento."
+    },
+    {
+      "start": 75.1,
+      "end": 77.3,
+      "text": "Então, no final do dia, hoje, o meu segundo cérebro, ele é chat GPT."
+    },
+    {
+      "start": 77.3,
+      "end": 78.5,
+      "text": "Mais do que Claude, eu uso Claude pra outras coisas."
+    },
+    {
+      "start": 78.5,
+      "end": 80.5,
+      "text": "Mas ele é chat GPT conectado no Notion e conectado no Google Drive."
+    },
+    {
+      "start": 80.5,
+      "end": 82.3,
+      "text": "Google Drive pra armazenar arquivo, não conhecimento, é diferente."
+    },
+    {
+      "start": 82.3,
+      "end": 83.4,
+      "text": "Notion pra armazenar conhecimento."
+    },
+    {
+      "start": 83.4,
+      "end": 83.8,
+      "text": "Tá?"
+    },
+    {
+      "start": 83.8,
+      "end": 85.4,
+      "text": "Então, vou dar uma das lógicas que eu faço, por exemplo."
+    },
+    {
+      "start": 85.4,
+      "end": 87.2,
+      "text": "Eu recebo um boletim financeiro de algumas newsletters."
+    },
+    {
+      "start": 87.2,
+      "end": 89.1,
+      "text": "E aí eu consigo, essa newsletter, ela transforma num conhecimento dentro do Notion."
+    },
+    {
+      "start": 89.1,
+      "end": 91.7,
+      "text": "Então, se eu quiser saber que eu já esqueci, obviamente, qual foi o impacto da guerra toda no petróleo esse ano."
+    },
+    {
+      "start": 91.7,
+      "end": 93.7,
+      "text": "Eu tenho armazenado nesse meu segundo cérebro, no conhecimento em vários posts lá dentro do Notion."
+    },
+    {
+      "start": 93.7,
+      "end": 94.6,
+      "text": "Entendeu? Que tão em formato de texto."
+    },
+    {
+      "start": 94.6,
+      "end": 97.4,
+      "text": "Então, assim, não tem como você construir um segundo cérebro só com hard drive, um Google Drive e uma AI."
+    },
+    {
+      "start": 97.4,
+      "end": 99.1,
+      "text": "Você precisa no meio do caminho de um lugar pra armazenar conhecimento."
+    },
+    {
+      "start": 99.1,
+      "end": 100.1,
+      "text": "E o Notion pra mim é esse lugar."
+    },
+    {
+      "start": 100.1,
+      "end": 101.5,
+      "text": "O que acontece é que o Notion obviamente acelerou essa jornada de AI."
+    },
+    {
+      "start": 101.5,
+      "end": 102.7,
+      "text": "E hoje eu não preciso mais do chat GPT."
+    },
+    {
+      "start": 102.7,
+      "end": 104.2,
+      "text": "Então, e até acho que os agentes do Notion tão performando pra muitas coisas melhor do que o chat GPT."
+    },
+    {
+      "start": 104.2,
+      "end": 106.1,
+      "text": "Então, eu consigo, eu tenho o meu chat GPT usando os agentes do Notion já nativos lá dentro."
+    },
+    {
+      "start": 106.1,
+      "end": 106.7,
+      "text": "Então, assim, tá super legal."
+    },
+    {
+      "start": 106.7,
+      "end": 107.4,
+      "text": "Né? Agora você tem o multi-agentes."
+    },
+    {
+      "start": 107.4,
+      "end": 108.6,
+      "text": "Dentro do Notion, você consegue personalizar agentes."
+    },
+    {
+      "start": 108.6,
+      "end": 110.1,
+      "text": "Mas a dica minha, meu depoimento antes de passar pro Paulo."
+    },
+    {
+      "start": 110.1,
+      "end": 111.1,
+      "text": "Que agora assim, já tá conectado aqui."
+    },
+    {
+      "start": 111.1,
+      "end": 111.6,
+      "text": "Já tá tudo certo aí?"
+    },
+    {
+      "start": 111.6,
+      "end": 112.1,
+      "text": "Enrolei bem?"
+    },
+    {
+      "start": 112.1,
+      "end": 112.5,
+      "text": "Enrolei bem."
+    },
+    {
+      "start": 112.5,
+      "end": 113.1,
+      "text": "Obrigado."
+    },
+    {
+      "start": 113.1,
+      "end": 114.1,
+      "text": "Mas é, tem assim, N vídeos, tá?"
+    },
+    {
+      "start": 114.1,
+      "end": 116.7,
+      "text": "Então, assim, mais do que eu mostrar a tela aqui durante 30 segundos do meu segundo cérebro."
+    },
+    {
+      "start": 116.7,
+      "end": 119.1,
+      "text": "Tem, se vocês colocarem no YouTube, Second Brain in Notion."
+    },
+    {
+      "start": 119.1,
+      "end": 121.1,
+      "text": "Vai trazer N tutoriais mostrando como que vocês montam um segundo cérebro no Notion."
+    },
+    {
+      "start": 121.1,
+      "end": 121.8,
+      "text": "E é muito útil."
+    },
+    {
+      "start": 121.8,
+      "end": 123.1,
+      "text": "Então, por exemplo, tá? Saúde."
+    },
+    {
+      "start": 123.1,
+      "end": 124.4,
+      "text": "Eu faço exame, eu tô fazendo um check-up anual desses."
+    },
+    {
+      "start": 124.4,
+      "end": 125.2,
+      "text": "Que a gente faz todo ano."
+    },
+    {
+      "start": 125.2,
+      "end": 127.1,
+      "text": "Eu pego o exame de sangue, pego tudo isso, jogo no Notion."
+    },
+    {
+      "start": 127.1,
+      "end": 129.1,
+      "text": "E não é o armazenamento do PDF, é o conteúdo do PDF que fica armazenado lá no Notion."
+    },
+    {
+      "start": 129.1,
+      "end": 131.7,
+      "text": "Então, se eu quiser saber todo meu histórico de saúde, assim, eu vou, eu tenho no meu segundo cérebro no Notion."
+    },
+    {
+      "start": 131.7,
+      "end": 132.3,
+      "text": "Entendeu?"
+    },
+    {
+      "start": 132.3,
+      "end": 134.3,
+      "text": "Então, entrem no YouTube, busquem tutoriais, tem tutorial de 10 minutos, tem tutorial de duas horas."
+    },
+    {
+      "start": 134.3,
+      "end": 135.8,
+      "text": "De como você cria um segundo cérebro no Notion."
+    },
+    {
+      "start": 135.8,
+      "end": 136.5,
+      "text": "Super útil."
+    },
+    {
+      "start": 136.5,
+      "end": 138.1,
+      "text": "É, e isso meio que mudou a minha interação com a AI."
+    },
+    {
+      "start": 138.1,
+      "end": 138.6,
+      "text": "Boa?"
+    },
+    {
+      "start": 138.6,
+      "end": 139.3,
+      "text": "Paulão, vê se tá funcionando aí."
+    },
+    {
+      "start": 139.3,
+      "end": 140.1,
+      "text": "Oi, oi, oi."
+    },
+    {
+      "start": 140.1,
+      "end": 141.1,
+      "text": "Acho que tem que ligar aqui, espera aí."
+    },
+    {
+      "start": 141.1,
+      "end": 142.1,
+      "text": "Ah, agora é."
+    },
+    {
+      "start": 142.1,
+      "end": 142.5,
+      "text": "Ah, foi?"
+    },
+    {
+      "start": 142.5,
+      "end": 143.3,
+      "text": "Foi, foi, foi."
+    },
+    {
+      "start": 143.3,
+      "end": 143.7,
+      "text": "Boa."
+    },
+    {
+      "start": 143.7,
+      "end": 145.3,
+      "text": "Paulão, mostra pra turma aí como que você tá usando AI."
+    },
+    {
+      "start": 145.3,
+      "end": 146.3,
+      "text": "Pode contar a história, fica à vontade."
+    },
+    {
+      "start": 146.3,
+      "end": 146.7,
+      "text": "Boa."
+    },
+    {
+      "start": 146.7,
+      "end": 148.1,
+      "text": "Bom, pessoal, é, prazer, meu nome é Paulo."
+    },
+    {
+      "start": 148.1,
+      "end": 149.4,
+      "text": "Eu sou fundador e CEO de uma startup chamada FINK."
+    },
+    {
+      "start": 149.4,
+      "end": 150.1,
+      "text": "É, o Paulo."
+    },
+    {
+      "start": 150.1,
+      "end": 150.6,
+      "text": "Desculpa te interromper."
+    },
+    {
+      "start": 150.6,
+      "end": 151.7,
+      "text": "O Paulo, cara, ele é o cara dos gadgets."
+    },
+    {
+      "start": 151.7,
+      "end": 152.3,
+      "text": "Esse óculos que ele tá usando."
+    },
+    {
+      "start": 152.3,
+      "end": 153.1,
+      "text": "Eu vou deixar você falar."
+    },
+    {
+      "start": 153.1,
+      "end": 153.6,
+      "text": "Vou desligar meu microfone."
+    },
+    {
+      "start": 153.6,
+      "end": 154.7,
+      "text": "O cara já ia falar isso, metade da palestra."
+    },
+    {
+      "start": 154.7,
+      "end": 156.1,
+      "text": "O cara já ia falar que eu tô colando aqui usando meu óculos."
+    },
+    {
+      "start": 156.1,
+      "end": 156.7,
+      "text": "É."
+    },
+    {
+      "start": 156.7,
+      "end": 157.5,
+      "text": "Não, eu acho assim, tô apresentando um pouco, né?"
+    },
+    {
+      "start": 157.5,
+      "end": 158.7,
+      "text": "Então, a FINK é uma empresa de tecnologia, a gente criou um software."
+    },
+    {
+      "start": 158.7,
+      "end": 161.1,
+      "text": "É, onde a gente instala o software nos computadores das grandes empresas."
+    },
+    {
+      "start": 161.1,
+      "end": 162.5,
+      "text": "E ele começa a entender como que cada pessoa trabalha no dia a dia."
+    },
+    {
+      "start": 162.5,
+      "end": 163.7,
+      "text": "Então, a gente é odiado pelo mercado."
+    },
+    {
+      "start": 163.7,
+      "end": 164.2,
+      "text": "Né?"
+    },
+    {
+      "start": 164.2,
+      "end": 165.5,
+      "text": "É, mas qual que é a ideia do software?"
+    },
+    {
+      "start": 165.5,
+      "end": 167.1,
+      "text": "É entender tanto jornada de trabalho, você deve ter visto o caso."
+    },
+    {
+      "start": 167.1,
+      "end": 169.1,
+      "text": "De um banco famoso no ano passado que demitiu mil pessoas que estavam em home office."
+    },
+    {
+      "start": 169.1,
+      "end": 171.1,
+      "text": "Que na verdade não estavam trabalhando tanto em home office."
+    },
+    {
+      "start": 171.1,
+      "end": 173.1,
+      "text": "É um dos insights que a nossa ferramenta acaba trazendo, mas ela também traz muito insight de melhoria de processo."
+    },
+    {
+      "start": 173.1,
+      "end": 175.1,
+      "text": "É, como que você usa os sistemas, quanto você copia e cola de um sistema pro outro."
+    },
+    {
+      "start": 175.1,
+      "end": 176.5,
+      "text": "Mostrando repetibilidade, mostrando os principais arquivos que você usa no dia a dia."
+    },
+    {
+      "start": 176.5,
+      "end": 178.1,
+      "text": "E que normalmente esses arquivos são conteúdos paralelos que você tem outro sistema."
+    },
+    {
+      "start": 178.1,
+      "end": 178.5,
+      "text": "É, então."
+    },
+    {
+      "start": 480.0,
+      "end": 481.23,
+      "text": "trazendo muitos insights, tanto no sentido de jornada de trabalho, é, People Analytics, ela entende qual que é o perfil operacional de cada pessoa, baseado nas ferramentas que você usa e na intensidade que você usa essas essas ferramentas."
+    },
+    {
+      "start": 481.23,
+      "end": 481.71,
+      "text": "E a parte de melhoria de processo e sistemas, tá?"
+    },
+    {
+      "start": 481.71,
+      "end": 481.95,
+      "text": "Então isso daí é um pouquinho do resumo do que que é a Finge."
+    },
+    {
+      "start": 482.21,
+      "end": 483.35,
+      "text": "Há três anos atrás, a gente entrou, é, de cabeça no que seria hoje conhecido como um modelo AI First, tá?"
+    },
+    {
+      "start": 483.35,
+      "end": 484.0,
+      "text": "É, foi logo depois da da saída do chat GPT, a gente é, resolveu que apostar nisso."
+    },
+    {
+      "start": 484.0,
+      "end": 485.31,
+      "text": "Então, enquanto muita gente estava ainda tentando entender ou nem estava sabendo o que que era chat GPT, a gente ficou sabendo bem cedo o que que estava acontecendo e a gente se enfio de cabeça para entender aquilo dali."
+    },
+    {
+      "start": 485.31,
+      "end": 486.0,
+      "text": "Ao compreender o tamanho da da da encrenca, eu chamei meus sócios e propus uma mudança radical na empresa."
+    },
+    {
+      "start": 486.0,
+      "end": 486.6,
+      "text": "Falei, olha, esse negócio aqui é é disruptivo."
+    },
+    {
+      "start": 486.6,
+      "end": 487.2,
+      "text": "A gente estava com 50 pessoas na empresa, estava fazendo um business plan de 150 pessoas para poder pegar investimento para crescer."
+    },
+    {
+      "start": 487.2,
+      "end": 487.7,
+      "text": "É, e eu falei, olha, é o contrário, a gente vai ter que enxugar."
+    },
+    {
+      "start": 487.7,
+      "end": 488.7,
+      "text": "É, a gente vai, vai, vai poder adotar o que a gente queria fazer lá no comecinho da empresa, que era um negócio de, é, um time super pequeno, super especializado e global, né?"
+    },
+    {
+      "start": 488.7,
+      "end": 489.4,
+      "text": "A gente tinha essa filosofia quando a empresa nasceu, mas foi muito difícil sustentar essa filosofia sem ter, por exemplo, o que a gente tem hoje, que são os agentes de IA."
+    },
+    {
+      "start": 489.4,
+      "end": 489.8,
+      "text": "É, e aí naquele momento, a gente resolveu, OK."
+    },
+    {
+      "start": 489.8,
+      "end": 490.3,
+      "text": "Vamos em frente, os sócios começaram com a brincadeira, fazendo os agentes na mão mesmo e aprendendo, para depois passar para o resto do time, né?"
+    },
+    {
+      "start": 490.6,
+      "end": 491.3,
+      "text": "É, parece que a gente fez tudo planejado, tudo lindo, maravilhoso, e na verdade não foi nada assim."
+    },
+    {
+      "start": 491.3,
+      "end": 492.0,
+      "text": "A gente tentou planejar um pouco a parte de gestão de mudança, etc, mas o nível de rejeição foi absurdo."
+    },
+    {
+      "start": 492.0,
+      "end": 492.8,
+      "text": "Então, cerca de metade do time saiu, espontânea, de uma forma espontânea, é, por rejeição à filosofia que a gente estava trazendo."
+    },
+    {
+      "start": 492.8,
+      "end": 493.3,
+      "text": "E aí, talvez alguns de vocês devam estar pensando, pô, mas, é, não é tão absurdo o que vocês estão colocando na mesa, mas há três anos atrás era."
+    },
+    {
+      "start": 493.3,
+      "end": 493.8,
+      "text": "O GPT era o 3.5, era burro, né?"
+    },
+    {
+      "start": 493.8,
+      "end": 494.7,
+      "text": "Então você chegava para um engenheiro de software e falava, olha, quem tem que desenvolver o software vai ser um agente de IA e não você, né?"
+    },
+    {
+      "start": 494.7,
+      "end": 495.0,
+      "text": "Não existia cloud code naquela época."
+    },
+    {
+      "start": 495.0,
+      "end": 495.7,
+      "text": "Então, para muitos profissionais, aquilo dali foi meio que, caramba, os caras estão viajando, eu não quero estar nesse nesse barco não."
+    },
+    {
+      "start": 495.7,
+      "end": 496.3,
+      "text": "Então a gente teve uma perda de talentos, pessoas muito boas, que a gente não queria perder, mas que acabaram saindo, mas a filosofia da empresa era aquela."
+    },
+    {
+      "start": 496.3,
+      "end": 496.7,
+      "text": "A gente ia ser AI First, é, e como é que o Notion entrou nessa história?"
+    },
+    {
+      "start": 497.0,
+      "end": 497.9,
+      "text": "Logo nos primeiros meses que a gente começou a criar os agentes de IA, é, a gente começou a se deparar com algumas decisões difíceis que todas as empresas que vão entrar nisso daí vão se deparar."
+    },
+    {
+      "start": 497.9,
+      "end": 498.7,
+      "text": "Que é, você tem um sistema muito bom pro humano, mas muito ruim pro agente."
+    },
+    {
+      "start": 498.7,
+      "end": 499.3,
+      "text": "Bom, quando você comprou o sistema, você não estava pensando num agente de IA, você estava pensando numa interface pro ser humano, né?"
+    },
+    {
+      "start": 499.3,
+      "end": 500.0,
+      "text": "Então a gente tinha, por exemplo, o Jira, que era o sistema de development, que a gente usava, né, para desenvolvedores e tal, para fazer todo o, a gestão das demandas e tal."
+    },
+    {
+      "start": 500.0,
+      "end": 500.5,
+      "text": "E a gente começou a colocar os agentes para fazer atualização no Jira."
+    },
+    {
+      "start": 500.5,
+      "end": 500.9,
+      "text": "E apesar do Jira ter API, as APIs eram péssimas."
+    },
+    {
+      "start": 500.9,
+      "end": 501.4,
+      "text": "E aquilo dali criou um, um primeiro problema que a gente teve que resolver dentro da empresa, que é."
+    },
+    {
+      "start": 501.4,
+      "end": 502.1,
+      "text": "Bom, a partir de agora, todos os sistemas da empresa precisam ser API First, e tem que ser API bom."
+    },
+    {
+      "start": 502.1,
+      "end": 502.4,
+      "text": "Então toda escolha de sistema dentro da empresa, não vai mais ser, ah, a interface bonitinha do Notion, tá?"
+    },
+    {
+      "start": 502.4,
+      "end": 503.2,
+      "text": "Inclusive, é, hoje, o Notion, ele é como se fosse um sistema operacional dentro da nossa empresa, é como se fosse uma base de dados dentro de muitas bases de dados que a gente tem."
+    },
+    {
+      "start": 503.2,
+      "end": 504.0,
+      "text": "Ao invés de eu fazer uma gestão de uma, numa planilha, eu faço uma gestão mais estruturada dentro do Notion, mas eu duvido que hoje na empresa alguém abra o Notion."
+    },
+    {
+      "start": 504.0,
+      "end": 504.3,
+      "text": "Eu duvido."
+    },
+    {
+      "start": 504.3,
+      "end": 505.0,
+      "text": "Porque já chegamos num nível onde quem faz o acesso ao Notion são os agentes."
+    },
+    {
+      "start": 505.0,
+      "end": 505.5,
+      "text": "A gente, quando entra no Notion, é mais para organizar ele, para organizar uma tabela, para organizar, é, é, uma estrutura para que os agentes possam consumir."
+    },
+    {
+      "start": 505.5,
+      "end": 506.1,
+      "text": "E qual foi o critério de escolha do Notion? Foram dois grandes critérios."
+    },
+    {
+      "start": 506.1,
+      "end": 506.8,
+      "text": "Um, assim, tinha material pra caramba na internet, é, de muita gente especializada e apaixonada, como você colocou."
+    },
+    {
+      "start": 506.8,
+      "end": 507.2,
+      "text": "É incrível para mim que tem o SAS, eu nunca vi um negócio desse."
+    },
+    {
+      "start": 507.2,
+      "end": 507.8,
+      "text": "É, é um negócio de, de realmente eles conseguiram criar uma marca que as pessoas adoram, né?"
+    },
+    {
+      "start": 507.8,
+      "end": 508.4,
+      "text": "Então é muita gente na internet fazendo vídeos de como é que se usa, o step by step, tal."
+    },
+    {
+      "start": 508.4,
+      "end": 508.7,
+      "text": "Então tinha muito material pra gente absorver, né?"
+    },
+    {
+      "start": 508.7,
+      "end": 509.3,
+      "text": "É, e o segundo, as APIs eram muito boas, muito fáceis de usar e muito completas, né?"
+    },
+    {
+      "start": 509.3,
+      "end": 510.0,
+      "text": "É, então a gente acabou adotando o Notion e tirando o Jira, é, e isso a gente fez num final de semana."
+    },
+    {
+      "start": 510.0,
+      "end": 510.5,
+      "text": "Por ter uma empresa pequena, é bom para isso, né?"
+    },
+    {
+      "start": 510.5,
+      "end": 511.0,
+      "text": "É, e com os donos mandando também, não tem muito o que fazer, né?"
+    },
+    {
+      "start": 511.0,
+      "end": 511.5,
+      "text": "O pessoal adorava o Jira, a gente falou, OK, mas não é para usar o Jira, é para usar o agente."
+    },
+    {
+      "start": 511.5,
+      "end": 511.7,
+      "text": "Ah, tá bom."
+    },
+    {
+      "start": 511.7,
+      "end": 512.0,
+      "text": "Né? Não é à toa que a gente perdeu mais gente, né?"
+    },
+    {
+      "start": 512.0,
+      "end": 512.5,
+      "text": "A gente já é bem, a gente já é bem fácil na comunicação, né?"
+    },
+    {
+      "start": 512.8,
+      "end": 513.3,
+      "text": "É, e aí a gente começou a usar o Notion como qualquer pessoa, né?"
+    },
+    {
+      "start": 513.3,
+      "end": 514.0,
+      "text": "Tem muito template, então tem muita coisa para você começar a fazer os primeiros passos na época que não tinha IA, né?"
+    },
+    {
+      "start": 514.0,
+      "end": 514.5,
+      "text": "É, e hoje, só para mostrar um pouco, eu vou mostrar alguns casos."
+    },
+    {
+      "start": 514.5,
+      "end": 515.1,
+      "text": "É, que provavelmente vão ser uns casos um pouco mais avançados."
+    },
+    {
+      "start": 515.1,
+      "end": 515.6,
+      "text": "E eu acho que isso daí é bom, porque casos normais, vocês acham no YouTube é muito fácil, tá?"
+    },
+    {
+      "start": 515.6,
+      "end": 516.2,
+      "text": "Eu vou mostrar alguns casos concretos da gente usando com agentes aqui dentro, tá?"
+    },
+    {
+      "start": 516.5,
+      "end": 517.0,
+      "text": "Isso daqui é um pouco do como que a gente organiza a Finge dentro do Notion, tá?"
+    },
+    {
+      "start": 517.0,
+      "end": 517.6,
+      "text": "Então, é, o Notion, ele é uma ferramenta estranha, porque ela é uma ferramenta faz tudo."
+    },
+    {
+      "start": 517.6,
+      "end": 518.1,
+      "text": "E normalmente é difícil você encontrar ferramentas que fazem tudo, né?"
+    },
+    {
+      "start": 518.1,
+      "end": 518.6,
+      "text": "É, ela é uma intranet, então você pode organizar todas as informações da empresa ali dentro para que você possa os funcionários entrarem e navegarem, né?"
+    },
+    {
+      "start": 518.6,
+      "end": 519.1,
+      "text": "É, ela é base de dados, então você pode criar diversas tabelas e bases de dados para, para você poder usar."
+    },
+    {
+      "start": 519.1,
+      "end": 519.6,
+      "text": "É, ela é agentes agora, então você pode criar agentes e rotinas lá dentro."
+    },
+    {
+      "start": 519.6,
+      "end": 520.0,
+      "text": "Ela tem integração com e-mail, ela é gestão de tarefas e demandas."
+    },
+    {
+      "start": 520.0,
+      "end": 520.3,
+      "text": "Então, o que que a gente começou a fazer?"
+    },
+    {
+      "start": 960.0,
+      "end": 970.56,
+      "text": "no final do dia a gente começou a substituir uma série de outras ferramentas que a gente tinha, por exemplo, CRM, Hubspot, que a gente tinha."
+    },
+    {
+      "start": 970.56,
+      "end": 973.56,
+      "text": "É, a gente substituiu e montou o CRM aqui dentro."
+    },
+    {
+      "start": 973.8,
+      "end": 983.16,
+      "text": "né? A gente já sabia o que que a gente queria, como que a gente queria, é muito mais fácil a gente manipular o Notion do que manipular qualquer outra ferramenta."
+    },
+    {
+      "start": 983.16,
+      "end": 987.96,
+      "text": "né? Porque quem cria base de dados é você, quem cria os campos são você, quem cria os fluxos, as fórmulas."
+    },
+    {
+      "start": 987.96,
+      "end": 994.56,
+      "text": "É, antes eram algumas coisas, eram mais complicadas, você criar uma fórmula dentro de uma, dentro de uma base de dados."
+    },
+    {
+      "start": 994.56,
+      "end": 1003.2,
+      "text": "Era tipo você conhecer uma fórmula de Excel, só que numa linguagem diferente, que era a linguagem do Notion, pra você montar uma fórmula aqui dentro pra poder montar um status automático aqui dentro, né?"
+    },
+    {
+      "start": 1003.2,
+      "end": 1011.36,
+      "text": "Hoje você com IA, você chega e fala pra ele como é que você quer a fórmula, eu monto a fórmula pra você em segundos, né?"
+    },
+    {
+      "start": 1011.96,
+      "end": 1016.4,
+      "text": "É, hoje o nosso, o nosso CRM, ele tá nessa principal tabela aqui."
+    },
+    {
+      "start": 1016.4,
+      "end": 1024.68,
+      "text": "Mas tem outras tabelinhas que estão, que são complementares, que você precisa ter, como a tabela de quais são os clientes, quais são os contatos, quais são as empresas, uma interligada à outra."
+    },
+    {
+      "start": 1025.4,
+      "end": 1028.44,
+      "text": "É, aqui dentro, então, por exemplo, eu tenho aqui."
+    },
+    {
+      "start": 1028.44,
+      "end": 1033.2,
+      "text": "Eu posso trabalhar com gráficos aqui dentro."
+    },
+    {
+      "start": 1033.2,
+      "end": 1038.6,
+      "text": "É, não é o melhor lugar pra, pra ter gráfico, na verdade toda essa porque não é o, o cor do Notion."
+    },
+    {
+      "start": 1038.6,
+      "end": 1043.4,
+      "text": "Mas ele já te entrega algumas possibilidades de você criar alguns gráficos lá dentro, né?"
+    },
+    {
+      "start": 1043.4,
+      "end": 1048.56,
+      "text": "É, você consegue criar vários filtros, então, por exemplo, aqui eu tenho os filtros de todas que estão prospectando."
+    },
+    {
+      "start": 1048.56,
+      "end": 1050.6,
+      "text": "Né? Então eu vou criando aqui vários filtros aqui."
+    },
+    {
+      "start": 1050.6,
+      "end": 1054.2,
+      "text": "Que eu vou tendo por etapa, é, então eu não consigo ver sem."
+    },
+    {
+      "start": 1054.2,
+      "end": 1056.6,
+      "text": "Todos os negócios que estão em hold, né?"
+    },
+    {
+      "start": 1056.6,
+      "end": 1060.2,
+      "text": "Quem são os negócios que estão no hold? Só um negócio que estavam avançando em algum momento."
+    },
+    {
+      "start": 1060.2,
+      "end": 1064.4,
+      "text": "Falou, ah, agora eu tô esperando a diretoria tomar uma decisão, né?"
+    },
+    {
+      "start": 1064.4,
+      "end": 1067.4,
+      "text": "Isso aqui é só, que eu tô mostrando que seria uma substituição de um CRM pra vocês, tá?"
+    },
+    {
+      "start": 1067.94,
+      "end": 1069.38,
+      "text": "É, se eu entro."
+    },
+    {
+      "start": 1074.0,
+      "end": 1075.56,
+      "text": "É, se eu entro aqui."
+    },
+    {
+      "start": 1077.6,
+      "end": 1080.6,
+      "text": "Isso aqui é um pouquinho da estrutura da, da nossa plataforma."
+    },
+    {
+      "start": 1080.6,
+      "end": 1084.2,
+      "text": "Então eu tenho o conceito geral, apresentação comercial da FINK."
+    },
+    {
+      "start": 1084.2,
+      "end": 1090.2,
+      "text": "Então, se qualquer pessoa quiser aprender sobre a FINK, como é que eu ganho a FINK, tá aqui dentro."
+    },
+    {
+      "start": 1090.2,
+      "end": 1094.4,
+      "text": "Porque os executivos escolhem FINK, o elevator pitch."
+    },
+    {
+      "start": 1094.4,
+      "end": 1097.4,
+      "text": "Descrição geral FINK para L&L."
+    },
+    {
+      "start": 1097.4,
+      "end": 1099.2,
+      "text": "O que que é isso daqui?"
+    },
+    {
+      "start": 1099.2,
+      "end": 1101.0,
+      "text": "Isso aqui é como se fosse um onboarding."
+    },
+    {
+      "start": 1101.0,
+      "end": 1107.6,
+      "text": "Então todo agente de IA que precisa, que é acionado na FINK, ele precisa saber o que que é FINK, porque o agente quando ele nasce, ele nasce genérico."
+    },
+    {
+      "start": 1107.6,
+      "end": 1109.4,
+      "text": "Né? Quem é? Onde que eu tô?"
+    },
+    {
+      "start": 1109.4,
+      "end": 1111.2,
+      "text": "Pensa, ele acabou de nascer."
+    },
+    {
+      "start": 1111.2,
+      "end": 1113.6,
+      "text": "Onde é que eu tô? Quem eu sou?"
+    },
+    {
+      "start": 1113.6,
+      "end": 1116.0,
+      "text": "Pra quem eu trabalho, né? Tá aqui."
+    },
+    {
+      "start": 1116.0,
+      "end": 1118.4,
+      "text": "Então você vai ver que esse texto aqui, ele tá em markdown."
+    },
+    {
+      "start": 1118.4,
+      "end": 1122.6,
+      "text": "Ele é um texto que foi desenhado, tá a formatação que a IA consegue ler mais rápido, né?"
+    },
+    {
+      "start": 1123.2,
+      "end": 1126.2,
+      "text": "É, aí aqui eu tenho o que que é a plataforma da FINK."
+    },
+    {
+      "start": 1126.2,
+      "end": 1127.88,
+      "text": "O produto, e aí se eu explodir aqui."
+    },
+    {
+      "start": 1127.88,
+      "end": 1130.4,
+      "text": "Eu tenho todos os conceitos, etc."
+    },
+    {
+      "start": 1130.4,
+      "end": 1134.6,
+      "text": "Ou seja, você vê que dá pra organizar bem a tua estrutura da empresa aqui dentro, tá?"
+    },
+    {
+      "start": 1135.2,
+      "end": 1137.0,
+      "text": "É, quando eu entro aqui."
+    },
+    {
+      "start": 1139.4,
+      "end": 1142.4,
+      "text": "Eu tenho aqui, por exemplo, o pipeline de desenvolvimento, né?"
+    },
+    {
+      "start": 1142.4,
+      "end": 1144.2,
+      "text": "Então, vou pegar aqui o."
+    },
+    {
+      "start": 1145.4,
+      "end": 1148.4,
+      "text": "Pegar aqui a base, vamos pegar aqui as nossas bases de dados."
+    },
+    {
+      "start": 1148.4,
+      "end": 1151.4,
+      "text": "Olha a quantidade de base de dados que a gente começa a ter."
+    },
+    {
+      "start": 1151.4,
+      "end": 1155.6,
+      "text": "Ou seja, cada uma basezinha de dados dessa é um mini sisteminha."
+    },
+    {
+      "start": 1155.6,
+      "end": 1158.6,
+      "text": "Então isso aqui é como se fosse um grande sistema pra empresa inteira."
+    },
+    {
+      "start": 1158.6,
+      "end": 1167.6,
+      "text": "Então aqui dentro eu tenho, por exemplo, objetivos, resultados chaves, contatos da equipe, eventos, lista de coisas, eventos, data mapping, rotina administrativa financeira, cadastre pagamentos automáticos."
+    },
+    {
+      "start": 1167.6,
+      "end": 1172.4,
+      "text": "SOPs, que são procedimentos operacionais padrão, que são os manualzinhos de trabalho, é, das pessoas."
+    },
+    {
+      "start": 1172.4,
+      "end": 1175.4,
+      "text": "É, eu tenho setup e implantação de clientes."
+    },
+    {
+      "start": 1175.4,
+      "end": 1178.4,
+      "text": "O que que é? O que que é isso daqui na prática, né?"
+    },
+    {
+      "start": 1178.4,
+      "end": 1183.2,
+      "text": "Toda nova implantação gera assim uma tarefa aqui dentro automaticamente, pra que a IA saiba qual é o checklist que ela tem pra poder trabalhar, né?"
+    },
+    {
+      "start": 1183.2,
+      "end": 1184.4,
+      "text": "Então."
+    },
+    {
+      "start": 1184.4,
+      "end": 1185.6,
+      "text": "É, a ideia é mostrar um pouquinho."
+    },
+    {
+      "start": 1185.6,
+      "end": 1188.6,
+      "text": "O quão avançado."
+    },
+    {
+      "start": 1190.4,
+      "end": 1191.6,
+      "text": "Show."
+    },
+    {
+      "start": 1192.2,
+      "end": 1193.88,
+      "text": "Entrei aqui."
+    },
+    {
+      "start": 1194.6,
+      "end": 1198.8,
+      "text": "Isso aqui, por exemplo, é uma integração nativa que o Notion tem."
+    },
+    {
+      "start": 1198.8,
+      "end": 1203.0,
+      "text": "Com o teu Gmail e com a tua agenda de reunião."
+    },
+    {
+      "start": 1203.0,
+      "end": 1206.6,
+      "text": "Então ele sabe que eu tenho uma reunião e ele já tá poupando aqui pra mim."
+    },
+    {
+      "start": 1206.6,
+      "end": 1210.2,
+      "text": "Caso eu queira, eu já entro na reunião por aqui, eu já começo a transcrever a reunião, né?"
+    },
+    {
+      "start": 1210.2,
+      "end": 1213.8,
+      "text": "Então por isso que é um sistema muito, muito abrangente, né?"
+    },
+    {
+      "start": 1213.8,
+      "end": 1216.2,
+      "text": "Ele mexe com muitas coisas ao mesmo tempo."
+    },
+    {
+      "start": 1216.2,
+      "end": 1219.2,
+      "text": "Você consegue integrar o teu e-mail, por exemplo, aqui dentro."
+    },
+    {
+      "start": 1219.2,
+      "end": 1221.6,
+      "text": "E fazer automações com o teu, com o teu e-mail, né?"
+    },
+    {
+      "start": 1222.2,
+      "end": 1223.4,
+      "text": "É, deixo."
+    },
+    {
+      "start": 1227.0,
+      "end": 1228.2,
+      "text": "Entrar."
+    },
+    {
+      "start": 1230.6,
+      "end": 1231.8,
+      "text": "Tá."
+    },
+    {
+      "start": 1231.8,
+      "end": 1233.6,
+      "text": "Eu vou mostrar agora pra vocês o seguinte."
+    },
+    {
+      "start": 1234.2,
+      "end": 1236.0,
+      "text": "Isso daqui são algumas automações que a gente tem, tá?"
+    },
+    {
+      "start": 1237.2,
+      "end": 1243.2,
+      "text": "É, qual é o, o principal, o principal stack que a gente começou a adotar no começo?"
+    },
+    {
+      "start": 1243.2,
+      "end": 1248.6,
+      "text": "Foi Notion como base de dados e como repositório de conhecimento, né?"
+    },
+    {
+      "start": 1248.6,
+      "end": 1252.2,
+      "text": "Como nosso sistema operacional pra gente operacionalizar a empresa."
+    },
+    {
+      "start": 1252.2,
+      "end": 1254.0,
+      "text": "Fica tudo dentro do Notion."
+    },
+    {
+      "start": 1254.6,
+      "end": 1257.6,
+      "text": "E Slack como comunicação."
+    },
+    {
+      "start": 1257.6,
+      "end": 1262.4,
+      "text": "E aí foi uma outra ferramenta que a gente substituiu, porque a gente usava o chat do, do Google, porque já estava integrado no Google."
+    },
+    {
+      "start": 1262.4,
+      "end": 1264.8,
+      "text": "É, e a API era muito ruim."
+    },
+    {
+      "start": 1264.8,
+      "end": 1267.2,
+      "text": "Então pra você conectar e tal."
+    },
+    {
+      "start": 1267.2,
+      "end": 1269.0,
+      "text": "A gente acabou adotando o Slack."
+    },
+    {
+      "start": 1269.0,
+      "end": 1271.4,
+      "text": "É, então Notion, Slack, o N N."
+    },
+    {
+      "start": 1271.4,
+      "end": 1274.4,
+      "text": "Para automações e agentes de IA, né?"
+    },
+    {
+      "start": 1275.0,
+      "end": 1276.2,
+      "text": "É, e de uma certa forma."
+    },
+    {
+      "start": 1278.0,
+      "end": 1279.2,
+      "text": "Que eu vou mostrar aqui."
+    },
+    {
+      "start": 1280.4,
+      "end": 1281.6,
+      "text": "É aqui, ó."
+    },
+    {
+      "start": 1281.6,
+      "end": 1284.0,
+      "text": "Esse daqui é um fluxo que a gente tem de churn."
+    },
+    {
+      "start": 1284.0,
+      "end": 1290.0,
+      "text": "Então todo cliente que a gente perde, que ele anuncia que não vai renovar contrato com a gente."
+    },
+    {
+      "start": 1290.0,
+      "end": 1294.2,
+      "text": "A gente ativa um fluxo de churn, e esse fluxo."
+    },
+    {
+      "start": 1294.2,
+      "end": 1298.4,
+      "text": "Como vocês podem ver aqui, tem uma integração direta com o Notion."
+    },
+    {
+      "start": 1298.4,
+      "end": 1301.4,
+      "text": "Que vai acessar essa tabelinha aqui, essa base de dados."
+    },
+    {
+      "start": 1306.2,
+      "end": 1307.4,
+      "text": "Eu me lembro aqui."
+    },
+    {
+      "start": 1307.4,
+      "end": 1310.4,
+      "text": "Acho que foi o que eu coloquei que eu estava nessa, nessa reunião aqui."
+    },
+    {
+      "start": 1310.4,
+      "end": 1311.6,
+      "text": "Deixa eu sair."
+    },
+    {
+      "start": 1440.0,
+      "end": 1441.23,
+      "text": "A sorte que eu tô super tranquilo, não tô vendendo nada pra vocês. Se eu tivesse vendendo, eu tava doido agora."
+    },
+    {
+      "start": 1441.23,
+      "end": 1443.5,
+      "text": "É, deixa eu pegar aqui qual que é a base de dados dessa daqui."
+    },
+    {
+      "start": 1443.5,
+      "end": 1444.2,
+      "text": "Acho que é de churn."
+    },
+    {
+      "start": 1447.0,
+      "end": 1448.0,
+      "text": "Base de dados."
+    },
+    {
+      "start": 1448.0,
+      "end": 1450.0,
+      "text": "Então aqui, como que funciona? A gente tem um formulário."
+    },
+    {
+      "start": 1450.0,
+      "end": 1452.0,
+      "text": "A gente preenche aqui, qual que é o cliente."
+    },
+    {
+      "start": 1452.0,
+      "end": 1455.0,
+      "text": "Motivo do churn, data fim do contrato, data do pedido, a gente submete."
+    },
+    {
+      "start": 1455.0,
+      "end": 1457.0,
+      "text": "E o que a gente faz isso daí?"
+    },
+    {
+      "start": 1457.0,
+      "end": 1460.0,
+      "text": "O N8N recebe essa informação daqui e ele começa todo o fluxo."
+    },
+    {
+      "start": 1460.0,
+      "end": 1465.0,
+      "text": "Para, no final das contas, mandar o e-mail pro cliente com todo o step by step do que que precisa ser feito em termos de tarefas."
+    },
+    {
+      "start": 1465.0,
+      "end": 1468.0,
+      "text": "É, startando um fluxo mesmo, operacional disso daqui, tá?"
+    },
+    {
+      "start": 1468.0,
+      "end": 1470.0,
+      "text": "Como vocês veem, nesse fluxo aqui."
+    },
+    {
+      "start": 1470.0,
+      "end": 1473.0,
+      "text": "É, uma, uma das partes que acontecem no nosso fluxo."
+    },
+    {
+      "start": 1473.0,
+      "end": 1477.0,
+      "text": "Como a gente é base de dados, a gente tem que propor pro cliente se ele não quer baixar a base de dados pra ele."
+    },
+    {
+      "start": 1477.0,
+      "end": 1482.0,
+      "text": "Caso contrário, pro LGPD, a gente vai destruir em 60 dias, porque a gente não tem mais contrato."
+    },
+    {
+      "start": 1482.0,
+      "end": 1485.0,
+      "text": "Após o encerramento de contrato, né?"
+    },
+    {
+      "start": 1485.0,
+      "end": 1489.0,
+      "text": "Então ele vai no Big Query e busca qual que é o tamanho dessa tabela, porque eu tenho que informar esse tamanho."
+    },
+    {
+      "start": 1489.0,
+      "end": 1493.0,
+      "text": "Como parte do offboarding do cliente, no e-mail do cliente. Olha, tem tanto de gigabytes essa essa base, e tal."
+    },
+    {
+      "start": 1493.0,
+      "end": 1496.0,
+      "text": "Isso aqui é um exemplo de, é, que é esse caso aqui do churn, né?"
+    },
+    {
+      "start": 1496.0,
+      "end": 1499.0,
+      "text": "É, esse outro, esse outro exemplo aqui é o dos nossos tickets."
+    },
+    {
+      "start": 1499.0,
+      "end": 1502.0,
+      "text": "É um outro sistema que a gente substituiu."
+    },
+    {
+      "start": 1502.0,
+      "end": 1505.0,
+      "text": "Então você pagou Notion, mas você tá levando um CRM, com, por exemplo, um Hubspot."
+    },
+    {
+      "start": 1505.0,
+      "end": 1510.0,
+      "text": "Você tá levando um sistema de ticket que talvez fosse um Zendesk, né?"
+    },
+    {
+      "start": 1510.0,
+      "end": 1513.0,
+      "text": "É, então aqui é a mesma coisa, a gente tem todo um sistema de, de ticket."
+    },
+    {
+      "start": 1513.0,
+      "end": 1516.0,
+      "text": "E que tem integrações nativas com o Notion, tá?"
+    },
+    {
+      "start": 1516.0,
+      "end": 1518.0,
+      "text": "É, o mais legal disso daqui."
+    },
+    {
+      "start": 1518.0,
+      "end": 1520.0,
+      "text": "É o seguinte."
+    },
+    {
+      "start": 1520.0,
+      "end": 1523.0,
+      "text": "Vocês devem estar olhando isso daqui e falar, nossa, isso aqui é super complexo, esse fluxo e tal."
+    },
+    {
+      "start": 1523.0,
+      "end": 1526.0,
+      "text": "É, hoje em dia a gente não faz mais os fluxos na mão, assim."
+    },
+    {
+      "start": 1526.0,
+      "end": 1528.0,
+      "text": "Todos os fluxos são feitos com Cloud Code."
+    },
+    {
+      "start": 1528.0,
+      "end": 1532.0,
+      "text": "Então eu consigo abrir o Cloud Code e falar, faça um fluxo automatizado, integrando o Notion, integrando o Slack."
+    },
+    {
+      "start": 1532.0,
+      "end": 1534.0,
+      "text": "Eu quero que faça isso, isso, isso, isso."
+    },
+    {
+      "start": 1534.0,
+      "end": 1536.0,
+      "text": "E ele monta isso daqui sozinho."
+    },
+    {
+      "start": 1536.0,
+      "end": 1538.0,
+      "text": "Tanto é que esse fluxo aqui que vocês estão vendo, tá uma bagunça."
+    },
+    {
+      "start": 1538.0,
+      "end": 1540.0,
+      "text": "Isso daqui foi feito pra A."
+    },
+    {
+      "start": 1540.0,
+      "end": 1542.0,
+      "text": "Porque o ser humano tem toque, né?"
+    },
+    {
+      "start": 1542.0,
+      "end": 1545.0,
+      "text": "Então não ia deixar esses negócios aqui tudo, pelo menos eu tenho, se eu olhasse esse negócio, eu ia ter que organizar."
+    },
+    {
+      "start": 1545.0,
+      "end": 1547.0,
+      "text": "É, mas hoje, eu posso."
+    },
+    {
+      "start": 1547.0,
+      "end": 1550.0,
+      "text": "E aí eu vou me arriscar muito, como é que a gente tá? Tem 5 minutos, né?"
+    },
+    {
+      "start": 1550.0,
+      "end": 1552.0,
+      "text": "Eu vou me arriscar muito e eu vou abrir aqui o Cloud Code."
+    },
+    {
+      "start": 1552.0,
+      "end": 1555.0,
+      "text": "E a gente vai fazer em vida real um sisteminha com com o Notion."
+    },
+    {
+      "start": 1557.0,
+      "end": 1559.0,
+      "text": "Aqui eu já perdi dois terços da população, né?"
+    },
+    {
+      "start": 1560.0,
+      "end": 1563.0,
+      "text": "Vocês já olharam assim, pelo amor de Deus."
+    },
+    {
+      "start": 1563.0,
+      "end": 1564.0,
+      "text": "Esse cara tá aí."
+    },
+    {
+      "start": 1564.0,
+      "end": 1566.0,
+      "text": "É, é o seguinte, pessoal."
+    },
+    {
+      "start": 1566.0,
+      "end": 1570.0,
+      "text": "Não se assuste porque isso daqui é uma IDE de programação, mas não é a gente que tá programando."
+    },
+    {
+      "start": 1570.0,
+      "end": 1572.0,
+      "text": "Quem tá programando é o agente."
+    },
+    {
+      "start": 1572.0,
+      "end": 1574.0,
+      "text": "Mas só que eu tenho que viver lá dentro."
+    },
+    {
+      "start": 1574.0,
+      "end": 1577.0,
+      "text": "É, então a gente tem que conversar com ele dentro dessa IDE, né?"
+    },
+    {
+      "start": 1577.0,
+      "end": 1580.0,
+      "text": "Aqui eu acionei o Cloud Code, ele tá aqui dentro do Visual Studio."
+    },
+    {
+      "start": 1580.0,
+      "end": 1582.0,
+      "text": "Ele consegue programar o que eu quiser, tá?"
+    },
+    {
+      "start": 1582.0,
+      "end": 1584.0,
+      "text": "Então vou chegar aqui pra ele e vou falar o seguinte."
+    },
+    {
+      "start": 1584.0,
+      "end": 1587.0,
+      "text": "Vamos montar um exemplo de, vamos lá, me dá uma sugestão aí de algum sisteminha, alguma coisa fácil pra vocês."
+    },
+    {
+      "start": 1587.0,
+      "end": 1589.0,
+      "text": "Qualificador de leads."
+    },
+    {
+      "start": 1589.0,
+      "end": 1590.0,
+      "text": "Como?"
+    },
+    {
+      "start": 1590.0,
+      "end": 1591.0,
+      "text": "Qualificador de leads."
+    },
+    {
+      "start": 1591.0,
+      "end": 1592.0,
+      "text": "Qualificador de leads."
+    },
+    {
+      "start": 1592.0,
+      "end": 1593.0,
+      "text": "Com o STR."
+    },
+    {
+      "start": 1593.0,
+      "end": 1595.0,
+      "text": "Vamos montar um exemplo de de um qualificador de leads."
+    },
+    {
+      "start": 1595.0,
+      "end": 1597.0,
+      "text": "Tem que ser um agente de A no N8N."
+    },
+    {
+      "start": 1597.0,
+      "end": 1599.0,
+      "text": "N8N e tem que usar o Notion como base de dados."
+    },
+    {
+      "start": 1601.0,
+      "end": 1603.0,
+      "text": "Beleza, agora a gente vai tomar um café."
+    },
+    {
+      "start": 1604.0,
+      "end": 1607.0,
+      "text": "É, enquanto ele, enquanto, vamos só, só ver aqui o que que ele vai pedir."
+    },
+    {
+      "start": 1607.0,
+      "end": 1610.0,
+      "text": "Se ele vai pedir alguma, alguma informação a mais."
+    },
+    {
+      "start": 1610.0,
+      "end": 1613.0,
+      "text": "Olha aqui, ó, já conectou no MCP do N8N."
+    },
+    {
+      "start": 1613.0,
+      "end": 1616.0,
+      "text": "Então ele já consegue integrar direto no N8N, da mesma forma que ele tem um MCP do Notion."
+    },
+    {
+      "start": 1616.0,
+      "end": 1619.0,
+      "text": "Então ele consegue já conversar direto com o Notion."
+    },
+    {
+      "start": 1619.0,
+      "end": 1621.0,
+      "text": "MCP e API é a mesma coisa."
+    },
+    {
+      "start": 1621.0,
+      "end": 1625.0,
+      "text": "A única coisa que com o MCP, ele é uma descrição melhor pra IA acessar a API."
+    },
+    {
+      "start": 1625.0,
+      "end": 1628.0,
+      "text": "É como se fosse um, um intermediário da API."
+    },
+    {
+      "start": 1628.0,
+      "end": 1632.0,
+      "text": "É, quando o meu não sabe o que que tem na API, o MCP é uma documentação que já, já diz pra ele."
+    },
+    {
+      "start": 1632.0,
+      "end": 1636.0,
+      "text": "Olha, aqui nessa API você consegue fazer isso, consegue fazer isso, e a IA vai lá e enxerga melhor a API pra poder trabalhar, tá?"
+    },
+    {
+      "start": 1636.0,
+      "end": 1638.0,
+      "text": "É, eu tô montando aqui."
+    },
+    {
+      "start": 1638.0,
+      "end": 1640.0,
+      "text": "Enquanto isso."
+    },
+    {
+      "start": 1640.0,
+      "end": 1642.0,
+      "text": "Eu vou dar só um pouco pra vocês."
+    },
+    {
+      "start": 1643.0,
+      "end": 1645.0,
+      "text": "É, Paulo, mostra rapidinho o Cambam de desenvolvimento."
+    },
+    {
+      "start": 1645.0,
+      "end": 1647.0,
+      "text": "Era interessante ver."
+    },
+    {
+      "start": 1647.0,
+      "end": 1648.0,
+      "text": "Tá bom."
+    },
+    {
+      "start": 1648.0,
+      "end": 1650.0,
+      "text": "Deixa eu mostrar então o seguinte."
+    },
+    {
+      "start": 1650.0,
+      "end": 1654.0,
+      "text": "A gente começou a avançar muito com o desenvolvimento de produto com IA, né?"
+    },
+    {
+      "start": 1654.0,
+      "end": 1657.0,
+      "text": "É, a escassez faz isso, com seis pessoas, você tem que começar a ter criatividade no negócio, né?"
+    },
+    {
+      "start": 1657.0,
+      "end": 1659.0,
+      "text": "É, o que que a gente fez?"
+    },
+    {
+      "start": 1659.0,
+      "end": 1661.0,
+      "text": "Antes era o o o fluxo era."
+    },
+    {
+      "start": 1661.0,
+      "end": 1663.0,
+      "text": "Alguém tem uma ideia."
+    },
+    {
+      "start": 1663.0,
+      "end": 1666.0,
+      "text": "Aí essa ideia é traduzida pra um gerente de produto."
+    },
+    {
+      "start": 1666.0,
+      "end": 1669.0,
+      "text": "Esse gerente do produto traduz a ideia, especifica e vai conversar com os desenvolvedores."
+    },
+    {
+      "start": 1669.0,
+      "end": 1672.0,
+      "text": "Aí cada desenvolvedor é incluído no processo e tem o cara de front-end, tem o cara de back-end, né?"
+    },
+    {
+      "start": 1672.0,
+      "end": 1675.0,
+      "text": "Faz-se 700.000 reuniões e aí começa a ser o cronograma pra você começar a desenvolver, né?"
+    },
+    {
+      "start": 1675.0,
+      "end": 1678.0,
+      "text": "Nisso daí já passou seis meses, você"
+    },
+    {
+      "start": 1920.0,
+      "end": 1922.76,
+      "text": "dependeu o time do negócio, mas é como era feito antes."
+    },
+    {
+      "start": 1922.76,
+      "end": 1930.08,
+      "text": "Agora com IA, você vai abrindo sessões no Cloud Code, por exemplo, e cada sessão você pode trabalhar num produto diferente."
+    },
+    {
+      "start": 1930.08,
+      "end": 1934.94,
+      "text": "Então, enquanto ela tá aqui montando esse sistema que você falou, eu posso abrir aqui uma outra sessão"
+    },
+    {
+      "start": 1934.94,
+      "end": 1936.74,
+      "text": "e começar um outro sistema."
+    },
+    {
+      "start": 1936.74,
+      "end": 1940.04,
+      "text": "Então, é meio louco, e como a gente começa a ficar meio psicopata nesse negócio,"
+    },
+    {
+      "start": 1940.04,
+      "end": 1945.5,
+      "text": "quando você vê, você tem 12 sessões abertas, trabalhando em 10, que você nunca trabalharia."
+    },
+    {
+      "start": 1945.5,
+      "end": 1949.46,
+      "text": "Mas como agora tem a disposição, recurso quase que infinito, você começa a colocar coisas para trabalhar, né?"
+    },
+    {
+      "start": 1949.46,
+      "end": 1951.74,
+      "text": "Você começa a sentir que a IA tá ociosa."
+    },
+    {
+      "start": 1951.74,
+      "end": 1954.38,
+      "text": "Aí você começa a pensar assim: \"Cara, não, não pode tá parado.\""
+    },
+    {
+      "start": 1954.38,
+      "end": 1956.3,
+      "text": "É, então, o que é que aconteceu?"
+    },
+    {
+      "start": 1956.3,
+      "end": 1958.34,
+      "text": "A gente começou a produzir muito."
+    },
+    {
+      "start": 1958.34,
+      "end": 1961.7,
+      "text": "É, e a gente começou a perceber que a gente era gargalo."
+    },
+    {
+      "start": 1961.7,
+      "end": 1966.5,
+      "text": "Você imagina que eu sozinho, eu passo a ter times de produto, de desenvolvimento de produto e limitados."
+    },
+    {
+      "start": 1966.5,
+      "end": 1969.56,
+      "text": "É quantas abas esse negócio aqui aguenta?"
+    },
+    {
+      "start": 1969.56,
+      "end": 1975.5,
+      "text": "Então, se eu aguentar 20 abas abertas, e a minha, a minha inscrição lá no cloud, não me bloquear por causa da quantidade de consumo que eu tô usando,"
+    },
+    {
+      "start": 1975.5,
+      "end": 1977.36,
+      "text": "eu posso continuar desenvolvendo, né?"
+    },
+    {
+      "start": 1977.36,
+      "end": 1979.34,
+      "text": "Só que o que é que acontece?"
+    },
+    {
+      "start": 1979.34,
+      "end": 1983.66,
+      "text": "Eu mando isso daqui pra fazer e eu pulo uma outra aba, enquanto eu tô especificando lá na outra aba um outro produto,"
+    },
+    {
+      "start": 1983.66,
+      "end": 1987.38,
+      "text": "esse carinha aqui já começa a ficar assim: \"E aí? Já terminei.\""
+    },
+    {
+      "start": 1987.38,
+      "end": 1990.08,
+      "text": "E aí você começa a ficar desesperado, porque você é o gargalo."
+    },
+    {
+      "start": 1990.08,
+      "end": 1996.5,
+      "text": "Então, assim, são 11, 12, 20 projetos ao mesmo tempo que tão trabalhando, tão lá esperando pra qual que é o feedback, e aí, entreguei, não entreguei?"
+    },
+    {
+      "start": 1996.5,
+      "end": 1997.76,
+      "text": "Então, o que é que a gente teve que fazer?"
+    },
+    {
+      "start": 1997.76,
+      "end": 2003.46,
+      "text": "A gente teve que criar um agent builder, que, na verdade, ele vai ficar supervisionando todos os agentes que estão produzindo."
+    },
+    {
+      "start": 2003.46,
+      "end": 2007.66,
+      "text": "E ele também cria novos agentes ou cria novos sistemas conforme a gente solicita."
+    },
+    {
+      "start": 2007.66,
+      "end": 2012.46,
+      "text": "Então, agora, já não tem mais o programador programando lá e falando o que que tem que fazer."
+    },
+    {
+      "start": 2012.46,
+      "end": 2016.3,
+      "text": "É todo mundo da empresa falando o que que tem que ajustar, o que que tem que construir."
+    },
+    {
+      "start": 2016.3,
+      "end": 2020.56,
+      "text": "E esse é o dashboard que a gente, que a gente tem, é, pra gerenciar esse caos, porque começa a virar um caos."
+    },
+    {
+      "start": 2020.56,
+      "end": 2026.56,
+      "text": "É como se você tivesse uma empresa que tá em hyper scale e tá entrando 32 pessoas por dia na tua empresa."
+    },
+    {
+      "start": 2026.56,
+      "end": 2030.7,
+      "text": "Tá nascendo 32 agentes por dia na tua empresa, cada um tá fazendo uma coisa, você tem que começar a coordenar esse negócio."
+    },
+    {
+      "start": 2030.7,
+      "end": 2033.46,
+      "text": "Então, esse carinha começa a coordenar todo o agente."
+    },
+    {
+      "start": 2033.46,
+      "end": 2035.38,
+      "text": "Ele cria novos agentes."
+    },
+    {
+      "start": 2035.38,
+      "end": 2037.66,
+      "text": "Ele e mata determinados agentes, ou a gente vai chamar de demitir,"
+    },
+    {
+      "start": 2037.66,
+      "end": 2040.66,
+      "text": "é, pra não ser tão, tão, tão direto."
+    },
+    {
+      "start": 2040.66,
+      "end": 2043.3,
+      "text": "Ele cria agentes, mata agentes, é, dá feedback para agentes."
+    },
+    {
+      "start": 2043.3,
+      "end": 2045.46,
+      "text": "E a gente vai gerenciando tudo aqui."
+    },
+    {
+      "start": 2045.46,
+      "end": 2048.46,
+      "text": "Então, por exemplo, aqui vai estar falando tudo que tá pendente, que tá escalado para um ser humano."
+    },
+    {
+      "start": 2048.46,
+      "end": 2052.3,
+      "text": "Ele, ele tá precisando de alguma informação e eu tenho que aprovar, rejeitar."
+    },
+    {
+      "start": 2052.3,
+      "end": 2054.1,
+      "text": "Eu tenho que falar com ele aqui."
+    },
+    {
+      "start": 2054.1,
+      "end": 2055.06,
+      "text": "E ele continua, tá?"
+    },
+    {
+      "start": 2055.06,
+      "end": 2058.66,
+      "text": "Então, ao invés de eu ficar olhando para várias sessões que estão abertas,"
+    },
+    {
+      "start": 2058.66,
+      "end": 2061.66,
+      "text": "essas sessões estão todas sendo abertas em servidor, eu não tô enxergando elas,"
+    },
+    {
+      "start": 2061.66,
+      "end": 2063.76,
+      "text": "mas tá tudo vindo para cá para um único lugar, tá?"
+    },
+    {
+      "start": 2063.76,
+      "end": 2065.56,
+      "text": "Tudo isso tá sendo gerenciado dentro do Notion."
+    },
+    {
+      "start": 2065.56,
+      "end": 2069.1,
+      "text": "Então, todas as tarefas, é como se fosse um time, realmente, fazendo tarefas num Kanban."
+    },
+    {
+      "start": 2069.1,
+      "end": 2071.08,
+      "text": "Então, tudo isso daí tá dentro do Notion, tá?"
+    },
+    {
+      "start": 2071.08,
+      "end": 2073.3,
+      "text": "É, então, essas são as pendências que a gente tem."
+    },
+    {
+      "start": 2073.3,
+      "end": 2076.36,
+      "text": "Aqui é, algumas, algumas estatísticas do que que tá, tá entregue, ó."
+    },
+    {
+      "start": 2076.36,
+      "end": 2079.3,
+      "text": "De 82, tem 11 entregues, taxa de sucesso, tempo médio por entregável que eles estão, que eles estão fazendo."
+    },
+    {
+      "start": 2079.3,
+      "end": 2081.64,
+      "text": "É, aqui é um cambanzinho."
+    },
+    {
+      "start": 2081.64,
+      "end": 2084.46,
+      "text": "Esse Kanban, ele nada mais é do que um reflexo do que tem lá no Notion, tá?"
+    },
+    {
+      "start": 2084.46,
+      "end": 2087.46,
+      "text": "Então, se eu entrar no Notion, eu vejo essas mesmas informações aqui, mas a base de dados é do Notion, tá?"
+    },
+    {
+      "start": 2087.46,
+      "end": 2089.38,
+      "text": "É, quando eu entro aqui,"
+    },
+    {
+      "start": 2093.04,
+      "end": 2096.34,
+      "text": "Aqui é uma coisa interessante que, deixa eu mostrar aqui."
+    },
+    {
+      "start": 2099.04,
+      "end": 2103.66,
+      "text": "Esses carinhas aqui são agentes que nascem fingindo que são consumidores."
+    },
+    {
+      "start": 2103.66,
+      "end": 2106.3,
+      "text": "Então, pra cada demanda,"
+    },
+    {
+      "start": 2106.3,
+      "end": 2109.3,
+      "text": "Como a gente viu a gargalo pra tudo, pra cada demanda,"
+    },
+    {
+      "start": 2109.3,
+      "end": 2111.64,
+      "text": "Eu tenho uma demanda."
+    },
+    {
+      "start": 2111.64,
+      "end": 2116.56,
+      "text": "O agente, quando ele, quando ele, é, pega aquela demanda nova pra produzir, e vai direcionar para um outro agente começar a prototizar,"
+    },
+    {
+      "start": 2116.56,
+      "end": 2120.7,
+      "text": "ele também ativa um outro agente que vai criar as personas, e eles vão ser os clientes consumidores."
+    },
+    {
+      "start": 2120.7,
+      "end": 2123.34,
+      "text": "E eles vêm pra cá."
+    },
+    {
+      "start": 2123.34,
+      "end": 2128.5,
+      "text": "E enquanto esses caras não tiverem satisfeitos com as entregas que estão sendo feitas, eles não dão o OK."
+    },
+    {
+      "start": 2128.5,
+      "end": 2132.1,
+      "text": "E é assim que vai validando o produto de uma forma mais automática, sem ter que passar por agente como, como teste, tá?"
+    },
+    {
+      "start": 2132.1,
+      "end": 2135.1,
+      "text": "É, enquanto isso, agora, deixa eu voltar lá para"
+    },
+    {
+      "start": 2135.1,
+      "end": 2137.38,
+      "text": "lá pro projetinho."
+    },
+    {
+      "start": 2137.38,
+      "end": 2139.3,
+      "text": "Ele falou aqui, ó: \"Tudo pronto.\""
+    },
+    {
+      "start": 2139.3,
+      "end": 2143.5,
+      "text": "Resumindo o que foi criado: quatro workflows de Jason, outros para importar no N2N, o workflow principal e tal."
+    },
+    {
+      "start": 2143.5,
+      "end": 2147.46,
+      "text": "Vou colocar aqui, ó: \"Coloque em produção e me passe o link das páginas no Notion.\""
+    },
+    {
+      "start": 2151.06,
+      "end": 2152.5,
+      "text": "Eu falei Notion, mas ele sabe que eu sou retardado,"
+    },
+    {
+      "start": 2152.5,
+      "end": 2154.3,
+      "text": "então ele vai, ele vai entender direitinho."
+    },
+    {
+      "start": 2158.68,
+      "end": 2161.38,
+      "text": "Isso daqui parece mágico, mas é por quê?"
+    },
+    {
+      "start": 2161.38,
+      "end": 2164.38,
+      "text": "Porque o nosso sistema, ele já tá com todas as credenciais lá dentro."
+    },
+    {
+      "start": 2164.38,
+      "end": 2168.34,
+      "text": "Aonde vocês vão quebrar muita cabeça é em criar as credenciais e dando acesso ao agente de IA às suas ferramentas."
+    },
+    {
+      "start": 2168.34,
+      "end": 2172.3,
+      "text": "Conforme ele vai tendo acesso às ferramentas, às bases de dados, ele começa a ficar mais autônomo."
+    },
+    {
+      "start": 2172.3,
+      "end": 2175.3,
+      "text": "Ele, ele te pede menos coisa, porque ele já sabe onde é que estão as, onde é que tá as tabelas,"
+    },
+    {
+      "start": 2175.3,
+      "end": 2177.76,
+      "text": "como é que ele consulta uma tabela no Notion."
+    },
+    {
+      "start": 2177.76,
+      "end": 2179.38,
+      "text": "Então, tá aqui, ó: Cloud IA e Notion."
+    },
+    {
+      "start": 2179.38,
+      "end": 2182.38,
+      "text": "Notion Search, ele tá procurando um projeto de automação no N2N."
+    },
+    {
+      "start": 2182.38,
+      "end": 2184.3,
+      "text": "Ó, tá criando a base de dados lá no Notion."
+    },
+    {
+      "start": 2187.3,
+      "end": 2188.68,
+      "text": "Ó, base de dados criada."
+    },
+    {
+      "start": 2193.3,
+      "end": 2195.34,
+      "text": "Mas antes de você pedir no Notion,"
+    },
+    {
+      "start": 2195.34,
+      "end": 2196.3,
+      "text": "Não."
+    },
+    {
+      "start": 2196.3,
+      "end": 2197.14,
+      "text": "Não."
+    },
+    {
+      "start": 2197.14,
+      "end": 2198.1,
+      "text": "Não, porque é"
+    },
+    {
+      "start": 2198.1,
+      "end": 2200.38,
+      "text": "Aqui é o seguinte, né? Ó, eu aqui, o ATP."
+    },
+    {
+      "start": 2200.38,
+      "end": 2201.64,
+      "text": "Ele vai usar o front-end do Notion?"
+    },
+    {
+      "start": 2201.64,
+      "end": 2204.1,
+      "text": "Ele vai, vai montar o front-end do jeito que a gente quiser, né?"
+    },
+    {
+      "start": 2204.1,
+      "end": 2207.34,
+      "text": "Nesse momento, eu não pedi um sistema pra ele, você percebeu?"
+    },
+    {
+      "start": 2207.34,
+      "end": 2209.38,
+      "text": "Qual que foi o meu pedido pra ele?"
+    },
+    {
+      "start": 2210.58,
+      "end": 2211.78,
+      "text": "Tá bom, tá montar."
+    },
+    {
+      "start": 2211.78,
+      "end": 2212.68,
+      "text": "Ó, muito bom."
+    },
+    {
+      "start": 2400.0,
+      "end": 2403.96,
+      "text": "Vamos montar um exemplo de qualificador de leads, tem que ser um agente de IA."
+    },
+    {
+      "start": 2403.96,
+      "end": 2406.72,
+      "text": "Ou seja, ele tá preocupado em montar o agente de IA."
+    },
+    {
+      "start": 2406.72,
+      "end": 2408.16,
+      "text": "O agente de IA tem o Notion."
+    },
+    {
+      "start": 2408.16,
+      "end": 2409.54,
+      "text": "O agente de IA não precisa de interface."
+    },
+    {
+      "start": 2409.54,
+      "end": 2410.44,
+      "text": "Olha a pegadinha."
+    },
+    {
+      "start": 2410.44,
+      "end": 2414.7,
+      "text": "A gente precisa de interface para poder trabalhar."
+    },
+    {
+      "start": 2414.7,
+      "end": 2419.5,
+      "text": "O agente de IA, ele só precisa das conexões diretamente no Notion e vai lá, consulta, escreve as coisas na base de dados, etc."
+    },
+    {
+      "start": 2420.76,
+      "end": 2422.56,
+      "text": "Aqui, ó, ele criou, ó."
+    },
+    {
+      "start": 2422.56,
+      "end": 2424.0,
+      "text": "A base de dados."
+    },
+    {
+      "start": 2424.0,
+      "end": 2425.56,
+      "text": "Vamos ver se vai ser acessada."
+    },
+    {
+      "start": 2426.28,
+      "end": 2428.32,
+      "text": "Ó, ele já criou a base de dados."
+    },
+    {
+      "start": 2428.32,
+      "end": 2431.38,
+      "text": "E ele criou três exemplos de leads, tá?"
+    },
+    {
+      "start": 2432.04,
+      "end": 2434.68,
+      "text": "É, o mais legal é que beleza, eu fiz isso daqui no code."
+    },
+    {
+      "start": 2434.68,
+      "end": 2435.76,
+      "text": "Se eu quisesse fazer isso daqui no Notion."
+    },
+    {
+      "start": 2436.54,
+      "end": 2438.4,
+      "text": "Era só chamar o narigudinho."
+    },
+    {
+      "start": 2439.3,
+      "end": 2443.2,
+      "text": "E eu falaria para ele para criar essa base de dados aqui."
+    },
+    {
+      "start": 2443.2,
+      "end": 2446.86,
+      "text": "E ele cria a base de dados, é, com total autonomia, né?"
+    },
+    {
+      "start": 2446.86,
+      "end": 2453.1,
+      "text": "Então eu posso pegar, por exemplo, uma planilha que eu tenho de gestão, eu pego essa planilha, copio as informações todas da planilha, jogo aqui nessa caixa de texto e falo para ele."
+    },
+    {
+      "start": 2453.1,
+      "end": 2457.3,
+      "text": "Cria uma base de dados, um sisteminha, assim, assim, assim."
+    },
+    {
+      "start": 2457.3,
+      "end": 2458.26,
+      "text": "E aí ele vai lá e cria."
+    },
+    {
+      "start": 2458.26,
+      "end": 2463.66,
+      "text": "A capacidade da IA do Notion é incrível, é uma das mais poderosas que a gente já viu."
+    },
+    {
+      "start": 2463.66,
+      "end": 2466.66,
+      "text": "Eu não sei nem qual que é o modelo que vocês usam por dentro, sabe?"
+    },
+    {
+      "start": 2467.2,
+      "end": 2472.3,
+      "text": "É, normalmente o Notion tá muito envolvido nos modelos de fronteira, então todo modelo novo que tá para ser lançado."
+    },
+    {
+      "start": 2472.3,
+      "end": 2477.76,
+      "text": "Você vê que normalmente eles chamam o pessoal da Notion para mostrar a capacidade, eles sempre recebem antes os modelos mais avançados."
+    },
+    {
+      "start": 2477.76,
+      "end": 2480.7,
+      "text": "Então, é muito, é muito poderoso isso daqui."
+    },
+    {
+      "start": 2480.7,
+      "end": 2482.56,
+      "text": "É, você consegue montar."
+    },
+    {
+      "start": 2483.46,
+      "end": 2484.3,
+      "text": "E aí eu vou."
+    },
+    {
+      "start": 2484.3,
+      "end": 2485.2,
+      "text": "Vou dar um exemplo aqui."
+    },
+    {
+      "start": 2487.6,
+      "end": 2488.5,
+      "text": "Vou pegar aqui, o seguinte."
+    },
+    {
+      "start": 2492.4,
+      "end": 2496.66,
+      "text": "Aqui era uma base de dados que a gente usava para proposta comercial, tá, com os clientes."
+    },
+    {
+      "start": 2497.2,
+      "end": 2499.36,
+      "text": "Eu vou pegar essas informações aqui."
+    },
+    {
+      "start": 2499.36,
+      "end": 2503.56,
+      "text": "Só para vocês verem a a potência do Notion na no uso de agentes de IA, tá?"
+    },
+    {
+      "start": 2504.1,
+      "end": 2507.46,
+      "text": "Eu vou pegar essa base de dados aqui, e eu vou pedir para ele replicar."
+    },
+    {
+      "start": 2507.46,
+      "end": 2510.76,
+      "text": "E montar a basezinha, a tabela dentro do Notion."
+    },
+    {
+      "start": 2512.2,
+      "end": 2513.1,
+      "text": "Vou abrir aqui um novo."
+    },
+    {
+      "start": 2516.1,
+      "end": 2517.3,
+      "text": "O Outlook eu não conheço, tá?"
+    },
+    {
+      "start": 2517.3,
+      "end": 2519.46,
+      "text": "O Google é totalmente integrado."
+    },
+    {
+      "start": 2519.46,
+      "end": 2520.66,
+      "text": "Então, se eu entrar aqui."
+    },
+    {
+      "start": 2521.56,
+      "end": 2522.58,
+      "text": "Aqui embaixo."
+    },
+    {
+      "start": 2523.0,
+      "end": 2525.46,
+      "text": "Tá vendo que aqui tem Notion Mail?"
+    },
+    {
+      "start": 2525.46,
+      "end": 2529.3,
+      "text": "Se eu clicar aqui, vocês vão ver todos os meus e-mails também no formato que tem no Gmail."
+    },
+    {
+      "start": 2530.02,
+      "end": 2532.66,
+      "text": "Então tá tudo aqui dentro, então daqui eu consigo fazer integrações entre bases de dados."
+    },
+    {
+      "start": 2532.66,
+      "end": 2537.46,
+      "text": "Colocar agente para vir o e-mail que chega, se for, precisar organizar alguma coisa, organiza dentro do Notion, tá?"
+    },
+    {
+      "start": 2538.48,
+      "end": 2539.38,
+      "text": "É, aqui, ó."
+    },
+    {
+      "start": 2540.1,
+      "end": 2543.46,
+      "text": "Consigo ver toda a minha caixa de e-mail por dentro do Notion e com isso daí eu consigo fazer automações."
+    },
+    {
+      "start": 2544.3,
+      "end": 2546.7,
+      "text": "É, crio uma tabela nova de propostas comerciais."
+    },
+    {
+      "start": 2547.3,
+      "end": 2550.3,
+      "text": "De teste."
+    },
+    {
+      "start": 2550.78,
+      "end": 2551.86,
+      "text": "E eu vou."
+    },
+    {
+      "start": 2552.1,
+      "end": 2554.5,
+      "text": "Vocês viram que eu copiei aquela planilha, né?"
+    },
+    {
+      "start": 2554.5,
+      "end": 2555.46,
+      "text": "Um pedaço da planilha."
+    },
+    {
+      "start": 2555.46,
+      "end": 2557.56,
+      "text": "Eu vou jogar ela aqui."
+    },
+    {
+      "start": 2557.56,
+      "end": 2560.26,
+      "text": "Desestruturado desse jeito aqui."
+    },
+    {
+      "start": 2560.26,
+      "end": 2561.16,
+      "text": "E vou mandar."
+    },
+    {
+      "start": 2561.58,
+      "end": 2566.5,
+      "text": "E ele vai criar uma tabela novinha no Notion com todas as informações que estavam ali, todos os campos, tudo organizadinho."
+    },
+    {
+      "start": 2566.5,
+      "end": 2572.56,
+      "text": "Ou seja, nem o trabalho hoje da gente ter que criar cada campinho e tal, eu não preciso ter mais esse esse esse trabalho, tá?"
+    },
+    {
+      "start": 2573.4,
+      "end": 2574.3,
+      "text": "Eu já, ó, ele tá criando aqui a base de dados."
+    },
+    {
+      "start": 2575.56,
+      "end": 2577.66,
+      "text": "Quanto isso, vamos dar uma olhadinha aqui."
+    },
+    {
+      "start": 2577.66,
+      "end": 2578.62,
+      "text": "Como é que tá o sistema."
+    },
+    {
+      "start": 2579.1,
+      "end": 2581.5,
+      "text": "Ó, para colocar o workflow em produção, eu preciso autenticar."
+    },
+    {
+      "start": 2581.5,
+      "end": 2583.66,
+      "text": "Rod, comando MCP."
+    },
+    {
+      "start": 2584.2,
+      "end": 2586.66,
+      "text": "Uso diretamente a API."
+    },
+    {
+      "start": 2587.2,
+      "end": 2588.1,
+      "text": "Vem no trem."
+    },
+    {
+      "start": 2591.7,
+      "end": 2592.6,
+      "text": "Opa."
+    },
+    {
+      "start": 2592.6,
+      "end": 2593.5,
+      "text": "Só, só pra te dizer isso."
+    },
+    {
+      "start": 2593.5,
+      "end": 2598.66,
+      "text": "Exatamente, a gente não precisa de nenhuma ferramenta, né? Para ele rodar do jeito que ele tá aí, é, tem uma base de conhecimento que você já ensinou ele, que você não precisou fazer agora. Então para ele acessar o seu ambiente de."
+    },
+    {
+      "start": 2598.66,
+      "end": 2601.3,
+      "text": "Então, provavelmente você já compartilhou chave, tudo com ele aí."
+    },
+    {
+      "start": 2601.3,
+      "end": 2604.3,
+      "text": "Então, já, você já ensinou ele, que você é, por isso que hoje você pode fazer uma pergunta, ele já vai criar dentro do seu ambiente de trabalho, né?"
+    },
+    {
+      "start": 2604.3,
+      "end": 2606.46,
+      "text": "Com todas as suas governanças, etc."
+    },
+    {
+      "start": 2606.46,
+      "end": 2608.5,
+      "text": "Mas isso é aos poucos, tá?"
+    },
+    {
+      "start": 2608.5,
+      "end": 2611.38,
+      "text": "Nada foi assim, ah, da noite pro dia, de repente, ele tá super alto por si."
+    },
+    {
+      "start": 2611.38,
+      "end": 2613.3,
+      "text": "Você vai fazer, a gente tá há três anos nisso."
+    },
+    {
+      "start": 2613.3,
+      "end": 2617.5,
+      "text": "Então, aos poucos, você vai organizando, você vai entendendo como é que, como é que vai funcionando e ele vai ficando mais, mais autônomo, tá?"
+    },
+    {
+      "start": 2618.34,
+      "end": 2619.3,
+      "text": "Boa."
+    },
+    {
+      "start": 2619.3,
+      "end": 2620.2,
+      "text": "Paulão."
+    },
+    {
+      "start": 2620.2,
+      "end": 2621.34,
+      "text": "Fechou, né?"
+    },
+    {
+      "start": 2621.34,
+      "end": 2622.3,
+      "text": "Eu sei que."
+    },
+    {
+      "start": 2622.3,
+      "end": 2623.2,
+      "text": "Exato."
+    },
+    {
+      "start": 2623.2,
+      "end": 2624.1,
+      "text": "Tem muita coisa."
+    },
+    {
+      "start": 2624.1,
+      "end": 2625.0,
+      "text": "Sim, e muita coisa."
+    },
+    {
+      "start": 2625.0,
+      "end": 2626.2,
+      "text": "Muita coisa."
+    },
+    {
+      "start": 2626.2,
+      "end": 2627.1,
+      "text": "Mas gente, palmas aí pro Paulo."
+    },
+    {
+      "start": 2627.1,
+      "end": 2627.76,
+      "text": "Obrigado."
+    },
+    {
+      "start": 2627.76,
+      "end": 2628.3,
+      "text": "Valeu."
+    },
+    {
+      "start": 2628.78,
+      "end": 2629.68,
+      "text": "Ó, só para, só para terminar aqui, ó."
+    },
+    {
+      "start": 2629.68,
+      "end": 2630.64,
+      "text": "Open database."
+    },
+    {
+      "start": 2630.64,
+      "end": 2632.56,
+      "text": "E terminou aqui o que a gente estava fazendo."
+    },
+    {
+      "start": 2634.0,
+      "end": 2635.08,
+      "text": "Já formatou as colunas."
+    },
+    {
+      "start": 2635.44,
+      "end": 2637.66,
+      "text": "Ele já montou todas as colunas aqui, ó."
+    },
+    {
+      "start": 2637.66,
+      "end": 2640.3,
+      "text": "Do que estava naquela planilha."
+    },
+    {
+      "start": 2640.3,
+      "end": 2642.7,
+      "text": "E com isso eu encerro a minha apresentação."
+    },
+    {
+      "start": 2642.7,
+      "end": 2643.36,
+      "text": "Boa."
+    },
+    {
+      "start": 2643.36,
+      "end": 2644.02,
+      "text": "Valeu, valeu."
+    },
+    {
+      "start": 2644.02,
+      "end": 2644.56,
+      "text": "Obrigado."
+    },
+    {
+      "start": 2645.1,
+      "end": 2647.56,
+      "text": "A gente só precisava de mais 30 minutos seus."
+    }
+  ],
+  "transcript": "Sulevi, esse é o meu. Vem cá, Paulão, é, gente, vamos lá. Eu vou, eu vou basicamente falar como é que eu tô usando Notion. Né? É, e por quê? Por que que eu uso Notion? E, e uso, assim, antes de usar na empresa, uso na física também há muito tempo. Né? E antes do Arthur chegar no Notion. Né? Então, bem antes, bem antes. E o Paulo, esse cara aqui, ele tem uma empresa praticamente autônoma. Tá? Que roda com AI agents. Então, e ele usa o Notion pra gerir o business inteiro. Tá? Então, acho que ele vai demonstrar aqui um pouquinho. Né? O que o Paulo tem pra mostrar, acho que é muito mais interessante. É, então, enquanto ele vai conectando, eu queria só falar por que que eu encontrei no Notion. A única solução de mercado pro momento de AI que a gente tá vivendo. Tá? Então, assim, qual que era a minha saga? Eu queria montar um segundo cérebro. Basicamente. Né? Então, obviamente não dá pra você lembrar de tudo. Você esquece as coisas, eu queria ficar também mais, mais esperto. Né? Em tudo que eu tava fazendo. Né? Gestão de saúde, gestão financeira, pessoal, e queria montar um segundo cérebro. Basicamente. E eu percebi que o chat GPT ou o Claude, que eu tava usando. Não foram desenhados para ser esse segundo cérebro. O que esses, né, o que essas plataformas de AI têm. Elas têm ali um contexto que ela vai aprendendo de você, mas são pequenas coisas. Se você entrar lá dentro, inclusive pra ver a memória, que essas ferramentas gravam de você. Vocês vão ver pequenos parágrafos. Né? Então, aquelas ferramentas não foram feitas pra armazenar informação. E eu falei, legal, então eu vou conectar no Google Drive. O meu chat GPT, e eu vou fazer isso meu segundo cérebro. Né? Então, assim, tudo que eu tiver de documento, eu jogo no Google Drive. E uso o chat GPT pra navegar nele. Não funciona também. Por quê? Porque o arquivo que tá no Google Drive. Ele é um arquivo hard, é um PowerPoint, ele é um Word, né? Então, a AI não acessa aquilo de maneira tão clean quanto a gente acha que acessa. E aí eu comecei a pesquisar ferramentas de conhecimento. Que pudessem de fato ser rapidamente acessíveis por uma AI e me trazer sempre aquele conhecimento que eu precisava. E aí basicamente cheguei no Notion e mais duas opções que existem no mercado são pouquíssimas. Tá? É, e acabei adotando o Notion como segundo cérebro de AI, basicamente. Então. Acho que é um super projeto pessoal. Que, assim, não tô nem falando da empresa, mas se vocês quiserem construir um segundo cérebro. Né? Usem o Notion como uma tentativa, de verdade, pra mim funcionou. Qual que é a diferença do Google Drive pro Notion? O Notion, você tem o conteúdo em texto. Né? Você tem o conhecimento. Então, no final do dia, hoje, o meu segundo cérebro, ele é chat GPT. Mais do que Claude, eu uso Claude pra outras coisas. Mas ele é chat GPT conectado no Notion e conectado no Google Drive. Google Drive pra armazenar arquivo, não conhecimento, é diferente. Notion pra armazenar conhecimento. Tá? Então, vou dar uma das lógicas que eu faço, por exemplo. Eu recebo um boletim financeiro de algumas newsletters. E aí eu consigo, essa newsletter, ela transforma num conhecimento dentro do Notion. Então, se eu quiser saber que eu já esqueci, obviamente, qual foi o impacto da guerra toda no petróleo esse ano. Eu tenho armazenado nesse meu segundo cérebro, no conhecimento em vários posts lá dentro do Notion. Entendeu? Que tão em formato de texto. Então, assim, não tem como você construir um segundo cérebro só com hard drive, um Google Drive e uma AI. Você precisa no meio do caminho de um lugar pra armazenar conhecimento. E o Notion pra mim é esse lugar. O que acontece é que o Notion obviamente acelerou essa jornada de AI. E hoje eu não preciso mais do chat GPT. Então, e até acho que os agentes do Notion tão performando pra muitas coisas melhor do que o chat GPT. Então, eu consigo, eu tenho o meu chat GPT usando os agentes do Notion já nativos lá dentro. Então, assim, tá super legal. Né? Agora você tem o multi-agentes. Dentro do Notion, você consegue personalizar agentes. Mas a dica minha, meu depoimento antes de passar pro Paulo. Que agora assim, já tá conectado aqui. Já tá tudo certo aí? Enrolei bem? Enrolei bem. Obrigado. Mas é, tem assim, N vídeos, tá? Então, assim, mais do que eu mostrar a tela aqui durante 30 segundos do meu segundo cérebro. Tem, se vocês colocarem no YouTube, Second Brain in Notion. Vai trazer N tutoriais mostrando como que vocês montam um segundo cérebro no Notion. E é muito útil. Então, por exemplo, tá? Saúde. Eu faço exame, eu tô fazendo um check-up anual desses. Que a gente faz todo ano. Eu pego o exame de sangue, pego tudo isso, jogo no Notion. E não é o armazenamento do PDF, é o conteúdo do PDF que fica armazenado lá no Notion. Então, se eu quiser saber todo meu histórico de saúde, assim, eu vou, eu tenho no meu segundo cérebro no Notion. Entendeu? Então, entrem no YouTube, busquem tutoriais, tem tutorial de 10 minutos, tem tutorial de duas horas. De como você cria um segundo cérebro no Notion. Super útil. É, e isso meio que mudou a minha interação com a AI. Boa? Paulão, vê se tá funcionando aí. Oi, oi, oi. Acho que tem que ligar aqui, espera aí. Ah, agora é. Ah, foi? Foi, foi, foi. Boa. Paulão, mostra pra turma aí como que você tá usando AI. Pode contar a história, fica à vontade. Boa. Bom, pessoal, é, prazer, meu nome é Paulo. Eu sou fundador e CEO de uma startup chamada FINK. É, o Paulo. Desculpa te interromper. O Paulo, cara, ele é o cara dos gadgets. Esse óculos que ele tá usando. Eu vou deixar você falar. Vou desligar meu microfone. O cara já ia falar isso, metade da palestra. O cara já ia falar que eu tô colando aqui usando meu óculos. É. Não, eu acho assim, tô apresentando um pouco, né? Então, a FINK é uma empresa de tecnologia, a gente criou um software. É, onde a gente instala o software nos computadores das grandes empresas. E ele começa a entender como que cada pessoa trabalha no dia a dia. Então, a gente é odiado pelo mercado. Né? É, mas qual que é a ideia do software? É entender tanto jornada de trabalho, você deve ter visto o caso. De um banco famoso no ano passado que demitiu mil pessoas que estavam em home office. Que na verdade não estavam trabalhando tanto em home office. É um dos insights que a nossa ferramenta acaba trazendo, mas ela também traz muito insight de melhoria de processo. É, como que você usa os sistemas, quanto você copia e cola de um sistema pro outro. Mostrando repetibilidade, mostrando os principais arquivos que você usa no dia a dia. E que normalmente esses arquivos são conteúdos paralelos que você tem outro sistema. É, então. trazendo muitos insights, tanto no sentido de jornada de trabalho, é, People Analytics, ela entende qual que é o perfil operacional de cada pessoa, baseado nas ferramentas que você usa e na intensidade que você usa essas essas ferramentas. E a parte de melhoria de processo e sistemas, tá? Então isso daí é um pouquinho do resumo do que que é a Finge. Há três anos atrás, a gente entrou, é, de cabeça no que seria hoje conhecido como um modelo AI First, tá? É, foi logo depois da da saída do chat GPT, a gente é, resolveu que apostar nisso. Então, enquanto muita gente estava ainda tentando entender ou nem estava sabendo o que que era chat GPT, a gente ficou sabendo bem cedo o que que estava acontecendo e a gente se enfio de cabeça para entender aquilo dali. Ao compreender o tamanho da da da encrenca, eu chamei meus sócios e propus uma mudança radical na empresa. Falei, olha, esse negócio aqui é é disruptivo. A gente estava com 50 pessoas na empresa, estava fazendo um business plan de 150 pessoas para poder pegar investimento para crescer. É, e eu falei, olha, é o contrário, a gente vai ter que enxugar. É, a gente vai, vai, vai poder adotar o que a gente queria fazer lá no comecinho da empresa, que era um negócio de, é, um time super pequeno, super especializado e global, né? A gente tinha essa filosofia quando a empresa nasceu, mas foi muito difícil sustentar essa filosofia sem ter, por exemplo, o que a gente tem hoje, que são os agentes de IA. É, e aí naquele momento, a gente resolveu, OK. Vamos em frente, os sócios começaram com a brincadeira, fazendo os agentes na mão mesmo e aprendendo, para depois passar para o resto do time, né? É, parece que a gente fez tudo planejado, tudo lindo, maravilhoso, e na verdade não foi nada assim. A gente tentou planejar um pouco a parte de gestão de mudança, etc, mas o nível de rejeição foi absurdo. Então, cerca de metade do time saiu, espontânea, de uma forma espontânea, é, por rejeição à filosofia que a gente estava trazendo. E aí, talvez alguns de vocês devam estar pensando, pô, mas, é, não é tão absurdo o que vocês estão colocando na mesa, mas há três anos atrás era. O GPT era o 3.5, era burro, né? Então você chegava para um engenheiro de software e falava, olha, quem tem que desenvolver o software vai ser um agente de IA e não você, né? Não existia cloud code naquela época. Então, para muitos profissionais, aquilo dali foi meio que, caramba, os caras estão viajando, eu não quero estar nesse nesse barco não. Então a gente teve uma perda de talentos, pessoas muito boas, que a gente não queria perder, mas que acabaram saindo, mas a filosofia da empresa era aquela. A gente ia ser AI First, é, e como é que o Notion entrou nessa história? Logo nos primeiros meses que a gente começou a criar os agentes de IA, é, a gente começou a se deparar com algumas decisões difíceis que todas as empresas que vão entrar nisso daí vão se deparar. Que é, você tem um sistema muito bom pro humano, mas muito ruim pro agente. Bom, quando você comprou o sistema, você não estava pensando num agente de IA, você estava pensando numa interface pro ser humano, né? Então a gente tinha, por exemplo, o Jira, que era o sistema de development, que a gente usava, né, para desenvolvedores e tal, para fazer todo o, a gestão das demandas e tal. E a gente começou a colocar os agentes para fazer atualização no Jira. E apesar do Jira ter API, as APIs eram péssimas. E aquilo dali criou um, um primeiro problema que a gente teve que resolver dentro da empresa, que é. Bom, a partir de agora, todos os sistemas da empresa precisam ser API First, e tem que ser API bom. Então toda escolha de sistema dentro da empresa, não vai mais ser, ah, a interface bonitinha do Notion, tá? Inclusive, é, hoje, o Notion, ele é como se fosse um sistema operacional dentro da nossa empresa, é como se fosse uma base de dados dentro de muitas bases de dados que a gente tem. Ao invés de eu fazer uma gestão de uma, numa planilha, eu faço uma gestão mais estruturada dentro do Notion, mas eu duvido que hoje na empresa alguém abra o Notion. Eu duvido. Porque já chegamos num nível onde quem faz o acesso ao Notion são os agentes. A gente, quando entra no Notion, é mais para organizar ele, para organizar uma tabela, para organizar, é, é, uma estrutura para que os agentes possam consumir. E qual foi o critério de escolha do Notion? Foram dois grandes critérios. Um, assim, tinha material pra caramba na internet, é, de muita gente especializada e apaixonada, como você colocou. É incrível para mim que tem o SAS, eu nunca vi um negócio desse. É, é um negócio de, de realmente eles conseguiram criar uma marca que as pessoas adoram, né? Então é muita gente na internet fazendo vídeos de como é que se usa, o step by step, tal. Então tinha muito material pra gente absorver, né? É, e o segundo, as APIs eram muito boas, muito fáceis de usar e muito completas, né? É, então a gente acabou adotando o Notion e tirando o Jira, é, e isso a gente fez num final de semana. Por ter uma empresa pequena, é bom para isso, né? É, e com os donos mandando também, não tem muito o que fazer, né? O pessoal adorava o Jira, a gente falou, OK, mas não é para usar o Jira, é para usar o agente. Ah, tá bom. Né? Não é à toa que a gente perdeu mais gente, né? A gente já é bem, a gente já é bem fácil na comunicação, né? É, e aí a gente começou a usar o Notion como qualquer pessoa, né? Tem muito template, então tem muita coisa para você começar a fazer os primeiros passos na época que não tinha IA, né? É, e hoje, só para mostrar um pouco, eu vou mostrar alguns casos. É, que provavelmente vão ser uns casos um pouco mais avançados. E eu acho que isso daí é bom, porque casos normais, vocês acham no YouTube é muito fácil, tá? Eu vou mostrar alguns casos concretos da gente usando com agentes aqui dentro, tá? Isso daqui é um pouco do como que a gente organiza a Finge dentro do Notion, tá? Então, é, o Notion, ele é uma ferramenta estranha, porque ela é uma ferramenta faz tudo. E normalmente é difícil você encontrar ferramentas que fazem tudo, né? É, ela é uma intranet, então você pode organizar todas as informações da empresa ali dentro para que você possa os funcionários entrarem e navegarem, né? É, ela é base de dados, então você pode criar diversas tabelas e bases de dados para, para você poder usar. É, ela é agentes agora, então você pode criar agentes e rotinas lá dentro. Ela tem integração com e-mail, ela é gestão de tarefas e demandas. Então, o que que a gente começou a fazer? no final do dia a gente começou a substituir uma série de outras ferramentas que a gente tinha, por exemplo, CRM, Hubspot, que a gente tinha. É, a gente substituiu e montou o CRM aqui dentro. né? A gente já sabia o que que a gente queria, como que a gente queria, é muito mais fácil a gente manipular o Notion do que manipular qualquer outra ferramenta. né? Porque quem cria base de dados é você, quem cria os campos são você, quem cria os fluxos, as fórmulas. É, antes eram algumas coisas, eram mais complicadas, você criar uma fórmula dentro de uma, dentro de uma base de dados. Era tipo você conhecer uma fórmula de Excel, só que numa linguagem diferente, que era a linguagem do Notion, pra você montar uma fórmula aqui dentro pra poder montar um status automático aqui dentro, né? Hoje você com IA, você chega e fala pra ele como é que você quer a fórmula, eu monto a fórmula pra você em segundos, né? É, hoje o nosso, o nosso CRM, ele tá nessa principal tabela aqui. Mas tem outras tabelinhas que estão, que são complementares, que você precisa ter, como a tabela de quais são os clientes, quais são os contatos, quais são as empresas, uma interligada à outra. É, aqui dentro, então, por exemplo, eu tenho aqui. Eu posso trabalhar com gráficos aqui dentro. É, não é o melhor lugar pra, pra ter gráfico, na verdade toda essa porque não é o, o cor do Notion. Mas ele já te entrega algumas possibilidades de você criar alguns gráficos lá dentro, né? É, você consegue criar vários filtros, então, por exemplo, aqui eu tenho os filtros de todas que estão prospectando. Né? Então eu vou criando aqui vários filtros aqui. Que eu vou tendo por etapa, é, então eu não consigo ver sem. Todos os negócios que estão em hold, né? Quem são os negócios que estão no hold? Só um negócio que estavam avançando em algum momento. Falou, ah, agora eu tô esperando a diretoria tomar uma decisão, né? Isso aqui é só, que eu tô mostrando que seria uma substituição de um CRM pra vocês, tá? É, se eu entro. É, se eu entro aqui. Isso aqui é um pouquinho da estrutura da, da nossa plataforma. Então eu tenho o conceito geral, apresentação comercial da FINK. Então, se qualquer pessoa quiser aprender sobre a FINK, como é que eu ganho a FINK, tá aqui dentro. Porque os executivos escolhem FINK, o elevator pitch. Descrição geral FINK para L&L. O que que é isso daqui? Isso aqui é como se fosse um onboarding. Então todo agente de IA que precisa, que é acionado na FINK, ele precisa saber o que que é FINK, porque o agente quando ele nasce, ele nasce genérico. Né? Quem é? Onde que eu tô? Pensa, ele acabou de nascer. Onde é que eu tô? Quem eu sou? Pra quem eu trabalho, né? Tá aqui. Então você vai ver que esse texto aqui, ele tá em markdown. Ele é um texto que foi desenhado, tá a formatação que a IA consegue ler mais rápido, né? É, aí aqui eu tenho o que que é a plataforma da FINK. O produto, e aí se eu explodir aqui. Eu tenho todos os conceitos, etc. Ou seja, você vê que dá pra organizar bem a tua estrutura da empresa aqui dentro, tá? É, quando eu entro aqui. Eu tenho aqui, por exemplo, o pipeline de desenvolvimento, né? Então, vou pegar aqui o. Pegar aqui a base, vamos pegar aqui as nossas bases de dados. Olha a quantidade de base de dados que a gente começa a ter. Ou seja, cada uma basezinha de dados dessa é um mini sisteminha. Então isso aqui é como se fosse um grande sistema pra empresa inteira. Então aqui dentro eu tenho, por exemplo, objetivos, resultados chaves, contatos da equipe, eventos, lista de coisas, eventos, data mapping, rotina administrativa financeira, cadastre pagamentos automáticos. SOPs, que são procedimentos operacionais padrão, que são os manualzinhos de trabalho, é, das pessoas. É, eu tenho setup e implantação de clientes. O que que é? O que que é isso daqui na prática, né? Toda nova implantação gera assim uma tarefa aqui dentro automaticamente, pra que a IA saiba qual é o checklist que ela tem pra poder trabalhar, né? Então. É, a ideia é mostrar um pouquinho. O quão avançado. Show. Entrei aqui. Isso aqui, por exemplo, é uma integração nativa que o Notion tem. Com o teu Gmail e com a tua agenda de reunião. Então ele sabe que eu tenho uma reunião e ele já tá poupando aqui pra mim. Caso eu queira, eu já entro na reunião por aqui, eu já começo a transcrever a reunião, né? Então por isso que é um sistema muito, muito abrangente, né? Ele mexe com muitas coisas ao mesmo tempo. Você consegue integrar o teu e-mail, por exemplo, aqui dentro. E fazer automações com o teu, com o teu e-mail, né? É, deixo. Entrar. Tá. Eu vou mostrar agora pra vocês o seguinte. Isso daqui são algumas automações que a gente tem, tá? É, qual é o, o principal, o principal stack que a gente começou a adotar no começo? Foi Notion como base de dados e como repositório de conhecimento, né? Como nosso sistema operacional pra gente operacionalizar a empresa. Fica tudo dentro do Notion. E Slack como comunicação. E aí foi uma outra ferramenta que a gente substituiu, porque a gente usava o chat do, do Google, porque já estava integrado no Google. É, e a API era muito ruim. Então pra você conectar e tal. A gente acabou adotando o Slack. É, então Notion, Slack, o N N. Para automações e agentes de IA, né? É, e de uma certa forma. Que eu vou mostrar aqui. É aqui, ó. Esse daqui é um fluxo que a gente tem de churn. Então todo cliente que a gente perde, que ele anuncia que não vai renovar contrato com a gente. A gente ativa um fluxo de churn, e esse fluxo. Como vocês podem ver aqui, tem uma integração direta com o Notion. Que vai acessar essa tabelinha aqui, essa base de dados. Eu me lembro aqui. Acho que foi o que eu coloquei que eu estava nessa, nessa reunião aqui. Deixa eu sair. A sorte que eu tô super tranquilo, não tô vendendo nada pra vocês. Se eu tivesse vendendo, eu tava doido agora. É, deixa eu pegar aqui qual que é a base de dados dessa daqui. Acho que é de churn. Base de dados. Então aqui, como que funciona? A gente tem um formulário. A gente preenche aqui, qual que é o cliente. Motivo do churn, data fim do contrato, data do pedido, a gente submete. E o que a gente faz isso daí? O N8N recebe essa informação daqui e ele começa todo o fluxo. Para, no final das contas, mandar o e-mail pro cliente com todo o step by step do que que precisa ser feito em termos de tarefas. É, startando um fluxo mesmo, operacional disso daqui, tá? Como vocês veem, nesse fluxo aqui. É, uma, uma das partes que acontecem no nosso fluxo. Como a gente é base de dados, a gente tem que propor pro cliente se ele não quer baixar a base de dados pra ele. Caso contrário, pro LGPD, a gente vai destruir em 60 dias, porque a gente não tem mais contrato. Após o encerramento de contrato, né? Então ele vai no Big Query e busca qual que é o tamanho dessa tabela, porque eu tenho que informar esse tamanho. Como parte do offboarding do cliente, no e-mail do cliente. Olha, tem tanto de gigabytes essa essa base, e tal. Isso aqui é um exemplo de, é, que é esse caso aqui do churn, né? É, esse outro, esse outro exemplo aqui é o dos nossos tickets. É um outro sistema que a gente substituiu. Então você pagou Notion, mas você tá levando um CRM, com, por exemplo, um Hubspot. Você tá levando um sistema de ticket que talvez fosse um Zendesk, né? É, então aqui é a mesma coisa, a gente tem todo um sistema de, de ticket. E que tem integrações nativas com o Notion, tá? É, o mais legal disso daqui. É o seguinte. Vocês devem estar olhando isso daqui e falar, nossa, isso aqui é super complexo, esse fluxo e tal. É, hoje em dia a gente não faz mais os fluxos na mão, assim. Todos os fluxos são feitos com Cloud Code. Então eu consigo abrir o Cloud Code e falar, faça um fluxo automatizado, integrando o Notion, integrando o Slack. Eu quero que faça isso, isso, isso, isso. E ele monta isso daqui sozinho. Tanto é que esse fluxo aqui que vocês estão vendo, tá uma bagunça. Isso daqui foi feito pra A. Porque o ser humano tem toque, né? Então não ia deixar esses negócios aqui tudo, pelo menos eu tenho, se eu olhasse esse negócio, eu ia ter que organizar. É, mas hoje, eu posso. E aí eu vou me arriscar muito, como é que a gente tá? Tem 5 minutos, né? Eu vou me arriscar muito e eu vou abrir aqui o Cloud Code. E a gente vai fazer em vida real um sisteminha com com o Notion. Aqui eu já perdi dois terços da população, né? Vocês já olharam assim, pelo amor de Deus. Esse cara tá aí. É, é o seguinte, pessoal. Não se assuste porque isso daqui é uma IDE de programação, mas não é a gente que tá programando. Quem tá programando é o agente. Mas só que eu tenho que viver lá dentro. É, então a gente tem que conversar com ele dentro dessa IDE, né? Aqui eu acionei o Cloud Code, ele tá aqui dentro do Visual Studio. Ele consegue programar o que eu quiser, tá? Então vou chegar aqui pra ele e vou falar o seguinte. Vamos montar um exemplo de, vamos lá, me dá uma sugestão aí de algum sisteminha, alguma coisa fácil pra vocês. Qualificador de leads. Como? Qualificador de leads. Qualificador de leads. Com o STR. Vamos montar um exemplo de de um qualificador de leads. Tem que ser um agente de A no N8N. N8N e tem que usar o Notion como base de dados. Beleza, agora a gente vai tomar um café. É, enquanto ele, enquanto, vamos só, só ver aqui o que que ele vai pedir. Se ele vai pedir alguma, alguma informação a mais. Olha aqui, ó, já conectou no MCP do N8N. Então ele já consegue integrar direto no N8N, da mesma forma que ele tem um MCP do Notion. Então ele consegue já conversar direto com o Notion. MCP e API é a mesma coisa. A única coisa que com o MCP, ele é uma descrição melhor pra IA acessar a API. É como se fosse um, um intermediário da API. É, quando o meu não sabe o que que tem na API, o MCP é uma documentação que já, já diz pra ele. Olha, aqui nessa API você consegue fazer isso, consegue fazer isso, e a IA vai lá e enxerga melhor a API pra poder trabalhar, tá? É, eu tô montando aqui. Enquanto isso. Eu vou dar só um pouco pra vocês. É, Paulo, mostra rapidinho o Cambam de desenvolvimento. Era interessante ver. Tá bom. Deixa eu mostrar então o seguinte. A gente começou a avançar muito com o desenvolvimento de produto com IA, né? É, a escassez faz isso, com seis pessoas, você tem que começar a ter criatividade no negócio, né? É, o que que a gente fez? Antes era o o o fluxo era. Alguém tem uma ideia. Aí essa ideia é traduzida pra um gerente de produto. Esse gerente do produto traduz a ideia, especifica e vai conversar com os desenvolvedores. Aí cada desenvolvedor é incluído no processo e tem o cara de front-end, tem o cara de back-end, né? Faz-se 700.000 reuniões e aí começa a ser o cronograma pra você começar a desenvolver, né? Nisso daí já passou seis meses, você dependeu o time do negócio, mas é como era feito antes. Agora com IA, você vai abrindo sessões no Cloud Code, por exemplo, e cada sessão você pode trabalhar num produto diferente. Então, enquanto ela tá aqui montando esse sistema que você falou, eu posso abrir aqui uma outra sessão e começar um outro sistema. Então, é meio louco, e como a gente começa a ficar meio psicopata nesse negócio, quando você vê, você tem 12 sessões abertas, trabalhando em 10, que você nunca trabalharia. Mas como agora tem a disposição, recurso quase que infinito, você começa a colocar coisas para trabalhar, né? Você começa a sentir que a IA tá ociosa. Aí você começa a pensar assim: \"Cara, não, não pode tá parado.\" É, então, o que é que aconteceu? A gente começou a produzir muito. É, e a gente começou a perceber que a gente era gargalo. Você imagina que eu sozinho, eu passo a ter times de produto, de desenvolvimento de produto e limitados. É quantas abas esse negócio aqui aguenta? Então, se eu aguentar 20 abas abertas, e a minha, a minha inscrição lá no cloud, não me bloquear por causa da quantidade de consumo que eu tô usando, eu posso continuar desenvolvendo, né? Só que o que é que acontece? Eu mando isso daqui pra fazer e eu pulo uma outra aba, enquanto eu tô especificando lá na outra aba um outro produto, esse carinha aqui já começa a ficar assim: \"E aí? Já terminei.\" E aí você começa a ficar desesperado, porque você é o gargalo. Então, assim, são 11, 12, 20 projetos ao mesmo tempo que tão trabalhando, tão lá esperando pra qual que é o feedback, e aí, entreguei, não entreguei? Então, o que é que a gente teve que fazer? A gente teve que criar um agent builder, que, na verdade, ele vai ficar supervisionando todos os agentes que estão produzindo. E ele também cria novos agentes ou cria novos sistemas conforme a gente solicita. Então, agora, já não tem mais o programador programando lá e falando o que que tem que fazer. É todo mundo da empresa falando o que que tem que ajustar, o que que tem que construir. E esse é o dashboard que a gente, que a gente tem, é, pra gerenciar esse caos, porque começa a virar um caos. É como se você tivesse uma empresa que tá em hyper scale e tá entrando 32 pessoas por dia na tua empresa. Tá nascendo 32 agentes por dia na tua empresa, cada um tá fazendo uma coisa, você tem que começar a coordenar esse negócio. Então, esse carinha começa a coordenar todo o agente. Ele cria novos agentes. Ele e mata determinados agentes, ou a gente vai chamar de demitir, é, pra não ser tão, tão, tão direto. Ele cria agentes, mata agentes, é, dá feedback para agentes. E a gente vai gerenciando tudo aqui. Então, por exemplo, aqui vai estar falando tudo que tá pendente, que tá escalado para um ser humano. Ele, ele tá precisando de alguma informação e eu tenho que aprovar, rejeitar. Eu tenho que falar com ele aqui. E ele continua, tá? Então, ao invés de eu ficar olhando para várias sessões que estão abertas, essas sessões estão todas sendo abertas em servidor, eu não tô enxergando elas, mas tá tudo vindo para cá para um único lugar, tá? Tudo isso tá sendo gerenciado dentro do Notion. Então, todas as tarefas, é como se fosse um time, realmente, fazendo tarefas num Kanban. Então, tudo isso daí tá dentro do Notion, tá? É, então, essas são as pendências que a gente tem. Aqui é, algumas, algumas estatísticas do que que tá, tá entregue, ó. De 82, tem 11 entregues, taxa de sucesso, tempo médio por entregável que eles estão, que eles estão fazendo. É, aqui é um cambanzinho. Esse Kanban, ele nada mais é do que um reflexo do que tem lá no Notion, tá? Então, se eu entrar no Notion, eu vejo essas mesmas informações aqui, mas a base de dados é do Notion, tá? É, quando eu entro aqui, Aqui é uma coisa interessante que, deixa eu mostrar aqui. Esses carinhas aqui são agentes que nascem fingindo que são consumidores. Então, pra cada demanda, Como a gente viu a gargalo pra tudo, pra cada demanda, Eu tenho uma demanda. O agente, quando ele, quando ele, é, pega aquela demanda nova pra produzir, e vai direcionar para um outro agente começar a prototizar, ele também ativa um outro agente que vai criar as personas, e eles vão ser os clientes consumidores. E eles vêm pra cá. E enquanto esses caras não tiverem satisfeitos com as entregas que estão sendo feitas, eles não dão o OK. E é assim que vai validando o produto de uma forma mais automática, sem ter que passar por agente como, como teste, tá? É, enquanto isso, agora, deixa eu voltar lá para lá pro projetinho. Ele falou aqui, ó: \"Tudo pronto.\" Resumindo o que foi criado: quatro workflows de Jason, outros para importar no N2N, o workflow principal e tal. Vou colocar aqui, ó: \"Coloque em produção e me passe o link das páginas no Notion.\" Eu falei Notion, mas ele sabe que eu sou retardado, então ele vai, ele vai entender direitinho. Isso daqui parece mágico, mas é por quê? Porque o nosso sistema, ele já tá com todas as credenciais lá dentro. Aonde vocês vão quebrar muita cabeça é em criar as credenciais e dando acesso ao agente de IA às suas ferramentas. Conforme ele vai tendo acesso às ferramentas, às bases de dados, ele começa a ficar mais autônomo. Ele, ele te pede menos coisa, porque ele já sabe onde é que estão as, onde é que tá as tabelas, como é que ele consulta uma tabela no Notion. Então, tá aqui, ó: Cloud IA e Notion. Notion Search, ele tá procurando um projeto de automação no N2N. Ó, tá criando a base de dados lá no Notion. Ó, base de dados criada. Mas antes de você pedir no Notion, Não. Não. Não, porque é Aqui é o seguinte, né? Ó, eu aqui, o ATP. Ele vai usar o front-end do Notion? Ele vai, vai montar o front-end do jeito que a gente quiser, né? Nesse momento, eu não pedi um sistema pra ele, você percebeu? Qual que foi o meu pedido pra ele? Tá bom, tá montar. Ó, muito bom. Vamos montar um exemplo de qualificador de leads, tem que ser um agente de IA. Ou seja, ele tá preocupado em montar o agente de IA. O agente de IA tem o Notion. O agente de IA não precisa de interface. Olha a pegadinha. A gente precisa de interface para poder trabalhar. O agente de IA, ele só precisa das conexões diretamente no Notion e vai lá, consulta, escreve as coisas na base de dados, etc. Aqui, ó, ele criou, ó. A base de dados. Vamos ver se vai ser acessada. Ó, ele já criou a base de dados. E ele criou três exemplos de leads, tá? É, o mais legal é que beleza, eu fiz isso daqui no code. Se eu quisesse fazer isso daqui no Notion. Era só chamar o narigudinho. E eu falaria para ele para criar essa base de dados aqui. E ele cria a base de dados, é, com total autonomia, né? Então eu posso pegar, por exemplo, uma planilha que eu tenho de gestão, eu pego essa planilha, copio as informações todas da planilha, jogo aqui nessa caixa de texto e falo para ele. Cria uma base de dados, um sisteminha, assim, assim, assim. E aí ele vai lá e cria. A capacidade da IA do Notion é incrível, é uma das mais poderosas que a gente já viu. Eu não sei nem qual que é o modelo que vocês usam por dentro, sabe? É, normalmente o Notion tá muito envolvido nos modelos de fronteira, então todo modelo novo que tá para ser lançado. Você vê que normalmente eles chamam o pessoal da Notion para mostrar a capacidade, eles sempre recebem antes os modelos mais avançados. Então, é muito, é muito poderoso isso daqui. É, você consegue montar. E aí eu vou. Vou dar um exemplo aqui. Vou pegar aqui, o seguinte. Aqui era uma base de dados que a gente usava para proposta comercial, tá, com os clientes. Eu vou pegar essas informações aqui. Só para vocês verem a a potência do Notion na no uso de agentes de IA, tá? Eu vou pegar essa base de dados aqui, e eu vou pedir para ele replicar. E montar a basezinha, a tabela dentro do Notion. Vou abrir aqui um novo. O Outlook eu não conheço, tá? O Google é totalmente integrado. Então, se eu entrar aqui. Aqui embaixo. Tá vendo que aqui tem Notion Mail? Se eu clicar aqui, vocês vão ver todos os meus e-mails também no formato que tem no Gmail. Então tá tudo aqui dentro, então daqui eu consigo fazer integrações entre bases de dados. Colocar agente para vir o e-mail que chega, se for, precisar organizar alguma coisa, organiza dentro do Notion, tá? É, aqui, ó. Consigo ver toda a minha caixa de e-mail por dentro do Notion e com isso daí eu consigo fazer automações. É, crio uma tabela nova de propostas comerciais. De teste. E eu vou. Vocês viram que eu copiei aquela planilha, né? Um pedaço da planilha. Eu vou jogar ela aqui. Desestruturado desse jeito aqui. E vou mandar. E ele vai criar uma tabela novinha no Notion com todas as informações que estavam ali, todos os campos, tudo organizadinho. Ou seja, nem o trabalho hoje da gente ter que criar cada campinho e tal, eu não preciso ter mais esse esse esse trabalho, tá? Eu já, ó, ele tá criando aqui a base de dados. Quanto isso, vamos dar uma olhadinha aqui. Como é que tá o sistema. Ó, para colocar o workflow em produção, eu preciso autenticar. Rod, comando MCP. Uso diretamente a API. Vem no trem. Opa. Só, só pra te dizer isso. Exatamente, a gente não precisa de nenhuma ferramenta, né? Para ele rodar do jeito que ele tá aí, é, tem uma base de conhecimento que você já ensinou ele, que você não precisou fazer agora. Então para ele acessar o seu ambiente de. Então, provavelmente você já compartilhou chave, tudo com ele aí. Então, já, você já ensinou ele, que você é, por isso que hoje você pode fazer uma pergunta, ele já vai criar dentro do seu ambiente de trabalho, né? Com todas as suas governanças, etc. Mas isso é aos poucos, tá? Nada foi assim, ah, da noite pro dia, de repente, ele tá super alto por si. Você vai fazer, a gente tá há três anos nisso. Então, aos poucos, você vai organizando, você vai entendendo como é que, como é que vai funcionando e ele vai ficando mais, mais autônomo, tá? Boa. Paulão. Fechou, né? Eu sei que. Exato. Tem muita coisa. Sim, e muita coisa. Muita coisa. Mas gente, palmas aí pro Paulo. Obrigado. Valeu. Ó, só para, só para terminar aqui, ó. Open database. E terminou aqui o que a gente estava fazendo. Já formatou as colunas. Ele já montou todas as colunas aqui, ó. Do que estava naquela planilha. E com isso eu encerro a minha apresentação. Boa. Valeu, valeu. Obrigado. A gente só precisava de mais 30 minutos seus."
+}

@@ -1,0 +1,99 @@
+1
+00:00:00,000 --> 00:00:01,230
+Ok, inclusive, né?
+
+2
+00:00:01,230 --> 00:00:10,530
+A gente fez uma parceria muito bacana no começo do ano com o Notion, o Arthur aí tá com um desafio de trazer Notion e implementar em todas as startups que existem no Brasil.
+
+3
+00:00:10,530 --> 00:00:12,030
+A gente fez uma parceria muito bacana, muito legal com ele.
+
+4
+00:00:12,030 --> 00:00:13,530
+E apresentei você aqui, muito obrigado também.
+
+5
+00:00:13,530 --> 00:00:14,530
+Muito obrigado.
+
+6
+00:00:14,530 --> 00:00:15,730
+Mari Razo, fantástica.
+
+7
+00:00:15,730 --> 00:00:16,130
+Obrigado.
+
+8
+00:00:16,130 --> 00:00:17,030
+Vamos botar esse aí.
+
+9
+00:00:17,030 --> 00:00:18,330
+Você vê, você vê o tamanho do meu slide, né?
+
+10
+00:00:18,330 --> 00:00:20,030
+Eu cheguei pro Bernard, falei, ah, o seguinte.
+
+11
+00:00:20,030 --> 00:00:23,530
+Quem tem que dar o show são esses caras que estão daqui pra cá, o Paulo, o Gustavo, o Vitor.
+
+12
+00:00:23,530 --> 00:00:27,530
+Eu só quero falar que o Notion tá aqui pra apoiar vocês, põe lá um slide com um QR code.
+
+13
+00:00:27,530 --> 00:00:31,030
+Já tô vendo um QR code ali, dois ali, três, então já tá começando a funcionar o QR code, né?
+
+14
+00:00:31,030 --> 00:00:32,030
+Já deu o ROI aí, ó.
+
+15
+00:00:32,030 --> 00:00:34,030
+Do outro lado, QR code brilhante.
+
+16
+00:00:34,030 --> 00:00:36,530
+Tem Notion Free, Notion Business AI for you all.
+
+17
+00:00:36,530 --> 00:00:37,230
+Free, né?
+
+18
+00:00:37,230 --> 00:00:40,530
+Basicamente, pessoal, eu vou contar uma história rápida, eu tenho 10 minutos aqui, se o Bernard me permite.
+
+19
+00:00:40,530 --> 00:00:45,030
+Eu fui founder, entrei nesse negócio de startups, eh, em 2011.
+
+20
+00:00:45,030 --> 00:00:49,530
+Cometi a loucura de sair de uma big corporation nordestina, bem famosa, depois, infelizmente, não tão famosa.
+
+21
+00:00:49,530 --> 00:00:52,530
+Nas páginas policiais, lá da Lava Jato.
+
+22
+00:00:52,530 --> 00:00:54,530
+Não preciso dizer o nome dela, né?
+
+23
+00:00:54,530 --> 00:00:57,030
+Eu trabalhei muito tempo nessa danada dessa empresa.
+
+24
+00:00:57,030 --> 00:00:59,030
+E falei, não, não quero mais isso pra minha vida.
+
+25
+00:00:59,030 --> 00:01:40,530
+Eu vou sair, eu tinha 24 anos, e eu falei, eu vou sair lá em Recife, imagina, e vou montar uma startup, né? Coloquei a startup no Porto Digital, todo mundo conhece aqui, quem nunca ouviu falar do Porto Digital, todo mundo conhece o Porto Digital, né? Hoje é uma referência aí nacional, mas naquela época nem todo mundo conhecia, Vitor, o Porto Digital. Com o Porto Digital, chegou um cara maluco lá, Marcelo Sales, eu não sei quem conhece, tinha acabado de criar uma aceleradora, 211, 2112, que ninguém até hoje consegue falar o nome do negócio, é 2112, né? Lembra disso? Falou, eu quero vocês no Rio de Janeiro, tô lançando uma aceleradora do Brasil. Falei, vamos nessa. Pegamos, né? Nordestinos retirantes, pegamos o pau de arara e saímos de Recife pro Rio de Janeiro pra abrir uma startup, como founder de startup. E aí que eu entrei nesse mundo que tô até hoje, né? Então isso foi final de 2011 pra 2012. Então passei por toda essa jornada aí de, eh, anjo. Eh, tive um primeiro, meu primeiro anjo é um cara hoje super ativo, Vlado Teixeira, não sei se vocês conhecem o Vlado, alguém conhece aqui o Vlado? Algumas cabeças. Foi o primeiro investimento do Vlado, né? Ele tinha acabado de começar também nesse ambiente, investiu, anjo. Depois, fizemos Series A com a Perform Investimentos, não sei se vocês conhecem também o Patusso, o Beto, tal. Anyway, e aí passei, então aí a, eh, mais ou menos 15 anos, né, desse ambiente. E lá em São Francisco, uma empresa chamada Notion, começou a ver o Brasil aparecer no seu dashboard, né? Danado, Brasil. Não tinha ninguém aqui. Não tinha uma pessoa, não tinha um CNPJ, nada. Mas o Brasil começou a aparecer lá em São Francisco, onde fica a sede lá na Califórnia do Notion. E falaram, pô, esses negócios deve ter alguma atração. Vamos colocar um cara lá, este que está aqui, né? Pra ver se esse negócio dá certo. E eu entrei, saí da Zedesk, porque eu fiquei, inclusive, fiz muita parceria, né, Gustavo, com a Zedesk aqui, fiz com a Anari na época também, na Monex, né? E novembro, pessoal, basicamente o Notion chega ao Brasil com esta pessoa que vos fala, né? Me surpreendi, primeiro com a quantidade de Notion users e lovers, que aí, acho que é o mais interessante, no Brasil. Eu achei que tinha pouquíssimos usuários. Não, são milhares e milhares. E apaixonados. Basta ver se vocês quiserem ver meus últimos posts no LinkedIn, e olha que eu não sou nenhum influencer, né? Até sou um cara, nem Instagram eu tenho, eu sou um cara mais reservado. Mas assim, é um post falando do Notion, eu amo, não vivo sem, eu é maravilhoso. Então assim, foi a primeira vez, eh, Mari, que eu falo que eu não tenho cliente, eu tenho fã. Porque o pessoal usa, adora. O Vitor tentou tirar umas duas vezes lá da Gabriel, o pessoal fez motim, disse que ia tirar ele, fazer greve de fome pra ele não fazer isso, né? Então assim, me surpreendi. E a gente tá crescendo absurdamente. A gente chegou, pra vocês terem uma ideia, isso é público, posso falar. O Notion quando eu entrei, era o quinto maior mercado do mundo no Brasil, para startups. Então tava ali, Estados Unidos, não dá pra comparar. Tínhamos, eh, Índia, também gigante, né? Reino Unido, França e Brasil. E em seis meses, com muita alegria e após alinhar com o meu PIAR e ter permitido falar isso pra empresa e sair da empresa, eh, fomos pra segundo lugar. Então, triplicamos o número de startups em seis meses que estão usando o Notion, né? Só com essas, só com um pequeno, só com um QR code, quer dizer. Nem PowerPoint eu preciso, só um QR code. E botins pra não sair também. Então assim, eh, quem não conhece, vamos fazer essa pergunta, alguém não conhece? Todo mundo conhece, né? Todo mundo conhece. Alguém nunca usou? Vamos ver quem nunca usou o Notion, uma. Só uma pessoa. Então, começou a nomear, né? Ana Carolina Maia da Silva. Pronto. Falta você, seu QR code, pra você levar a gente pro primeiro lugar, já pensou? Então, esse QR code é uma parceria com o distrito. Estamos aí com o lugar dado com os, os Gustavos, eu brinco, né? É uma parceria muito mais Arthur e Gustavos do que somente Notion, porque a gente faz coisas desde 2022 que a gente faz as coisas com vocês, em outras CNPJs, né? Então, aproveita, era isso que eu queria deixar essa mensagem. É uma plataforma que quem de fato usa, se apaixona, gosta. E a gente tem esse interesse de diminuir essa barreira. Então, esse QR code vai permitir vocês usarem a melhor versão, Business AI, que aí o AI tá fantástico, né? Eu tô ontem, eu tava falando com uma pessoa que falou, eu abri o Notion, tomei um susto, com a página em branco. O que eu faço com isso? Já sei. Abriu o AI, eu nose, que eu chamo de nose, que é um bonequinho que tem um narigão. Cariosamente, nose. Começou a conversar com o nose, e o nose foi ensinando, fazendo. E ela disse que montou, a empresa dela toda hoje no Notion. Então, tem essa facilidade já, né? Usar gente, você programa a gente pra fazer tarefas, quando você tá dormindo, a gente tá trabalhando. É maravilhoso, né? Então, aproveita essa oportunidade. Obrigado, distrito, obrigado, Gabriel, por ter, eh, aceitado o nosso convite. E conte comigo, estaremos aqui no happy hour. Beleza? Obrigado, pessoal. Valeu.
