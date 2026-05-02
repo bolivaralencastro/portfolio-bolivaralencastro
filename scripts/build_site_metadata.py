@@ -18,7 +18,7 @@ from typing import List
 from urllib.parse import urlparse
 
 BASE_URL_DEFAULT = "https://bolivaralencastro.com.br"
-ROOT_PAGES = ["index.html", "about.html", "blog.html", "projects.html", "now.html"]
+ROOT_PAGES = ["index.html", "about.html", "blog.html", "projects.html", "now.html", "links.html"]
 FEED_AUTHOR_NAME = "Bolívar Alencastro"
 FEED_AUTHOR_FALLBACK = "Bolivar Alencastro"
 LISTING_CARD_FILENAMES = ("card.png", "card.webp", "cover.png", "cover.webp")
@@ -464,6 +464,77 @@ def build_featured_projects_html(projects: list[dict], limit: int = 3) -> str:
     return build_projects_list_html(projects[:limit])
 
 
+def build_links_latest_post_html(latest_post: dict) -> str:
+    title = html.escape(latest_post["title"])
+    summary = html.escape(latest_post["summary"])
+    href = html.escape(latest_post["href"])
+    cover = html.escape(latest_post["listing_cover_html"])
+    date_iso = latest_post["published"].date().isoformat()
+    date_human = format_pt_date_short(latest_post["published"])
+    size_attrs = ""
+    if latest_post["listing_cover_width"] and latest_post["listing_cover_height"]:
+        size_attrs = (
+            f' width="{latest_post["listing_cover_width"]}"'
+            f' height="{latest_post["listing_cover_height"]}"'
+        )
+
+    return "\n".join(
+        [
+            '      <article class="links-feature-card links-feature-post col-12 h-entry">',
+            f'        <a href="{href}" class="links-feature-cover" aria-label="Abrir post: {title}">',
+            f'          <img src="{cover}" alt="Capa do post: {title}" loading="lazy" decoding="async"{size_attrs}>',
+            "        </a>",
+            '        <div class="links-feature-body">',
+            '          <p class="meta">Post mais recente</p>',
+            f'          <h3 class="p-name"><a href="{href}" class="u-url">{title}</a></h3>',
+            f'          <p class="p-summary">{summary}</p>',
+            f'          <time class="dt-published" datetime="{date_iso}">{date_human}</time>',
+            '        </div>',
+            "      </article>",
+        ]
+    )
+
+
+def build_links_featured_project_html(project: dict) -> str:
+    title = html.escape(project["title"])
+    description = html.escape(project["description"])
+    href = html.escape(project["href"])
+    cover = html.escape(project["listing_cover_html"])
+    size_attrs = ""
+    if project["listing_cover_width"] and project["listing_cover_height"]:
+        size_attrs = f' width="{project["listing_cover_width"]}" height="{project["listing_cover_height"]}"'
+
+    return "\n".join(
+        [
+            '      <article class="links-feature-card links-feature-project col-12">',
+            f'        <a href="{href}" class="links-feature-cover" aria-label="Abrir projeto: {title}">',
+            f'          <img src="{cover}" alt="Capa do projeto: {title}" loading="lazy" decoding="async"{size_attrs}>',
+            "        </a>",
+            '        <div class="links-feature-body">',
+            '          <p class="meta">Projeto em destaque</p>',
+            f'          <h3><a href="{href}">{title}</a></h3>',
+            f'          <p>{description}</p>',
+            '        </div>',
+            "      </article>",
+        ]
+    )
+
+
+def build_links_primary_actions_html(latest_post: dict, project: dict) -> str:
+    post_title = html.escape(latest_post["title"])
+    post_href = html.escape(latest_post["href"])
+    project_title = html.escape(project["title"])
+    project_href = html.escape(project["href"])
+
+    return "\n".join(
+        [
+            f'        <a class="links-primary-jump" href="{post_href}">Ler: {post_title}</a>',
+            f'        <a class="links-primary-jump secondary" href="{project_href}">Ver projeto: {project_title}</a>',
+            '        <a class="links-primary-jump secondary" href="#social-links">Abrir redes sociais</a>',
+        ]
+    )
+
+
 def build_author_card_html() -> str:
     return "\n".join(
         [
@@ -907,10 +978,14 @@ def main() -> int:
     projects_list_inner = build_projects_list_html(projects)
     featured_projects_inner = build_featured_projects_html(projects, limit=3)
     latest_post_inner = build_latest_post_html(posts[0])
+    links_latest_post_inner = build_links_latest_post_html(posts[0])
+    links_featured_project_inner = build_links_featured_project_html(projects[0])
+    links_primary_actions_inner = build_links_primary_actions_html(posts[0], projects[0])
 
     blog_html_path = repo_root / "blog.html"
     projects_html_path = repo_root / "projects.html"
     index_html_path = repo_root / "index.html"
+    links_html_path = repo_root / "links.html"
 
     blog_html = blog_html_path.read_text(encoding="utf-8")
     blog_html = replace_auto_block(blog_html, "blog-jsonld", blog_jsonld_inner)
@@ -921,6 +996,10 @@ def main() -> int:
     index_html = index_html_path.read_text(encoding="utf-8")
     index_html = replace_auto_block(index_html, "featured-projects", featured_projects_inner)
     index_html = replace_auto_block(index_html, "latest-post", latest_post_inner)
+    links_html = links_html_path.read_text(encoding="utf-8")
+    links_html = replace_auto_block(links_html, "links-primary-actions", links_primary_actions_inner)
+    links_html = replace_auto_block(links_html, "links-latest-post", links_latest_post_inner)
+    links_html = replace_auto_block(links_html, "links-featured-project", links_featured_project_inner)
 
     post_detail_managed: dict[pathlib.Path, str] = {}
     for post in posts:
@@ -955,6 +1034,7 @@ def main() -> int:
         blog_html_path: blog_html,
         projects_html_path: projects_html,
         index_html_path: index_html,
+        links_html_path: links_html,
     }
     managed_pages.update(post_detail_managed)
     managed_pages.update(project_detail_managed)
