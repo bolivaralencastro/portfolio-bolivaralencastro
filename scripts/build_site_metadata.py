@@ -528,9 +528,8 @@ def build_links_primary_actions_html(latest_post: dict, project: dict) -> str:
 
     return "\n".join(
         [
-            f'        <a class="links-primary-jump" href="{post_href}">Ler: {post_title}</a>',
-            f'        <a class="links-primary-jump secondary" href="{project_href}">Ver projeto: {project_title}</a>',
-            '        <a class="links-primary-jump secondary" href="#social-links">Abrir redes sociais</a>',
+            f'      <a class="ltree-btn ltree-btn--featured" href="{post_href}">Último texto: {post_title}</a>',
+            f'      <a class="ltree-btn ltree-btn--featured" href="{project_href}">Projeto em destaque: {project_title}</a>',
         ]
     )
 
@@ -998,8 +997,6 @@ def main() -> int:
     index_html = replace_auto_block(index_html, "latest-post", latest_post_inner)
     links_html = links_html_path.read_text(encoding="utf-8")
     links_html = replace_auto_block(links_html, "links-primary-actions", links_primary_actions_inner)
-    links_html = replace_auto_block(links_html, "links-latest-post", links_latest_post_inner)
-    links_html = replace_auto_block(links_html, "links-featured-project", links_featured_project_inner)
 
     post_detail_managed: dict[pathlib.Path, str] = {}
     for post in posts:
