@@ -525,11 +525,13 @@ def build_links_primary_actions_html(latest_post: dict, project: dict) -> str:
     post_href = html.escape(latest_post["href"])
     project_title = html.escape(project["title"])
     project_href = html.escape(project["href"])
+    post_label = f"Último texto: {post_title}"
+    project_label = f"Projeto em destaque: {project_title}"
 
     return "\n".join(
         [
-            f'      <a class="ltree-btn ltree-btn--featured" href="{post_href}">Último texto: {post_title}</a>',
-            f'      <a class="ltree-btn ltree-btn--featured" href="{project_href}">Projeto em destaque: {project_title}</a>',
+            f'      <a class="ltree-btn ltree-btn--featured" href="{post_href}" title="{post_label}">{post_label}</a>',
+            f'      <a class="ltree-btn ltree-btn--featured" href="{project_href}" title="{project_label}">{project_label}</a>',
         ]
     )
 
