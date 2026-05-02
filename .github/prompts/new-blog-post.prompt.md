@@ -29,7 +29,7 @@ Process:
 5. Insert the printed `<img>` tags into the appropriate positions in the post body.
 6. Add stable external links for cited people, products, companies, events, and docs.
 7. Keep the writing concise, non-redundant, editorial, and aligned with the tone already present in the portfolio.
-8. Vary the `Sobre o autor` card so it echoes the post context without losing the author's identity.
+8. Vary the `Sobre o autor` card copy so it echoes the post context without losing the author's identity.
 9. Regenerate metadata and validate:
    ```bash
    python3 scripts/build_site_metadata.py

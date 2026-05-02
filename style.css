@@ -734,6 +734,111 @@ a {
   }
 }
 
+/* ---------- Editorial Blocks: prompts, code, media ---------- */
+
+.content-panel,
+.artifact-frame,
+.code-block {
+  position: relative;
+  width: 100%;
+  margin: var(--space-3) 0;
+  border: 1px solid color-mix(in srgb, var(--card-rule) 78%, transparent);
+  border-radius: 10px;
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--bg) 88%, var(--text) 12%) 0%, color-mix(in srgb, var(--bg) 96%, var(--text) 4%) 100%);
+  overflow: hidden;
+}
+
+.e-content figure.artifact-frame {
+  display: grid;
+  gap: 0;
+}
+
+.e-content figure.artifact-frame img,
+.e-content figure.artifact-frame video,
+.e-content .content-panel img,
+.e-content .content-panel video {
+  display: block;
+  width: 100%;
+  margin: 0;
+  background: color-mix(in srgb, var(--bg) 80%, var(--text) 20%);
+}
+
+.e-content figure.artifact-frame figcaption,
+.e-content .content-panel-caption {
+  margin: 0;
+  padding: 0.9rem 1rem 1rem;
+  font-size: var(--text-sm);
+  line-height: 1.55;
+  color: var(--muted);
+  border-top: 1px solid color-mix(in srgb, var(--card-rule) 74%, transparent);
+  max-width: none;
+}
+
+.code-block {
+  padding: 3.1rem 1rem 1rem;
+  color: var(--text);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.code-block::before {
+  content: attr(data-label);
+  position: absolute;
+  top: 0.75rem;
+  left: 1rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.code-block::after {
+  content: "";
+  position: absolute;
+  top: 0.9rem;
+  right: 1rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--primary) 72%, white 28%);
+  box-shadow:
+    -1.1rem 0 0 color-mix(in srgb, #ffb000 84%, white 16%),
+    -2.2rem 0 0 color-mix(in srgb, #ff5a36 86%, white 14%);
+  opacity: 0.9;
+}
+
+.code-block code,
+.code-block samp {
+  display: block;
+  margin: 0;
+  font-family: "SFMono-Regular", "SF Mono", "JetBrains Mono", "Menlo", "Consolas", monospace;
+  font-size: 0.94rem;
+  line-height: 1.72;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.prompt-block {
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--primary) 7%, var(--bg) 93%) 0%, color-mix(in srgb, var(--bg) 96%, var(--text) 4%) 100%);
+}
+
+.log-block {
+  background:
+    linear-gradient(180deg, color-mix(in srgb, #ff7a59 7%, var(--bg) 93%) 0%, color-mix(in srgb, var(--bg) 96%, var(--text) 4%) 100%);
+}
+
+.e-content :not(pre) > code {
+  display: inline-block;
+  padding: 0.12rem 0.45rem;
+  border: 1px solid color-mix(in srgb, var(--card-rule) 70%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--bg) 88%, var(--text) 12%);
+  font-family: "SFMono-Regular", "SF Mono", "JetBrains Mono", "Menlo", "Consolas", monospace;
+  font-size: 0.92em;
+  line-height: 1.35;
+}
+
 /* Swiss layout: 12 colunas, preenchimento denso para que a quote
    na col 10-12 não crie uma linha exclusiva empurrando o texto */
 .e-content.is-swiss {
