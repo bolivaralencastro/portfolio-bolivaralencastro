@@ -734,7 +734,7 @@ a {
   gap: 0.75rem;
 }
 
-.ltree-btn {
+.ltree-links .ltree-btn {
   display: block;
   padding: 0.9rem 1.25rem;
   border: 1px solid var(--card-rule);
@@ -756,7 +756,7 @@ a {
   transition: background var(--dur-fast), border-color var(--dur-fast), transform var(--dur-fast);
 }
 
-.ltree-btn--featured {
+.ltree-links .ltree-btn--featured {
   font-weight: 700;
   border-color: color-mix(in srgb, var(--primary) 30%, var(--card-rule) 70%);
   background: color-mix(in srgb, var(--bg) 90%, var(--primary) 10%);
