@@ -50,6 +50,7 @@ DEFAULT_PROMPT_MODEL = "google/gemini-2.0-flash-001"  # barato e rápido
 PRESETS = {
     "cover":  (1400, 787),
     "card":   (960, 540),
+    "instagram": (1080, 1350),
     "inline": (1200, 675),
 }
 
@@ -323,13 +324,29 @@ def save_webp(img_bytes: bytes, dest: Path, width: int, height: int, quality: in
     img.save(str(dest), "webp", quality=quality)
 
 
-def save_jpg_from_webp(src_webp: Path, dest_jpg: Path, quality: int = 92):
-    """Converte um webp local para JPG (útil para Instagram Graph API)."""
+def save_jpg(img_bytes: bytes, dest: Path, width: int, height: int, quality: int = 92):
+    """Salva JPG com crop e resize para dimensões de publicação social."""
     if not HAS_PIL:
         return
-    img = Image.open(src_webp).convert("RGB")
-    dest_jpg.parent.mkdir(parents=True, exist_ok=True)
-    img.save(str(dest_jpg), "JPEG", quality=quality)
+
+    img = Image.open(BytesIO(img_bytes)).convert("RGB")
+    ow, oh = img.size
+    target_ratio = width / height
+    current_ratio = ow / oh
+
+    if abs(current_ratio - target_ratio) > 0.01:
+        if current_ratio > target_ratio:
+            new_w = int(oh * target_ratio)
+            left = (ow - new_w) // 2
+            img = img.crop((left, 0, left + new_w, oh))
+        else:
+            new_h = int(ow / target_ratio)
+            top = (oh - new_h) // 2
+            img = img.crop((0, top, ow, top + new_h))
+
+    img = img.resize((width, height), Image.LANCZOS)
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    img.save(str(dest), "JPEG", quality=quality)
 
 
 def make_img_tag(path: Path, alt: str, width: int, height: int) -> str:
@@ -413,9 +430,11 @@ def run(
         )
         save_webp(img_bytes, dest, w, h, quality)
 
-        # Gera card.jpg automaticamente para compatibilidade com Instagram.
+        # Gera um JPG vertical separado para o feed do Instagram.
+        # card.webp permanece 16:9 para Open Graph, listagens e LinkedIn.
         if name == "card" and dest.suffix.lower() == ".webp":
-            save_jpg_from_webp(dest, dest.with_suffix(".jpg"))
+            ig_w, ig_h = PRESETS["instagram"]
+            save_jpg(img_bytes, dest.with_name("instagram.jpg"), ig_w, ig_h)
 
         return name, dest, w, h
 
@@ -445,6 +464,9 @@ def run(
             print(f"<!-- COVER -->\n{tag}\n")
         elif name == "card":
             print(f"<!-- CARD (usar em og:image / twitter:image) -->\n{dest.relative_to(ROOT)}\n")
+            ig_path = dest.with_name("instagram.jpg")
+            if ig_path.exists():
+                print(f"<!-- INSTAGRAM FEED (4:5) -->\n{ig_path.relative_to(ROOT)}\n")
         else:
             idx = name.split("-")[1]
             alt = f"Ilustração {idx} do post sobre {post['title']}"
