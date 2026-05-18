@@ -74,7 +74,7 @@ def extract_post_meta(html_path: Path) -> dict:
     # Imagem: Instagram Graph API exige JPG/PNG acessível por URL pública.
     # Usa raw.githubusercontent.com para evitar atraso de propagação no GitHub Pages.
     image_url = None
-    for candidate in ["card.jpg", "cover.jpg", "card.png", "cover.png"]:
+    for candidate in ["instagram.jpg", "card.jpg", "cover.jpg", "card.png", "cover.png"]:
         local = ROOT / "assets" / "images" / "blog" / slug / candidate
         if local.exists():
             image_url = (
@@ -243,8 +243,8 @@ def main():
         print(f"🖼️  Imagem: {meta['image_url']}")
     else:
         print("❌ Nenhuma imagem encontrada — Instagram exige imagem.")
-        print("   Gere card.jpg com: python3 scripts/generate_post_images.py blog/<slug>.html --only card")
-        print("   (o script agora gera card.webp + card.jpg automaticamente)")
+        print("   Gere instagram.jpg com: python3 scripts/generate_post_images.py blog/<slug>.html --only card")
+        print("   (o script gera card.webp 16:9 + instagram.jpg 4:5 automaticamente)")
         sys.exit(1)
 
     print(f"\n--- Legenda ---\n{caption}\n---------------\n")
