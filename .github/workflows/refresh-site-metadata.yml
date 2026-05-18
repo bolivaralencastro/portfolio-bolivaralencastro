@@ -1,7 +1,7 @@
 name: Refresh Site Metadata
 
 permissions:
-  contents: write
+  contents: read
 
 on:
   push:
@@ -35,12 +35,7 @@ jobs:
       - name: Generate sitemap, feed and editorial blocks
         run: python scripts/build_site_metadata.py
 
-      - name: Validate generated result
-        run: python scripts/validate_site.py
-
-      - name: Commit generated updates
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Ensure generated files were committed locally
         run: |
           FILES=(
             sitemap.xml
@@ -55,13 +50,14 @@ jobs:
             projects/*.html
           )
 
-          if git diff --quiet -- "${FILES[@]}"; then
-            echo "No generated metadata changes to commit."
-            exit 0
+          if ! git diff --quiet -- "${FILES[@]}"; then
+            echo "Generated metadata files changed after running build_site_metadata.py."
+            echo "Run python3 scripts/build_site_metadata.py locally, commit the result, and push again."
+            git diff --stat -- "${FILES[@]}"
+            exit 1
           fi
 
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "${FILES[@]}"
-          git commit -m "chore(site): refresh feed sitemap and content indexes"
-          git push
+          echo "Generated metadata files are up to date."
+
+      - name: Validate generated result
+        run: python scripts/validate_site.py
