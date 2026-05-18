@@ -48,7 +48,7 @@ Para novos posts:
 
 ## Geração de imagens
 
-Use sempre `generate_post_images.py` para novos posts — ele lê o HTML, cria prompts visuais contextualizados com um modelo de texto barato e gera `cover.webp`, `card.webp` e imagens inline em paralelo.
+Use sempre `generate_post_images.py` para novos posts — ele lê o HTML, cria prompts visuais contextualizados com um modelo de texto barato e gera `cover.webp`, `card.webp`, `instagram.jpg` e imagens inline em paralelo.
 
 - `--inline N` controla quantas imagens inline gerar (padrão: 2)
 - `--dry-run` mostra os prompts antes de gastar tokens de imagem

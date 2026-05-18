@@ -106,8 +106,9 @@ Requires `INSTAGRAM_ACCESS_TOKEN` and `INSTAGRAM_USER_ID` in `.env`.
 If expired, run `python3 scripts/instagram_auth.py` first.
 
 Important: Instagram Graph API only accepts `JPG/PNG` by URL (`image_url`),
-not `WEBP`. The `generate_post_images.py` workflow now generates `card.jpg`
-automatically alongside `card.webp`.
+not `WEBP`. The `generate_post_images.py` workflow keeps `card.webp` at
+16:9 for Open Graph/listings and generates `instagram.jpg` at 1080x1350
+(4:5) for feed publishing.
 
 ## Publishing to X (optional)
 

@@ -20,8 +20,18 @@
     <id>https://bolivaralencastro.com.br/blog/codex-no-celular-conectado-ao-computador-para-publicar-no-blog.html</id>
     <published>2026-05-17T00:00:00Z</published>
     <updated>2026-05-17T00:00:00Z</updated>
-    <summary>Estou usando o Codex no celular, conectado ao meu computador, para escrever, montar e publicar este post no meu próprio blog com o mesmo fluxo local que mantenho no site.</summary>
-    <content type="html">&lt;p&gt;Este post está sendo feito de um jeito bem direto: eu estou no celular, falando com o Codex, enquanto ele opera sobre os arquivos reais do meu computador. O texto nasce aqui na conversa, mas entra no repositório com HTML, metadados, imagem, rebuild e validação local.&lt;/p&gt;</content>
+    <summary>Este post registra uma mudança pequena na interface e grande no fluxo: o celular vira ponto de comando, enquanto o Codex opera o computador onde o blog, os scripts e os arquivos realmente vivem.</summary>
+    <content type="html">&lt;p&gt;Este post está sendo feito a partir do celular, mas não como um rascunho para resolver depois. A conversa acontece na tela pequena, enquanto o Codex trabalha no meu computador: lê o repositório, edita HTML, gera assets, atualiza metadados e roda os scripts locais que mantêm este blog de pé.&lt;/p&gt;</content>
+  </entry>
+
+  <entry>
+    <title>Do feed salvo ao criterio: 33 posts do Instagram sobre IA e criacao</title>
+    <link href="https://bolivaralencastro.com.br/blog/o-que-33-posts-salvos-no-instagram-me-disseram-sobre-ia-e-criacao.html" rel="alternate"/>
+    <id>https://bolivaralencastro.com.br/blog/o-que-33-posts-salvos-no-instagram-me-disseram-sobre-ia-e-criacao.html</id>
+    <published>2026-05-06T00:00:00Z</published>
+    <updated>2026-05-06T00:00:00Z</updated>
+    <summary>Depois de processar 33 publicacoes salvas no Instagram, o sinal ficou claro: IA, design e criatividade estao convergindo para a mesma disciplina de criterio operacional, com custo, metodo e responsabilidade no centro.</summary>
+    <content type="html">&lt;p&gt;No post anterior, eu tinha olhado para 30 dias de salvos no LinkedIn. O recorte atual veio de outro lugar: 33 publicacoes do Instagram que eu selecionei e processei ate gerar relatorios de aprendizado em lote. O objetivo nao era montar ranking de tendencias. Era entender que tipo de criterio aparece quando IA, design e criacao deixam de ser assunto separado e passam a virar rotina de producao.&lt;/p&gt;</content>
   </entry>
 
   <entry>
