@@ -460,7 +460,7 @@ a {
   position: relative;
   margin-top: calc(var(--space-5) * -0.5);
   margin-bottom: var(--space-6);
-  padding: var(--space-3) var(--space-4);
+  padding: var(--space-3);
   border: 1px solid var(--card-rule);
   border-left: 3px solid var(--primary);
   background: color-mix(in srgb, var(--bg) 92%, var(--text) 8%);
@@ -478,7 +478,7 @@ a {
   & p:not(.quick-answer-label) {
     font-size: var(--text-md);
     line-height: 1.65;
-    max-width: var(--measure);
+    max-width: 54ch;
   }
 }
 
