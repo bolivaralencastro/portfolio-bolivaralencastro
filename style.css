@@ -127,7 +127,7 @@ body {
 
 header,
 main,
-footer {
+body > footer {
   width: min(var(--max), 100%);
   margin: 0 auto;
 }
@@ -273,7 +273,7 @@ nav {
   }
 }
 
-footer nav {
+body > footer nav {
   line-height: var(--lh-ui);
 
   & ul {
@@ -1404,7 +1404,7 @@ img {
 
 /* ---------- Footer ---------- */
 
-footer {
+body > footer {
   margin-top: var(--space-7);
   padding-top: var(--space-6);
   padding-bottom: var(--space-1);
