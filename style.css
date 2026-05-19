@@ -458,6 +458,8 @@ a {
 
 .quick-answer {
   position: relative;
+  width: calc((((100% - (11 * var(--gutter))) / 12) * 7) + (6 * var(--gutter)));
+  max-width: 100%;
   margin-top: calc(var(--space-5) * -0.5);
   margin-bottom: var(--space-6);
   padding: var(--space-3);
