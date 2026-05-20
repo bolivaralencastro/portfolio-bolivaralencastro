@@ -1,0 +1,24 @@
+{
+  "post_summary": "O post discute a evolução da percepção sobre o custo da inteligência artificial, destacando que o token se tornou a nova linha de custo significativa que muitas empresas subestimam. Ele alerta que a substituição de mão de obra por IA não elimina custos, mas os transforma em despesas variáveis e inflacionárias, que podem impactar fortemente as finanças corporativas no futuro.",
+  "slide_descriptions": [
+    "Texto em fundo preto com letras brancas, apresentando uma reflexão sobre a evolução do custo da IA, desde o tamanho do modelo até o custo por token. O autor explica que muitas empresas demitiram funcionários acreditando que IA substituiria mão de obra por custo zero, mas na verdade o custo foi transferido para infraestrutura, energia, GPU e dependência de fornecedores. O texto alerta que o custo real ainda está subsidiado e que, quando os subsídios acabarem, o impacto financeiro será grande, comparando o token a uma commodity inflacionária."
+  ],
+  "main_message": "O custo real da inteligência artificial está na queima de tokens, que representa uma despesa variável e inflacionária que muitas empresas ainda não contabilizam corretamente, o que pode levar a surpresas financeiras significativas no futuro.",
+  "key_information": [
+    "A evolução do custo da IA passou por modelos grandes, benchmarks, contexto, agentes e agora tokens.",
+    "Empresas demitiram funcionários acreditando que IA eliminaria custos, mas substituíram salários por custos variáveis de infraestrutura e energia.",
+    "O preço atual da IA está subsidiado por capital e competição entre laboratórios.",
+    "Quando os subsídios acabarem, o custo real será revelado e poderá ser alto.",
+    "O token é uma nova linha de custo que rivaliza com o custo de mão de obra em algumas empresas.",
+    "O uso de IA deve ser visto como uma commodity inflacionária, não uma assinatura barata."
+  ],
+  "context_and_relevance": "Este conteúdo é relevante para profissionais e executivos que lidam com tecnologia, finanças e gestão de custos em empresas que utilizam IA. Ele traz uma visão crítica sobre a sustentabilidade financeira do uso de IA, especialmente em SaaS e operações corporativas, alertando para a necessidade de planejamento financeiro realista diante dos custos variáveis da tecnologia.",
+  "takeaway": "A reflexão principal é que a adoção de IA não elimina custos, apenas os transforma, e que ignorar o custo real dos tokens pode levar a problemas financeiros graves. É essencial entender e planejar o impacto financeiro da IA como uma commodity inflacionária para evitar surpresas futuras.",
+  "content_type": "texto",
+  "_meta": {
+    "model": "openai/gpt-4.1-mini",
+    "n_slides": 1,
+    "post_id": "DXzkj4TkaBa",
+    "post_url": "https://www.instagram.com/ojeffymotta/p/DXzkj4TkaBa/"
+  }
+}

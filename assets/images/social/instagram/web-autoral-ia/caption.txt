@@ -1,0 +1,14 @@
+Tenho pensado em como as IAs que programam podem ajudar a recuperar uma dimensão da web que perdeu espaço nos últimos anos: uma web mais autoral, experimental e menos dependente dos formatos das plataformas.
+
+As redes sociais foram fundamentais para dar escala a pessoas comuns. Mas também consolidaram superfícies cada vez mais padronizadas, guiadas por retenção e engajamento.
+
+O que quero investigar é outra possibilidade: sites próprios como espaços de criação, arquivo, pensamento e experimentação. Não no lugar das redes, mas como base mais estável para trabalhos criativos.
+
+A hipótese, por enquanto, é esta: usar IA não só para publicar mais, mas para criar páginas, ambientes e experiências digitais próprias, nas quais artistas, fotógrafos, escritores e outros criadores possam voltar a tratar a web como linguagem.
+
+Referências que quero reler ou aproximar:
+Olia Lialina, J. R. Carpenter, Laurel Schwulst, Mike Caulfield, Anil Dash, Nathalie Lawhead, IndieWeb e Small Web.
+
+https://bolivaralencastro.com.br/now.html
+
+#Web #IA #IndieWeb #SmallWeb #CreativeCoding #DigitalPublishing

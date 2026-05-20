@@ -1,0 +1,22 @@
+{
+  "video_id": "DXiACACkmdg",
+  "title": "Video by itsraphalima",
+  "transcript": {
+    "status": "ok",
+    "language_code": "",
+    "language_resolution": "stt_auto_detect",
+    "segment_count": 1,
+    "word_count": 595,
+    "source": "audio_stt",
+    "stt_model": "openai/whisper-large-v3"
+  },
+  "counts": {
+    "top_level_comments": 0,
+    "replies": 0,
+    "all_comment_entries": 0
+  },
+  "top_keywords": [],
+  "top_comments": [],
+  "top_questions": [],
+  "content_opportunities": []
+}

@@ -1,0 +1,130 @@
+{
+  "learning_summary": {
+    "what_the_video_teaches": "O vídeo demonstra uma técnica para filmar simultaneamente na horizontal e na vertical usando uma câmera FX30 com uma lente ultra-wide de 7,5mm, aproveitando a distorção da lente e corrigindo-a com o plugin Giro Flow.",
+    "what_the_comments_add": "Não há comentários disponíveis para análise.",
+    "best_next_step_for_learning": "Explorar tutoriais detalhados sobre o uso do plugin Giro Flow e técnicas de correção de distorção em lentes ultra-wide."
+  },
+  "complementary_learning": [],
+  "open_loops": [],
+  "practical_extensions": [],
+  "counterpoints_or_tensions": [],
+  "examples_from_audience": [],
+  "audience_questions": [],
+  "terminology_friction": [],
+  "recommended_next_piece": {
+    "format": "tutorial",
+    "title": "Como usar o Giro Flow para corrigir distorção em lentes ultra-wide",
+    "reason": "O vídeo menciona o uso do Giro Flow, mas não detalha o processo de aplicação, o que pode ser útil para quem deseja replicar a técnica."
+  },
+  "learning_priorities": [
+    {
+      "priority": "Entender o funcionamento do Giro Flow",
+      "why_it_matters_now": "O plugin é essencial para corrigir a distorção da lente e alcançar o efeito desejado.",
+      "evidence": "O vídeo menciona o uso do Giro Flow, mas não explica como ele funciona."
+    }
+  ],
+  "source_split": {
+    "main_takeaways_from_video": [
+      "É possível filmar simultaneamente na horizontal e na vertical usando uma lente ultra-wide de 7,5mm.",
+      "A distorção da lente pode ser corrigida com o plugin Giro Flow."
+    ],
+    "main_takeaways_from_audience": []
+  },
+  "_translation_meta": {
+    "model": "deepseek/deepseek-chat",
+    "raw_response": {
+      "id": "gen-1778099300-LM7aE28LUbec1GRiSHb2",
+      "object": "chat.completion",
+      "created": 1778099300,
+      "model": "deepseek/deepseek-chat-v3",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "```json\n{\"learning_summary\": {\"what_the_video_teaches\": \"O vídeo demonstra uma técnica para filmar simultaneamente na horizontal e na vertical usando uma câmera FX30 com uma lente ultra-wide de 7,5mm, aproveitando a distorção da lente e corrigindo-a com o plugin Giro Flow.\", \"what_the_comments_add\": \"Não há comentários disponíveis para análise.\", \"best_next_step_for_learning\": \"Explorar tutoriais detalhados sobre o uso do plugin Giro Flow e técnicas de correção de distorção em lentes ultra-wide.\"}, \"complementary_learning\": [], \"open_loops\": [], \"practical_extensions\": [], \"counterpoints_or_tensions\": [], \"examples_from_audience\": [], \"audience_questions\": [], \"terminology_friction\": [], \"recommended_next_piece\": {\"format\": \"tutorial\", \"title\": \"Como usar o Giro Flow para corrigir distorção em lentes ultra-wide\", \"reason\": \"O vídeo menciona o uso do Giro Flow, mas não detalha o processo de aplicação, o que pode ser útil para quem deseja replicar a técnica.\"}, \"learning_priorities\": [{\"priority\": \"Entender o funcionamento do Giro Flow\", \"why_it_matters_now\": \"O plugin é essencial para corrigir a distorção da lente e alcançar o efeito desejado.\", \"evidence\": \"O vídeo menciona o uso do Giro Flow, mas não explica como ele funciona.\"}], \"source_split\": {\"main_takeaways_from_video\": [\"É possível filmar simultaneamente na horizontal e na vertical usando uma lente ultra-wide de 7,5mm.\", \"A distorção da lente pode ser corrigida com o plugin Giro Flow.\"], \"main_takeaways_from_audience\": []}}\n```",
+            "refusal": null,
+            "reasoning": null
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 512,
+        "completion_tokens": 418,
+        "total_tokens": 930,
+        "cost": 0.00053586,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00053586,
+          "upstream_inference_prompt_cost": 0.00016384,
+          "upstream_inference_completions_cost": 0.00037202
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  "_meta": {
+    "model": "deepseek/deepseek-chat",
+    "prompt_file": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/youtube-research/prompts/learning-analysis-v2.md",
+    "raw_response": {
+      "id": "gen-1778099276-gZASfzDGC4SOaoC2YOao",
+      "object": "chat.completion",
+      "created": 1778099276,
+      "model": "deepseek/deepseek-chat-v3",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "```json\n{\n  \"learning_summary\": {\n    \"what_the_video_teaches\": \"O vídeo demonstra uma técnica para filmar simultaneamente na horizontal e na vertical usando uma câmera FX30 com uma lente ultra-wide de 7,5mm, aproveitando a distorção da lente e corrigindo-a com o plugin Giro Flow.\",\n    \"what_the_comments_add\": \"Não há comentários disponíveis para análise.\",\n    \"best_next_step_for_learning\": \"Explorar tutoriais detalhados sobre o uso do plugin Giro Flow e técnicas de correção de distorção em lentes ultra-wide.\"\n  },\n  \"complementary_learning\": [],\n  \"open_loops\": [],\n  \"practical_extensions\": [],\n  \"counterpoints_or_tensions\": [],\n  \"examples_from_audience\": [],\n  \"audience_questions\": [],\n  \"terminology_friction\": [],\n  \"recommended_next_piece\": {\n    \"format\": \"tutorial\",\n    \"title\": \"Como usar o Giro Flow para corrigir distorção em lentes ultra-wide\",\n    \"reason\": \"O vídeo menciona o uso do Giro Flow, mas não detalha o processo de aplicação, o que pode ser útil para quem deseja replicar a técnica.\"\n  },\n  \"learning_priorities\": [\n    {\n      \"priority\": \"Entender o funcionamento do Giro Flow\",\n      \"why_it_matters_now\": \"O plugin é essencial para corrigir a distorção da lente e alcançar o efeito desejado.\",\n      \"evidence\": \"O vídeo menciona o uso do Giro Flow, mas não explica como ele funciona.\"\n    }\n  ],\n  \"source_split\": {\n    \"main_takeaways_from_video\": [\n      \"É possível filmar simultaneamente na horizontal e na vertical usando uma lente ultra-wide de 7,5mm.\",\n      \"A distorção da lente pode ser corrigida com o plugin Giro Flow.\"\n    ],\n    \"main_takeaways_from_audience\": []\n  }\n}\n```",
+            "refusal": null,
+            "reasoning": null
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1466,
+        "completion_tokens": 457,
+        "total_tokens": 1923,
+        "cost": 0.00087585,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00087585,
+          "upstream_inference_prompt_cost": 0.00046912,
+          "upstream_inference_completions_cost": 0.00040673
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  }
+}

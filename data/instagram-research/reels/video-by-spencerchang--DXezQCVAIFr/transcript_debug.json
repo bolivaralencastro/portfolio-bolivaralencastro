@@ -1,0 +1,65 @@
+{
+  "source_audio_path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DXezQCVAIFr/_audio_work/source.m4a",
+  "chunks": [
+    {
+      "index": 0,
+      "start_seconds": 0,
+      "duration_seconds": 60.883,
+      "path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DXezQCVAIFr/_audio_work/chunks/chunk-000.wav",
+      "size_bytes": 1948334,
+      "transcript_text": "I made a tool to make any website feel alive. Let me show you. This is PlayHTML. It's an open source library that lets you turn any website into a live shared space. Everything you do happens in real time for everyone else. And when you leave, your traces stay for others to find. People have already made all kinds of amazing web spaces from games to personal website stoops. I've dreamed of making building with PlayHTML feel as fun and communal as these spaces. But Right now, the docs are just markdown files on GitHub. As a solo maintainer, I've never had time to change that. So I used Cursor to research the right frameworks and build the foundation for this interactive docs website, which meant I could spend my time designing the thing that matters most, making it feel like a live playground. Every example is live for you to interact with, and you can see the traces of other people copying snippets in real time. Now, learning PlayHTML feels as fun as the spaces that you can make with it. Check it out and let's make more whimsical internet spaces.",
+      "usage": {
+        "seconds": 60.88,
+        "cost": 0.0018771333333333334
+      },
+      "model": "openai/whisper-large-v3"
+    }
+  ],
+  "raw_merged_transcript": "I made a tool to make any website feel alive. Let me show you. This is PlayHTML. It's an open source library that lets you turn any website into a live shared space. Everything you do happens in real time for everyone else. And when you leave, your traces stay for others to find. People have already made all kinds of amazing web spaces from games to personal website stoops. I've dreamed of making building with PlayHTML feel as fun and communal as these spaces. But Right now, the docs are just markdown files on GitHub. As a solo maintainer, I've never had time to change that. So I used Cursor to research the right frameworks and build the foundation for this interactive docs website, which meant I could spend my time designing the thing that matters most, making it feel like a live playground. Every example is live for you to interact with, and you can see the traces of other people copying snippets in real time. Now, learning PlayHTML feels as fun as the spaces that you can make with it. Check it out and let's make more whimsical internet spaces.",
+  "cleaned_transcript": "I made a tool to make any website feel alive. Let me show you. This is PlayHTML. It's an open-source library that lets you turn any website into a live shared space. Everything you do happens in real time for everyone else. And when you leave, your traces stay for others to find. People have already made all kinds of amazing web spaces, from games to personal website stoops. I've dreamed of making building with PlayHTML feel as fun and communal as these spaces. But right now, the docs are just markdown files on GitHub. As a solo maintainer, I've never had time to change that. So I used Cursor to research the right frameworks and build the foundation for this interactive docs website, which meant I could spend my time designing the thing that matters most: making it feel like a live playground. Every example is live for you to interact with, and you can see the traces of other people copying snippets in real time. Now, learning PlayHTML feels as fun as the spaces that you can make with it. Check it out, and let's make more whimsical internet spaces.",
+  "cleanup_response": {
+    "id": "gen-1778099173-xw6Po3d0iMwxgezD0Lyn",
+    "object": "chat.completion",
+    "created": 1778099173,
+    "model": "deepseek/deepseek-chat-v3",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I made a tool to make any website feel alive. Let me show you. This is PlayHTML. It's an open-source library that lets you turn any website into a live shared space. Everything you do happens in real time for everyone else. And when you leave, your traces stay for others to find. People have already made all kinds of amazing web spaces, from games to personal website stoops. I've dreamed of making building with PlayHTML feel as fun and communal as these spaces. But right now, the docs are just markdown files on GitHub. As a solo maintainer, I've never had time to change that. So I used Cursor to research the right frameworks and build the foundation for this interactive docs website, which meant I could spend my time designing the thing that matters most: making it feel like a live playground. Every example is live for you to interact with, and you can see the traces of other people copying snippets in real time. Now, learning PlayHTML feels as fun as the spaces that you can make with it. Check it out, and let's make more whimsical internet spaces.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 325,
+      "completion_tokens": 229,
+      "total_tokens": 554,
+      "cost": 0.00030781,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00030781,
+        "upstream_inference_prompt_cost": 0.000104,
+        "upstream_inference_completions_cost": 0.00020381
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

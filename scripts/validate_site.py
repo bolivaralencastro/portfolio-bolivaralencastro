@@ -14,8 +14,10 @@ from dataclasses import dataclass
 from typing import Iterable, List
 from urllib.parse import parse_qs, urlsplit
 
+from notes_pipeline import NOTE_AUTO_BLOCK, load_notes
+
 BASE_URL_DEFAULT = "https://bolivaralencastro.com.br"
-ROOT_PAGES = ["index.html", "about.html", "blog.html", "projects.html", "now.html", "links.html"]
+ROOT_PAGES = ["index.html", "about.html", "blog.html", "projects.html", "now.html", "links.html", "retratos-ufsc-florianopolis-imersivo.html"]
 CLARITY_SCRIPT_SRC = "/assets/js/clarity.js"
 MAIN_STYLESHEET_HREF = "/style.css"
 CLARITY_CSP_SOURCES = ["https://*.clarity.ms", "https://c.bing.com"]
@@ -379,12 +381,19 @@ def main() -> int:
 
     repo_root = pathlib.Path(__file__).resolve().parent.parent
     base_url = args.base_url.rstrip("/")
+    notes_block_start = f"<!-- AUTO:{NOTE_AUTO_BLOCK}:start -->"
+    notes_block_end = f"<!-- AUTO:{NOTE_AUTO_BLOCK}:end -->"
 
     public_paths = iter_public_pages(repo_root)
     metas = [parse_page(path, repo_root) for path in public_paths]
 
     errors: list[str] = []
     warnings: list[str] = []
+
+    try:
+        load_notes(repo_root)
+    except RuntimeError as exc:
+        errors.append(f"notes: {exc}")
 
     for page in metas:
         expected_canonical = canonical_expected(base_url, page.rel_path)
@@ -527,6 +536,11 @@ def main() -> int:
                 warnings.append(f"{page.rel_path}: missing twitter:description")
             if not page.twitter_image:
                 warnings.append(f"{page.rel_path}: missing twitter:image")
+
+        if page.rel_path == "now.html":
+            raw_html = page.path.read_text(encoding="utf-8")
+            if notes_block_start not in raw_html or notes_block_end not in raw_html:
+                errors.append("now.html: missing AUTO markers for notes block")
 
     validate_robots(repo_root, base_url, errors)
     validate_links(repo_root, metas, errors)

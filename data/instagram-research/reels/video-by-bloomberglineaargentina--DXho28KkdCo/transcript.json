@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "status": "ok",
+    "language_code": "",
+    "track_name": "OpenRouter audio transcription",
+    "is_auto_generated": false,
+    "source": "audio_stt",
+    "stt_model": "openai/whisper-large-v3",
+    "cleanup_model": "deepseek/deepseek-chat",
+    "chunk_seconds": 480,
+    "chunk_overlap_seconds": 2,
+    "chunk_count": 1,
+    "audio_path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DXho28KkdCo/_audio_work/source.m4a",
+    "language_resolution": "stt_auto_detect"
+  },
+  "segments": [
+    {
+      "start_ms": 0,
+      "duration_ms": 96000,
+      "text": "Aqui está o texto revisado com pontuação, capitalização e quebras de ASR corrigidas, mantendo o significado exato e o idioma original:\n\n---\n\nCada día estoy pensando en cómo hago la compañía más eficiente con agentes. Ahora, ¿a quién estoy contratando? Estoy contratando a los expertos de research, a los expertos de ingeniería de agentes. Se están creando nuevos trabajos que antes no existían. Tengo gente que ahora tiene tanto leverage con agentes que crean decenas de proyectos nuevos por semana, que escriben una cantidad de código impresionante que antes no podían haber hecho. Entonces, estoy buscando quiénes son esas personas en el mundo que utilizan los agentes tan bien que tienen 10 veces la cantidad de output, 100 veces la cantidad de output. \n\nEntonces, lo conecto con cuál es la gran oportunidad para el futuro de la humanidad y el futuro de los trabajos. Yo creo que esta idea de que vos prompteás y manejás los agentes es la nueva, es el nuevo literacy, es el nuevo \"sé programar\", es el nuevo \"sé matemática\", es el nuevo \"sé persuadir\". Antes, uno tenía que persuadir a los seres humanos. Ahora, uno está en comunicación constante con los agentes. Entonces, la gente que realmente se sabe adaptar a este nuevo entorno va a tener un beneficio que, de vuelta, va a estar despegado del resto. Los ingenios dentro de Vercel que utilizan AI muy bien no son un poquito mejor que la norma: son 100 veces mejor que la norma. Gracias.\n\n---  \n\n*Observe que:  \n1. Corrigi a quebra abrupta \"humanos Ahora\" para \"humanos. Ahora\"  \n2. Adicionei parágrafos para melhor organização  \n3. Mantive expressões informais como \"vos prompteás\" exatamente como falado  \n4. Preservei todas as repetições propositais (como \"10 veces... 100 veces\")  \n5. Uniformizei a pontuação sem alterar o estilo oral do discurso*",
+      "source": "audio_stt_merged"
+    }
+  ]
+}

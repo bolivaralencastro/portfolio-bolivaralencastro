@@ -1,0 +1,25 @@
+{
+  "post_summary": "O post discute a evolução da percepção sobre o custo da inteligência artificial (IA) nas empresas, destacando que o custo real está relacionado ao consumo de tokens, que é uma métrica variável e muitas vezes subestimada. O autor alerta que a IA não substitui diretamente a mão de obra, mas transforma o custo fixo em um custo variável ligado à infraestrutura e ao consumo de tokens.",
+  "slide_descriptions": [
+    "Slide único com texto denso explicando a evolução do custo da IA, desde o foco em tamanho de modelo, benchmarks, contexto, agentes, até o token como nova linha de custo. O texto destaca que muitas empresas subestimaram o custo real da IA, que envolve infraestrutura, energia, GPU, margem de fornecedores e dependência de modelos, e que o custo atual está subsidiado por capital e competição entre laboratórios. O post finaliza alertando que o token pode ser a commodity mais inflacionária e que o custo computacional não é uma margem operacional permanente."
+  ],
+  "main_message": "O custo real da IA nas empresas está no consumo de tokens, que é uma linha de gasto variável e inflacionária, e não na simples substituição de mão de obra, o que pode levar a uma subestimação dos custos operacionais e financeiros.",
+  "key_information": [
+    "A evolução do foco em IA: tamanho do modelo, benchmark, contexto, agente e token.",
+    "Muitas empresas demitiram pessoas acreditando que IA substituiria mão de obra com custo zero.",
+    "O custo da IA envolve infraestrutura, energia, GPU, margem de fornecedores e dependência de modelos.",
+    "O preço atual da IA está subsidiado por capital e competição entre laboratórios.",
+    "Quando o subsídio acabar, o custo real será percebido como uma commodity inflacionária.",
+    "O CFO precisará entender quantos tokens a empresa consome para funcionar.",
+    "O token pode ser o produto mais inflacionário do mundo, superando petróleo, energia e aluguel."
+  ],
+  "context_and_relevance": "Este conteúdo é relevante para profissionais de tecnologia, finanças e gestão que lidam com a implementação e orçamento de soluções de IA, destacando a importância de compreender os custos variáveis e reais da tecnologia para evitar surpresas financeiras. O post também reflete a transição do mercado de IA de uma fase de hype para uma fase de maturidade e realismo financeiro.",
+  "takeaway": "É fundamental que empresas e gestores entendam que o custo da IA não é fixo nem desprezível, mas sim uma variável complexa e potencialmente inflacionária ligada ao consumo de tokens, exigindo planejamento financeiro cuidadoso e revisão das expectativas sobre substituição de mão de obra.",
+  "content_type": "texto",
+  "_meta": {
+    "model": "openai/gpt-4.1-mini",
+    "n_slides": 1,
+    "post_id": "DXzkj4TkaBa",
+    "post_url": "https://instagram.com/"
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "learning_summary": {
+    "what_the_video_teaches": "O vídeo apresenta o modelo TRIBE v2 da Meta, que prevê como o cérebro responde a diferentes tipos de conteúdo (áudio, vídeo, texto). Ele demonstra como o modelo pode ser usado para criar conteúdo que vise uma resposta emocional específica, mas também como pode ser usado para detectar e visualizar tentativas de manipulação emocional em conteúdo existente.",
+    "what_comments_add": "Os comentários destacam preocupações com o uso malicioso do modelo para manipulação emocional, mas também exploram o potencial positivo de ferramentas que podem revelar essas manipulações, como extensões de navegador que mostram o impacto emocional do conteúdo antes do consumo.",
+    "best_next_step_for_learning": "Explorar o desenvolvimento de ferramentas práticas, como extensões de navegador, que utilizem o TRIBE v2 para visualizar o impacto emocional do conteúdo em tempo real, ajudando os usuários a consumir informação de forma mais consciente."
+  },
+  "complementary_learning": [
+    {
+      "topic": "Uso reverso do TRIBE v2",
+      "what_comments_add": "A audiência expandiu a discussão sobre como o modelo pode ser usado para detectar manipulação emocional em conteúdo existente, não apenas para criar conteúdo manipulado.",
+      "how_it_complements_the_video": "O vídeo foca no potencial criativo do modelo, enquanto os comentários destacam seu potencial como ferramenta de defesa contra manipulação.",
+      "evidence": "Comentários sobre a necessidade de ferramentas que mostrem o impacto emocional do conteúdo antes do consumo."
+    }
+  ],
+  "open_loops": [
+    {
+      "question": "Como exatamente o TRIBE v2 mapeia as respostas cerebrais?",
+      "why_unresolved": "O vídeo não detalha os mecanismos técnicos por trás do mapeamento neural.",
+      "evidence": "Perguntas recorrentes sobre a precisão e metodologia do modelo."
+    }
+  ],
+  "practical_extensions": [
+    {
+      "topic": "Extensão de navegador para visualização de impacto emocional",
+      "why_useful": "Permitiria que os usuários vissem o potencial impacto emocional do conteúdo antes de consumi-lo, aumentando a conscientização.",
+      "how_it_extends_the_video": "O vídeo sugere a ideia, mas os comentários exploram como isso poderia ser implementado e seus benefícios práticos.",
+      "evidence": "Sugestões de usuários para desenvolver uma ferramenta que escaneie e mostre o impacto do conteúdo em tempo real."
+    }
+  ],
+  "counterpoints_or_tensions": [
+    {
+      "point": "O modelo pode ser usado tanto para manipulação quanto para defesa contra manipulação.",
+      "why_it_matters": "Destaca a dualidade da tecnologia e a necessidade de regulamentação e uso ético.",
+      "evidence": "Comentários que discutem os riscos e benefícios do TRIBE v2."
+    }
+  ],
+  "examples_from_audience": [
+    {
+      "example": "Um usuário sugeriu que a extensão poderia usar cores para indicar diferentes tipos de impacto emocional (ex.: vermelho para raiva, azul para calma).",
+      "why_it_matters": "Torna o conceito mais tangível e fácil de entender para o usuário comum.",
+      "how_it_makes_the_topic_more_concrete": "Mostra como a teoria pode ser aplicada de forma visual e intuitiva.",
+      "evidence": "Comentário específico sugerindo a implementação de um sistema de cores."
+    }
+  ],
+  "audience_questions": [
+    {
+      "question": "Quão preciso é o modelo TRIBE v2 em prever respostas cerebrais?",
+      "evidence": "Perguntas recorrentes sobre a validação científica do modelo."
+    }
+  ],
+  "terminology_friction": [
+    {
+      "term_or_concept": "Neural fingerprint",
+      "why_confusing": "O termo não é amplamente conhecido e pode ser mal interpretado como algo literal.",
+      "what_better_explanation_is_needed": "Explicar que se refere a um padrão único de resposta neural a um estímulo específico.",
+      "evidence": "Perguntas sobre o que exatamente significa 'neural fingerprint'."
+    }
+  ],
+  "recommended_next_piece": {
+    "format": "vídeo",
+    "title": "Demonstração prática do TRIBE v2 em ação",
+    "reason": "A audiência expressou interesse em ver o modelo sendo usado em tempo real para analisar diferentes tipos de conteúdo."
+  },
+  "learning_priorities": [
+    {
+      "priority": "Entender os limites éticos do uso do TRIBE v2",
+      "why_it_matters_now": "A tecnologia pode ser usada para manipulação em larga escala se não for regulamentada.",
+      "evidence": "Preocupações recorrentes nos comentários sobre o uso malicioso do modelo."
+    }
+  ],
+  "source_split": {
+    "main_takeaways_from_video": [
+      "O TRIBE v2 pode prever respostas cerebrais a conteúdo e ser usado para criar ou detectar manipulação emocional.",
+      "A manipulação emocional só funciona no escuro; ferramentas que revelam isso podem mudar a internet."
+    ],
+    "main_takeaways_from_audience": [
+      "Preocupação com o uso malicioso do modelo, mas também entusiasmo com seu potencial para defesa contra manipulação.",
+      "Interesse em ferramentas práticas, como extensões de navegador, que utilizem o TRIBE v2 para visualizar impacto emocional."
+    ]
+  },
+  "_translation_meta": {
+    "model": "deepseek/deepseek-chat",
+    "raw_response": {
+      "id": "gen-1778098337-Wrz4GCCdI0qnz9APPxsm",
+      "object": "chat.completion",
+      "created": 1778098337,
+      "model": "deepseek/deepseek-chat-v3",
+      "provider": "Novita",
+      "system_fingerprint": null,
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "Aqui está o JSON traduzido para português, com todas as chaves preservadas exatamente como no original:\n\n```json\n{\n  \"learning_summary\": {\n    \"what_the_video_teaches\": \"O vídeo apresenta o modelo TRIBE v2 da Meta, que prevê como o cérebro responde a diferentes tipos de conteúdo (áudio, vídeo, texto). Ele demonstra como o modelo pode ser usado para criar conteúdo que vise uma resposta emocional específica, mas também como pode ser usado para detectar e visualizar tentativas de manipulação emocional em conteúdo existente.\",\n    \"what_comments_add\": \"Os comentários destacam preocupações com o uso malicioso do modelo para manipulação emocional, mas também exploram o potencial positivo de ferramentas que podem revelar essas manipulações, como extensões de navegador que mostram o impacto emocional do conteúdo antes do consumo.\",\n    \"best_next_step_for_learning\": \"Explorar o desenvolvimento de ferramentas práticas, como extensões de navegador, que utilizem o TRIBE v2 para visualizar o impacto emocional do conteúdo em tempo real, ajudando os usuários a consumir informação de forma mais consciente.\"\n  },\n  \"complementary_learning\": [\n    {\n      \"topic\": \"Uso reverso do TRIBE v2\",\n      \"what_comments_add\": \"A audiência expandiu a discussão sobre como o modelo pode ser usado para detectar manipulação emocional em conteúdo existente, não apenas para criar conteúdo manipulado.\",\n      \"how_it_complements_the_video\": \"O vídeo foca no potencial criativo do modelo, enquanto os comentários destacam seu potencial como ferramenta de defesa contra manipulação.\",\n      \"evidence\": \"Comentários sobre a necessidade de ferramentas que mostrem o impacto emocional do conteúdo antes do consumo.\"\n    }\n  ],\n  \"open_loops\": [\n    {\n      \"question\": \"Como exatamente o TRIBE v2 mapeia as respostas cerebrais?\",\n      \"why_unresolved\": \"O vídeo não detalha os mecanismos técnicos por trás do mapeamento neural.\",\n      \"evidence\": \"Perguntas recorrentes sobre a precisão e metodologia do modelo.\"\n    }\n  ],\n  \"practical_extensions\": [\n    {\n      \"topic\": \"Extensão de navegador para visualização de impacto emocional\",\n      \"why_useful\": \"Permitiria que os usuários vissem o potencial impacto emocional do conteúdo antes de consumi-lo, aumentando a conscientização.\",\n      \"how_it_extends_the_video\": \"O vídeo sugere a ideia, mas os comentários exploram como isso poderia ser implementado e seus benefícios práticos.\",\n      \"evidence\": \"Sugestões de usuários para desenvolver uma ferramenta que escaneie e mostre o impacto do conteúdo em tempo real.\"\n    }\n  ],\n  \"counterpoints_or_tensions\": [\n    {\n      \"point\": \"O modelo pode ser usado tanto para manipulação quanto para defesa contra manipulação.\",\n      \"why_it_matters\": \"Destaca a dualidade da tecnologia e a necessidade de regulamentação e uso ético.\",\n      \"evidence\": \"Comentários que discutem os riscos e benefícios do TRIBE v2.\"\n    }\n  ],\n  \"examples_from_audience\": [\n    {\n      \"example\": \"Um usuário sugeriu que a extensão poderia usar cores para indicar diferentes tipos de impacto emocional (ex.: vermelho para raiva, azul para calma).\",\n      \"why_it_matters\": \"Torna o conceito mais tangível e fácil de entender para o usuário comum.\",\n      \"how_it_makes_the_topic_more_concrete\": \"Mostra como a teoria pode ser aplicada de forma visual e intuitiva.\",\n      \"evidence\": \"Comentário específico sugerindo a implementação de um sistema de cores.\"\n    }\n  ],\n  \"audience_questions\": [\n    {\n      \"question\": \"Quão preciso é o modelo TRIBE v2 em prever respostas cerebrais?\",\n      \"evidence\": \"Perguntas recorrentes sobre a validação científica do modelo.\"\n    }\n  ],\n  \"terminology_friction\": [\n    {\n      \"term_or_concept\": \"Neural fingerprint\",\n      \"why_confusing\": \"O termo não é amplamente conhecido e pode ser mal interpretado como algo literal.\",\n      \"what_better_explanation_is_needed\": \"Explicar que se refere a um padrão único de resposta neural a um estímulo específico.\",\n      \"evidence\": \"Perguntas sobre o que exatamente significa 'neural fingerprint'.\"\n    }\n  ],\n  \"recommended_next_piece\": {\n    \"format\": \"vídeo\",\n    \"title\": \"Demonstração prática do TRIBE v2 em ação\",\n    \"reason\": \"A audiência expressou interesse em ver o modelo sendo usado em tempo real para analisar diferentes tipos de conteúdo.\"\n  },\n  \"learning_priorities\": [\n    {\n      \"priority\": \"Entender os limites éticos do uso do TRIBE v2\",\n      \"why_it_matters_now\": \"A tecnologia pode ser usada para manipulação em larga escala se não for regulamentada.\",\n      \"evidence\": \"Preocupações recorrentes nos comentários sobre o uso malicioso do modelo.\"\n    }\n  ],\n  \"source_split\": {\n    \"main_takeaways_from_video\": [\n      \"O TRIBE v2 pode prever respostas cerebrais a conteúdo e ser usado para criar ou detectar manipulação emocional.\",\n      \"A manipulação emocional só funciona no escuro; ferramentas que revelam isso podem mudar a internet.\"\n    ],\n    \"main_takeaways_from_audience\": [\n      \"Preocupação com o uso malicioso do modelo, mas também entusiasmo com seu potencial para defesa contra manipulação.\",\n      \"Interesse em ferramentas práticas, como extensões de navegador, que utilizem o TRIBE v2 para visualizar impacto emocional.\"\n    ]\n  }\n}\n```",
+            "refusal": null,
+            "reasoning": null
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1308,
+        "completion_tokens": 1335,
+        "total_tokens": 2643,
+        "cost": 0.0022587,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0022587,
+          "upstream_inference_prompt_cost": 0.0005232,
+          "upstream_inference_completions_cost": 0.0017355
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  "_meta": {
+    "model": "deepseek/deepseek-chat",
+    "prompt_file": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/youtube-research/prompts/learning-analysis-v2.md",
+    "raw_response": {
+      "id": "gen-1778098305-T8jW8yhUJfl0WvTDXHVy",
+      "object": "chat.completion",
+      "created": 1778098305,
+      "model": "deepseek/deepseek-chat-v3",
+      "provider": "Novita",
+      "system_fingerprint": null,
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "```json\n{\n  \"learning_summary\": {\n    \"what_the_video_teaches\": \"O vídeo apresenta o modelo TRIBE v2 da Meta, que prevê como o cérebro responde a diferentes tipos de conteúdo (áudio, vídeo, texto). Ele demonstra como o modelo pode ser usado para criar conteúdo que vise uma resposta emocional específica, mas também como pode ser usado para detectar e visualizar tentativas de manipulação emocional em conteúdo existente.\",\n    \"what_the_comments_add\": \"Os comentários destacam preocupações com o uso malicioso do modelo para manipulação emocional, mas também exploram o potencial positivo de ferramentas que podem revelar essas manipulações, como extensões de navegador que mostram o impacto emocional do conteúdo antes do consumo.\",\n    \"best_next_step_for_learning\": \"Explorar o desenvolvimento de ferramentas práticas, como extensões de navegador, que utilizem o TRIBE v2 para visualizar o impacto emocional do conteúdo em tempo real, ajudando os usuários a consumir informação de forma mais consciente.\"\n  },\n  \"complementary_learning\": [\n    {\n      \"topic\": \"Uso reverso do TRIBE v2\",\n      \"what_comments_add\": \"A audiência expandiu a discussão sobre como o modelo pode ser usado para detectar manipulação emocional em conteúdo existente, não apenas para criar conteúdo manipulado.\",\n      \"how_it_complements_the_video\": \"O vídeo foca no potencial criativo do modelo, enquanto os comentários destacam seu potencial como ferramenta de defesa contra manipulação.\",\n      \"evidence\": \"Comentários sobre a necessidade de ferramentas que mostrem o impacto emocional do conteúdo antes do consumo.\"\n    }\n  ],\n  \"open_loops\": [\n    {\n      \"question\": \"Como exatamente o TRIBE v2 mapeia as respostas cerebrais?\",\n      \"why_unresolved\": \"O vídeo não detalha os mecanismos técnicos por trás do mapeamento neural.\",\n      \"evidence\": \"Perguntas recorrentes sobre a precisão e metodologia do modelo.\"\n    }\n  ],\n  \"practical_extensions\": [\n    {\n      \"topic\": \"Extensão de navegador para visualização de impacto emocional\",\n      \"why_useful\": \"Permitiria que os usuários vissem o potencial impacto emocional do conteúdo antes de consumi-lo, aumentando a conscientização.\",\n      \"how_it_extends_the_video\": \"O vídeo sugere a ideia, mas os comentários exploram como isso poderia ser implementado e seus benefícios práticos.\",\n      \"evidence\": \"Sugestões de usuários para desenvolver uma ferramenta que escaneie e mostre o impacto do conteúdo em tempo real.\"\n    }\n  ],\n  \"counterpoints_or_tensions\": [\n    {\n      \"point\": \"O modelo pode ser usado tanto para manipulação quanto para defesa contra manipulação.\",\n      \"why_it_matters\": \"Destaca a dualidade da tecnologia e a necessidade de regulamentação e uso ético.\",\n      \"evidence\": \"Comentários que discutem os riscos e benefícios do TRIBE v2.\"\n    }\n  ],\n  \"examples_from_audience\": [\n    {\n      \"example\": \"Um usuário sugeriu que a extensão poderia usar cores para indicar diferentes tipos de impacto emocional (ex.: vermelho para raiva, azul para calma).\",\n      \"why_it_matters\": \"Torna o conceito mais tangível e fácil de entender para o usuário comum.\",\n      \"how_it_makes_the_topic_more_concrete\": \"Mostra como a teoria pode ser aplicada de forma visual e intuitiva.\",\n      \"evidence\": \"Comentário específico sugerindo a implementação de um sistema de cores.\"\n    }\n  ],\n  \"audience_questions\": [\n    {\n      \"question\": \"Quão preciso é o modelo TRIBE v2 em prever respostas cerebrais?\",\n      \"evidence\": \"Perguntas recorrentes sobre a validação científica do modelo.\"\n    }\n  ],\n  \"terminology_friction\": [\n    {\n      \"term_or_concept\": \"Neural fingerprint\",\n      \"why_confusing\": \"O termo não é amplamente conhecido e pode ser mal interpretado como algo literal.\",\n      \"what_better_explanation_is_needed\": \"Explicar que se refere a um padrão único de resposta neural a um estímulo específico.\",\n      \"evidence\": \"Perguntas sobre o que exatamente significa 'neural fingerprint'.\"\n    }\n  ],\n  \"recommended_next_piece\": {\n    \"format\": \"vídeo\",\n    \"title\": \"Demonstração prática do TRIBE v2 em ação\",\n    \"reason\": \"A audiência expressou interesse em ver o modelo sendo usado em tempo real para analisar diferentes tipos de conteúdo.\"\n  },\n  \"learning_priorities\": [\n    {\n      \"priority\": \"Entender os limites éticos do uso do TRIBE v2\",\n      \"why_it_matters_now\": \"A tecnologia pode ser usada para manipulação em larga escala se não for regulamentada.\",\n      \"evidence\": \"Preocupações recorrentes nos comentários sobre o uso malicioso do modelo.\"\n    }\n  ],\n  \"source_split\": {\n    \"main_takeaways_from_video\": [\n      \"O TRIBE v2 pode prever respostas cerebrais a conteúdo e ser usado para criar ou detectar manipulação emocional.\",\n      \"A manipulação emocional só funciona no escuro; ferramentas que revelam isso podem mudar a internet.\"\n    ],\n    \"main_takeaways_from_audience\": [\n      \"Preocupação com o uso malicioso do modelo, mas também entusiasmo com seu potencial para defesa contra manipulação.\",\n      \"Interesse em ferramentas práticas, como extensões de navegador, que utilizem o TRIBE v2 para visualizar impacto emocional.\"\n    ]\n  }\n}\n```",
+            "refusal": null,
+            "reasoning": null
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1813,
+        "completion_tokens": 1311,
+        "total_tokens": 3124,
+        "cost": 0.0024295,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0024295,
+          "upstream_inference_prompt_cost": 0.0007252,
+          "upstream_inference_completions_cost": 0.0017043
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  }
+}

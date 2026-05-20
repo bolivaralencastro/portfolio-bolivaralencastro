@@ -1,0 +1,23 @@
+{
+  "post_summary": "O post destaca uma mudança no modelo de doutorado na China, onde o foco deixou de ser uma tese extensa e teórica para a criação de um produto prático e funcional. A avaliação inclui profissionais da indústria, reforçando a importância da aplicação real do conhecimento.",
+  "slide_descriptions": [
+    "Slide único com fundo preto e texto branco que explica que a China formou um doutor sem tese teórica, focando em um produto prático que funciona, defendido perante uma banca composta por acadêmicos e profissionais da indústria."
+  ],
+  "main_message": "A China está revolucionando o modelo tradicional de doutorado ao priorizar a aplicação prática e resultados concretos em vez de pesquisas teóricas extensas.",
+  "key_information": [
+    "Doutorado sem tese de 100 páginas.",
+    "Produto real e funcional criado pelo doutorando.",
+    "Banca avaliadora inclui profissionais da indústria, não apenas acadêmicos.",
+    "Foco na aplicação prática e não só na pesquisa teórica.",
+    "Essa mudança explica parte do avanço tecnológico e científico da China."
+  ],
+  "context_and_relevance": "O conteúdo é relevante para acadêmicos, profissionais e interessados em inovação educacional e científica, mostrando uma tendência de aproximação entre academia e indústria, especialmente no contexto do desenvolvimento acelerado da China.",
+  "takeaway": "O aprendizado principal é que a inovação no ensino superior pode estar na valorização da prática e da aplicação real do conhecimento, o que pode acelerar avanços tecnológicos e econômicos.",
+  "content_type": "texto",
+  "_meta": {
+    "model": "openai/gpt-4.1-mini",
+    "n_slides": 1,
+    "post_id": "DXspVQNCRHp",
+    "post_url": "https://www.instagram.com/destinoschina/p/DXspVQNCRHp/"
+  }
+}

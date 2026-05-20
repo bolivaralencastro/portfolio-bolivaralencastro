@@ -1,0 +1,65 @@
+{
+  "source_audio_path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DXFCORzAVuq/_audio_work/source.m4a",
+  "chunks": [
+    {
+      "index": 0,
+      "start_seconds": 0,
+      "duration_seconds": 60.069,
+      "path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DXFCORzAVuq/_audio_work/chunks/chunk-000.wav",
+      "size_bytes": 1922286,
+      "transcript_text": "Resolvi o maior problema de quem tem FX30 Ou qualquer outra câmera Hoje em dia, que é filmar na horizontal e na vertical Junto, olha isso Tá vendo lá? Lá tá na horizontal E aqui do ladinho tá na vertical, tá vendo? O que eu fiz? Eu usei dois celular? Não, mano, eu usei essa câmera Com esta lente Aqui, ó, 7,5mm E como ela é extremamente Ultra-wide e fisheye, eu consigo Filmar na horizontal e na vertical Ao mesmo tempo, garoto E daí o que a gente faz? A gente entrega pro cliente e ainda ganha por dois vídeos ainda. Quentão. Aí tu me pergunta, pô, mas aí tem distorção. Tem mesmo, olha isso. A distorção da lente, olha lá, olha lá. Ela é bem distorce pra caramba, ó. É só a gente aplicar o Giro Flow, aqui o pluginzinho do Giro Flow, junto com o perfil de distorção dessa lente. Aplicando isso daqui, pronto, ficou linear, cara. Virou uma 0D Open Gate, irmão. A minha agradece depois, tá? Mas me segue aí, por favor",
+      "usage": {
+        "seconds": 60.07,
+        "cost": 0.0018521583333333334
+      },
+      "model": "openai/whisper-large-v3"
+    }
+  ],
+  "raw_merged_transcript": "Resolvi o maior problema de quem tem FX30 Ou qualquer outra câmera Hoje em dia, que é filmar na horizontal e na vertical Junto, olha isso Tá vendo lá? Lá tá na horizontal E aqui do ladinho tá na vertical, tá vendo? O que eu fiz? Eu usei dois celular? Não, mano, eu usei essa câmera Com esta lente Aqui, ó, 7,5mm E como ela é extremamente Ultra-wide e fisheye, eu consigo Filmar na horizontal e na vertical Ao mesmo tempo, garoto E daí o que a gente faz? A gente entrega pro cliente e ainda ganha por dois vídeos ainda. Quentão. Aí tu me pergunta, pô, mas aí tem distorção. Tem mesmo, olha isso. A distorção da lente, olha lá, olha lá. Ela é bem distorce pra caramba, ó. É só a gente aplicar o Giro Flow, aqui o pluginzinho do Giro Flow, junto com o perfil de distorção dessa lente. Aplicando isso daqui, pronto, ficou linear, cara. Virou uma 0D Open Gate, irmão. A minha agradece depois, tá? Mas me segue aí, por favor",
+  "cleaned_transcript": "Resolvi o maior problema de quem tem FX30 ou qualquer outra câmera hoje em dia, que é filmar na horizontal e na vertical junto. Olha isso! Tá vendo lá? Lá tá na horizontal e aqui do ladinho tá na vertical, tá vendo?  \n\nO que eu fiz? Usei dois celulares? Não, mano, usei essa câmera com esta lente aqui, ó, 7,5mm. E como ela é extremamente ultra-wide e fisheye, consigo filmar na horizontal e na vertical ao mesmo tempo, garoto.  \n\nE daí o que a gente faz? A gente entrega pro cliente e ainda ganha por dois vídeos. Quentão!  \n\nAí tu me pergunta: \"Pô, mas aí tem distorção.\" Tem mesmo, olha isso. A distorção da lente, olha lá, olha lá! Ela é bem distorcida pra caramba, ó. É só a gente aplicar o Giro Flow — aqui o pluginzinho do Giro Flow — junto com o perfil de distorção dessa lente. Aplicando isso daqui... pronto! Ficou linear, cara. Virou uma 0D Open Gate, irmão.  \n\nA minha agradece depois, tá? Mas me segue aí, por favor.",
+  "cleanup_response": {
+    "id": "gen-1778099267-nXc3gdyrI4vpq9sT5y23",
+    "object": "chat.completion",
+    "created": 1778099267,
+    "model": "deepseek/deepseek-chat-v3",
+    "provider": "Novita",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Resolvi o maior problema de quem tem FX30 ou qualquer outra câmera hoje em dia, que é filmar na horizontal e na vertical junto. Olha isso! Tá vendo lá? Lá tá na horizontal e aqui do ladinho tá na vertical, tá vendo?  \n\nO que eu fiz? Usei dois celulares? Não, mano, usei essa câmera com esta lente aqui, ó, 7,5mm. E como ela é extremamente ultra-wide e fisheye, consigo filmar na horizontal e na vertical ao mesmo tempo, garoto.  \n\nE daí o que a gente faz? A gente entrega pro cliente e ainda ganha por dois vídeos. Quentão!  \n\nAí tu me pergunta: \"Pô, mas aí tem distorção.\" Tem mesmo, olha isso. A distorção da lente, olha lá, olha lá! Ela é bem distorcida pra caramba, ó. É só a gente aplicar o Giro Flow — aqui o pluginzinho do Giro Flow — junto com o perfil de distorção dessa lente. Aplicando isso daqui... pronto! Ficou linear, cara. Virou uma 0D Open Gate, irmão.  \n\nA minha agradece depois, tá? Mas me segue aí, por favor.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 389,
+      "completion_tokens": 295,
+      "total_tokens": 684,
+      "cost": 0.0005391,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0005391,
+        "upstream_inference_prompt_cost": 0.0001556,
+        "upstream_inference_completions_cost": 0.0003835
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

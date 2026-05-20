@@ -1,0 +1,65 @@
+{
+  "source_audio_path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DX1e_SkMug9/_audio_work/source.m4a",
+  "chunks": [
+    {
+      "index": 0,
+      "start_seconds": 0,
+      "duration_seconds": 78.042,
+      "path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DX1e_SkMug9/_audio_work/chunks/chunk-000.wav",
+      "size_bytes": 2497422,
+      "transcript_text": "When you get AI to write something for you, there are two patterns that give it away, that make it obvious that it wasn't written by a human. Hi, I'm Mikkel, by the way. I help companies adopt AI in a safe and super clear way. The first one is anaphora, and that's when every sentence starts the same way and also builds into like kind of a rhythm of three. And LLMs do this all the time. It does feel structured, but it reads like a generated list, not a real person talking. The second one is called antithetical parallelism. That's like the it's not X, it's Y move. And I really, that's the one I really hate. And that just gives it all away. Again, LLMs like Chachapetile love this. And so does every other AI tool. And both patterns just kind of slip in all the time because it seems like good writing, but it's not really. It's something that the LLM has just learned to do. And this is totally fixable. I'm sharing the add-on prompt in the comments so you can add to your system prompt in whatever LLM you are using. And that's it. Just copy it, paste it in, and your copy will just sound much more human. Follow for more.",
+      "usage": {
+        "seconds": 78.04,
+        "cost": 0.0024062333333333334
+      },
+      "model": "openai/whisper-large-v3"
+    }
+  ],
+  "raw_merged_transcript": "When you get AI to write something for you, there are two patterns that give it away, that make it obvious that it wasn't written by a human. Hi, I'm Mikkel, by the way. I help companies adopt AI in a safe and super clear way. The first one is anaphora, and that's when every sentence starts the same way and also builds into like kind of a rhythm of three. And LLMs do this all the time. It does feel structured, but it reads like a generated list, not a real person talking. The second one is called antithetical parallelism. That's like the it's not X, it's Y move. And I really, that's the one I really hate. And that just gives it all away. Again, LLMs like Chachapetile love this. And so does every other AI tool. And both patterns just kind of slip in all the time because it seems like good writing, but it's not really. It's something that the LLM has just learned to do. And this is totally fixable. I'm sharing the add-on prompt in the comments so you can add to your system prompt in whatever LLM you are using. And that's it. Just copy it, paste it in, and your copy will just sound much more human. Follow for more.",
+  "cleaned_transcript": "When you get AI to write something for you, there are two patterns that give it away, that make it obvious that it wasn't written by a human. Hi, I’m Mikkel, by the way. I help companies adopt AI in a safe and super clear way. The first one is anaphora, and that’s when every sentence starts the same way and also builds into, like, kind of a rhythm of three. And LLMs do this all the time. It does feel structured, but it reads like a generated list, not a real person talking. The second one is called antithetical parallelism. That’s like the \"it’s not X, it’s Y\" move. And I really—that’s the one I really hate. And that just gives it all away. Again, LLMs like ChatGPT love this, and so does every other AI tool. And both patterns just kind of slip in all the time because it seems like good writing, but it’s not really. It’s something that the LLM has just learned to do. And this is totally fixable. I’m sharing the add-on prompt in the comments so you can add it to your system prompt in whatever LLM you are using. And that’s it. Just copy it, paste it in, and your copy will just sound much more human. Follow for more.",
+  "cleanup_response": {
+    "id": "gen-1778097430-KxMwKbbaKrOOocRXNSok",
+    "object": "chat.completion",
+    "created": 1778097430,
+    "model": "deepseek/deepseek-chat-v3",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "When you get AI to write something for you, there are two patterns that give it away, that make it obvious that it wasn't written by a human. Hi, I’m Mikkel, by the way. I help companies adopt AI in a safe and super clear way. The first one is anaphora, and that’s when every sentence starts the same way and also builds into, like, kind of a rhythm of three. And LLMs do this all the time. It does feel structured, but it reads like a generated list, not a real person talking. The second one is called antithetical parallelism. That’s like the \"it’s not X, it’s Y\" move. And I really—that’s the one I really hate. And that just gives it all away. Again, LLMs like ChatGPT love this, and so does every other AI tool. And both patterns just kind of slip in all the time because it seems like good writing, but it’s not really. It’s something that the LLM has just learned to do. And this is totally fixable. I’m sharing the add-on prompt in the comments so you can add it to your system prompt in whatever LLM you are using. And that’s it. Just copy it, paste it in, and your copy will just sound much more human. Follow for more.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 375,
+      "completion_tokens": 288,
+      "total_tokens": 663,
+      "cost": 0.00037632,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00037632,
+        "upstream_inference_prompt_cost": 0.00012,
+        "upstream_inference_completions_cost": 0.00025632
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

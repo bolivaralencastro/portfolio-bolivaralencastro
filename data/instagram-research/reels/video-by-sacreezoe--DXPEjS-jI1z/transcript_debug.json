@@ -1,0 +1,65 @@
+{
+  "source_audio_path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DXPEjS-jI1z/_audio_work/source.m4a",
+  "chunks": [
+    {
+      "index": 0,
+      "start_seconds": 0,
+      "duration_seconds": 65.155,
+      "path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DXPEjS-jI1z/_audio_work/chunks/chunk-000.wav",
+      "size_bytes": 2085038,
+      "transcript_text": "This is Zoe Renard. She creates visual stories and cultural experiences that connect people across different worlds. Fancy way of saying she does a lot of stuff, and she has a lot of fun along the way. She was told to pick a lane. She didn't. She was also told she was too much. Too much turned out to be the plan. Fun fact, she's keychain size. Practical. You can bring her everywhere. She builds visual worlds, shapes creative directions, designs projects that make people feel something. She started a whole thing about people who don't fit in one box. Welcome to Hybrid Conversations. She does fit in a box actually, it's a storage one, but that's besides the point. She believed it so hard she made a model out of it. Lucky are the in-betweens. If you ever felt like too much, not enough, or just in between, you're gonna want to stick around. And if you need someone who knows how to turn a vision into something people actually feel, she is your person. And from very reliable sources, she's just getting started.",
+      "usage": {
+        "seconds": 65.15,
+        "cost": 0.0020087916666666665
+      },
+      "model": "openai/whisper-large-v3"
+    }
+  ],
+  "raw_merged_transcript": "This is Zoe Renard. She creates visual stories and cultural experiences that connect people across different worlds. Fancy way of saying she does a lot of stuff, and she has a lot of fun along the way. She was told to pick a lane. She didn't. She was also told she was too much. Too much turned out to be the plan. Fun fact, she's keychain size. Practical. You can bring her everywhere. She builds visual worlds, shapes creative directions, designs projects that make people feel something. She started a whole thing about people who don't fit in one box. Welcome to Hybrid Conversations. She does fit in a box actually, it's a storage one, but that's besides the point. She believed it so hard she made a model out of it. Lucky are the in-betweens. If you ever felt like too much, not enough, or just in between, you're gonna want to stick around. And if you need someone who knows how to turn a vision into something people actually feel, she is your person. And from very reliable sources, she's just getting started.",
+  "cleaned_transcript": "Aqui está a transcrição revisada, mantendo o significado original e corrigindo apenas pontuação, capitalização e quebras óbvias de ASR:\n\n---\n\nThis is Zoe Renard. She creates visual stories and cultural experiences that connect people across different worlds. Fancy way of saying she does a lot of stuff, and she has a lot of fun along the way. She was told to pick a lane. She didn’t. She was also told she was too much. Too much turned out to be the plan. Fun fact: she’s keychain-size. Practical. You can bring her everywhere. She builds visual worlds, shapes creative directions, designs projects that make people feel something. She started a whole thing about people who don’t fit in one box. Welcome to Hybrid Conversations. She does fit in a box, actually—it’s a storage one, but that’s beside the point. She believed it so hard she made a model out of it. Lucky are the in-betweens. If you’ve ever felt like too much, not enough, or just in between, you’re gonna want to stick around. And if you need someone who knows how to turn a vision into something people actually feel, she is your person. And from very reliable sources, she’s just getting started.  \n\n--- \n\nObservação: Fiz correções como \"beside the point\" (em vez de \"besides\"), ajustes de hífen em \"keychain-size\" e pontuação para maior clareza, sem alterar o tom ou significado original.",
+  "cleanup_response": {
+    "id": "gen-1778099081-u9m5obajwF5zIjN3ukBn",
+    "object": "chat.completion",
+    "created": 1778099081,
+    "model": "deepseek/deepseek-chat-v3",
+    "provider": "Novita",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Aqui está a transcrição revisada, mantendo o significado original e corrigindo apenas pontuação, capitalização e quebras óbvias de ASR:\n\n---\n\nThis is Zoe Renard. She creates visual stories and cultural experiences that connect people across different worlds. Fancy way of saying she does a lot of stuff, and she has a lot of fun along the way. She was told to pick a lane. She didn’t. She was also told she was too much. Too much turned out to be the plan. Fun fact: she’s keychain-size. Practical. You can bring her everywhere. She builds visual worlds, shapes creative directions, designs projects that make people feel something. She started a whole thing about people who don’t fit in one box. Welcome to Hybrid Conversations. She does fit in a box, actually—it’s a storage one, but that’s beside the point. She believed it so hard she made a model out of it. Lucky are the in-betweens. If you’ve ever felt like too much, not enough, or just in between, you’re gonna want to stick around. And if you need someone who knows how to turn a vision into something people actually feel, she is your person. And from very reliable sources, she’s just getting started.  \n\n--- \n\nObservação: Fiz correções como \"beside the point\" (em vez de \"besides\"), ajustes de hífen em \"keychain-size\" e pontuação para maior clareza, sem alterar o tom ou significado original.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 328,
+      "completion_tokens": 330,
+      "total_tokens": 658,
+      "cost": 0.0005602,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0005602,
+        "upstream_inference_prompt_cost": 0.0001312,
+        "upstream_inference_completions_cost": 0.000429
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

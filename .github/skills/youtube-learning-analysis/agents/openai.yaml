@@ -1,0 +1,7 @@
+interface:
+  display_name: "YouTube Learning Analysis"
+  short_description: "Analyze comment-driven learning signals"
+  default_prompt: "Use $youtube-learning-analysis to analyze an existing YouTube research folder and extract what the audience adds to the original video."
+
+policy:
+  allow_implicit_invocation: true

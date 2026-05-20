@@ -1,0 +1,143 @@
+{
+  "learning_summary": {
+    "what_the_video_teaches": "O vídeo discute a influência do imaginário religioso na transformação da sociedade brasileira, destacando como conceitos religiosos podem se materializar em leis, comportamentos e identidades nacionais, e como isso pode erodir a diversidade e a crítica estrutural.",
+    "what_the_comments_add": "Não há comentários disponíveis para análise, portanto, não é possível adicionar insights complementares da audiência.",
+    "best_next_step_for_learning": "Explorar mais sobre o conceito de 'significações imaginárias instituintes' e sua aplicação em contextos sociopolíticos, além de buscar análises críticas sobre a influência religiosa na política brasileira."
+  },
+  "complementary_learning": [],
+  "open_loops": [],
+  "practical_extensions": [],
+  "counterpoints_or_tensions": [],
+  "examples_from_audience": [],
+  "audience_questions": [],
+  "terminology_friction": [
+    {
+      "term_or_concept": "significações imaginárias instituintes",
+      "why_confusing": "O termo é complexo e pode não ser familiar para muitos espectadores, exigindo uma explicação mais detalhada ou exemplos concretos para melhor compreensão.",
+      "what_better_explanation_is_needed": "Uma explicação mais acessível, com exemplos práticos de como essas significações operam em diferentes contextos sociais.",
+      "evidence": "O termo é mencionado no vídeo sem uma explicação detalhada, o que pode levar a confusão para quem não está familiarizado com o conceito."
+    }
+  ],
+  "recommended_next_piece": {
+    "format": "artigo ou vídeo",
+    "title": "Análise crítica da influência religiosa na política brasileira",
+    "reason": "Complementa o tema abordado no vídeo, fornecendo mais contexto e exemplos práticos."
+  },
+  "learning_priorities": [
+    {
+      "priority": "Entender o conceito de 'significações imaginárias instituintes'",
+      "why_it_matters_now": "É central para a argumentação do vídeo e pode ajudar a compreender melhor como ideias religiosas influenciam a sociedade.",
+      "evidence": "O termo é mencionado como parte fundamental da discussão, mas sem uma explicação detalhada."
+    },
+    {
+      "priority": "Explorar casos concretos de influência religiosa na legislação brasileira",
+      "why_it_matters_now": "Ajuda a materializar a discussão teórica apresentada no vídeo.",
+      "evidence": "O vídeo menciona a materialização do imaginário religioso em leis e comportamentos, mas não fornece exemplos específicos."
+    }
+  ],
+  "source_split": {
+    "main_takeaways_from_video": [
+      "A influência do imaginário religioso na transformação da sociedade brasileira.",
+      "A materialização de conceitos religiosos em leis, comportamentos e identidades nacionais.",
+      "A erosão da diversidade e da crítica estrutural devido ao fundamentalismo religioso."
+    ],
+    "main_takeaways_from_audience": []
+  },
+  "_translation_meta": {
+    "model": "deepseek/deepseek-chat",
+    "raw_response": {
+      "id": "gen-1778098110-qombMjF46c1iEfSHEs8n",
+      "object": "chat.completion",
+      "created": 1778098110,
+      "model": "deepseek/deepseek-chat-v3",
+      "provider": "Novita",
+      "system_fingerprint": null,
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "Aqui está o JSON traduzido para português com as chaves preservadas:\n\n```json\n{\n  \"learning_summary\": {\n    \"what_the_video_teaches\": \"O vídeo discute a influência do imaginário religioso na transformação da sociedade brasileira, destacando como conceitos religiosos podem se materializar em leis, comportamentos e identidades nacionais, e como isso pode erodir a diversidade e a crítica estrutural.\",\n    \"what_the_comments_add\": \"Não há comentários disponíveis para análise, portanto, não é possível adicionar insights complementares da audiência.\",\n    \"best_next_step_for_learning\": \"Explorar mais sobre o conceito de 'significações imaginárias instituintes' e sua aplicação em contextos sociopolíticos, além de buscar análises críticas sobre a influência religiosa na política brasileira.\"\n  },\n  \"complementary_learning\": [],\n  \"open_loops\": [],\n  \"practical_extensions\": [],\n  \"counterpoints_or_tensions\": [],\n  \"examples_from_audience\": [],\n  \"audience_questions\": [],\n  \"terminology_friction\": [\n    {\n      \"term_or_concept\": \"significações imaginárias instituintes\",\n      \"why_confusing\": \"O termo é complexo e pode não ser familiar para muitos espectadores, exigindo uma explicação mais detalhada ou exemplos concretos para melhor compreensão.\",\n      \"what_better_explanation_is_needed\": \"Uma explicação mais acessível, com exemplos práticos de como essas significações operam em diferentes contextos sociais.\",\n      \"evidence\": \"O termo é mencionado no vídeo sem uma explicação detalhada, o que pode levar a confusão para quem não está familiarizado com o conceito.\"\n    }\n  ],\n  \"recommended_next_piece\": {\n    \"format\": \"artigo ou vídeo\",\n    \"title\": \"Análise crítica da influência religiosa na política brasileira\",\n    \"reason\": \"Complementa o tema abordado no vídeo, fornecendo mais contexto e exemplos práticos.\"\n  },\n  \"learning_priorities\": [\n    {\n      \"priority\": \"Entender o conceito de 'significações imaginárias instituintes'\",\n      \"why_it_matters_now\": \"É central para a argumentação do vídeo e pode ajudar a compreender melhor como ideias religiosas influenciam a sociedade.\",\n      \"evidence\": \"O termo é mencionado como parte fundamental da discussão, mas sem uma explicação detalhada.\"\n    },\n    {\n      \"priority\": \"Explorar casos concretos de influência religiosa na legislação brasileira\",\n      \"why_it_matters_now\": \"Ajuda a materializar a discussão teórica apresentada no vídeo.\",\n      \"evidence\": \"O vídeo menciona a materialização do imaginário religioso em leis e comportamentos, mas não fornece exemplos específicos.\"\n    }\n  ],\n  \"source_split\": {\n    \"main_takeaways_from_video\": [\n      \"A influência do imaginário religioso na transformação da sociedade brasileira.\",\n      \"A materialização de conceitos religiosos em leis, comportamentos e identidades nacionais.\",\n      \"A erosão da diversidade e da crítica estrutural devido ao fundamentalismo religioso.\"\n    ],\n    \"main_takeaways_from_audience\": []\n  }\n}\n```",
+            "refusal": null,
+            "reasoning": null
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 764,
+        "completion_tokens": 742,
+        "total_tokens": 1506,
+        "cost": 0.0012702,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0012702,
+          "upstream_inference_prompt_cost": 0.0003056,
+          "upstream_inference_completions_cost": 0.0009646
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  "_meta": {
+    "model": "deepseek/deepseek-chat",
+    "prompt_file": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/youtube-research/prompts/learning-analysis-v2.md",
+    "raw_response": {
+      "id": "gen-1778098083-oxWvmPNa8RZd8JxabrZ1",
+      "object": "chat.completion",
+      "created": 1778098083,
+      "model": "deepseek/deepseek-chat-v3",
+      "provider": "Novita",
+      "system_fingerprint": null,
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "```json\n{\n  \"learning_summary\": {\n    \"what_the_video_teaches\": \"O vídeo discute a influência do imaginário religioso na transformação da sociedade brasileira, destacando como conceitos religiosos podem se materializar em leis, comportamentos e identidades nacionais, e como isso pode erodir a diversidade e a crítica estrutural.\",\n    \"what_the_comments_add\": \"Não há comentários disponíveis para análise, portanto, não é possível adicionar insights complementares da audiência.\",\n    \"best_next_step_for_learning\": \"Explorar mais sobre o conceito de 'significações imaginárias instituintes' e sua aplicação em contextos sociopolíticos, além de buscar análises críticas sobre a influência religiosa na política brasileira.\"\n  },\n  \"complementary_learning\": [],\n  \"open_loops\": [],\n  \"practical_extensions\": [],\n  \"counterpoints_or_tensions\": [],\n  \"examples_from_audience\": [],\n  \"audience_questions\": [],\n  \"terminology_friction\": [\n    {\n      \"term_or_concept\": \"significações imaginárias instituintes\",\n      \"why_confusing\": \"O termo é complexo e pode não ser familiar para muitos espectadores, exigindo uma explicação mais detalhada ou exemplos concretos para melhor compreensão.\",\n      \"what_better_explanation_is_needed\": \"Uma explicação mais acessível, com exemplos práticos de como essas significações operam em diferentes contextos sociais.\",\n      \"evidence\": \"O termo é mencionado no vídeo sem uma explicação detalhada, o que pode levar a confusão para quem não está familiarizado com o conceito.\"\n    }\n  ],\n  \"recommended_next_piece\": {\n    \"format\": \"artigo ou vídeo\",\n    \"title\": \"Análise crítica da influência religiosa na política brasileira\",\n    \"reason\": \"Complementa o tema abordado no vídeo, fornecendo mais contexto e exemplos práticos.\"\n  },\n  \"learning_priorities\": [\n    {\n      \"priority\": \"Entender o conceito de 'significações imaginárias instituintes'\",\n      \"why_it_matters_now\": \"É central para a argumentação do vídeo e pode ajudar a compreender melhor como ideias religiosas influenciam a sociedade.\",\n      \"evidence\": \"O termo é mencionado como parte fundamental da discussão, mas sem uma explicação detalhada.\"\n    },\n    {\n      \"priority\": \"Explorar casos concretos de influência religiosa na legislação brasileira\",\n      \"why_it_matters_now\": \"Ajuda a materializar a discussão teórica apresentada no vídeo.\",\n      \"evidence\": \"O vídeo menciona a materialização do imaginário religioso em leis e comportamentos, mas não fornece exemplos específicos.\"\n    }\n  ],\n  \"source_split\": {\n    \"main_takeaways_from_video\": [\n      \"A influência do imaginário religioso na transformação da sociedade brasileira.\",\n      \"A materialização de conceitos religiosos em leis, comportamentos e identidades nacionais.\",\n      \"A erosão da diversidade e da crítica estrutural devido ao fundamentalismo religioso.\"\n    ],\n    \"main_takeaways_from_audience\": []\n  }\n}\n```",
+            "refusal": null,
+            "reasoning": null
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1772,
+        "completion_tokens": 724,
+        "total_tokens": 2496,
+        "cost": 0.00165,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00165,
+          "upstream_inference_prompt_cost": 0.0007088,
+          "upstream_inference_completions_cost": 0.0009412
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  }
+}

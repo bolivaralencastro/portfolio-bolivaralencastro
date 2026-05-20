@@ -1,0 +1,131 @@
+{
+  "learning_summary": {
+    "what_the_video_teaches": "O vídeo apresenta a tecnologia da Arcturus, que permite criar um 'digital twin' 3D em tempo real de eventos esportivos, possibilitando ângulos de câmera inéditos e novas formas de produção de conteúdo.",
+    "what_the_comments_add": "Não há comentários disponíveis para análise, portanto, não é possível extrair aprendizado complementar da audiência.",
+    "best_next_step_for_learning": "Explorar casos de uso práticos da tecnologia em diferentes setores, como entretenimento e educação, além de esportes."
+  },
+  "complementary_learning": [],
+  "open_loops": [],
+  "practical_extensions": [],
+  "counterpoints_or_tensions": [],
+  "examples_from_audience": [],
+  "audience_questions": [],
+  "terminology_friction": [],
+  "recommended_next_piece": {
+    "format": "vídeo",
+    "title": "Demonstração prática da tecnologia Arcturus em um evento esportivo real",
+    "reason": "Para visualizar como a tecnologia é aplicada em tempo real e entender melhor suas capacidades."
+  },
+  "learning_priorities": [
+    {
+      "priority": "Entender como a tecnologia pode ser integrada com sistemas de transmissão existentes",
+      "why_it_matters_now": "Para facilitar a adoção pela indústria e maximizar o potencial de inovação.",
+      "evidence": "O vídeo menciona a importância de repensar a cobertura esportiva, mas não detalha a integração técnica."
+    }
+  ],
+  "source_split": {
+    "main_takeaways_from_video": [
+      "A tecnologia da Arcturus cria um 'digital twin' 3D em tempo real para eventos esportivos.",
+      "Permite ângulos de câmera inéditos e novas formas de produção de conteúdo.",
+      "Aplicável além de esportes, como em TV scripted e competições."
+    ],
+    "main_takeaways_from_audience": []
+  },
+  "_translation_meta": {
+    "model": "deepseek/deepseek-chat",
+    "raw_response": {
+      "id": "gen-1778098662-jfFlJN40xlWQuwZS4Cex",
+      "object": "chat.completion",
+      "created": 1778098662,
+      "model": "deepseek/deepseek-chat-v3",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "```json\n{\"learning_summary\": {\"what_the_video_teaches\": \"O vídeo apresenta a tecnologia da Arcturus, que permite criar um 'digital twin' 3D em tempo real de eventos esportivos, possibilitando ângulos de câmera inéditos e novas formas de produção de conteúdo.\", \"what_the_comments_add\": \"Não há comentários disponíveis para análise, portanto, não é possível extrair aprendizado complementar da audiência.\", \"best_next_step_for_learning\": \"Explorar casos de uso práticos da tecnologia em diferentes setores, como entretenimento e educação, além de esportes.\"}, \"complementary_learning\": [], \"open_loops\": [], \"practical_extensions\": [], \"counterpoints_or_tensions\": [], \"examples_from_audience\": [], \"audience_questions\": [], \"terminology_friction\": [], \"recommended_next_piece\": {\"format\": \"vídeo\", \"title\": \"Demonstração prática da tecnologia Arcturus em um evento esportivo real\", \"reason\": \"Para visualizar como a tecnologia é aplicada em tempo real e entender melhor suas capacidades.\"}, \"learning_priorities\": [{\"priority\": \"Entender como a tecnologia pode ser integrada com sistemas de transmissão existentes\", \"why_it_matters_now\": \"Para facilitar a adoção pela indústria e maximizar o potencial de inovação.\", \"evidence\": \"O vídeo menciona a importância de repensar a cobertura esportiva, mas não detalha a integração técnica.\"}], \"source_split\": {\"main_takeaways_from_video\": [\"A tecnologia da Arcturus cria um 'digital twin' 3D em tempo real para eventos esportivos.\", \"Permite ângulos de câmera inéditos e novas formas de produção de conteúdo.\", \"Aplicável além de esportes, como em TV scripted e competições.\"], \"main_takeaways_from_audience\": []}}\n```",
+            "refusal": null,
+            "reasoning": null
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 529,
+        "completion_tokens": 435,
+        "total_tokens": 964,
+        "cost": 0.00055643,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00055643,
+          "upstream_inference_prompt_cost": 0.00016928,
+          "upstream_inference_completions_cost": 0.00038715
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  "_meta": {
+    "model": "deepseek/deepseek-chat",
+    "prompt_file": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/youtube-research/prompts/learning-analysis-v2.md",
+    "raw_response": {
+      "id": "gen-1778098649-Ap0RoWhQ28f1OHMssNNW",
+      "object": "chat.completion",
+      "created": 1778098649,
+      "model": "deepseek/deepseek-chat-v3",
+      "provider": "Novita",
+      "system_fingerprint": null,
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "```json\n{\n  \"learning_summary\": {\n    \"what_the_video_teaches\": \"O vídeo apresenta a tecnologia da Arcturus, que permite criar um 'digital twin' 3D em tempo real de eventos esportivos, possibilitando ângulos de câmera inéditos e novas formas de produção de conteúdo.\",\n    \"what_the_comments_add\": \"Não há comentários disponíveis para análise, portanto, não é possível extrair aprendizado complementar da audiência.\",\n    \"best_next_step_for_learning\": \"Explorar casos de uso práticos da tecnologia em diferentes setores, como entretenimento e educação, além de esportes.\"\n  },\n  \"complementary_learning\": [],\n  \"open_loops\": [],\n  \"practical_extensions\": [],\n  \"counterpoints_or_tensions\": [],\n  \"examples_from_audience\": [],\n  \"audience_questions\": [],\n  \"terminology_friction\": [],\n  \"recommended_next_piece\": {\n    \"format\": \"vídeo\",\n    \"title\": \"Demonstração prática da tecnologia Arcturus em um evento esportivo real\",\n    \"reason\": \"Para visualizar como a tecnologia é aplicada em tempo real e entender melhor suas capacidades.\"\n  },\n  \"learning_priorities\": [\n    {\n      \"priority\": \"Entender como a tecnologia pode ser integrada com sistemas de transmissão existentes\",\n      \"why_it_matters_now\": \"Para facilitar a adoção pela indústria e maximizar o potencial de inovação.\",\n      \"evidence\": \"O vídeo menciona a importância de repensar a cobertura esportiva, mas não detalha a integração técnica.\"\n    }\n  ],\n  \"source_split\": {\n    \"main_takeaways_from_video\": [\n      \"A tecnologia da Arcturus cria um 'digital twin' 3D em tempo real para eventos esportivos.\",\n      \"Permite ângulos de câmera inéditos e novas formas de produção de conteúdo.\",\n      \"Aplicável além de esportes, como em TV scripted e competições.\"\n    ],\n    \"main_takeaways_from_audience\": []\n  }\n}\n```",
+            "refusal": null,
+            "reasoning": null
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1548,
+        "completion_tokens": 473,
+        "total_tokens": 2021,
+        "cost": 0.0012341,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0012341,
+          "upstream_inference_prompt_cost": 0.0006192,
+          "upstream_inference_completions_cost": 0.0006149
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  }
+}

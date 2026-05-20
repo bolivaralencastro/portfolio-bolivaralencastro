@@ -1,0 +1,65 @@
+{
+  "source_audio_path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DXfAb6ciMwP/_audio_work/source.m4a",
+  "chunks": [
+    {
+      "index": 0,
+      "start_seconds": 0,
+      "duration_seconds": 37.849,
+      "path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DXfAb6ciMwP/_audio_work/chunks/chunk-000.wav",
+      "size_bytes": 1211246,
+      "transcript_text": "Do you know that feeling you hit record and your brain just stops working? This teleprompter app fixes that. This is Moody, a teleprompter that sits next to your camera so you can keep eye contact and speak naturally. You can use it for video recordings, online meetings, presentations or live demos. Moody can adjust to your speaking pace or you can control the speed with your keyboard. You can also resize it, move it off the notch and it's invisible on screen sharing. Link in my bio.",
+      "usage": {
+        "seconds": 37.85,
+        "cost": 0.0011670416666666667
+      },
+      "model": "openai/whisper-large-v3"
+    }
+  ],
+  "raw_merged_transcript": "Do you know that feeling you hit record and your brain just stops working? This teleprompter app fixes that. This is Moody, a teleprompter that sits next to your camera so you can keep eye contact and speak naturally. You can use it for video recordings, online meetings, presentations or live demos. Moody can adjust to your speaking pace or you can control the speed with your keyboard. You can also resize it, move it off the notch and it's invisible on screen sharing. Link in my bio.",
+  "cleaned_transcript": "Do you know that feeling when you hit record and your brain just stops working? This teleprompter app fixes that. This is Moody, a teleprompter that sits next to your camera so you can keep eye contact and speak naturally. You can use it for video recordings, online meetings, presentations, or live demos. Moody can adjust to your speaking pace, or you can control the speed with your keyboard. You can also resize it, move it off the notch, and it's invisible on screen sharing. Link in my bio.",
+  "cleanup_response": {
+    "id": "gen-1778101543-ZG0z73xyA94gS6aNfZgu",
+    "object": "chat.completion",
+    "created": 1778101543,
+    "model": "deepseek/deepseek-chat-v3",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Do you know that feeling when you hit record and your brain just stops working? This teleprompter app fixes that. This is Moody, a teleprompter that sits next to your camera so you can keep eye contact and speak naturally. You can use it for video recordings, online meetings, presentations, or live demos. Moody can adjust to your speaking pace, or you can control the speed with your keyboard. You can also resize it, move it off the notch, and it's invisible on screen sharing. Link in my bio.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 206,
+      "completion_tokens": 112,
+      "total_tokens": 318,
+      "cost": 0.0001656,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0001656,
+        "upstream_inference_prompt_cost": 6.592e-05,
+        "upstream_inference_completions_cost": 9.968e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

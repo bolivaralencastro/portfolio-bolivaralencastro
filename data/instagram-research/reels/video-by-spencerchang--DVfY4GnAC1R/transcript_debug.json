@@ -1,0 +1,65 @@
+{
+  "source_audio_path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DVfY4GnAC1R/_audio_work/source.m4a",
+  "chunks": [
+    {
+      "index": 0,
+      "start_seconds": 0,
+      "duration_seconds": 57.491,
+      "path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DVfY4GnAC1R/_audio_work/chunks/chunk-000.wav",
+      "size_bytes": 1839790,
+      "transcript_text": "This video does not exist. What I mean by that is if you go to my page and you look for this video, you're not going to find it anywhere, which makes you part of a very small and secret group of people that are seeing this. Hi, I'm Spencer and I'm an artist who makes software you can touch. Think whimsical websites and interactive sculptures that allow you to connect with strangers. If you're seeing this, it means that Instagram thinks you believe in technology that is playful and intimate and creative. And what I'd like to do is send you a link to my latest project. I think it's the most important work I've ever done and I've been working on it for the past few years. So I'm going to do is if I see you start following me from this reel, I'm going to personally DM you a link to this project and it would mean the world to me if you checked it out.",
+      "usage": {
+        "seconds": 57.49,
+        "cost": 0.0017726083333333333
+      },
+      "model": "openai/whisper-large-v3"
+    }
+  ],
+  "raw_merged_transcript": "This video does not exist. What I mean by that is if you go to my page and you look for this video, you're not going to find it anywhere, which makes you part of a very small and secret group of people that are seeing this. Hi, I'm Spencer and I'm an artist who makes software you can touch. Think whimsical websites and interactive sculptures that allow you to connect with strangers. If you're seeing this, it means that Instagram thinks you believe in technology that is playful and intimate and creative. And what I'd like to do is send you a link to my latest project. I think it's the most important work I've ever done and I've been working on it for the past few years. So I'm going to do is if I see you start following me from this reel, I'm going to personally DM you a link to this project and it would mean the world to me if you checked it out.",
+  "cleaned_transcript": "This video does not exist. What I mean by that is, if you go to my page and you look for this video, you're not going to find it anywhere, which makes you part of a very small and secret group of people that are seeing this. Hi, I'm Spencer, and I'm an artist who makes software you can touch. Think whimsical websites and interactive sculptures that allow you to connect with strangers. If you're seeing this, it means that Instagram thinks you believe in technology that is playful, intimate, and creative. And what I'd like to do is send you a link to my latest project. I think it's the most important work I've ever done, and I've been working on it for the past few years. So what I'm going to do is, if I see you start following me from this reel, I'm going to personally DM you a link to this project, and it would mean the world to me if you checked it out.",
+  "cleanup_response": {
+    "id": "gen-1778099221-xpXHmDuZT5ah1lbcOSHX",
+    "object": "chat.completion",
+    "created": 1778099221,
+    "model": "deepseek/deepseek-chat-v3",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "This video does not exist. What I mean by that is, if you go to my page and you look for this video, you're not going to find it anywhere, which makes you part of a very small and secret group of people that are seeing this. Hi, I'm Spencer, and I'm an artist who makes software you can touch. Think whimsical websites and interactive sculptures that allow you to connect with strangers. If you're seeing this, it means that Instagram thinks you believe in technology that is playful, intimate, and creative. And what I'd like to do is send you a link to my latest project. I think it's the most important work I've ever done, and I've been working on it for the past few years. So what I'm going to do is, if I see you start following me from this reel, I'm going to personally DM you a link to this project, and it would mean the world to me if you checked it out.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 292,
+      "completion_tokens": 201,
+      "total_tokens": 493,
+      "cost": 0.00027233,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00027233,
+        "upstream_inference_prompt_cost": 9.344e-05,
+        "upstream_inference_completions_cost": 0.00017889
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "post_summary": "O post discute o estado atual do Design Thinking, argumentando que ele não está morto, mas sim como um espectro que ainda influencia o design contemporâneo. A reflexão aborda a herança neoliberal do método e propõe uma democratização do processo criativo.",
+  "slide_descriptions": [
+    "Imagem em estilo pixel art que remete a uma interface gráfica antiga, mostrando um personagem masculino loiro, vestido com camisa branca e lenço laranja, amarrando uma figura humana coberta por um lençol branco com a etiqueta 'DESIGN THINKING'. No topo da imagem, há um menu com as opções 'Edit', 'View', 'Label' e 'Special', e o nome do arquivo 'now-what-was-that.pic'."
+  ],
+  "main_message": "Design Thinking não está morto, mas persiste como um espectro que influencia o design atual, carregando uma herança neoliberal que precisa ser questionada e transformada para democratizar o processo criativo.",
+  "key_information": [
+    "Design Thinking é um espectro, nem totalmente presente nem ausente.",
+    "O método carrega uma gramática neoliberal que simplifica problemas complexos em briefs solucionáveis.",
+    "Há uma proposta de usar o Design Thinking para focar no processo e na agência criativa coletiva, não apenas no resultado.",
+    "O debate ocorreu na capela da @hfg_offenbach, promovido por @gestalt_error_409."
+  ],
+  "context_and_relevance": "O conteúdo é relevante para profissionais e estudantes de design, inovação e áreas afins, pois questiona práticas consolidadas e estimula uma reflexão crítica sobre os métodos usados no design contemporâneo, especialmente em um contexto de crescente demanda por processos mais inclusivos e conscientes.",
+  "takeaway": "É importante reconhecer as limitações e influências ideológicas do Design Thinking e buscar formas de democratizar e humanizar o processo criativo, valorizando o percurso e a participação coletiva.",
+  "content_type": "imagem com texto",
+  "_meta": {
+    "model": "openai/gpt-4.1-mini",
+    "n_slides": 1,
+    "post_id": "DXlzCb5gCdm",
+    "post_url": "https://www.instagram.com/flixflexen/p/DXlzCb5gCdm/"
+  }
+}

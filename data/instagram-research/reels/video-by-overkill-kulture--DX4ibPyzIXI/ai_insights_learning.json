@@ -1,0 +1,167 @@
+{
+  "learning_summary": {
+    "what_the_video_teaches": "O vídeo apresenta uma visão de autossuficiência através da criação de dispositivos eletrônicos, geração de energia, construção de casas com impressão 3D usando materiais reciclados e a formação de comunidades autossustentáveis.",
+    "what_the_comments_add": "Não há comentários disponíveis para análise, portanto, não é possível adicionar insights complementares da audiência.",
+    "best_next_step_for_learning": "Explorar tutoriais ou demonstrações práticas sobre como criar dispositivos eletrônicos caseiros, gerar energia autossustentável e técnicas de impressão 3D com materiais reciclados."
+  },
+  "complementary_learning": [],
+  "open_loops": [
+    {
+      "question": "Como exatamente os dispositivos eletrônicos caseiros (tablets e phones) são fabricados e como um SIM card pode ser adicionado?",
+      "why_unresolved": "O vídeo menciona a possibilidade, mas não detalha o processo ou os materiais necessários.",
+      "evidence": "Transcrito: 'Okay, so if we can make our own tablets now, that's a $50 piece, and we can make our own phones now, we can add a SIM card to that.'"
+    },
+    {
+      "question": "Quais são os desafios práticos de criar uma comunidade autossustentável com casas impressas em 3D a partir de lixo?",
+      "why_unresolved": "O vídeo expressa otimismo, mas não aborda obstáculos como regulamentações, custos ocultos ou viabilidade técnica em larga escala.",
+      "evidence": "Transcrito: 'We're about to make 3D-printed dome houses out of trash. I don't think we need a job anymore. What am I missing?'"
+    }
+  ],
+  "practical_extensions": [
+    {
+      "topic": "Uso de plástico reciclado para construção de casas",
+      "why_useful": "Resolveria problemas ambientais e de moradia simultaneamente.",
+      "how_it_extends_the_video": "Sugere-se explorar revestimentos naturais (como cedro) para evitar odor de plástico no interior das casas.",
+      "evidence": "Descrição do vídeo: 'Wouldn’t it be great to turn all of the plastic into houses? I don’t want it to smell like plastic on the inside…. We need cedar or something.'"
+    }
+  ],
+  "counterpoints_or_tensions": [
+    {
+      "point": "A afirmação 'não precisamos mais de empregos' ignora custos invisíveis como saúde, educação e infraestrutura comunitária.",
+      "why_it_matters": "Autossuficiência total é uma proposição complexa que requer planejamento além de moradia e energia.",
+      "evidence": "Transcrito: 'I don't think we need a job anymore. What am I missing? Will somebody tell me what I'm missing? We gotta pay for rent.'"
+    }
+  ],
+  "examples_from_audience": [],
+  "audience_questions": [],
+  "terminology_friction": [
+    {
+      "term_or_concept": "'Pattern theory' (teoria do padrão)",
+      "why_confusing": "Mencionada sem explicação sobre como seria aplicada para evitar '#destroyers' em comunidades.",
+      "what_better_explanation_is_needed": "Precisa de exemplos de como padrões comportamentais podem ser identificados e mitigados.",
+      "evidence": "Descrição do vídeo: 'That’s the biggest problem is working together as a team and we can use pattern theory to make sure we don’t any #destroyers'"
+    }
+  ],
+  "recommended_next_piece": {
+    "format": "Tutorial prático",
+    "title": "Como montar um sistema de energia autossustentável para comunidades",
+    "reason": "O vídeo menciona gerar energia própria, mas não detalha como isso seria alcançado na prática."
+  },
+  "learning_priorities": [
+    {
+      "priority": "Viabilidade técnica de impressão 3D com plástico reciclado para construção",
+      "why_it_matters_now": "É a base da proposta de moradia acessível e sustentável apresentada.",
+      "evidence": "Descrição + transcrição sobre casas-domo impressas com lixo"
+    },
+    {
+      "priority": "Modelos de governança para comunidades autossustentáveis",
+      "why_it_matters_now": "O vídeo fala em 'rastrear membros da comunidade' sem explicar como evitar abusos ou garantir equidade.",
+      "evidence": "Descrição: 'computer software to track every member of the community consciousness, advancement, and real world alterations'"
+    }
+  ],
+  "source_split": {
+    "main_takeaways_from_video": [
+      "Visão de autossuficiência através de tecnologia caseira e reciclagem",
+      "Proposta de comunidades com maker spaces compartilhados globais",
+      "Uso de impressão 3D com materiais reciclados para construção de moradias"
+    ],
+    "main_takeaways_from_audience": []
+  },
+  "_translation_meta": {
+    "model": "deepseek/deepseek-chat",
+    "raw_response": {
+      "id": "gen-1778098178-yfYayTxEb0ojnLtohdBQ",
+      "object": "chat.completion",
+      "created": 1778098178,
+      "model": "deepseek/deepseek-chat-v3",
+      "provider": "Novita",
+      "system_fingerprint": null,
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "Aqui está o JSON traduzido para pt-BR com os valores textuais localizados, mantendo todas as chaves, estrutura e elementos invariáveis:\n\n```json\n{\n  \"learning_summary\": {\n    \"what_the_video_teaches\": \"O vídeo apresenta uma visão de autossuficiência através da criação de dispositivos eletrônicos, geração de energia, construção de casas com impressão 3D usando materiais reciclados e a formação de comunidades autossustentáveis.\",\n    \"what_the_comments_add\": \"Não há comentários disponíveis para análise, portanto, não é possível adicionar insights complementares da audiência.\",\n    \"best_next_step_for_learning\": \"Explorar tutoriais ou demonstrações práticas sobre como criar dispositivos eletrônicos caseiros, gerar energia autossustentável e técnicas de impressão 3D com materiais reciclados.\"\n  },\n  \"complementary_learning\": [],\n  \"open_loops\": [\n    {\n      \"question\": \"Como exatamente os dispositivos eletrônicos caseiros (tablets e phones) são fabricados e como um SIM card pode ser adicionado?\",\n      \"why_unresolved\": \"O vídeo menciona a possibilidade, mas não detalha o processo ou os materiais necessários.\",\n      \"evidence\": \"Transcrito: 'Okay, so if we can make our own tablets now, that's a $50 piece, and we can make our own phones now, we can add a SIM card to that.'\"\n    },\n    {\n      \"question\": \"Quais são os desafios práticos de criar uma comunidade autossustentável com casas impressas em 3D a partir de lixo?\",\n      \"why_unresolved\": \"O vídeo expressa otimismo, mas não aborda obstáculos como regulamentações, custos ocultos ou viabilidade técnica em larga escala.\",\n      \"evidence\": \"Transcrito: 'We're about to make 3D-printed dome houses out of trash. I don't think we need a job anymore. What am I missing?'\"\n    }\n  ],\n  \"practical_extensions\": [\n    {\n      \"topic\": \"Uso de plástico reciclado para construção de casas\",\n      \"why_useful\": \"Resolveria problemas ambientais e de moradia simultaneamente.\",\n      \"how_it_extends_the_video\": \"Sugere-se explorar revestimentos naturais (como cedro) para evitar odor de plástico no interior das casas.\",\n      \"evidence\": \"Descrição do vídeo: 'Wouldn’t it be great to turn all of the plastic into houses? I don’t want it to smell like plastic on the inside…. We need cedar or something.'\"\n    }\n  ],\n  \"counterpoints_or_tensions\": [\n    {\n      \"point\": \"A afirmação 'não precisamos mais de empregos' ignora custos invisíveis como saúde, educação e infraestrutura comunitária.\",\n      \"why_it_matters\": \"Autossuficiência total é uma proposição complexa que requer planejamento além de moradia e energia.\",\n      \"evidence\": \"Transcrito: 'I don't think we need a job anymore. What am I missing? Will somebody tell me what I'm missing? We gotta pay for rent.'\"\n    }\n  ],\n  \"examples_from_audience\": [],\n  \"audience_questions\": [],\n  \"terminology_friction\": [\n    {\n      \"term_or_concept\": \"'Pattern theory' (teoria do padrão)\",\n      \"why_confusing\": \"Mencionada sem explicação sobre como seria aplicada para evitar '#destroyers' em comunidades.\",\n      \"what_better_explanation_is_needed\": \"Precisa de exemplos de como padrões comportamentais podem ser identificados e mitigados.\",\n      \"evidence\": \"Descrição do vídeo: 'That’s the biggest problem is working together as a team and we can use pattern theory to make sure we don’t any #destroyers'\"\n    }\n  ],\n  \"recommended_next_piece\": {\n    \"format\": \"Tutorial prático\",\n    \"title\": \"Como montar um sistema de energia autossustentável para comunidades\",\n    \"reason\": \"O vídeo menciona gerar energia própria, mas não detalha como isso seria alcançado na prática.\"\n  },\n  \"learning_priorities\": [\n    {\n      \"priority\": \"Viabilidade técnica de impressão 3D com plástico reciclado para construção\",\n      \"why_it_matters_now\": \"É a base da proposta de moradia acessível e sustentável apresentada.\",\n      \"evidence\": \"Descrição + transcrição sobre casas-domo impressas com lixo\"\n    },\n    {\n      \"priority\": \"Modelos de governança para comunidades autossustentáveis\",\n      \"why_it_matters_now\": \"O vídeo fala em 'rastrear membros da comunidade' sem explicar como evitar abusos ou garantir equidade.\",\n      \"evidence\": \"Descrição: 'computer software to track every member of the community consciousness, advancement, and real world alterations'\"\n    }\n  ],\n  \"source_split\": {\n    \"main_takeaways_from_video\": [\n      \"Visão de autossuficiência através de tecnologia caseira e reciclagem\",\n      \"Proposta de comunidades com maker spaces compartilhados globais\",\n      \"Uso de impressão 3D com materiais reciclados para construção de moradias\"\n    ],\n    \"main_takeaways_from_audience\": []\n  }\n}\n```",
+            "refusal": null,
+            "reasoning": null
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1194,
+        "completion_tokens": 1224,
+        "total_tokens": 2418,
+        "cost": 0.0020688,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0020688,
+          "upstream_inference_prompt_cost": 0.0004776,
+          "upstream_inference_completions_cost": 0.0015912
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  "_meta": {
+    "model": "deepseek/deepseek-chat",
+    "prompt_file": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/youtube-research/prompts/learning-analysis-v2.md",
+    "raw_response": {
+      "id": "gen-1778098148-84tTnzQEW4et0IAuYLNZ",
+      "object": "chat.completion",
+      "created": 1778098148,
+      "model": "deepseek/deepseek-chat-v3",
+      "provider": "Novita",
+      "system_fingerprint": null,
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "```json\n{\n  \"learning_summary\": {\n    \"what_the_video_teaches\": \"O vídeo apresenta uma visão de autossuficiência através da criação de dispositivos eletrônicos, geração de energia, construção de casas com impressão 3D usando materiais reciclados e a formação de comunidades autossustentáveis.\",\n    \"what_the_comments_add\": \"Não há comentários disponíveis para análise, portanto, não é possível adicionar insights complementares da audiência.\",\n    \"best_next_step_for_learning\": \"Explorar tutoriais ou demonstrações práticas sobre como criar dispositivos eletrônicos caseiros, gerar energia autossustentável e técnicas de impressão 3D com materiais reciclados.\"\n  },\n  \"complementary_learning\": [],\n  \"open_loops\": [\n    {\n      \"question\": \"Como exatamente os dispositivos eletrônicos caseiros (tablets e phones) são fabricados e como um SIM card pode ser adicionado?\",\n      \"why_unresolved\": \"O vídeo menciona a possibilidade, mas não detalha o processo ou os materiais necessários.\",\n      \"evidence\": \"Transcrito: 'Okay, so if we can make our own tablets now, that's a $50 piece, and we can make our own phones now, we can add a SIM card to that.'\"\n    },\n    {\n      \"question\": \"Quais são os desafios práticos de criar uma comunidade autossustentável com casas impressas em 3D a partir de lixo?\",\n      \"why_unresolved\": \"O vídeo expressa otimismo, mas não aborda obstáculos como regulamentações, custos ocultos ou viabilidade técnica em larga escala.\",\n      \"evidence\": \"Transcrito: 'We're about to make 3D-printed dome houses out of trash. I don't think we need a job anymore. What am I missing?'\"\n    }\n  ],\n  \"practical_extensions\": [\n    {\n      \"topic\": \"Uso de plástico reciclado para construção de casas\",\n      \"why_useful\": \"Resolveria problemas ambientais e de moradia simultaneamente.\",\n      \"how_it_extends_the_video\": \"Sugere-se explorar revestimentos naturais (como cedro) para evitar odor de plástico no interior das casas.\",\n      \"evidence\": \"Descrição do vídeo: 'Wouldn’t it be great to turn all of the plastic into houses? I don’t want it to smell like plastic on the inside…. We need cedar or something.'\"\n    }\n  ],\n  \"counterpoints_or_tensions\": [\n    {\n      \"point\": \"A afirmação 'não precisamos mais de empregos' ignora custos invisíveis como saúde, educação e infraestrutura comunitária.\",\n      \"why_it_matters\": \"Autossuficiência total é uma proposição complexa que requer planejamento além de moradia e energia.\",\n      \"evidence\": \"Transcrito: 'I don't think we need a job anymore. What am I missing? Will somebody tell me what I'm missing? We gotta pay for rent.'\"\n    }\n  ],\n  \"examples_from_audience\": [],\n  \"audience_questions\": [],\n  \"terminology_friction\": [\n    {\n      \"term_or_concept\": \"'Pattern theory' (teoria do padrão)\",\n      \"why_confusing\": \"Mencionada sem explicação sobre como seria aplicada para evitar '#destroyers' em comunidades.\",\n      \"what_better_explanation_is_needed\": \"Precisa de exemplos de como padrões comportamentais podem ser identificados e mitigados.\",\n      \"evidence\": \"Descrição do vídeo: 'That’s the biggest problem is working together as a team and we can use pattern theory to make sure we don’t any #destroyers'\"\n    }\n  ],\n  \"recommended_next_piece\": {\n    \"format\": \"Tutorial prático\",\n    \"title\": \"Como montar um sistema de energia autossustentável para comunidades\",\n    \"reason\": \"O vídeo menciona gerar energia própria, mas não detalha como isso seria alcançado na prática.\"\n  },\n  \"learning_priorities\": [\n    {\n      \"priority\": \"Viabilidade técnica de impressão 3D com plástico reciclado para construção\",\n      \"why_it_matters_now\": \"É a base da proposta de moradia acessível e sustentável apresentada.\",\n      \"evidence\": \"Descrição + transcrição sobre casas-domo impressas com lixo\"\n    },\n    {\n      \"priority\": \"Modelos de governança para comunidades autossustentáveis\",\n      \"why_it_matters_now\": \"O vídeo fala em 'rastrear membros da comunidade' sem explicar como evitar abusos ou garantir equidade.\",\n      \"evidence\": \"Descrição: 'computer software to track every member of the community consciousness, advancement, and real world alterations'\"\n    }\n  ],\n  \"source_split\": {\n    \"main_takeaways_from_video\": [\n      \"Visão de autossuficiência através de tecnologia caseira e reciclagem\",\n      \"Proposta de comunidades com maker spaces compartilhados globais\",\n      \"Uso de impressão 3D com materiais reciclados para construção de moradias\"\n    ],\n    \"main_takeaways_from_audience\": []\n  }\n}\n```",
+            "refusal": null,
+            "reasoning": null
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1502,
+        "completion_tokens": 1191,
+        "total_tokens": 2693,
+        "cost": 0.0021491,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0021491,
+          "upstream_inference_prompt_cost": 0.0006008,
+          "upstream_inference_completions_cost": 0.0015483
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  }
+}

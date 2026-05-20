@@ -1,0 +1,136 @@
+{
+  "learning_summary": {
+    "what_the_video_teaches": "O vídeo apresenta Spencer Chang, um artista que cria softwares interativos e esculturas que promovem conexões humanas de forma lúdica e criativa. Ele oferece acesso exclusivo a um projeto secreto para seguidores que acreditam em tecnologia divertida e íntima.",
+    "what_the_comments_add": "Não há comentários disponíveis para análise, o que limita a compreensão da recepção da audiência.",
+    "best_next_step_for_learning": "Seguir Spencer Chang no Instagram para receber o link do projeto exclusivo e explorar seu trabalho anterior para entender melhor sua abordagem artística e tecnológica."
+  },
+  "complementary_learning": [],
+  "open_loops": [
+    {
+      "question": "Qual é o projeto secreto que Spencer Chang menciona?",
+      "why_unresolved": "O vídeo não revela detalhes sobre o projeto, apenas promete enviar o link por DM para novos seguidores.",
+      "evidence": "O transcript menciona: 'I'm going to personally DM you a link to this project'."
+    }
+  ],
+  "practical_extensions": [],
+  "counterpoints_or_tensions": [],
+  "examples_from_audience": [],
+  "audience_questions": [],
+  "terminology_friction": [],
+  "recommended_next_piece": {
+    "format": "Projeto interativo online",
+    "title": "Projeto secreto de Spencer Chang",
+    "reason": "O vídeo promete acesso exclusivo a um projeto importante que ele vem desenvolvendo nos últimos anos, o que pode ser uma oportunidade única para entender sua visão artística e tecnológica."
+  },
+  "learning_priorities": [
+    {
+      "priority": "Explorar o trabalho anterior de Spencer Chang",
+      "why_it_matters_now": "Para contextualizar o projeto secreto e entender melhor sua abordagem criativa.",
+      "evidence": "O transcript menciona: 'Think whimsical websites and interactive sculptures that allow you to connect with strangers'."
+    }
+  ],
+  "source_split": {
+    "main_takeaways_from_video": [
+      "Spencer Chang é um artista que combina tecnologia e arte para criar experiências interativas e lúdicas.",
+      "O vídeo oferece acesso exclusivo a um projeto secreto para seguidores que compartilham sua visão de tecnologia criativa."
+    ],
+    "main_takeaways_from_audience": []
+  },
+  "_translation_meta": {
+    "model": "deepseek/deepseek-chat",
+    "raw_response": {
+      "id": "gen-1778099245-3YPDP7hMjl2kqNGI51fq",
+      "object": "chat.completion",
+      "created": 1778099245,
+      "model": "deepseek/deepseek-chat-v3",
+      "provider": "Novita",
+      "system_fingerprint": null,
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "```json\n{\n  \"learning_summary\": {\n    \"what_the_video_teaches\": \"O vídeo apresenta Spencer Chang, um artista que cria softwares interativos e esculturas que promovem conexões humanas de forma lúdica e criativa. Ele oferece acesso exclusivo a um projeto secreto para seguidores que acreditam em tecnologia divertida e íntima.\",\n    \"what_the_comments_add\": \"Não há comentários disponíveis para análise, o que limita a compreensão da recepção da audiência.\",\n    \"best_next_step_for_learning\": \"Seguir Spencer Chang no Instagram para receber o link do projeto exclusivo e explorar seu trabalho anterior para entender melhor sua abordagem artística e tecnológica.\"\n  },\n  \"complementary_learning\": [],\n  \"open_loops\": [\n    {\n      \"question\": \"Qual é o projeto secreto que Spencer Chang menciona?\",\n      \"why_unresolved\": \"O vídeo não revela detalhes sobre o projeto, apenas promete enviar o link por DM para novos seguidores.\",\n      \"evidence\": \"O transcript menciona: 'I'm going to personally DM you a link to this project'.\"\n    }\n  ],\n  \"practical_extensions\": [],\n  \"counterpoints_or_tensions\": [],\n  \"examples_from_audience\": [],\n  \"audience_questions\": [],\n  \"terminology_friction\": [],\n  \"recommended_next_piece\": {\n    \"format\": \"Projeto interativo online\",\n    \"title\": \"Projeto secreto de Spencer Chang\",\n    \"reason\": \"O vídeo promete acesso exclusivo a um projeto importante que ele vem desenvolvendo nos últimos anos, o que pode ser uma oportunidade única para entender sua visão artística e tecnológica.\"\n  },\n  \"learning_priorities\": [\n    {\n      \"priority\": \"Explorar o trabalho anterior de Spencer Chang\",\n      \"why_it_matters_now\": \"Para contextualizar o projeto secreto e entender melhor sua abordagem criativa.\",\n      \"evidence\": \"O transcript menciona: 'Think whimsical websites and interactive sculptures that allow you to connect with strangers'.\"\n    }\n  ],\n  \"source_split\": {\n    \"main_takeaways_from_video\": [\n      \"Spencer Chang é um artista que combina tecnologia e arte para criar experiências interativas e lúdicas.\",\n      \"O vídeo oferece acesso exclusivo a um projeto secreto para seguidores que compartilham sua visão de tecnologia criativa.\"\n    ],\n    \"main_takeaways_from_audience\": []\n  }\n}\n```",
+            "refusal": null,
+            "reasoning": null
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 612,
+        "completion_tokens": 565,
+        "total_tokens": 1177,
+        "cost": 0.0009793,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0009793,
+          "upstream_inference_prompt_cost": 0.0002448,
+          "upstream_inference_completions_cost": 0.0007345
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  "_meta": {
+    "model": "deepseek/deepseek-chat",
+    "prompt_file": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/youtube-research/prompts/learning-analysis-v2.md",
+    "raw_response": {
+      "id": "gen-1778099231-6l1wjnTw5uatD6E15KEp",
+      "object": "chat.completion",
+      "created": 1778099231,
+      "model": "deepseek/deepseek-chat-v3",
+      "provider": "Novita",
+      "system_fingerprint": null,
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "```json\n{\n  \"learning_summary\": {\n    \"what_the_video_teaches\": \"O vídeo apresenta Spencer Chang, um artista que cria softwares interativos e esculturas que promovem conexões humanas de forma lúdica e criativa. Ele oferece acesso exclusivo a um projeto secreto para seguidores que acreditam em tecnologia divertida e íntima.\",\n    \"what_the_comments_add\": \"Não há comentários disponíveis para análise, o que limita a compreensão da recepção da audiência.\",\n    \"best_next_step_for_learning\": \"Seguir Spencer Chang no Instagram para receber o link do projeto exclusivo e explorar seu trabalho anterior para entender melhor sua abordagem artística e tecnológica.\"\n  },\n  \"complementary_learning\": [],\n  \"open_loops\": [\n    {\n      \"question\": \"Qual é o projeto secreto que Spencer Chang menciona?\",\n      \"why_unresolved\": \"O vídeo não revela detalhes sobre o projeto, apenas promete enviar o link por DM para novos seguidores.\",\n      \"evidence\": \"O transcript menciona: 'I'm going to personally DM you a link to this project'.\"\n    }\n  ],\n  \"practical_extensions\": [],\n  \"counterpoints_or_tensions\": [],\n  \"examples_from_audience\": [],\n  \"audience_questions\": [],\n  \"terminology_friction\": [],\n  \"recommended_next_piece\": {\n    \"format\": \"Projeto interativo online\",\n    \"title\": \"Projeto secreto de Spencer Chang\",\n    \"reason\": \"O vídeo promete acesso exclusivo a um projeto importante que ele vem desenvolvendo nos últimos anos, o que pode ser uma oportunidade única para entender sua visão artística e tecnológica.\"\n  },\n  \"learning_priorities\": [\n    {\n      \"priority\": \"Explorar o trabalho anterior de Spencer Chang\",\n      \"why_it_matters_now\": \"Para contextualizar o projeto secreto e entender melhor sua abordagem criativa.\",\n      \"evidence\": \"O transcript menciona: 'Think whimsical websites and interactive sculptures that allow you to connect with strangers'.\"\n    }\n  ],\n  \"source_split\": {\n    \"main_takeaways_from_video\": [\n      \"Spencer Chang é um artista que combina tecnologia e arte para criar experiências interativas e lúdicas.\",\n      \"O vídeo oferece acesso exclusivo a um projeto secreto para seguidores que compartilham sua visão de tecnologia criativa.\"\n    ],\n    \"main_takeaways_from_audience\": []\n  }\n}\n```",
+            "refusal": null,
+            "reasoning": null
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1365,
+        "completion_tokens": 565,
+        "total_tokens": 1930,
+        "cost": 0.0012805,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0012805,
+          "upstream_inference_prompt_cost": 0.000546,
+          "upstream_inference_completions_cost": 0.0007345
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  }
+}

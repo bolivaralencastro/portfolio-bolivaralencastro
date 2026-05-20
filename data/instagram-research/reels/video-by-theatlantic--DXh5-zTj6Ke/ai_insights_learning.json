@@ -1,0 +1,130 @@
+{
+  "learning_summary": {
+    "what_the_video_teaches": "O vídeo discute a economia dos clipes, onde clipes de conteúdo são consumidos como o principal produto, e não apenas como material promocional para o conteúdo completo, como podcasts.",
+    "what_the_comments_add": "Não há comentários disponíveis para análise, portanto, não é possível adicionar insights complementares da audiência.",
+    "best_next_step_for_learning": "Explorar mais sobre como diferentes plataformas de mídia social estão sendo usadas para consumir clipes de conteúdo, e como criadores podem otimizar seus clipes para engajamento."
+  },
+  "complementary_learning": [],
+  "open_loops": [],
+  "practical_extensions": [],
+  "counterpoints_or_tensions": [],
+  "examples_from_audience": [],
+  "audience_questions": [],
+  "terminology_friction": [],
+  "recommended_next_piece": {
+    "format": "artigo",
+    "title": "Como otimizar clipes de conteúdo para engajamento em plataformas sociais",
+    "reason": "Complementa a discussão do vídeo fornecendo estratégias práticas para criadores de conteúdo."
+  },
+  "learning_priorities": [
+    {
+      "priority": "Entender como diferentes demográficos consomem clipes de conteúdo",
+      "why_it_matters_now": "Ajuda criadores e marcas a adaptar seu conteúdo para maximizar o alcance e engajamento.",
+      "evidence": "O vídeo menciona que jovens não clicam em links para conteúdo completo, apenas consomem clipes."
+    }
+  ],
+  "source_split": {
+    "main_takeaways_from_video": [
+      "Clipes são consumidos como conteúdo principal, não apenas como material promocional.",
+      "Criadores precisam investir mais tempo e esforço em clipes para garantir que ressoem nas plataformas."
+    ],
+    "main_takeaways_from_audience": []
+  },
+  "_translation_meta": {
+    "model": "deepseek/deepseek-chat",
+    "raw_response": {
+      "id": "gen-1778098247-i6fXzLPRX31NiKBZqXGo",
+      "object": "chat.completion",
+      "created": 1778098247,
+      "model": "deepseek/deepseek-chat-v3",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "```json\n{\"learning_summary\": {\"what_the_video_teaches\": \"O vídeo discute a economia dos clipes, onde clipes de conteúdo são consumidos como o principal produto, e não apenas como material promocional para o conteúdo completo, como podcasts.\", \"what_the_comments_add\": \"Não há comentários disponíveis para análise, portanto, não é possível adicionar insights complementares da audiência.\", \"best_next_step_for_learning\": \"Explorar mais sobre como diferentes plataformas de mídia social estão sendo usadas para consumir clipes de conteúdo, e como criadores podem otimizar seus clipes para engajamento.\"}, \"complementary_learning\": [], \"open_loops\": [], \"practical_extensions\": [], \"counterpoints_or_tensions\": [], \"examples_from_audience\": [], \"audience_questions\": [], \"terminology_friction\": [], \"recommended_next_piece\": {\"format\": \"artigo\", \"title\": \"Como otimizar clipes de conteúdo para engajamento em plataformas sociais\", \"reason\": \"Complementa a discussão do vídeo fornecendo estratégias práticas para criadores de conteúdo.\"}, \"learning_priorities\": [{\"priority\": \"Entender como diferentes demográficos consomem clipes de conteúdo\", \"why_it_matters_now\": \"Ajuda criadores e marcas a adaptar seu conteúdo para maximizar o alcance e engajamento.\", \"evidence\": \"O vídeo menciona que jovens não clicam em links para conteúdo completo, apenas consomem clipes.\"}], \"source_split\": {\"main_takeaways_from_video\": [\"Clipes são consumidos como conteúdo principal, não apenas como material promocional.\", \"Criadores precisam investir mais tempo e esforço em clipes para garantir que ressoem nas plataformas.\"], \"main_takeaways_from_audience\": []}}\n```",
+            "refusal": null,
+            "reasoning": null
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 511,
+        "completion_tokens": 417,
+        "total_tokens": 928,
+        "cost": 0.00053465,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00053465,
+          "upstream_inference_prompt_cost": 0.00016352,
+          "upstream_inference_completions_cost": 0.00037113
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  "_meta": {
+    "model": "deepseek/deepseek-chat",
+    "prompt_file": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/youtube-research/prompts/learning-analysis-v2.md",
+    "raw_response": {
+      "id": "gen-1778098235-JdimJapVBMeWE1e9BOvl",
+      "object": "chat.completion",
+      "created": 1778098235,
+      "model": "deepseek/deepseek-chat-v3",
+      "provider": "Novita",
+      "system_fingerprint": null,
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "```json\n{\n  \"learning_summary\": {\n    \"what_the_video_teaches\": \"O vídeo discute a economia dos clipes, onde clipes de conteúdo são consumidos como o principal produto, e não apenas como material promocional para o conteúdo completo, como podcasts.\",\n    \"what_the_comments_add\": \"Não há comentários disponíveis para análise, portanto, não é possível adicionar insights complementares da audiência.\",\n    \"best_next_step_for_learning\": \"Explorar mais sobre como diferentes plataformas de mídia social estão sendo usadas para consumir clipes de conteúdo, e como criadores podem otimizar seus clipes para engajamento.\"\n  },\n  \"complementary_learning\": [],\n  \"open_loops\": [],\n  \"practical_extensions\": [],\n  \"counterpoints_or_tensions\": [],\n  \"examples_from_audience\": [],\n  \"audience_questions\": [],\n  \"terminology_friction\": [],\n  \"recommended_next_piece\": {\n    \"format\": \"artigo\",\n    \"title\": \"Como otimizar clipes de conteúdo para engajamento em plataformas sociais\",\n    \"reason\": \"Complementa a discussão do vídeo fornecendo estratégias práticas para criadores de conteúdo.\"\n  },\n  \"learning_priorities\": [\n    {\n      \"priority\": \"Entender como diferentes demográficos consomem clipes de conteúdo\",\n      \"why_it_matters_now\": \"Ajuda criadores e marcas a adaptar seu conteúdo para maximizar o alcance e engajamento.\",\n      \"evidence\": \"O vídeo menciona que jovens não clicam em links para conteúdo completo, apenas consomem clipes.\"\n    }\n  ],\n  \"source_split\": {\n    \"main_takeaways_from_video\": [\n      \"Clipes são consumidos como conteúdo principal, não apenas como material promocional.\",\n      \"Criadores precisam investir mais tempo e esforço em clipes para garantir que ressoem nas plataformas.\"\n    ],\n    \"main_takeaways_from_audience\": []\n  }\n}\n```",
+            "refusal": null,
+            "reasoning": null
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1487,
+        "completion_tokens": 455,
+        "total_tokens": 1942,
+        "cost": 0.0011863,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0011863,
+          "upstream_inference_prompt_cost": 0.0005948,
+          "upstream_inference_completions_cost": 0.0005915
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  }
+}

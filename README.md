@@ -74,6 +74,50 @@ Este repositorio segue um fluxo `local-first` para conteudo publicado:
 
 Nao ha mais workflow de GitHub Actions fazendo commit automatico em `main`. Isso evita divergencias artificiais entre `main` local e remoto, reduz conflitos em arquivos gerados e combina melhor com um fluxo solo de publicacao direta.
 
+## Fluxo de notas
+
+Notas publicadas no `Now` agora nascem em `content/notes/*.md`.
+
+- um arquivo por nota
+- o HTML publico continua em `now.html`
+- `python3 scripts/build_site_metadata.py` le a pasta de notas e regenera o bloco `AUTO:now-notes`
+- `python3 scripts/validate_site.py` valida o `now.html` e os arquivos-fonte das notas
+
+Formato recomendado:
+
+```md
+---
+title: Lendo O infinito em um junco
+date: 2026-05-20
+category: Leitura em curso
+classes: note-seed
+status: published
+---
+
+{{ image src="/assets/images/now/exemplo.webp" alt="Descricao da imagem." width="1440" height="1280" }}
+
+Texto da nota com [links](https://example.com), *italico*, listas e citacoes.
+
+{{ audio src="/assets/audio/notas/exemplo.m4a" caption="Trecho de audio." }}
+{{ video src="/assets/video/notas/exemplo.mp4" poster="/assets/images/now/exemplo-poster.webp" caption="Clip curto." }}
+```
+
+Campos e regras:
+
+- `date`: obrigatorio no front matter ou no prefixo do arquivo (`YYYY-MM-DD-slug.md`)
+- `category`: opcional, padrao `Nota`
+- `classes`: opcional, para reaproveitar estilos como `note-seed`
+- `status`: `published` ou `draft`; rascunhos nao entram no `now.html`
+- shortcodes suportados: `image`, `audio`, `video`
+- para casos mais especificos, blocos HTML puros tambem podem ser embutidos no corpo
+
+Fluxo recomendado para publicar uma nota:
+
+1. criar `content/notes/YYYY-MM-DD-slug.md`
+2. rodar `python3 scripts/build_site_metadata.py`
+3. rodar `python3 scripts/validate_site.py`
+4. commitar e publicar
+
 ## Publicacao social via CLI
 
 Fluxos locais disponiveis:
@@ -109,6 +153,61 @@ X_USERNAME=<handle_opcional>
 ```
 
 Na primeira configuracao, rode `python3 scripts/twitter_auth.py` para concluir o OAuth 1.0a e salvar os tokens no `.env`.
+
+## Pesquisa de videos do YouTube
+
+O repositorio agora inclui um fluxo local para transformar um video do YouTube em material de pesquisa editorial:
+
+- transcript publico do video
+- fallback de audio com `yt-dlp` + `ffmpeg` + OpenRouter STT
+- comentarios top-level
+- replicas de comentarios
+- relatorio com perguntas, dores e oportunidades de conteudo
+- leitura AI opcional com DeepSeek para temas, perguntas e proximas pecas
+
+Configuracao no `.env`:
+
+```bash
+YOUTUBE_API_KEY=<api_key_do_youtube_data_api_v3>
+OPENROUTER_API_KEY=<api_key_openrouter>
+```
+
+Uso:
+
+```bash
+python3 youtube-research/scripts/collect_video_research.py 'https://www.youtube.com/watch?v=VIDEO_ID'
+python3 youtube-research/scripts/collect_video_research.py 'https://youtu.be/VIDEO_ID' --lang pt
+python3 youtube-research/scripts/collect_video_research.py 'https://youtu.be/VIDEO_ID' --force-stt
+python3 youtube-research/scripts/analyze_learning.py youtube-research/videos/<titulo-do-video>--VIDEO_ID
+```
+
+Estrutura:
+
+- `youtube-research/scripts/`: coleta e analise
+- `youtube-research/prompts/`: prompts versionaveis/refinaveis
+- `youtube-research/videos/<titulo-do-video>--<video_id>/`: uma pasta por video analisado
+
+Saida gerada em `youtube-research/videos/<titulo-do-video>--<video_id>/`:
+
+- `video.json`
+- `transcript.json`
+- `transcript.txt`
+- `comments.json`
+- `summary.json`
+- `report.md`
+- `transcript_debug.json`
+- `ai_insights.json` (quando a analise AI estiver ativa)
+- `ai_insights_learning.json` (segunda camada de analise)
+- `final-learning-report.md` (arquivo final para leitura humana)
+
+Observacao importante:
+- comentarios e replicas usam a YouTube Data API v3 no fluxo de YouTube
+- Instagram entra apenas no modo de transcricao por audio; nao ha coleta de comentarios nesse conector
+- o script tenta captions publicas primeiro
+- a resolucao de idioma segue esta ordem: `--lang` explicito, `defaultAudioLanguage`, `defaultLanguage`, autodeteccao do STT
+- por padrao, a lingua do STT e autodetectada; use `--lang pt`, `--lang en` etc. apenas quando quiser forcar
+- se o video nao expuser captions publicas, ele pode cair para extracao local de audio, segmentacao em lotes e transcricao via OpenRouter
+- o modelo padrao de STT e `openai/whisper-large-v3`; o modelo DeepSeek entra na limpeza do transcript e na analise editorial, nao na captura bruta de fala
 
 ## Jules (CLI + REST API)
 
@@ -156,6 +255,7 @@ Metadados minimos obrigatorios:
 - `<title>...</title>`
 - `<meta name="description" content="...">`
 - `<link rel="canonical" href="https://bolivaralencastro.com.br/blog/slug.html">`
+- `<link rel="author" href="https://bolivaralencastro.com.br/about.html">` em posts autorais
 - `<meta property="og:image" content="https://...">` (obrigatorio para capa na listagem do blog)
 - recomendado para listagens: `assets/images/blog/<slug>/card.webp` em 960x540
 - exatamente um `<h1>` (idealmente `class="p-name"`)
@@ -163,6 +263,15 @@ Metadados minimos obrigatorios:
 - JSON-LD com `"@type": "BlogPosting"`
 - conteudo em `.e-content` com ao menos um paragrafo
 - recomendado: Open Graph + Twitter Card (`og:*` e `twitter:*`)
+
+Camada editorial recomendada para posts longos:
+- metadata visivel com autor em `u-author h-card` e `rel="author"`
+- `.p-summary` como resumo editorial do post
+- `.quick-answer` logo depois da summary para uma tese curta, autocontida e citavel
+- `p-category` para categoria principal e, quando concreto, tags secundarias
+- `.references` no fim do corpo quando fontes externas sustentam a leitura
+- `BlogPosting` JSON-LD com `inLanguage`, `articleSection`, `keywords`, `author.url`, `datePublished`, `dateModified`, `image`, `description` e `url`
+- evitar `FAQPage` como padrao editorial; use FAQ apenas quando perguntas e respostas forem parte real do conteudo visivel
 
 Heuristicas usadas no feed:
 - titulo: `<h1 class="p-name">` ou `<title>`

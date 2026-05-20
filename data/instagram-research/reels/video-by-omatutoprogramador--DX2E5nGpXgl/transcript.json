@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "status": "ok",
+    "language_code": "",
+    "track_name": "OpenRouter audio transcription",
+    "is_auto_generated": false,
+    "source": "audio_stt",
+    "stt_model": "openai/whisper-large-v3",
+    "cleanup_model": "deepseek/deepseek-chat",
+    "chunk_seconds": 480,
+    "chunk_overlap_seconds": 2,
+    "chunk_count": 1,
+    "audio_path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DX2E5nGpXgl/_audio_work/source.m4a",
+    "language_resolution": "stt_auto_detect"
+  },
+  "segments": [
+    {
+      "start_ms": 0,
+      "duration_ms": 96000,
+      "text": "O grupo da família no WhatsApp é a maior operação de vazamento de dados não intencional da América Latina. O brasileiro tem medo de colocar o CPF na farmácia, mas posta a foto do cartão de embarque na viagem sem borrar o código de barras. É, meus amigos, a minha tia me mandou uma foto da casa de praia que ela acabou de alugar. E, como ela acha que entende de tecnologia, me mandou a foto com a opção de enviar como documento, porque a vizinha disse que o WhatsApp não tira a qualidade. O que a vizinha não disse é que o WhatsApp também não tira os metadados. Para preservar a sua integridade física e digital, é estritamente recomendado desativar os serviços de geolocalização do aplicativo da câmera e evitar a exposição de rotinas em tempo real. Mas dar conselho no grupo da família é falar com as paredes, não é mesmo? Eles respondem com figurinha de bom dia, com glitter, e eu não dou conselho, eu faço terrorismo educacional. E, como eu penso fora da caixa, baixei a foto da minha tia, abri meu terminal e ativei o modo OSINT, que é a inteligência de fontes abertas. Eu não perguntei onde ela estava, perguntei para a foto. Rodei um comando e, em milissegundos, a foto anônima da minha tia me entregou a latitude, a longitude, a altitude, o modelo de celular — um iPhone 13 Pro — e a hora exata em que a foto foi tirada. Peguei as coordenadas, joguei no Google Maps, peguei o link do Street View mostrando a porta exata da casa de praia e mandei no grupo com a mensagem: \"Tia, a casa é linda, mas o portão da garagem está com pintura descascando. Quer que eu chame o pintor?\" O grupo ficou em silêncio por cinco minutos. Minha tia me ligou tremendo: \"João, você instalou câmera no meu celular? Você hackeou a operadora?\" Eu suspirei e respondi: \"Tia, eu não sou espião russo. Eu sou seu sobrinho. O seu celular colocou um rastreador na sua foto, e você entregou de bandeja para 40 parentes. Para isso, desliga a localização da câmera e vai passar protetor solar e se divertir.\" Afinal, meu nome é João Gabriel Matuto, programador e o melhor programador do mundo. E a privacidade de vocês depende da minha paciência.",
+      "source": "audio_stt_merged"
+    }
+  ]
+}

@@ -5,4 +5,5 @@ assets/images/.DS_Store
 referencias/
 .env
 .linkedin_token
-data/
+data/*.sqlite
+youtube-research/videos/

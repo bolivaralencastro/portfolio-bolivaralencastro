@@ -1,0 +1,23 @@
+{
+  "post_summary": "O post anuncia uma live gratuita promovida pela Montag School que ensinará como sair do uso isolado de ferramentas e começar a construir workflows integrados com inteligência artificial. A transmissão ao vivo ocorrerá no dia 13 de maio às 19h.",
+  "slide_descriptions": [
+    "Slide único com fundo azul e elementos gráficos vermelhos, contendo o texto principal que destaca a realização de uma live aberta sobre construção de workflows com IA, com ênfase na data e horário do evento."
+  ],
+  "main_message": "Convidar o público a participar de uma live prática e gratuita para aprender a integrar ferramentas de IA em workflows eficientes, superando o uso solto e desconectado dessas tecnologias.",
+  "key_information": [
+    "Live gratuita sobre workflows com IA",
+    "Data do evento: 13/05",
+    "Horário: 19h",
+    "Organização: Montag School",
+    "Foco na aplicação prática e ao vivo"
+  ],
+  "context_and_relevance": "Com o crescimento do uso de inteligência artificial, muitos profissionais ainda utilizam ferramentas de forma isolada, sem integração. Este conteúdo é relevante para quem busca otimizar processos e aumentar a produtividade por meio de workflows estruturados com IA, alinhado às tendências atuais do mercado de tecnologia e inovação.",
+  "takeaway": "A importância de aprender a construir workflows integrados com IA para maximizar o potencial das ferramentas disponíveis, além de aproveitar oportunidades de aprendizado ao vivo e gratuito para aprimorar habilidades técnicas.",
+  "content_type": "texto",
+  "_meta": {
+    "model": "openai/gpt-4.1-mini",
+    "n_slides": 1,
+    "post_id": "DX7DjZujNHc",
+    "post_url": "https://www.instagram.com/p/DX7DjZujNHc/"
+  }
+}

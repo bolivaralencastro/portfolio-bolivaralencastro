@@ -1,0 +1,65 @@
+{
+  "source_audio_path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DX4ibPyzIXI/_audio_work/source.m4a",
+  "chunks": [
+    {
+      "index": 0,
+      "start_seconds": 0,
+      "duration_seconds": 53.242,
+      "path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DX4ibPyzIXI/_audio_work/chunks/chunk-000.wav",
+      "size_bytes": 1703822,
+      "transcript_text": "Okay, so if we can make our own tablets now, that's a $50 piece, and we can make our own phones now, we can add a SIM card to that. And if we make our own electricity, and we're out gold prospecting, making income, and we have machines that pull water out of the air. We're about to make 3D printed dome houses Out of trash I don't think we need a job anymore What am I missing? Will somebody tell me what I'm missing? We gotta pay for rent That's the biggest problem, huh? We need a commune With 3D printed dome houses A-stat Yes",
+      "usage": {
+        "seconds": 53.24,
+        "cost": 0.0016415666666666667
+      },
+      "model": "openai/whisper-large-v3"
+    }
+  ],
+  "raw_merged_transcript": "Okay, so if we can make our own tablets now, that's a $50 piece, and we can make our own phones now, we can add a SIM card to that. And if we make our own electricity, and we're out gold prospecting, making income, and we have machines that pull water out of the air. We're about to make 3D printed dome houses Out of trash I don't think we need a job anymore What am I missing? Will somebody tell me what I'm missing? We gotta pay for rent That's the biggest problem, huh? We need a commune With 3D printed dome houses A-stat Yes",
+  "cleaned_transcript": "Okay, so if we can make our own tablets now, that's a $50 piece, and we can make our own phones now, we can add a SIM card to that. And if we make our own electricity, and we're out gold prospecting, making income, and we have machines that pull water out of the air. We're about to make 3D-printed dome houses out of trash. I don't think we need a job anymore. What am I missing? Will somebody tell me what I'm missing? We gotta pay for rent. That's the biggest problem, huh? We need a commune with 3D-printed dome houses. A-stat. Yes.",
+  "cleanup_response": {
+    "id": "gen-1778098142-PpIyVFJXfijvHHTFIFWF",
+    "object": "chat.completion",
+    "created": 1778098142,
+    "model": "deepseek/deepseek-chat-v3",
+    "provider": "Novita",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Okay, so if we can make our own tablets now, that's a $50 piece, and we can make our own phones now, we can add a SIM card to that. And if we make our own electricity, and we're out gold prospecting, making income, and we have machines that pull water out of the air. We're about to make 3D-printed dome houses out of trash. I don't think we need a job anymore. What am I missing? Will somebody tell me what I'm missing? We gotta pay for rent. That's the biggest problem, huh? We need a commune with 3D-printed dome houses. A-stat. Yes.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 231,
+      "completion_tokens": 141,
+      "total_tokens": 372,
+      "cost": 0.0002757,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002757,
+        "upstream_inference_prompt_cost": 9.24e-05,
+        "upstream_inference_completions_cost": 0.0001833
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

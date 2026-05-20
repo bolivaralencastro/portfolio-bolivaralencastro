@@ -1,0 +1,65 @@
+{
+  "source_audio_path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DXzVDpAgGYw/_audio_work/source.m4a",
+  "chunks": [
+    {
+      "index": 0,
+      "start_seconds": 0,
+      "duration_seconds": 12.723,
+      "path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DXzVDpAgGYw/_audio_work/chunks/chunk-000.wav",
+      "size_bytes": 407214,
+      "transcript_text": "Outro Music",
+      "usage": {
+        "seconds": 12.72,
+        "cost": 0.0003922
+      },
+      "model": "openai/whisper-large-v3"
+    }
+  ],
+  "raw_merged_transcript": "Outro Music",
+  "cleaned_transcript": "Outro Music.",
+  "cleanup_response": {
+    "id": "gen-1778099027-0pNzyvKMqpnqJIndR9XM",
+    "object": "chat.completion",
+    "created": 1778099027,
+    "model": "deepseek/deepseek-chat-v3",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Outro Music.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 102,
+      "completion_tokens": 5,
+      "total_tokens": 107,
+      "cost": 3.709e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 3.709e-05,
+        "upstream_inference_prompt_cost": 3.264e-05,
+        "upstream_inference_completions_cost": 4.45e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

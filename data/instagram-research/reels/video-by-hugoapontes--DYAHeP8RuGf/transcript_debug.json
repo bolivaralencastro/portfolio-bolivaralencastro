@@ -1,0 +1,65 @@
+{
+  "source_audio_path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DYAHeP8RuGf/_audio_work/source.m4a",
+  "chunks": [
+    {
+      "index": 0,
+      "start_seconds": 0,
+      "duration_seconds": 124.713,
+      "path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DYAHeP8RuGf/_audio_work/chunks/chunk-000.wav",
+      "size_bytes": 3990894,
+      "transcript_text": "O Brasil não é o país do irmão. O Brasil não é o país da igreja. O Brasil é o país do Senhor. Santo, Santo, eu não vou parar até que o Brasil seja livre. O que está em jogo no Brasil é a transformação do cidadão, do sujeito de direitos, em fiel, em servo. Isso é de interesse do neoliberalismo porque dissolve a possibilidade de crítica estrutural. não se pode contestar o poder divino. O perigo é que o imaginário religioso não permanece no plano abstrato. Ele tem o poder de se materializar em comportamentos, em leis, constituições, códigos civis, reivindicações nacionais. Existe um conceito chamado significações imaginárias instituintes, que representam a capacidade criadora, transformadora da sociedade para gerar novas normas, sentidos, valores, diferente do institu que est estabelecido e fixo o extintuinte um processo din que modifica a realidade social Ent mais do que categorias teol essas significa imagin funcionam como moldes de percepção e, principalmente, de ação. Por exemplo, quando um pedaço de terra é nomeado como prometido, um povo escolhido, ele deixa de ser apenas estado na ação para se converter em prova concreta de uma aliança, em símbolo material de eleição divina, em garantia de continuidade identitária. imagens originariamente formuladas em contextos religiosos específicos ultrapassam o âmbito estritamente individual e passam a modelar a forma como comunidades inteiras se relacionam por exemplo, a disputa pelo governo de uma nação sagrada tende a ser menos flexível que outras controvérsias porque a posse do espaço se converte em prova de ortodoxia, de força divina um outro efeito é a erosão da diversidade, o fundamentalismo não convive bem com a diferença porque sua lógica é totalizante, ele não se limita à esfera da crença individual, ele tenta normatizar comportamentos, afetos, corpos, identidades. O resultado é um processo de estigmatização, violência simbólica, que frequentemente transborda para a violência material.",
+      "usage": {
+        "seconds": 124.6565,
+        "cost": 0.0038435754166666666
+      },
+      "model": "openai/whisper-large-v3"
+    }
+  ],
+  "raw_merged_transcript": "O Brasil não é o país do irmão. O Brasil não é o país da igreja. O Brasil é o país do Senhor. Santo, Santo, eu não vou parar até que o Brasil seja livre. O que está em jogo no Brasil é a transformação do cidadão, do sujeito de direitos, em fiel, em servo. Isso é de interesse do neoliberalismo porque dissolve a possibilidade de crítica estrutural. não se pode contestar o poder divino. O perigo é que o imaginário religioso não permanece no plano abstrato. Ele tem o poder de se materializar em comportamentos, em leis, constituições, códigos civis, reivindicações nacionais. Existe um conceito chamado significações imaginárias instituintes, que representam a capacidade criadora, transformadora da sociedade para gerar novas normas, sentidos, valores, diferente do institu que est estabelecido e fixo o extintuinte um processo din que modifica a realidade social Ent mais do que categorias teol essas significa imagin funcionam como moldes de percepção e, principalmente, de ação. Por exemplo, quando um pedaço de terra é nomeado como prometido, um povo escolhido, ele deixa de ser apenas estado na ação para se converter em prova concreta de uma aliança, em símbolo material de eleição divina, em garantia de continuidade identitária. imagens originariamente formuladas em contextos religiosos específicos ultrapassam o âmbito estritamente individual e passam a modelar a forma como comunidades inteiras se relacionam por exemplo, a disputa pelo governo de uma nação sagrada tende a ser menos flexível que outras controvérsias porque a posse do espaço se converte em prova de ortodoxia, de força divina um outro efeito é a erosão da diversidade, o fundamentalismo não convive bem com a diferença porque sua lógica é totalizante, ele não se limita à esfera da crença individual, ele tenta normatizar comportamentos, afetos, corpos, identidades. O resultado é um processo de estigmatização, violência simbólica, que frequentemente transborda para a violência material.",
+  "cleaned_transcript": "Aqui está a transcrição revisada, mantendo o significado exato e corrigindo apenas questões de pontuação, capitalização e quebras óbvias de ASR:\n\n---\n\n\"O Brasil não é o país do irmão. O Brasil não é o país da igreja. O Brasil é o país do Senhor. Santo, Santo, eu não vou parar até que o Brasil seja livre. O que está em jogo no Brasil é a transformação do cidadão, do sujeito de direitos, em fiel, em servo. Isso é de interesse do neoliberalismo porque dissolve a possibilidade de crítica estrutural. Não se pode contestar o poder divino. O perigo é que o imaginário religioso não permanece no plano abstrato. Ele tem o poder de se materializar em comportamentos, em leis, constituições, códigos civis, reivindicações nacionais. Existe um conceito chamado 'significações imaginárias instituintes', que representam a capacidade criadora, transformadora da sociedade para gerar novas normas, sentidos, valores, diferente do instituído e fixo. É um processo dinâmico que modifica a realidade social. Mais do que categorias teóricas, essas significações imaginárias funcionam como moldes de percepção e, principalmente, de ação. Por exemplo, quando um pedaço de terra é nomeado como Prometido, um Povo Escolhido, ele deixa de ser apenas estado nação para se converter em prova concreta de uma aliança, em símbolo material de eleição divina, em garantia de continuidade identitária. Imagens originariamente formuladas em contextos religiosos específicos ultrapassam o âmbito estritamente individual e passam a modelar a forma como comunidades inteiras se relacionam. Por exemplo, a disputa pelo governo de uma nação sagrada tende a ser menos flexível que outras controvérsias porque a posse do espaço se converte em prova de ortodoxia, de força divina. Um outro efeito é a erosão da diversidade: o fundamentalismo não convive bem com a diferença porque sua lógica é totalizante. Ele não se limita à esfera da crença individual; ele tenta normatizar comportamentos, afetos, corpos, identidades. O resultado é um processo de estigmatização, violência simbólica, que frequentemente transborda para a violência material.\"\n\n---\n\nObservação: Mantive termos específicos como \"significações imaginárias instituintes\" e ajustei apenas aspas e pontuação para maior clareza. Correções focaram em concordância, hifenização e padronização de conceitos (ex.: \"Prometido\"/\"Povo Escolhido\"), sem alterar o conteúdo original.",
+  "cleanup_response": {
+    "id": "gen-1778098061-PwSZtHNwtO4rhwEpMIQt",
+    "object": "chat.completion",
+    "created": 1778098061,
+    "model": "deepseek/deepseek-chat-v3",
+    "provider": "Novita",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Aqui está a transcrição revisada, mantendo o significado exato e corrigindo apenas questões de pontuação, capitalização e quebras óbvias de ASR:\n\n---\n\n\"O Brasil não é o país do irmão. O Brasil não é o país da igreja. O Brasil é o país do Senhor. Santo, Santo, eu não vou parar até que o Brasil seja livre. O que está em jogo no Brasil é a transformação do cidadão, do sujeito de direitos, em fiel, em servo. Isso é de interesse do neoliberalismo porque dissolve a possibilidade de crítica estrutural. Não se pode contestar o poder divino. O perigo é que o imaginário religioso não permanece no plano abstrato. Ele tem o poder de se materializar em comportamentos, em leis, constituições, códigos civis, reivindicações nacionais. Existe um conceito chamado 'significações imaginárias instituintes', que representam a capacidade criadora, transformadora da sociedade para gerar novas normas, sentidos, valores, diferente do instituído e fixo. É um processo dinâmico que modifica a realidade social. Mais do que categorias teóricas, essas significações imaginárias funcionam como moldes de percepção e, principalmente, de ação. Por exemplo, quando um pedaço de terra é nomeado como Prometido, um Povo Escolhido, ele deixa de ser apenas estado nação para se converter em prova concreta de uma aliança, em símbolo material de eleição divina, em garantia de continuidade identitária. Imagens originariamente formuladas em contextos religiosos específicos ultrapassam o âmbito estritamente individual e passam a modelar a forma como comunidades inteiras se relacionam. Por exemplo, a disputa pelo governo de uma nação sagrada tende a ser menos flexível que outras controvérsias porque a posse do espaço se converte em prova de ortodoxia, de força divina. Um outro efeito é a erosão da diversidade: o fundamentalismo não convive bem com a diferença porque sua lógica é totalizante. Ele não se limita à esfera da crença individual; ele tenta normatizar comportamentos, afetos, corpos, identidades. O resultado é um processo de estigmatização, violência simbólica, que frequentemente transborda para a violência material.\"\n\n---\n\nObservação: Mantive termos específicos como \"significações imaginárias instituintes\" e ajustei apenas aspas e pontuação para maior clareza. Correções focaram em concordância, hifenização e padronização de conceitos (ex.: \"Prometido\"/\"Povo Escolhido\"), sem alterar o conteúdo original.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 589,
+      "completion_tokens": 611,
+      "total_tokens": 1200,
+      "cost": 0.0010299,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0010299,
+        "upstream_inference_prompt_cost": 0.0002356,
+        "upstream_inference_completions_cost": 0.0007943
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

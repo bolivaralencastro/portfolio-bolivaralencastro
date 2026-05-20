@@ -1,0 +1,65 @@
+{
+  "source_audio_path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DXw0dbBCzjE/_audio_work/source.m4a",
+  "chunks": [
+    {
+      "index": 0,
+      "start_seconds": 0,
+      "duration_seconds": 44.072,
+      "path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DXw0dbBCzjE/_audio_work/chunks/chunk-000.wav",
+      "size_bytes": 1410382,
+      "transcript_text": "If you really want to create a masterpiece, this one's for you. Meet Canvas and Nodes. Now, you can storyboard, plan a pre-production, build your generation workflow with Nodes, all alone on Canvas. And this is where the whole game changes. With Nodes, every part of your creative process becomes editable. You can change the model or camera, and only that part of the workflow updates, while everything else stays connected. And we're just getting started. Now, you can chain every model and keystone together. Image, video, cinematic cameras, voice change, translation, everything becomes part of one connector workflow. And if you don't want to build it yourself, just describe your idea to an AI agent and it creates the entire workflow for you. Comment notes and I'll send you the link.",
+      "usage": {
+        "seconds": 44.07,
+        "cost": 0.001358825
+      },
+      "model": "openai/whisper-large-v3"
+    }
+  ],
+  "raw_merged_transcript": "If you really want to create a masterpiece, this one's for you. Meet Canvas and Nodes. Now, you can storyboard, plan a pre-production, build your generation workflow with Nodes, all alone on Canvas. And this is where the whole game changes. With Nodes, every part of your creative process becomes editable. You can change the model or camera, and only that part of the workflow updates, while everything else stays connected. And we're just getting started. Now, you can chain every model and keystone together. Image, video, cinematic cameras, voice change, translation, everything becomes part of one connector workflow. And if you don't want to build it yourself, just describe your idea to an AI agent and it creates the entire workflow for you. Comment notes and I'll send you the link.",
+  "cleaned_transcript": "Here’s the revised transcription with corrected punctuation, capitalization, and obvious ASR errors while preserving the exact meaning and original language:\n\n---  \n\"If you really want to create a masterpiece, this one's for you. Meet Canvas and Nodes. Now, you can storyboard, plan pre-production, build your generation workflow with Nodes—all alone on Canvas. And this is where the whole game changes. With Nodes, every part of your creative process becomes editable. You can change the model or camera, and only that part of the workflow updates, while everything else stays connected. And we're just getting started. Now, you can chain every model and keystone together. Image, video, cinematic cameras, voice change, translation—everything becomes part of one connected workflow. And if you don't want to build it yourself, just describe your idea to an AI agent, and it creates the entire workflow for you. Comment below, and I'll send you the link.\"  \n\n---  \n(Note: Fixed minor punctuation inconsistencies, hyphenation for clarity, and the phrasing at the end (\"Comment notes\" → \"Comment below\") to match standard English usage while keeping the original intent.)",
+  "cleanup_response": {
+    "id": "gen-1778098535-j0T5TzAUt0SWrquqCZ0A",
+    "object": "chat.completion",
+    "created": 1778098535,
+    "model": "deepseek/deepseek-chat-v3",
+    "provider": "Novita",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Here’s the revised transcription with corrected punctuation, capitalization, and obvious ASR errors while preserving the exact meaning and original language:\n\n---  \n\"If you really want to create a masterpiece, this one's for you. Meet Canvas and Nodes. Now, you can storyboard, plan pre-production, build your generation workflow with Nodes—all alone on Canvas. And this is where the whole game changes. With Nodes, every part of your creative process becomes editable. You can change the model or camera, and only that part of the workflow updates, while everything else stays connected. And we're just getting started. Now, you can chain every model and keystone together. Image, video, cinematic cameras, voice change, translation—everything becomes part of one connected workflow. And if you don't want to build it yourself, just describe your idea to an AI agent, and it creates the entire workflow for you. Comment below, and I'll send you the link.\"  \n\n---  \n(Note: Fixed minor punctuation inconsistencies, hyphenation for clarity, and the phrasing at the end (\"Comment notes\" → \"Comment below\") to match standard English usage while keeping the original intent.)",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 264,
+      "completion_tokens": 236,
+      "total_tokens": 500,
+      "cost": 0.0004124,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0004124,
+        "upstream_inference_prompt_cost": 0.0001056,
+        "upstream_inference_completions_cost": 0.0003068
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}
