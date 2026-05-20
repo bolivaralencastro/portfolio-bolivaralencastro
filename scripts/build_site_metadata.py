@@ -17,8 +17,10 @@ from dataclasses import dataclass
 from typing import List
 from urllib.parse import urlparse
 
+from notes_pipeline import NOTE_AUTO_BLOCK, generate_now_notes_html
+
 BASE_URL_DEFAULT = "https://bolivaralencastro.com.br"
-ROOT_PAGES = ["index.html", "about.html", "blog.html", "projects.html", "now.html", "links.html"]
+ROOT_PAGES = ["index.html", "about.html", "blog.html", "projects.html", "now.html", "links.html", "retratos-ufsc-florianopolis-imersivo.html"]
 FEED_AUTHOR_NAME = "Bolívar Alencastro"
 FEED_AUTHOR_FALLBACK = "Bolivar Alencastro"
 LISTING_CARD_FILENAMES = ("card.png", "card.webp", "cover.png", "cover.webp")
@@ -28,6 +30,7 @@ VERSIONED_ASSETS = {
     "/style.css": pathlib.Path("style.css"),
     "/assets/js/clarity.js": pathlib.Path("assets/js/clarity.js"),
     "/assets/js/lightbox.js": pathlib.Path("assets/js/lightbox.js"),
+    "/assets/js/mobile-nav.js": pathlib.Path("assets/js/mobile-nav.js"),
 }
 
 
@@ -819,6 +822,7 @@ def apply_versioned_asset_refs(html_content: str, versions: dict[str, str]) -> s
     updated = replace_asset_reference(updated, "href", "/style.css", versions["/style.css"])
     updated = replace_asset_reference(updated, "src", "/assets/js/clarity.js", versions["/assets/js/clarity.js"])
     updated = replace_asset_reference(updated, "src", "/assets/js/lightbox.js", versions["/assets/js/lightbox.js"])
+    updated = replace_asset_reference(updated, "src", "/assets/js/mobile-nav.js", versions["/assets/js/mobile-nav.js"])
     return updated
 
 
@@ -982,11 +986,13 @@ def main() -> int:
     links_latest_post_inner = build_links_latest_post_html(posts[0])
     links_featured_project_inner = build_links_featured_project_html(projects[0])
     links_primary_actions_inner = build_links_primary_actions_html(posts[0], projects[0])
+    now_notes_inner = generate_now_notes_html(repo_root)
 
     blog_html_path = repo_root / "blog.html"
     projects_html_path = repo_root / "projects.html"
     index_html_path = repo_root / "index.html"
     links_html_path = repo_root / "links.html"
+    now_html_path = repo_root / "now.html"
 
     blog_html = blog_html_path.read_text(encoding="utf-8")
     blog_html = replace_auto_block(blog_html, "blog-jsonld", blog_jsonld_inner)
@@ -999,6 +1005,7 @@ def main() -> int:
     index_html = replace_auto_block(index_html, "latest-post", latest_post_inner)
     links_html = links_html_path.read_text(encoding="utf-8")
     links_html = replace_auto_block(links_html, "links-primary-actions", links_primary_actions_inner)
+    now_html = replace_auto_block(now_html_path.read_text(encoding="utf-8"), NOTE_AUTO_BLOCK, now_notes_inner)
 
     post_detail_managed: dict[pathlib.Path, str] = {}
     for post in posts:
@@ -1034,6 +1041,7 @@ def main() -> int:
         projects_html_path: projects_html,
         index_html_path: index_html,
         links_html_path: links_html,
+        now_html_path: now_html,
     }
     managed_pages.update(post_detail_managed)
     managed_pages.update(project_detail_managed)
@@ -1046,6 +1054,7 @@ def main() -> int:
         if source_html is None:
             source_html = page_path.read_text(encoding="utf-8")
         source_html = ensure_script_reference(source_html, "/assets/js/lightbox.js")
+        source_html = ensure_script_reference(source_html, "/assets/js/mobile-nav.js")
         versioned_html = apply_versioned_asset_refs(source_html, asset_versions)
         write_or_check(page_path, versioned_html, args.check, changed)
 

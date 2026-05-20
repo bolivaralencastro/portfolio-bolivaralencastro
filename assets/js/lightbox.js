@@ -69,12 +69,26 @@
   var nextButton = dialog.querySelector(".site-lightbox-next");
   var activeIndex = 0;
   var uiTimer = null;
+  var triggers = [];
+  var touchUiMedia = window.matchMedia("(hover: none), (pointer: coarse), (max-width: 700px)");
+  var desktopFullscreenMedia = window.matchMedia("(hover: hover) and (pointer: fine) and (min-width: 701px)");
 
   meta.textContent = pageMeta ? pageMeta.textContent.trim() : "Imagem ampliada";
+
+  function syncUiMode() {
+    dialog.classList.toggle("is-touch-ui", touchUiMedia.matches);
+    if (touchUiMedia.matches && dialog.open) {
+      dialog.classList.add("is-ui-visible");
+      window.clearTimeout(uiTimer);
+    }
+  }
 
   function showUi() {
     dialog.classList.add("is-ui-visible");
     window.clearTimeout(uiTimer);
+    if (touchUiMedia.matches) {
+      return;
+    }
     uiTimer = window.setTimeout(function () {
       if (dialog.open) {
         dialog.classList.remove("is-ui-visible");
@@ -103,9 +117,31 @@
   }
 
   function syncStageImageBounds() {
-    var stageRect = stage.getBoundingClientRect();
-    stageImage.style.maxWidth = Math.max(0, Math.floor(stageRect.width)) + "px";
-    stageImage.style.maxHeight = Math.max(0, Math.floor(stageRect.height)) + "px";
+    var stageStyle = window.getComputedStyle(stage);
+    var horizontalPadding = parseFloat(stageStyle.paddingLeft || "0") + parseFloat(stageStyle.paddingRight || "0");
+    var verticalPadding = parseFloat(stageStyle.paddingTop || "0") + parseFloat(stageStyle.paddingBottom || "0");
+    stageImage.style.maxWidth = Math.max(0, Math.floor(stage.clientWidth - horizontalPadding)) + "px";
+    stageImage.style.maxHeight = Math.max(0, Math.floor(stage.clientHeight - verticalPadding)) + "px";
+  }
+
+  function requestDesktopFullscreen() {
+    if (!desktopFullscreenMedia.matches || typeof dialog.requestFullscreen !== "function" || document.fullscreenElement) {
+      return;
+    }
+
+    dialog.requestFullscreen().catch(function (error) {
+      console.info("Lightbox fullscreen unavailable:", error && error.name ? error.name : error);
+    });
+  }
+
+  function exitDesktopFullscreen() {
+    if (!document.fullscreenElement || (document.fullscreenElement !== dialog && !dialog.contains(document.fullscreenElement))) {
+      return;
+    }
+
+    document.exitFullscreen().catch(function (error) {
+      console.info("Lightbox fullscreen exit unavailable:", error && error.name ? error.name : error);
+    });
   }
 
   function render(index) {
@@ -123,22 +159,45 @@
     dialog.showModal();
     render(index);
     showUi();
+    requestDesktopFullscreen();
     closeButton.focus();
   }
 
   function closeLightbox() {
     dialog.close();
+    exitDesktopFullscreen();
     window.clearTimeout(uiTimer);
-    if (images[activeIndex]) {
-      images[activeIndex].focus();
+    if (triggers[activeIndex]) {
+      triggers[activeIndex].focus();
     }
   }
 
   images.forEach(function (image, index) {
+    var trigger = image.closest("a[href]");
+    var isWrappedImageLink = !!(trigger && trigger.querySelector("img") === image);
+
+    image.style.cursor = "zoom-in";
+    triggers[index] = isWrappedImageLink ? trigger : image;
+
+    if (isWrappedImageLink) {
+      trigger.setAttribute("aria-label", "Ampliar imagem");
+      trigger.style.cursor = "zoom-in";
+      trigger.addEventListener("click", function (event) {
+        event.preventDefault();
+        openLightbox(index);
+      });
+      trigger.addEventListener("keydown", function (event) {
+        if (event.key === " ") {
+          event.preventDefault();
+          openLightbox(index);
+        }
+      });
+      return;
+    }
+
     image.tabIndex = 0;
     image.setAttribute("role", "button");
     image.setAttribute("aria-label", "Ampliar imagem");
-    image.style.cursor = "zoom-in";
 
     image.addEventListener("click", function () {
       openLightbox(index);
@@ -173,6 +232,7 @@
   });
 
   dialog.addEventListener("mousemove", showUi);
+  dialog.addEventListener("touchstart", showUi, { passive: true });
 
   dialog.addEventListener("keydown", function (event) {
     showUi();
@@ -195,7 +255,16 @@
     stageImage.style.maxHeight = "";
   });
 
+  syncUiMode();
+
+  if (typeof touchUiMedia.addEventListener === "function") {
+    touchUiMedia.addEventListener("change", syncUiMode);
+  } else if (typeof touchUiMedia.addListener === "function") {
+    touchUiMedia.addListener(syncUiMode);
+  }
+
   window.addEventListener("resize", function () {
+    syncUiMode();
     if (dialog.open) {
       syncStageImageBounds();
     }
