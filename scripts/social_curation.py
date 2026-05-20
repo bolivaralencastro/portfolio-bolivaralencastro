@@ -83,6 +83,8 @@ EXTRA_COLUMNS = {
     "ai_reason": "TEXT",
     "ai_model": "TEXT",
     "ai_classified_at": "TEXT",
+    "enrichment_path": "TEXT",
+    "enrichment_error": "TEXT",
 }
 
 

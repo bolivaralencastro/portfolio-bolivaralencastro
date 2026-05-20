@@ -1,0 +1,131 @@
+{
+  "learning_summary": {
+    "what_the_video_teaches": "O vídeo aborda a prática de 'Envenenamento de Recomendação por IA', onde empresas inserem instruções ocultas em botões de 'Resumir com IA' para influenciar recomendações de LLMs (Modelos de Linguagem Grandes).",
+    "what_the_comments_add": "Não há comentários disponíveis para análise.",
+    "best_next_step_for_learning": "Investigar como verificar e limpar a memória de LLMs para evitar influências indesejadas."
+  },
+  "complementary_learning": [],
+  "open_loops": [],
+  "practical_extensions": [],
+  "counterpoints_or_tensions": [],
+  "examples_from_audience": [],
+  "audience_questions": [],
+  "terminology_friction": [],
+  "recommended_next_piece": {
+    "format": "Artigo",
+    "title": "A Ascensão do Envenenamento de Recomendações por IA",
+    "reason": "O artigo mencionado no vídeo pode fornecer mais detalhes sobre o fenômeno discutido."
+  },
+  "learning_priorities": [
+    {
+      "priority": "Entender como LLMs armazenam e utilizam informações",
+      "why_it_matters_now": "Para evitar influências indesejadas e garantir decisões informadas.",
+      "evidence": "O vídeo menciona a importância de verificar a memória do LLM."
+    }
+  ],
+  "source_split": {
+    "main_takeaways_from_video": [
+      "Empresas estão usando botões de 'Resumir com IA' para inserir instruções ocultas que influenciam recomendações de LLMs.",
+      "Um exemplo prático mostra como um CFO foi influenciado a escolher um fornecedor específico devido a uma instrução oculta.",
+      "É crucial verificar a memória do LLM para evitar influências indesejadas."
+    ],
+    "main_takeaways_from_audience": []
+  },
+  "_translation_meta": {
+    "model": "deepseek/deepseek-chat",
+    "raw_response": {
+      "id": "gen-1778098404-YS8yGRy5cDzdFQCNsQVN",
+      "object": "chat.completion",
+      "created": 1778098404,
+      "model": "deepseek/deepseek-chat-v3",
+      "provider": "Novita",
+      "system_fingerprint": null,
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "Aqui está o JSON traduzido para pt-BR com os valores textuais localizados e a estrutura totalmente preservada:\n\n```json\n{\n  \"learning_summary\": {\n    \"what_the_video_teaches\": \"O vídeo aborda a prática de 'Envenenamento de Recomendação por IA', onde empresas inserem instruções ocultas em botões de 'Resumir com IA' para influenciar recomendações de LLMs (Modelos de Linguagem Grandes).\",\n    \"what_the_comments_add\": \"Não há comentários disponíveis para análise.\",\n    \"best_next_step_for_learning\": \"Investigar como verificar e limpar a memória de LLMs para evitar influências indesejadas.\"\n  },\n  \"complementary_learning\": [],\n  \"open_loops\": [],\n  \"practical_extensions\": [],\n  \"counterpoints_or_tensions\": [],\n  \"examples_from_audience\": [],\n  \"audience_questions\": [],\n  \"terminology_friction\": [],\n  \"recommended_next_piece\": {\n    \"format\": \"Artigo\",\n    \"title\": \"A Ascensão do Envenenamento de Recomendações por IA\",\n    \"reason\": \"O artigo mencionado no vídeo pode fornecer mais detalhes sobre o fenômeno discutido.\"\n  },\n  \"learning_priorities\": [\n    {\n      \"priority\": \"Entender como LLMs armazenam e utilizam informações\",\n      \"why_it_matters_now\": \"Para evitar influências indesejadas e garantir decisões informadas.\",\n      \"evidence\": \"O vídeo menciona a importância de verificar a memória do LLM.\"\n    }\n  ],\n  \"source_split\": {\n    \"main_takeaways_from_video\": [\n      \"Empresas estão usando botões de 'Resumir com IA' para inserir instruções ocultas que influenciam recomendações de LLMs.\",\n      \"Um exemplo prático mostra como um CFO foi influenciado a escolher um fornecedor específico devido a uma instrução oculta.\",\n      \"É crucial verificar a memória do LLM para evitar influências indesejadas.\"\n    ],\n    \"main_takeaways_from_audience\": []\n  }\n}\n```\n\nObservações sobre a tradução:\n1. Mantive termos técnicos como \"LLMs\" e siglas\n2. Preservei todas as chaves exatamente como no original\n3. Traduzi conceitos como \"AI Recommendation Poisoning\" para \"Envenenamento de Recomendações por IA\"\n4. Conservei a estrutura de arrays e objetos aninhados\n5. Mantive nomes de botões como \"'Resumir com IA'\" que são marcas registradas/interfaces do usuário",
+            "refusal": null,
+            "reasoning": null
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 496,
+        "completion_tokens": 594,
+        "total_tokens": 1090,
+        "cost": 0.0009706,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0009706,
+          "upstream_inference_prompt_cost": 0.0001984,
+          "upstream_inference_completions_cost": 0.0007722
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  "_meta": {
+    "model": "deepseek/deepseek-chat",
+    "prompt_file": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/youtube-research/prompts/learning-analysis-v2.md",
+    "raw_response": {
+      "id": "gen-1778098386-02NJY4SGqasNO5ygSMXA",
+      "object": "chat.completion",
+      "created": 1778098386,
+      "model": "deepseek/deepseek-chat-v3",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "```json\n{\n  \"learning_summary\": {\n    \"what_the_video_teaches\": \"O vídeo aborda a prática de 'AI Recommendation Poisoning', onde empresas inserem instruções ocultas em botões de 'Summarize with AI' para influenciar recomendações de LLMs (Large Language Models).\",\n    \"what_the_comments_add\": \"Não há comentários disponíveis para análise.\",\n    \"best_next_step_for_learning\": \"Investigar como verificar e limpar a memória de LLMs para evitar influências indesejadas.\"\n  },\n  \"complementary_learning\": [],\n  \"open_loops\": [],\n  \"practical_extensions\": [],\n  \"counterpoints_or_tensions\": [],\n  \"examples_from_audience\": [],\n  \"audience_questions\": [],\n  \"terminology_friction\": [],\n  \"recommended_next_piece\": {\n    \"format\": \"Artigo\",\n    \"title\": \"The Rise of AI Recommendation Poisoning\",\n    \"reason\": \"O artigo mencionado no vídeo pode fornecer mais detalhes sobre o fenômeno discutido.\"\n  },\n  \"learning_priorities\": [\n    {\n      \"priority\": \"Entender como LLMs armazenam e utilizam informações\",\n      \"why_it_matters_now\": \"Para evitar influências indesejadas e garantir decisões informadas.\",\n      \"evidence\": \"O vídeo menciona a importância de verificar a memória do LLM.\"\n    }\n  ],\n  \"source_split\": {\n    \"main_takeaways_from_video\": [\n      \"Empresas estão usando botões de 'Summarize with AI' para inserir instruções ocultas que influenciam recomendações de LLMs.\",\n      \"Um exemplo prático mostra como um CFO foi influenciado a escolher um fornecedor específico devido a uma instrução oculta.\",\n      \"É crucial verificar a memória do LLM para evitar influências indesejadas.\"\n    ],\n    \"main_takeaways_from_audience\": []\n  }\n}\n```",
+            "refusal": null,
+            "reasoning": null
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1658,
+        "completion_tokens": 442,
+        "total_tokens": 2100,
+        "cost": 0.00092394,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00092394,
+          "upstream_inference_prompt_cost": 0.00053056,
+          "upstream_inference_completions_cost": 0.00039338
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  }
+}

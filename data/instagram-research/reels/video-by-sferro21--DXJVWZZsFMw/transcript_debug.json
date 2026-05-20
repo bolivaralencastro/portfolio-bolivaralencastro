@@ -1,0 +1,65 @@
+{
+  "source_audio_path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DXJVWZZsFMw/_audio_work/source.m4a",
+  "chunks": [
+    {
+      "index": 0,
+      "start_seconds": 0,
+      "duration_seconds": 33.344,
+      "path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DXJVWZZsFMw/_audio_work/chunks/chunk-000.wav",
+      "size_bytes": 1067086,
+      "transcript_text": "I just found a brand new way to create insane looking VFX with AI. And here's how you can do it too. First, record a video of yourself doing a simple action and screenshot a frame from the video. Then go to Hicksfield, select Nano Banana and describe the VFX you want to create with a prompt like this. It gave me a reference image which I uploaded to Seedance 2.0 along with the video I recorded at the start using a prompt like this. Hit generate and boom, you have your video ready. If you want to try it, comment AI and I'll send you a full guide.",
+      "usage": {
+        "seconds": 33.34,
+        "cost": 0.0010279833333333333
+      },
+      "model": "openai/whisper-large-v3"
+    }
+  ],
+  "raw_merged_transcript": "I just found a brand new way to create insane looking VFX with AI. And here's how you can do it too. First, record a video of yourself doing a simple action and screenshot a frame from the video. Then go to Hicksfield, select Nano Banana and describe the VFX you want to create with a prompt like this. It gave me a reference image which I uploaded to Seedance 2.0 along with the video I recorded at the start using a prompt like this. Hit generate and boom, you have your video ready. If you want to try it, comment AI and I'll send you a full guide.",
+  "cleaned_transcript": "I just found a brand new way to create insane-looking VFX with AI. And here's how you can do it too. First, record a video of yourself doing a simple action and screenshot a frame from the video. Then go to Hicksfield, select Nano Banana, and describe the VFX you want to create with a prompt like this. It gave me a reference image, which I uploaded to Seedance 2.0 along with the video I recorded at the start, using a prompt like this. Hit generate, and boom, you have your video ready. If you want to try it, comment \"AI,\" and I'll send you a full guide.",
+  "cleanup_response": {
+    "id": "gen-1778101150-uN5jFJ3DNye40vNqvQzM",
+    "object": "chat.completion",
+    "created": 1778101150,
+    "model": "deepseek/deepseek-chat-v3",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "I just found a brand new way to create insane-looking VFX with AI. And here's how you can do it too. First, record a video of yourself doing a simple action and screenshot a frame from the video. Then go to Hicksfield, select Nano Banana, and describe the VFX you want to create with a prompt like this. It gave me a reference image, which I uploaded to Seedance 2.0 along with the video I recorded at the start, using a prompt like this. Hit generate, and boom, you have your video ready. If you want to try it, comment \"AI,\" and I'll send you a full guide.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 228,
+      "completion_tokens": 136,
+      "total_tokens": 364,
+      "cost": 0.000194,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000194,
+        "upstream_inference_prompt_cost": 7.296e-05,
+        "upstream_inference_completions_cost": 0.00012104
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

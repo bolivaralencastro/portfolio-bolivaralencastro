@@ -1,0 +1,65 @@
+{
+  "source_audio_path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DWpSK4uDhIO/_audio_work/source.m4a",
+  "chunks": [
+    {
+      "index": 0,
+      "start_seconds": 0,
+      "duration_seconds": 79.111,
+      "path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DWpSK4uDhIO/_audio_work/chunks/chunk-000.wav",
+      "size_bytes": 2531630,
+      "transcript_text": "Everyone is saying this is going to be used for evil. They're right, it will. But that's not the part that excites me. The last video I showed you tried V2, a model that predicts how your brain responds to audio, video, or language. I used it to write a paragraph that matched the neural fingerprint of the song Claire de Lune. And a lot of you said, if you can target a specific emotional response with text, then someone's going to weaponize that. Yes, obviously. But that same model works in reverse. What happens when you run the stuff that's already trying to manipulate you through it? State of the art, at the end I'm going to describe a tool that I think someone should build within the next, at least couple months, right? Think about a headline that already makes you angry. Right now, the only way to know it was engineered is to notice your own reaction after it already got you. Tribe reads the other direction. Content goes in, video, audio, language, predicted brain response comes out. Amygdala activation, mapped. Prefrontal suppression, mapped. Emotional hijacking signature, mapped. Readable, quantifiable, visible before you click, before you press play. Imagine a browser extension or something, right? You're scrolling every piece of content already scanned and next to each one a small readout of what it's designed to do to your brain. How would that change the way you consume? So Tribe can be used multiple ways. One direction, you can write content that targets a feeling, and the other direction is you can see the targeting happening. And the second one is much bigger, I think, because manipulation only works in the dark. What happens to the internet when the lights come on?",
+      "usage": {
+        "seconds": 79.11,
+        "cost": 0.002439225
+      },
+      "model": "openai/whisper-large-v3"
+    }
+  ],
+  "raw_merged_transcript": "Everyone is saying this is going to be used for evil. They're right, it will. But that's not the part that excites me. The last video I showed you tried V2, a model that predicts how your brain responds to audio, video, or language. I used it to write a paragraph that matched the neural fingerprint of the song Claire de Lune. And a lot of you said, if you can target a specific emotional response with text, then someone's going to weaponize that. Yes, obviously. But that same model works in reverse. What happens when you run the stuff that's already trying to manipulate you through it? State of the art, at the end I'm going to describe a tool that I think someone should build within the next, at least couple months, right? Think about a headline that already makes you angry. Right now, the only way to know it was engineered is to notice your own reaction after it already got you. Tribe reads the other direction. Content goes in, video, audio, language, predicted brain response comes out. Amygdala activation, mapped. Prefrontal suppression, mapped. Emotional hijacking signature, mapped. Readable, quantifiable, visible before you click, before you press play. Imagine a browser extension or something, right? You're scrolling every piece of content already scanned and next to each one a small readout of what it's designed to do to your brain. How would that change the way you consume? So Tribe can be used multiple ways. One direction, you can write content that targets a feeling, and the other direction is you can see the targeting happening. And the second one is much bigger, I think, because manipulation only works in the dark. What happens to the internet when the lights come on?",
+  "cleaned_transcript": "Everyone is saying this is going to be used for evil. They're right, it will. But that's not the part that excites me. The last video I showed you tried V2, a model that predicts how your brain responds to audio, video, or language. I used it to write a paragraph that matched the neural fingerprint of the song \"Claire de Lune.\" And a lot of you said, if you can target a specific emotional response with text, then someone's going to weaponize that. Yes, obviously. But that same model works in reverse. What happens when you run the stuff that's already trying to manipulate you through it? State of the art—at the end, I'm going to describe a tool that I think someone should build within the next, at least, couple of months, right? Think about a headline that already makes you angry. Right now, the only way to know it was engineered is to notice your own reaction after it already got you. Tribe reads the other direction. Content goes in—video, audio, language—predicted brain response comes out. Amygdala activation, mapped. Prefrontal suppression, mapped. Emotional hijacking signature, mapped. Readable, quantifiable, visible before you click, before you press play. Imagine a browser extension or something, right? You're scrolling, every piece of content already scanned, and next to each one, a small readout of what it's designed to do to your brain. How would that change the way you consume? So Tribe can be used multiple ways. One direction, you can write content that targets a feeling, and the other direction is you can see the targeting happening. And the second one is much bigger, I think, because manipulation only works in the dark. What happens to the internet when the lights come on?",
+  "cleanup_response": {
+    "id": "gen-1778098286-99iK0iTZCbBAP1K7Yomz",
+    "object": "chat.completion",
+    "created": 1778098286,
+    "model": "deepseek/deepseek-chat-v3",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Everyone is saying this is going to be used for evil. They're right, it will. But that's not the part that excites me. The last video I showed you tried V2, a model that predicts how your brain responds to audio, video, or language. I used it to write a paragraph that matched the neural fingerprint of the song \"Claire de Lune.\" And a lot of you said, if you can target a specific emotional response with text, then someone's going to weaponize that. Yes, obviously. But that same model works in reverse. What happens when you run the stuff that's already trying to manipulate you through it? State of the art—at the end, I'm going to describe a tool that I think someone should build within the next, at least, couple of months, right? Think about a headline that already makes you angry. Right now, the only way to know it was engineered is to notice your own reaction after it already got you. Tribe reads the other direction. Content goes in—video, audio, language—predicted brain response comes out. Amygdala activation, mapped. Prefrontal suppression, mapped. Emotional hijacking signature, mapped. Readable, quantifiable, visible before you click, before you press play. Imagine a browser extension or something, right? You're scrolling, every piece of content already scanned, and next to each one, a small readout of what it's designed to do to your brain. How would that change the way you consume? So Tribe can be used multiple ways. One direction, you can write content that targets a feeling, and the other direction is you can see the targeting happening. And the second one is much bigger, I think, because manipulation only works in the dark. What happens to the internet when the lights come on?",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 463,
+      "completion_tokens": 374,
+      "total_tokens": 837,
+      "cost": 0.00048102,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00048102,
+        "upstream_inference_prompt_cost": 0.00014816,
+        "upstream_inference_completions_cost": 0.00033286
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

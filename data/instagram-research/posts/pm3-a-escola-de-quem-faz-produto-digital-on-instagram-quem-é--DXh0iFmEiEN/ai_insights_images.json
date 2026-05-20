@@ -1,0 +1,24 @@
+{
+  "post_summary": "O post aborda a mudança de perspectiva de David Heinemeier Hansson (DHH) sobre a gestão de produto, destacando como a inteligência artificial alterou o papel do gerente de produto. Antes, o foco era no código e a engenharia era o gargalo; agora, a estratégia e a definição do que construir são o principal desafio.",
+  "slide_descriptions": [
+    "Print de um tweet de George do prodmgmt.world que relata que DHH passou 20 anos descartando a gestão de produto, mas em uma entrevista recente ao The Pragmatic Engineer admitiu que estava errado."
+  ],
+  "main_message": "Com a evolução da IA, o valor da gestão de produto cresce, pois o principal desafio não é mais a implementação técnica, mas decidir o que construir e como se diferenciar no mercado.",
+  "key_information": [
+    "DHH, criador do Ruby on Rails, criticava a função de gerente de produto por 20 anos.",
+    "Em entrevista recente, DHH admitiu que estava errado sobre a gestão de produto.",
+    "Antes, a engenharia era o gargalo e a execução era lenta.",
+    "A IA acelerou a codificação, mudando o foco para a estratégia e definição do produto.",
+    "A gestão de produto é agora o ativo mais valioso no desenvolvimento digital.",
+    "O PM3 Summit 2026 será um evento para discutir essa transformação."
+  ],
+  "context_and_relevance": "O post é relevante para profissionais de produto e tecnologia, pois destaca uma mudança paradigmática no desenvolvimento de produtos digitais impulsionada pela IA, reforçando a importância da gestão de produto em um cenário tecnológico em rápida evolução.",
+  "takeaway": "A reflexão principal é que, com a automação da codificação pela IA, o diferencial competitivo está na capacidade de definir estratégias e prioridades de produto, tornando a gestão de produto essencial para o sucesso.",
+  "content_type": "texto",
+  "_meta": {
+    "model": "openai/gpt-4.1-mini",
+    "n_slides": 1,
+    "post_id": "DXh0iFmEiEN",
+    "post_url": "https://www.instagram.com/escolapm3/p/DXh0iFmEiEN/"
+  }
+}

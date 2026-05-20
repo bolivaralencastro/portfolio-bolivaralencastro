@@ -6,3 +6,4 @@ referencias/
 .env
 .linkedin_token
 data/*.sqlite
+youtube-research/videos/

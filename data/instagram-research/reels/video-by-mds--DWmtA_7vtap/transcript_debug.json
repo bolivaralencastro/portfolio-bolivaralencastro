@@ -1,0 +1,65 @@
+{
+  "source_audio_path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DWmtA_7vtap/_audio_work/source.m4a",
+  "chunks": [
+    {
+      "index": 0,
+      "start_seconds": 0,
+      "duration_seconds": 50.968,
+      "path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DWmtA_7vtap/_audio_work/chunks/chunk-000.wav",
+      "size_bytes": 1631054,
+      "transcript_text": "AI got this to 60%, but watch what it takes to get that last 40. The first thing I'm going to do is fix this weird border. If you put a 10% white one pixel stroke on the inside and a transparent black stroke on the outside, this can really help lift your modules off the background. Now let's remove this weird status bar. The bottom content is redundant with the top, so let's remove that as well. Let's go ahead and beef up the typography in the top. Let's regroup these bottom controls. The timeline itself is a little too dainty and the typography is pretty tiny, so let's fix that as well. Finally, these music controls are also a little out of whack, so let's bring in some iOS Apple Glass effect to make these stand out a lot more. You can see with just a few changes, you can make a huge difference with your interface. So don't let the AI generated version be the final thing that ships to your users. Put a little bit of love and care into your work. Oh, and if you want the design and animation files, you can comment resources down below and I will send them your way.",
+      "usage": {
+        "seconds": 50.96,
+        "cost": 0.0015712666666666667
+      },
+      "model": "openai/whisper-large-v3"
+    }
+  ],
+  "raw_merged_transcript": "AI got this to 60%, but watch what it takes to get that last 40. The first thing I'm going to do is fix this weird border. If you put a 10% white one pixel stroke on the inside and a transparent black stroke on the outside, this can really help lift your modules off the background. Now let's remove this weird status bar. The bottom content is redundant with the top, so let's remove that as well. Let's go ahead and beef up the typography in the top. Let's regroup these bottom controls. The timeline itself is a little too dainty and the typography is pretty tiny, so let's fix that as well. Finally, these music controls are also a little out of whack, so let's bring in some iOS Apple Glass effect to make these stand out a lot more. You can see with just a few changes, you can make a huge difference with your interface. So don't let the AI generated version be the final thing that ships to your users. Put a little bit of love and care into your work. Oh, and if you want the design and animation files, you can comment resources down below and I will send them your way.",
+  "cleaned_transcript": "AI got this to 60%, but watch what it takes to get that last 40. The first thing I'm going to do is fix this weird border. If you put a 10% white one-pixel stroke on the inside and a transparent black stroke on the outside, this can really help lift your modules off the background. Now, let's remove this weird status bar. The bottom content is redundant with the top, so let's remove that as well. Let's go ahead and beef up the typography at the top. Let's regroup these bottom controls. The timeline itself is a little too dainty, and the typography is pretty tiny, so let's fix that as well. Finally, these music controls are also a little out of whack, so let's bring in some iOS Apple Glass effect to make these stand out a lot more. You can see, with just a few changes, you can make a huge difference with your interface. So, don't let the AI-generated version be the final thing that ships to your users. Put a little bit of love and care into your work. Oh, and if you want the design and animation files, you can comment \"resources\" down below, and I will send them your way.",
+  "cleanup_response": {
+    "id": "gen-1778098973-qmNYC6g7455FQjhsvgKT",
+    "object": "chat.completion",
+    "created": 1778098973,
+    "model": "deepseek/deepseek-chat-v3",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "AI got this to 60%, but watch what it takes to get that last 40. The first thing I'm going to do is fix this weird border. If you put a 10% white one-pixel stroke on the inside and a transparent black stroke on the outside, this can really help lift your modules off the background. Now, let's remove this weird status bar. The bottom content is redundant with the top, so let's remove that as well. Let's go ahead and beef up the typography at the top. Let's regroup these bottom controls. The timeline itself is a little too dainty, and the typography is pretty tiny, so let's fix that as well. Finally, these music controls are also a little out of whack, so let's bring in some iOS Apple Glass effect to make these stand out a lot more. You can see, with just a few changes, you can make a huge difference with your interface. So, don't let the AI-generated version be the final thing that ships to your users. Put a little bit of love and care into your work. Oh, and if you want the design and animation files, you can comment \"resources\" down below, and I will send them your way.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 347,
+      "completion_tokens": 257,
+      "total_tokens": 604,
+      "cost": 0.00033977,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00033977,
+        "upstream_inference_prompt_cost": 0.00011104,
+        "upstream_inference_completions_cost": 0.00022873
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

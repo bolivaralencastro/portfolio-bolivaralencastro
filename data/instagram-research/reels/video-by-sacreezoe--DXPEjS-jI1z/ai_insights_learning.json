@@ -1,0 +1,131 @@
+{
+  "learning_summary": {
+    "what_the_video_teaches": "O vídeo apresenta Zoé Renard, uma diretora de arte e criativa que trabalha com projetos que conectam pessoas através de diferentes culturas e experiências visuais. Ela desafia a ideia de se encaixar em uma única categoria e celebra a hibridização e a criatividade multifacetada.",
+    "what_the_comments_add": "Não há comentários disponíveis para análise, portanto, não é possível extrair informações complementares da audiência.",
+    "best_next_step_for_learning": "Para aprender mais sobre o trabalho de Zoé Renard, recomenda-se visitar seu perfil no Instagram ou explorar projetos mencionados no vídeo, como 'Hybrid Conversations'."
+  },
+  "complementary_learning": [],
+  "open_loops": [],
+  "practical_extensions": [],
+  "counterpoints_or_tensions": [],
+  "examples_from_audience": [],
+  "audience_questions": [],
+  "terminology_friction": [],
+  "recommended_next_piece": {
+    "format": "Instagram Reel",
+    "title": "Hybrid Conversations",
+    "reason": "O vídeo menciona que Zoé Renard iniciou um projeto chamado 'Hybrid Conversations', que pode oferecer mais insights sobre seu trabalho e filosofia criativa."
+  },
+  "learning_priorities": [
+    {
+      "priority": "Explorar o conceito de 'hibridização' na criatividade",
+      "why_it_matters_now": "O vídeo destaca a importância de não se limitar a uma única categoria, o que pode ser inspirador para profissionais criativos que buscam diversificar seus projetos.",
+      "evidence": "O vídeo menciona que Zoé Renard 'não escolheu um único caminho' e celebra a ideia de ser 'demais' e 'híbrida'."
+    }
+  ],
+  "source_split": {
+    "main_takeaways_from_video": [
+      "Zoé Renard é uma diretora de arte que trabalha com projetos criativos e culturais que conectam pessoas.",
+      "Ela desafia a ideia de se encaixar em uma única categoria e celebra a criatividade multifacetada.",
+      "Seu projeto 'Hybrid Conversations' é voltado para pessoas que não se encaixam em uma única caixa."
+    ],
+    "main_takeaways_from_audience": []
+  },
+  "_translation_meta": {
+    "model": "deepseek/deepseek-chat",
+    "raw_response": {
+      "id": "gen-1778099104-CuRi88K1XdcgLWkU9nO1",
+      "object": "chat.completion",
+      "created": 1778099104,
+      "model": "deepseek/deepseek-chat-v3",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "```json\n{\"learning_summary\": {\"what_the_video_teaches\": \"O vídeo apresenta Zoé Renard, uma diretora de arte e criativa que trabalha com projetos que conectam pessoas através de diferentes culturas e experiências visuais. Ela desafia a ideia de se encaixar em uma única categoria e celebra a hibridização e a criatividade multifacetada.\", \"what_the_comments_add\": \"Não há comentários disponíveis para análise, portanto, não é possível extrair informações complementares da audiência.\", \"best_next_step_for_learning\": \"Para aprender mais sobre o trabalho de Zoé Renard, recomenda-se visitar seu perfil no Instagram ou explorar projetos mencionados no vídeo, como 'Hybrid Conversations'.\"}, \"complementary_learning\": [], \"open_loops\": [], \"practical_extensions\": [], \"counterpoints_or_tensions\": [], \"examples_from_audience\": [], \"audience_questions\": [], \"terminology_friction\": [], \"recommended_next_piece\": {\"format\": \"Instagram Reel\", \"title\": \"Hybrid Conversations\", \"reason\": \"O vídeo menciona que Zoé Renard iniciou um projeto chamado 'Hybrid Conversations', que pode oferecer mais insights sobre seu trabalho e filosofia criativa.\"}, \"learning_priorities\": [{\"priority\": \"Explorar o conceito de 'hibridização' na criatividade\", \"why_it_matters_now\": \"O vídeo destaca a importância de não se limitar a uma única categoria, o que pode ser inspirador para profissionais criativos que buscam diversificar seus projetos.\", \"evidence\": \"O vídeo menciona que Zoé Renard 'não escolheu um único caminho' e celebra a ideia de ser 'demais' e 'híbrida'.\"}], \"source_split\": {\"main_takeaways_from_video\": [\"Zoé Renard é uma diretora de arte que trabalha com projetos criativos e culturais que conectam pessoas.\", \"Ela desafia a ideia de se encaixar em uma única categoria e celebra a criatividade multifacetada.\", \"Seu projeto 'Hybrid Conversations' é voltado para pessoas que não se encaixam em uma única caixa.\"], \"main_takeaways_from_audience\": []}}\n```",
+            "refusal": null,
+            "reasoning": null
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 603,
+        "completion_tokens": 509,
+        "total_tokens": 1112,
+        "cost": 0.00064597,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00064597,
+          "upstream_inference_prompt_cost": 0.00019296,
+          "upstream_inference_completions_cost": 0.00045301
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  "_meta": {
+    "model": "deepseek/deepseek-chat",
+    "prompt_file": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/youtube-research/prompts/learning-analysis-v2.md",
+    "raw_response": {
+      "id": "gen-1778099090-6F0EBHu23KnLZqng98ys",
+      "object": "chat.completion",
+      "created": 1778099090,
+      "model": "deepseek/deepseek-chat-v3",
+      "provider": "Novita",
+      "system_fingerprint": null,
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "```json\n{\n  \"learning_summary\": {\n    \"what_the_video_teaches\": \"O vídeo apresenta Zoé Renard, uma diretora de arte e criativa que trabalha com projetos que conectam pessoas através de diferentes culturas e experiências visuais. Ela desafia a ideia de se encaixar em uma única categoria e celebra a hibridização e a criatividade multifacetada.\",\n    \"what_the_comments_add\": \"Não há comentários disponíveis para análise, portanto, não é possível extrair informações complementares da audiência.\",\n    \"best_next_step_for_learning\": \"Para aprender mais sobre o trabalho de Zoé Renard, recomenda-se visitar seu perfil no Instagram ou explorar projetos mencionados no vídeo, como 'Hybrid Conversations'.\"\n  },\n  \"complementary_learning\": [],\n  \"open_loops\": [],\n  \"practical_extensions\": [],\n  \"counterpoints_or_tensions\": [],\n  \"examples_from_audience\": [],\n  \"audience_questions\": [],\n  \"terminology_friction\": [],\n  \"recommended_next_piece\": {\n    \"format\": \"Instagram Reel\",\n    \"title\": \"Hybrid Conversations\",\n    \"reason\": \"O vídeo menciona que Zoé Renard iniciou um projeto chamado 'Hybrid Conversations', que pode oferecer mais insights sobre seu trabalho e filosofia criativa.\"\n  },\n  \"learning_priorities\": [\n    {\n      \"priority\": \"Explorar o conceito de 'hibridização' na criatividade\",\n      \"why_it_matters_now\": \"O vídeo destaca a importância de não se limitar a uma única categoria, o que pode ser inspirador para profissionais criativos que buscam diversificar seus projetos.\",\n      \"evidence\": \"O vídeo menciona que Zoé Renard 'não escolheu um único caminho' e celebra a ideia de ser 'demais' e 'híbrida'.\"\n    }\n  ],\n  \"source_split\": {\n    \"main_takeaways_from_video\": [\n      \"Zoé Renard é uma diretora de arte que trabalha com projetos criativos e culturais que conectam pessoas.\",\n      \"Ela desafia a ideia de se encaixar em uma única categoria e celebra a criatividade multifacetada.\",\n      \"Seu projeto 'Hybrid Conversations' é voltado para pessoas que não se encaixam em uma única caixa.\"\n    ],\n    \"main_takeaways_from_audience\": []\n  }\n}\n```",
+            "refusal": null,
+            "reasoning": null
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1560,
+        "completion_tokens": 547,
+        "total_tokens": 2107,
+        "cost": 0.0013351,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0013351,
+          "upstream_inference_prompt_cost": 0.000624,
+          "upstream_inference_completions_cost": 0.0007111
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  }
+}

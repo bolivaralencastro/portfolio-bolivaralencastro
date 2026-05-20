@@ -1,0 +1,131 @@
+{
+  "learning_summary": {
+    "what_the_video_teaches": "O vídeo apresenta o Canvas e Nodes da Higgsfield AI, ferramentas que permitem criar workflows criativos conectados e editáveis, integrando modelos de imagem, vídeo, câmeras cinematográficas, mudança de voz e tradução em um único fluxo de trabalho.",
+    "what_the_comments_add": "Não há comentários disponíveis para análise.",
+    "best_next_step_for_learning": "Explorar tutoriais ou demonstrações práticas sobre como utilizar o Canvas e Nodes para criar workflows criativos, já que o vídeo não detalha o passo a passo."
+  },
+  "complementary_learning": [],
+  "open_loops": [],
+  "practical_extensions": [],
+  "counterpoints_or_tensions": [],
+  "examples_from_audience": [],
+  "audience_questions": [],
+  "terminology_friction": [],
+  "recommended_next_piece": {
+    "format": "tutorial",
+    "title": "Como usar Canvas e Nodes para criar workflows criativos",
+    "reason": "O vídeo introduz os conceitos, mas não detalha o processo prático de criação de workflows."
+  },
+  "learning_priorities": [
+    {
+      "priority": "Entender como integrar diferentes modelos e ferramentas em um único workflow",
+      "why_it_matters_now": "A integração de modelos e ferramentas é essencial para maximizar a eficiência e criatividade no processo de produção.",
+      "evidence": "O vídeo menciona a capacidade de integrar modelos de imagem, vídeo, câmeras cinematográficas, mudança de voz e tradução em um único workflow."
+    }
+  ],
+  "source_split": {
+    "main_takeaways_from_video": [
+      "Canvas e Nodes permitem criar workflows criativos conectados e editáveis.",
+      "É possível integrar diversos modelos e ferramentas em um único fluxo de trabalho.",
+      "Um agente de IA pode criar workflows completos com base em uma descrição."
+    ],
+    "main_takeaways_from_audience": []
+  },
+  "_translation_meta": {
+    "model": "deepseek/deepseek-chat",
+    "raw_response": {
+      "id": "gen-1778098561-8XQyNACJgPMft4aDouVX",
+      "object": "chat.completion",
+      "created": 1778098561,
+      "model": "deepseek/deepseek-chat-v3",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "```json\n{\"learning_summary\": {\"what_the_video_teaches\": \"O vídeo apresenta o Canvas e Nodes da Higgsfield AI, ferramentas que permitem criar workflows criativos conectados e editáveis, integrando modelos de imagem, vídeo, câmeras cinematográficas, mudança de voz e tradução em um único fluxo de trabalho.\", \"what_the_comments_add\": \"Não há comentários disponíveis para análise.\", \"best_next_step_for_learning\": \"Explorar tutoriais ou demonstrações práticas sobre como utilizar o Canvas e Nodes para criar workflows criativos, já que o vídeo não detalha o passo a passo.\"}, \"complementary_learning\": [], \"open_loops\": [], \"practical_extensions\": [], \"counterpoints_or_tensions\": [], \"examples_from_audience\": [], \"audience_questions\": [], \"terminology_friction\": [], \"recommended_next_piece\": {\"format\": \"tutorial\", \"title\": \"Como usar Canvas e Nodes para criar workflows criativos\", \"reason\": \"O vídeo introduz os conceitos, mas não detalha o processo prático de criação de workflows.\"}, \"learning_priorities\": [{\"priority\": \"Entender como integrar diferentes modelos e ferramentas em um único workflow\", \"why_it_matters_now\": \"A integração de modelos e ferramentas é essencial para maximizar a eficiência e criatividade no processo de produção.\", \"evidence\": \"O vídeo menciona a capacidade de integrar modelos de imagem, vídeo, câmeras cinematográficas, mudança de voz e tradução em um único workflow.\"}], \"source_split\": {\"main_takeaways_from_video\": [\"Canvas e Nodes permitem criar workflows criativos conectados e editáveis.\", \"É possível integrar diversos modelos e ferramentas em um único fluxo de trabalho.\", \"Um agente de IA pode criar workflows completos com base em uma descrição.\"], \"main_takeaways_from_audience\": []}}\n```",
+            "refusal": null,
+            "reasoning": null
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 533,
+        "completion_tokens": 439,
+        "total_tokens": 972,
+        "cost": 0.00056127,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00056127,
+          "upstream_inference_prompt_cost": 0.00017056,
+          "upstream_inference_completions_cost": 0.00039071
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  "_meta": {
+    "model": "deepseek/deepseek-chat",
+    "prompt_file": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/youtube-research/prompts/learning-analysis-v2.md",
+    "raw_response": {
+      "id": "gen-1778098542-wyTxGi3RqEcVLylE4axM",
+      "object": "chat.completion",
+      "created": 1778098542,
+      "model": "deepseek/deepseek-chat-v3",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "```json\n{\n  \"learning_summary\": {\n    \"what_the_video_teaches\": \"O vídeo apresenta o Canvas e Nodes da Higgsfield AI, ferramentas que permitem criar workflows criativos conectados e editáveis, integrando modelos de imagem, vídeo, câmeras cinematográficas, mudança de voz e tradução em um único fluxo de trabalho.\",\n    \"what_the_comments_add\": \"Não há comentários disponíveis para análise.\",\n    \"best_next_step_for_learning\": \"Explorar tutoriais ou demonstrações práticas sobre como utilizar o Canvas e Nodes para criar workflows criativos, já que o vídeo não detalha o passo a passo.\"\n  },\n  \"complementary_learning\": [],\n  \"open_loops\": [],\n  \"practical_extensions\": [],\n  \"counterpoints_or_tensions\": [],\n  \"examples_from_audience\": [],\n  \"audience_questions\": [],\n  \"terminology_friction\": [],\n  \"recommended_next_piece\": {\n    \"format\": \"tutorial\",\n    \"title\": \"Como usar Canvas e Nodes para criar workflows criativos\",\n    \"reason\": \"O vídeo introduz os conceitos, mas não detalha o processo prático de criação de workflows.\"\n  },\n  \"learning_priorities\": [\n    {\n      \"priority\": \"Entender como integrar diferentes modelos e ferramentas em um único workflow\",\n      \"why_it_matters_now\": \"A integração de modelos e ferramentas é essencial para maximizar a eficiência e criatividade no processo de produção.\",\n      \"evidence\": \"O vídeo menciona a capacidade de integrar modelos de imagem, vídeo, câmeras cinematográficas, mudança de voz e tradução em um único workflow.\"\n    }\n  ],\n  \"source_split\": {\n    \"main_takeaways_from_video\": [\n      \"Canvas e Nodes permitem criar workflows criativos conectados e editáveis.\",\n      \"É possível integrar diversos modelos e ferramentas em um único fluxo de trabalho.\",\n      \"Um agente de IA pode criar workflows completos com base em uma descrição.\"\n    ],\n    \"main_takeaways_from_audience\": []\n  }\n}\n```",
+            "refusal": null,
+            "reasoning": null
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1458,
+        "completion_tokens": 479,
+        "total_tokens": 1937,
+        "cost": 0.00089287,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00089287,
+          "upstream_inference_prompt_cost": 0.00046656,
+          "upstream_inference_completions_cost": 0.00042631
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  }
+}

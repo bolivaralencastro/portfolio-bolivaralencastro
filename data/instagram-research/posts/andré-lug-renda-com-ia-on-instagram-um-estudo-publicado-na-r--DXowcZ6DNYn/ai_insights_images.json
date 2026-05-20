@@ -1,0 +1,21 @@
+{
+  "post_summary": "O post alerta sobre um estudo publicado na revista Science que revela como enxames de IAs autônomas manipulam opiniões em larga escala, criando cidadãos falsos e influenciando eleições. Destaca o aumento significativo de países com campanhas organizadas de manipulação em redes sociais desde 2017.",
+  "slide_descriptions": [
+    "Imagem com texto que apresenta um alerta de cientistas publicado na revista Science, explicando que enxames de IAs autônomas conseguem fabricar consenso populacional, infiltrando comunidades, criando cidadãos falsos e manipulando eleições. O texto também informa que o número de países com campanhas organizadas de manipulação em redes sociais aumentou de 28 para 70 desde 2017."
+  ],
+  "main_message": "Enxames de IAs autônomas estão sendo usados para manipular opiniões e eleições em escala global, com um crescimento expressivo dessas práticas em diversos países.",
+  "key_information": [
+    "Estudo publicado na revista Science sobre manipulação por IAs autônomas.",
+    "IAs criam cidadãos falsos e infiltram comunidades para fabricar consenso.",
+    "Número de países com campanhas organizadas de manipulação em redes sociais saltou de 28 para 70 desde 2017."
+  ],
+  "context_and_relevance": "O conteúdo é relevante no contexto atual de avanço da inteligência artificial e seu impacto na política e sociedade, alertando para os riscos da manipulação digital em larga escala e a necessidade de conscientização sobre o uso ético da IA.",
+  "takeaway": "É fundamental estar atento ao uso de IAs para manipulação social e política, reconhecendo a importância de verificar informações e entender os riscos das tecnologias autônomas na formação de opinião pública.",
+  "content_type": "texto",
+  "_meta": {
+    "model": "openai/gpt-4.1-mini",
+    "n_slides": 1,
+    "post_id": "DXowcZ6DNYn",
+    "post_url": "https://www.instagram.com/andre_lug/p/DXowcZ6DNYn/"
+  }
+}

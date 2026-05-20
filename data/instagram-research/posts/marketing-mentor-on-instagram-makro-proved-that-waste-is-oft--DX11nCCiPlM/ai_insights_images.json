@@ -1,0 +1,22 @@
+{
+  "post_summary": "O post explica como a Makro resolveu o problema do desperdício de frutas ao substituir adesivos comuns por adesivos coloridos que indicam o grau de maturação. Cada cor também sugere uma ideia de receita, ajudando os consumidores a aproveitarem melhor as frutas.",
+  "slide_descriptions": [
+    "O slide apresenta um texto explicativo sobre a iniciativa da Makro, que trocou os adesivos tradicionais por adesivos coloridos para indicar o estágio de maturação das frutas. Abaixo do texto, há uma imagem de um adesivo colorido aplicado em uma fruta, com a marca Makro e a palavra 'RECIPES' (receitas)."
+  ],
+  "main_message": "A percepção visual das frutas influencia o desperdício, e uma simples mudança nos adesivos para indicar maturação pode reduzir significativamente o desperdício alimentar.",
+  "key_information": [
+    "Makro substituiu adesivos regulares por adesivos coloridos.",
+    "Cada cor indica o grau de maturação da fruta.",
+    "Cada estágio de maturação vem acompanhado de uma sugestão de receita.",
+    "Essa mudança ajudou a reduzir o desperdício em 70 toneladas por semana."
+  ],
+  "context_and_relevance": "O conteúdo é relevante no contexto do marketing sustentável e da redução do desperdício alimentar, mostrando como estratégias simples de comunicação visual podem impactar positivamente o comportamento do consumidor e a sustentabilidade.",
+  "takeaway": "Pequenas mudanças na forma como apresentamos produtos podem alterar percepções e comportamentos, reduzindo o desperdício e promovendo um consumo mais consciente.",
+  "content_type": "texto",
+  "_meta": {
+    "model": "openai/gpt-4.1-mini",
+    "n_slides": 1,
+    "post_id": "DX11nCCiPlM",
+    "post_url": "https://www.instagram.com/marketingmentor.in/p/DX11nCCiPlM/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "status": "ok",
+    "language_code": "",
+    "track_name": "OpenRouter audio transcription",
+    "is_auto_generated": false,
+    "source": "audio_stt",
+    "stt_model": "openai/whisper-large-v3",
+    "cleanup_model": "deepseek/deepseek-chat",
+    "chunk_seconds": 480,
+    "chunk_overlap_seconds": 2,
+    "chunk_count": 1,
+    "audio_path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DXPEjS-jI1z/_audio_work/source.m4a",
+    "language_resolution": "stt_auto_detect"
+  },
+  "segments": [
+    {
+      "start_ms": 0,
+      "duration_ms": 65000,
+      "text": "Aqui está a transcrição revisada, mantendo o significado original e corrigindo apenas pontuação, capitalização e quebras óbvias de ASR:\n\n---\n\nThis is Zoe Renard. She creates visual stories and cultural experiences that connect people across different worlds. Fancy way of saying she does a lot of stuff, and she has a lot of fun along the way. She was told to pick a lane. She didn’t. She was also told she was too much. Too much turned out to be the plan. Fun fact: she’s keychain-size. Practical. You can bring her everywhere. She builds visual worlds, shapes creative directions, designs projects that make people feel something. She started a whole thing about people who don’t fit in one box. Welcome to Hybrid Conversations. She does fit in a box, actually—it’s a storage one, but that’s beside the point. She believed it so hard she made a model out of it. Lucky are the in-betweens. If you’ve ever felt like too much, not enough, or just in between, you’re gonna want to stick around. And if you need someone who knows how to turn a vision into something people actually feel, she is your person. And from very reliable sources, she’s just getting started.  \n\n--- \n\nObservação: Fiz correções como \"beside the point\" (em vez de \"besides\"), ajustes de hífen em \"keychain-size\" e pontuação para maior clareza, sem alterar o tom ou significado original.",
+      "source": "audio_stt_merged"
+    }
+  ]
+}

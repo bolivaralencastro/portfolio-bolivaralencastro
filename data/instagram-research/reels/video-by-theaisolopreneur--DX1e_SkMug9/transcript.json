@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "status": "ok",
+    "language_code": "",
+    "track_name": "OpenRouter audio transcription",
+    "is_auto_generated": false,
+    "source": "audio_stt",
+    "stt_model": "openai/whisper-large-v3",
+    "cleanup_model": "deepseek/deepseek-chat",
+    "chunk_seconds": 480,
+    "chunk_overlap_seconds": 2,
+    "chunk_count": 1,
+    "audio_path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DX1e_SkMug9/_audio_work/source.m4a",
+    "language_resolution": "stt_auto_detect"
+  },
+  "segments": [
+    {
+      "start_ms": 0,
+      "duration_ms": 78000,
+      "text": "When you get AI to write something for you, there are two patterns that give it away, that make it obvious that it wasn't written by a human. Hi, I’m Mikkel, by the way. I help companies adopt AI in a safe and super clear way. The first one is anaphora, and that’s when every sentence starts the same way and also builds into, like, kind of a rhythm of three. And LLMs do this all the time. It does feel structured, but it reads like a generated list, not a real person talking. The second one is called antithetical parallelism. That’s like the \"it’s not X, it’s Y\" move. And I really—that’s the one I really hate. And that just gives it all away. Again, LLMs like ChatGPT love this, and so does every other AI tool. And both patterns just kind of slip in all the time because it seems like good writing, but it’s not really. It’s something that the LLM has just learned to do. And this is totally fixable. I’m sharing the add-on prompt in the comments so you can add it to your system prompt in whatever LLM you are using. And that’s it. Just copy it, paste it in, and your copy will just sound much more human. Follow for more.",
+      "source": "audio_stt_merged"
+    }
+  ]
+}

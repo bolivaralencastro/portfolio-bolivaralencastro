@@ -1,0 +1,21 @@
+{
+  "post_summary": "O post anuncia uma vaga de emprego para assistente comercial na GALERIA BASE, com trabalho presencial em São Paulo. Ele destaca os requisitos necessários para a candidatura.",
+  "slide_descriptions": [
+    "Imagem com fundo de arquitetura moderna e texto sobreposto que informa a contratação para a vaga de assistente comercial, mencionando a localização presencial em São Paulo e os requisitos para o cargo."
+  ],
+  "main_message": "A GALERIA BASE está recrutando um assistente comercial para atuar presencialmente em São Paulo, buscando candidatos que atendam aos requisitos especificados.",
+  "key_information": [
+    "Vaga para assistente comercial",
+    "Trabalho presencial em São Paulo",
+    "Requisitos específicos para a função (não detalhados na imagem)"
+  ],
+  "context_and_relevance": "O post é relevante para profissionais do mercado comercial e interessados em oportunidades de trabalho na área, especialmente em São Paulo. Também reforça a presença e expansão da GALERIA BASE no mercado.",
+  "takeaway": "A importância de estar atento a oportunidades de emprego em instituições culturais e comerciais, além de compreender os requisitos para se candidatar a vagas específicas.",
+  "content_type": "texto",
+  "_meta": {
+    "model": "openai/gpt-4.1-mini",
+    "n_slides": 1,
+    "post_id": "DX9lAWVNff4",
+    "post_url": "https://www.instagram.com/galeriabase/p/DX9lAWVNff4/"
+  }
+}

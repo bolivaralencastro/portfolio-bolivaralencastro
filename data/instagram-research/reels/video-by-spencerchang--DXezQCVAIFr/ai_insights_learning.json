@@ -1,0 +1,131 @@
+{
+  "learning_summary": {
+    "what_the_video_teaches": "O vídeo apresenta o PlayHTML, uma biblioteca open-source que transforma qualquer site em um espaço compartilhado e interativo em tempo real, onde as ações dos usuários permanecem visíveis para outros. O criador, Spencer Chang, explica como melhorou a documentação do projeto usando o Cursor para torná-la mais interativa e divertida, refletindo a experiência dos espaços criados com a ferramenta.",
+    "what_the_comments_add": "Não há comentários ou respostas disponíveis para análise, o que limita a compreensão de como a audiência recebeu ou expandiu o conteúdo do vídeo.",
+    "best_next_step_for_learning": "Explorar a documentação interativa do PlayHTML para experimentar as funcionalidades em tempo real e contribuir para a comunidade open-source."
+  },
+  "complementary_learning": [],
+  "open_loops": [],
+  "practical_extensions": [],
+  "counterpoints_or_tensions": [],
+  "examples_from_audience": [],
+  "audience_questions": [],
+  "terminology_friction": [],
+  "recommended_next_piece": {
+    "format": "Documentação interativa",
+    "title": "PlayHTML Docs",
+    "reason": "Permite experimentar as funcionalidades em tempo real e entender melhor como a ferramenta funciona na prática."
+  },
+  "learning_priorities": [
+    {
+      "priority": "Explorar casos de uso reais do PlayHTML",
+      "why_it_matters_now": "Ajuda a entender a aplicabilidade e o potencial da ferramenta em diferentes contextos.",
+      "evidence": "O vídeo menciona que pessoas já criaram diversos espaços web, como jogos e websites pessoais, mas não detalha esses exemplos."
+    }
+  ],
+  "source_split": {
+    "main_takeaways_from_video": [
+      "PlayHTML é uma biblioteca open-source que transforma sites em espaços compartilhados e interativos.",
+      "A documentação foi melhorada para ser mais interativa e refletir a experiência dos espaços criados com a ferramenta.",
+      "O criador usou o Cursor para desenvolver a base da documentação interativa."
+    ],
+    "main_takeaways_from_audience": []
+  },
+  "_translation_meta": {
+    "model": "deepseek/deepseek-chat",
+    "raw_response": {
+      "id": "gen-1778099200-DOJTTPtWS5iUDjpZv0Vo",
+      "object": "chat.completion",
+      "created": 1778099200,
+      "model": "deepseek/deepseek-chat-v3",
+      "provider": "Novita",
+      "system_fingerprint": null,
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "```json\n{\n  \"learning_summary\": {\n    \"what_the_video_teaches\": \"O vídeo apresenta o PlayHTML, uma biblioteca open-source que transforma qualquer site em um espaço compartilhado e interativo em tempo real, onde as ações dos usuários permanecem visíveis para outros. O criador, Spencer Chang, explica como melhorou a documentação do projeto usando o Cursor para torná-la mais interativa e divertida, refletindo a experiência dos espaços criados com a ferramenta.\",\n    \"what_the_comments_add\": \"Não há comentários ou respostas disponíveis para análise, o que limita a compreensão de como a audiência recebeu ou expandiu o conteúdo do vídeo.\",\n    \"best_next_step_for_learning\": \"Explorar a documentação interativa do PlayHTML para experimentar as funcionalidades em tempo real e contribuir para a comunidade open-source.\"\n  },\n  \"complementary_learning\": [],\n  \"open_loops\": [],\n  \"practical_extensions\": [],\n  \"counterpoints_or_tensions\": [],\n  \"examples_from_audience\": [],\n  \"audience_questions\": [],\n  \"terminology_friction\": [],\n  \"recommended_next_piece\": {\n    \"format\": \"Documentação interativa\",\n    \"title\": \"PlayHTML Docs\",\n    \"reason\": \"Permite experimentar as funcionalidades em tempo real e entender melhor como a ferramenta funciona na prática.\"\n  },\n  \"learning_priorities\": [\n    {\n      \"priority\": \"Explorar casos de uso reais do PlayHTML\",\n      \"why_it_matters_now\": \"Ajuda a entender a aplicabilidade e o potencial da ferramenta em diferentes contextos.\",\n      \"evidence\": \"O vídeo menciona que pessoas já criaram diversos espaços web, como jogos e websites pessoais, mas não detalha esses exemplos.\"\n    }\n  ],\n  \"source_split\": {\n    \"main_takeaways_from_video\": [\n      \"PlayHTML é uma biblioteca open-source que transforma sites em espaços compartilhados e interativos.\",\n      \"A documentação foi melhorada para ser mais interativa e refletir a experiência dos espaços criados com a ferramenta.\",\n      \"O criador usou o Cursor para desenvolver a base da documentação interativa.\"\n    ],\n    \"main_takeaways_from_audience\": []\n  }\n}\n```",
+            "refusal": null,
+            "reasoning": null
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 579,
+        "completion_tokens": 525,
+        "total_tokens": 1104,
+        "cost": 0.0009141,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0009141,
+          "upstream_inference_prompt_cost": 0.0002316,
+          "upstream_inference_completions_cost": 0.0006825
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  "_meta": {
+    "model": "deepseek/deepseek-chat",
+    "prompt_file": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/youtube-research/prompts/learning-analysis-v2.md",
+    "raw_response": {
+      "id": "gen-1778099181-bkV7OclaAQl3MmlS23S9",
+      "object": "chat.completion",
+      "created": 1778099181,
+      "model": "deepseek/deepseek-chat-v3",
+      "provider": "Novita",
+      "system_fingerprint": null,
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "```json\n{\n  \"learning_summary\": {\n    \"what_the_video_teaches\": \"O vídeo apresenta o PlayHTML, uma biblioteca open-source que transforma qualquer site em um espaço compartilhado e interativo em tempo real, onde as ações dos usuários permanecem visíveis para outros. O criador, Spencer Chang, explica como melhorou a documentação do projeto usando o Cursor para torná-la mais interativa e divertida, refletindo a experiência dos espaços criados com a ferramenta.\",\n    \"what_the_comments_add\": \"Não há comentários ou respostas disponíveis para análise, o que limita a compreensão de como a audiência recebeu ou expandiu o conteúdo do vídeo.\",\n    \"best_next_step_for_learning\": \"Explorar a documentação interativa do PlayHTML para experimentar as funcionalidades em tempo real e contribuir para a comunidade open-source.\"\n  },\n  \"complementary_learning\": [],\n  \"open_loops\": [],\n  \"practical_extensions\": [],\n  \"counterpoints_or_tensions\": [],\n  \"examples_from_audience\": [],\n  \"audience_questions\": [],\n  \"terminology_friction\": [],\n  \"recommended_next_piece\": {\n    \"format\": \"Documentação interativa\",\n    \"title\": \"PlayHTML Docs\",\n    \"reason\": \"Permite experimentar as funcionalidades em tempo real e entender melhor como a ferramenta funciona na prática.\"\n  },\n  \"learning_priorities\": [\n    {\n      \"priority\": \"Explorar casos de uso reais do PlayHTML\",\n      \"why_it_matters_now\": \"Ajuda a entender a aplicabilidade e o potencial da ferramenta em diferentes contextos.\",\n      \"evidence\": \"O vídeo menciona que pessoas já criaram diversos espaços web, como jogos e websites pessoais, mas não detalha esses exemplos.\"\n    }\n  ],\n  \"source_split\": {\n    \"main_takeaways_from_video\": [\n      \"PlayHTML é uma biblioteca open-source que transforma sites em espaços compartilhados e interativos.\",\n      \"A documentação foi melhorada para ser mais interativa e refletir a experiência dos espaços criados com a ferramenta.\",\n      \"O criador usou o Cursor para desenvolver a base da documentação interativa.\"\n    ],\n    \"main_takeaways_from_audience\": []\n  }\n}\n```",
+            "refusal": null,
+            "reasoning": null
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1409,
+        "completion_tokens": 523,
+        "total_tokens": 1932,
+        "cost": 0.0012435,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 896,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0012435,
+          "upstream_inference_prompt_cost": 0.0005636,
+          "upstream_inference_completions_cost": 0.0006799
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  }
+}

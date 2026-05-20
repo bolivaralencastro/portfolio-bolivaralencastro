@@ -1,0 +1,65 @@
+{
+  "source_audio_path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DXho28KkdCo/_audio_work/source.m4a",
+  "chunks": [
+    {
+      "index": 0,
+      "start_seconds": 0,
+      "duration_seconds": 96.96,
+      "path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DXho28KkdCo/_audio_work/chunks/chunk-000.wav",
+      "size_bytes": 3102798,
+      "transcript_text": "Cada día estoy pensando en cómo hago la compañía más eficiente con agentes. Ahora, ¿a quién estoy contratando? Estoy contratando a los expertos de research, a los expertos de ingeniería de agentes. Se están creando nuevos trabajos que antes no existían. Tengo gente que ahora tiene tanto leverage con agentes que crean decenas de proyectos nuevos por semana, que escriben una cantidad de código impresionante que antes no podían haber hecho. Entonces estoy buscando quiénes son esas personas en el mundo que utilizan los agentes tan bien que tienen 10 veces la cantidad de output, 100 veces la cantidad de output. Entonces lo conecto con cuál es la gran oportunidad para el futuro de la humanidad y el futuro de los trabajos. Yo creo que esta idea de que vos prompteás y manejás los agentes es la nueva, es el nuevo literacy, es el nuevo sé programar, es el nuevo sé matemática, es el nuevo sé persuadir. Antes uno tenía que persuadir a los seres humanos Ahora uno está en comunicación constante con los agentes Entonces la gente que realmente se sepa adaptar a este nuevo entorno Va a tener un beneficio que de vuelta va a estar despegado del resto Los ingenios dentro de Vercel que utilizan AI muy bien No son un poquito mejor que la norma Son 100 veces mejor que la norma Gracias.",
+      "usage": {
+        "seconds": 96.96,
+        "cost": 0.0029896
+      },
+      "model": "openai/whisper-large-v3"
+    }
+  ],
+  "raw_merged_transcript": "Cada día estoy pensando en cómo hago la compañía más eficiente con agentes. Ahora, ¿a quién estoy contratando? Estoy contratando a los expertos de research, a los expertos de ingeniería de agentes. Se están creando nuevos trabajos que antes no existían. Tengo gente que ahora tiene tanto leverage con agentes que crean decenas de proyectos nuevos por semana, que escriben una cantidad de código impresionante que antes no podían haber hecho. Entonces estoy buscando quiénes son esas personas en el mundo que utilizan los agentes tan bien que tienen 10 veces la cantidad de output, 100 veces la cantidad de output. Entonces lo conecto con cuál es la gran oportunidad para el futuro de la humanidad y el futuro de los trabajos. Yo creo que esta idea de que vos prompteás y manejás los agentes es la nueva, es el nuevo literacy, es el nuevo sé programar, es el nuevo sé matemática, es el nuevo sé persuadir. Antes uno tenía que persuadir a los seres humanos Ahora uno está en comunicación constante con los agentes Entonces la gente que realmente se sepa adaptar a este nuevo entorno Va a tener un beneficio que de vuelta va a estar despegado del resto Los ingenios dentro de Vercel que utilizan AI muy bien No son un poquito mejor que la norma Son 100 veces mejor que la norma Gracias.",
+  "cleaned_transcript": "Aqui está o texto revisado com pontuação, capitalização e quebras de ASR corrigidas, mantendo o significado exato e o idioma original:\n\n---\n\nCada día estoy pensando en cómo hago la compañía más eficiente con agentes. Ahora, ¿a quién estoy contratando? Estoy contratando a los expertos de research, a los expertos de ingeniería de agentes. Se están creando nuevos trabajos que antes no existían. Tengo gente que ahora tiene tanto leverage con agentes que crean decenas de proyectos nuevos por semana, que escriben una cantidad de código impresionante que antes no podían haber hecho. Entonces, estoy buscando quiénes son esas personas en el mundo que utilizan los agentes tan bien que tienen 10 veces la cantidad de output, 100 veces la cantidad de output. \n\nEntonces, lo conecto con cuál es la gran oportunidad para el futuro de la humanidad y el futuro de los trabajos. Yo creo que esta idea de que vos prompteás y manejás los agentes es la nueva, es el nuevo literacy, es el nuevo \"sé programar\", es el nuevo \"sé matemática\", es el nuevo \"sé persuadir\". Antes, uno tenía que persuadir a los seres humanos. Ahora, uno está en comunicación constante con los agentes. Entonces, la gente que realmente se sabe adaptar a este nuevo entorno va a tener un beneficio que, de vuelta, va a estar despegado del resto. Los ingenios dentro de Vercel que utilizan AI muy bien no son un poquito mejor que la norma: son 100 veces mejor que la norma. Gracias.\n\n---  \n\n*Observe que:  \n1. Corrigi a quebra abrupta \"humanos Ahora\" para \"humanos. Ahora\"  \n2. Adicionei parágrafos para melhor organização  \n3. Mantive expressões informais como \"vos prompteás\" exatamente como falado  \n4. Preservei todas as repetições propositais (como \"10 veces... 100 veces\")  \n5. Uniformizei a pontuação sem alterar o estilo oral do discurso*",
+  "cleanup_response": {
+    "id": "gen-1778098433-BQEv6jomXO1edCvjASWa",
+    "object": "chat.completion",
+    "created": 1778098433,
+    "model": "deepseek/deepseek-chat-v3",
+    "provider": "Novita",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Aqui está o texto revisado com pontuação, capitalização e quebras de ASR corrigidas, mantendo o significado exato e o idioma original:\n\n---\n\nCada día estoy pensando en cómo hago la compañía más eficiente con agentes. Ahora, ¿a quién estoy contratando? Estoy contratando a los expertos de research, a los expertos de ingeniería de agentes. Se están creando nuevos trabajos que antes no existían. Tengo gente que ahora tiene tanto leverage con agentes que crean decenas de proyectos nuevos por semana, que escriben una cantidad de código impresionante que antes no podían haber hecho. Entonces, estoy buscando quiénes son esas personas en el mundo que utilizan los agentes tan bien que tienen 10 veces la cantidad de output, 100 veces la cantidad de output. \n\nEntonces, lo conecto con cuál es la gran oportunidad para el futuro de la humanidad y el futuro de los trabajos. Yo creo que esta idea de que vos prompteás y manejás los agentes es la nueva, es el nuevo literacy, es el nuevo \"sé programar\", es el nuevo \"sé matemática\", es el nuevo \"sé persuadir\". Antes, uno tenía que persuadir a los seres humanos. Ahora, uno está en comunicación constante con los agentes. Entonces, la gente que realmente se sabe adaptar a este nuevo entorno va a tener un beneficio que, de vuelta, va a estar despegado del resto. Los ingenios dentro de Vercel que utilizan AI muy bien no son un poquito mejor que la norma: son 100 veces mejor que la norma. Gracias.\n\n---  \n\n*Observe que:  \n1. Corrigi a quebra abrupta \"humanos Ahora\" para \"humanos. Ahora\"  \n2. Adicionei parágrafos para melhor organização  \n3. Mantive expressões informais como \"vos prompteás\" exatamente como falado  \n4. Preservei todas as repetições propositais (como \"10 veces... 100 veces\")  \n5. Uniformizei a pontuação sem alterar o estilo oral do discurso*",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 416,
+      "completion_tokens": 480,
+      "total_tokens": 896,
+      "cost": 0.0007904,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007904,
+        "upstream_inference_prompt_cost": 0.0001664,
+        "upstream_inference_completions_cost": 0.000624
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

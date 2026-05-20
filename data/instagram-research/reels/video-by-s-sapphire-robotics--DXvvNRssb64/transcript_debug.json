@@ -1,0 +1,65 @@
+{
+  "source_audio_path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DXvvNRssb64/_audio_work/source.m4a",
+  "chunks": [
+    {
+      "index": 0,
+      "start_seconds": 0,
+      "duration_seconds": 59.327,
+      "path": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/data/instagram-research/reels/DXvvNRssb64/_audio_work/chunks/chunk-000.wav",
+      "size_bytes": 1898542,
+      "transcript_text": "This is a running robot, and here it's going slow-mo. It's running 12 miles per hour on a treadmill. There's no sensors, no feedback control, no computer. It's just a motor with a throttle. And as you just squeeze the throttle, it runs faster, and you let off the throttle, and it runs slower. And we came up with some really clever ideas on how to make this self-stabilizing. so if the robot pitches forward the pitch would just naturally naturally correct itself and so i think there's a lot of um really cool things you can do like this to put intelligence in the mechanism and um and you can make the argument that in biology um some animals like ostriches are doing something like this because their motion is so quick that the time it would take for something to be sensed and something to be reacted upon.",
+      "usage": {
+        "seconds": 59.32,
+        "cost": 0.0018290333333333332
+      },
+      "model": "openai/whisper-large-v3"
+    }
+  ],
+  "raw_merged_transcript": "This is a running robot, and here it's going slow-mo. It's running 12 miles per hour on a treadmill. There's no sensors, no feedback control, no computer. It's just a motor with a throttle. And as you just squeeze the throttle, it runs faster, and you let off the throttle, and it runs slower. And we came up with some really clever ideas on how to make this self-stabilizing. so if the robot pitches forward the pitch would just naturally naturally correct itself and so i think there's a lot of um really cool things you can do like this to put intelligence in the mechanism and um and you can make the argument that in biology um some animals like ostriches are doing something like this because their motion is so quick that the time it would take for something to be sensed and something to be reacted upon.",
+  "cleaned_transcript": "This is a running robot, and here it's going slow-mo. It's running 12 miles per hour on a treadmill. There's no sensors, no feedback control, no computer. It's just a motor with a throttle. And as you just squeeze the throttle, it runs faster, and you let off the throttle, and it runs slower. And we came up with some really clever ideas on how to make this self-stabilizing. So if the robot pitches forward, the pitch would just naturally correct itself. And so, I think there's a lot of really cool things you can do like this to put intelligence in the mechanism. And you can make the argument that in biology, some animals like ostriches are doing something like this because their motion is so quick that the time it would take for something to be sensed and something to be reacted upon.",
+  "cleanup_response": {
+    "id": "gen-1778098588-OiegZpahThbWHIS4EqMo",
+    "object": "chat.completion",
+    "created": 1778098588,
+    "model": "deepseek/deepseek-chat-v3",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "This is a running robot, and here it's going slow-mo. It's running 12 miles per hour on a treadmill. There's no sensors, no feedback control, no computer. It's just a motor with a throttle. And as you just squeeze the throttle, it runs faster, and you let off the throttle, and it runs slower. And we came up with some really clever ideas on how to make this self-stabilizing. So if the robot pitches forward, the pitch would just naturally correct itself. And so, I think there's a lot of really cool things you can do like this to put intelligence in the mechanism. And you can make the argument that in biology, some animals like ostriches are doing something like this because their motion is so quick that the time it would take for something to be sensed and something to be reacted upon.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 274,
+      "completion_tokens": 176,
+      "total_tokens": 450,
+      "cost": 0.00024432,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00024432,
+        "upstream_inference_prompt_cost": 8.768e-05,
+        "upstream_inference_completions_cost": 0.00015664
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

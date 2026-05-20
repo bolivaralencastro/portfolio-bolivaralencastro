@@ -1,0 +1,152 @@
+{
+  "learning_summary": {
+    "what_the_video_teaches": "O vídeo apresenta o aplicativo Moody, um teleprompter que fica ao lado da câmera para manter contato visual e falar naturalmente, útil para gravações, reuniões online, apresentações e demonstrações ao vivo. Ele se ajusta ao ritmo da fala, pode ser controlado pelo teclado, redimensionado e fica invisível no compartilhamento de tela.",
+    "what_the_comments_add": "Não há comentários da audiência disponíveis para análise.",
+    "best_next_step_for_learning": "Experimentar o aplicativo Moody ou assistir a uma demonstração prática de uso em diferentes contextos (gravação, reunião online) para entender melhor sua funcionalidade e integração."
+  },
+  "complementary_learning": [],
+  "open_loops": [],
+  "practical_extensions": [],
+  "counterpoints_or_tensions": [],
+  "examples_from_audience": [],
+  "audience_questions": [],
+  "terminology_friction": [],
+  "recommended_next_piece": {
+    "format": "vídeo tutorial",
+    "title": "Demonstração prática do Moody em uma reunião online",
+    "reason": "O vídeo original é apenas uma introdução; um tutorial mostrando o uso real ajudaria a esclarecer dúvidas sobre configuração e integração com diferentes plataformas."
+  },
+  "learning_priorities": [
+    {
+      "priority": "Entender como o Moody se integra com softwares de videoconferência e gravação",
+      "why_it_matters_now": "O vídeo menciona uso em reuniões online e compartilhamento de tela, mas não demonstra a integração; isso é crucial para adoção prática.",
+      "evidence": "Transcript menciona 'online meetings' e 'invisible on screen sharing', mas sem detalhes."
+    },
+    {
+      "priority": "Aprender a ajustar a velocidade de fala e o controle pelo teclado",
+      "why_it_matters_now": "O vídeo cita esses recursos, mas não mostra como configurá-los, o que pode gerar dúvidas na primeira utilização.",
+      "evidence": "Transcript: 'Moody can adjust to your speaking pace, or you can control the speed with your keyboard.'"
+    }
+  ],
+  "source_split": {
+    "main_takeaways_from_video": [
+      "O aplicativo Moody resolve o problema de esquecer o texto ao gravar, posicionando o teleprompter próximo à câmera.",
+      "Permite manter contato visual e falar naturalmente.",
+      "Oferece ajuste de velocidade, redimensionamento e invisibilidade no compartilhamento de tela."
+    ],
+    "main_takeaways_from_audience": []
+  },
+  "_translation_meta": {
+    "model": "deepseek/deepseek-v4-pro",
+    "raw_response": {
+      "id": "gen-1778101602-QVubj9SipghfcaejNlBa",
+      "object": "chat.completion",
+      "created": 1778101602,
+      "model": "deepseek/deepseek-v4-pro-20260423",
+      "provider": "Parasail",
+      "system_fingerprint": "vllm-0.20.1rc1.dev1005+gcbf8428d0-tp8-ep-3e86baa6",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\n  \"learning_summary\": {\n    \"what_the_video_teaches\": \"O vídeo apresenta o aplicativo Moody, um teleprompter que fica ao lado da câmera para manter contato visual e falar naturalmente, útil para gravações, reuniões online, apresentações e demonstrações ao vivo. Ele se ajusta ao ritmo da fala, pode ser controlado pelo teclado, redimensionado e fica invisível no compartilhamento de tela.\",\n    \"what_the_comments_add\": \"Não há comentários da audiência disponíveis para análise.\",\n    \"best_next_step_for_learning\": \"Experimentar o aplicativo Moody ou assistir a uma demonstração prática de uso em diferentes contextos (gravação, reunião online) para entender melhor sua funcionalidade e integração.\"\n  },\n  \"complementary_learning\": [],\n  \"open_loops\": [],\n  \"practical_extensions\": [],\n  \"counterpoints_or_tensions\": [],\n  \"examples_from_audience\": [],\n  \"audience_questions\": [],\n  \"terminology_friction\": [],\n  \"recommended_next_piece\": {\n    \"format\": \"vídeo tutorial\",\n    \"title\": \"Demonstração prática do Moody em uma reunião online\",\n    \"reason\": \"O vídeo original é apenas uma introdução; um tutorial mostrando o uso real ajudaria a esclarecer dúvidas sobre configuração e integração com diferentes plataformas.\"\n  },\n  \"learning_priorities\": [\n    {\n      \"priority\": \"Entender como o Moody se integra com softwares de videoconferência e gravação\",\n      \"why_it_matters_now\": \"O vídeo menciona uso em reuniões online e compartilhamento de tela, mas não demonstra a integração; isso é crucial para adoção prática.\",\n      \"evidence\": \"Transcript menciona 'online meetings' e 'invisible on screen sharing', mas sem detalhes.\"\n    },\n    {\n      \"priority\": \"Aprender a ajustar a velocidade de fala e o controle pelo teclado\",\n      \"why_it_matters_now\": \"O vídeo cita esses recursos, mas não mostra como configurá-los, o que pode gerar dúvidas na primeira utilização.\",\n      \"evidence\": \"Transcript: 'Moody can adjust to your speaking pace, or you can control the speed with your keyboard.'\"\n    }\n  ],\n  \"source_split\": {\n    \"main_takeaways_from_video\": [\n      \"O aplicativo Moody resolve o problema de esquecer o texto ao gravar, posicionando o teleprompter próximo à câmera.\",\n      \"Permite manter contato visual e falar naturalmente.\",\n      \"Oferece ajuste de velocidade, redimensionamento e invisibilidade no compartilhamento de tela.\"\n    ],\n    \"main_takeaways_from_audience\": []\n  }\n}",
+            "refusal": null,
+            "reasoning": "We are asked to translate the JSON values to pt-BR, preserving keys exactly. The JSON is given. We need to translate only textual values, preserving proper names, acronyms, technical terms, and literal quotes when appropriate. Return only strict JSON.\n\nLet's go through the JSON structure and translate each string value.\n\nThe top-level keys: \"learning_summary\", \"complementary_learning\", \"open_loops\", \"practical_extensions\", \"counterpoints_or_tensions\", \"examples_from_audience\", \"audience_questions\", \"terminology_friction\", \"recommended_next_piece\", \"learning_priorities\", \"source_split\".\n\nWe'll translate each string value accordingly.\n\nFirst, \"learning_summary\" object:\n- \"what_the_video_teaches\": \"O vídeo apresenta o aplicativo Moody, um teleprompter que fica ao lado da câmera para manter contato visual e falar naturalmente, útil para gravações, reuniões online, apresentações e demonstrações ao vivo. Ele se ajusta ao ritmo da fala, pode ser controlado pelo teclado, redimensionado e fica invisível no compartilhamento de tela.\" -> This is already in Portuguese? Wait, the original text is in Portuguese? The prompt says \"Traduza o JSON abaixo para pt-BR.\" So the input JSON is in some language, likely English, but the given text appears to be in Portuguese already. Let me check: The input JSON has \"what_the_video_teaches\": \"O vídeo apresenta o aplicativo Moody, um teleprompter que fica ao lado da câmera para manter contato visual e falar naturalmente, útil para gravações, reuniões online, apresentações e demonstrações ao vivo. Ele se ajusta ao ritmo da fala, pode ser controlado pelo teclado, redimensionado e fica invisível no compartilhamento de tela.\" That is Portuguese. So maybe the original JSON is already in Portuguese? But the instruction says \"Traduza o JSON abaixo para pt-BR.\" So perhaps the JSON is in English and the user mistakenly provided a Portuguese version? Or maybe the user wants to ensure it's in pt-BR, but it's already in pt-BR? I need to check the rest. The \"what_the_comments_add\": \"Não há comentários da audiência disponíveis para análise.\" That's Portuguese. \"best_next_step_for_learning\": \"Experimentar o aplicativo Moody ou assistir a uma demonstração prática de uso em diferentes contextos (gravação, reunião online) para entender melhor sua funcionalidade e integração.\" Portuguese. So the entire JSON seems to be in Portuguese already. But the instruction says to translate to pt-BR. Possibly the user provided a JSON that is in English and I'm seeing a pre-translated version? No, the prompt shows the JSON as is. I think the user might have pasted a JSON that is already in Portuguese, but the task is to translate it to pt-BR. That would be redundant. However, I must follow the instruction: \"Traduza o JSON abaixo para pt-BR.\" So if it's already in Portuguese, I should just return it as is? But the instruction says \"Traduza apenas os valores textuais.\" So I need to translate the textual values. If they are already in Portuguese, then no translation is needed. But maybe the original JSON was in English and the user accidentally provided a translated version? Let's read the prompt carefully: The user says \"Traduza o JSON abaixo para pt-BR. Preserve as chaves exatamente como estao.\" Then they provide a JSON. That JSON appears to be in Portuguese. So I'll assume that the JSON is in Portuguese and I need to output it exactly as is, because translating Portuguese to Portuguese is identity. But wait, the instruction might be a generic one, and the JSON might be in English. Let me check the content: \"what_the_video_teaches\" value: \"O vídeo apresenta o aplicativo Moody...\" That is Portuguese. So it's already in pt-BR. So I'll just output the same JSON. But to be safe, I'll double-check if any part is in English. The \"recommended_next_piece\" has \"format\": \"vídeo tutorial\", \"title\": \"Demonstração prática do Moody em uma reunião online\", \"reason\": \"O vídeo original é apenas uma introdução; um tutorial mostrando o uso real ajudaria a esclarecer dúvidas sobre configuração e integração com diferentes plataformas.\" All Portuguese. \"learning_priorities\" array: first object: \"priority\": \"Entender como o Moody se integra com softwares de videoconferência e gravação\", \"why_it_matters_now\": \"O vídeo menciona uso em reuniões online e compartilhamento de tela, mas não demonstra a integração; isso é crucial para adoção prática.\", \"evidence\": \"Transcript menciona 'online meetings' e 'invisible on screen sharing', mas sem detalhes.\" Here, \"Transcript menciona 'online meetings' e 'invisible on screen sharing'\" - the English terms are in quotes, so they are preserved as literal quotes. That's fine. The rest is Portuguese. So the entire JSON is already in pt-BR. Therefore, I will return the JSON exactly as provided.\n\nBut the instruction says \"Retorne apenas JSON estrito.\" So I'll output the JSON without any additional text.\n\nThus, the answer is the same JSON.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We are asked to translate the JSON values to pt-BR, preserving keys exactly. The JSON is given. We need to translate only textual values, preserving proper names, acronyms, technical terms, and literal quotes when appropriate. Return only strict JSON.\n\nLet's go through the JSON structure and translate each string value.\n\nThe top-level keys: \"learning_summary\", \"complementary_learning\", \"open_loops\", \"practical_extensions\", \"counterpoints_or_tensions\", \"examples_from_audience\", \"audience_questions\", \"terminology_friction\", \"recommended_next_piece\", \"learning_priorities\", \"source_split\".\n\nWe'll translate each string value accordingly.\n\nFirst, \"learning_summary\" object:\n- \"what_the_video_teaches\": \"O vídeo apresenta o aplicativo Moody, um teleprompter que fica ao lado da câmera para manter contato visual e falar naturalmente, útil para gravações, reuniões online, apresentações e demonstrações ao vivo. Ele se ajusta ao ritmo da fala, pode ser controlado pelo teclado, redimensionado e fica invisível no compartilhamento de tela.\" -> This is already in Portuguese? Wait, the original text is in Portuguese? The prompt says \"Traduza o JSON abaixo para pt-BR.\" So the input JSON is in some language, likely English, but the given text appears to be in Portuguese already. Let me check: The input JSON has \"what_the_video_teaches\": \"O vídeo apresenta o aplicativo Moody, um teleprompter que fica ao lado da câmera para manter contato visual e falar naturalmente, útil para gravações, reuniões online, apresentações e demonstrações ao vivo. Ele se ajusta ao ritmo da fala, pode ser controlado pelo teclado, redimensionado e fica invisível no compartilhamento de tela.\" That is Portuguese. So maybe the original JSON is already in Portuguese? But the instruction says \"Traduza o JSON abaixo para pt-BR.\" So perhaps the JSON is in English and the user mistakenly provided a Portuguese version? Or maybe the user wants to ensure it's in pt-BR, but it's already in pt-BR? I need to check the rest. The \"what_the_comments_add\": \"Não há comentários da audiência disponíveis para análise.\" That's Portuguese. \"best_next_step_for_learning\": \"Experimentar o aplicativo Moody ou assistir a uma demonstração prática de uso em diferentes contextos (gravação, reunião online) para entender melhor sua funcionalidade e integração.\" Portuguese. So the entire JSON seems to be in Portuguese already. But the instruction says to translate to pt-BR. Possibly the user provided a JSON that is in English and I'm seeing a pre-translated version? No, the prompt shows the JSON as is. I think the user might have pasted a JSON that is already in Portuguese, but the task is to translate it to pt-BR. That would be redundant. However, I must follow the instruction: \"Traduza o JSON abaixo para pt-BR.\" So if it's already in Portuguese, I should just return it as is? But the instruction says \"Traduza apenas os valores textuais.\" So I need to translate the textual values. If they are already in Portuguese, then no translation is needed. But maybe the original JSON was in English and the user accidentally provided a translated version? Let's read the prompt carefully: The user says \"Traduza o JSON abaixo para pt-BR. Preserve as chaves exatamente como estao.\" Then they provide a JSON. That JSON appears to be in Portuguese. So I'll assume that the JSON is in Portuguese and I need to output it exactly as is, because translating Portuguese to Portuguese is identity. But wait, the instruction might be a generic one, and the JSON might be in English. Let me check the content: \"what_the_video_teaches\" value: \"O vídeo apresenta o aplicativo Moody...\" That is Portuguese. So it's already in pt-BR. So I'll just output the same JSON. But to be safe, I'll double-check if any part is in English. The \"recommended_next_piece\" has \"format\": \"vídeo tutorial\", \"title\": \"Demonstração prática do Moody em uma reunião online\", \"reason\": \"O vídeo original é apenas uma introdução; um tutorial mostrando o uso real ajudaria a esclarecer dúvidas sobre configuração e integração com diferentes plataformas.\" All Portuguese. \"learning_priorities\" array: first object: \"priority\": \"Entender como o Moody se integra com softwares de videoconferência e gravação\", \"why_it_matters_now\": \"O vídeo menciona uso em reuniões online e compartilhamento de tela, mas não demonstra a integração; isso é crucial para adoção prática.\", \"evidence\": \"Transcript menciona 'online meetings' e 'invisible on screen sharing', mas sem detalhes.\" Here, \"Transcript menciona 'online meetings' e 'invisible on screen sharing'\" - the English terms are in quotes, so they are preserved as literal quotes. That's fine. The rest is Portuguese. So the entire JSON is already in pt-BR. Therefore, I will return the JSON exactly as provided.\n\nBut the instruction says \"Retorne apenas JSON estrito.\" So I'll output the JSON without any additional text.\n\nThus, the answer is the same JSON.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 689,
+        "completion_tokens": 1821,
+        "total_tokens": 2510,
+        "cost": 0.00753594,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00753594,
+          "upstream_inference_prompt_cost": 0.00119886,
+          "upstream_inference_completions_cost": 0.00633708
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1290,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  "_meta": {
+    "model": "deepseek/deepseek-v4-pro",
+    "prompt_file": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/youtube-research/prompts/learning-analysis-v2.md",
+    "raw_response": {
+      "id": "gen-1778101552-fz6T27MABBVbSSj4RTu1",
+      "object": "chat.completion",
+      "created": 1778101552,
+      "model": "deepseek/deepseek-v4-pro-20260423",
+      "provider": "AtlasCloud",
+      "system_fingerprint": null,
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\n  \"learning_summary\": {\n    \"what_the_video_teaches\": \"O vídeo apresenta o aplicativo Moody, um teleprompter que fica ao lado da câmera para manter contato visual e falar naturalmente, útil para gravações, reuniões online, apresentações e demonstrações ao vivo. Ele se ajusta ao ritmo da fala, pode ser controlado pelo teclado, redimensionado e fica invisível no compartilhamento de tela.\",\n    \"what_the_comments_add\": \"Não há comentários da audiência disponíveis para análise.\",\n    \"best_next_step_for_learning\": \"Experimentar o aplicativo Moody ou assistir a uma demonstração prática de uso em diferentes contextos (gravação, reunião online) para entender melhor sua funcionalidade e integração.\"\n  },\n  \"complementary_learning\": [],\n  \"open_loops\": [],\n  \"practical_extensions\": [],\n  \"counterpoints_or_tensions\": [],\n  \"examples_from_audience\": [],\n  \"audience_questions\": [],\n  \"terminology_friction\": [],\n  \"recommended_next_piece\": {\n    \"format\": \"vídeo tutorial\",\n    \"title\": \"Demonstração prática do Moody em uma reunião online\",\n    \"reason\": \"O vídeo original é apenas uma introdução; um tutorial mostrando o uso real ajudaria a esclarecer dúvidas sobre configuração e integração com diferentes plataformas.\"\n  },\n  \"learning_priorities\": [\n    {\n      \"priority\": \"Entender como o Moody se integra com softwares de videoconferência e gravação\",\n      \"why_it_matters_now\": \"O vídeo menciona uso em reuniões online e compartilhamento de tela, mas não demonstra a integração; isso é crucial para adoção prática.\",\n      \"evidence\": \"Transcript menciona 'online meetings' e 'invisible on screen sharing', mas sem detalhes.\"\n    },\n    {\n      \"priority\": \"Aprender a ajustar a velocidade de fala e o controle pelo teclado\",\n      \"why_it_matters_now\": \"O vídeo cita esses recursos, mas não mostra como configurá-los, o que pode gerar dúvidas na primeira utilização.\",\n      \"evidence\": \"Transcript: 'Moody can adjust to your speaking pace, or you can control the speed with your keyboard.'\"\n    }\n  ],\n  \"source_split\": {\n    \"main_takeaways_from_video\": [\n      \"O aplicativo Moody resolve o problema de esquecer o texto ao gravar, posicionando o teleprompter próximo à câmera.\",\n      \"Permite manter contato visual e falar naturalmente.\",\n      \"Oferece ajuste de velocidade, redimensionamento e invisibilidade no compartilhamento de tela.\"\n    ],\n    \"main_takeaways_from_audience\": []\n  }\n}",
+            "refusal": null,
+            "reasoning": "We are asked to analyze a video and audience discussion. The data provided includes a video title, description, summary with transcript, and counts. Notably, there are 0 top-level comments, 0 replies, and 0 all comment entries. So there is no audience discussion at all. The transcript is short, and the summary indicates no comments. The task is to extract learning from comments and replies as complement to the video. But there are no comments. So we must handle this gracefully. The instructions say: \"se a qualidade do transcript for fraca, apoie-se mais em comentários e artefatos de resumo\" but there are no comments. We must still return JSON with all fields, but many will be empty or based solely on the video. The \"source_split\" must separate main takeaways from video and audience. Since there is no audience, the audience takeaways will be empty. The \"learning_summary\" should reflect that the video teaches about the Moody teleprompter app, and comments add nothing because there are none. The best next step for learning might be to try the app or watch a demo. Complementary learning, open loops, practical extensions, counterpoints, examples from audience, audience questions, terminology friction, recommended next piece, learning priorities: all will be empty or based on inference. We must not fabricate audience input. So we'll note that there is no audience data. The JSON must be in Portuguese. We'll write all fields accordingly.\n\nLet's structure the response:\n\n- learning_summary: what_the_video_teaches: \"O vídeo apresenta o aplicativo Moody, um teleprompter que fica ao lado da câmera para manter contato visual e falar naturalmente, útil para gravações, reuniões, apresentações e demonstrações ao vivo. Ele se ajusta ao ritmo da fala, pode ser controlado pelo teclado, redimensionado e fica invisível no compartilhamento de tela.\" what_the_comments_add: \"Não há comentários da audiência disponíveis para análise.\" best_next_step_for_learning: \"Experimentar o aplicativo Moody ou assistir a uma demonstração prática de uso em diferentes contextos (gravação, reunião online) para entender melhor sua funcionalidade.\"\n\n- complementary_learning: empty array because no comments.\n\n- open_loops: empty array.\n\n- practical_extensions: empty array.\n\n- counterpoints_or_tensions: empty array.\n\n- examples_from_audience: empty array.\n\n- audience_questions: empty array.\n\n- terminology_friction: empty array.\n\n- recommended_next_piece: format: \"vídeo tutorial\", title: \"Demonstração prática do Moody em uma reunião online\", reason: \"O vídeo original é apenas uma introdução; um tutorial mostrando o uso real ajudaria a esclarecer dúvidas sobre configuração e integração com diferentes plataformas.\"\n\n- learning_priorities: Since no audience, we can infer from the video's content what might be important for a learner: priority: \"Entender como o Moody se integra com softwares de videoconferência e gravação\", why_it_matters_now: \"O vídeo menciona uso em reuniões online e compartilhamento de tela, mas não demonstra a integração; isso é crucial para adoção prática.\" evidence: \"O transcript menciona 'online meetings' e 'invisible on screen sharing', mas sem detalhes.\" Another priority: \"Aprender a ajustar a velocidade de fala e o controle pelo teclado\", why: \"O vídeo cita esses recursos, mas não mostra como configurá-los.\" evidence: \"Transcript: 'Moody can adjust to your speaking pace, or you can control the speed with your keyboard.'\" We'll include two priorities.\n\n- source_split: main_takeaways_from_video: [\"O aplicativo Moody resolve o problema de esquecer o texto ao gravar, posicionando o teleprompter próximo à câmera.\", \"Permite manter contato visual e falar naturalmente.\", \"Oferece ajuste de velocidade, redimensionamento e invisibilidade no compartilhamento de tela.\"] main_takeaways_from_audience: [] (empty).\n\nWe'll ensure all fields are present, even if empty arrays. The JSON must be strict. We'll write in Portuguese.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We are asked to analyze a video and audience discussion. The data provided includes a video title, description, summary with transcript, and counts. Notably, there are 0 top-level comments, 0 replies, and 0 all comment entries. So there is no audience discussion at all. The transcript is short, and the summary indicates no comments. The task is to extract learning from comments and replies as complement to the video. But there are no comments. So we must handle this gracefully. The instructions say: \"se a qualidade do transcript for fraca, apoie-se mais em comentários e artefatos de resumo\" but there are no comments. We must still return JSON with all fields, but many will be empty or based solely on the video. The \"source_split\" must separate main takeaways from video and audience. Since there is no audience, the audience takeaways will be empty. The \"learning_summary\" should reflect that the video teaches about the Moody teleprompter app, and comments add nothing because there are none. The best next step for learning might be to try the app or watch a demo. Complementary learning, open loops, practical extensions, counterpoints, examples from audience, audience questions, terminology friction, recommended next piece, learning priorities: all will be empty or based on inference. We must not fabricate audience input. So we'll note that there is no audience data. The JSON must be in Portuguese. We'll write all fields accordingly.\n\nLet's structure the response:\n\n- learning_summary: what_the_video_teaches: \"O vídeo apresenta o aplicativo Moody, um teleprompter que fica ao lado da câmera para manter contato visual e falar naturalmente, útil para gravações, reuniões, apresentações e demonstrações ao vivo. Ele se ajusta ao ritmo da fala, pode ser controlado pelo teclado, redimensionado e fica invisível no compartilhamento de tela.\" what_the_comments_add: \"Não há comentários da audiência disponíveis para análise.\" best_next_step_for_learning: \"Experimentar o aplicativo Moody ou assistir a uma demonstração prática de uso em diferentes contextos (gravação, reunião online) para entender melhor sua funcionalidade.\"\n\n- complementary_learning: empty array because no comments.\n\n- open_loops: empty array.\n\n- practical_extensions: empty array.\n\n- counterpoints_or_tensions: empty array.\n\n- examples_from_audience: empty array.\n\n- audience_questions: empty array.\n\n- terminology_friction: empty array.\n\n- recommended_next_piece: format: \"vídeo tutorial\", title: \"Demonstração prática do Moody em uma reunião online\", reason: \"O vídeo original é apenas uma introdução; um tutorial mostrando o uso real ajudaria a esclarecer dúvidas sobre configuração e integração com diferentes plataformas.\"\n\n- learning_priorities: Since no audience, we can infer from the video's content what might be important for a learner: priority: \"Entender como o Moody se integra com softwares de videoconferência e gravação\", why_it_matters_now: \"O vídeo menciona uso em reuniões online e compartilhamento de tela, mas não demonstra a integração; isso é crucial para adoção prática.\" evidence: \"O transcript menciona 'online meetings' e 'invisible on screen sharing', mas sem detalhes.\" Another priority: \"Aprender a ajustar a velocidade de fala e o controle pelo teclado\", why: \"O vídeo cita esses recursos, mas não mostra como configurá-los.\" evidence: \"Transcript: 'Moody can adjust to your speaking pace, or you can control the speed with your keyboard.'\" We'll include two priorities.\n\n- source_split: main_takeaways_from_video: [\"O aplicativo Moody resolve o problema de esquecer o texto ao gravar, posicionando o teleprompter próximo à câmera.\", \"Permite manter contato visual e falar naturalmente.\", \"Oferece ajuste de velocidade, redimensionamento e invisibilidade no compartilhamento de tela.\"] main_takeaways_from_audience: [] (empty).\n\nWe'll ensure all fields are present, even if empty arrays. The JSON must be strict. We'll write in Portuguese.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1273,
+        "completion_tokens": 1558,
+        "total_tokens": 2831,
+        "cost": 0.00606354,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 896,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00606354,
+          "upstream_inference_prompt_cost": 0.00076634,
+          "upstream_inference_completions_cost": 0.0052972
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 921,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  }
+}

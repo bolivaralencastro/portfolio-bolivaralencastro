@@ -1,0 +1,130 @@
+{
+  "learning_summary": {
+    "what_the_video_teaches": "O vídeo ensina a identificar dois padrões comuns em textos gerados por IA (anáfora e paralelismo antitético) que tornam o texto óbvio como não humano, e oferece um prompt adicional para corrigir esses padrões e melhorar a qualidade do texto.",
+    "what_the_comments_add": "Não há comentários disponíveis para análise.",
+    "best_next_step_for_learning": "Experimentar o prompt fornecido no vídeo em diferentes modelos de linguagem e comparar os resultados antes e depois da aplicação para entender melhor o impacto da correção."
+  },
+  "complementary_learning": [],
+  "open_loops": [],
+  "practical_extensions": [],
+  "counterpoints_or_tensions": [],
+  "examples_from_audience": [],
+  "audience_questions": [],
+  "terminology_friction": [],
+  "recommended_next_piece": {
+    "format": "vídeo",
+    "title": "Como aplicar prompts avançados em diferentes modelos de IA",
+    "reason": "Para aprofundar o conhecimento sobre engenharia de prompts e sua aplicação prática em diversos contextos."
+  },
+  "learning_priorities": [
+    {
+      "priority": "Entender e aplicar o prompt fornecido",
+      "why_it_matters_now": "Melhorar a qualidade dos textos gerados por IA é essencial para criar conteúdo mais autêntico e humano.",
+      "evidence": "O vídeo destaca a importância de corrigir padrões comuns que tornam o texto gerado por IA óbvio."
+    }
+  ],
+  "source_split": {
+    "main_takeaways_from_video": [
+      "Identificação de dois padrões comuns em textos gerados por IA: anáfora e paralelismo antitético.",
+      "Uso de um prompt adicional para corrigir esses padrões e melhorar a qualidade do texto."
+    ],
+    "main_takeaways_from_audience": []
+  },
+  "_translation_meta": {
+    "model": "deepseek/deepseek-chat",
+    "raw_response": {
+      "id": "gen-1778097464-6NIElrjPQUw9fFIKCpcG",
+      "object": "chat.completion",
+      "created": 1778097464,
+      "model": "deepseek/deepseek-chat-v3",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "```json\n{\"learning_summary\": {\"what_the_video_teaches\": \"O vídeo ensina a identificar dois padrões comuns em textos gerados por IA (anáfora e paralelismo antitético) que tornam o texto óbvio como não humano, e oferece um prompt adicional para corrigir esses padrões e melhorar a qualidade do texto.\", \"what_the_comments_add\": \"Não há comentários disponíveis para análise.\", \"best_next_step_for_learning\": \"Experimentar o prompt fornecido no vídeo em diferentes modelos de linguagem e comparar os resultados antes e depois da aplicação para entender melhor o impacto da correção.\"}, \"complementary_learning\": [], \"open_loops\": [], \"practical_extensions\": [], \"counterpoints_or_tensions\": [], \"examples_from_audience\": [], \"audience_questions\": [], \"terminology_friction\": [], \"recommended_next_piece\": {\"format\": \"vídeo\", \"title\": \"Como aplicar prompts avançados em diferentes modelos de IA\", \"reason\": \"Para aprofundar o conhecimento sobre engenharia de prompts e sua aplicação prática em diversos contextos.\"}, \"learning_priorities\": [{\"priority\": \"Entender e aplicar o prompt fornecido\", \"why_it_matters_now\": \"Melhorar a qualidade dos textos gerados por IA é essencial para criar conteúdo mais autêntico e humano.\", \"evidence\": \"O vídeo destaca a importância de corrigir padrões comuns que tornam o texto gerado por IA óbvio.\"}], \"source_split\": {\"main_takeaways_from_video\": [\"Identificação de dois padrões comuns em textos gerados por IA: anáfora e paralelismo antitético.\", \"Uso de um prompt adicional para corrigir esses padrões e melhorar a qualidade do texto.\"], \"main_takeaways_from_audience\": []}}\n```",
+            "refusal": null,
+            "reasoning": null
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 510,
+        "completion_tokens": 416,
+        "total_tokens": 926,
+        "cost": 0.00053344,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00053344,
+          "upstream_inference_prompt_cost": 0.0001632,
+          "upstream_inference_completions_cost": 0.00037024
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  "_meta": {
+    "model": "deepseek/deepseek-chat",
+    "prompt_file": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/youtube-research/prompts/learning-analysis-v2.md",
+    "raw_response": {
+      "id": "gen-1778097444-hlFAWGyHRvGyFE9oTFNr",
+      "object": "chat.completion",
+      "created": 1778097444,
+      "model": "deepseek/deepseek-chat-v3",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "```json\n{\n  \"learning_summary\": {\n    \"what_the_video_teaches\": \"O vídeo ensina a identificar dois padrões comuns em textos gerados por IA (anáfora e paralelismo antitético) que tornam o texto óbvio como não humano, e oferece um prompt adicional para corrigir esses padrões e melhorar a qualidade do texto.\",\n    \"what_the_comments_add\": \"Não há comentários disponíveis para análise.\",\n    \"best_next_step_for_learning\": \"Experimentar o prompt fornecido no vídeo em diferentes modelos de linguagem e comparar os resultados antes e depois da aplicação para entender melhor o impacto da correção.\"\n  },\n  \"complementary_learning\": [],\n  \"open_loops\": [],\n  \"practical_extensions\": [],\n  \"counterpoints_or_tensions\": [],\n  \"examples_from_audience\": [],\n  \"audience_questions\": [],\n  \"terminology_friction\": [],\n  \"recommended_next_piece\": {\n    \"format\": \"vídeo\",\n    \"title\": \"Como aplicar prompts avançados em diferentes modelos de IA\",\n    \"reason\": \"Para aprofundar o conhecimento sobre engenharia de prompts e sua aplicação prática em diversos contextos.\"\n  },\n  \"learning_priorities\": [\n    {\n      \"priority\": \"Entender e aplicar o prompt fornecido\",\n      \"why_it_matters_now\": \"Melhorar a qualidade dos textos gerados por IA é essencial para criar conteúdo mais autêntico e humano.\",\n      \"evidence\": \"O vídeo destaca a importância de corrigir padrões comuns que tornam o texto gerado por IA óbvio.\"\n    }\n  ],\n  \"source_split\": {\n    \"main_takeaways_from_video\": [\n      \"Identificação de dois padrões comuns em textos gerados por IA: anáfora e paralelismo antitético.\",\n      \"Uso de um prompt adicional para corrigir esses padrões e melhorar a qualidade do texto.\"\n    ],\n    \"main_takeaways_from_audience\": []\n  }\n}\n```",
+            "refusal": null,
+            "reasoning": null
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1500,
+        "completion_tokens": 455,
+        "total_tokens": 1955,
+        "cost": 0.00088495,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00088495,
+          "upstream_inference_prompt_cost": 0.00048,
+          "upstream_inference_completions_cost": 0.00040495
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  }
+}

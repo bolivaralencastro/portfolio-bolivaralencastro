@@ -1,0 +1,178 @@
+{
+  "learning_summary": {
+    "what_the_video_teaches": "O vídeo alerta sobre os riscos de compartilhar fotos com metadados intactos, especialmente em grupos de WhatsApp, destacando como informações como localização, modelo do celular e horário da foto podem ser facilmente extraídas usando ferramentas de OSINT (Inteligência de Fontes Abertas).",
+    "what_the_comments_add": "O público demonstrou interesse em aprender mais sobre como proteger suas fotos, com pedidos específicos por tutoriais detalhados sobre como remover metadados e desativar a geolocalização em diferentes dispositivos.",
+    "best_next_step_for_learning": "Um tutorial passo a passo sobre como remover metadados de fotos em diferentes sistemas operacionais (iOS, Android, Windows) seria o próximo passo mais útil para quem deseja proteger sua privacidade."
+  },
+  "complementary_learning": [
+    {
+      "topic": "Remoção de metadados",
+      "what_comments_add": "Muitos espectadores pediram instruções detalhadas sobre como remover metadados de fotos, especialmente em dispositivos móveis.",
+      "how_it_complements_the_video": "O vídeo alerta sobre os riscos, mas não fornece um guia prático para mitigá-los.",
+      "evidence": "Comentários como 'Como faço para tirar esses dados da foto?' e 'Tem algum app que faz isso automaticamente?'"
+    }
+  ],
+  "open_loops": [
+    {
+      "question": "Como desativar a geolocalização em diferentes dispositivos?",
+      "why_unresolved": "O vídeo menciona a importância de desativar a geolocalização, mas não fornece instruções específicas para diferentes sistemas operacionais.",
+      "evidence": "Comentários como 'Como desligo a localização no iPhone?' e 'No Android é a mesma coisa?'"
+    }
+  ],
+  "practical_extensions": [
+    {
+      "topic": "Uso de ferramentas de OSINT",
+      "why_useful": "Entender como funcionam as ferramentas de OSINT pode ajudar os usuários a se protegerem melhor.",
+      "how_it_extends_the_video": "O vídeo demonstra o uso básico de OSINT, mas não explora outras ferramentas ou técnicas.",
+      "evidence": "Comentários como 'Quais outras ferramentas de OSINT existem?' e 'Como posso testar isso nas minhas próprias fotos?'"
+    }
+  ],
+  "counterpoints_or_tensions": [
+    {
+      "point": "A necessidade de compartilhar fotos em alta qualidade versus a privacidade.",
+      "why_it_matters": "Muitos usuários valorizam a qualidade das fotos compartilhadas, mas não estão cientes dos riscos de privacidade.",
+      "evidence": "Comentários como 'Mas se eu tirar os metadados, a foto perde qualidade?' e 'Não quero que minhas fotos fiquem ruins.'"
+    }
+  ],
+  "examples_from_audience": [
+    {
+      "example": "Um espectador compartilhou que já teve sua localização exposta ao enviar uma foto de um documento para um grupo de trabalho.",
+      "why_it_matters": "Isso ilustra como o problema não se limita a grupos familiares, mas também ocorre em contextos profissionais.",
+      "how_it_makes_the_topic_more_concrete": "Mostra que o risco é real e pode ter consequências sérias.",
+      "evidence": "Comentário: 'Isso aconteceu comigo quando enviei uma foto de um contrato para o grupo da empresa.'"
+    }
+  ],
+  "audience_questions": [
+    {
+      "question": "Como posso verificar os metadados de uma foto antes de compartilhá-la?",
+      "evidence": "Comentário: 'Tem como eu ver esses dados antes de mandar a foto?'"
+    }
+  ],
+  "terminology_friction": [
+    {
+      "term_or_concept": "OSINT",
+      "why_confusing": "Muitos espectadores não estão familiarizados com o termo ou seu significado.",
+      "what_better_explanation_is_needed": "Uma explicação mais detalhada sobre o que é OSINT e como ele é usado.",
+      "evidence": "Comentários como 'O que é OSINT?' e 'Isso é tipo hacking?'"
+    }
+  ],
+  "recommended_next_piece": {
+    "format": "Tutorial",
+    "title": "Como Remover Metadados de Fotos em Diferentes Dispositivos",
+    "reason": "Há uma demanda clara por instruções práticas sobre como proteger a privacidade ao compartilhar fotos."
+  },
+  "learning_priorities": [
+    {
+      "priority": "Educação sobre privacidade digital",
+      "why_it_matters_now": "Com o aumento do compartilhamento de fotos e documentos digitais, a conscientização sobre os riscos de metadados é crucial.",
+      "evidence": "Comentários expressando surpresa e preocupação com os riscos mencionados no vídeo."
+    }
+  ],
+  "source_split": {
+    "main_takeaways_from_video": [
+      "Compartilhar fotos com metadados intactos pode expor informações sensíveis como localização e modelo do celular.",
+      "Ferramentas de OSINT podem extrair informações detalhadas de fotos em segundos."
+    ],
+    "main_takeaways_from_audience": [
+      "Há uma necessidade clara de tutoriais práticos sobre como remover metadados e desativar a geolocalização.",
+      "Muitos usuários não estão cientes dos riscos de privacidade ao compartilhar fotos em alta qualidade."
+    ]
+  },
+  "_translation_meta": {
+    "model": "deepseek/deepseek-chat",
+    "raw_response": {
+      "id": "gen-1778098864-0HX8iULVXFNfAIiTPmZk",
+      "object": "chat.completion",
+      "created": 1778098864,
+      "model": "deepseek/deepseek-chat-v3",
+      "provider": "Novita",
+      "system_fingerprint": null,
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "```json\n{\n  \"learning_summary\": {\n    \"what_the_video_teaches\": \"O vídeo alerta sobre os riscos de compartilhar fotos com metadados intactos, especialmente em grupos de WhatsApp, destacando como informações como localização, modelo do celular e horário da foto podem ser facilmente extraídas usando ferramentas de OSINT (Inteligência de Fontes Abertas).\",\n    \"what_the_comments_add\": \"O público demonstrou interesse em aprender mais sobre como proteger suas fotos, com pedidos específicos por tutoriais detalhados sobre como remover metadados e desativar a geolocalização em diferentes dispositivos.\",\n    \"best_next_step_for_learning\": \"Um tutorial passo a passo sobre como remover metadados de fotos em diferentes sistemas operacionais (iOS, Android, Windows) seria o próximo passo mais útil para quem deseja proteger sua privacidade.\"\n  },\n  \"complementary_learning\": [\n    {\n      \"topic\": \"Remoção de metadados\",\n      \"what_comments_add\": \"Muitos espectadores pediram instruções detalhadas sobre como remover metadados de fotos, especialmente em dispositivos móveis.\",\n      \"how_it_complements_the_video\": \"O vídeo alerta sobre os riscos, mas não fornece um guia prático para mitigá-los.\",\n      \"evidence\": \"Comentários como 'Como faço para tirar esses dados da foto?' e 'Tem algum app que faz isso automaticamente?'\"\n    }\n  ],\n  \"open_loops\": [\n    {\n      \"question\": \"Como desativar a geolocalização em diferentes dispositivos?\",\n      \"why_unresolved\": \"O vídeo menciona a importância de desativar a geolocalização, mas não fornece instruções específicas para diferentes sistemas operacionais.\",\n      \"evidence\": \"Comentários como 'Como desligo a localização no iPhone?' e 'No Android é a mesma coisa?'\"\n    }\n  ],\n  \"practical_extensions\": [\n    {\n      \"topic\": \"Uso de ferramentas de OSINT\",\n      \"why_useful\": \"Entender como funcionam as ferramentas de OSINT pode ajudar os usuários a se protegerem melhor.\",\n      \"how_it_extends_the_video\": \"O vídeo demonstra o uso básico de OSINT, mas não explora outras ferramentas ou técnicas.\",\n      \"evidence\": \"Comentários como 'Quais outras ferramentas de OSINT existem?' e 'Como posso testar isso nas minhas próprias fotos?'\"\n    }\n  ],\n  \"counterpoints_or_tensions\": [\n    {\n      \"point\": \"A necessidade de compartilhar fotos em alta qualidade versus a privacidade.\",\n      \"why_it_matters\": \"Muitos usuários valorizam a qualidade das fotos compartilhadas, mas não estão cientes dos riscos de privacidade.\",\n      \"evidence\": \"Comentários como 'Mas se eu tirar os metadados, a foto perde qualidade?' e 'Não quero que minhas fotos fiquem ruins.'\"\n    }\n  ],\n  \"examples_from_audience\": [\n    {\n      \"example\": \"Um espectador compartilhou que já teve sua localização exposta ao enviar uma foto de um documento para um grupo de trabalho.\",\n      \"why_it_matters\": \"Isso ilustra como o problema não se limita a grupos familiares, mas também ocorre em contextos profissionais.\",\n      \"how_it_makes_the_topic_more_concrete\": \"Mostra que o risco é real e pode ter consequências sérias.\",\n      \"evidence\": \"Comentário: 'Isso aconteceu comigo quando enviei uma foto de um contrato para o grupo da empresa.'\"\n    }\n  ],\n  \"audience_questions\": [\n    {\n      \"question\": \"Como posso verificar os metadados de uma foto antes de compartilhá-la?\",\n      \"evidence\": \"Comentário: 'Tem como eu ver esses dados antes de mandar a foto?'\"\n    }\n  ],\n  \"terminology_friction\": [\n    {\n      \"term_or_concept\": \"OSINT\",\n      \"why_confusing\": \"Muitos espectadores não estão familiarizados com o termo ou seu significado.\",\n      \"what_better_explanation_is_needed\": \"Uma explicação mais detalhada sobre o que é OSINT e como ele é usado.\",\n      \"evidence\": \"Comentários como 'O que é OSINT?' e 'Isso é tipo hacking?'\"\n    }\n  ],\n  \"recommended_next_piece\": {\n    \"format\": \"Tutorial\",\n    \"title\": \"Como Remover Metadados de Fotos em Diferentes Dispositivos\",\n    \"reason\": \"Há uma demanda clara por instruções práticas sobre como proteger a privacidade ao compartilhar fotos.\"\n  },\n  \"learning_priorities\": [\n    {\n      \"priority\": \"Educação sobre privacidade digital\",\n      \"why_it_matters_now\": \"Com o aumento do compartilhamento de fotos e documentos digitais, a conscientização sobre os riscos de metadados é crucial.\",\n      \"evidence\": \"Comentários expressando surpresa e preocupação com os riscos mencionados no vídeo.\"\n    }\n  ],\n  \"source_split\": {\n    \"main_takeaways_from_video\": [\n      \"Compartilhar fotos com metadados intactos pode expor informações sensíveis como localização e modelo do celular.\",\n      \"Ferramentas de OSINT podem extrair informações detalhadas de fotos em segundos.\"\n    ],\n    \"main_takeaways_from_audience\": [\n      \"Há uma necessidade clara de tutoriais práticos sobre como remover metadados e desativar a geolocalização.\",\n      \"Muitos usuários não estão cientes dos riscos de privacidade ao compartilhar fotos em alta qualidade.\"\n    ]\n  }\n}\n```",
+            "refusal": null,
+            "reasoning": null
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1310,
+        "completion_tokens": 1318,
+        "total_tokens": 2628,
+        "cost": 0.0022374,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0022374,
+          "upstream_inference_prompt_cost": 0.000524,
+          "upstream_inference_completions_cost": 0.0017134
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  "_meta": {
+    "model": "deepseek/deepseek-chat",
+    "prompt_file": "/Users/Pessoal/Desktop/portfolio-bolivaralencastro/youtube-research/prompts/learning-analysis-v2.md",
+    "raw_response": {
+      "id": "gen-1778098810-dBvMLv5JxEbv1r3xvxaK",
+      "object": "chat.completion",
+      "created": 1778098810,
+      "model": "deepseek/deepseek-chat-v3",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "```json\n{\n  \"learning_summary\": {\n    \"what_the_video_teaches\": \"O vídeo alerta sobre os riscos de compartilhar fotos com metadados intactos, especialmente em grupos de WhatsApp, destacando como informações como localização, modelo do celular e horário da foto podem ser facilmente extraídas usando ferramentas de OSINT (Inteligência de Fontes Abertas).\",\n    \"what_the_comments_add\": \"A audiência demonstrou interesse em aprender mais sobre como proteger suas fotos, com pedidos específicos para tutoriais detalhados sobre como remover metadados e desativar a geolocalização em diferentes dispositivos.\",\n    \"best_next_step_for_learning\": \"Um tutorial passo a passo sobre como remover metadados de fotos em diferentes sistemas operacionais (iOS, Android, Windows) seria o próximo passo mais útil para quem deseja proteger sua privacidade.\"\n  },\n  \"complementary_learning\": [\n    {\n      \"topic\": \"Remoção de metadados\",\n      \"what_comments_add\": \"Muitos espectadores pediram instruções detalhadas sobre como remover metadados de fotos, especialmente em dispositivos móveis.\",\n      \"how_it_complements_the_video\": \"O vídeo alerta sobre os riscos, mas não fornece um guia prático para mitigá-los.\",\n      \"evidence\": \"Comentários como 'Como faço para tirar esses dados da foto?' e 'Tem algum app que faz isso automaticamente?'\"\n    }\n  ],\n  \"open_loops\": [\n    {\n      \"question\": \"Como desativar a geolocalização em diferentes dispositivos?\",\n      \"why_unresolved\": \"O vídeo menciona a importância de desativar a geolocalização, mas não fornece instruções específicas para diferentes sistemas operacionais.\",\n      \"evidence\": \"Comentários como 'Como desligo a localização no iPhone?' e 'No Android é a mesma coisa?'\"\n    }\n  ],\n  \"practical_extensions\": [\n    {\n      \"topic\": \"Uso de ferramentas de OSINT\",\n      \"why_useful\": \"Entender como funcionam as ferramentas de OSINT pode ajudar os usuários a se protegerem melhor.\",\n      \"how_it_extends_the_video\": \"O vídeo demonstra o uso básico de OSINT, mas não explora outras ferramentas ou técnicas.\",\n      \"evidence\": \"Comentários como 'Quais outras ferramentas de OSINT existem?' e 'Como posso testar isso nas minhas próprias fotos?'\"\n    }\n  ],\n  \"counterpoints_or_tensions\": [\n    {\n      \"point\": \"A necessidade de compartilhar fotos em alta qualidade versus a privacidade.\",\n      \"why_it_matters\": \"Muitos usuários valorizam a qualidade das fotos compartilhadas, mas não estão cientes dos riscos de privacidade.\",\n      \"evidence\": \"Comentários como 'Mas se eu tirar os metadados, a foto perde qualidade?' e 'Não quero que minhas fotos fiquem ruins.'\"\n    }\n  ],\n  \"examples_from_audience\": [\n    {\n      \"example\": \"Um espectador compartilhou que já teve sua localização exposta ao enviar uma foto de um documento para um grupo de trabalho.\",\n      \"why_it_matters\": \"Isso ilustra como o problema não se limita a grupos familiares, mas também ocorre em contextos profissionais.\",\n      \"how_it_makes_the_topic_more_concrete\": \"Mostra que o risco é real e pode ter consequências sérias.\",\n      \"evidence\": \"Comentário: 'Isso aconteceu comigo quando enviei uma foto de um contrato para o grupo da empresa.'\"\n    }\n  ],\n  \"audience_questions\": [\n    {\n      \"question\": \"Como posso verificar os metadados de uma foto antes de compartilhá-la?\",\n      \"evidence\": \"Comentário: 'Tem como eu ver esses dados antes de mandar a foto?'\"\n    }\n  ],\n  \"terminology_friction\": [\n    {\n      \"term_or_concept\": \"OSINT\",\n      \"why_confusing\": \"Muitos espectadores não estão familiarizados com o termo ou seu significado.\",\n      \"what_better_explanation_is_needed\": \"Uma explicação mais detalhada sobre o que é OSINT e como ele é usado.\",\n      \"evidence\": \"Comentários como 'O que é OSINT?' e 'Isso é tipo hacking?'\"\n    }\n  ],\n  \"recommended_next_piece\": {\n    \"format\": \"Tutorial\",\n    \"title\": \"Como Remover Metadados de Fotos em Diferentes Dispositivos\",\n    \"reason\": \"Há uma demanda clara por instruções práticas sobre como proteger a privacidade ao compartilhar fotos.\"\n  },\n  \"learning_priorities\": [\n    {\n      \"priority\": \"Educação sobre privacidade digital\",\n      \"why_it_matters_now\": \"Com o aumento do compartilhamento de fotos e documentos digitais, a conscientização sobre os riscos de metadados é crucial.\",\n      \"evidence\": \"Comentários expressando surpresa e preocupação com os riscos mencionados no vídeo.\"\n    }\n  ],\n  \"source_split\": {\n    \"main_takeaways_from_video\": [\n      \"Compartilhar fotos com metadados intactos pode expor informações sensíveis como localização e modelo do celular.\",\n      \"Ferramentas de OSINT podem extrair informações detalhadas de fotos em segundos.\"\n    ],\n    \"main_takeaways_from_audience\": [\n      \"Há uma necessidade clara de tutoriais práticos sobre como remover metadados e desativar a geolocalização.\",\n      \"Muitos usuários não estão cientes dos riscos de privacidade ao compartilhar fotos em alta qualidade.\"\n    ]\n  }\n}\n```",
+            "refusal": null,
+            "reasoning": null
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1884,
+        "completion_tokens": 1320,
+        "total_tokens": 3204,
+        "cost": 0.00177768,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00177768,
+          "upstream_inference_prompt_cost": 0.00060288,
+          "upstream_inference_completions_cost": 0.0011748
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  }
+}

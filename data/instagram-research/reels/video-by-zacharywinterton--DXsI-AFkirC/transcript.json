@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "status": "unavailable",
+    "reason": "public= | audio_stt=Transcricao vazia para chunk-000.wav: {'text': '', 'usage': {'seconds': 10, 'cost': 0.0003083333333333333}}",
+    "source": "audio_stt",
+    "stt_model": "openai/whisper-large-v3",
+    "language_resolution": "stt_auto_detect"
+  },
+  "segments": []
+}
