@@ -1,0 +1,7 @@
+interface:
+  display_name: "YouTube Comment Research"
+  short_description: "YouTube transcript and comments research"
+  default_prompt: "Use $youtube-comment-research to collect a YouTube transcript, comments, replies, and content opportunities from a shared video URL."
+
+policy:
+  allow_implicit_invocation: true

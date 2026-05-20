@@ -40,6 +40,7 @@ from social_curation import connect  # noqa: E402
 
 
 DEFAULT_PORT = 9333
+FALLBACK_PORTS = (9222, 9229, 9444)
 LINKEDIN_SAVED_URL = "https://www.linkedin.com/my-items/saved-posts/"
 INSTAGRAM_SAVED_URL = "https://www.instagram.com/{profile}/saved/all-posts/"
 
@@ -159,20 +160,41 @@ class CDP:
         return result.get("result", {}).get("value")
 
 
-def get_ws_url(port: int) -> str:
-    try:
-        with urllib.request.urlopen(f"http://127.0.0.1:{port}/json/list", timeout=5) as response:
-            pages = json.loads(response.read())
-    except urllib.error.URLError as exc:
-        raise RuntimeError(
-            "Chrome DevTools nao encontrado. Inicie o Chrome assim:\n"
-            "open -na 'Google Chrome' --args --remote-debugging-port=9333\n"
-            "Depois, abra as paginas com login ativo e rode novamente."
-        ) from exc
-    for page in pages:
-        if page.get("type") == "page":
-            return page["webSocketDebuggerUrl"]
-    raise RuntimeError("Nenhuma aba Chrome com DevTools encontrada")
+def _candidate_ports(preferred: int) -> list[int]:
+    ports = [preferred, DEFAULT_PORT, *FALLBACK_PORTS]
+    seen: set[int] = set()
+    unique: list[int] = []
+    for p in ports:
+        if p in seen:
+            continue
+        seen.add(p)
+        unique.append(p)
+    return unique
+
+
+def get_ws_url(port: int) -> tuple[str, int]:
+    last_error: Exception | None = None
+    for candidate in _candidate_ports(port):
+        try:
+            with urllib.request.urlopen(f"http://127.0.0.1:{candidate}/json/list", timeout=5) as response:
+                pages = json.loads(response.read())
+        except (urllib.error.URLError, TimeoutError) as exc:
+            last_error = exc
+            continue
+
+        for page in pages:
+            if page.get("type") == "page" and page.get("webSocketDebuggerUrl"):
+                return page["webSocketDebuggerUrl"], candidate
+
+    tried = ", ".join(str(p) for p in _candidate_ports(port))
+    raise RuntimeError(
+        "Chrome DevTools nao encontrado.\n"
+        f"Portas tentadas: {tried}\n"
+        "Inicie o Chrome assim:\n"
+        "open -na /Applications/Google\\ Chrome.app --args --remote-debugging-port=9333 --user-data-dir=/tmp/chrome-social-capture-9333\n"
+        "Confirme com: curl http://127.0.0.1:9333/json/version\n"
+        "Depois, abra as paginas com login ativo e rode novamente."
+    ) from last_error
 
 
 def canonical_url(url: str) -> str:
@@ -573,7 +595,7 @@ def run_target(cdp: CDP, target: str, args: argparse.Namespace) -> tuple[int, in
 def main() -> None:
     parser = argparse.ArgumentParser(description="Captura itens salvos pelo navegador autenticado")
     parser.add_argument("target", choices=["linkedin-saved", "instagram-saved", "all"])
-    parser.add_argument("--port", type=int, default=DEFAULT_PORT)
+    parser.add_argument("--port", type=int, default=DEFAULT_PORT, help=f"Porta preferida do DevTools. O script tenta fallback automatico ({DEFAULT_PORT}, {', '.join(str(p) for p in FALLBACK_PORTS)}).")
     parser.add_argument("--scrolls", type=int, default=5)
     parser.add_argument("--delay-ms", type=int, default=1200)
     parser.add_argument("--limit", type=int, default=80)
@@ -585,7 +607,9 @@ def main() -> None:
     parser.set_defaults(hydrate_details=True)
     args = parser.parse_args()
 
-    cdp = CDP(get_ws_url(args.port))
+    ws_url, active_port = get_ws_url(args.port)
+    print(f"DevTools conectado em 127.0.0.1:{active_port}")
+    cdp = CDP(ws_url)
 
     if args.update_authors:
         sources = ["linkedin", "instagram"] if args.target == "all" else [args.target.replace("-saved", "")]

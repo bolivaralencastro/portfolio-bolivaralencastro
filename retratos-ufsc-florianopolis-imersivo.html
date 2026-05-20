@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retratos e Vida Universitaria na UFSC — Edicao Imersiva - Bolivar Alencastro</title>
+  <meta name="description" content="Edicao experimental fullscreen do ensaio Retratos e Vida Universitaria na UFSC, com navegacao espacial, viewport total e renderizacao HTML-in-Canvas quando disponivel.">
+  <link rel="stylesheet" href="/style.css?v=59ffe9c170">
+  <script src="/assets/js/clarity.js?v=b9b7739aa6" defer></script>
+  <link rel="canonical" href="https://bolivaralencastro.com.br/retratos-ufsc-florianopolis-imersivo.html">
+  <link rel="author" href="/about.html">
+  <meta name="author" content="Bolivar Alencastro">
+  <meta name="generator" content="Handcrafted HTML">
+  <link rel="webmention" href="https://webmention.io/bolivaralencastro.com.br/webmention">
+  <link rel="pingback" href="https://webmention.io/bolivaralencastro.com.br/xmlrpc">
+  <link rel="me" href="https://github.com/bolivaralencastro">
+  <link rel="me" href="https://www.instagram.com/bolivar.alencastro/">
+  <link rel="me" href="https://www.linkedin.com/in/bolivaralencastro/">
+  <meta property="og:title" content="Retratos e Vida Universitaria na UFSC — Edicao Imersiva">
+  <meta property="og:description" content="Uma leitura fullscreen e espacial do ensaio fotografico feito na UFSC, em Florianopolis.">
+  <meta property="og:url" content="https://bolivaralencastro.com.br/retratos-ufsc-florianopolis-imersivo.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/og.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Retratos e Vida Universitaria na UFSC — Edicao Imersiva">
+  <meta name="twitter:description" content="Edicao experimental fullscreen do ensaio fotografico realizado na UFSC.">
+  <meta name="twitter:image" content="https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/og.webp">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Retratos e Vida Universitaria na UFSC — Edicao Imersiva",
+    "description": "Edicao experimental fullscreen do ensaio Retratos e Vida Universitaria na UFSC, com navegacao espacial e renderizacao HTML-in-Canvas quando disponivel.",
+    "url": "https://bolivaralencastro.com.br/retratos-ufsc-florianopolis-imersivo.html",
+    "isBasedOn": "https://bolivaralencastro.com.br/projects/retratos-ufsc-florianopolis.html",
+    "author": {
+      "@type": "Person",
+      "name": "Bolivar Alencastro",
+      "url": "https://bolivaralencastro.com.br/about.html"
+    }
+  }
+  </script>
+  <style>
+    body.ufsc-immersive-page {
+      padding: 0;
+      background:
+        radial-gradient(circle at 1px 1px, rgba(38, 38, 38, 0.14) 1.1px, transparent 0);
+      background-size: 22px 22px;
+      background-color: #f8f7f2;
+      color: #262626;
+    }
+
+    body.ufsc-immersive-page::before {
+      display: none;
+    }
+
+    body.ufsc-immersive-page header,
+    body.ufsc-immersive-page main,
+    body.ufsc-immersive-page > footer {
+      width: 100%;
+      max-width: none;
+      margin: 0;
+    }
+
+    .ufsc-immersive-page .grain {
+      opacity: 0.04;
+    }
+
+    .ufsc-stage-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 40;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-3);
+      padding: var(--space-3) max(1.25rem, 3vw);
+      background: linear-gradient(180deg, rgba(248, 247, 242, 0.95), rgba(248, 247, 242, 0));
+      pointer-events: none;
+    }
+
+    .ufsc-stage-header a,
+    .ufsc-stage-header nav {
+      pointer-events: auto;
+    }
+
+    .ufsc-stage-header nav ul {
+      display: flex;
+      gap: var(--space-2);
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .ufsc-stage-header nav a,
+    .ufsc-stage-header .brand-link {
+      color: #262626;
+      border-bottom-color: rgba(38, 38, 38, 0.22);
+    }
+
+    .ufsc-stage-header nav a:hover,
+    .ufsc-stage-header .brand-link:hover {
+      color: #111111;
+      border-bottom-color: #111111;
+    }
+
+    .ufsc-scene-track {
+      position: relative;
+      min-height: 620svh;
+    }
+
+    .ufsc-scene-shell {
+      position: sticky;
+      top: 0;
+      height: 100svh;
+      overflow: hidden;
+    }
+
+    .ufsc-scene-canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .ufsc-source-layer {
+      position: fixed;
+      left: -9999px;
+      top: -9999px;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .ufsc-source-card {
+      position: relative;
+      width: clamp(420px, 56vw, 840px);
+      border-radius: 0.55rem;
+      overflow: hidden;
+      background: #ffffff;
+      color: #262626;
+      box-shadow: 0 18px 40px rgba(38, 38, 38, 0.08);
+      border: 1px solid rgba(38, 38, 38, 0.08);
+    }
+
+    .ufsc-source-card img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      display: block;
+    }
+
+    .ufsc-source-card-body {
+      display: none;
+    }
+
+    .ufsc-source-card-index {
+      margin-bottom: 0.55rem;
+      font-size: 0.7rem;
+      line-height: 1.2;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(15, 18, 23, 0.58);
+    }
+
+    .ufsc-source-card h2 {
+      margin-bottom: 0.55rem;
+      color: #101317;
+      font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      text-transform: none;
+    }
+
+    .ufsc-source-card p {
+      font-size: 0.93rem;
+      line-height: 1.55;
+      color: rgba(15, 18, 23, 0.76);
+      max-width: none;
+    }
+
+    .ufsc-scene-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: calc(var(--space-7) + 1rem) max(1.25rem, 3vw) var(--space-3);
+      pointer-events: none;
+    }
+
+    .ufsc-hero-copy,
+    .ufsc-current-frame,
+    .ufsc-scene-nav {
+      pointer-events: auto;
+    }
+
+    .ufsc-hero-copy {
+      align-self: flex-start;
+      max-width: 22rem;
+    }
+
+    .ufsc-hero-copy h1 {
+      color: #171717;
+      max-width: 11ch;
+      margin-bottom: 0;
+      font-size: clamp(1.7rem, 3vw, 2.6rem);
+      line-height: 0.98;
+    }
+
+    .ufsc-hero-copy p {
+      display: none;
+    }
+
+    .ufsc-hero-copy .ufsc-scene-kicker {
+      margin-bottom: 0.7rem;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(38, 38, 38, 0.5);
+    }
+
+    .ufsc-side-rail {
+      align-self: stretch;
+      justify-self: stretch;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: var(--space-3);
+    }
+
+    .ufsc-current-frame,
+    .ufsc-scene-nav {
+      padding: 0;
+      border: none;
+      background: transparent;
+    }
+
+    .ufsc-panel-label,
+    .ufsc-render-status {
+      font-size: 0.72rem;
+      line-height: 1.3;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .ufsc-panel-label {
+      margin-bottom: 0.45rem;
+      color: rgba(38, 38, 38, 0.5);
+    }
+
+    .ufsc-render-status {
+      display: none;
+    }
+
+    .ufsc-current-frame-count {
+      margin-bottom: 0.45rem;
+      color: rgba(38, 38, 38, 0.52);
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .ufsc-current-frame h2 {
+      color: #171717;
+      font-size: clamp(1.35rem, 2.2vw, 1.9rem);
+      line-height: 1.02;
+      margin-bottom: 0.45rem;
+      text-transform: none;
+      letter-spacing: -0.025em;
+      max-width: 18ch;
+    }
+
+    .ufsc-current-frame p {
+      max-width: none;
+      font-size: 0.95rem;
+      color: rgba(38, 38, 38, 0.72);
+      max-width: 34ch;
+    }
+
+    .ufsc-current-frame a {
+      display: inline-flex;
+      margin-top: 0.7rem;
+      color: #171717;
+      border-bottom-color: rgba(38, 38, 38, 0.28);
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .ufsc-scene-nav-list {
+      display: flex;
+      gap: 0.45rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .ufsc-scene-nav button {
+      width: 0.75rem;
+      min-width: 0.75rem;
+      height: 0.75rem;
+      min-height: 0.75rem;
+      border: none;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.24);
+      background: rgba(38, 38, 38, 0.18);
+      color: transparent;
+      overflow: hidden;
+      font: inherit;
+      cursor: pointer;
+      transition:
+        transform var(--dur-fast) var(--ease-standard),
+        background var(--dur-fast) var(--ease-standard),
+        opacity var(--dur-fast) var(--ease-standard);
+    }
+
+    .ufsc-scene-nav button:hover,
+    .ufsc-scene-nav button[aria-current="true"] {
+      background: #171717;
+      transform: scale(1.08);
+    }
+
+    .ufsc-afterglow {
+      width: min(var(--max), calc(100% - 2 * max(1.25rem, 3vw)));
+      margin: 0 auto;
+      padding: var(--space-7) 0 var(--space-6);
+    }
+
+    .ufsc-afterglow .lead {
+      color: rgba(23, 23, 23, 0.9);
+    }
+
+    .ufsc-afterglow h2 {
+      color: rgba(38, 38, 38, 0.58);
+    }
+
+    .ufsc-afterglow p,
+    .ufsc-afterglow li {
+      color: rgba(38, 38, 38, 0.8);
+    }
+
+    .ufsc-afterglow .e-content img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: var(--space-4);
+    }
+
+    .ufsc-afterglow a,
+    .ufsc-immersive-page footer a {
+      color: #171717;
+      border-bottom-color: rgba(38, 38, 38, 0.22);
+    }
+
+    .ufsc-afterglow a:hover,
+    .ufsc-immersive-page footer a:hover {
+      border-bottom-color: #171717;
+    }
+
+    .ufsc-links-list {
+      margin: var(--space-3) 0 0;
+      padding-left: 1.1rem;
+      display: grid;
+      gap: var(--space-1);
+    }
+
+    .ufsc-immersive-page .author-card {
+      border-top: 1px solid rgba(38, 38, 38, 0.12);
+      padding-top: var(--space-5);
+    }
+
+    .ufsc-immersive-page .author-card-photo {
+      background: rgba(38, 38, 38, 0.04);
+    }
+
+    body.ufsc-immersive-page > footer {
+      width: min(var(--max), calc(100% - 2 * max(1.25rem, 3vw)));
+      margin: 0 auto;
+      padding-bottom: var(--space-4);
+    }
+
+    .ufsc-scene-description {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (max-width: 980px) {
+      .ufsc-stage-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .ufsc-stage-header nav ul {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+      }
+
+      .ufsc-scene-overlay {
+        padding-top: calc(var(--space-8) + 0.8rem);
+      }
+
+      .ufsc-side-rail {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+      }
+
+      .ufsc-scene-track {
+        min-height: 720svh;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .ufsc-stage-header {
+        padding: var(--space-2) 1rem;
+      }
+
+      .ufsc-stage-header nav ul {
+        gap: 0.75rem;
+      }
+
+      .ufsc-scene-overlay {
+        padding: calc(var(--space-7) + 0.75rem) 1rem var(--space-2);
+      }
+
+      .ufsc-hero-copy h1 {
+        max-width: 10ch;
+        font-size: clamp(1.45rem, 7vw, 2.1rem);
+      }
+
+      .ufsc-current-frame,
+      .ufsc-scene-nav {
+        padding: 0;
+      }
+
+      .ufsc-scene-track {
+        min-height: 780svh;
+      }
+    }
+  </style>
+  <meta name="view-transition" content="same-origin">
+  <script src="/assets/js/ufsc-canvas-experiment.js" defer></script>
+  <script src="/assets/js/lightbox.js?v=7e74260ebb" defer></script>
+  <script src="/assets/js/mobile-nav.js?v=7c27d2f513" defer></script>
+</head>
+<body class="ufsc-immersive-page">
+  <div class="grain"></div>
+  <a href="#main" class="skip-link">Pular para o conteudo principal</a>
+
+  <main id="main">
+    <header class="ufsc-stage-header" aria-label="Navegacao da edicao imersiva">
+      <a href="/" class="brand-link" aria-label="Ir para a pagina inicial"><span class="brand-mark" aria-hidden="true"><span class="dot dot-blue"></span></span><strong>Bolivar Alencastro</strong></a>
+      <nav aria-label="Atalhos da experiencia">
+        <ul>
+          <li><a href="/projects/retratos-ufsc-florianopolis.html">Ensaio base</a></li>
+          <li><a href="/projects.html">Projetos</a></li>
+          <li><a href="#ufsc-notas">Notas</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="ufsc-scene-track" class="ufsc-scene-track" aria-label="Cena fullscreen do ensaio">
+      <div class="ufsc-scene-shell">
+        <canvas id="ufsc-canvas" class="ufsc-scene-canvas" data-cover-src="/assets/images/projects/retratos-ufsc-florianopolis/cover.webp" layoutsubtree aria-describedby="ufsc-scene-description">
+          <div class="ufsc-source-layer" aria-hidden="true">
+            <div class="ufsc-source-card" data-title="Campus como fundo" data-note="Um retrato em que a pessoa e o entorno dividem o mesmo peso visual." data-link="https://www.instagram.com/p/C77LoyaP12W/">
+              <img src="/assets/images/projects/retratos-ufsc-florianopolis/retrato-03.webp" alt="Recorte da serie Vida Universitaria na UFSC, frame 01" width="1200" height="1200" loading="eager" decoding="async">
+              <div class="ufsc-source-card-body">
+                <p class="ufsc-source-card-index">UFSC 01</p>
+                <h2>Campus como fundo</h2>
+                <p>Um retrato em que a pessoa e o entorno dividem o mesmo peso visual.</p>
+              </div>
+            </div>
+
+            <div class="ufsc-source-card" data-title="Luz entre aulas" data-note="A serie tambem registra o intervalo: sombra, pausa, deslocamento e ar livre." data-link="https://www.instagram.com/p/Cg4fAwhLt6S/">
+              <img src="/assets/images/projects/retratos-ufsc-florianopolis/retrato-07.webp" alt="Recorte da serie Vida Universitaria na UFSC, frame 02" width="1080" height="1080" loading="eager" decoding="async">
+              <div class="ufsc-source-card-body">
+                <p class="ufsc-source-card-index">UFSC 02</p>
+                <h2>Luz entre aulas</h2>
+                <p>A serie tambem registra o intervalo: sombra, pausa, deslocamento e ar livre.</p>
+              </div>
+            </div>
+
+            <div class="ufsc-source-card" data-title="Presenca em passagem" data-note="Cada encontro parece rapido, mas deixa um desenho proprio dentro da sequencia." data-link="https://www.instagram.com/p/Cg1_RaiLFLg/">
+              <img src="/assets/images/projects/retratos-ufsc-florianopolis/retrato-12.webp" alt="Recorte da serie Vida Universitaria na UFSC, frame 03" width="1080" height="1080" loading="eager" decoding="async">
+              <div class="ufsc-source-card-body">
+                <p class="ufsc-source-card-index">UFSC 03</p>
+                <h2>Presenca em passagem</h2>
+                <p>Cada encontro parece rapido, mas deixa um desenho proprio dentro da sequencia.</p>
+              </div>
+            </div>
+
+            <div class="ufsc-source-card" data-title="Encontro curto" data-note="O retrato acontece no tempo breve do campus, entre gesto espontaneo e pose." data-link="https://www.instagram.com/p/Cg0WgCgscXC/">
+              <img src="/assets/images/projects/retratos-ufsc-florianopolis/retrato-18.webp" alt="Recorte da serie Vida Universitaria na UFSC, frame 04" width="1200" height="1200" loading="eager" decoding="async">
+              <div class="ufsc-source-card-body">
+                <p class="ufsc-source-card-index">UFSC 04</p>
+                <h2>Encontro curto</h2>
+                <p>O retrato acontece no tempo breve do campus, entre gesto espontaneo e pose.</p>
+              </div>
+            </div>
+
+            <div class="ufsc-source-card" data-title="Ritmo da serie" data-note="A acumulacao de quadros muda a leitura: o conjunto vira circulacao." data-link="https://www.instagram.com/p/CgpPcQoLRjK/">
+              <img src="/assets/images/projects/retratos-ufsc-florianopolis/retrato-24.webp" alt="Recorte da serie Vida Universitaria na UFSC, frame 05" width="1200" height="1200" loading="eager" decoding="async">
+              <div class="ufsc-source-card-body">
+                <p class="ufsc-source-card-index">UFSC 05</p>
+                <h2>Ritmo da serie</h2>
+                <p>A acumulacao de quadros muda a leitura: o conjunto vira circulacao.</p>
+              </div>
+            </div>
+
+            <div class="ufsc-source-card" data-title="A repeticao muda o sentido" data-note="Quando a imagem retorna varias vezes, o arquivo deixa de ser um retrato isolado." data-link="https://www.instagram.com/p/CgnF_MnO_Nm/">
+              <img src="/assets/images/projects/retratos-ufsc-florianopolis/retrato-36.webp" alt="Recorte da serie Vida Universitaria na UFSC, frame 06" width="1200" height="1200" loading="eager" decoding="async">
+              <div class="ufsc-source-card-body">
+                <p class="ufsc-source-card-index">UFSC 06</p>
+                <h2>A repeticao muda o sentido</h2>
+                <p>Quando a imagem retorna varias vezes, o arquivo deixa de ser um retrato isolado.</p>
+              </div>
+            </div>
+
+            <div class="ufsc-source-card" data-title="Arquivo de variacoes" data-note="A serie segue mudando pela relacao entre enquadramento constante e diferenca humana." data-link="https://www.instagram.com/p/CgkJC4CO7ij/">
+              <img src="/assets/images/projects/retratos-ufsc-florianopolis/retrato-45.webp" alt="Recorte da serie Vida Universitaria na UFSC, frame 07" width="1200" height="1200" loading="eager" decoding="async">
+              <div class="ufsc-source-card-body">
+                <p class="ufsc-source-card-index">UFSC 07</p>
+                <h2>Arquivo de variacoes</h2>
+                <p>A serie segue mudando pela relacao entre enquadramento constante e diferenca humana.</p>
+              </div>
+            </div>
+
+            <div class="ufsc-source-card" data-title="Memoria marcada" data-note="Os creditos e as marcacoes deixam a serie menos anonima e mais situada." data-link="https://www.instagram.com/p/Cgjg5_EOW7B/">
+              <img src="/assets/images/projects/retratos-ufsc-florianopolis/retrato-54.webp" alt="Recorte da serie Vida Universitaria na UFSC, frame 08" width="1200" height="1200" loading="eager" decoding="async">
+              <div class="ufsc-source-card-body">
+                <p class="ufsc-source-card-index">UFSC 08</p>
+                <h2>Memoria marcada</h2>
+                <p>Os creditos e as marcacoes deixam a serie menos anonima e mais situada.</p>
+              </div>
+            </div>
+
+            <div class="ufsc-source-card" data-title="Ultimas curvas" data-note="Perto do fim, a sequencia mantem o mesmo metodo e ganha outro folego." data-link="https://www.instagram.com/p/CgfS_Vxu2AN/">
+              <img src="/assets/images/projects/retratos-ufsc-florianopolis/retrato-66.webp" alt="Recorte da serie Vida Universitaria na UFSC, frame 09" width="1200" height="1200" loading="eager" decoding="async">
+              <div class="ufsc-source-card-body">
+                <p class="ufsc-source-card-index">UFSC 09</p>
+                <h2>Ultimas curvas</h2>
+                <p>Perto do fim, a sequencia mantem o mesmo metodo e ganha outro folego.</p>
+              </div>
+            </div>
+
+            <div class="ufsc-source-card" data-title="Arquivo aberto" data-note="A serie fecha sem se encerrar: continua como conjunto relivel de encontros." data-link="https://www.instagram.com/p/CgepruYuO-P/">
+              <img src="/assets/images/projects/retratos-ufsc-florianopolis/retrato-72.webp" alt="Recorte da serie Vida Universitaria na UFSC, frame 10" width="1200" height="1200" loading="eager" decoding="async">
+              <div class="ufsc-source-card-body">
+                <p class="ufsc-source-card-index">UFSC 10</p>
+                <h2>Arquivo aberto</h2>
+                <p>A serie fecha sem se encerrar: continua como conjunto relivel de encontros.</p>
+              </div>
+            </div>
+          </div>
+        </canvas>
+
+        <p id="ufsc-scene-description" class="ufsc-scene-description">Cena fullscreen do ensaio UFSC. Conforme a rolagem avanca, retratos do projeto atravessam a viewport em profundidade, com uma leitura espacial da serie.</p>
+
+        <div class="ufsc-scene-overlay">
+          <div class="ufsc-hero-copy">
+            <p class="ufsc-scene-kicker">UFSC · Florianopolis</p>
+            <h1 class="p-name">Retratos e Vida Universitaria na UFSC</h1>
+          </div>
+
+          <div class="ufsc-side-rail">
+            <section class="ufsc-current-frame" aria-live="polite">
+              <p id="ufsc-render-status" class="ufsc-render-status">Preparando a cena.</p>
+              <p class="ufsc-panel-label">Sequencia</p>
+              <p id="ufsc-frame-count" class="ufsc-current-frame-count">01 / 10</p>
+              <h2 id="ufsc-frame-title">Campus como fundo</h2>
+              <p id="ufsc-frame-note">Um retrato em que a pessoa e o entorno dividem o mesmo peso visual.</p>
+              <a id="ufsc-frame-link" href="https://www.instagram.com/p/C77LoyaP12W/" rel="noopener noreferrer" target="_blank">Abrir post original no Instagram</a>
+            </section>
+
+            <nav class="ufsc-scene-nav" aria-label="Atalhos da sequencia">
+              <p class="ufsc-panel-label">Percurso</p>
+              <ol class="ufsc-scene-nav-list">
+                <li><button type="button" data-ufsc-jump="0" aria-current="true">01</button></li>
+                <li><button type="button" data-ufsc-jump="1">02</button></li>
+                <li><button type="button" data-ufsc-jump="2">03</button></li>
+                <li><button type="button" data-ufsc-jump="3">04</button></li>
+                <li><button type="button" data-ufsc-jump="4">05</button></li>
+                <li><button type="button" data-ufsc-jump="5">06</button></li>
+                <li><button type="button" data-ufsc-jump="6">07</button></li>
+                <li><button type="button" data-ufsc-jump="7">08</button></li>
+                <li><button type="button" data-ufsc-jump="8">09</button></li>
+                <li><button type="button" data-ufsc-jump="9">10</button></li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ufsc-notas" class="ufsc-afterglow grid">
+      <div class="col-7">
+        <h2>O campus reaparece por camadas</h2>
+        <p class="lead">A serie alterna proximidade e distancia. Um rosto avanca; logo depois, o entorno volta a pesar.</p>
+        <p>Nesta leitura, a imagem ocupa o primeiro plano e o texto fica apenas como apoio para situar cada encontro dentro da sequencia.</p>
+      </div>
+
+      <div class="col-5">
+        <h2>Continuidades</h2>
+        <ul class="ufsc-links-list">
+          <li><a href="/projects/retratos-ufsc-florianopolis.html">Voltar para a pagina-base com a serie completa</a></li>
+          <li><a href="https://www.instagram.com/boli.alen/" rel="noopener noreferrer" target="_blank">Abrir o perfil onde os retratos foram publicados</a></li>
+        </ul>
+      </div>
+
+      <article class="e-content col-8 section-block">
+        <img src="/assets/images/projects/retratos-ufsc-florianopolis/cover.webp" alt="Vista ampla do ensaio Retratos e Vida Universitaria na UFSC em edicao imersiva" width="1600" height="900" decoding="async" fetchpriority="high">
+        <p>O ensaio nasceu do ritmo do campus: aulas, travessias curtas, sombra de arvore, concreto, conversa e espera. Cada retrato carrega um encontro breve, mas a serie inteira fala de permanencia.</p>
+        <p>Aqui, a sequencia deixa de funcionar como grade e ganha uma leitura mais aberta, em que o olho acompanha escala, repeticao e intervalo antes de voltar ao rosto seguinte.</p>
+      </article>
+
+      <article class="col-8 section-block">
+        <section class="author-card h-card" aria-label="Sobre o autor">
+          <p class="author-card-title">Sobre o autor</p>
+          <div class="author-card-inner">
+            <img class="author-card-photo u-photo" src="/assets/images/author/bolivar-alencastro.webp" alt="Foto de Bolivar Alencastro" width="641" height="640" loading="lazy" decoding="async">
+            <div class="author-card-body">
+              <h3 class="author-card-name p-name"><a class="u-url" href="/about.html">Bolivar Alencastro</a></h3>
+              <p class="author-card-copy p-note">Product Designer em Sao Paulo. Cruzo fotografia, interface e narrativa para transformar arquivo visual em experiencia legivel.</p>
+              <ul class="author-card-links" aria-label="Redes sociais do autor">
+                <li><a rel="me noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/bolivaralencastro/">LinkedIn</a></li>
+                <li><a rel="me noopener noreferrer" target="_blank" href="https://www.instagram.com/bolivar.alencastro/">Instagram</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </article>
+    </section>
+  </main>
+
+  <footer class="grid">
+    <p class="col-9">&copy; 2026 Bolivar Alencastro. Design HTML-first.</p>
+    <nav class="footer-links col-3" aria-label="Links do rodape">
+      <ul>
+        <li><a href="/feed.xml" rel="alternate">RSS Feed</a></li>
+        <li><a href="/sitemap.xml">Sitemap</a></li>
+        <li><a href="/humans.txt">Humans</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
