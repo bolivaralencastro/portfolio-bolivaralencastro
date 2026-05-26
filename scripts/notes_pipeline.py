@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Load Markdown note sources and render the notes section for now.html."""
+"""Load Markdown note sources and render public notes surfaces."""
 
 from __future__ import annotations
 
 import datetime as dt
 import html
+import json
 import pathlib
 import re
 import shlex
@@ -13,8 +14,13 @@ from dataclasses import dataclass, field
 from urllib.parse import urlparse
 
 NOTE_SOURCE_DIR = pathlib.Path("content/notes")
+NOTE_PUBLIC_DIR = pathlib.Path("notes")
 NOTE_AUTO_BLOCK = "now-notes"
 NOTE_DEFAULT_CATEGORY = "Nota"
+NOTE_ARCHIVE_PAGE_SIZE = 20
+NOW_NOTES_LIMIT = 12
+SITE_NAME = "Bolívar Alencastro"
+DEFAULT_OG_IMAGE = "/assets/images/about.png"
 NOTE_MONTHS_PT = ("Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez")
 SHORTCODE_PATTERN = re.compile(r"^\{\{\s*(?P<name>[a-z][a-z0-9_-]*)\s*(?P<attrs>.*?)\s*\}\}$")
 DATE_PREFIX_PATTERN = re.compile(r"^(?P<date>\d{4}-\d{2}-\d{2})(?:-(?P<slug>.+))?$")
@@ -40,44 +46,142 @@ class NoteSource:
     def article_id(self) -> str:
         return f"now-{self.date.isoformat()}-{self.slug}"
 
+
+@dataclass
+class RenderedBlock:
+    html: str
+    plain_text: str
+    kind: str
+    image_src: str = ""
+
+
+@dataclass
+class RenderedNoteBody:
+    body_html: str
+    blocks: list[RenderedBlock]
+
     @property
-    def permalink(self) -> str:
+    def excerpt_html(self) -> str:
+        for block in self.blocks:
+            if block.kind != "media" and block.plain_text:
+                return block.html
+        return self.blocks[0].html if self.blocks else ""
+
+    @property
+    def description_text(self) -> str:
+        for block in self.blocks:
+            if block.kind != "media" and block.plain_text:
+                return block.plain_text
+        for block in self.blocks:
+            if block.plain_text:
+                return block.plain_text
+        return ""
+
+    @property
+    def first_image_src(self) -> str:
+        for block in self.blocks:
+            if block.image_src:
+                return block.image_src
+        return ""
+
+
+@dataclass
+class Note:
+    source: NoteSource
+    article_id: str
+    slug: str
+    title: str
+    display_title: str
+    category: str
+    date: dt.date
+    classes: list[str]
+    public_rel_path: str
+    public_url: str
+    canonical_url: str
+    page_title: str
+    description: str
+    excerpt_html: str
+    excerpt_text: str
+    body_html: str
+    og_image: str
+
+    @property
+    def rel_path(self) -> str:
+        return self.source.rel_path
+
+    @property
+    def path(self) -> pathlib.Path:
+        return self.source.path
+
+    @property
+    def status(self) -> str:
+        return self.source.status
+
+    @property
+    def body_markdown(self) -> str:
+        return self.source.body_markdown
+
+    @property
+    def now_anchor_url(self) -> str:
         return f"/now.html#{self.article_id}"
+
+
+@dataclass
+class NotesArchivePage:
+    page_number: int
+    total_pages: int
+    rel_path: str
+    href: str
+    canonical_url: str
+    title: str
+    description: str
+    notes: list[Note]
+    prev_href: str = ""
+    next_href: str = ""
 
 
 def note_source_dir(repo_root: pathlib.Path) -> pathlib.Path:
     return repo_root / NOTE_SOURCE_DIR
 
 
-def load_notes(repo_root: pathlib.Path, *, include_drafts: bool = False) -> list[NoteSource]:
+def load_notes(
+    repo_root: pathlib.Path,
+    *,
+    base_url: str = "",
+    include_drafts: bool = False,
+) -> list[Note]:
     notes_dir = note_source_dir(repo_root)
     if not notes_dir.exists():
         return []
 
-    notes: list[NoteSource] = []
+    notes: list[Note] = []
     seen_ids: set[str] = set()
 
     for path in sorted(notes_dir.glob("*.md")):
         if path.name.startswith("_") or path.stem.lower() == "readme":
             continue
 
-        note = parse_note_file(path, repo_root)
-        if note.article_id in seen_ids:
-            raise NoteError(f"{note.rel_path}: duplicate note permalink '{note.article_id}'")
-        seen_ids.add(note.article_id)
+        source = parse_note_file(path, repo_root)
+        if source.article_id in seen_ids:
+            raise NoteError(f"{source.rel_path}: duplicate note permalink '{source.article_id}'")
+        seen_ids.add(source.article_id)
 
-        if note.status == "draft" and not include_drafts:
+        if source.status == "draft" and not include_drafts:
             continue
 
-        render_note_body_html(note, repo_root)
-        notes.append(note)
+        notes.append(materialize_note(source, repo_root, base_url=base_url))
 
     notes.sort(key=lambda item: (item.date, item.rel_path), reverse=True)
     return notes
 
 
-def generate_now_notes_html(repo_root: pathlib.Path) -> str:
-    return render_now_notes_html(load_notes(repo_root), repo_root)
+def generate_now_notes_html(
+    repo_root: pathlib.Path,
+    *,
+    base_url: str = "",
+    limit: int = NOW_NOTES_LIMIT,
+) -> str:
+    return render_now_notes_html(load_notes(repo_root, base_url=base_url), limit=limit)
 
 
 def parse_note_file(path: pathlib.Path, repo_root: pathlib.Path) -> NoteSource:
@@ -181,29 +285,101 @@ def slugify(value: str) -> str:
     return re.sub(r"-{2,}", "-", collapsed)
 
 
+def materialize_note(source: NoteSource, repo_root: pathlib.Path, *, base_url: str = "") -> Note:
+    rendered = render_note_body(source, repo_root)
+    display_title = source.title.strip() or humanize_slug(source.slug)
+    description_source = rendered.description_text or display_title
+    description = truncate_text(description_source, 165)
+    public_rel_path = f"{NOTE_PUBLIC_DIR.as_posix()}/{source.date.isoformat()}-{source.slug}.html"
+    public_url = f"/{public_rel_path}"
+    canonical_url = canonical_url_for_rel_path(public_rel_path, base_url) if base_url else ""
+    page_title = f"{display_title} - Nota - {SITE_NAME}"
+    og_image = rendered.first_image_src or DEFAULT_OG_IMAGE
+    excerpt_html = rendered.excerpt_html or f"<p>{html.escape(description)}</p>"
+
+    return Note(
+        source=source,
+        article_id=source.article_id,
+        slug=source.slug,
+        title=source.title,
+        display_title=display_title,
+        category=source.category,
+        date=source.date,
+        classes=list(source.classes),
+        public_rel_path=public_rel_path,
+        public_url=public_url,
+        canonical_url=canonical_url,
+        page_title=page_title,
+        description=description,
+        excerpt_html=excerpt_html,
+        excerpt_text=strip_tags(excerpt_html) or description,
+        body_html=rendered.body_html,
+        og_image=og_image,
+    )
+
+
+def humanize_slug(slug: str) -> str:
+    words = [part for part in slug.split("-") if part]
+    if not words:
+        return "Nota"
+    label = " ".join(words)
+    return label[:1].upper() + label[1:]
+
+
+def truncate_text(text: str, limit: int) -> str:
+    normalized = " ".join(text.split()).strip()
+    if len(normalized) <= limit:
+        return normalized
+    shortened = normalized[: limit - 1].rsplit(" ", 1)[0].strip()
+    return f"{shortened}…"
+
+
+def canonical_url_for_rel_path(rel_path: str, base_url: str) -> str:
+    base = base_url.rstrip("/")
+    if not base:
+        return ""
+    if rel_path == "index.html":
+        return f"{base}/"
+    if rel_path.endswith("/index.html"):
+        return f"{base}/{rel_path.removesuffix('/index.html')}/"
+    return f"{base}/{rel_path}"
+
+
+def rel_path_to_href(rel_path: str) -> str:
+    if rel_path == "index.html":
+        return "/"
+    if rel_path.endswith("/index.html"):
+        return f"/{rel_path.removesuffix('index.html')}"
+    return f"/{rel_path}"
+
+
 def format_note_date(date_value: dt.date) -> str:
     return f"{date_value.day:02d} {NOTE_MONTHS_PT[date_value.month - 1]} {date_value.year}"
 
 
-def render_now_notes_html(notes: list[NoteSource], repo_root: pathlib.Path) -> str:
-    if not notes:
+def format_note_date_short(date_value: dt.date) -> str:
+    return date_value.strftime("%d/%m/%Y")
+
+
+def render_now_notes_html(notes: list[Note], *, limit: int = NOW_NOTES_LIMIT) -> str:
+    published = notes[:limit]
+    if not published:
         return '        <p class="note-empty">Nenhuma nota publicada ainda.</p>'
 
     blocks: list[str] = []
-    for note in notes:
+    for note in published:
         classes = ["note", "h-entry", *note.classes]
         block_lines = [f'        <article id="{note.article_id}" class="{" ".join(classes)}">']
-        if note.title:
-            block_lines.append(f'          <p class="visually-hidden p-name">{html.escape(note.title)}</p>')
+        block_lines.append(f'          <p class="visually-hidden p-name">{html.escape(note.display_title)}</p>')
         block_lines.append('          <div class="e-content">')
-        block_lines.append(indent_block(render_note_body_html(note, repo_root), "            "))
+        block_lines.append(indent_block(note.body_html, "            "))
         block_lines.append("          </div>")
         block_lines.extend(
             [
                 '          <footer class="note-meta">',
                 f'            <span class="p-category">{html.escape(note.category)}</span>',
                 f'            <time class="dt-published" datetime="{note.date.isoformat()}">{format_note_date(note.date)}</time>',
-                f'            <a class="u-url" href="{note.permalink}">permalink</a>',
+                f'            <a class="u-url" href="{note.public_url}">ler nota</a>',
                 "          </footer>",
                 "        </article>",
             ]
@@ -213,27 +389,323 @@ def render_now_notes_html(notes: list[NoteSource], repo_root: pathlib.Path) -> s
     return "\n\n".join(blocks)
 
 
-def render_note_body_html(note: NoteSource, repo_root: pathlib.Path) -> str:
+def build_note_pages(notes: list[Note], *, base_url: str) -> dict[str, str]:
+    return {note.public_rel_path: render_note_page(note, base_url=base_url) for note in notes}
+
+
+def build_notes_archive_pages(notes: list[Note], *, base_url: str) -> dict[str, str]:
+    pages = paginate_notes(notes, base_url=base_url)
+    return {page.rel_path: render_notes_archive_page(page, base_url=base_url) for page in pages}
+
+
+def paginate_notes(notes: list[Note], *, base_url: str, per_page: int = NOTE_ARCHIVE_PAGE_SIZE) -> list[NotesArchivePage]:
+    total_pages = max(1, (len(notes) + per_page - 1) // per_page)
+    pages: list[NotesArchivePage] = []
+
+    for page_number in range(1, total_pages + 1):
+        start = (page_number - 1) * per_page
+        end = start + per_page
+        page_notes = notes[start:end]
+        rel_path = notes_archive_rel_path(page_number)
+        href = rel_path_to_href(rel_path)
+        title = "Arquivo de notas - Bolívar Alencastro"
+        description = "Arquivo paginado de notas publicadas por Bolívar Alencastro, com apontamentos curtos, leituras e ideias em curso."
+        if page_number > 1:
+            title = f"Arquivo de notas - Página {page_number} - Bolívar Alencastro"
+            description = (
+                f"Página {page_number} do arquivo de notas publicadas por Bolívar Alencastro."
+            )
+
+        pages.append(
+            NotesArchivePage(
+                page_number=page_number,
+                total_pages=total_pages,
+                rel_path=rel_path,
+                href=href,
+                canonical_url=canonical_url_for_rel_path(rel_path, base_url),
+                title=title,
+                description=description,
+                notes=page_notes,
+                prev_href=rel_path_to_href(notes_archive_rel_path(page_number - 1)) if page_number > 1 else "",
+                next_href=rel_path_to_href(notes_archive_rel_path(page_number + 1)) if page_number < total_pages else "",
+            )
+        )
+
+    return pages
+
+
+def notes_archive_rel_path(page_number: int) -> str:
+    if page_number <= 1:
+        return "notes/index.html"
+    return f"notes/page/{page_number}.html"
+
+
+def render_note_page(note: Note, *, base_url: str) -> str:
+    og_image = absolute_asset_url(note.og_image, base_url)
+    jsonld = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": note.display_title,
+        "description": note.description,
+        "datePublished": note.date.isoformat(),
+        "dateModified": note.date.isoformat(),
+        "articleSection": note.category,
+        "url": note.canonical_url,
+        "mainEntityOfPage": note.canonical_url,
+        "image": og_image,
+        "author": {
+            "@type": "Person",
+            "name": SITE_NAME,
+            "url": f"{base_url.rstrip('/')}/about.html" if base_url else "/about.html",
+        },
+        "publisher": {
+            "@type": "Person",
+            "name": SITE_NAME,
+            "url": f"{base_url.rstrip('/')}/about.html" if base_url else "/about.html",
+        },
+        "inLanguage": "pt-BR",
+    }
+
+    lines = [
+        "<!DOCTYPE html>",
+        '<html lang="pt-BR">',
+        "<head>",
+        '  <meta charset="UTF-8">',
+        '  <meta name="viewport" content="width=device-width, initial-scale=1.0">',
+        f"  <title>{html.escape(note.page_title)}</title>",
+        f'  <meta name="description" content="{html.escape(note.description, quote=True)}">',
+        '  <link rel="stylesheet" href="/style.css">',
+        '  <script src="/assets/js/clarity.js" defer></script>',
+        f'  <link rel="canonical" href="{html.escape(note.canonical_url, quote=True)}">',
+        f'  <meta name="author" content="{html.escape(SITE_NAME, quote=True)}">',
+        '  <link rel="author" href="/about.html">',
+        '  <meta name="generator" content="Handcrafted HTML">',
+        '  <link rel="webmention" href="https://webmention.io/bolivaralencastro.com.br/webmention">',
+        '  <link rel="pingback" href="https://webmention.io/bolivaralencastro.com.br/xmlrpc">',
+        '  <link rel="me" href="https://github.com/bolivaralencastro">',
+        '  <link rel="me" href="https://www.instagram.com/bolivar.alencastro/">',
+        '  <link rel="me" href="https://www.linkedin.com/in/bolivaralencastro/">',
+        f'  <meta property="og:title" content="{html.escape(note.display_title, quote=True)}">',
+        f'  <meta property="og:description" content="{html.escape(note.description, quote=True)}">',
+        f'  <meta property="og:url" content="{html.escape(note.canonical_url, quote=True)}">',
+        '  <meta property="og:type" content="article">',
+        f'  <meta property="og:image" content="{html.escape(og_image, quote=True)}">',
+        '  <meta name="twitter:card" content="summary_large_image">',
+        f'  <meta name="twitter:title" content="{html.escape(note.display_title, quote=True)}">',
+        f'  <meta name="twitter:description" content="{html.escape(note.description, quote=True)}">',
+        f'  <meta name="twitter:image" content="{html.escape(og_image, quote=True)}">',
+        '  <meta name="view-transition" content="same-origin">',
+        '  <script type="application/ld+json">',
+        json.dumps(jsonld, ensure_ascii=False, indent=2),
+        "  </script>",
+        '  <script src="/assets/js/lightbox.js" defer></script>',
+        '  <script src="/assets/js/mobile-nav.js" defer></script>',
+        "</head>",
+        '<body class="note-page">',
+        '  <div class="grain"></div>',
+        '  <a href="#main" class="skip-link">Pular para o conteúdo</a>',
+        "",
+        build_site_header(now_current=True),
+        "",
+        '  <main id="main" class="grid">',
+        '    <article class="h-entry col-12">',
+        f'      <h1 class="p-name col-9">{html.escape(note.display_title)}</h1>',
+        '      <div class="note-meta note-page-meta col-12">',
+        f'        <span class="p-category">{html.escape(note.category)}</span>',
+        f'        <time class="dt-published" datetime="{note.date.isoformat()}">{format_note_date(note.date)}</time>',
+        f'        <a class="u-url" href="{note.public_url}">permalink</a>',
+        "      </div>",
+        f'      <p class="p-summary col-8">{html.escape(note.description)}</p>',
+        '      <nav class="note-context-links col-12" aria-label="Contexto da nota">',
+        '        <a href="/now.html">Voltar ao Now</a>',
+        '        <a href="/notes/">Arquivo de notas</a>',
+        "      </nav>",
+        '      <div class="e-content col-8 section-block">',
+        indent_block(note.body_html, "        "),
+        "      </div>",
+        "    </article>",
+        "  </main>",
+        "",
+        indent_block(build_site_footer(), "  "),
+        "</body>",
+        "</html>",
+        "",
+    ]
+    return "\n".join(lines)
+
+
+def render_notes_archive_page(page: NotesArchivePage, *, base_url: str) -> str:
+    jsonld_items = []
+    for index, note in enumerate(page.notes, start=1 + ((page.page_number - 1) * NOTE_ARCHIVE_PAGE_SIZE)):
+        jsonld_items.append(
+            {
+                "@type": "ListItem",
+                "position": index,
+                "url": note.canonical_url,
+                "item": {
+                    "@type": "Article",
+                    "headline": note.display_title,
+                    "datePublished": note.date.isoformat(),
+                    "url": note.canonical_url,
+                    "description": note.description,
+                },
+            }
+        )
+
+    jsonld = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Arquivo de notas",
+        "url": page.canonical_url,
+        "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": jsonld_items,
+        },
+    }
+
+    lines = [
+        "<!DOCTYPE html>",
+        '<html lang="pt-BR">',
+        "<head>",
+        '  <meta charset="UTF-8">',
+        '  <meta name="viewport" content="width=device-width, initial-scale=1.0">',
+        f"  <title>{html.escape(page.title)}</title>",
+        f'  <meta name="description" content="{html.escape(page.description, quote=True)}">',
+        '  <link rel="stylesheet" href="/style.css">',
+        '  <script src="/assets/js/clarity.js" defer></script>',
+        f'  <link rel="canonical" href="{html.escape(page.canonical_url, quote=True)}">',
+        f'  <meta name="author" content="{html.escape(SITE_NAME, quote=True)}">',
+        '  <meta name="generator" content="Handcrafted HTML">',
+        '  <link rel="webmention" href="https://webmention.io/bolivaralencastro.com.br/webmention">',
+        '  <link rel="pingback" href="https://webmention.io/bolivaralencastro.com.br/xmlrpc">',
+        '  <link rel="me" href="https://github.com/bolivaralencastro">',
+        '  <link rel="me" href="https://www.instagram.com/bolivar.alencastro/">',
+        '  <link rel="me" href="https://www.linkedin.com/in/bolivaralencastro/">',
+        '  <meta property="og:title" content="Arquivo de notas - Bolívar Alencastro">',
+        f'  <meta property="og:description" content="{html.escape(page.description, quote=True)}">',
+        f'  <meta property="og:url" content="{html.escape(page.canonical_url, quote=True)}">',
+        '  <meta property="og:type" content="website">',
+        f'  <meta property="og:image" content="{html.escape(absolute_asset_url(DEFAULT_OG_IMAGE, base_url), quote=True)}">',
+        '  <meta name="twitter:card" content="summary_large_image">',
+        '  <meta name="twitter:title" content="Arquivo de notas - Bolívar Alencastro">',
+        f'  <meta name="twitter:description" content="{html.escape(page.description, quote=True)}">',
+        f'  <meta name="twitter:image" content="{html.escape(absolute_asset_url(DEFAULT_OG_IMAGE, base_url), quote=True)}">',
+        '  <meta name="view-transition" content="same-origin">',
+        '  <script type="application/ld+json">',
+        json.dumps(jsonld, ensure_ascii=False, indent=2),
+        "  </script>",
+        '  <script src="/assets/js/lightbox.js" defer></script>',
+        '  <script src="/assets/js/mobile-nav.js" defer></script>',
+        "</head>",
+        '<body class="notes-archive-page">',
+        '  <div class="grain"></div>',
+        '  <a href="#main" class="skip-link">Pular para o conteúdo principal</a>',
+        "",
+        build_site_header(now_current=True),
+        "",
+        '  <main id="main" class="grid">',
+        '    <section class="page-hero grid col-12 section-block">',
+        '      <h1 class="page-title col-8">Arquivo de notas</h1>',
+        '      <p class="lead col-4">Notas publicadas a partir do Now: leituras, ideias em aberto, imagens e pequenos registros com página própria.</p>',
+        "    </section>",
+        '    <section class="grid col-12 section-block note-archive-list" aria-label="Notas publicadas">',
+        '      <p class="archive-kicker col-12">O Now abre a conversa. Aqui ficam reunidas as notas publicadas.</p>',
+    ]
+
+    if page.notes:
+        for note in page.notes:
+            lines.extend(render_archive_note_item(note))
+    else:
+        lines.append('      <p class="note-empty col-12">Nenhuma nota publicada ainda.</p>')
+
+    lines.append("    </section>")
+
+    pagination_html = render_archive_pagination(page)
+    if pagination_html:
+        lines.append(indent_block(pagination_html, "    "))
+
+    lines.extend(
+        [
+            "  </main>",
+            "",
+            indent_block(build_site_footer(), "  "),
+            "</body>",
+            "</html>",
+            "",
+        ]
+    )
+    return "\n".join(lines)
+
+
+def render_archive_note_item(note: Note) -> list[str]:
+    lines = [
+        '      <article class="note-index-item h-entry col-12">',
+        '        <div class="note-index-body">',
+        f'          <h2 class="p-name"><a class="u-url" href="{note.public_url}">{html.escape(note.display_title)}</a></h2>',
+        '          <div class="note-index-excerpt e-content">',
+        indent_block(note.excerpt_html, "            "),
+        "          </div>",
+        '          <footer class="note-meta">',
+        f'            <span class="p-category">{html.escape(note.category)}</span>',
+        f'            <time class="dt-published" datetime="{note.date.isoformat()}">{format_note_date_short(note.date)}</time>',
+        f'            <a href="{note.public_url}">abrir nota</a>',
+        "          </footer>",
+        "        </div>",
+        "      </article>",
+    ]
+    return lines
+
+
+def render_archive_pagination(page: NotesArchivePage) -> str:
+    if page.total_pages <= 1:
+        return ""
+
+    prev_link = (
+        f'<a class="button" href="{page.prev_href}" rel="prev">Página anterior</a>'
+        if page.prev_href
+        else '<span class="button button-disabled" aria-disabled="true">Página anterior</span>'
+    )
+    next_link = (
+        f'<a class="button" href="{page.next_href}" rel="next">Próxima página</a>'
+        if page.next_href
+        else '<span class="button button-disabled" aria-disabled="true">Próxima página</span>'
+    )
+
+    return "\n".join(
+        [
+            '<nav class="archive-pagination grid col-12 section-block" aria-label="Paginação das notas">',
+            f'  <p class="archive-pagination-status col-12">Página {page.page_number} de {page.total_pages}</p>',
+            f'  <div class="archive-pagination-links col-12">{prev_link}{next_link}</div>',
+            "</nav>",
+        ]
+    )
+
+
+def render_note_body(note: NoteSource, repo_root: pathlib.Path) -> RenderedNoteBody:
     lines = note.body_markdown.splitlines()
-    html_blocks: list[str] = []
+    blocks: list[RenderedBlock] = []
     paragraph_lines: list[str] = []
     list_mode: str | None = None
     list_items: list[str] = []
     quote_lines: list[str] = []
     raw_lines: list[str] = []
 
+    def push_block(fragment: RenderedBlock) -> None:
+        blocks.append(fragment)
+
     def flush_paragraph() -> None:
         nonlocal paragraph_lines
         if paragraph_lines:
             text = " ".join(chunk.strip() for chunk in paragraph_lines if chunk.strip())
-            html_blocks.append(f"<p>{render_inline_markdown(text)}</p>")
+            push_block(RenderedBlock(f"<p>{render_inline_markdown(text)}</p>", strip_inline_markdown(text), "paragraph"))
             paragraph_lines = []
 
     def flush_list() -> None:
         nonlocal list_mode, list_items
         if list_mode and list_items:
             items_html = "".join(f"<li>{render_inline_markdown(item)}</li>" for item in list_items)
-            html_blocks.append(f"<{list_mode}>{items_html}</{list_mode}>")
+            items_text = " ".join(strip_inline_markdown(item) for item in list_items)
+            push_block(RenderedBlock(f"<{list_mode}>{items_html}</{list_mode}>", items_text, "list"))
         list_mode = None
         list_items = []
 
@@ -241,13 +713,14 @@ def render_note_body_html(note: NoteSource, repo_root: pathlib.Path) -> str:
         nonlocal quote_lines
         if quote_lines:
             text = " ".join(chunk.strip() for chunk in quote_lines if chunk.strip())
-            html_blocks.append(f"<blockquote><p>{render_inline_markdown(text)}</p></blockquote>")
+            push_block(RenderedBlock(f"<blockquote><p>{render_inline_markdown(text)}</p></blockquote>", strip_inline_markdown(text), "quote"))
             quote_lines = []
 
     def flush_raw() -> None:
         nonlocal raw_lines
         if raw_lines:
-            html_blocks.append("\n".join(raw_lines))
+            raw_html = "\n".join(raw_lines)
+            push_block(RenderedBlock(raw_html, strip_tags(raw_html), "raw"))
             raw_lines = []
 
     for line in lines:
@@ -268,7 +741,7 @@ def render_note_body_html(note: NoteSource, repo_root: pathlib.Path) -> str:
             flush_list()
             flush_quote()
             flush_raw()
-            html_blocks.append(render_shortcode(shortcode_match.group("name"), shortcode_match.group("attrs"), note, repo_root))
+            push_block(render_shortcode(shortcode_match.group("name"), shortcode_match.group("attrs"), note, repo_root))
             continue
 
         if stripped.startswith("<"):
@@ -315,10 +788,10 @@ def render_note_body_html(note: NoteSource, repo_root: pathlib.Path) -> str:
     flush_quote()
     flush_raw()
 
-    return "\n".join(html_blocks)
+    return RenderedNoteBody(body_html="\n".join(block.html for block in blocks), blocks=blocks)
 
 
-def render_shortcode(name: str, attrs_raw: str, note: NoteSource, repo_root: pathlib.Path) -> str:
+def render_shortcode(name: str, attrs_raw: str, note: NoteSource, repo_root: pathlib.Path) -> RenderedBlock:
     attrs = parse_shortcode_attrs(attrs_raw, note.rel_path)
     normalized_name = name.strip().lower()
 
@@ -344,7 +817,8 @@ def render_shortcode(name: str, attrs_raw: str, note: NoteSource, repo_root: pat
         if caption:
             figure_lines.append(f"  <figcaption>{render_inline_markdown(caption)}</figcaption>")
         figure_lines.append("</figure>")
-        return "\n".join(figure_lines)
+        plain_text = caption or ""
+        return RenderedBlock("\n".join(figure_lines), strip_inline_markdown(plain_text), "media", image_src=src)
 
     if normalized_name == "audio":
         src = require_attr(attrs, "src", note.rel_path, normalized_name)
@@ -364,7 +838,7 @@ def render_shortcode(name: str, attrs_raw: str, note: NoteSource, repo_root: pat
         if caption:
             wrapper.append(f"  <figcaption>{render_inline_markdown(caption)}</figcaption>")
         wrapper.append("</figure>")
-        return "\n".join(wrapper)
+        return RenderedBlock("\n".join(wrapper), strip_inline_markdown(caption), "media")
 
     if normalized_name == "video":
         src = require_attr(attrs, "src", note.rel_path, normalized_name)
@@ -392,7 +866,7 @@ def render_shortcode(name: str, attrs_raw: str, note: NoteSource, repo_root: pat
         if caption:
             video_lines.append(f"  <figcaption>{render_inline_markdown(caption)}</figcaption>")
         video_lines.append("</figure>")
-        return "\n".join(video_lines)
+        return RenderedBlock("\n".join(video_lines), strip_inline_markdown(caption), "media", image_src=poster)
 
     raise NoteError(f"{note.rel_path}: unsupported shortcode '{normalized_name}'")
 
@@ -466,6 +940,14 @@ def render_inline_markdown(text: str) -> str:
     return escaped
 
 
+def strip_inline_markdown(text: str) -> str:
+    plain = re.sub(r"`([^`]+)`", r"\1", text)
+    plain = re.sub(r"\*\*([^*]+)\*\*", r"\1", plain)
+    plain = re.sub(r"(?<!\*)\*([^*]+)\*(?!\*)", r"\1", plain)
+    plain = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", r"\1", plain)
+    return " ".join(plain.split()).strip()
+
+
 def render_link(label: str, href: str) -> str:
     parsed = urlparse(href)
     rel_attr = ""
@@ -476,5 +958,58 @@ def render_link(label: str, href: str) -> str:
     return f'<a href="{html.escape(href, quote=True)}"{rel_attr}{target_attr}>{label}</a>'
 
 
+def absolute_asset_url(value: str, base_url: str) -> str:
+    if not value:
+        return ""
+    parsed = urlparse(value)
+    if parsed.scheme in {"http", "https"}:
+        return value
+    if value.startswith("/"):
+        return f"{base_url.rstrip('/')}{value}"
+    return value
+
+
+def strip_tags(value: str) -> str:
+    cleaned = re.sub(r"<[^>]+>", " ", value)
+    return " ".join(html.unescape(cleaned).split()).strip()
+
+
 def indent_block(block: str, prefix: str) -> str:
     return "\n".join(f"{prefix}{line}" if line else "" for line in block.splitlines())
+
+
+def build_site_header(*, now_current: bool = False) -> str:
+    now_attr = ' aria-current="page"' if now_current else ""
+    return "\n".join(
+        [
+            '  <header class="grid">',
+            '    <div class="brand col-7"><a href="/" class="brand-link" aria-label="Ir para a página inicial"><span class="brand-mark" aria-hidden="true"><span class="dot dot-blue"></span></span><strong>Bolívar Alencastro</strong></a></div>',
+            '    <nav class="col-5" aria-label="Navegação principal">',
+            "      <ul>",
+            '        <li><a href="/">Home</a></li>',
+            '        <li><a href="/about.html">About</a></li>',
+            '        <li><a href="/projects.html">Projects</a></li>',
+            '        <li><a href="/blog.html">Blog</a></li>',
+            f'        <li><a href="/now.html"{now_attr}>Now</a></li>',
+            "      </ul>",
+            "    </nav>",
+            "  </header>",
+        ]
+    )
+
+
+def build_site_footer() -> str:
+    return "\n".join(
+        [
+            '<footer class="grid">',
+            '  <p class="col-9">&copy; 2026 Bolívar Alencastro. Design HTML-first.</p>',
+            '  <nav class="footer-links col-3" aria-label="Links do rodapé">',
+            '    <ul>',
+            '      <li><a href="/feed.xml" rel="alternate">RSS Feed</a></li>',
+            '      <li><a href="/sitemap.xml">Sitemap</a></li>',
+            '      <li><a href="/humans.txt">Humans</a></li>',
+            '    </ul>',
+            '  </nav>',
+            '</footer>',
+        ]
+    )

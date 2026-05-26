@@ -17,12 +17,19 @@ from dataclasses import dataclass
 from typing import List
 from urllib.parse import urlparse
 
-from notes_pipeline import NOTE_AUTO_BLOCK, generate_now_notes_html
+from notes_pipeline import (
+    NOTE_AUTO_BLOCK,
+    build_note_pages,
+    build_notes_archive_pages,
+    generate_now_notes_html,
+    load_notes,
+)
 
 BASE_URL_DEFAULT = "https://bolivaralencastro.com.br"
 ROOT_PAGES = ["index.html", "about.html", "blog.html", "projects.html", "now.html", "links.html", "retratos-ufsc-florianopolis-imersivo.html"]
 FEED_AUTHOR_NAME = "Bolívar Alencastro"
 FEED_AUTHOR_FALLBACK = "Bolivar Alencastro"
+BLOG_ARCHIVE_PAGE_SIZE = 20
 LISTING_CARD_FILENAMES = ("card.png", "card.webp", "cover.png", "cover.webp")
 LISTING_CARD_WIDTH = 960
 LISTING_CARD_HEIGHT = 540
@@ -65,6 +72,20 @@ class PageMeta:
             self.links = []
         if self.image_alts is None:
             self.image_alts = []
+
+
+@dataclass
+class ArchivePage:
+    page_number: int
+    total_pages: int
+    rel_path: str
+    href: str
+    canonical_url: str
+    title: str
+    description: str
+    items: list[dict]
+    prev_href: str = ""
+    next_href: str = ""
 
 
 class MetaParser(HTMLParser):
@@ -255,6 +276,14 @@ def rel_to_url(rel_path: str, base_url: str) -> str:
     if rel_path.endswith("/index.html"):
         return f"{base_url}/{rel_path.removesuffix('/index.html')}/"
     return f"{base_url}/{rel_path}"
+
+
+def rel_path_to_href(rel_path: str) -> str:
+    if rel_path == "index.html":
+        return "/"
+    if rel_path.endswith("/index.html"):
+        return f"/{rel_path.removesuffix('index.html')}"
+    return f"/{rel_path}"
 
 
 def replace_auto_block(content: str, block_name: str, inner_html: str) -> str:
@@ -613,7 +642,7 @@ def build_related_posts_block(current_href: str, posts: list[dict], limit: int =
     )
 
 
-def build_blog_collection_jsonld(posts: list[dict], base_url: str) -> str:
+def build_blog_collection_jsonld(posts: list[dict], collection_url: str, collection_name: str) -> str:
     item_list = []
     for idx, post in enumerate(posts, start=1):
         item_list.append(
@@ -634,8 +663,8 @@ def build_blog_collection_jsonld(posts: list[dict], base_url: str) -> str:
     payload = {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
-        "name": "Blog - Bolívar Alencastro",
-        "url": f"{base_url}/blog.html",
+        "name": collection_name,
+        "url": collection_url,
         "mainEntity": {
             "@type": "ItemList",
             "itemListElement": item_list,
@@ -646,6 +675,146 @@ def build_blog_collection_jsonld(posts: list[dict], base_url: str) -> str:
         + json.dumps(payload, ensure_ascii=False, indent=2)
         + "\n  </script>"
     )
+
+
+def blog_archive_rel_path(page_number: int) -> str:
+    if page_number <= 1:
+        return "blog.html"
+    return f"blog/page/{page_number}.html"
+
+
+def paginate_archive(
+    items: list[dict],
+    *,
+    per_page: int,
+    rel_path_for_page,
+    title_for_page,
+    description_for_page,
+    base_url: str,
+) -> list[ArchivePage]:
+    total_pages = max(1, (len(items) + per_page - 1) // per_page)
+    pages: list[ArchivePage] = []
+    for page_number in range(1, total_pages + 1):
+        start = (page_number - 1) * per_page
+        end = start + per_page
+        rel_path = rel_path_for_page(page_number)
+        pages.append(
+            ArchivePage(
+                page_number=page_number,
+                total_pages=total_pages,
+                rel_path=rel_path,
+                href=rel_path_to_href(rel_path),
+                canonical_url=rel_to_url(rel_path, base_url),
+                title=title_for_page(page_number),
+                description=description_for_page(page_number),
+                items=items[start:end],
+                prev_href=rel_path_to_href(rel_path_for_page(page_number - 1)) if page_number > 1 else "",
+                next_href=rel_path_to_href(rel_path_for_page(page_number + 1)) if page_number < total_pages else "",
+            )
+        )
+    return pages
+
+
+def build_archive_pagination_html(page: ArchivePage, *, aria_label: str) -> str:
+    if page.total_pages <= 1:
+        return ""
+
+    prev_link = (
+        f'<a class="button" href="{page.prev_href}" rel="prev">Página anterior</a>'
+        if page.prev_href
+        else '<span class="button button-disabled" aria-disabled="true">Página anterior</span>'
+    )
+    next_link = (
+        f'<a class="button" href="{page.next_href}" rel="next">Próxima página</a>'
+        if page.next_href
+        else '<span class="button button-disabled" aria-disabled="true">Próxima página</span>'
+    )
+    return "\n".join(
+        [
+            f'<nav class="archive-pagination grid col-12 section-block" aria-label="{html.escape(aria_label, quote=True)}">',
+            f'  <p class="archive-pagination-status col-12">Página {page.page_number} de {page.total_pages}</p>',
+            f'  <div class="archive-pagination-links col-12">{prev_link}{next_link}</div>',
+            "</nav>",
+        ]
+    )
+
+
+def render_blog_archive_page(page: ArchivePage, *, base_url: str) -> str:
+    blog_list_inner = build_blog_list_html(page.items)
+    blog_jsonld_inner = build_blog_collection_jsonld(page.items, page.canonical_url, page.title.replace(" - Bolívar Alencastro", ""))
+    pagination_html = build_archive_pagination_html(page, aria_label="Paginação do blog")
+
+    lines = [
+        "<!DOCTYPE html>",
+        '<html lang="pt-BR">',
+        "<head>",
+        '  <meta charset="UTF-8">',
+        '  <meta name="viewport" content="width=device-width, initial-scale=1.0">',
+        f"  <title>{html.escape(page.title)}</title>",
+        f'  <meta name="description" content="{html.escape(page.description, quote=True)}">',
+        '  <link rel="stylesheet" href="/style.css">',
+        '  <script src="/assets/js/clarity.js" defer></script>',
+        f'  <link rel="canonical" href="{html.escape(page.canonical_url, quote=True)}">',
+        f'  <meta name="author" content="{html.escape(FEED_AUTHOR_NAME, quote=True)}">',
+        '  <meta name="generator" content="Handcrafted HTML">',
+        '  <link rel="webmention" href="https://webmention.io/bolivaralencastro.com.br/webmention">',
+        '  <link rel="pingback" href="https://webmention.io/bolivaralencastro.com.br/xmlrpc">',
+        '  <link rel="me" href="https://github.com/bolivaralencastro">',
+        '  <link rel="me" href="https://www.instagram.com/bolivar.alencastro/">',
+        '  <link rel="me" href="https://www.linkedin.com/in/bolivaralencastro/">',
+        '  <meta property="og:title" content="Blog - Bolívar Alencastro">',
+        f'  <meta property="og:description" content="{html.escape(page.description, quote=True)}">',
+        f'  <meta property="og:url" content="{html.escape(page.canonical_url, quote=True)}">',
+        '  <meta property="og:type" content="website">',
+        f'  <meta property="og:image" content="{html.escape(base_url.rstrip("/") + "/assets/images/about.png", quote=True)}">',
+        '  <meta name="twitter:card" content="summary_large_image">',
+        '  <meta name="twitter:title" content="Blog - Bolívar Alencastro">',
+        f'  <meta name="twitter:description" content="{html.escape(page.description, quote=True)}">',
+        f'  <meta name="twitter:image" content="{html.escape(base_url.rstrip("/") + "/assets/images/about.png", quote=True)}">',
+        blog_jsonld_inner,
+        '  <meta name="view-transition" content="same-origin">',
+        '  <script src="/assets/js/lightbox.js" defer></script>',
+        '  <script src="/assets/js/mobile-nav.js" defer></script>',
+        "</head>",
+        "<body>",
+        '  <div class="grain"></div>',
+        '  <a href="#main" class="skip-link">Pular para o conteúdo principal</a>',
+        "",
+        '<header class="grid">',
+        '  <div class="brand col-7"><a href="/" class="brand-link" aria-label="Ir para a página inicial"><span class="brand-mark" aria-hidden="true"><span class="dot dot-blue"></span></span><strong>Bolívar Alencastro</strong></a></div>',
+        '  <nav class="col-5" aria-label="Navegação principal">',
+        "    <ul>",
+        '      <li><a href="/">Home</a></li>',
+        '      <li><a href="/about.html">About</a></li>',
+        '      <li><a href="/projects.html">Projects</a></li>',
+        '      <li><a href="/blog.html" aria-current="page">Blog</a></li>',
+        '      <li><a href="/now.html">Now</a></li>',
+        "    </ul>",
+        "  </nav>",
+        "</header>",
+        "",
+        '  <main id="main" class="grid">',
+        '    <section class="page-hero grid col-12 section-block">',
+        '      <h1 class="page-title col-8">Blog</h1>',
+        '      <p class="lead col-4">Notas editoriais sobre design, sistema visual e arquitetura web nativa.</p>',
+        "    </section>",
+        '    <section class="grid col-12 section-block">',
+        '      <h2 class="col-12">Posts</h2>',
+        indent_html_block(blog_list_inner, "      "),
+        "    </section>",
+    ]
+    if pagination_html:
+        lines.append(indent_html_block(pagination_html, "    "))
+    lines.extend(
+        [
+            "  </main>",
+            build_standard_footer_html(),
+            "</body>",
+            "</html>",
+            "",
+        ]
+    )
+    return "\n".join(lines)
 
 
 def render_sitemap(base_url: str, items: list[dict]) -> str:
@@ -665,18 +834,22 @@ def render_sitemap(base_url: str, items: list[dict]) -> str:
     return "\n".join(lines)
 
 
-def render_atom_feed(base_url: str, posts: list[dict]) -> str:
-    if not posts:
-        raise BuildError("Cannot generate feed.xml: no blog posts found in /blog")
+def render_sitemap_txt(items: list[dict]) -> str:
+    return "\n".join(item["loc"] for item in items) + "\n"
 
-    feed_updated = posts[0]["published"].strftime("%Y-%m-%dT%H:%M:%SZ")
+
+def render_atom_feed(base_url: str, entries: list[dict]) -> str:
+    if not entries:
+        raise BuildError("Cannot generate feed.xml: no public entries found")
+
+    feed_updated = entries[0]["published"].strftime("%Y-%m-%dT%H:%M:%SZ")
     lines = [
         "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
         '<feed xmlns="http://www.w3.org/2005/Atom">',
-        "  <title>Blog de Bolívar Alencastro</title>",
-        "  <subtitle>Product Design e Arquitetura Web Nativa</subtitle>",
+        "  <title>Publicações de Bolívar Alencastro</title>",
+        "  <subtitle>Blog, notas e páginas publicadas em um site HTML-first.</subtitle>",
         f"  <link href=\"{base_url}/feed.xml\" rel=\"self\"/>",
-        f"  <link href=\"{base_url}/blog.html\" rel=\"alternate\"/>",
+        f"  <link href=\"{base_url}/\" rel=\"alternate\"/>",
         f"  <updated>{feed_updated}</updated>",
         f"  <id>{base_url}/feed.xml</id>",
         "  <author>",
@@ -689,12 +862,12 @@ def render_atom_feed(base_url: str, posts: list[dict]) -> str:
         "",
     ]
 
-    for post in posts:
-        published = post["published"].strftime("%Y-%m-%dT%H:%M:%SZ")
-        title = html.escape(post["title"])
-        canonical = html.escape(post["canonical"])
-        summary = html.escape(post["summary"])
-        snippet = html.escape(post["snippet"])
+    for entry in entries:
+        published = entry["published"].strftime("%Y-%m-%dT%H:%M:%SZ")
+        title = html.escape(entry["title"])
+        canonical = html.escape(entry["canonical"])
+        summary = html.escape(entry["summary"])
+        snippet = html.escape(entry["snippet"])
         lines.extend(
             [
                 "  <entry>",
@@ -720,7 +893,16 @@ def write_or_check(path: pathlib.Path, content: str, check: bool, changed: list[
     if existing != content:
         changed.append(path)
         if not check:
+            path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text(content, encoding="utf-8", newline="\n")
+
+
+def remove_or_check_stale(path: pathlib.Path, check: bool, changed: list[pathlib.Path]) -> None:
+    if not path.exists():
+        return
+    changed.append(path)
+    if not check:
+        path.unlink()
 
 
 def infer_post_title(page: PageMeta) -> str:
@@ -740,7 +922,7 @@ def infer_project_title(page: PageMeta) -> str:
 
 
 def normalize_href(rel_path: str) -> str:
-    return "/" if rel_path == "index.html" else f"/{rel_path}"
+    return rel_path_to_href(rel_path)
 
 
 def normalize_cover_for_html(url: str, base_url: str) -> str:
@@ -890,6 +1072,7 @@ def main() -> int:
         )
 
     posts.sort(key=lambda item: item["published"], reverse=True)
+    notes = load_notes(repo_root, base_url=base_url)
 
     existing_projects_page = (repo_root / "projects.html").read_text(encoding="utf-8")
     manual_order = {}
@@ -936,6 +1119,30 @@ def main() -> int:
 
     projects.sort(key=lambda item: (manual_order.get(item["href"], 10_000), item["href"]))
 
+    blog_html_path = repo_root / "blog.html"
+    projects_html_path = repo_root / "projects.html"
+    index_html_path = repo_root / "index.html"
+    links_html_path = repo_root / "links.html"
+    now_html_path = repo_root / "now.html"
+
+    notes_lastmod = max((get_lastmod_date(note.path, repo_root) for note in notes), default=get_lastmod_date(now_html_path, repo_root))
+    blog_pages = paginate_archive(
+        posts,
+        per_page=BLOG_ARCHIVE_PAGE_SIZE,
+        rel_path_for_page=blog_archive_rel_path,
+        title_for_page=lambda page_number: "Blog - Bolívar Alencastro"
+        if page_number == 1
+        else f"Blog - Página {page_number} - Bolívar Alencastro",
+        description_for_page=lambda page_number: "Artigos, ensaios e notas sobre Product Design, HTML, CSS e arquitetura estática."
+        if page_number == 1
+        else f"Página {page_number} do arquivo do blog com artigos e ensaios de Bolívar Alencastro.",
+        base_url=base_url,
+    )
+    blog_page_one = blog_pages[0]
+    blog_extra_pages = {page.rel_path: render_blog_archive_page(page, base_url=base_url) for page in blog_pages[1:]}
+    note_pages = build_note_pages(notes, base_url=base_url)
+    note_archive_pages = build_notes_archive_pages(notes, base_url=base_url)
+
     sitemap_items: list[dict] = []
     for root_page in ROOT_PAGES:
         page_path = repo_root / root_page
@@ -957,11 +1164,41 @@ def main() -> int:
             }
         )
 
+    for rel_path in sorted(note_archive_pages):
+        priority = 0.7 if rel_path == "notes/index.html" else 0.5
+        sitemap_items.append(
+            {
+                "loc": rel_to_url(rel_path, base_url),
+                "lastmod": notes_lastmod,
+                "priority": priority,
+            }
+        )
+
+    for rel_path in sorted(blog_extra_pages):
+        page_items = next(page.items for page in blog_pages[1:] if page.rel_path == rel_path)
+        lastmod = max(get_lastmod_date(item["path"], repo_root) for item in page_items)
+        sitemap_items.append(
+            {
+                "loc": rel_to_url(rel_path, base_url),
+                "lastmod": lastmod,
+                "priority": 0.6,
+            }
+        )
+
     for post in posts:
         sitemap_items.append(
             {
                 "loc": post["url"],
                 "lastmod": get_lastmod_date(post["path"], repo_root),
+                "priority": 0.6,
+            }
+        )
+
+    for note in notes:
+        sitemap_items.append(
+            {
+                "loc": note.canonical_url,
+                "lastmod": get_lastmod_date(note.path, repo_root),
                 "priority": 0.6,
             }
         )
@@ -976,27 +1213,38 @@ def main() -> int:
         )
 
     sitemap_content = render_sitemap(base_url, sitemap_items)
-    feed_content = render_atom_feed(base_url, posts)
+    sitemap_txt_content = render_sitemap_txt(sitemap_items)
 
-    blog_list_inner = build_blog_list_html(posts)
-    blog_jsonld_inner = build_blog_collection_jsonld(posts, base_url)
+    feed_entries = list(posts)
+    for note in notes:
+        feed_entries.append(
+            {
+                "title": note.display_title,
+                "canonical": note.canonical_url,
+                "summary": note.description,
+                "snippet": note.excerpt_text or note.description,
+                "published": dt.datetime.combine(note.date, dt.time.min, tzinfo=dt.timezone.utc),
+            }
+        )
+    feed_entries.sort(key=lambda item: item["published"], reverse=True)
+    feed_content = render_atom_feed(base_url, feed_entries)
+
+    blog_list_inner = build_blog_list_html(blog_page_one.items)
+    blog_jsonld_inner = build_blog_collection_jsonld(blog_page_one.items, blog_page_one.canonical_url, "Blog - Bolívar Alencastro")
+    blog_pagination_inner = build_archive_pagination_html(blog_page_one, aria_label="Paginação do blog")
     projects_list_inner = build_projects_list_html(projects)
     featured_projects_inner = build_featured_projects_html(projects, limit=3)
     latest_post_inner = build_latest_post_html(posts[0])
     links_latest_post_inner = build_links_latest_post_html(posts[0])
     links_featured_project_inner = build_links_featured_project_html(projects[0])
     links_primary_actions_inner = build_links_primary_actions_html(posts[0], projects[0])
-    now_notes_inner = generate_now_notes_html(repo_root)
-
-    blog_html_path = repo_root / "blog.html"
-    projects_html_path = repo_root / "projects.html"
-    index_html_path = repo_root / "index.html"
-    links_html_path = repo_root / "links.html"
-    now_html_path = repo_root / "now.html"
+    now_notes_inner = generate_now_notes_html(repo_root, base_url=base_url)
 
     blog_html = blog_html_path.read_text(encoding="utf-8")
+    blog_html = ensure_auto_block_before_token(blog_html, "blog-pagination", "</main>")
     blog_html = replace_auto_block(blog_html, "blog-jsonld", blog_jsonld_inner)
     blog_html = replace_auto_block(blog_html, "blog-list", blog_list_inner)
+    blog_html = replace_auto_block(blog_html, "blog-pagination", blog_pagination_inner)
     projects_html = replace_auto_block(
         projects_html_path.read_text(encoding="utf-8"), "projects-list", projects_list_inner
     )
@@ -1033,6 +1281,7 @@ def main() -> int:
 
     changed: list[pathlib.Path] = []
     write_or_check(repo_root / "sitemap.xml", sitemap_content, args.check, changed)
+    write_or_check(repo_root / "sitemap.txt", sitemap_txt_content, args.check, changed)
     write_or_check(repo_root / "feed.xml", feed_content, args.check, changed)
     write_or_check(repo_root / "feed.txt", feed_content, args.check, changed)
 
@@ -1043,11 +1292,29 @@ def main() -> int:
         links_html_path: links_html,
         now_html_path: now_html,
     }
+    managed_pages.update({repo_root / rel_path: content for rel_path, content in blog_extra_pages.items()})
+    managed_pages.update({repo_root / rel_path: content for rel_path, content in note_pages.items()})
+    managed_pages.update({repo_root / rel_path: content for rel_path, content in note_archive_pages.items()})
     managed_pages.update(post_detail_managed)
     managed_pages.update(project_detail_managed)
     public_pages = [repo_root / name for name in ROOT_PAGES]
+    public_pages.extend(sorted(repo_root / rel_path for rel_path in blog_extra_pages))
+    public_pages.extend(sorted(repo_root / rel_path for rel_path in note_pages))
+    public_pages.extend(sorted(repo_root / rel_path for rel_path in note_archive_pages))
     public_pages.extend(post_files)
     public_pages.extend(project_files)
+
+    existing_note_generated = set((repo_root / "notes").glob("**/*.html")) if (repo_root / "notes").exists() else set()
+    expected_note_generated = {repo_root / rel_path for rel_path in note_pages} | {
+        repo_root / rel_path for rel_path in note_archive_pages
+    }
+    for stale_path in sorted(existing_note_generated - expected_note_generated):
+        remove_or_check_stale(stale_path, args.check, changed)
+
+    existing_blog_generated = set((repo_root / "blog" / "page").glob("*.html")) if (repo_root / "blog" / "page").exists() else set()
+    expected_blog_generated = {repo_root / rel_path for rel_path in blog_extra_pages}
+    for stale_path in sorted(existing_blog_generated - expected_blog_generated):
+        remove_or_check_stale(stale_path, args.check, changed)
 
     for page_path in public_pages:
         source_html = managed_pages.get(page_path)

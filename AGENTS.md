@@ -30,12 +30,26 @@ These instructions apply to the whole repository. Use them for Codex, GitHub Cop
 
 ## Generated files
 
-- Do not hand-edit `AUTO:` blocks in `index.html`, `blog.html`, or `projects.html`.
+- Do not hand-edit `AUTO:` blocks in `index.html`, `blog.html`, `projects.html`, or `now.html`.
 - Do not hand-edit feed and sitemap files unless debugging generation itself.
 - This repository uses local generation as the source of truth. Do not rely on GitHub Actions to rewrite generated files after push.
 - After changing public content, run:
   - `python3 scripts/build_site_metadata.py`
   - `python3 scripts/validate_site.py`
+
+## Notes workflow
+
+- Notes published on `Now` must be authored as source files in `content/notes/*.md`.
+- Do not create notes by editing the body of `now.html` directly.
+- Treat the `AUTO:now-notes` block in `now.html` as generated output only.
+- Treat `now.html` as the editorial entry point, not as the only public location of a note.
+- Each published note generates its own page in `notes/YYYY-MM-DD-slug.html`.
+- The complete notes archive is paginated in `notes/index.html` and `notes/page/N.html`.
+- When asked to create and publish a note with minimal friction, prefer `python3 scripts/note.py new ... --direct-main`.
+- `--direct-main` must publish from an isolated temporary worktree based on `origin/main`, so the note can go live without PR and without depending on the current local branch.
+- When asked to create or update a note without immediate publication, prefer `python3 scripts/note.py`.
+- If editing note sources manually, regenerate with `python3 scripts/build_site_metadata.py` and validate with `python3 scripts/validate_site.py`.
+- A request like `crie uma nota sobre...` should default to this note flow unless the user clearly asks for a blog post instead.
 
 ## Editorial stance
 
