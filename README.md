@@ -22,13 +22,19 @@ Esses arquivos nao substituem o `README`; eles tornam o contexto operacional do 
 
 Arquivos, blocos e referencias gerados automaticamente:
 - `sitemap.xml`
+- `sitemap.txt`
 - `feed.xml`
 - `feed.txt` (mantido sincronizado com `feed.xml` para compatibilidade)
 - bloco `AUTO:blog-jsonld` em `blog.html` (CollectionPage + ItemList)
 - bloco `AUTO:blog-list` em `blog.html`
+- bloco `AUTO:blog-pagination` em `blog.html`
 - bloco `AUTO:projects-list` em `projects.html`
 - bloco `AUTO:featured-projects` em `index.html`
 - bloco `AUTO:latest-post` em `index.html`
+- bloco `AUTO:now-notes` em `now.html`
+- `notes/index.html`
+- `notes/page/N.html` quando houver mais de 20 notas publicadas
+- `notes/YYYY-MM-DD-slug.html` para cada nota publicada
 - URLs versionadas para `/style.css` e `/assets/js/clarity.js` em todas as paginas publicas
 
 Scripts:
@@ -79,8 +85,11 @@ Nao ha mais workflow de GitHub Actions fazendo commit automatico em `main`. Isso
 Notas publicadas no `Now` agora nascem em `content/notes/*.md`.
 
 - um arquivo por nota
-- o HTML publico continua em `now.html`
+- `now.html` continua como porta de entrada editorial
+- cada nota publicada ganha uma pagina propria em `notes/YYYY-MM-DD-slug.html`
+- o arquivo completo das notas fica em `notes/index.html` e `notes/page/N.html`
 - `python3 scripts/build_site_metadata.py` le a pasta de notas e regenera o bloco `AUTO:now-notes`
+- `python3 scripts/build_site_metadata.py` tambem gera as paginas individuais das notas, o arquivo paginado, o `sitemap.xml`, o `sitemap.txt`, o `feed.xml` e o `feed.txt`
 - `python3 scripts/validate_site.py` valida o `now.html` e os arquivos-fonte das notas
 
 Formato recomendado:
@@ -108,6 +117,7 @@ Campos e regras:
 - `category`: opcional, padrao `Nota`
 - `classes`: opcional, para reaproveitar estilos como `note-seed`
 - `status`: `published` ou `draft`; rascunhos nao entram no `now.html`
+- notas publicadas entram no feed e no sitemap
 - shortcodes suportados: `image`, `audio`, `video`
 - para casos mais especificos, blocos HTML puros tambem podem ser embutidos no corpo
 
@@ -117,6 +127,48 @@ Fluxo recomendado para publicar uma nota:
 2. rodar `python3 scripts/build_site_metadata.py`
 3. rodar `python3 scripts/validate_site.py`
 4. commitar e publicar
+
+Atalho recomendado para agentes e terminal:
+
+```bash
+python3 scripts/note.py new "Titulo da nota" \
+  --body "Texto da nota" \
+  --direct-main
+```
+
+Esse comando:
+
+- cria o arquivo em `content/notes/`
+- regenera `now.html`
+- gera ou atualiza `notes/`
+- atualiza `feed.xml`, `feed.txt`, `sitemap.xml` e `sitemap.txt`
+- roda `validate_site.py`
+- cria um commit isolado a partir de `origin/main`
+- faz `git push` direto para `main`
+- evita PR e nao depende da branch local atual
+
+Esse e o fluxo mais simples para site estatico com GitHub Pages: a nota entra em `main` e o deploy do site segue o comportamento normal do Pages apos o push.
+
+Para criar e publicar na branch local atual, mantendo o fluxo Git normal:
+
+```bash
+python3 scripts/note.py new "Titulo da nota" \
+  --body "Texto da nota"
+```
+
+Para criar sem publicar ainda:
+
+```bash
+python3 scripts/note.py new "Titulo da nota" \
+  --body "Texto da nota" \
+  --no-publish
+```
+
+Para publicar uma nota ja criada:
+
+```bash
+python3 scripts/note.py publish content/notes/YYYY-MM-DD-slug.md
+```
 
 ## Publicacao social via CLI
 

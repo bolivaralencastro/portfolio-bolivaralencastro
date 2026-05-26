@@ -1,73 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://bolivaralencastro.com.br/</loc>
-    <lastmod>2026-03-15</lastmod>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://bolivaralencastro.com.br/about.html</loc>
-    <lastmod>2026-03-07</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://bolivaralencastro.com.br/blog.html</loc>
-    <lastmod>2026-03-15</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://bolivaralencastro.com.br/projects.html</loc>
-    <lastmod>2026-03-07</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://bolivaralencastro.com.br/now.html</loc>
-    <lastmod>2026-03-07</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bolivaralencastro.com.br/blog/d-eu-d-eus.html</loc>
-    <lastmod>2026-03-15</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://bolivaralencastro.com.br/blog/por-que-adotei-a-logica-da-indieweb-no-meu-portfolio.html</loc>
-    <lastmod>2026-03-08</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://bolivaralencastro.com.br/blog/design-dados-e-doao-de-sangue-como-um-totem-me-fez-repensar-a-experincia-do-usurio.html</loc>
-    <lastmod>2026-03-07</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://bolivaralencastro.com.br/blog/o-retorno-das-sombras-sem-o-retorno-da-conscincia.html</loc>
-    <lastmod>2026-03-07</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://bolivaralencastro.com.br/blog/design-para-liderar-com-clareza.html</loc>
-    <lastmod>2026-03-07</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://bolivaralencastro.com.br/projects/keeps-learning-konquest.html</loc>
-    <lastmod>2026-03-07</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bolivaralencastro.com.br/projects/kirinus-escola-de-danca.html</loc>
-    <lastmod>2026-03-07</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bolivaralencastro.com.br/projects/intelbras-opl-cidades-invisiveis.html</loc>
-    <lastmod>2026-03-07</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bolivaralencastro.com.br/projects/experiencia-branding-identidade-visual.html</loc>
-    <lastmod>2026-03-07</lastmod>
-    <priority>0.7</priority>
-  </url>
-</urlset>
+https://bolivaralencastro.com.br/
+https://bolivaralencastro.com.br/about.html
+https://bolivaralencastro.com.br/blog.html
+https://bolivaralencastro.com.br/projects.html
+https://bolivaralencastro.com.br/now.html
+https://bolivaralencastro.com.br/links.html
+https://bolivaralencastro.com.br/retratos-ufsc-florianopolis-imersivo.html
+https://bolivaralencastro.com.br/notes/
+https://bolivaralencastro.com.br/blog/codex-no-celular-conectado-ao-computador-para-publicar-no-blog.html
+https://bolivaralencastro.com.br/blog/o-que-33-posts-salvos-no-instagram-me-disseram-sobre-ia-e-criacao.html
+https://bolivaralencastro.com.br/blog/do-elevador-ao-making-of-openrouter-veo-seedance.html
+https://bolivaralencastro.com.br/blog/em-direcao-a-empresa-ai-first-distrito.html
+https://bolivaralencastro.com.br/blog/demoday-tera.html
+https://bolivaralencastro.com.br/blog/ap-403-memoria-de-um-lugar.html
+https://bolivaralencastro.com.br/blog/com-llms-cada-pagina-pode-voltar-a-ter-forma-propria.html
+https://bolivaralencastro.com.br/blog/o-que-30-dias-de-posts-salvos-me-disseram-sobre-ia.html
+https://bolivaralencastro.com.br/blog/publicando-no-linkedin-com-python-e-api.html
+https://bolivaralencastro.com.br/blog/agent-speedrun-bedrock-agentcore-e-o-que-ficou-do-workshop-no-cubo.html
+https://bolivaralencastro.com.br/blog/oracle-n8n-vercel-elevenlabs-e-a-stack-ai-first-no-cubo.html
+https://bolivaralencastro.com.br/blog/github-copilot-contexto-e-o-que-ficou-do-workshop-na-fiap.html
+https://bolivaralencastro.com.br/blog/anotacoes-sobre-o-excesso-e-o-norte-quantico.html
+https://bolivaralencastro.com.br/blog/o-impasse-da-totalidade.html
+https://bolivaralencastro.com.br/blog/as-pessoas-nao-queriam-cavalos-mais-rapidos.html
+https://bolivaralencastro.com.br/blog/por-que-adotei-a-logica-da-indieweb-no-meu-portfolio.html
+https://bolivaralencastro.com.br/blog/design-dados-e-doao-de-sangue-como-um-totem-me-fez-repensar-a-experincia-do-usurio.html
+https://bolivaralencastro.com.br/blog/o-retorno-das-sombras-sem-o-retorno-da-conscincia.html
+https://bolivaralencastro.com.br/blog/design-para-liderar-com-clareza.html
+https://bolivaralencastro.com.br/notes/2026-05-26-jules-em-paralelo.html
+https://bolivaralencastro.com.br/notes/2026-05-20-os-rastros-que-as-plataformas-veem.html
+https://bolivaralencastro.com.br/notes/2026-05-20-lendo-o-infinito-em-um-junco.html
+https://bolivaralencastro.com.br/notes/2026-05-20-antes-de-ler-a-politica-sexual-da-carne.html
+https://bolivaralencastro.com.br/notes/2026-05-19-notas-como-superficie.html
+https://bolivaralencastro.com.br/projects/keeps-learning-konquest.html
+https://bolivaralencastro.com.br/projects/kirinus-escola-de-danca.html
+https://bolivaralencastro.com.br/projects/intelbras-opl-cidades-invisiveis.html
+https://bolivaralencastro.com.br/projects/experiencia-branding-identidade-visual.html
+https://bolivaralencastro.com.br/projects/trabalhos-pessoais-arte-ilustracao.html
+https://bolivaralencastro.com.br/projects/grupo-rbs-planejamento-multimidia.html
+https://bolivaralencastro.com.br/projects/retratos-ufsc-florianopolis.html
+https://bolivaralencastro.com.br/projects/fotografia-instagram.html

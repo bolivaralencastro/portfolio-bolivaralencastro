@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Blog de Bolívar Alencastro</title>
-  <subtitle>Product Design e Arquitetura Web Nativa</subtitle>
+  <title>Publicações de Bolívar Alencastro</title>
+  <subtitle>Blog, notas e páginas publicadas em um site HTML-first.</subtitle>
   <link href="https://bolivaralencastro.com.br/feed.xml" rel="self"/>
-  <link href="https://bolivaralencastro.com.br/blog.html" rel="alternate"/>
-  <updated>2026-05-17T00:00:00Z</updated>
+  <link href="https://bolivaralencastro.com.br/" rel="alternate"/>
+  <updated>2026-05-26T00:00:00Z</updated>
   <id>https://bolivaralencastro.com.br/feed.xml</id>
   <author>
     <name>Bolívar Alencastro</name>
@@ -13,6 +13,56 @@
   <contributor>
     <name>Bolivar Alencastro</name>
   </contributor>
+
+  <entry>
+    <title>Jules em paralelo</title>
+    <link href="https://bolivaralencastro.com.br/notes/2026-05-26-jules-em-paralelo.html" rel="alternate"/>
+    <id>https://bolivaralencastro.com.br/notes/2026-05-26-jules-em-paralelo.html</id>
+    <published>2026-05-26T00:00:00Z</published>
+    <updated>2026-05-26T00:00:00Z</updated>
+    <summary>Fiz um teste disparando sessões independentes no Jules para rodar tarefas em paralelo e a experiência funcionou muito bem. Ao tratar o agente como uma esteira de…</summary>
+    <content type="html">&lt;p&gt;Fiz um teste disparando sessões independentes no Jules para rodar tarefas em paralelo e a experiência funcionou muito bem. Ao tratar o agente como uma esteira de execução simultânea, o fluxo deixa de disputar atenção e os avanços acontecem ao mesmo tempo.&lt;/p&gt;</content>
+  </entry>
+
+  <entry>
+    <title>Os rastros que as plataformas veem</title>
+    <link href="https://bolivaralencastro.com.br/notes/2026-05-20-os-rastros-que-as-plataformas-veem.html" rel="alternate"/>
+    <id>https://bolivaralencastro.com.br/notes/2026-05-20-os-rastros-que-as-plataformas-veem.html</id>
+    <published>2026-05-20T00:00:00Z</published>
+    <updated>2026-05-20T00:00:00Z</updated>
+    <summary>Queria ter acesso fácil aos meus próprios dados de navegação: saber o que faço na internet, quais percursos repito, em que conteúdos deposito atenção e o que me…</summary>
+    <content type="html">&lt;p&gt;Queria ter acesso fácil aos meus próprios dados de navegação: saber o que faço na internet, quais percursos repito, em que conteúdos deposito atenção e o que me atrai, sem depender de salvar links, compartilhar posts, recortar telas ou copiar e colar.&lt;/p&gt;</content>
+  </entry>
+
+  <entry>
+    <title>Lendo O infinito em um junco</title>
+    <link href="https://bolivaralencastro.com.br/notes/2026-05-20-lendo-o-infinito-em-um-junco.html" rel="alternate"/>
+    <id>https://bolivaralencastro.com.br/notes/2026-05-20-lendo-o-infinito-em-um-junco.html</id>
+    <published>2026-05-20T00:00:00Z</published>
+    <updated>2026-05-20T00:00:00Z</updated>
+    <summary>Estou lendo agora O infinito em um junco, de Irene Vallejo. Entrei nele para voltar à história material dos livros: como um texto ganha corpo, atravessa cópias,…</summary>
+    <content type="html">&lt;p&gt;Estou lendo agora O infinito em um junco , de Irene Vallejo . Entrei nele para voltar à história material dos livros: como um texto ganha corpo, atravessa cópias, sobrevive aos suportes e continua encontrando leitores muito depois do seu primeiro tempo.&lt;/p&gt;</content>
+  </entry>
+
+  <entry>
+    <title>Antes de ler A política sexual da carne</title>
+    <link href="https://bolivaralencastro.com.br/notes/2026-05-20-antes-de-ler-a-politica-sexual-da-carne.html" rel="alternate"/>
+    <id>https://bolivaralencastro.com.br/notes/2026-05-20-antes-de-ler-a-politica-sexual-da-carne.html</id>
+    <published>2026-05-20T00:00:00Z</published>
+    <updated>2026-05-20T00:00:00Z</updated>
+    <summary>Cheguei a A política sexual da carne, de Carol J. Adams, depois de dividir com minha companheira uma intuição que já vinha me rondando: pessoas alinhadas à…</summary>
+    <content type="html">&lt;p&gt;Cheguei a A política sexual da carne , de Carol J. Adams , depois de dividir com minha companheira uma intuição que já vinha me rondando: pessoas alinhadas à esquerda, comprometidas com pautas antirracistas, feministas, anticoloniais, anticapitalistas, ambientalistas e até espirituais, deveriam ao menos se aproximar com seriedade do veganismo.&lt;/p&gt;</content>
+  </entry>
+
+  <entry>
+    <title>Notas como superfície</title>
+    <link href="https://bolivaralencastro.com.br/notes/2026-05-19-notas-como-superficie.html" rel="alternate"/>
+    <id>https://bolivaralencastro.com.br/notes/2026-05-19-notas-como-superficie.html</id>
+    <published>2026-05-19T00:00:00Z</published>
+    <updated>2026-05-19T00:00:00Z</updated>
+    <summary>Estou testando o Now como superfície viva: um lugar para frases, links comentados, fotos, áudios, vídeos e rascunhos que ainda não são blogposts ou projetos, mas…</summary>
+    <content type="html">&lt;p&gt;Estou testando o Now como superfície viva: um lugar para frases, links comentados, fotos, áudios, vídeos e rascunhos que ainda não são blogposts ou projetos, mas já merecem existir no meu domínio.&lt;/p&gt;</content>
+  </entry>
 
   <entry>
     <title>Codex no celular, computador na mesa, post no ar</title>

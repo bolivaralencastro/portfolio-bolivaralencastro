@@ -1,6 +1,6 @@
 ---
 name: portfolio-notes-editorial
-description: Create, classify, revise, and publish short notes for this static portfolio. Use when the user sends a phrase, paragraph, rough idea, commented link, video, site, image, audio, video, group of photos, or unfinished thought that should become a complete feed item in now.html rather than a standalone blog post.
+description: Create, classify, revise, and publish short notes for this static portfolio. Use when the user sends a phrase, paragraph, rough idea, commented link, video, site, image, audio, video, group of photos, or unfinished thought that should become a complete note linked from now.html rather than a standalone blog post.
 argument-hint: "[raw note input, link, media, photos, draft idea, or feed update request]"
 user-invocable: true
 ---
@@ -11,10 +11,20 @@ Use this skill when turning raw inputs into notes for the portfolio feed.
 
 ## Core idea
 
-Notes are complete feed items published on `now.html`, usually inside
-`Em foco` or `Em maturação`.
-They do not get their own page. Each note must be readable in full in the
-feed and must have a stable anchor permalink.
+Notes are complete feed items published from `content/notes/*.md`.
+`now.html` remains the editorial entry point, but each published note also
+gets its own page in `notes/` and enters the paginated archive.
+
+Source of truth:
+
+- note sources live in `content/notes/*.md`
+- `now.html` is the entry surface for the newest notes
+- each published note generates `notes/YYYY-MM-DD-slug.html`
+- the complete archive lives in `notes/index.html` and `notes/page/N.html`
+- `python3 scripts/build_site_metadata.py` regenerates the `AUTO:now-notes` block and the public note pages
+
+Agents should write or edit note source files, not hand-edit the published
+`now.html` block.
 
 Use notes for:
 
@@ -36,7 +46,7 @@ Read:
 - [README.md](../../../README.md)
 - [blog-html.instructions.md](../../instructions/blog-html.instructions.md) only if the note should become a blog post
 - [portfolio-editorial/references/editorial-voice.md](../portfolio-editorial/references/editorial-voice.md) when rewriting or tightening tone
-- [references/note-patterns.md](./references/note-patterns.md) when adding or changing note HTML
+- [references/note-patterns.md](./references/note-patterns.md) when choosing media patterns, classes, and note structure
 
 ## Classification
 
@@ -66,33 +76,60 @@ would be incoherent or too large for the feed.
 - Use concrete nouns and tools instead of generic abstractions.
 - Avoid formulaic contrast structures such as `menos X, mais Y` and `não foi X, foi Y`.
 
-## HTML requirements
+## Source format
 
-Each note is an `article.h-entry` with:
+Each note should be authored as one Markdown file in `content/notes/`,
+preferably with a date-prefixed filename:
 
-- stable `id`, e.g. `nota-2026-05-19-contexto-ia`
-- `time.dt-published`
-- complete note content inside `.e-content`
-- visible `a.u-url` permalink pointing to `/now.html#<id>`
-- one or more `p-category` tags when useful
+- `content/notes/2026-05-20-lendo-o-infinito-em-um-junco.md`
+- `content/notes/2026-05-19-notas-como-superficie.md`
 
-Use media classes from [references/note-patterns.md](./references/note-patterns.md).
+Front matter fields:
 
-For a commented URL:
+- `title`: optional but recommended
+- `date`: required unless already encoded in the filename prefix
+- `category`: optional, default `Nota`
+- `classes`: optional, for cases like `note-seed`
+- `status`: optional, `published` or `draft`
 
-- include the source link in the content
-- use `u-bookmark-of` for bookmarked articles/sites/tools/repos
-- use `u-video` or normal link markup for video, depending on whether it is embedded or just referenced
+Example:
 
-For a group of photos:
+```md
+---
+title: Notas como superfície
+date: 2026-05-19
+category: Ideia em aberto
+classes: note-seed
+status: published
+---
 
-- create one note
-- render a carousel/group inside the note, not multiple notes
-- keep the photo group self-contained with captions and alt text
+Estou testando o Now como superfície viva...
+```
+
+## Body format
+
+Supported body patterns:
+
+- regular Markdown paragraphs
+- links, emphasis, lists, and blockquotes
+- raw HTML when the note needs a custom fragment
+- shortcodes for common media:
+
+```md
+{{ image src="/assets/images/now/exemplo.webp" alt="Descricao da imagem." width="1440" height="1280" }}
+{{ audio src="/assets/audio/notas/exemplo.m4a" caption="Trecho de audio." }}
+{{ video src="/assets/video/notas/exemplo.mp4" poster="/assets/images/now/exemplo-poster.webp" caption="Clip curto." }}
+```
+
+Use media classes and visual patterns from
+[references/note-patterns.md](./references/note-patterns.md) as guidance for
+what the generated HTML should feel like.
 
 ## Asset rules
 
-- Store note assets in `assets/images/notes/<note-id>/` when the site starts using note media.
+- Store note assets in stable public folders such as `assets/images/now/`,
+  `assets/audio/notas/`, or `assets/video/notas/` unless a more specific
+  convention already exists.
 - Prefer `webp` for images used on the site.
 - Keep original source images only when useful for future edits.
 - Do not place large source dumps directly in the public path unless intentionally retained.
@@ -100,12 +137,21 @@ For a group of photos:
 ## Workflow
 
 1. Decide whether the input is a note, carousel, commented link, media note, seed, or blog candidate.
-2. Add the note to `now.html`, choosing `Em foco` for active work and `Em maturação` for seeds that may later become posts or projects.
-3. Create a stable note id using date + short slug.
-4. Add the note near the top of the feed in reverse chronological order.
-5. Preserve all content in the feed; do not create a standalone note page.
-6. If adding media, place assets in the appropriate note folder and use accessible alt text/captions.
-7. Run:
+2. Create or update one file in `content/notes/`.
+3. Prefer a stable date-prefixed filename with a short slug.
+4. Write front matter and body in the lightest format that preserves the note well.
+5. If adding media, place assets in the appropriate public folder and use accessible alt text/captions.
+6. Preserve note scale; do not expand into blog-post structure unless needed.
+7. Prefer the wrapper script with direct publication to `origin/main` when the task should publish immediately:
+
+```bash
+python3 scripts/note.py new "Titulo da nota" --body "Texto da nota" --direct-main
+python3 scripts/note.py publish content/notes/YYYY-MM-DD-slug.md
+```
+
+Use the version without `--direct-main` only when the user explicitly wants to keep the note on the current local branch before publishing.
+
+8. If working manually, run:
 
 ```bash
 python3 scripts/build_site_metadata.py
@@ -115,7 +161,8 @@ python3 scripts/validate_site.py
 ## Do not
 
 - Do not turn every note into a blog post.
-- Do not create one page per note.
-- Do not hide the full note behind a preview/read-more pattern.
+- Do not hand-maintain note pages in `notes/`; they are generated.
+- Do not hide the full note behind a preview/read-more pattern on the individual note page.
 - Do not embed remote media when a simple cited link is more durable.
 - Do not add frameworks, CMS layers, or client-side feed machinery.
+- Do not hand-edit the generated `AUTO:now-notes` block in `now.html`.

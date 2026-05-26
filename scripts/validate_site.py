@@ -14,7 +14,7 @@ from dataclasses import dataclass
 from typing import Iterable, List
 from urllib.parse import parse_qs, urlsplit
 
-from notes_pipeline import NOTE_AUTO_BLOCK, load_notes
+from notes_pipeline import NOTE_ARCHIVE_PAGE_SIZE, NOTE_AUTO_BLOCK, NOW_NOTES_LIMIT, load_notes, notes_archive_rel_path
 
 BASE_URL_DEFAULT = "https://bolivaralencastro.com.br"
 ROOT_PAGES = ["index.html", "about.html", "blog.html", "projects.html", "now.html", "links.html", "retratos-ufsc-florianopolis-imersivo.html"]
@@ -246,6 +246,9 @@ def iter_public_pages(repo_root: pathlib.Path) -> List[pathlib.Path]:
             pages.append(path)
 
     pages.extend(sorted((repo_root / "blog").glob("*.html")))
+    pages.extend(sorted((repo_root / "blog" / "page").glob("*.html")))
+    pages.extend(sorted((repo_root / "notes").glob("*.html")))
+    pages.extend(sorted((repo_root / "notes" / "page").glob("*.html")))
     pages.extend(sorted((repo_root / "projects").glob("*.html")))
     return pages
 
@@ -298,6 +301,14 @@ def canonical_expected(base_url: str, rel_path: str) -> str:
     if rel_path.endswith("/index.html"):
         return f"{base_url}/{rel_path.removesuffix('/index.html')}/"
     return f"{base_url}/{rel_path}"
+
+
+def is_note_detail_rel_path(rel_path: str) -> bool:
+    return bool(re.fullmatch(r"notes/\d{4}-\d{2}-\d{2}-[a-z0-9-]+\.html", rel_path))
+
+
+def is_notes_archive_rel_path(rel_path: str) -> bool:
+    return rel_path == "notes/index.html" or bool(re.fullmatch(r"notes/page/\d+\.html", rel_path))
 
 
 def resolve_internal_link(repo_root: pathlib.Path, href: str) -> pathlib.Path:
@@ -389,11 +400,19 @@ def main() -> int:
 
     errors: list[str] = []
     warnings: list[str] = []
+    published_notes = []
+    all_notes = []
 
     try:
-        load_notes(repo_root)
+        published_notes = load_notes(repo_root, base_url=base_url)
+        all_notes = load_notes(repo_root, base_url=base_url, include_drafts=True)
     except RuntimeError as exc:
         errors.append(f"notes: {exc}")
+
+    note_by_rel_path = {note.public_rel_path: note for note in published_notes}
+    draft_notes = [note for note in all_notes if note.status == "draft"]
+    sitemap_content = (repo_root / "sitemap.xml").read_text(encoding="utf-8") if (repo_root / "sitemap.xml").exists() else ""
+    feed_content = (repo_root / "feed.xml").read_text(encoding="utf-8") if (repo_root / "feed.xml").exists() else ""
 
     for page in metas:
         expected_canonical = canonical_expected(base_url, page.rel_path)
@@ -434,7 +453,7 @@ def main() -> int:
                 if source not in page.csp_content:
                     errors.append(f"{page.rel_path}: CSP must allow Clarity source '{source}'")
 
-        if page.rel_path.startswith("blog/"):
+        if page.rel_path.startswith("blog/") and not page.rel_path.startswith("blog/page/"):
             raw_html = page.path.read_text(encoding="utf-8")
             if not page.published_datetime:
                 errors.append(f"{page.rel_path}: missing time.dt-published[datetime]")
@@ -466,19 +485,57 @@ def main() -> int:
             elif not re.search(r"\b\d+\s*min\b", reading_time_text.lower()):
                 errors.append(f"{page.rel_path}: reading time must include minutes (ex: '6 min de leitura')")
 
-        if page.rel_path == "blog.html":
+        if page.rel_path == "blog.html" or page.rel_path.startswith("blog/page/"):
             has_collection_jsonld = any(
                 bool({"CollectionPage", "Blog"} & extract_jsonld_types(payload)) for payload in page.jsonld_blocks
             )
             has_item_list_jsonld = any("ItemList" in extract_jsonld_types(payload) for payload in page.jsonld_blocks)
             if not has_collection_jsonld:
-                errors.append("blog.html: missing JSON-LD for CollectionPage or Blog")
+                errors.append(f"{page.rel_path}: missing JSON-LD for CollectionPage or Blog")
             if not has_item_list_jsonld:
-                errors.append("blog.html: missing JSON-LD ItemList for post listing")
+                errors.append(f"{page.rel_path}: missing JSON-LD ItemList for post listing")
 
+            if page.rel_path == "blog.html":
+                raw_html = page.path.read_text(encoding="utf-8")
+                if "<!-- AUTO:blog-jsonld:start -->" not in raw_html or "<!-- AUTO:blog-jsonld:end -->" not in raw_html:
+                    errors.append("blog.html: missing AUTO markers for blog JSON-LD block")
+
+        if is_note_detail_rel_path(page.rel_path):
             raw_html = page.path.read_text(encoding="utf-8")
-            if "<!-- AUTO:blog-jsonld:start -->" not in raw_html or "<!-- AUTO:blog-jsonld:end -->" not in raw_html:
-                errors.append("blog.html: missing AUTO markers for blog JSON-LD block")
+            note = note_by_rel_path.get(page.rel_path)
+            if note is None:
+                errors.append(f"{page.rel_path}: generated note page has no matching published source note")
+            else:
+                if not page.published_datetime:
+                    errors.append(f"{page.rel_path}: missing time.dt-published[datetime]")
+                elif not is_valid_iso_datetime(page.published_datetime):
+                    errors.append(f"{page.rel_path}: dt-published datetime must be ISO format")
+                if page.h1_texts and page.h1_texts[0] != note.display_title:
+                    errors.append(f"{page.rel_path}: <h1> should match the note title '{note.display_title}'")
+                if note.canonical_url not in sitemap_content:
+                    errors.append(f"{page.rel_path}: note canonical URL is missing from sitemap.xml")
+                if note.canonical_url not in feed_content:
+                    errors.append(f"{page.rel_path}: note canonical URL is missing from feed.xml")
+            if not any("Article" in extract_jsonld_types(payload) for payload in page.jsonld_blocks):
+                errors.append(f"{page.rel_path}: missing JSON-LD Article")
+            if not page.og_image:
+                errors.append(f"{page.rel_path}: missing og:image")
+            if "/now.html" not in page.links:
+                errors.append(f"{page.rel_path}: missing visible link back to /now.html")
+            if not any(href in {"/notes/", "/notes/index.html"} for href in page.links):
+                errors.append(f"{page.rel_path}: missing visible link to the notes archive")
+            if not class_exists(raw_html, "note-page-meta"):
+                errors.append(f"{page.rel_path}: missing visible note metadata block (.note-page-meta)")
+
+        if is_notes_archive_rel_path(page.rel_path):
+            has_collection_jsonld = any("CollectionPage" in extract_jsonld_types(payload) for payload in page.jsonld_blocks)
+            has_item_list_jsonld = any("ItemList" in extract_jsonld_types(payload) for payload in page.jsonld_blocks)
+            if not has_collection_jsonld:
+                errors.append(f"{page.rel_path}: missing JSON-LD CollectionPage")
+            if not has_item_list_jsonld:
+                errors.append(f"{page.rel_path}: missing JSON-LD ItemList")
+            if "/now.html" not in page.links:
+                errors.append(f"{page.rel_path}: missing visible link back to /now.html")
 
         if page.rel_path.startswith("projects/"):
             project_content_images = [image for image in page.images if image.in_e_content]
@@ -541,6 +598,55 @@ def main() -> int:
             raw_html = page.path.read_text(encoding="utf-8")
             if notes_block_start not in raw_html or notes_block_end not in raw_html:
                 errors.append("now.html: missing AUTO markers for notes block")
+            note_matches = re.findall(r'<article id="now-\d{4}-\d{2}-\d{2}-[^"]+" class="note h-entry', raw_html)
+            expected_note_count = min(len(published_notes), NOW_NOTES_LIMIT)
+            if len(note_matches) != expected_note_count:
+                errors.append(
+                    f"now.html: expected {expected_note_count} published notes in the generated block, found {len(note_matches)}"
+                )
+            if len(note_matches) > NOW_NOTES_LIMIT:
+                errors.append(f"now.html: expected at most {NOW_NOTES_LIMIT} notes in the generated block")
+            if "Ver arquivo completo de notas" not in raw_html:
+                errors.append("now.html: missing visible archive link text 'Ver arquivo completo de notas'")
+            for note in published_notes[:expected_note_count]:
+                if note.public_url not in raw_html:
+                    errors.append(f"now.html: missing note link to '{note.public_url}' in the recent notes block")
+
+    expected_note_archive_paths = {
+        notes_archive_rel_path(page_number)
+        for page_number in range(1, max(1, (len(published_notes) + NOTE_ARCHIVE_PAGE_SIZE - 1) // NOTE_ARCHIVE_PAGE_SIZE) + 1)
+    }
+    existing_note_archive_paths = {
+        page.relative_to(repo_root).as_posix()
+        for page in ([repo_root / "notes" / "index.html"] if (repo_root / "notes" / "index.html").exists() else [])
+    }
+    if (repo_root / "notes" / "page").exists():
+        existing_note_archive_paths.update(
+            path.relative_to(repo_root).as_posix() for path in (repo_root / "notes" / "page").glob("*.html")
+        )
+
+    for rel_path in sorted(expected_note_archive_paths):
+        if rel_path not in existing_note_archive_paths:
+            errors.append(f"{rel_path}: missing generated notes archive page")
+        elif canonical_expected(base_url, rel_path) not in sitemap_content:
+            errors.append(f"{rel_path}: archive canonical URL is missing from sitemap.xml")
+
+    for rel_path in sorted(existing_note_archive_paths - expected_note_archive_paths):
+        errors.append(f"{rel_path}: stale notes archive page exists without a matching pagination slot")
+
+    for note in published_notes:
+        if note.public_rel_path not in note_by_rel_path:
+            errors.append(f"{note.public_rel_path}: missing published note mapping")
+        if not (repo_root / note.public_rel_path).exists():
+            errors.append(f"{note.public_rel_path}: missing generated note page")
+
+    for draft_note in draft_notes:
+        if (repo_root / draft_note.public_rel_path).exists():
+            errors.append(f"{draft_note.public_rel_path}: draft note should not have a public HTML page")
+        if draft_note.canonical_url and draft_note.canonical_url in sitemap_content:
+            errors.append(f"{draft_note.rel_path}: draft note must not appear in sitemap.xml")
+        if draft_note.canonical_url and draft_note.canonical_url in feed_content:
+            errors.append(f"{draft_note.rel_path}: draft note must not appear in feed.xml")
 
     validate_robots(repo_root, base_url, errors)
     validate_links(repo_root, metas, errors)
