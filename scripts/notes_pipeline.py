@@ -643,7 +643,7 @@ def render_archive_note_item(note: Note) -> list[str]:
         '        <div class="note-index-body">',
         f'          <h2 class="p-name"><a class="u-url" href="{note.public_url}">{html.escape(note.display_title)}</a></h2>',
         '          <div class="note-index-excerpt e-content">',
-        indent_block(note.excerpt_html, "            "),
+        indent_block(note.body_html, "            "),
         "          </div>",
         '          <footer class="note-meta">',
         f'            <span class="p-category">{html.escape(note.category)}</span>',
