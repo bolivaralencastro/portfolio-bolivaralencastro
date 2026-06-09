@@ -18,9 +18,14 @@ from notes_pipeline import NOTE_ARCHIVE_PAGE_SIZE, NOTE_AUTO_BLOCK, NOW_NOTES_LI
 
 BASE_URL_DEFAULT = "https://bolivaralencastro.com.br"
 ROOT_PAGES = ["index.html", "about.html", "blog.html", "projects.html", "now.html", "links.html", "retratos-ufsc-florianopolis-imersivo.html"]
-CLARITY_SCRIPT_SRC = "/assets/js/clarity.js"
+GTM_SCRIPT_SRC = "/assets/js/gtm.js"
 MAIN_STYLESHEET_HREF = "/style.css"
-CLARITY_CSP_SOURCES = ["https://*.clarity.ms", "https://c.bing.com"]
+TAGGING_CSP_SOURCES = [
+    "https://www.googletagmanager.com",
+    "https://www.google-analytics.com",
+    "https://*.clarity.ms",
+    "https://c.bing.com",
+]
 VOID_TAGS = {
     "area",
     "base",
@@ -438,20 +443,20 @@ def main() -> int:
         elif not any(has_version_query(href) for href in matching_stylesheets):
             errors.append(f"{page.rel_path}: main stylesheet must include a version query parameter")
 
-        matching_clarity_scripts = [src for src in page.script_srcs if asset_path(src) == CLARITY_SCRIPT_SRC]
-        matching_deferred_clarity_scripts = [
-            src for src in page.deferred_script_srcs if asset_path(src) == CLARITY_SCRIPT_SRC
+        matching_gtm_scripts = [src for src in page.script_srcs if asset_path(src) == GTM_SCRIPT_SRC]
+        matching_deferred_gtm_scripts = [
+            src for src in page.deferred_script_srcs if asset_path(src) == GTM_SCRIPT_SRC
         ]
-        if not matching_clarity_scripts:
-            errors.append(f"{page.rel_path}: missing Clarity loader script '{CLARITY_SCRIPT_SRC}'")
-        elif not any(has_version_query(src) for src in matching_clarity_scripts):
-            errors.append(f"{page.rel_path}: Clarity loader script must include a version query parameter")
-        if not matching_deferred_clarity_scripts:
-            errors.append(f"{page.rel_path}: Clarity loader script must use 'defer'")
+        if not matching_gtm_scripts:
+            errors.append(f"{page.rel_path}: missing GTM loader script '{GTM_SCRIPT_SRC}'")
+        elif not any(has_version_query(src) for src in matching_gtm_scripts):
+            errors.append(f"{page.rel_path}: GTM loader script must include a version query parameter")
+        if not matching_deferred_gtm_scripts:
+            errors.append(f"{page.rel_path}: GTM loader script must use 'defer'")
         if page.csp_content:
-            for source in CLARITY_CSP_SOURCES:
+            for source in TAGGING_CSP_SOURCES:
                 if source not in page.csp_content:
-                    errors.append(f"{page.rel_path}: CSP must allow Clarity source '{source}'")
+                    errors.append(f"{page.rel_path}: CSP must allow tagging source '{source}'")
 
         if page.rel_path.startswith("blog/") and not page.rel_path.startswith("blog/page/"):
             raw_html = page.path.read_text(encoding="utf-8")

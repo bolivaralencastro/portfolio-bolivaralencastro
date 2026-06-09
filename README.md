@@ -35,7 +35,7 @@ Arquivos, blocos e referencias gerados automaticamente:
 - `notes/index.html`
 - `notes/page/N.html` quando houver mais de 20 notas publicadas
 - `notes/YYYY-MM-DD-slug.html` para cada nota publicada
-- URLs versionadas para `/style.css` e `/assets/js/clarity.js` em todas as paginas publicas
+- URLs versionadas para `/style.css` e `/assets/js/gtm.js` em todas as paginas publicas
 
 Scripts:
 - `python scripts/build_site_metadata.py`: gera sitemap, feed, blocos auto-gerados e atualiza o versionamento de assets publicos.
@@ -46,19 +46,19 @@ Scripts:
 
 ## Analytics
 
-- O portfolio carrega o Microsoft Clarity por meio de [`assets/js/clarity.js`](./assets/js/clarity.js).
-- O ID do projeto ativo e `t8asclyhhx`.
-- Toda pagina publica deve incluir o loader do Clarity e a folha principal com URL versionada, por exemplo:
+- O portfolio carrega Google Tag Manager por meio de [`assets/js/gtm.js`](./assets/js/gtm.js).
+- O container ativo e `GTM-T3LNHCNR`.
+- O container publica Google Analytics 4 (`G-Q08W81XJ0K`) e Microsoft Clarity (`t8asclyhhx`).
+- Toda pagina publica deve incluir o loader do GTM e a folha principal com URL versionada, por exemplo:
   - `<link rel="stylesheet" href="/style.css?v=HASH">`
-  - `<script src="/assets/js/clarity.js?v=HASH" defer></script>`
-- As paginas com CSP liberam `www.clarity.ms`, `*.clarity.ms` e `c.bing.com`.
-- Para integrar um banner proprio no futuro, use `window.portfolioClarityConsent("granted" | "denied", "granted" | "denied")`.
+  - `<script src="/assets/js/gtm.js?v=HASH" defer></script>`
+- As paginas com CSP liberam GTM, GA4 e Clarity: `www.googletagmanager.com`, `www.google-analytics.com`, `*.google-analytics.com`, `www.clarity.ms`, `*.clarity.ms` e `c.bing.com`.
 
 ## Cache de assets
 
 - O HTML continua sem cache agressivo para evitar pagina velha apos deploy.
 - CSS/JS estaticos devem ser servidos com URL versionada para permitir cache forte no Cloudflare sem risco pratico de stale asset.
-- Sempre que `style.css` ou `assets/js/clarity.js` mudarem, rode `python scripts/build_site_metadata.py` antes de publicar se estiver trabalhando fora do CI.
+- Sempre que `style.css` ou `assets/js/gtm.js` mudarem, rode `python scripts/build_site_metadata.py` antes de publicar se estiver trabalhando fora do CI.
 - Para cards de listagem, prefira `card.webp` no mesmo diretorio da imagem social. O gerador usa `card.webp`, cai para `cover.webp` e so usa `og.*` como ultimo fallback.
 
 ## Workflows GitHub Actions
