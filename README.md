@@ -49,16 +49,26 @@ Scripts:
 - O portfolio carrega Google Tag Manager por meio de [`assets/js/gtm.js`](./assets/js/gtm.js).
 - O container ativo e `GTM-T3LNHCNR`.
 - O container publica Google Analytics 4 (`G-Q08W81XJ0K`) e Microsoft Clarity (`t8asclyhhx`).
-- Toda pagina publica deve incluir o loader do GTM e a folha principal com URL versionada, por exemplo:
+- Eventos proprios do site sao enviados ao `dataLayer` por [`assets/js/analytics-events.js`](./assets/js/analytics-events.js).
+- Toda pagina publica deve incluir o loader do GTM, o script de eventos e a folha principal com URL versionada, por exemplo:
   - `<link rel="stylesheet" href="/style.css?v=HASH">`
   - `<script src="/assets/js/gtm.js?v=HASH" defer></script>`
+  - `<script src="/assets/js/analytics-events.js?v=HASH" defer></script>`
 - As paginas com CSP liberam GTM, GA4 e Clarity: `www.googletagmanager.com`, `www.google-analytics.com`, `*.google-analytics.com`, `www.clarity.ms`, `*.clarity.ms` e `c.bing.com`.
+- Eventos enviados ao GTM/GA4:
+  - `portfolio_page_context`
+  - `portfolio_read_depth`
+  - `portfolio_contact_click`
+  - `portfolio_social_click`
+  - `portfolio_outbound_click`
+  - `portfolio_content_click`
+- Parametros principais: `page_type`, `site_section`, `content_type`, `content_slug`, `content_title`, `content_category`, `content_date`, `page_path`, `page_location`, `canonical_url`, `link_url`, `link_text`, `link_domain`, `social_network`, `contact_type`, `target_content_type`, `target_content_slug` e `read_percent`.
 
 ## Cache de assets
 
 - O HTML continua sem cache agressivo para evitar pagina velha apos deploy.
 - CSS/JS estaticos devem ser servidos com URL versionada para permitir cache forte no Cloudflare sem risco pratico de stale asset.
-- Sempre que `style.css` ou `assets/js/gtm.js` mudarem, rode `python scripts/build_site_metadata.py` antes de publicar se estiver trabalhando fora do CI.
+- Sempre que `style.css`, `assets/js/gtm.js` ou `assets/js/analytics-events.js` mudarem, rode `python scripts/build_site_metadata.py` antes de publicar se estiver trabalhando fora do CI.
 - Para cards de listagem, prefira `card.webp` no mesmo diretorio da imagem social. O gerador usa `card.webp`, cai para `cover.webp` e so usa `og.*` como ultimo fallback.
 
 ## Workflows GitHub Actions
