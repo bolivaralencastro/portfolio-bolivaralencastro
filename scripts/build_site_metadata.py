@@ -35,7 +35,7 @@ LISTING_CARD_WIDTH = 960
 LISTING_CARD_HEIGHT = 540
 VERSIONED_ASSETS = {
     "/style.css": pathlib.Path("style.css"),
-    "/assets/js/clarity.js": pathlib.Path("assets/js/clarity.js"),
+    "/assets/js/gtm.js": pathlib.Path("assets/js/gtm.js"),
     "/assets/js/lightbox.js": pathlib.Path("assets/js/lightbox.js"),
     "/assets/js/mobile-nav.js": pathlib.Path("assets/js/mobile-nav.js"),
 }
@@ -753,7 +753,7 @@ def render_blog_archive_page(page: ArchivePage, *, base_url: str) -> str:
         f"  <title>{html.escape(page.title)}</title>",
         f'  <meta name="description" content="{html.escape(page.description, quote=True)}">',
         '  <link rel="stylesheet" href="/style.css">',
-        '  <script src="/assets/js/clarity.js" defer></script>',
+        '  <script src="/assets/js/gtm.js" defer></script>',
         f'  <link rel="canonical" href="{html.escape(page.canonical_url, quote=True)}">',
         f'  <meta name="author" content="{html.escape(FEED_AUTHOR_NAME, quote=True)}">',
         '  <meta name="generator" content="Handcrafted HTML">',
@@ -1002,7 +1002,7 @@ def ensure_script_reference(html_content: str, public_path: str, defer: bool = T
 def apply_versioned_asset_refs(html_content: str, versions: dict[str, str]) -> str:
     updated = html_content
     updated = replace_asset_reference(updated, "href", "/style.css", versions["/style.css"])
-    updated = replace_asset_reference(updated, "src", "/assets/js/clarity.js", versions["/assets/js/clarity.js"])
+    updated = replace_asset_reference(updated, "src", "/assets/js/gtm.js", versions["/assets/js/gtm.js"])
     updated = replace_asset_reference(updated, "src", "/assets/js/lightbox.js", versions["/assets/js/lightbox.js"])
     updated = replace_asset_reference(updated, "src", "/assets/js/mobile-nav.js", versions["/assets/js/mobile-nav.js"])
     return updated
