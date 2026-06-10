@@ -1330,6 +1330,35 @@ a {
   color: var(--muted);
 }
 
+.project-reference {
+  display: grid;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+}
+
+.project-reference p {
+  max-width: 54ch;
+}
+
+.project-reference-media {
+  margin: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--bg) 86%, var(--text) 14%) 0%,
+      color-mix(in srgb, var(--bg) 96%, var(--text) 4%) 100%
+    );
+}
+
+.project-reference-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
 .code-block {
   padding: 3.1rem 1rem 1rem;
   color: var(--text);
