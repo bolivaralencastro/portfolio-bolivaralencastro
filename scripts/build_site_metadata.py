@@ -387,23 +387,43 @@ def rewrite_project_detail_blocks(content: str, author_html: str, related_html: 
     content = ensure_auto_block_before_token(content, "project-author-card", "</article>")
     content = relocate_auto_block_before_token(content, "project-related-projects", "</main>")
 
-    combined_pattern = re.compile(
-        r"\s*<!-- AUTO:project-author-card:start -->.*?<!-- AUTO:project-related-projects:end -->",
-        re.DOTALL,
-    )
-    replacement = "\n".join(
-        [
-            "        <!-- AUTO:project-author-card:start -->",
-            author_html,
-            "        <!-- AUTO:project-author-card:end -->",
-            "    </article>",
-            "    <!-- AUTO:project-related-projects:start -->",
-            related_html,
-            "    <!-- AUTO:project-related-projects:end -->",
-        ]
-    )
-    if combined_pattern.search(content):
-        return combined_pattern.sub(replacement, content, count=1)
+    if 'class="project-column col-8"' in content:
+        combined_pattern = re.compile(
+            r"\s*</div>\s*<!-- AUTO:project-author-card:start -->.*?<!-- AUTO:project-related-projects:end -->",
+            re.DOTALL,
+        )
+        replacement = "\n".join(
+            [
+                "        <!-- AUTO:project-author-card:start -->",
+                author_html,
+                "        <!-- AUTO:project-author-card:end -->",
+                "      </div>",
+                "    </article>",
+                "    <!-- AUTO:project-related-projects:start -->",
+                related_html,
+                "    <!-- AUTO:project-related-projects:end -->",
+            ]
+        )
+        if combined_pattern.search(content):
+            return combined_pattern.sub(replacement, content, count=1)
+    else:
+        combined_pattern = re.compile(
+            r"\s*<!-- AUTO:project-author-card:start -->.*?<!-- AUTO:project-related-projects:end -->",
+            re.DOTALL,
+        )
+        replacement = "\n".join(
+            [
+                "        <!-- AUTO:project-author-card:start -->",
+                author_html,
+                "        <!-- AUTO:project-author-card:end -->",
+                "    </article>",
+                "    <!-- AUTO:project-related-projects:start -->",
+                related_html,
+                "    <!-- AUTO:project-related-projects:end -->",
+            ]
+        )
+        if combined_pattern.search(content):
+            return combined_pattern.sub(replacement, content, count=1)
     raise BuildError("Could not rewrite project detail blocks")
 
 
