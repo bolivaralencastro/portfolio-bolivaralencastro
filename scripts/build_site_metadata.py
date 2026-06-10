@@ -40,6 +40,9 @@ VERSIONED_ASSETS = {
     "/assets/js/lightbox.js": pathlib.Path("assets/js/lightbox.js"),
     "/assets/js/mobile-nav.js": pathlib.Path("assets/js/mobile-nav.js"),
 }
+PROJECT_ORDER_AFTER = {
+    "/projects/keeps-learning-site-identidade.html": "/projects/keeps-learning-konquest.html",
+}
 
 
 class BuildError(RuntimeError):
@@ -1086,6 +1089,9 @@ def main() -> int:
     manual_order = {}
     for idx, href in enumerate(re.findall(r"href=[\"'](/projects/[^\"']+\.html)[\"']", existing_projects_page)):
         manual_order[href] = idx
+    for href, previous_href in PROJECT_ORDER_AFTER.items():
+        if previous_href in manual_order:
+            manual_order[href] = manual_order[previous_href] + 0.5
 
     projects: list[dict] = []
     for project_path in project_files:
