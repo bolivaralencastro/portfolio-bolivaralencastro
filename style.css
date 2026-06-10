@@ -1518,6 +1518,15 @@ a {
   }
 }
 
+/* Garante que o bloco "Sobre o autor" sempre ocupe a linha inteira
+   dentro dos artigos em grid, evitando que ele seja auto-posicionado
+   ao lado do conteúdo anterior em algumas páginas/projetos. */
+.e-content > .author-card,
+.h-entry > .author-card {
+  grid-column: 1 / -1;
+  justify-self: stretch;
+}
+
 /* ---------- Lists ---------- */
 
 ul, ol {
