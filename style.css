@@ -1302,7 +1302,7 @@ a {
 }
 
 .project-hero-media .project-media-surface {
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 16 / 9;
   padding: clamp(0.9rem, 2.5vw, 1.15rem);
   overflow: hidden;
 }
@@ -1310,7 +1310,7 @@ a {
 .project-hero-media .project-media-surface img {
   width: 100%;
   max-width: none;
-  margin-block: -1.1rem;
+  margin-block: -0.65rem;
 }
 
 .project-media-surface img {
