@@ -1302,15 +1302,15 @@ a {
 }
 
 .project-hero-media .project-media-surface {
-  aspect-ratio: auto;
-  padding: clamp(1rem, 3vw, 1.25rem);
-  overflow: visible;
+  aspect-ratio: 3 / 2;
+  padding: clamp(0.9rem, 2.5vw, 1.15rem);
+  overflow: hidden;
 }
 
 .project-hero-media .project-media-surface img {
   width: 100%;
   max-width: none;
-  margin-block: -0.85rem;
+  margin-block: -1.1rem;
 }
 
 .project-media-surface img {
@@ -1880,7 +1880,7 @@ body > footer {
   }
 
   .project-hero-media .project-media-surface {
-    aspect-ratio: auto;
+    aspect-ratio: 3 / 2;
   }
 
   .page-hero {
