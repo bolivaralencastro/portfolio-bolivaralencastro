@@ -1286,7 +1286,6 @@ a {
   align-items: center;
   justify-content: center;
   padding: clamp(0.75rem, 2vw, 1rem);
-  border: 1px solid color-mix(in srgb, var(--card-rule) 78%, transparent);
   border-radius: 12px;
   background:
     linear-gradient(
@@ -1295,6 +1294,15 @@ a {
       color-mix(in srgb, var(--bg) 94%, var(--text) 6%) 100%
     );
   overflow: hidden;
+}
+
+.project-hero-media {
+  margin: 0 0 var(--space-4);
+}
+
+.project-hero-media .project-media-surface {
+  aspect-ratio: 16 / 9;
+  padding: clamp(1rem, 3vw, 1.25rem);
 }
 
 .project-media-surface img {
@@ -1861,6 +1869,10 @@ body > footer {
 
   .project-media-grid {
     grid-template-columns: 1fr;
+  }
+
+  .project-hero-media .project-media-surface {
+    aspect-ratio: 3 / 2;
   }
 
   .page-hero {
