@@ -389,7 +389,7 @@ def rewrite_project_detail_blocks(content: str, author_html: str, related_html: 
 
     if 'class="project-column col-8"' in content:
         combined_pattern = re.compile(
-            r"\s*</div>\s*<!-- AUTO:project-author-card:start -->.*?<!-- AUTO:project-related-projects:end -->",
+            r"\s*<!-- AUTO:project-author-card:start -->.*?<!-- AUTO:project-related-projects:end -->",
             re.DOTALL,
         )
         replacement = "\n".join(
