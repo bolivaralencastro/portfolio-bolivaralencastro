@@ -36,7 +36,6 @@ LISTING_CARD_HEIGHT = 540
 VERSIONED_ASSETS = {
     "/style.css": pathlib.Path("style.css"),
     "/assets/js/gtm.js": pathlib.Path("assets/js/gtm.js"),
-    "/assets/js/analytics-events.js": pathlib.Path("assets/js/analytics-events.js"),
     "/assets/js/lightbox.js": pathlib.Path("assets/js/lightbox.js"),
     "/assets/js/mobile-nav.js": pathlib.Path("assets/js/mobile-nav.js"),
 }
@@ -387,9 +386,10 @@ def rewrite_project_detail_blocks(content: str, author_html: str, related_html: 
     content = ensure_auto_block_before_token(content, "project-author-card", "</article>")
     content = relocate_auto_block_before_token(content, "project-related-projects", "</main>")
 
-    if 'class="project-column col-8"' in content:
+    project_column_pattern = re.compile(r'<div class="project-column col-8">', re.DOTALL)
+    if project_column_pattern.search(content):
         combined_pattern = re.compile(
-            r"\s*<!-- AUTO:project-author-card:start -->.*?<!-- AUTO:project-related-projects:end -->",
+            r"\s*</div>\s*<!-- AUTO:project-author-card:start -->.*?<!-- AUTO:project-related-projects:end -->",
             re.DOTALL,
         )
         replacement = "\n".join(
@@ -778,7 +778,6 @@ def render_blog_archive_page(page: ArchivePage, *, base_url: str) -> str:
         f'  <meta name="description" content="{html.escape(page.description, quote=True)}">',
         '  <link rel="stylesheet" href="/style.css">',
         '  <script src="/assets/js/gtm.js" defer></script>',
-        '  <script src="/assets/js/analytics-events.js" defer></script>',
         f'  <link rel="canonical" href="{html.escape(page.canonical_url, quote=True)}">',
         f'  <meta name="author" content="{html.escape(FEED_AUTHOR_NAME, quote=True)}">',
         '  <meta name="generator" content="Handcrafted HTML">',
@@ -1028,12 +1027,6 @@ def apply_versioned_asset_refs(html_content: str, versions: dict[str, str]) -> s
     updated = html_content
     updated = replace_asset_reference(updated, "href", "/style.css", versions["/style.css"])
     updated = replace_asset_reference(updated, "src", "/assets/js/gtm.js", versions["/assets/js/gtm.js"])
-    updated = replace_asset_reference(
-        updated,
-        "src",
-        "/assets/js/analytics-events.js",
-        versions["/assets/js/analytics-events.js"],
-    )
     updated = replace_asset_reference(updated, "src", "/assets/js/lightbox.js", versions["/assets/js/lightbox.js"])
     updated = replace_asset_reference(updated, "src", "/assets/js/mobile-nav.js", versions["/assets/js/mobile-nav.js"])
     return updated
@@ -1354,7 +1347,6 @@ def main() -> int:
         source_html = managed_pages.get(page_path)
         if source_html is None:
             source_html = page_path.read_text(encoding="utf-8")
-        source_html = ensure_script_reference(source_html, "/assets/js/analytics-events.js")
         source_html = ensure_script_reference(source_html, "/assets/js/lightbox.js")
         source_html = ensure_script_reference(source_html, "/assets/js/mobile-nav.js")
         versioned_html = apply_versioned_asset_refs(source_html, asset_versions)
