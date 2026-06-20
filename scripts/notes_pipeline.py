@@ -20,6 +20,14 @@ NOTE_DEFAULT_CATEGORY = "Nota"
 NOTE_ARCHIVE_PAGE_SIZE = 20
 NOW_NOTES_LIMIT = 12
 SITE_NAME = "Bolívar Alencastro"
+SITE_NAME_FALLBACK = "Bolivar Alencastro"
+AUTHOR_PROFILE_URL = "https://bolivaralencastro.com.br/about.html"
+AUTHOR_IMAGE_URL = "https://bolivaralencastro.com.br/assets/images/author/bolivar-alencastro.webp"
+AUTHOR_SAME_AS = [
+    "https://github.com/bolivaralencastro",
+    "https://www.linkedin.com/in/bolivaralencastro/",
+    "https://www.instagram.com/bolivar.alencastro/",
+]
 DEFAULT_OG_IMAGE = "/assets/images/about.png"
 NOTE_MONTHS_PT = ("Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez")
 SHORTCODE_PATTERN = re.compile(r"^\{\{\s*(?P<name>[a-z][a-z0-9_-]*)\s*(?P<attrs>.*?)\s*\}\}$")
@@ -442,6 +450,15 @@ def notes_archive_rel_path(page_number: int) -> str:
 
 def render_note_page(note: Note, *, base_url: str) -> str:
     og_image = absolute_asset_url(note.og_image, base_url)
+    person_schema = {
+        "@type": "Person",
+        "@id": f"{AUTHOR_PROFILE_URL}#person",
+        "name": SITE_NAME,
+        "alternateName": SITE_NAME_FALLBACK,
+        "url": AUTHOR_PROFILE_URL,
+        "image": AUTHOR_IMAGE_URL,
+        "sameAs": AUTHOR_SAME_AS,
+    }
     jsonld = {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -453,16 +470,8 @@ def render_note_page(note: Note, *, base_url: str) -> str:
         "url": note.canonical_url,
         "mainEntityOfPage": note.canonical_url,
         "image": og_image,
-        "author": {
-            "@type": "Person",
-            "name": SITE_NAME,
-            "url": f"{base_url.rstrip('/')}/about.html" if base_url else "/about.html",
-        },
-        "publisher": {
-            "@type": "Person",
-            "name": SITE_NAME,
-            "url": f"{base_url.rstrip('/')}/about.html" if base_url else "/about.html",
-        },
+        "author": person_schema,
+        "publisher": person_schema,
         "inLanguage": "pt-BR",
     }
 
@@ -485,6 +494,7 @@ def render_note_page(note: Note, *, base_url: str) -> str:
         '  <link rel="me" href="https://github.com/bolivaralencastro">',
         '  <link rel="me" href="https://www.instagram.com/bolivar.alencastro/">',
         '  <link rel="me" href="https://www.linkedin.com/in/bolivaralencastro/">',
+        '  <link rel="alternate" type="text/plain" title="Perfil para modelos de linguagem" href="/llms.txt">',
         f'  <meta property="og:title" content="{html.escape(note.display_title, quote=True)}">',
         f'  <meta property="og:description" content="{html.escape(note.description, quote=True)}">',
         f'  <meta property="og:url" content="{html.escape(note.canonical_url, quote=True)}">',
@@ -557,6 +567,15 @@ def render_notes_archive_page(page: NotesArchivePage, *, base_url: str) -> str:
         "@type": "CollectionPage",
         "name": "Arquivo de notas",
         "url": page.canonical_url,
+        "about": {
+            "@type": "Person",
+            "@id": f"{AUTHOR_PROFILE_URL}#person",
+            "name": SITE_NAME,
+            "alternateName": SITE_NAME_FALLBACK,
+            "url": AUTHOR_PROFILE_URL,
+            "image": AUTHOR_IMAGE_URL,
+            "sameAs": AUTHOR_SAME_AS,
+        },
         "mainEntity": {
             "@type": "ItemList",
             "itemListElement": jsonld_items,
@@ -581,6 +600,7 @@ def render_notes_archive_page(page: NotesArchivePage, *, base_url: str) -> str:
         '  <link rel="me" href="https://github.com/bolivaralencastro">',
         '  <link rel="me" href="https://www.instagram.com/bolivar.alencastro/">',
         '  <link rel="me" href="https://www.linkedin.com/in/bolivaralencastro/">',
+        '  <link rel="alternate" type="text/plain" title="Perfil para modelos de linguagem" href="/llms.txt">',
         '  <meta property="og:title" content="Arquivo de notas - Bolívar Alencastro">',
         f'  <meta property="og:description" content="{html.escape(page.description, quote=True)}">',
         f'  <meta property="og:url" content="{html.escape(page.canonical_url, quote=True)}">',

@@ -29,6 +29,13 @@ BASE_URL_DEFAULT = "https://bolivaralencastro.com.br"
 ROOT_PAGES = ["index.html", "about.html", "blog.html", "projects.html", "now.html", "links.html", "retratos-ufsc-florianopolis-imersivo.html"]
 FEED_AUTHOR_NAME = "Bolívar Alencastro"
 FEED_AUTHOR_FALLBACK = "Bolivar Alencastro"
+AUTHOR_PROFILE_URL = f"{BASE_URL_DEFAULT}/about.html"
+AUTHOR_IMAGE_URL = f"{BASE_URL_DEFAULT}/assets/images/author/bolivar-alencastro.webp"
+AUTHOR_SAME_AS = [
+    "https://github.com/bolivaralencastro",
+    "https://www.linkedin.com/in/bolivaralencastro/",
+    "https://www.instagram.com/bolivar.alencastro/",
+]
 BLOG_ARCHIVE_PAGE_SIZE = 20
 LISTING_CARD_FILENAMES = ("card.png", "card.webp", "cover.png", "cover.webp")
 LISTING_CARD_WIDTH = 960
@@ -689,6 +696,15 @@ def build_blog_collection_jsonld(posts: list[dict], collection_url: str, collect
         "@type": "CollectionPage",
         "name": collection_name,
         "url": collection_url,
+        "about": {
+            "@type": "Person",
+            "@id": f"{AUTHOR_PROFILE_URL}#person",
+            "name": FEED_AUTHOR_NAME,
+            "alternateName": FEED_AUTHOR_FALLBACK,
+            "url": AUTHOR_PROFILE_URL,
+            "image": AUTHOR_IMAGE_URL,
+            "sameAs": AUTHOR_SAME_AS,
+        },
         "mainEntity": {
             "@type": "ItemList",
             "itemListElement": item_list,
@@ -786,6 +802,7 @@ def render_blog_archive_page(page: ArchivePage, *, base_url: str) -> str:
         '  <link rel="me" href="https://github.com/bolivaralencastro">',
         '  <link rel="me" href="https://www.instagram.com/bolivar.alencastro/">',
         '  <link rel="me" href="https://www.linkedin.com/in/bolivaralencastro/">',
+        '  <link rel="alternate" type="text/plain" title="Perfil para modelos de linguagem" href="/llms.txt">',
         '  <meta property="og:title" content="Blog - Bolívar Alencastro">',
         f'  <meta property="og:description" content="{html.escape(page.description, quote=True)}">',
         f'  <meta property="og:url" content="{html.escape(page.canonical_url, quote=True)}">',
@@ -820,7 +837,7 @@ def render_blog_archive_page(page: ArchivePage, *, base_url: str) -> str:
         '  <main id="main" class="grid">',
         '    <section class="page-hero grid col-12 section-block">',
         '      <h1 class="page-title col-8">Blog</h1>',
-        '      <p class="lead col-4">Notas editoriais sobre design, sistema visual e arquitetura web nativa.</p>',
+        '      <p class="lead col-4">Textos sobre product design, sistemas, IA aplicada ao trabalho e publicação autoral na web.</p>',
         "    </section>",
         '    <section class="grid col-12 section-block">',
         '      <h2 class="col-12">Posts</h2>',
@@ -1160,7 +1177,7 @@ def main() -> int:
         title_for_page=lambda page_number: "Blog - Bolívar Alencastro"
         if page_number == 1
         else f"Blog - Página {page_number} - Bolívar Alencastro",
-        description_for_page=lambda page_number: "Artigos, ensaios e notas sobre Product Design, HTML, CSS e arquitetura estática."
+        description_for_page=lambda page_number: "Artigos, ensaios e notas sobre Product Design, Design Systems, IA aplicada ao trabalho e publicação autoral na web."
         if page_number == 1
         else f"Página {page_number} do arquivo do blog com artigos e ensaios de Bolívar Alencastro.",
         base_url=base_url,
