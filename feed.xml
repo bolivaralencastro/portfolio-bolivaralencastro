@@ -4,7 +4,7 @@
   <subtitle>Blog, notas e páginas publicadas em um site HTML-first.</subtitle>
   <link href="https://bolivaralencastro.com.br/feed.xml" rel="self"/>
   <link href="https://bolivaralencastro.com.br/" rel="alternate"/>
-  <updated>2026-05-26T00:00:00Z</updated>
+  <updated>2026-06-21T00:00:00Z</updated>
   <id>https://bolivaralencastro.com.br/feed.xml</id>
   <author>
     <name>Bolívar Alencastro</name>
@@ -13,6 +13,16 @@
   <contributor>
     <name>Bolivar Alencastro</name>
   </contributor>
+
+  <entry>
+    <title>O que ainda não deixamos morrer</title>
+    <link href="https://bolivaralencastro.com.br/blog/o-que-ainda-nao-deixamos-morrer.html" rel="alternate"/>
+    <id>https://bolivaralencastro.com.br/blog/o-que-ainda-nao-deixamos-morrer.html</id>
+    <published>2026-06-21T00:00:00Z</published>
+    <updated>2026-06-21T00:00:00Z</updated>
+    <summary>Nos eventos sobre IA, uma sensação volta com força: estamos outra vez usando antes de compreender direito. O ponto, porém, não é só a IA. É um padrão mais antigo de adoção indiscriminada que atravessa a história humana e continua pedindo a mesma coisa: que algo mude em nós.</summary>
+    <content type="html">&lt;p&gt;Essa reflexão ganha corpo enquanto eu circulo por eventos sobre IA e continuo vendo esse tema se espalhar pelo trabalho cotidiano. O fim de semana me dá o impulso para escrever, mas a sensação não fica presa a ele. Em cada palco, demo e conversa de corredor, aparece uma parte diferente do mesmo fenômeno. Uns falam de agentes. Outros, de automação. Outros, de produtividade, interface, infraestrutura, voz. A parábola do elefante volta imediatamente: cada pessoa toca uma parte e tenta descrever o todo a partir daquele contato parcial.&lt;/p&gt;</content>
+  </entry>
 
   <entry>
     <title>Jules em paralelo</title>

@@ -395,11 +395,12 @@ def rewrite_project_detail_blocks(content: str, author_html: str, related_html: 
 
     project_column_pattern = re.compile(r'<div class="project-column col-8">', re.DOTALL)
     if project_column_pattern.search(content):
-        combined_pattern = re.compile(
+        # First-run pattern: </div> comes before the author-card block (needs relocation)
+        first_run_pattern = re.compile(
             r"\s*</div>\s*<!-- AUTO:project-author-card:start -->.*?<!-- AUTO:project-related-projects:end -->",
             re.DOTALL,
         )
-        replacement = "\n".join(
+        replacement_with_div = "\n".join(
             [
                 "        <!-- AUTO:project-author-card:start -->",
                 author_html,
@@ -411,8 +412,15 @@ def rewrite_project_detail_blocks(content: str, author_html: str, related_html: 
                 "    <!-- AUTO:project-related-projects:end -->",
             ]
         )
-        if combined_pattern.search(content):
-            return combined_pattern.sub(replacement, content, count=1)
+        if first_run_pattern.search(content):
+            return first_run_pattern.sub(replacement_with_div, content, count=1)
+        # Subsequent-run pattern: author-card already precedes </div> (already transformed)
+        subsequent_pattern = re.compile(
+            r"\s*<!-- AUTO:project-author-card:start -->.*?<!-- AUTO:project-related-projects:end -->",
+            re.DOTALL,
+        )
+        if subsequent_pattern.search(content):
+            return subsequent_pattern.sub(replacement_with_div, content, count=1)
     else:
         combined_pattern = re.compile(
             r"\s*<!-- AUTO:project-author-card:start -->.*?<!-- AUTO:project-related-projects:end -->",
