@@ -20,6 +20,12 @@ Read:
 
 Use [`scripts/blog_image_workflow.py`](../../../scripts/blog_image_workflow.py) instead of rebuilding the image workflow ad hoc.
 
+Hard limits (enforced by the script defaults — do not raise them without explicit request):
+
+- Final published images: max `1600px` wide, target under `500KB`.
+- Triptych composition automatically downscales the composed canvas to `1600px` wide.
+- After generating galleries, do not leave raw source photos under `assets/` (everything there is deployed and publicly served). Delete them with `--delete-sources` or move them to `.referencias/` (gitignored).
+
 ## Supported workflows
 
 ### Compose one triptych

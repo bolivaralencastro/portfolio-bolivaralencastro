@@ -31,6 +31,9 @@ def open_rgb_image(path: Path) -> Image.Image:
         return normalized.convert("RGB")
 
 
+MAX_COMPOSED_WIDTH = 1600
+
+
 def resize_to_height(image: Image.Image, target_height: int) -> Image.Image:
     if image.height == target_height:
         return image.copy()
@@ -74,6 +77,12 @@ def compose_triptych(
     for image in resized:
         canvas.paste(image, (offset_x, 0))
         offset_x += image.width
+
+    # Sem teto, tres fotos de camera lado a lado passam de 6000px e o webp
+    # final fica com varios MB para um slot exibido a ~700px.
+    if canvas.width > MAX_COMPOSED_WIDTH:
+        new_height = round(canvas.height * (MAX_COMPOSED_WIDTH / canvas.width))
+        canvas = canvas.resize((MAX_COMPOSED_WIDTH, new_height), Image.Resampling.LANCZOS)
 
     save_image(canvas, output_path, quality)
     return output_path
@@ -197,7 +206,7 @@ def parse_args() -> argparse.Namespace:
         help="Convert one or more images to WebP, optionally resizing width.",
     )
     webp_parser.add_argument("inputs", nargs="+", type=Path)
-    webp_parser.add_argument("--max-width", type=int, default=2400)
+    webp_parser.add_argument("--max-width", type=int, default=1600)
     webp_parser.add_argument("--quality", type=int, default=84)
     webp_parser.add_argument(
         "--output-dir",
