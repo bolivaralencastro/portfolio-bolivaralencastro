@@ -262,6 +262,24 @@ def parse_iso_datetime(value: str, context: str) -> dt.datetime:
 
 def get_lastmod_date(path: pathlib.Path, repo_root: pathlib.Path) -> str:
     rel = path.relative_to(repo_root)
+
+    # Arquivo com mudancas ainda nao commitadas: usa a data de hoje, que sera
+    # a data do commit que o acompanha. Sem isso, o sitemap gerado antes do
+    # commit carimba a data do commit anterior e o --check do CI (que roda
+    # apos o commit) sempre acusa sitemap.xml desatualizado.
+    try:
+        status = subprocess.run(
+            ["git", "status", "--porcelain", "--", str(rel)],
+            cwd=repo_root,
+            check=False,
+            capture_output=True,
+            text=True,
+        )
+        if status.returncode == 0 and status.stdout.strip():
+            return dt.date.today().isoformat()
+    except OSError:
+        pass
+
     git_cmd = ["git", "log", "-1", "--format=%cs", "--", str(rel)]
     try:
         result = subprocess.run(
