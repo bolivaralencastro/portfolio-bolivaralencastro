@@ -33,7 +33,7 @@ except ImportError:
 
 ROOT = Path(__file__).resolve().parents[1]
 ENV_FILE = ROOT / ".env"
-GRAPH_API = "https://graph.facebook.com/v25.0"
+GRAPH_API = "https://graph.instagram.com/v23.0"
 DEFAULT_REPO = "bolivaralencastro/portfolio-bolivaralencastro"
 
 
@@ -206,7 +206,7 @@ def main() -> None:
 
     env = load_env()
     token = env.get("INSTAGRAM_ACCESS_TOKEN", "").strip()
-    user_id = env.get("INSTAGRAM_USER_ID", "").strip()
+    user_id = (env.get("INSTAGRAM_IG_USER_ID") or env.get("INSTAGRAM_USER_ID", "")).strip()
     if not token or not user_id:
         print("❌ Credenciais de Instagram ausentes no .env")
         sys.exit(1)

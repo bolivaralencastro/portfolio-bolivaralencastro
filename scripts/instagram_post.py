@@ -40,7 +40,7 @@ ROOT = Path(__file__).parent.parent
 BLOG_DIR = ROOT / "blog"
 ENV_FILE = ROOT / ".env"
 BASE_URL = "https://bolivaralencastro.com.br"
-GRAPH_API = "https://graph.facebook.com/v25.0"
+GRAPH_API = "https://graph.instagram.com/v23.0"
 
 UTM_MEDIUM = "social"
 
@@ -215,7 +215,7 @@ def main():
 
     env = load_env()
     token = env.get("INSTAGRAM_ACCESS_TOKEN", "").strip()
-    user_id = env.get("INSTAGRAM_USER_ID", "").strip()
+    user_id = (env.get("INSTAGRAM_IG_USER_ID") or env.get("INSTAGRAM_USER_ID", "")).strip()
 
     if not token or not user_id:
         print("❌ Credenciais não encontradas no .env")
