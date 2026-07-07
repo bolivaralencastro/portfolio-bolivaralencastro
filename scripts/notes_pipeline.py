@@ -25,10 +25,11 @@ AUTHOR_PROFILE_URL = "https://bolivaralencastro.com.br/about.html"
 AUTHOR_IMAGE_URL = "https://bolivaralencastro.com.br/assets/images/author/bolivar-alencastro.webp"
 AUTHOR_SAME_AS = [
     "https://github.com/bolivaralencastro",
+    "https://facebook.com/bolivaralencastrofotografia",
     "https://www.linkedin.com/in/bolivaralencastro/",
     "https://www.instagram.com/bolivar.alencastro/",
 ]
-DEFAULT_OG_IMAGE = "/assets/images/about.png"
+DEFAULT_OG_IMAGE = "/assets/images/og/site-og.jpg"
 NOTE_MONTHS_PT = ("Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez")
 SHORTCODE_PATTERN = re.compile(r"^\{\{\s*(?P<name>[a-z][a-z0-9_-]*)\s*(?P<attrs>.*?)\s*\}\}$")
 DATE_PREFIX_PATTERN = re.compile(r"^(?P<date>\d{4}-\d{2}-\d{2})(?:-(?P<slug>.+))?$")
@@ -484,6 +485,7 @@ def render_note_page(note: Note, *, base_url: str) -> str:
         f"  <title>{html.escape(note.page_title)}</title>",
         f'  <meta name="description" content="{html.escape(note.description, quote=True)}">',
         '  <link rel="stylesheet" href="/style.css">',
+        '  <noscript><link rel="stylesheet" href="/assets/css/nojs-nav.css"></noscript>',
         '  <script src="/assets/js/gtm.js" defer></script>',
         f'  <link rel="canonical" href="{html.escape(note.canonical_url, quote=True)}">',
         f'  <meta name="author" content="{html.escape(SITE_NAME, quote=True)}">',
@@ -492,6 +494,7 @@ def render_note_page(note: Note, *, base_url: str) -> str:
         '  <link rel="webmention" href="https://webmention.io/bolivaralencastro.com.br/webmention">',
         '  <link rel="pingback" href="https://webmention.io/bolivaralencastro.com.br/xmlrpc">',
         '  <link rel="me" href="https://github.com/bolivaralencastro">',
+        '  <link rel="me" href="https://facebook.com/bolivaralencastrofotografia">',
         '  <link rel="me" href="https://www.instagram.com/bolivar.alencastro/">',
         '  <link rel="me" href="https://www.linkedin.com/in/bolivaralencastro/">',
         '  <link rel="alternate" type="text/plain" title="Perfil para modelos de linguagem" href="/llms.txt">',
@@ -510,6 +513,10 @@ def render_note_page(note: Note, *, base_url: str) -> str:
         "  </script>",
         '  <script src="/assets/js/lightbox.js" defer></script>',
         '  <script src="/assets/js/mobile-nav.js" defer></script>',
+        '  <!-- Meta Pixel -->',
+        '  <script src="/assets/js/meta-pixel.js" defer></script>',
+        '  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1537864418068216&ev=PageView&noscript=1"/></noscript>',
+        '  <!-- End Meta Pixel -->',
         "</head>",
         '<body class="note-page">',
         '  <div class="grain"></div>',
@@ -591,6 +598,7 @@ def render_notes_archive_page(page: NotesArchivePage, *, base_url: str) -> str:
         f"  <title>{html.escape(page.title)}</title>",
         f'  <meta name="description" content="{html.escape(page.description, quote=True)}">',
         '  <link rel="stylesheet" href="/style.css">',
+        '  <noscript><link rel="stylesheet" href="/assets/css/nojs-nav.css"></noscript>',
         '  <script src="/assets/js/gtm.js" defer></script>',
         f'  <link rel="canonical" href="{html.escape(page.canonical_url, quote=True)}">',
         f'  <meta name="author" content="{html.escape(SITE_NAME, quote=True)}">',
@@ -598,6 +606,7 @@ def render_notes_archive_page(page: NotesArchivePage, *, base_url: str) -> str:
         '  <link rel="webmention" href="https://webmention.io/bolivaralencastro.com.br/webmention">',
         '  <link rel="pingback" href="https://webmention.io/bolivaralencastro.com.br/xmlrpc">',
         '  <link rel="me" href="https://github.com/bolivaralencastro">',
+        '  <link rel="me" href="https://facebook.com/bolivaralencastrofotografia">',
         '  <link rel="me" href="https://www.instagram.com/bolivar.alencastro/">',
         '  <link rel="me" href="https://www.linkedin.com/in/bolivaralencastro/">',
         '  <link rel="alternate" type="text/plain" title="Perfil para modelos de linguagem" href="/llms.txt">',
@@ -616,6 +625,10 @@ def render_notes_archive_page(page: NotesArchivePage, *, base_url: str) -> str:
         "  </script>",
         '  <script src="/assets/js/lightbox.js" defer></script>',
         '  <script src="/assets/js/mobile-nav.js" defer></script>',
+        '  <!-- Meta Pixel -->',
+        '  <script src="/assets/js/meta-pixel.js" defer></script>',
+        '  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1537864418068216&ev=PageView&noscript=1"/></noscript>',
+        '  <!-- End Meta Pixel -->',
         "</head>",
         '<body class="notes-archive-page">',
         '  <div class="grain"></div>',
@@ -1003,8 +1016,9 @@ def build_site_header(*, now_current: bool = False) -> str:
     return "\n".join(
         [
             '  <header class="grid">',
-            '    <div class="brand col-7"><a href="/" class="brand-link" aria-label="Ir para a página inicial"><span class="brand-mark" aria-hidden="true"><span class="dot dot-blue"></span></span><strong>Bolívar Alencastro</strong></a></div>',
+            '    <div class="brand col-7"><a href="/" class="brand-link"><span class="brand-mark" aria-hidden="true"><span class="dot dot-blue"></span></span><strong>Bolívar Alencastro</strong></a></div>',
             '    <nav class="col-5" aria-label="Navegação principal">',
+            '      <button type="button" class="mobile-menu-toggle" aria-controls="mobile-nav-overlay" aria-expanded="false">Menu</button>',
             "      <ul>",
             '        <li><a href="/">Home</a></li>',
             '        <li><a href="/about.html">About</a></li>',

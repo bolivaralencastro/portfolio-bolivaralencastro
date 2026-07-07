@@ -8,21 +8,11 @@
   }
 
   const navList = nav.querySelector("ul");
+  const toggle = nav.querySelector(".mobile-menu-toggle");
 
-  if (!navList) {
+  if (!navList || !toggle) {
     return;
   }
-
-  root.classList.add("has-mobile-nav");
-
-  const toggle = document.createElement("button");
-  toggle.type = "button";
-  toggle.className = "mobile-menu-toggle";
-  toggle.setAttribute("aria-controls", "mobile-nav-overlay");
-  toggle.setAttribute("aria-expanded", "false");
-  toggle.setAttribute("aria-label", "Abrir menu principal");
-  toggle.textContent = "Menu";
-  nav.prepend(toggle);
 
   const dialog = document.createElement("dialog");
   dialog.className = "mobile-nav-overlay";

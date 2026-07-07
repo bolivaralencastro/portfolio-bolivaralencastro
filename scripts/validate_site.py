@@ -19,6 +19,7 @@ from notes_pipeline import NOTE_ARCHIVE_PAGE_SIZE, NOTE_AUTO_BLOCK, NOW_NOTES_LI
 BASE_URL_DEFAULT = "https://bolivaralencastro.com.br"
 ROOT_PAGES = ["index.html", "about.html", "blog.html", "projects.html", "now.html", "links.html", "retratos-ufsc-florianopolis-imersivo.html"]
 GTM_SCRIPT_SRC = "/assets/js/gtm.js"
+ANALYTICS_SCRIPT_SRC = "/assets/js/analytics-events.js"
 MAIN_STYLESHEET_HREF = "/style.css"
 TAGGING_CSP_SOURCES = [
     "https://www.googletagmanager.com",
@@ -113,6 +114,7 @@ class PageParser(HTMLParser):
         self._in_jsonld_script = False
         self._jsonld_chunks: List[str] = []
         self._tag_stack: List[bool] = []
+        self._noscript_depth = 0
 
     @staticmethod
     def _classes(attrs: dict) -> set[str]:
@@ -188,7 +190,10 @@ class PageParser(HTMLParser):
             if href:
                 self.meta.links.append(href)
 
-        if tag == "img":
+        if tag == "noscript":
+            self._noscript_depth += 1
+
+        if tag == "img" and not self._noscript_depth:
             self.meta.image_alts.append((attrs.get("alt") or "").strip())
             self.meta.images.append(
                 ImageMeta(
@@ -209,6 +214,9 @@ class PageParser(HTMLParser):
     def handle_endtag(self, tag: str) -> None:
         if self._tag_stack:
             self._tag_stack.pop()
+
+        if tag == "noscript" and self._noscript_depth:
+            self._noscript_depth -= 1
 
         if tag == "title":
             self._in_title = False
@@ -250,7 +258,7 @@ def iter_public_pages(repo_root: pathlib.Path) -> List[pathlib.Path]:
         if path.exists():
             pages.append(path)
 
-    pages.extend(sorted((repo_root / "blog").glob("*.html")))
+    pages.extend(sorted(path for path in (repo_root / "blog").glob("*.html") if path.name != "index.html"))
     pages.extend(sorted((repo_root / "blog" / "page").glob("*.html")))
     pages.extend(sorted((repo_root / "notes").glob("*.html")))
     pages.extend(sorted((repo_root / "notes" / "page").glob("*.html")))
@@ -453,6 +461,18 @@ def main() -> int:
             errors.append(f"{page.rel_path}: GTM loader script must include a version query parameter")
         if not matching_deferred_gtm_scripts:
             errors.append(f"{page.rel_path}: GTM loader script must use 'defer'")
+
+        matching_analytics_scripts = [src for src in page.script_srcs if asset_path(src) == ANALYTICS_SCRIPT_SRC]
+        matching_deferred_analytics_scripts = [
+            src for src in page.deferred_script_srcs if asset_path(src) == ANALYTICS_SCRIPT_SRC
+        ]
+        if not matching_analytics_scripts:
+            errors.append(f"{page.rel_path}: missing analytics script '{ANALYTICS_SCRIPT_SRC}'")
+        elif not any(has_version_query(src) for src in matching_analytics_scripts):
+            errors.append(f"{page.rel_path}: analytics script must include a version query parameter")
+        if not matching_deferred_analytics_scripts:
+            errors.append(f"{page.rel_path}: analytics script must use 'defer'")
+
         if page.csp_content:
             for source in TAGGING_CSP_SOURCES:
                 if source not in page.csp_content:
