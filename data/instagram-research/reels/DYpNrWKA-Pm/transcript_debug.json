@@ -1,0 +1,65 @@
+{
+  "source_audio_path": "data/instagram-research/reels/DYpNrWKA-Pm/_audio_work/source.m4a",
+  "chunks": [
+    {
+      "index": 0,
+      "start_seconds": 0,
+      "duration_seconds": 98.523,
+      "path": "data/instagram-research/reels/DYpNrWKA-Pm/_audio_work/chunks/chunk-000.wav",
+      "size_bytes": 3152814,
+      "transcript_text": "Produção de carne de frango, suínos e ovos, deputado, ela demanda sete dias por semana, porque a galinha não põe ovo quatro dias por semana, ela põe os sete dias. Com todo o respeito, Elisabeth. E a galinha, ela tem um prazo com 42 dias, se ela não for abatida, ela já nem entra na linha de produção. Vocês entenderam que esse cara está comparando a escala do trabalhador com a da galinha? Esse é o Marcelo Osório, ex-assessor especial do Ministério da Agricultura do governo Bolsonaro, que foi a Câmara dos Deputados pregar contra o fim da escala 6x1. Eu não sei se essa gente é realmente desinformada ou faz de propósito, mas limitar a escala do trabalhador a quatro ou cinco dias na semana não significa que o negócio ou a indústria vão parar nos outros dias. É exatamente para isso que existe a escala. Um trabalhador pode trabalhar de segunda a quinta, e o outro de quinta a domingo, por exemplo. Um estabelecimento 24 horas não precisa de alguém acordado 24 horas para funcionar. Isso é básico. Eles não querem acabar com a escala 6x1, porque manter o mesmo trabalhador a semana inteira é mais barato para eles, mas não para a sociedade como um todo, porque quando esse trabalhador adoece por falta de descanso e qualidade de vida, ele vai parar no SUS. A maior parte do auxílio doença é pago pelo INSS, e quem precisa cuidar dele em casa é a própria família. Ou seja, a indústria fica com o lucro que ele gerou e empurra a conta do adoecimento para a sociedade inteira. Então, a comparação com galinhas acaba sendo perfeita mesmo, porque elas são abatidas com 42 dias justamente para tornar o processo mais produtivo. Mas naturalmente elas viveriam até 10 anos de idade, ou seja, 87 vezes mais. E essa descartabilidade da vida é a mesma coisa que querem fazer com o corpo do trabalhador.",
+      "usage": {
+        "seconds": 98.523004928,
+        "cost": 0.0030377926519466665
+      },
+      "model": "openai/whisper-large-v3"
+    }
+  ],
+  "raw_merged_transcript": "Produção de carne de frango, suínos e ovos, deputado, ela demanda sete dias por semana, porque a galinha não põe ovo quatro dias por semana, ela põe os sete dias. Com todo o respeito, Elisabeth. E a galinha, ela tem um prazo com 42 dias, se ela não for abatida, ela já nem entra na linha de produção. Vocês entenderam que esse cara está comparando a escala do trabalhador com a da galinha? Esse é o Marcelo Osório, ex-assessor especial do Ministério da Agricultura do governo Bolsonaro, que foi a Câmara dos Deputados pregar contra o fim da escala 6x1. Eu não sei se essa gente é realmente desinformada ou faz de propósito, mas limitar a escala do trabalhador a quatro ou cinco dias na semana não significa que o negócio ou a indústria vão parar nos outros dias. É exatamente para isso que existe a escala. Um trabalhador pode trabalhar de segunda a quinta, e o outro de quinta a domingo, por exemplo. Um estabelecimento 24 horas não precisa de alguém acordado 24 horas para funcionar. Isso é básico. Eles não querem acabar com a escala 6x1, porque manter o mesmo trabalhador a semana inteira é mais barato para eles, mas não para a sociedade como um todo, porque quando esse trabalhador adoece por falta de descanso e qualidade de vida, ele vai parar no SUS. A maior parte do auxílio doença é pago pelo INSS, e quem precisa cuidar dele em casa é a própria família. Ou seja, a indústria fica com o lucro que ele gerou e empurra a conta do adoecimento para a sociedade inteira. Então, a comparação com galinhas acaba sendo perfeita mesmo, porque elas são abatidas com 42 dias justamente para tornar o processo mais produtivo. Mas naturalmente elas viveriam até 10 anos de idade, ou seja, 87 vezes mais. E essa descartabilidade da vida é a mesma coisa que querem fazer com o corpo do trabalhador.",
+  "cleaned_transcript": "Produção de carne de frango, suínos e ovos, deputado, ela demanda sete dias por semana, porque a galinha não põe ovo quatro dias por semana, ela põe os sete dias. Com todo o respeito, Elisabeth. E a galinha tem um prazo de 42 dias; se não for abatida, já nem entra na linha de produção. Vocês entenderam que esse cara está comparando a escala do trabalhador com a da galinha? Esse é o Marcelo Osório, ex-assessor especial do Ministério da Agricultura do governo Bolsonaro, que foi à Câmara dos Deputados pregar contra o fim da escala 6x1.  \n\nEu não sei se essa gente é realmente desinformada ou faz de propósito, mas limitar a escala do trabalhador a quatro ou cinco dias na semana não significa que o negócio ou a indústria vão parar nos outros dias. É exatamente para isso que existe a escala. Um trabalhador pode trabalhar de segunda a quinta, e outro de quinta a domingo, por exemplo. Um estabelecimento 24 horas não precisa de alguém acordado 24 horas para funcionar. Isso é básico.  \n\nEles não querem acabar com a escala 6x1 porque manter o mesmo trabalhador a semana inteira é mais barato para eles, mas não para a sociedade como um todo. Quando esse trabalhador adoece por falta de descanso e qualidade de vida, ele vai parar no SUS. A maior parte do auxílio-doença é pago pelo INSS, e quem precisa cuidar dele em casa é a própria família. Ou seja, a indústria fica com o lucro que ele gerou e empurra a conta do adoecimento para a sociedade inteira.  \n\nEntão, a comparação com galinhas acaba sendo perfeita mesmo, porque elas são abatidas com 42 dias justamente para tornar o processo mais produtivo. Mas, naturalmente, elas viveriam até 10 anos de idade, ou seja, 87 vezes mais. E essa descartabilidade da vida é a mesma coisa que querem fazer com o corpo do trabalhador.",
+  "cleanup_response": {
+    "id": "gen-1779477217-tYl4QRWpdCJ1hQ6Owx1j",
+    "object": "chat.completion",
+    "created": 1779477217,
+    "model": "deepseek/deepseek-chat-v3",
+    "provider": "Novita",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Aqui está a transcrição revisada, preservando o significado original e corrigindo apenas pontuação, capitalização e quebras óbvias de ASR:\n\n---\n\nProdução de carne de frango, suínos e ovos, deputado, ela demanda sete dias por semana, porque a galinha não põe ovo quatro dias por semana, ela põe os sete dias. Com todo o respeito, Elisabeth. E a galinha tem um prazo de 42 dias; se não for abatida, já nem entra na linha de produção. Vocês entenderam que esse cara está comparando a escala do trabalhador com a da galinha? Esse é o Marcelo Osório, ex-assessor especial do Ministério da Agricultura do governo Bolsonaro, que foi à Câmara dos Deputados pregar contra o fim da escala 6x1.  \n\nEu não sei se essa gente é realmente desinformada ou faz de propósito, mas limitar a escala do trabalhador a quatro ou cinco dias na semana não significa que o negócio ou a indústria vão parar nos outros dias. É exatamente para isso que existe a escala. Um trabalhador pode trabalhar de segunda a quinta, e outro de quinta a domingo, por exemplo. Um estabelecimento 24 horas não precisa de alguém acordado 24 horas para funcionar. Isso é básico.  \n\nEles não querem acabar com a escala 6x1 porque manter o mesmo trabalhador a semana inteira é mais barato para eles, mas não para a sociedade como um todo. Quando esse trabalhador adoece por falta de descanso e qualidade de vida, ele vai parar no SUS. A maior parte do auxílio-doença é pago pelo INSS, e quem precisa cuidar dele em casa é a própria família. Ou seja, a indústria fica com o lucro que ele gerou e empurra a conta do adoecimento para a sociedade inteira.  \n\nEntão, a comparação com galinhas acaba sendo perfeita mesmo, porque elas são abatidas com 42 dias justamente para tornar o processo mais produtivo. Mas, naturalmente, elas viveriam até 10 anos de idade, ou seja, 87 vezes mais. E essa descartabilidade da vida é a mesma coisa que querem fazer com o corpo do trabalhador.  \n\n---  \n\n### Principais correções:  \n- Padronização de vírgulas, pontos e ponto-e-vírgula.  \n- Correção de hífen em *auxílio-doença*.  \n- Ajuste na concordância (*\"...é pago pelo INSS\"*).  \n- Inclusão de espaços após pontuação e quebras de parágrafo para melhor legibilidade.  \n- Manutenção integral do conteúdo e tom original.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 575,
+      "completion_tokens": 612,
+      "total_tokens": 1187,
+      "cost": 0.0010256,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0010256,
+        "upstream_inference_prompt_cost": 0.00023,
+        "upstream_inference_completions_cost": 0.0007956
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.clarity.ms https://*.clarity.ms; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://www.clarity.ms https://*.clarity.ms https://c.bing.com; style-src 'self'; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.clarity.ms https://*.clarity.ms https://c.bing.com; frame-src https://www.googletagmanager.com;">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://connect.facebook.net https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.clarity.ms https://*.clarity.ms; connect-src 'self' https://www.facebook.com https://connect.facebook.net https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://www.clarity.ms https://*.clarity.ms https://c.bing.com; style-src 'self'; img-src 'self' data: https://www.facebook.com https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.clarity.ms https://*.clarity.ms https://c.bing.com; frame-src https://www.googletagmanager.com;">
   <title>Bolívar Alencastro - Product Designer</title>
   <meta name="description" content="Portfólio de Bolívar Alencastro, Product Designer em São Paulo com 3,5+ anos em produtos digitais e 18+ anos em design estratégico, branding e direção de arte.">
 
-  <link rel="stylesheet" href="/style.css?v=a7f4f8602a">
+  <link rel="stylesheet" href="/style.css?v=6c6bbce7da">
+  <noscript><link rel="stylesheet" href="/assets/css/nojs-nav.css"></noscript>
   <script src="/assets/js/gtm.js?v=9a0f5af682" defer></script>
   <link rel="canonical" href="https://bolivaralencastro.com.br/">
   <meta name="author" content="Bolívar Alencastro">
@@ -15,6 +16,7 @@
   <link rel="webmention" href="https://webmention.io/bolivaralencastro.com.br/webmention">
   <link rel="pingback" href="https://webmention.io/bolivaralencastro.com.br/xmlrpc">
   <link rel="me" href="https://github.com/bolivaralencastro">
+  <link rel="me" href="https://facebook.com/bolivaralencastrofotografia">
   <link rel="me" href="https://www.instagram.com/bolivar.alencastro/">
   <link rel="me" href="https://www.linkedin.com/in/bolivaralencastro/">
   <link rel="alternate" type="application/atom+xml" title="Feed RSS do Blog" href="/feed.xml">
@@ -25,11 +27,11 @@
   <meta property="og:description" content="Product Designer em São Paulo com atuação em produto digital, design systems, UX research e estratégia de design.">
   <meta property="og:url" content="https://bolivaralencastro.com.br/">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://bolivaralencastro.com.br/assets/images/about.png">
+  <meta property="og:image" content="https://bolivaralencastro.com.br/assets/images/og/site-og.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Bolívar Alencastro - Product Designer">
   <meta name="twitter:description" content="Product Designer em São Paulo com atuação em produto digital, design systems, UX research e estratégia de design.">
-  <meta name="twitter:image" content="https://bolivaralencastro.com.br/assets/images/about.png">
+  <meta name="twitter:image" content="https://bolivaralencastro.com.br/assets/images/og/site-og.jpg">
 
   <script type="application/ld+json">
   {
@@ -65,6 +67,7 @@
     ],
     "sameAs": [
       "https://github.com/bolivaralencastro",
+      "https://facebook.com/bolivaralencastrofotografia",
       "https://www.linkedin.com/in/bolivaralencastro/",
       "https://www.instagram.com/bolivar.alencastro/"
     ]
@@ -72,8 +75,13 @@
   </script>
   <meta name="view-transition" content="same-origin">
   <script src="/assets/js/lightbox.js?v=7e74260ebb" defer></script>
-  <script src="/assets/js/mobile-nav.js?v=7c27d2f513" defer></script>
-  <script src="/assets/js/analytics-events.js?v=2de6264752" defer></script>
+  <script src="/assets/js/mobile-nav.js?v=af400dce0d" defer></script>
+  <script src="/assets/js/analytics-events.js?v=05b7252f75" defer></script>
+
+  <!-- Meta Pixel -->
+  <script src="/assets/js/meta-pixel.js?v=6f219948f5" defer></script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1537864418068216&ev=PageView&noscript=1"/></noscript>
+  <!-- End Meta Pixel -->
 </head>
 <body>
   <div class="grain"></div>
@@ -81,9 +89,10 @@
 
   <header class="grid">
     <div class="brand col-7">
-      <a href="/" class="brand-link" aria-label="Ir para a página inicial"><span class="brand-mark" aria-hidden="true"><span class="dot dot-blue"></span></span><strong>Bolívar Alencastro</strong></a>
+      <a href="/" class="brand-link"><span class="brand-mark" aria-hidden="true"><span class="dot dot-blue"></span></span><strong>Bolívar Alencastro</strong></a>
     </div>
     <nav class="col-5" aria-label="Navegação principal">
+      <button type="button" class="mobile-menu-toggle" aria-controls="mobile-nav-overlay" aria-expanded="false">Menu</button>
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/about.html">About</a></li>

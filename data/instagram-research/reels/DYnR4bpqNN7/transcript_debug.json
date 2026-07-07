@@ -1,0 +1,65 @@
+{
+  "source_audio_path": "data/instagram-research/reels/DYnR4bpqNN7/_audio_work/source.m4a",
+  "chunks": [
+    {
+      "index": 0,
+      "start_seconds": 0,
+      "duration_seconds": 101.569,
+      "path": "data/instagram-research/reels/DYnR4bpqNN7/_audio_work/chunks/chunk-000.wav",
+      "size_bytes": 3250286,
+      "transcript_text": "Produção de carne de frango, suínos e ovos, deputado, ela demanda sete dias por semana, porque a galinha não põe ovo quatro dias por semana, ela põe os sete dias. Porque não basta ignorar totalmente uma tecnologia milenar ancestral chamada escala, ele ainda tem que comparar trabalhadores humanos com animais explorados. Porque é isso que eles querem, que o trabalhador braçal trabalhe como um animal para continuar enchendo os bolsos dos acionistas. Quanto menos direitos, mais lucro. Não interessa se você sai e seu filho está dormindo, e aí quando você volta ele já foi para a cama de novo. Não quer saber se seu único dia de folga você precisa usar pra limpar a casa, lavar a louça, fazer marmita pra aguentar a semana, ajudar seu filho com as tarefas da escola, marcar médico, ir no médico, talvez na farmácia, fazer o mercado, foda-se. Nenhum deles liga se você não tem tempo pra ler um livro, pra assistir um filme ou pra se informar de verdade tendo acesso a conteúdo de qualidade. Na verdade o que eles mais querem é que você não tenha esse tempo mesmo. Pra ficar bem alienadinho, do jeito que eles gostam, votando em gente que te ferra e trabalhando igual um burro de carga enquanto eles comem caviar e aumentam o próprio salário dando canetada lá das Maldivas. O fim da escravidão não destruiu a economia, o surgimento dos direitos trabalhistas não ferrou o mercado e os bilionários estão cada vez mais bilionários porque continuam explorando mão de obra barata. Então, quando eu vejo que a maioria dos deputados de direita e do centrão votaram para transformar um projeto que melhoraria a vida dos trabalhadores do Brasil inteiro para aumentar a carga horária semanal, fica escancarado que a única escala que eles respeitam é a do lucro infinito. Eles comparam a gente com galinha porque, no fundo, é assim mesmo que eles nos enxergam, como animais num corredor de abatedouro. Porque quando um de nós não serve mais, é jogado no moedor.",
+      "usage": {
+        "seconds": 101.56900352,
+        "cost": 0.0031317109418666665
+      },
+      "model": "openai/whisper-large-v3"
+    }
+  ],
+  "raw_merged_transcript": "Produção de carne de frango, suínos e ovos, deputado, ela demanda sete dias por semana, porque a galinha não põe ovo quatro dias por semana, ela põe os sete dias. Porque não basta ignorar totalmente uma tecnologia milenar ancestral chamada escala, ele ainda tem que comparar trabalhadores humanos com animais explorados. Porque é isso que eles querem, que o trabalhador braçal trabalhe como um animal para continuar enchendo os bolsos dos acionistas. Quanto menos direitos, mais lucro. Não interessa se você sai e seu filho está dormindo, e aí quando você volta ele já foi para a cama de novo. Não quer saber se seu único dia de folga você precisa usar pra limpar a casa, lavar a louça, fazer marmita pra aguentar a semana, ajudar seu filho com as tarefas da escola, marcar médico, ir no médico, talvez na farmácia, fazer o mercado, foda-se. Nenhum deles liga se você não tem tempo pra ler um livro, pra assistir um filme ou pra se informar de verdade tendo acesso a conteúdo de qualidade. Na verdade o que eles mais querem é que você não tenha esse tempo mesmo. Pra ficar bem alienadinho, do jeito que eles gostam, votando em gente que te ferra e trabalhando igual um burro de carga enquanto eles comem caviar e aumentam o próprio salário dando canetada lá das Maldivas. O fim da escravidão não destruiu a economia, o surgimento dos direitos trabalhistas não ferrou o mercado e os bilionários estão cada vez mais bilionários porque continuam explorando mão de obra barata. Então, quando eu vejo que a maioria dos deputados de direita e do centrão votaram para transformar um projeto que melhoraria a vida dos trabalhadores do Brasil inteiro para aumentar a carga horária semanal, fica escancarado que a única escala que eles respeitam é a do lucro infinito. Eles comparam a gente com galinha porque, no fundo, é assim mesmo que eles nos enxergam, como animais num corredor de abatedouro. Porque quando um de nós não serve mais, é jogado no moedor.",
+  "cleaned_transcript": "Produção de carne de frango, suínos e ovos, deputado, ela demanda sete dias por semana, porque a galinha não põe ovo quatro dias por semana, ela põe os sete dias. Porque não basta ignorar totalmente uma tecnologia milenar ancestral chamada escala, ele ainda tem que comparar trabalhadores humanos com animais explorados. Porque é isso que eles querem: que o trabalhador braçal trabalhe como um animal para continuar enchendo os bolsos dos acionistas. Quanto menos direitos, mais lucro. Não interessa se você sai e seu filho está dormindo, e quando você volta ele já foi para a cama de novo. Não quer saber se, no seu único dia de folga, você precisa usar para limpar a casa, lavar a louça, fazer marmita para aguentar a semana, ajudar seu filho com as tarefas da escola, marcar médico, ir no médico, talvez na farmácia, fazer o mercado. Foda-se. Nenhum deles liga se você não tem tempo para ler um livro, para assistir um filme ou para se informar de verdade tendo acesso a conteúdo de qualidade. Na verdade, o que eles mais querem é que você não tenha esse tempo mesmo. Para ficar bem alienadinho, do jeito que eles gostam: votando em gente que te ferra e trabalhando igual a um burro de carga, enquanto eles comem caviar e aumentam o próprio salário dando canetada lá das Maldivas. O fim da escravidão não destruiu a economia, o surgimento dos direitos trabalhistas não ferrou o mercado, e os bilionários estão cada vez mais bilionários porque continuam explorando mão de obra barata. Então, quando eu vejo que a maioria dos deputados de direita e do centrão votou para transformar um projeto que melhoraria a vida dos trabalhadores do Brasil inteiro em algo para aumentar a carga horária semanal, fica escancarado que a única escala que eles respeitam é a do lucro infinito. Eles comparam a gente com galinha porque, no fundo, é assim mesmo que eles nos enxergam: como animais num corredor de abatedouro. Porque quando um de nós não serve mais, é jogado no moedor.",
+  "cleanup_response": {
+    "id": "gen-1779477217-1kIimUxXN37SkDJwe3V2",
+    "object": "chat.completion",
+    "created": 1779477217,
+    "model": "deepseek/deepseek-chat-v3",
+    "provider": "Novita",
+    "system_fingerprint": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "Produção de carne de frango, suínos e ovos, deputado, ela demanda sete dias por semana, porque a galinha não põe ovo quatro dias por semana, ela põe os sete dias. Porque não basta ignorar totalmente uma tecnologia milenar ancestral chamada escala, ele ainda tem que comparar trabalhadores humanos com animais explorados. Porque é isso que eles querem: que o trabalhador braçal trabalhe como um animal para continuar enchendo os bolsos dos acionistas. Quanto menos direitos, mais lucro. Não interessa se você sai e seu filho está dormindo, e quando você volta ele já foi para a cama de novo. Não quer saber se, no seu único dia de folga, você precisa usar para limpar a casa, lavar a louça, fazer marmita para aguentar a semana, ajudar seu filho com as tarefas da escola, marcar médico, ir no médico, talvez na farmácia, fazer o mercado. Foda-se. Nenhum deles liga se você não tem tempo para ler um livro, para assistir um filme ou para se informar de verdade tendo acesso a conteúdo de qualidade. Na verdade, o que eles mais querem é que você não tenha esse tempo mesmo. Para ficar bem alienadinho, do jeito que eles gostam: votando em gente que te ferra e trabalhando igual a um burro de carga, enquanto eles comem caviar e aumentam o próprio salário dando canetada lá das Maldivas. O fim da escravidão não destruiu a economia, o surgimento dos direitos trabalhistas não ferrou o mercado, e os bilionários estão cada vez mais bilionários porque continuam explorando mão de obra barata. Então, quando eu vejo que a maioria dos deputados de direita e do centrão votou para transformar um projeto que melhoraria a vida dos trabalhadores do Brasil inteiro em algo para aumentar a carga horária semanal, fica escancarado que a única escala que eles respeitam é a do lucro infinito. Eles comparam a gente com galinha porque, no fundo, é assim mesmo que eles nos enxergam: como animais num corredor de abatedouro. Porque quando um de nós não serve mais, é jogado no moedor.",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 609,
+      "completion_tokens": 518,
+      "total_tokens": 1127,
+      "cost": 0.000917,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000917,
+        "upstream_inference_prompt_cost": 0.0002436,
+        "upstream_inference_completions_cost": 0.0006734
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}

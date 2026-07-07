@@ -1,0 +1,50 @@
+{
+  "week": "2026-W24",
+  "date_range": {
+    "start_date": "2026-06-08",
+    "end_date": "2026-06-09"
+  },
+  "generated_at": "2026-06-09T13:02:39.554654+00:00",
+  "ga4": {
+    "overview_by_date": [],
+    "top_pages": [],
+    "traffic_sources": [],
+    "portfolio_events": [],
+    "content_performance": [],
+    "read_depth": [],
+    "social_clicks": [],
+    "contact_clicks": [],
+    "outbound_clicks": [],
+    "internal_content_clicks": []
+  },
+  "clarity": {
+    "snapshot_count": 1,
+    "snapshots": [
+      "data/analytics/snapshots/2026-06-09T130155Z.json"
+    ],
+    "top_urls_by_traffic": [
+      {
+        "label": "https://bolivaralencastro.com.br/",
+        "value": 0.0
+      },
+      {
+        "label": "https://gtm-msr.appspot.com/render?id=GTM-T3LNHCNR",
+        "value": 0.0
+      }
+    ],
+    "top_sources_by_traffic": [
+      {
+        "label": "(not set)",
+        "value": 0.0
+      }
+    ],
+    "devices_by_traffic": [
+      {
+        "label": "PC",
+        "value": 0.0
+      }
+    ],
+    "rage_click_urls": [],
+    "dead_click_urls": []
+  }
+}
