@@ -1,0 +1,11 @@
+/* Fallback sem JavaScript: reexibe a navegação completa no mobile,
+   já que o dialog do menu depende de mobile-nav.js. */
+@media (max-width: 700px) {
+  header nav ul {
+    display: flex;
+  }
+
+  .mobile-menu-toggle {
+    display: none;
+  }
+}

@@ -33,6 +33,7 @@ AUTHOR_PROFILE_URL = f"{BASE_URL_DEFAULT}/about.html"
 AUTHOR_IMAGE_URL = f"{BASE_URL_DEFAULT}/assets/images/author/bolivar-alencastro.webp"
 AUTHOR_SAME_AS = [
     "https://github.com/bolivaralencastro",
+    "https://facebook.com/bolivaralencastrofotografia",
     "https://www.linkedin.com/in/bolivaralencastro/",
     "https://www.instagram.com/bolivar.alencastro/",
 ]
@@ -43,6 +44,8 @@ LISTING_CARD_HEIGHT = 540
 VERSIONED_ASSETS = {
     "/style.css": pathlib.Path("style.css"),
     "/assets/js/gtm.js": pathlib.Path("assets/js/gtm.js"),
+    "/assets/js/meta-pixel.js": pathlib.Path("assets/js/meta-pixel.js"),
+    "/assets/js/analytics-events.js": pathlib.Path("assets/js/analytics-events.js"),
     "/assets/js/lightbox.js": pathlib.Path("assets/js/lightbox.js"),
     "/assets/js/mobile-nav.js": pathlib.Path("assets/js/mobile-nav.js"),
 }
@@ -618,6 +621,7 @@ def build_author_card_html() -> str:
             '      <h3 class="author-card-name p-name"><a class="u-url" href="/about.html">Bolívar Alencastro</a></h3>',
             '      <p class="author-card-copy p-note">Product Designer em São Paulo. Estruturo narrativas, interfaces e sistemas para transformar complexidade em decisões claras.</p>',
             '      <ul class="author-card-links" aria-label="Redes sociais do autor">',
+            '        <li><a rel="me noopener noreferrer" target="_blank" href="https://facebook.com/bolivaralencastrofotografia">Facebook</a></li>',
             '        <li><a rel="me noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/bolivaralencastro/">LinkedIn</a></li>',
             '        <li><a rel="me noopener noreferrer" target="_blank" href="https://www.instagram.com/bolivar.alencastro/">Instagram</a></li>',
             '      </ul>',
@@ -815,11 +819,11 @@ def render_blog_archive_page(page: ArchivePage, *, base_url: str) -> str:
         f'  <meta property="og:description" content="{html.escape(page.description, quote=True)}">',
         f'  <meta property="og:url" content="{html.escape(page.canonical_url, quote=True)}">',
         '  <meta property="og:type" content="website">',
-        f'  <meta property="og:image" content="{html.escape(base_url.rstrip("/") + "/assets/images/about.png", quote=True)}">',
+        f'  <meta property="og:image" content="{html.escape(base_url.rstrip("/") + "/assets/images/og/site-og.jpg", quote=True)}">',
         '  <meta name="twitter:card" content="summary_large_image">',
         '  <meta name="twitter:title" content="Blog - Bolívar Alencastro">',
         f'  <meta name="twitter:description" content="{html.escape(page.description, quote=True)}">',
-        f'  <meta name="twitter:image" content="{html.escape(base_url.rstrip("/") + "/assets/images/about.png", quote=True)}">',
+        f'  <meta name="twitter:image" content="{html.escape(base_url.rstrip("/") + "/assets/images/og/site-og.jpg", quote=True)}">',
         blog_jsonld_inner,
         '  <meta name="view-transition" content="same-origin">',
         '  <script src="/assets/js/lightbox.js" defer></script>',
@@ -830,7 +834,7 @@ def render_blog_archive_page(page: ArchivePage, *, base_url: str) -> str:
         '  <a href="#main" class="skip-link">Pular para o conteúdo principal</a>',
         "",
         '<header class="grid">',
-        '  <div class="brand col-7"><a href="/" class="brand-link" aria-label="Ir para a página inicial"><span class="brand-mark" aria-hidden="true"><span class="dot dot-blue"></span></span><strong>Bolívar Alencastro</strong></a></div>',
+        '  <div class="brand col-7"><a href="/" class="brand-link"><span class="brand-mark" aria-hidden="true"><span class="dot dot-blue"></span></span><strong>Bolívar Alencastro</strong></a></div>',
         '  <nav class="col-5" aria-label="Navegação principal">',
         "    <ul>",
         '      <li><a href="/">Home</a></li>',
@@ -1048,10 +1052,30 @@ def ensure_script_reference(html_content: str, public_path: str, defer: bool = T
     return html_content[:head_idx] + snippet + html_content[head_idx:]
 
 
+def ensure_rel_me_reference(html_content: str, href: str) -> str:
+    if href in html_content:
+        return html_content
+
+    head_close = "</head>"
+    head_idx = html_content.find(head_close)
+    if head_idx == -1:
+        raise BuildError(f"Missing </head> while injecting rel=me {href}")
+
+    snippet = f'  <link rel="me" href="{href}">\n'
+    return html_content[:head_idx] + snippet + html_content[head_idx:]
+
+
 def apply_versioned_asset_refs(html_content: str, versions: dict[str, str]) -> str:
     updated = html_content
     updated = replace_asset_reference(updated, "href", "/style.css", versions["/style.css"])
     updated = replace_asset_reference(updated, "src", "/assets/js/gtm.js", versions["/assets/js/gtm.js"])
+    updated = replace_asset_reference(updated, "src", "/assets/js/meta-pixel.js", versions["/assets/js/meta-pixel.js"])
+    updated = replace_asset_reference(
+        updated,
+        "src",
+        "/assets/js/analytics-events.js",
+        versions["/assets/js/analytics-events.js"],
+    )
     updated = replace_asset_reference(updated, "src", "/assets/js/lightbox.js", versions["/assets/js/lightbox.js"])
     updated = replace_asset_reference(updated, "src", "/assets/js/mobile-nav.js", versions["/assets/js/mobile-nav.js"])
     return updated
@@ -1070,7 +1094,7 @@ def main() -> int:
     projects_dir = repo_root / "projects"
     asset_versions = build_asset_versions(repo_root)
 
-    post_files = sorted(blog_dir.glob("*.html"))
+    post_files = sorted(path for path in blog_dir.glob("*.html") if path.name != "index.html")
     project_files = sorted(projects_dir.glob("*.html"))
 
     posts: list[dict] = []
@@ -1372,6 +1396,8 @@ def main() -> int:
         source_html = managed_pages.get(page_path)
         if source_html is None:
             source_html = page_path.read_text(encoding="utf-8")
+        source_html = ensure_rel_me_reference(source_html, "https://facebook.com/bolivaralencastrofotografia")
+        source_html = ensure_script_reference(source_html, "/assets/js/analytics-events.js")
         source_html = ensure_script_reference(source_html, "/assets/js/lightbox.js")
         source_html = ensure_script_reference(source_html, "/assets/js/mobile-nav.js")
         versioned_html = apply_versioned_asset_refs(source_html, asset_versions)

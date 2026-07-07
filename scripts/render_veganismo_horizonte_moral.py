@@ -8,7 +8,7 @@ from PIL import Image, ImageColor, ImageDraw, ImageFont, ImageOps
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT_DIR = ROOT / "assets/images/social/instagram/veganismo-horizonte-moral"
-SRC_DIR = OUT_DIR / "sources"
+SRC_DIR = ROOT / ".referencias/social-sources/veganismo-horizonte-moral/sources"
 FONT_DIR = OUT_DIR / "fonts"
 
 W = 1080
