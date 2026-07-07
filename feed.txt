@@ -4,7 +4,7 @@
   <subtitle>Blog, notas e páginas publicadas em um site HTML-first.</subtitle>
   <link href="https://bolivaralencastro.com.br/feed.xml" rel="self"/>
   <link href="https://bolivaralencastro.com.br/" rel="alternate"/>
-  <updated>2026-06-21T00:00:00Z</updated>
+  <updated>2026-07-07T00:00:00Z</updated>
   <id>https://bolivaralencastro.com.br/feed.xml</id>
   <author>
     <name>Bolívar Alencastro</name>
@@ -13,6 +13,16 @@
   <contributor>
     <name>Bolivar Alencastro</name>
   </contributor>
+
+  <entry>
+    <title>Antes do CicloFest Rural: uma rota vivida com a Triskel Bike</title>
+    <link href="https://bolivaralencastro.com.br/blog/antes-do-ciclofest-rural.html" rel="alternate"/>
+    <id>https://bolivaralencastro.com.br/blog/antes-do-ciclofest-rural.html</id>
+    <published>2026-07-07T00:00:00Z</published>
+    <updated>2026-07-07T00:00:00Z</updated>
+    <summary>Em 2021, Lica nos convidou a percorrer em primeira mão uma rota que preparava para o CicloFest Rural. Entre bicicleta, fotografia e encontros em São Pedro de Alcântara, a Triskel Bike me deu uma experiência que continuo guardando com carinho.</summary>
+    <content type="html">&lt;p&gt;Algumas experiências ficam guardadas pela paisagem. Outras permanecem por causa das pessoas que nos ensinaram a olhar para ela. Quando penso na cicloviagem por São Pedro de Alcântara, lembro das duas coisas. Lembro das estradas rurais, das subidas, das casas, dos animais, dos produtores que nos receberam. E lembro principalmente de Lica, conduzindo o grupo por um roteiro que ainda estava ganhando forma.&lt;/p&gt;</content>
+  </entry>
 
   <entry>
     <title>O que ainda não deixamos morrer</title>
