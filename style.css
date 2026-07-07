@@ -1650,6 +1650,10 @@ img, picture {
   margin: var(--space-3) 0;
 }
 
+img, video {
+  border-radius: 4px;
+}
+
 .image-gallery-triptych {
   display: grid;
   grid-template-columns: 1fr;
