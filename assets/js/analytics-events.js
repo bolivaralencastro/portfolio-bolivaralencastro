@@ -2,6 +2,9 @@
   "use strict";
 
   var SOCIAL_HOSTS = {
+    "facebook.com": "facebook",
+    "www.facebook.com": "facebook",
+    "m.facebook.com": "facebook",
     "github.com": "github",
     "instagram.com": "instagram",
     "www.instagram.com": "instagram",
