@@ -54,7 +54,9 @@ Scripts:
   - `<link rel="stylesheet" href="/style.css?v=HASH">`
   - `<script src="/assets/js/gtm.js?v=HASH" defer></script>`
   - `<script src="/assets/js/analytics-events.js?v=HASH" defer></script>`
-- As paginas com CSP liberam GTM, GA4 e Clarity: `www.googletagmanager.com`, `www.google-analytics.com`, `*.google-analytics.com`, `www.clarity.ms`, `*.clarity.ms` e `c.bing.com`.
+  - `<script src="/assets/js/meta-pixel.js?v=HASH" defer></script>`
+- As paginas com CSP liberam GTM, GA4, Clarity e Meta Pixel: `www.googletagmanager.com`, `www.google-analytics.com`, `*.google-analytics.com`, `www.clarity.ms`, `*.clarity.ms`, `c.bing.com`, `connect.facebook.net` e `www.facebook.com`.
+- A CSP nao tem `unsafe-inline`: scripts e estilos inline sao bloqueados; qualquer snippet de terceiro vai para arquivo externo em `assets/js/`.
 - Eventos enviados ao GTM/GA4:
   - `portfolio_page_context`
   - `portfolio_read_depth`
