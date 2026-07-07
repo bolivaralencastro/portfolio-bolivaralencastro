@@ -478,6 +478,24 @@ time {
   margin-top: var(--space-4);
 }
 
+.page-hero-stack {
+  min-height: 52svh;
+  align-content: center;
+
+  & > div {
+    display: grid;
+    gap: var(--space-2);
+  }
+
+  & .lead {
+    max-width: 44ch;
+  }
+
+  & .meta {
+    margin-top: 0;
+  }
+}
+
 .now-page header {
   margin-bottom: var(--space-5);
 }
