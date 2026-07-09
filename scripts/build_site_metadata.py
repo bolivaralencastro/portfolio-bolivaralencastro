@@ -503,22 +503,30 @@ def build_blog_list_html(posts: list[dict]) -> str:
     return "\n".join(lines).rstrip()
 
 
-def build_projects_list_html(projects: list[dict]) -> str:
+def build_projects_list_html(projects: list[dict], *, prioritize_first: bool = False) -> str:
     lines: List[str] = []
-    for project in projects:
+    for index, project in enumerate(projects):
         title = html.escape(project["title"])
         description = html.escape(project["description"])
         href = html.escape(project["href"])
         cover = html.escape(project["listing_cover_html"])
         category = html.escape(project.get("category", "design"))
+        responsive_attrs = ""
         size_attrs = ""
+        if project.get("listing_cover_srcset"):
+            responsive_attrs += f' srcset="{html.escape(project["listing_cover_srcset"])}"'
+        if project.get("listing_cover_sizes"):
+            responsive_attrs += f' sizes="{html.escape(project["listing_cover_sizes"])}"'
         if project["listing_cover_width"] and project["listing_cover_height"]:
             size_attrs = f' width="{project["listing_cover_width"]}" height="{project["listing_cover_height"]}"'
+        image_loading_attrs = ' loading="lazy" decoding="async"'
+        if prioritize_first and index == 0:
+            image_loading_attrs = ' loading="eager" fetchpriority="high" decoding="async"'
         lines.extend(
             [
                 f"      <article class=\"project-item col-4\" data-project-category=\"{category}\">",
                 f"        <a href=\"{href}\" class=\"project-cover\" aria-label=\"Abrir projeto: {title}\">",
-                f"          <img src=\"{cover}\" alt=\"Capa do projeto: {title}\" loading=\"lazy\" decoding=\"async\"{size_attrs}>",
+                f"          <img src=\"{cover}\"{responsive_attrs} alt=\"Capa do projeto: {title}\"{image_loading_attrs}{size_attrs}>",
                 "        </a>",
                 f"        <h3><a href=\"{href}\">{title}</a></h3>",
                 f"        <p>{description}</p>",
@@ -560,7 +568,7 @@ def build_latest_post_html(latest_post: dict) -> str:
 
 
 def build_featured_projects_html(projects: list[dict], limit: int = 3) -> str:
-    return build_projects_list_html(projects[:limit])
+    return build_projects_list_html(projects[:limit], prioritize_first=True)
 
 
 def build_links_latest_post_html(latest_post: dict) -> str:
@@ -1031,6 +1039,13 @@ def resolve_listing_cover(url: str, base_url: str, repo_root: pathlib.Path) -> d
             if filename in {"card.png", "card.webp"}:
                 result["width"] = LISTING_CARD_WIDTH
                 result["height"] = LISTING_CARD_HEIGHT
+                small_candidate = candidate.with_name("card-480.webp")
+                if small_candidate.exists():
+                    result["srcset"] = (
+                        f"/{small_candidate.relative_to(repo_root).as_posix()} 480w, "
+                        f"/{candidate.relative_to(repo_root).as_posix()} {LISTING_CARD_WIDTH}w"
+                    )
+                    result["sizes"] = "(max-width: 700px) calc(100vw - 2rem), 33vw"
             return result
 
     return {"path": asset_path, "width": None, "height": None}
@@ -1221,6 +1236,8 @@ def main() -> int:
                 "listing_cover_html": listing_cover["path"],
                 "listing_cover_width": listing_cover["width"],
                 "listing_cover_height": listing_cover["height"],
+                "listing_cover_srcset": listing_cover.get("srcset", ""),
+                "listing_cover_sizes": listing_cover.get("sizes", ""),
                 "category": "fotografia" if href in PHOTOGRAPHY_PROJECT_HREFS else "design",
             }
         )
@@ -1340,7 +1357,7 @@ def main() -> int:
     blog_list_inner = build_blog_list_html(blog_page_one.items)
     blog_jsonld_inner = build_blog_collection_jsonld(blog_page_one.items, blog_page_one.canonical_url, "Blog - Bolívar Alencastro")
     blog_pagination_inner = build_archive_pagination_html(blog_page_one, aria_label="Paginação do blog")
-    projects_list_inner = build_projects_list_html(projects)
+    projects_list_inner = build_projects_list_html(projects, prioritize_first=True)
     featured_projects_inner = build_featured_projects_html(projects, limit=3)
     latest_post_inner = build_latest_post_html(posts[0])
     links_latest_post_inner = build_links_latest_post_html(posts[0])
