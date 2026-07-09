@@ -43,7 +43,6 @@ LISTING_CARD_WIDTH = 960
 LISTING_CARD_HEIGHT = 540
 VERSIONED_ASSETS = {
     "/style.css": pathlib.Path("style.css"),
-    "/assets/js/gtm.js": pathlib.Path("assets/js/gtm.js"),
     "/assets/js/meta-pixel.js": pathlib.Path("assets/js/meta-pixel.js"),
     "/assets/js/analytics-events.js": pathlib.Path("assets/js/analytics-events.js"),
     "/assets/js/lightbox.js": pathlib.Path("assets/js/lightbox.js"),
@@ -838,7 +837,6 @@ def render_blog_archive_page(page: ArchivePage, *, base_url: str) -> str:
         f"  <title>{html.escape(page.title)}</title>",
         f'  <meta name="description" content="{html.escape(page.description, quote=True)}">',
         '  <link rel="stylesheet" href="/style.css">',
-        '  <script src="/assets/js/gtm.js" defer></script>',
         f'  <link rel="canonical" href="{html.escape(page.canonical_url, quote=True)}">',
         f'  <meta name="author" content="{html.escape(FEED_AUTHOR_NAME, quote=True)}">',
         '  <meta name="generator" content="Handcrafted HTML">',
@@ -1092,6 +1090,11 @@ def ensure_script_reference(html_content: str, public_path: str, defer: bool = T
     return html_content[:head_idx] + snippet + html_content[head_idx:]
 
 
+def remove_script_reference(html_content: str, public_path: str) -> str:
+    pattern = re.compile(rf"^[ \t]*<script\s+[^>]*src=[\"']{re.escape(public_path)}(?:\?v=[0-9a-f]+)?[\"'][^>]*></script>\n?", re.MULTILINE)
+    return pattern.sub("", html_content)
+
+
 def ensure_rel_me_reference(html_content: str, href: str) -> str:
     if href in html_content:
         return html_content
@@ -1108,7 +1111,6 @@ def ensure_rel_me_reference(html_content: str, href: str) -> str:
 def apply_versioned_asset_refs(html_content: str, versions: dict[str, str]) -> str:
     updated = html_content
     updated = replace_asset_reference(updated, "href", "/style.css", versions["/style.css"])
-    updated = replace_asset_reference(updated, "src", "/assets/js/gtm.js", versions["/assets/js/gtm.js"])
     updated = replace_asset_reference(updated, "src", "/assets/js/meta-pixel.js", versions["/assets/js/meta-pixel.js"])
     updated = replace_asset_reference(
         updated,
@@ -1445,6 +1447,7 @@ def main() -> int:
         source_html = managed_pages.get(page_path)
         if source_html is None:
             source_html = page_path.read_text(encoding="utf-8")
+        source_html = remove_script_reference(source_html, "/assets/js/gtm.js")
         source_html = ensure_rel_me_reference(source_html, "https://facebook.com/bolivaralencastrofotografia")
         source_html = ensure_script_reference(source_html, "/assets/js/analytics-events.js")
         source_html = ensure_script_reference(source_html, "/assets/js/lightbox.js")
