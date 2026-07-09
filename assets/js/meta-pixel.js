@@ -3,7 +3,7 @@
 
   var PIXEL_ID = "1537864418068216";
   var loaded = false;
-  var idleDelay = 9000;
+  var idleDelay = 30000;
   var fbq = window.fbq;
 
   if (!fbq) {
