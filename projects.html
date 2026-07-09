@@ -6,7 +6,7 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://connect.facebook.net https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.clarity.ms https://*.clarity.ms; connect-src 'self' https://www.facebook.com https://connect.facebook.net https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://www.clarity.ms https://*.clarity.ms https://c.bing.com; style-src 'self'; img-src 'self' data: https://www.facebook.com https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.clarity.ms https://*.clarity.ms https://c.bing.com; frame-src https://www.googletagmanager.com;">
   <title>Projetos - Bolívar Alencastro</title>
   <meta name="description" content="Catálogo de projetos reais de branding, product design e fotografia desenvolvidos por Bolívar Alencastro.">
-  <link rel="stylesheet" href="/style.css?v=ecc0c285a1">
+  <link rel="stylesheet" href="/style.css?v=3e7b3f701a">
   <noscript><link rel="stylesheet" href="/assets/css/nojs-nav.css"></noscript>
   <script src="/assets/js/gtm.js?v=9a0f5af682" defer></script>
   <link rel="canonical" href="https://bolivaralencastro.com.br/projects.html">
@@ -63,6 +63,7 @@
   <script src="/assets/js/meta-pixel.js?v=6f219948f5" defer></script>
   <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1537864418068216&ev=PageView&noscript=1"/></noscript>
   <!-- End Meta Pixel -->
+  <script src="/assets/js/project-filters.js?v=e507c80993" defer></script>
 </head>
 <body>
   <div class="grain"></div>
@@ -88,10 +89,14 @@
       <p class="lead col-4">Projetos reais em branding, produto digital e fotografia, com foco em estratégia, consistência visual e execução.</p>
     </section>
 
-    <section class="grid col-12 section-block">
-      <h2 class="col-12">Projetos</h2>
+    <section class="grid col-12 section-block project-list-section">
+      <div class="project-filter-bar col-12" data-project-filters aria-label="Filtrar projetos">
+        <button type="button" class="project-filter-button" data-project-filter="todos" aria-pressed="true">Todos</button>
+        <button type="button" class="project-filter-button" data-project-filter="design" aria-pressed="false">Design</button>
+        <button type="button" class="project-filter-button" data-project-filter="fotografia" aria-pressed="false">Fotografia</button>
+      </div>
       <!-- AUTO:projects-list:start -->
-      <article class="project-item col-4">
+      <article class="project-item col-4" data-project-category="design">
         <a href="/projects/keeps-learning-konquest.html" class="project-cover" aria-label="Abrir projeto: Keeps Products">
           <img src="/assets/images/projects/keeps-learning-konquest/card.webp" alt="Capa do projeto: Keeps Products" loading="lazy" decoding="async" width="960" height="540">
         </a>
@@ -99,7 +104,7 @@
         <p>Product design para Konquest, Smartzap e Analytics, com foco em jornadas, consistência e escala.</p>
       </article>
 
-      <article class="project-item col-4">
+      <article class="project-item col-4" data-project-category="design">
         <a href="/projects/keeps-learning-site-identidade.html" class="project-cover" aria-label="Abrir projeto: Keeps Learning Site e Identidade">
           <img src="/assets/images/projects/keeps-learning-site-identidade/card.webp" alt="Capa do projeto: Keeps Learning Site e Identidade" loading="lazy" decoding="async" width="960" height="540">
         </a>
@@ -107,7 +112,7 @@
         <p>Identidade visual e redesign do site institucional da Keeps Learning, organizados como frente institucional de marca.</p>
       </article>
 
-      <article class="project-item col-4">
+      <article class="project-item col-4" data-project-category="design">
         <a href="/projects/kirinus-escola-de-danca.html" class="project-cover" aria-label="Abrir projeto: Kirinus Escola de Dança">
           <img src="/assets/images/projects/kirinus-escola-de-danca/card.webp" alt="Capa do projeto: Kirinus Escola de Dança" loading="lazy" decoding="async" width="960" height="540">
         </a>
@@ -115,7 +120,7 @@
         <p>Marca, sistema visual e campanhas digitais para a Kirinus Escola de Dança.</p>
       </article>
 
-      <article class="project-item col-4">
+      <article class="project-item col-4" data-project-category="fotografia">
         <a href="/projects/intelbras-opl-cidades-invisiveis.html" class="project-cover" aria-label="Abrir projeto: Intelbras, OPL, Cidades Invisíveis">
           <img src="/assets/images/projects/intelbras-opl-cidades-invisiveis/card.webp" alt="Capa do projeto: Intelbras, OPL, Cidades Invisíveis" loading="lazy" decoding="async" width="960" height="540">
         </a>
@@ -123,7 +128,7 @@
         <p>Fotografias de produto que unem técnica e estética para catálogos, e-commerce e campanhas.</p>
       </article>
 
-      <article class="project-item col-4">
+      <article class="project-item col-4" data-project-category="design">
         <a href="/projects/coletivo-pilates.html" class="project-cover" aria-label="Abrir projeto: Coletivo Pilates">
           <img src="/assets/images/projects/coletivo-pilates/card.webp" alt="Capa do projeto: Coletivo Pilates" loading="lazy" decoding="async" width="960" height="540">
         </a>
@@ -131,7 +136,7 @@
         <p>Identidade visual, camisetas e aplicações de marca criadas para o Coletivo Pilates.</p>
       </article>
 
-      <article class="project-item col-4">
+      <article class="project-item col-4" data-project-category="design">
         <a href="/projects/experiencia-branding-identidade-visual.html" class="project-cover" aria-label="Abrir projeto: Experiência em Branding e Identidade Visual">
           <img src="/assets/images/projects/branding-identidade-visual/card.webp" alt="Capa do projeto: Experiência em Branding e Identidade Visual" loading="lazy" decoding="async" width="960" height="540">
         </a>
@@ -139,7 +144,7 @@
         <p>Desenvolvi marcas para cultura, esporte, educação, entretenimento e impacto social com pesquisa, estratégia e design.</p>
       </article>
 
-      <article class="project-item col-4">
+      <article class="project-item col-4" data-project-category="design">
         <a href="/projects/trabalhos-pessoais-arte-ilustracao.html" class="project-cover" aria-label="Abrir projeto: Trabalhos Pessoais — Arte e Ilustração">
           <img src="/assets/images/projects/trabalhos-pessoais/card.webp" alt="Capa do projeto: Trabalhos Pessoais — Arte e Ilustração" loading="lazy" decoding="async" width="960" height="540">
         </a>
@@ -147,7 +152,7 @@
         <p>Ilustrações, colagens e projetos gráficos pessoais: Spiritual Trance, Guilherme Rocha, Conexão, Imprima seu Estilo 3M, Ride Faster e Fluir.</p>
       </article>
 
-      <article class="project-item col-4">
+      <article class="project-item col-4" data-project-category="design">
         <a href="/projects/grupo-rbs-planejamento-multimidia.html" class="project-cover" aria-label="Abrir projeto: Grupo RBS: Planejamento Multimídia Comercial">
           <img src="/assets/images/projects/grupo-rbs-planejamento-multimidia/card.webp" alt="Capa do projeto: Grupo RBS: Planejamento Multimídia Comercial" loading="lazy" decoding="async" width="960" height="540">
         </a>
@@ -155,7 +160,7 @@
         <p>Minha atuação no Grupo RBS (afiliada Globo em Santa Catarina), criando e estruturando apresentações comerciais multimídia para o time de vendas.</p>
       </article>
 
-      <article class="project-item col-4">
+      <article class="project-item col-4" data-project-category="fotografia">
         <a href="/projects/retratos-ufsc-florianopolis.html" class="project-cover" aria-label="Abrir projeto: Retratos e Vida Universitaria na UFSC">
           <img src="/assets/images/projects/retratos-ufsc-florianopolis/card.webp" alt="Capa do projeto: Retratos e Vida Universitaria na UFSC" loading="lazy" decoding="async" width="960" height="540">
         </a>
@@ -163,7 +168,7 @@
         <p>Ensaio fotografico com retratos e cenas de vida universitaria no campus da UFSC, em Florianopolis, com creditos das pessoas fotografadas e marcadas.</p>
       </article>
 
-      <article class="project-item col-4">
+      <article class="project-item col-4" data-project-category="fotografia">
         <a href="/projects/fotografia-instagram.html" class="project-cover" aria-label="Abrir projeto: Soberania da Presença">
           <img src="/assets/images/projects/fotografia-instagram/card.jpg" alt="Capa do projeto: Soberania da Presença" loading="lazy" decoding="async">
         </a>
@@ -171,7 +176,7 @@
         <p>Reuniao de ensaios fotograficos que torna visivel como minha atuacao como fotografo e designer se mistura, com tecnica, cuidado e experimentacao livre no contato humano.</p>
       </article>
 
-      <article class="project-item col-4">
+      <article class="project-item col-4" data-project-category="design">
         <a href="/projects/degola.html" class="project-cover" aria-label="Abrir projeto: Degola">
           <img src="/assets/images/projects/degola/card.webp" alt="Capa do projeto: Degola" loading="lazy" decoding="async" width="960" height="540">
         </a>
