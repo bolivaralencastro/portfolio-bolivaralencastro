@@ -48,9 +48,15 @@ VERSIONED_ASSETS = {
     "/assets/js/analytics-events.js": pathlib.Path("assets/js/analytics-events.js"),
     "/assets/js/lightbox.js": pathlib.Path("assets/js/lightbox.js"),
     "/assets/js/mobile-nav.js": pathlib.Path("assets/js/mobile-nav.js"),
+    "/assets/js/project-filters.js": pathlib.Path("assets/js/project-filters.js"),
 }
 PROJECT_ORDER_AFTER = {
     "/projects/keeps-learning-site-identidade.html": "/projects/keeps-learning-konquest.html",
+}
+PHOTOGRAPHY_PROJECT_HREFS = {
+    "/projects/intelbras-opl-cidades-invisiveis.html",
+    "/projects/retratos-ufsc-florianopolis.html",
+    "/projects/fotografia-instagram.html",
 }
 
 
@@ -504,12 +510,13 @@ def build_projects_list_html(projects: list[dict]) -> str:
         description = html.escape(project["description"])
         href = html.escape(project["href"])
         cover = html.escape(project["listing_cover_html"])
+        category = html.escape(project.get("category", "design"))
         size_attrs = ""
         if project["listing_cover_width"] and project["listing_cover_height"]:
             size_attrs = f' width="{project["listing_cover_width"]}" height="{project["listing_cover_height"]}"'
         lines.extend(
             [
-                "      <article class=\"project-item col-4\">",
+                f"      <article class=\"project-item col-4\" data-project-category=\"{category}\">",
                 f"        <a href=\"{href}\" class=\"project-cover\" aria-label=\"Abrir projeto: {title}\">",
                 f"          <img src=\"{cover}\" alt=\"Capa do projeto: {title}\" loading=\"lazy\" decoding=\"async\"{size_attrs}>",
                 "        </a>",
@@ -1096,6 +1103,12 @@ def apply_versioned_asset_refs(html_content: str, versions: dict[str, str]) -> s
     )
     updated = replace_asset_reference(updated, "src", "/assets/js/lightbox.js", versions["/assets/js/lightbox.js"])
     updated = replace_asset_reference(updated, "src", "/assets/js/mobile-nav.js", versions["/assets/js/mobile-nav.js"])
+    updated = replace_asset_reference(
+        updated,
+        "src",
+        "/assets/js/project-filters.js",
+        versions["/assets/js/project-filters.js"],
+    )
     return updated
 
 
@@ -1208,6 +1221,7 @@ def main() -> int:
                 "listing_cover_html": listing_cover["path"],
                 "listing_cover_width": listing_cover["width"],
                 "listing_cover_height": listing_cover["height"],
+                "category": "fotografia" if href in PHOTOGRAPHY_PROJECT_HREFS else "design",
             }
         )
 
@@ -1418,6 +1432,8 @@ def main() -> int:
         source_html = ensure_script_reference(source_html, "/assets/js/analytics-events.js")
         source_html = ensure_script_reference(source_html, "/assets/js/lightbox.js")
         source_html = ensure_script_reference(source_html, "/assets/js/mobile-nav.js")
+        if page_path == projects_html_path:
+            source_html = ensure_script_reference(source_html, "/assets/js/project-filters.js")
         versioned_html = apply_versioned_asset_refs(source_html, asset_versions)
         write_or_check(page_path, versioned_html, args.check, changed)
 
