@@ -34,8 +34,6 @@
 
   window.addEventListener("pointerdown", loadGtm, { once: true, passive: true });
   window.addEventListener("keydown", loadGtm, { once: true });
-  window.addEventListener("scroll", loadGtm, { once: true, passive: true });
-
   if (document.readyState === "complete") {
     loadAfterPageSettles();
   } else {

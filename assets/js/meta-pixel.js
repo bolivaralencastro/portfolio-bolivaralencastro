@@ -43,8 +43,6 @@
 
   window.addEventListener("pointerdown", loadPixel, { once: true, passive: true });
   window.addEventListener("keydown", loadPixel, { once: true });
-  window.addEventListener("scroll", loadPixel, { once: true, passive: true });
-
   if (document.readyState === "complete") {
     loadAfterPageSettles();
   } else {
