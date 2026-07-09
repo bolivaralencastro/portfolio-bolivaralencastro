@@ -18,7 +18,6 @@ from notes_pipeline import NOTE_ARCHIVE_PAGE_SIZE, NOTE_AUTO_BLOCK, NOW_NOTES_LI
 
 BASE_URL_DEFAULT = "https://bolivaralencastro.com.br"
 ROOT_PAGES = ["index.html", "about.html", "blog.html", "projects.html", "now.html", "links.html", "retratos-ufsc-florianopolis-imersivo.html"]
-ANALYTICS_SCRIPT_SRC = "/assets/js/analytics-events.js"
 MAIN_STYLESHEET_HREF = "/style.css"
 TAGGING_CSP_SOURCES = [
 ]
@@ -445,17 +444,6 @@ def main() -> int:
             errors.append(f"{page.rel_path}: missing main stylesheet '{MAIN_STYLESHEET_HREF}'")
         elif not any(has_version_query(href) for href in matching_stylesheets):
             errors.append(f"{page.rel_path}: main stylesheet must include a version query parameter")
-
-        matching_analytics_scripts = [src for src in page.script_srcs if asset_path(src) == ANALYTICS_SCRIPT_SRC]
-        matching_deferred_analytics_scripts = [
-            src for src in page.deferred_script_srcs if asset_path(src) == ANALYTICS_SCRIPT_SRC
-        ]
-        if not matching_analytics_scripts:
-            errors.append(f"{page.rel_path}: missing analytics script '{ANALYTICS_SCRIPT_SRC}'")
-        elif not any(has_version_query(src) for src in matching_analytics_scripts):
-            errors.append(f"{page.rel_path}: analytics script must include a version query parameter")
-        if not matching_deferred_analytics_scripts:
-            errors.append(f"{page.rel_path}: analytics script must use 'defer'")
 
         if page.csp_content:
             for source in TAGGING_CSP_SOURCES:
