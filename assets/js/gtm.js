@@ -5,7 +5,7 @@
   var dataLayerName = "dataLayer";
   var dataLayer = window[dataLayerName] = window[dataLayerName] || [];
   var loaded = false;
-  var idleDelay = 9000;
+  var idleDelay = 30000;
 
   dataLayer.push({
     "gtm.start": new Date().getTime(),
