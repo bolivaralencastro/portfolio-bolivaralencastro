@@ -477,6 +477,11 @@ def build_blog_list_html(posts: list[dict]) -> str:
         summary = html.escape(post["summary"])
         href = html.escape(post["href"])
         cover = html.escape(post["listing_cover_html"])
+        responsive_attrs = ""
+        if post.get("listing_cover_srcset"):
+            responsive_attrs += f' srcset="{html.escape(post["listing_cover_srcset"])}"'
+        if post.get("listing_cover_sizes"):
+            responsive_attrs += f' sizes="{html.escape(post["listing_cover_sizes"])}"'
         date_iso = post["published"].date().isoformat()
         date_human = format_pt_date_short(post["published"])
         size_attrs = ""
@@ -486,7 +491,7 @@ def build_blog_list_html(posts: list[dict]) -> str:
             [
                 "      <article class=\"post-item post-row h-entry col-12\">",
                 f"        <a href=\"{href}\" class=\"post-row-cover\" aria-label=\"Abrir post: {title}\">",
-                f"          <img src=\"{cover}\" alt=\"Capa do post: {title}\" loading=\"lazy\" decoding=\"async\"{size_attrs}>",
+                f"          <img src=\"{cover}\"{responsive_attrs} alt=\"Capa do post: {title}\" loading=\"lazy\" decoding=\"async\"{size_attrs}>",
                 "        </a>",
                 "        <div class=\"post-row-body\">",
                 f"          <h3 class=\"p-name\"><a href=\"{href}\" class=\"u-url\">{title}</a></h3>",
@@ -539,6 +544,11 @@ def build_latest_post_html(latest_post: dict) -> str:
     summary = html.escape(latest_post["summary"])
     href = html.escape(latest_post["href"])
     cover = html.escape(latest_post["listing_cover_html"])
+    responsive_attrs = ""
+    if latest_post.get("listing_cover_srcset"):
+        responsive_attrs += f' srcset="{html.escape(latest_post["listing_cover_srcset"])}"'
+    if latest_post.get("listing_cover_sizes"):
+        responsive_attrs += f' sizes="{html.escape(latest_post["listing_cover_sizes"])}"'
     date_iso = latest_post["published"].date().isoformat()
     date_human = format_pt_date_short(latest_post["published"])
     size_attrs = ""
@@ -552,7 +562,7 @@ def build_latest_post_html(latest_post: dict) -> str:
         [
             "      <article class=\"post-item post-row h-entry col-12\">",
             f"        <a href=\"{href}\" class=\"post-row-cover\" aria-label=\"Abrir post: {title}\">",
-            f"          <img src=\"{cover}\" alt=\"Capa do post: {title}\" loading=\"lazy\" decoding=\"async\"{size_attrs}>",
+            f"          <img src=\"{cover}\"{responsive_attrs} alt=\"Capa do post: {title}\" loading=\"lazy\" decoding=\"async\"{size_attrs}>",
             "        </a>",
             "        <div class=\"post-row-body\">",
             f"          <h3 class=\"p-name\"><a href=\"{href}\" class=\"u-url\">{title}</a></h3>",
@@ -573,6 +583,11 @@ def build_links_latest_post_html(latest_post: dict) -> str:
     summary = html.escape(latest_post["summary"])
     href = html.escape(latest_post["href"])
     cover = html.escape(latest_post["listing_cover_html"])
+    responsive_attrs = ""
+    if latest_post.get("listing_cover_srcset"):
+        responsive_attrs += f' srcset="{html.escape(latest_post["listing_cover_srcset"])}"'
+    if latest_post.get("listing_cover_sizes"):
+        responsive_attrs += f' sizes="{html.escape(latest_post["listing_cover_sizes"])}"'
     date_iso = latest_post["published"].date().isoformat()
     date_human = format_pt_date_short(latest_post["published"])
     size_attrs = ""
@@ -586,7 +601,7 @@ def build_links_latest_post_html(latest_post: dict) -> str:
         [
             '      <article class="links-feature-card links-feature-post col-12 h-entry">',
             f'        <a href="{href}" class="links-feature-cover" aria-label="Abrir post: {title}">',
-            f'          <img src="{cover}" alt="Capa do post: {title}" loading="lazy" decoding="async"{size_attrs}>',
+            f'          <img src="{cover}"{responsive_attrs} alt="Capa do post: {title}" loading="lazy" decoding="async"{size_attrs}>',
             "        </a>",
             '        <div class="links-feature-body">',
             '          <p class="meta">Post mais recente</p>',
@@ -604,6 +619,11 @@ def build_links_featured_project_html(project: dict) -> str:
     description = html.escape(project["description"])
     href = html.escape(project["href"])
     cover = html.escape(project["listing_cover_html"])
+    responsive_attrs = ""
+    if project.get("listing_cover_srcset"):
+        responsive_attrs += f' srcset="{html.escape(project["listing_cover_srcset"])}"'
+    if project.get("listing_cover_sizes"):
+        responsive_attrs += f' sizes="{html.escape(project["listing_cover_sizes"])}"'
     size_attrs = ""
     if project["listing_cover_width"] and project["listing_cover_height"]:
         size_attrs = f' width="{project["listing_cover_width"]}" height="{project["listing_cover_height"]}"'
@@ -612,7 +632,7 @@ def build_links_featured_project_html(project: dict) -> str:
         [
             '      <article class="links-feature-card links-feature-project col-12">',
             f'        <a href="{href}" class="links-feature-cover" aria-label="Abrir projeto: {title}">',
-            f'          <img src="{cover}" alt="Capa do projeto: {title}" loading="lazy" decoding="async"{size_attrs}>',
+            f'          <img src="{cover}"{responsive_attrs} alt="Capa do projeto: {title}" loading="lazy" decoding="async"{size_attrs}>',
             "        </a>",
             '        <div class="links-feature-body">',
             '          <p class="meta">Projeto em destaque</p>',
@@ -1035,13 +1055,15 @@ def resolve_listing_cover(url: str, base_url: str, repo_root: pathlib.Path) -> d
             if filename in {"card.png", "card.webp"}:
                 result["width"] = LISTING_CARD_WIDTH
                 result["height"] = LISTING_CARD_HEIGHT
-                small_candidate = candidate.with_name("card-480.webp")
-                if small_candidate.exists():
-                    result["srcset"] = (
-                        f"/{small_candidate.relative_to(repo_root).as_posix()} 480w, "
-                        f"/{candidate.relative_to(repo_root).as_posix()} {LISTING_CARD_WIDTH}w"
-                    )
-                    result["sizes"] = "(max-width: 700px) calc(100vw - 2rem), 33vw"
+                srcset_entries = []
+                for variant_width in (480, 720):
+                    variant_candidate = candidate.with_name(f"card-{variant_width}.webp")
+                    if variant_candidate.exists():
+                        srcset_entries.append(f"/{variant_candidate.relative_to(repo_root).as_posix()} {variant_width}w")
+                srcset_entries.append(f"/{candidate.relative_to(repo_root).as_posix()} {LISTING_CARD_WIDTH}w")
+                if len(srcset_entries) > 1:
+                    result["srcset"] = ", ".join(srcset_entries)
+                    result["sizes"] = "(max-width: 700px) 86vw, (max-width: 980px) 62vw, 33vw"
             return result
 
     return {"path": asset_path, "width": None, "height": None}
@@ -1201,6 +1223,8 @@ def main() -> int:
                 "cover": og_image,
                 "cover_html": normalize_cover_for_html(og_image, base_url),
                 "listing_cover_html": listing_cover["path"],
+                "listing_cover_srcset": listing_cover.get("srcset", ""),
+                "listing_cover_sizes": listing_cover.get("sizes", ""),
                 "listing_cover_width": listing_cover["width"],
                 "listing_cover_height": listing_cover["height"],
                 "published": published,
