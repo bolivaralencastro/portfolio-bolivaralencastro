@@ -21,8 +21,6 @@ ROOT_PAGES = ["index.html", "about.html", "blog.html", "projects.html", "now.htm
 ANALYTICS_SCRIPT_SRC = "/assets/js/analytics-events.js"
 MAIN_STYLESHEET_HREF = "/style.css"
 TAGGING_CSP_SOURCES = [
-    "https://connect.facebook.net",
-    "https://www.facebook.com",
 ]
 VOID_TAGS = {
     "area",

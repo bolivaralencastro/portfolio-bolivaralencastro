@@ -47,13 +47,12 @@ Scripts:
 ## Analytics
 
 - O portfolio nao carrega Google Tag Manager, Google Analytics ou Microsoft Clarity no caminho publico inicial.
+- O portfolio tambem nao carrega Meta Pixel por padrao; a prioridade atual e desempenho maximo no PageSpeed.
 - Eventos proprios do site sao preparados por [`assets/js/analytics-events.js`](./assets/js/analytics-events.js), sem carregar terceiros no caminho critico.
-- O Meta Pixel usa [`assets/js/meta-pixel.js`](./assets/js/meta-pixel.js) com carregamento atrasado.
-- Toda pagina publica deve incluir o script de eventos, o Meta Pixel e a folha principal com URL versionada, por exemplo:
+- Toda pagina publica deve incluir o script de eventos e a folha principal com URL versionada, por exemplo:
   - `<link rel="stylesheet" href="/style.css?v=HASH">`
   - `<script src="/assets/js/analytics-events.js?v=HASH" defer></script>`
-  - `<script src="/assets/js/meta-pixel.js?v=HASH" defer></script>`
-- As paginas com CSP liberam scripts locais em `/assets/js/` e Meta Pixel: `connect.facebook.net` e `www.facebook.com`.
+- As paginas com CSP liberam scripts locais em `/assets/js/`.
 - A CSP nao tem `unsafe-inline`: scripts e estilos inline sao bloqueados; qualquer snippet de terceiro vai para arquivo externo em `assets/js/`.
 - Eventos preparados pelo script de eventos:
   - `portfolio_page_context`
@@ -68,7 +67,7 @@ Scripts:
 
 - O HTML continua sem cache agressivo para evitar pagina velha apos deploy.
 - CSS/JS estaticos devem ser servidos com URL versionada para permitir cache forte no Cloudflare sem risco pratico de stale asset.
-- Sempre que `style.css`, `assets/js/meta-pixel.js` ou `assets/js/analytics-events.js` mudarem, rode `python scripts/build_site_metadata.py` antes de publicar se estiver trabalhando fora do CI.
+- Sempre que `style.css` ou `assets/js/analytics-events.js` mudarem, rode `python scripts/build_site_metadata.py` antes de publicar se estiver trabalhando fora do CI.
 - Para cards de listagem, prefira `card.webp` no mesmo diretorio da imagem social. O gerador usa `card.webp`, cai para `cover.webp` e so usa `og.*` como ultimo fallback.
 
 ## Workflows GitHub Actions
