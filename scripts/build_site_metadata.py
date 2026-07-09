@@ -44,7 +44,6 @@ LISTING_CARD_HEIGHT = 540
 VERSIONED_ASSETS = {
     "/style.css": pathlib.Path("style.css"),
     "/assets/js/lightbox.js": pathlib.Path("assets/js/lightbox.js"),
-    "/assets/js/mobile-nav.js": pathlib.Path("assets/js/mobile-nav.js"),
     "/assets/js/project-filters.js": pathlib.Path("assets/js/project-filters.js"),
 }
 PROJECT_ORDER_AFTER = {
@@ -876,7 +875,6 @@ def render_blog_archive_page(page: ArchivePage, *, base_url: str) -> str:
         blog_jsonld_inner,
         '  <meta name="view-transition" content="same-origin">',
         '  <script src="/assets/js/lightbox.js" defer></script>',
-        '  <script src="/assets/js/mobile-nav.js" defer></script>',
         "</head>",
         "<body>",
         '  <div class="grain"></div>',
@@ -1129,6 +1127,14 @@ def remove_meta_pixel_block(html_content: str) -> str:
     return noscript_pattern.sub("", html_content)
 
 
+def remove_mobile_nav_button(html_content: str) -> str:
+    pattern = re.compile(
+        r"^[ \t]*<button\s+type=[\"']button[\"']\s+class=[\"']mobile-menu-toggle[\"'][^>]*>Menu</button>\n?",
+        re.MULTILINE,
+    )
+    return pattern.sub("", html_content)
+
+
 def should_include_lightbox(page_path: pathlib.Path, repo_root: pathlib.Path) -> bool:
     rel_path = page_path.relative_to(repo_root).as_posix()
     return (
@@ -1156,7 +1162,6 @@ def apply_versioned_asset_refs(html_content: str, versions: dict[str, str]) -> s
     updated = html_content
     updated = replace_asset_reference(updated, "href", "/style.css", versions["/style.css"])
     updated = replace_asset_reference(updated, "src", "/assets/js/lightbox.js", versions["/assets/js/lightbox.js"])
-    updated = replace_asset_reference(updated, "src", "/assets/js/mobile-nav.js", versions["/assets/js/mobile-nav.js"])
     updated = replace_asset_reference(
         updated,
         "src",
@@ -1489,12 +1494,13 @@ def main() -> int:
         source_html = remove_script_reference(source_html, "/assets/js/gtm.js")
         source_html = remove_meta_pixel_block(source_html)
         source_html = remove_script_reference(source_html, "/assets/js/analytics-events.js")
+        source_html = remove_script_reference(source_html, "/assets/js/mobile-nav.js")
+        source_html = remove_mobile_nav_button(source_html)
         source_html = ensure_rel_me_reference(source_html, "https://facebook.com/bolivaralencastrofotografia")
         if should_include_lightbox(page_path, repo_root):
             source_html = ensure_script_reference(source_html, "/assets/js/lightbox.js")
         else:
             source_html = remove_script_reference(source_html, "/assets/js/lightbox.js")
-        source_html = ensure_script_reference(source_html, "/assets/js/mobile-nav.js")
         if page_path == projects_html_path:
             source_html = ensure_script_reference(source_html, "/assets/js/project-filters.js")
         versioned_html = apply_versioned_asset_refs(source_html, asset_versions)
