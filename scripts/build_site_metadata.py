@@ -43,7 +43,6 @@ LISTING_CARD_WIDTH = 960
 LISTING_CARD_HEIGHT = 540
 VERSIONED_ASSETS = {
     "/style.css": pathlib.Path("style.css"),
-    "/assets/js/meta-pixel.js": pathlib.Path("assets/js/meta-pixel.js"),
     "/assets/js/analytics-events.js": pathlib.Path("assets/js/analytics-events.js"),
     "/assets/js/lightbox.js": pathlib.Path("assets/js/lightbox.js"),
     "/assets/js/mobile-nav.js": pathlib.Path("assets/js/mobile-nav.js"),
@@ -1095,6 +1094,20 @@ def remove_script_reference(html_content: str, public_path: str) -> str:
     return pattern.sub("", html_content)
 
 
+def remove_meta_pixel_block(html_content: str) -> str:
+    block_pattern = re.compile(
+        r"^[ \t]*<!-- Meta Pixel -->\n"
+        r"(?:^[ \t]*<script\s+[^>]*src=[\"']/assets/js/meta-pixel\.js(?:\?v=[0-9a-f]+)?[\"'][^>]*></script>\n)?"
+        r"(?:^[ \t]*<noscript><img[^>]+facebook\.com/tr[^>]*></noscript>\n)?"
+        r"^[ \t]*<!-- End Meta Pixel -->\n?",
+        re.MULTILINE,
+    )
+    html_content = block_pattern.sub("", html_content)
+    html_content = remove_script_reference(html_content, "/assets/js/meta-pixel.js")
+    noscript_pattern = re.compile(r"^[ \t]*<noscript><img[^>]+facebook\.com/tr[^>]*></noscript>\n?", re.MULTILINE)
+    return noscript_pattern.sub("", html_content)
+
+
 def ensure_rel_me_reference(html_content: str, href: str) -> str:
     if href in html_content:
         return html_content
@@ -1111,7 +1124,6 @@ def ensure_rel_me_reference(html_content: str, href: str) -> str:
 def apply_versioned_asset_refs(html_content: str, versions: dict[str, str]) -> str:
     updated = html_content
     updated = replace_asset_reference(updated, "href", "/style.css", versions["/style.css"])
-    updated = replace_asset_reference(updated, "src", "/assets/js/meta-pixel.js", versions["/assets/js/meta-pixel.js"])
     updated = replace_asset_reference(
         updated,
         "src",
@@ -1448,6 +1460,7 @@ def main() -> int:
         if source_html is None:
             source_html = page_path.read_text(encoding="utf-8")
         source_html = remove_script_reference(source_html, "/assets/js/gtm.js")
+        source_html = remove_meta_pixel_block(source_html)
         source_html = ensure_rel_me_reference(source_html, "https://facebook.com/bolivaralencastrofotografia")
         source_html = ensure_script_reference(source_html, "/assets/js/analytics-events.js")
         source_html = ensure_script_reference(source_html, "/assets/js/lightbox.js")
