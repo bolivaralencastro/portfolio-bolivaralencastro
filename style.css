@@ -1658,6 +1658,23 @@ img, video {
   color: var(--muted);
 }
 
+.project-story blockquote {
+  margin: var(--space-5) 0 0;
+  padding: 0 0 0 var(--space-4);
+  border-left: 2px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.project-story blockquote p {
+  margin: 0 0 var(--space-3);
+}
+
+.project-story blockquote footer {
+  margin-top: var(--space-4);
+  font-size: var(--text-sm);
+  color: var(--muted);
+}
+
 /* Image broken state: styled alt text as fallback (replaces image-fallback.js) */
 img {
   font-size: var(--text-xs);
