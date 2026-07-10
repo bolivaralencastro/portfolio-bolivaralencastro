@@ -363,6 +363,29 @@ Metadados minimos obrigatorios:
 - todas as imagens dentro de `.e-content` com `decoding="async"`
 - recomendado: JSON-LD com `CreativeWork` e Open Graph/Twitter Card
 
+### Importar projeto do Behance
+
+Para trazer um projeto publico do Behance como pagina de projeto, use:
+
+```bash
+python scripts/import_behance_project.py "https://www.behance.net/gallery/120196573/Anis-Crua" \
+  --slug anis-crua \
+  --title "Anis Crua" \
+  --summary "Ensaio fotografico para Anis Crua." \
+  --tags "Fotografia · Musica · Retrato" \
+  --story "Anis Crua e uma sequencia fotografica construida em torno de presenca, corpo e musica." \
+  --story "A leitura privilegia uma imagem por vez, em largura total, para preservar o ritmo do ensaio." \
+  --photography
+```
+
+O script extrai as imagens do Behance, gera WebP em `assets/images/projects/<slug>/`, cria `cover.webp`, `card.webp`, `card-720.webp`, `card-480.webp`, `og.webp`, escreve `projects/<slug>.html`, registra projetos de fotografia quando `--photography` for usado e roda `build_site_metadata.py` + `validate_site.py`.
+
+Antes de escrever arquivos, confira a extracao:
+
+```bash
+python scripts/import_behance_project.py "URL_DO_BEHANCE" --dry-run
+```
+
 ## Teste local rapido
 
 ```bash

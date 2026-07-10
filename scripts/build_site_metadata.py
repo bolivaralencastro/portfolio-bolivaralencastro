@@ -50,6 +50,7 @@ PROJECT_ORDER_AFTER = {
     "/projects/keeps-learning-site-identidade.html": "/projects/keeps-learning-konquest.html",
 }
 PHOTOGRAPHY_PROJECT_HREFS = {
+    "/projects/espetaculo-mesmo.html",
     "/projects/anis-crua.html",
     "/projects/intelbras-opl-cidades-invisiveis.html",
     "/projects/retratos-ufsc-florianopolis.html",
