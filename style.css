@@ -1629,6 +1629,34 @@ img, video {
     margin: 0;
   }
 }
+.photo-sequence {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--space-7);
+  margin: var(--space-6) 0 var(--space-8);
+}
+
+.photo-sequence figure {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.photo-sequence img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  background: var(--color-surface);
+}
+
+.photo-sequence figcaption {
+  max-width: 72ch;
+  margin: var(--space-2) 0 0;
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  color: var(--muted);
+}
 
 /* Image broken state: styled alt text as fallback (replaces image-fallback.js) */
 img {
@@ -2356,3 +2384,4 @@ body > footer {
     animation: none !important;
   }
 }
+

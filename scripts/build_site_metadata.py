@@ -50,6 +50,7 @@ PROJECT_ORDER_AFTER = {
     "/projects/keeps-learning-site-identidade.html": "/projects/keeps-learning-konquest.html",
 }
 PHOTOGRAPHY_PROJECT_HREFS = {
+    "/projects/anis-crua.html",
     "/projects/intelbras-opl-cidades-invisiveis.html",
     "/projects/retratos-ufsc-florianopolis.html",
     "/projects/fotografia-instagram.html",
@@ -1527,3 +1528,4 @@ if __name__ == "__main__":
     except BuildError as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         raise SystemExit(1)
+
