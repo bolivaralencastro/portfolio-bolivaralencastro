@@ -49,12 +49,20 @@ VERSIONED_ASSETS = {
 PROJECT_ORDER_AFTER = {
     "/projects/keeps-learning-site-identidade.html": "/projects/keeps-learning-konquest.html",
 }
-PHOTOGRAPHY_PROJECT_HREFS = {
-    "/projects/espetaculo-mesmo.html",
-    "/projects/anis-crua.html",
-    "/projects/intelbras-opl-cidades-invisiveis.html",
-    "/projects/retratos-ufsc-florianopolis.html",
-    "/projects/fotografia-instagram.html",
+PROJECT_CATEGORIES = {
+    "/projects/keeps-learning-konquest.html": "produto-digital",
+    "/projects/keeps-learning-site-identidade.html": "branding",
+    "/projects/kirinus-escola-de-danca.html": "branding",
+    "/projects/coletivo-pilates.html": "branding",
+    "/projects/experiencia-branding-identidade-visual.html": "branding",
+    "/projects/degola.html": "branding",
+    "/projects/grupo-rbs-planejamento-multimidia.html": "branding",
+    "/projects/trabalhos-pessoais-arte-ilustracao.html": "arte-ilustracao",
+    "/projects/intelbras-opl-cidades-invisiveis.html": "fotografia-produto",
+    "/projects/retratos-ufsc-florianopolis.html": "retratos-ensaios",
+    "/projects/fotografia-instagram.html": "retratos-ensaios",
+    "/projects/anis-crua.html": "retratos-ensaios",
+    "/projects/espetaculo-mesmo.html": "retratos-ensaios",
 }
 
 
@@ -504,6 +512,16 @@ def build_blog_list_html(posts: list[dict]) -> str:
             ]
         )
     return "\n".join(lines).rstrip()
+
+
+def resolve_project_category(href: str, rel_path: str) -> str:
+    category = PROJECT_CATEGORIES.get(href)
+    if not category:
+        raise BuildError(
+            f"{rel_path}: project is not classified; add it to PROJECT_CATEGORIES in scripts/build_site_metadata.py "
+            "and, if it is a new category, to the filter bar in projects.html"
+        )
+    return category
 
 
 def build_projects_list_html(projects: list[dict], *, prioritize_first: bool = False) -> str:
@@ -1286,7 +1304,7 @@ def main() -> int:
                 "listing_cover_height": listing_cover["height"],
                 "listing_cover_srcset": listing_cover.get("srcset", ""),
                 "listing_cover_sizes": listing_cover.get("sizes", ""),
-                "category": "fotografia" if href in PHOTOGRAPHY_PROJECT_HREFS else "design",
+                "category": resolve_project_category(href, meta.rel_path),
             }
         )
 

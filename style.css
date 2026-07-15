@@ -2020,13 +2020,23 @@ body > footer {
 
   .project-filter-bar {
     width: 100%;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+    border: 0;
+    border-radius: 0;
+    overflow: visible;
   }
 
   .project-filter-button {
-    flex: 1 1 0;
+    border: 1px solid var(--card-rule);
+    border-radius: 999px;
     min-width: 0;
     padding-inline: var(--space-2);
     text-align: center;
+  }
+
+  .project-filter-button:last-child {
+    border-right: 1px solid var(--card-rule);
   }
 
   .post-meta {

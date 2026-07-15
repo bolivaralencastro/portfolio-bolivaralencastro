@@ -9,7 +9,13 @@
   }
 
   var buttons = Array.prototype.slice.call(controls.querySelectorAll("[data-project-filter]"));
-  var validFilters = { todos: true, design: true, fotografia: true };
+  var validFilters = {};
+  buttons.forEach(function (button) {
+    var filter = button.getAttribute("data-project-filter");
+    if (filter) {
+      validFilters[filter] = true;
+    }
+  });
 
   function readFilterFromUrl() {
     var params = new URLSearchParams(window.location.search);
