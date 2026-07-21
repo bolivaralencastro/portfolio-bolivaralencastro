@@ -1614,6 +1614,14 @@ img, picture {
   margin: var(--space-3) 0;
 }
 
+/* Full-bleed figure: breaks out of the default figure margin to span
+   the full width of .e-content (12 columns), instead of the narrower
+   reading column used by paragraphs. */
+.e-content figure.figure-full {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 img, video {
   border-radius: 4px;
 }
