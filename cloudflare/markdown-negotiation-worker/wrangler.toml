@@ -1,0 +1,7 @@
+name = "bolivaralencastro-markdown-negotiation"
+main = "src/worker.js"
+compatibility_date = "2026-07-28"
+
+routes = [
+  { pattern = "bolivaralencastro.com.br/*", zone_id = "92cc395d5acf305f88d706e0b1df83cd" }
+]

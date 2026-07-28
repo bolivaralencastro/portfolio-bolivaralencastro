@@ -36,6 +36,7 @@ Arquivos, blocos e referencias gerados automaticamente:
 - `notes/page/N.html` quando houver mais de 20 notas publicadas
 - `notes/YYYY-MM-DD-slug.html` para cada nota publicada
 - URLs versionadas para `/style.css` e scripts publicos em todas as paginas publicas
+- `<slug>.md` ao lado de cada pagina publica (ex.: `about.md`, `blog/<slug>.md`, `notes/<slug>.md`), gerado a partir do `<main id="main">` da propria pagina, mais `<link rel="alternate" type="text/markdown">` no `<head>`
 
 Scripts:
 - `python scripts/build_site_metadata.py`: gera sitemap, feed, blocos auto-gerados e atualiza o versionamento de assets publicos.
