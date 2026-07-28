@@ -1,0 +1,217 @@
+Source: https://bolivaralencastro.com.br/blog/do-elevador-ao-making-of-openrouter-veo-seedance.html
+
+# Do elevador ao making of: uma experimentação com OpenRouter, Veo e Seedance 
+
+ Por [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 1 Mai 2026 • AI Workflow • Vídeo • 8 min de leitura • [permalink](https://bolivaralencastro.com.br/blog/do-elevador-ao-making-of-openrouter-veo-seedance.html)  
+
+Comecei tentando transformar um storyboard em um microfilme dentro de um elevador. Terminei produzindo também um meta-vídeo em que o personagem fala sobre o próprio processo. No meio disso, encontrei um fluxo útil, custos que exigem critério de uso e limites bem concretos de identidade, duração e moderação. 
+
+ 
+
+Resposta rápida 
+
+A tentativa de criar um microfilme em elevador terminou revelando um fluxo mais amplo: roteiro, geração de vídeo, making of, custos e limites de identidade. OpenRouter, Veo e Seedance aparecem como ferramentas úteis quando há critério de uso.  ![Diagrama editorial escuro mostrando um pipeline de criação com OpenRouter, vídeos curtos, voz e montagem final](https://bolivaralencastro.com.br/assets/images/blog/do-elevador-ao-making-of-openrouter-veo-seedance/cover.webp) 
+
+ 
+
+O experimento aconteceu em duas etapas. A primeira foi *Entre andares*, um microfilme silencioso sobre um homem sozinho no elevador, tentando se recompor antes que as portas se abram. A segunda foi um desdobramento inevitável: fazer um vídeo em que esse mesmo personagem aparece em um estúdio retro-tech falando sobre como o vídeo anterior estava sendo feito. 
+
+Em termos de stack, a arquitetura ficou relativamente clara. Usei o [OpenRouter](https://openrouter.ai/) como camada de orquestração, o [Seedance 2.0](https://openrouter.ai/bytedance/seedance-2.0) para parte das animações e dos planos mais controlados, o [Veo 3.1 Fast](https://openrouter.ai/google/veo-3.1-fast) para os takes falados e alguns closes mais estáveis, e a [ElevenLabs](https://elevenlabs.io/) para as narrações em off e testes de voz. O resto foi montagem local. 
+
+## 1. O primeiro alvo foi um curta muito pequeno 
+
+O curta do elevador já nasceu com uma vantagem: eu não estava tentando um filme longo, nem um diálogo. Era uma microcena de suspensão, baseada em seis blocos simples. Entrada. Isolamento. Botão. Pulso. Fissura. Recomposição. O formato ajudou. O limite técnico dos modelos também. 
+
+Antes de qualquer geração de vídeo, eu já tinha um material-base importante: um storyboard visual fechado. Em vez de improvisar shot a shot desde o início, eu consegui trabalhar com uma sequência relativamente clara de enquadramentos, gestos e transições emocionais. 
+
+ ![Storyboard em seis quadros para o vídeo do elevador, com entrada, isolamento, botão, pulso, fissura e recomposição](https://bolivaralencastro.com.br/assets/images/blog/do-elevador-ao-making-of-openrouter-veo-seedance/storyboard-elevador.webp) 
+
+O storyboard fechou a gramática emocional e espacial do curta antes da primeira chamada de vídeo.  ![Keyframe do personagem dentro do elevador, em close, com óculos escuros e expressão introspectiva](https://bolivaralencastro.com.br/assets/images/blog/do-elevador-ao-making-of-openrouter-veo-seedance/05-fissura-start.webp) 
+
+A primeira conclusão prática foi que não valia pedir um vídeo contínuo de vinte ou trinta segundos para um gerador. O caminho mais confiável era quebrar tudo em planos curtos, gerar por shot e deixar a continuidade global para a montagem. Essa lógica ficou ainda mais forte quando os testes começaram a esbarrar em duas coisas: filtros de privacidade e deriva facial. 
+
+O Seedance funcionou bem para planos de corpo, atmosfera e detalhe. Já os close-ups faciais acabaram passando melhor no Veo. O curta final de *Entre andares* ficou com uma estrutura híbrida: quatro shots do Seedance e dois do Veo. ![Plano frontal do personagem no elevador, já recomposto, de corpo inteiro, com postura elegante](https://bolivaralencastro.com.br/assets/images/blog/do-elevador-ao-making-of-openrouter-veo-seedance/06-recomposicao-end.webp) 
+
+## 2. O segundo alvo foi mais estranho e mais interessante 
+
+Depois do curta, eu quis produzir um vídeo em que o personagem aparecesse falando diretamente para a câmera sobre o próprio processo. Não um making of documental, mas um ensaio audiovisual curto sobre a montagem de um filme com referências, keyframes, OpenRouter, Seedance e Veo. 
+
+Essa segunda etapa dependia de um conjunto de imagens-base do personagem. Parte dele veio do pacote do meu gêmeo digital: variações de look, enquadramentos frontais, perfil e sheets intermediárias que serviram para consolidar traços, barba, cabelo, nariz, proporções e presença. 
+
+ ![Sheet 16 por 9 do personagem com camisa estampada, calça clara e close com óculos âmbar](https://bolivaralencastro.com.br/assets/images/blog/do-elevador-ao-making-of-openrouter-veo-seedance/gemeo-look-floral.webp) 
+
+Uma das bases de look usadas para fixar presença, proporção corporal e desenho do rosto sem depender de uma única foto frontal.  
+
+ ![Sheet 16 por 9 do personagem com gorro, jaqueta castanha e close frontal](https://bolivaralencastro.com.br/assets/images/blog/do-elevador-ao-making-of-openrouter-veo-seedance/gemeo-look-beanie.webp) 
+
+Outra variação útil para testar o quanto acessórios e figurino alteravam a leitura do personagem pelos modelos.  
+
+ ![Sheet 16 por 9 do personagem com malha creme e calça de alfaiataria cinza](https://bolivaralencastro.com.br/assets/images/blog/do-elevador-ao-making-of-openrouter-veo-seedance/gemeo-look-knit.webp) 
+
+O sheet em malha clara ajudou a preservar uma versão mais sóbria e editorial do personagem para os testes de apresentador.  
+
+Foi aí que os limites ficaram mais nítidos. O Seedance, via OpenRouter, bloqueava repetidamente qualquer tentativa de usar um rosto realista e reconhecível como base para um talking shot. O erro se repetia em variações de prompt e styling: 
+
+```
+InputImageSensitiveContentDetected.PrivacyInformation
+```
+
+ 
+
+Trocar figurino não resolveu. Gerar o rosto com outro modelo antes também não resolveu. Levar esse mesmo personagem para um visual lowpoly 3D resolveu tecnicamente, mas descaracterizou o objetivo do projeto. O que eu queria era manter um personagem próximo de mim, não um avatar genérico. 
+
+Mesmo assim, a tentativa lowpoly foi útil porque provou uma coisa: o bloqueio estava muito mais ligado à leitura de “pessoa real identificável” do que à estrutura do pipeline em si. Quando o personagem virou claramente artificial, o Seedance aceitou e gerou o clip. 
+
+ ![Versão lowpoly do apresentador em estúdio retro-tech, usada como experimento para contornar bloqueios de privacidade](https://bolivaralencastro.com.br/assets/images/blog/do-elevador-ao-making-of-openrouter-veo-seedance/lowpoly-host-front.webp) 
+
+Experimento lowpoly: útil para provar o gargalo de privacidade, insuficiente para o resultado que eu realmente queria.  
+
+   Seu navegador não suporta vídeo HTML5.  
+
+O clip lowpoly foi a prova técnica de que o gargalo principal estava na leitura de pessoa real identificável.  ![Frame do meta-vídeo com o personagem falando em estúdio retro-tech cercado por monitores CRT](https://bolivaralencastro.com.br/assets/images/blog/do-elevador-ao-making-of-openrouter-veo-seedance/meta-video-speaker-frame.webp) 
+
+O Veo abriu um caminho mais útil: takes curtos, nativos, de quatro segundos, com fala embutida. Funcionou bem para esses blocos. Mas só até certo ponto. Quando tentei um take contínuo de oito segundos com o mesmo personagem realista, o modelo aceitou o job e depois reteve o output: 
+
+```
+Video generation completed with no output (content may have been filtered)
+```
+
+ 
+
+Isso tornou a gramática do meta-vídeo bastante clara. Fala em blocos curtos. Processo visual entre os blocos. Nada de monólogo longo. E nada de insistir em um único modelo para tudo. 
+
+## 3. Os prompts precisaram ficar mais concretos do que grandiosos 
+
+Uma parte pouco glamourosa dessa experimentação foi aprender que a qualidade do resultado estava menos ligada a um prompt “brilhante” e mais ligada a um prompt suficientemente específico, curto e operacional. 
+
+Um dos prompts que passou no Veo para o apresentador foi este: 
+
+```
+Create a realistic cinematic presenter shot in a retro-tech studio.
+A dark-haired bearded Brazilian man sits behind a desk, looking into camera
+and speaking in Brazilian Portuguese in a calm, direct, intelligent tone.
+He says: "Eu estou construindo este vídeo por blocos."
+Keep the movement subtle and natural: stable face, coherent mouth motion,
+calm breathing, small head motion, almost no hand movement.
+```
+
+ 
+
+Já para os blocos de processo no Seedance, o prompt precisou explicitar também o que **não** podia entrar. Quando os visuais ainda carregavam miniaturas humanas ou frames com rosto, o modelo voltava ao mesmo filtro de privacidade. A solução foi gerar composições completamente não humanas para só então animá-las. 
+
+```
+Animate this orchestration diagram with a sense of flow from image generation
+to short video to voice to assembly. Nodes, waveforms, and placeholders
+should move with clear directional logic and restrained cinematic motion.
+No human figures.
+```
+
+ 
+
+## 4. Os visuais de processo precisaram virar material autoral 
+
+Eu não queria que a parte “explicativa” do vídeo fosse um slideshow de screenshots. Queria que ela parecesse parte da mesma linguagem do filme. Isso exigiu uma segunda família de imagens: boards editoriais, pseudo-interfaces, diagramas de orquestração, cards de prompt, módulos de áudio e montagem. 
+
+ ![Board editorial com cards de prompt, placeholders de frames e uma linha do tempo de montagem](https://bolivaralencastro.com.br/assets/images/blog/do-elevador-ao-making-of-openrouter-veo-seedance/process-safe-01.webp) 
+
+Em vez de screenshots crus, os blocos explicativos viraram boards editoriais próprios.  
+
+Essas imagens não são screenshots literais. São composições gráficas feitas para comunicar o processo como linguagem visual. E isso fez diferença. Quando ainda tentei usar motion simples via `ffmpeg`, o resultado resolvia o ritmo, mas não resolvia a ambição formal. O vídeo só começou a parecer coerente quando esses stills viraram pares de frame inicial e final e passaram pelo Seedance como clips de processo de fato. 
+
+ ![Composição mostrando arquivos, waveforms, keyframes, jobs e saídas de montagem como objetos gráficos](https://bolivaralencastro.com.br/assets/images/blog/do-elevador-ao-making-of-openrouter-veo-seedance/process-safe-03.webp) 
+
+Arquivos, keyframes, waveforms e jobs reencenados como objetos gráficos do próprio ensaio.  
+
+No fim, o `ffmpeg` voltou ao papel certo: não como gerador de “animação fake”, mas como ferramenta de montagem, muxagem e concatenação. 
+
+## 5. O custo exige método, não entusiasmo cego 
+
+Eu não descreveria esse custo como irrelevante. Em dólar, os números podem parecer pequenos à primeira vista. Em reais, eles já ganham outro peso. E, mais importante, eles deixam claro que geração de imagem e vídeo não pode ser tratada como brincadeira infinita de tentativa e erro sem método. 
+
+Fechando apenas o que ficou metrado nos artefatos locais: 
+ 
+- **Entre andares**: mínimo medido de **US$ 3.8504** 
+- **Meta-vídeo do apresentador**: mínimo medido de **US$ 7.5994** 
+- **Total mínimo comprovável da experimentação**: **US$ 11.4498** 
+ 
+
+Se eu olhar só para os dois cortes finais entregues, sem contar protótipos e desvios, o subtotal mínimo cai para **US$ 8.6262**. Ainda assim, isso já representa um investimento real para um experimento curto. 
+
+Esses números ainda têm uma ressalva importante: a geração de imagens não persistiu sempre o campo de custo nos artefatos locais. Então esse total é um piso confiável, não o valor absoluto final de tudo o que foi tentado. 
+
+A lição prática aqui é simples: usar bem esses modelos significa planejar melhor cada chamada. Quanto mais claro estiver o papel de cada ferramenta, do prompt e da referência antes de apertar o botão, menor a chance de transformar orçamento em ruído. O ganho não está em gerar mais. Está em gerar com mais intenção. 
+
+## 6. As limitações foram parte do aprendizado 
+
+Os limites encontrados não foram marginais. Eles praticamente desenharam o formato final do trabalho. 
+ 
+- O Seedance via OpenRouter bloqueou repetidamente faces realistas que pareciam pessoas identificáveis. 
+- O Veo funcionou melhor com takes falados curtos de quatro segundos. 
+- Takes mais longos ficaram mais vulneráveis a retenção ou filtragem do output. 
+- A consistência de voz nativa entre takes não é algo que eu controlava de fato no Veo. 
+- Parte do custo total de imagem ficou sem medição fechada em disco. 
+ 
+
+Paradoxalmente, essas limitações ajudaram. Elas empurraram o projeto para uma forma melhor: menos “vídeo contínuo gerado por um modelo só”, mais composição híbrida, montagem por blocos, stills fortes, processos visuais autorais e fala curta onde ela realmente precisava existir. 
+
+ ![Diagrama visual escuro mostrando a orquestração entre geração de imagem, vídeo curto, voz e montagem](https://bolivaralencastro.com.br/assets/images/blog/do-elevador-ao-making-of-openrouter-veo-seedance/process-safe-04.webp) 
+
+Diagrama visual do fluxo final: imagem, vídeo curto, voz, montagem e iteração.  
+
+## O que ficou 
+
+O resultado final não prova que já dá para “fazer qualquer vídeo com IA”. Prova algo mais útil: já dá para construir uma peça curta e coerente se você tratar cada modelo como um componente com forças e fraquezas específicas. O trabalho deixou de ser pedir um filme inteiro. Virou desenhar uma arquitetura de geração. 
+
+No meu caso, a forma acabou sendo esta: referências visuais, keyframes, OpenRouter como camada de acesso, Seedance para animações de processo e alguns planos mais gráficos, Veo para os takes falados e montagem local para amarrar o todo. Não foi um fluxo puro. Foi um fluxo pragmático. E foi justamente por isso que funcionou. 
+
+Mesmo assim, vale dizer com clareza: o resultado final ainda está longe de ser um resultado adequado ou refinado. Eu não busquei aqui um acabamento perfeito. A prioridade foi conseguir algum resultado funcional, aprender o que o fluxo aceita e o que ele bloqueia, e transformar isso em material real para estudo. Em breve quero voltar a essa linha de trabalho com testes mais profundos, mais controle de arte e um nível de entrega final bem melhor do que o que ficou nesta primeira rodada. 
+
+## Ver os resultados no próprio post 
+
+Os dois vídeos finais abaixo estão em MP4 otimizado para web, com `H.264`, `AAC` e `faststart`, para tocar direto no player nativo do navegador sem depender de embed externo. 
+
+   Seu navegador não suporta vídeo HTML5.  
+
+*Entre andares*, o curta do elevador, na versão final em preto e branco.  
+
+   Seu navegador não suporta vídeo HTML5.  
+
+O meta-vídeo final, em que o personagem fala sobre o próprio processo de criação.  
+
+ 
+
+Sobre o autor 
+
+ ![Foto de Bolívar Alencastro](https://bolivaralencastro.com.br/assets/images/author/bolivar-alencastro.webp) 
+
+ 
+
+### [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 
+
+Product Designer em São Paulo, interessado no ponto em que direção visual, estrutura técnica e limitação de ferramenta deixam de ser problemas separados e passam a formar o próprio projeto. 
+ 
+- [LinkedIn](https://www.linkedin.com/in/bolivaralencastro/) 
+- [Instagram](https://www.instagram.com/bolivar.alencastro/) 
+      
+
+ 
+
+## Outras Publicações 
+
+ [![Capa do post: Do excesso à execução: o custo invisível da IA dentro das empresas](https://bolivaralencastro.com.br/assets/images/blog/do-excesso-a-execucao-o-custo-invisivel-da-ia-dentro-das-empresas/card.webp)](https://bolivaralencastro.com.br/blog/do-excesso-a-execucao-o-custo-invisivel-da-ia-dentro-das-empresas.html) 
+
+### [Do excesso à execução: o custo invisível da IA dentro das empresas](https://bolivaralencastro.com.br/blog/do-excesso-a-execucao-o-custo-invisivel-da-ia-dentro-das-empresas.html) 
+
+No STATE, quatro perspectivas sobre finanças, arquitetura, neurociência e cultura ajudam a deslocar a conversa sobre inteligência artificial: da capacidade das ferramentas para o custo de reorganizar empresas e pessoas ao redor delas.  
+
+ [![Capa do post: O dia seguinte](https://bolivaralencastro.com.br/assets/images/blog/o-dia-seguinte/card.webp)](https://bolivaralencastro.com.br/blog/o-dia-seguinte.html) 
+
+### [O dia seguinte](https://bolivaralencastro.com.br/blog/o-dia-seguinte.html) 
+
+Sobre ovos, imagem e o momento em que decidi me tornar vegano: uma cena guardada desde a pandemia, uma citação de Bataille e a manhã em que finalmente a fotografei.  
+
+ [![Capa do post: Antes do CicloFest Rural: uma rota vivida com a Triskel Bike](https://bolivaralencastro.com.br/assets/images/blog/antes-do-ciclofest-rural/card.webp)](https://bolivaralencastro.com.br/blog/antes-do-ciclofest-rural.html) 
+
+### [Antes do CicloFest Rural: uma rota vivida com a Triskel Bike](https://bolivaralencastro.com.br/blog/antes-do-ciclofest-rural.html) 
+
+Em 2021, Lica nos convidou a percorrer em primeira mão uma rota que preparava para o CicloFest Rural. Entre bicicleta, fotografia e encontros em São Pedro de Alcântara, a Triskel Bike me deu uma experiência que continuo guardando com carinho.

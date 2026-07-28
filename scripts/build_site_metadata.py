@@ -17,6 +17,7 @@ from dataclasses import dataclass
 from typing import List
 from urllib.parse import urlparse
 
+from markdown_export import html_page_to_markdown, inject_markdown_alternate_link
 from notes_pipeline import (
     NOTE_AUTO_BLOCK,
     build_note_pages,
@@ -1507,6 +1508,7 @@ def main() -> int:
     for stale_path in sorted(existing_blog_generated - expected_blog_generated):
         remove_or_check_stale(stale_path, args.check, changed)
 
+    expected_markdown_paths: set[pathlib.Path] = set()
     for page_path in public_pages:
         source_html = managed_pages.get(page_path)
         if source_html is None:
@@ -1523,8 +1525,28 @@ def main() -> int:
             source_html = remove_script_reference(source_html, "/assets/js/lightbox.js")
         if page_path == projects_html_path:
             source_html = ensure_script_reference(source_html, "/assets/js/project-filters.js")
+
+        rel_path = page_path.relative_to(repo_root).as_posix()
+        page_url = rel_to_url(rel_path, base_url)
+        markdown_path = page_path.with_suffix(".md")
+        markdown_href = "/" + markdown_path.relative_to(repo_root).as_posix()
+        markdown_content = html_page_to_markdown(source_html, page_url)
+        if markdown_content is not None:
+            source_html = inject_markdown_alternate_link(source_html, markdown_href)
+
         versioned_html = apply_versioned_asset_refs(source_html, asset_versions)
         write_or_check(page_path, versioned_html, args.check, changed)
+
+        if markdown_content is not None:
+            expected_markdown_paths.add(markdown_path)
+            write_or_check(markdown_path, markdown_content, args.check, changed)
+
+    for markdown_dir in (repo_root / "blog", repo_root / "projects", repo_root / "notes"):
+        if not markdown_dir.exists():
+            continue
+        for stale_markdown in sorted(markdown_dir.glob("**/*.md")):
+            if stale_markdown not in expected_markdown_paths:
+                remove_or_check_stale(stale_markdown, args.check, changed)
 
     if changed:
         if args.check:
