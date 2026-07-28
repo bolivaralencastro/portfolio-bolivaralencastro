@@ -4,7 +4,7 @@
   <subtitle>Blog, notas e páginas publicadas em um site HTML-first.</subtitle>
   <link href="https://bolivaralencastro.com.br/feed.xml" rel="self"/>
   <link href="https://bolivaralencastro.com.br/" rel="alternate"/>
-  <updated>2026-07-21T00:00:00Z</updated>
+  <updated>2026-07-28T00:00:00Z</updated>
   <id>https://bolivaralencastro.com.br/feed.xml</id>
   <author>
     <name>Bolívar Alencastro</name>
@@ -13,6 +13,16 @@
   <contributor>
     <name>Bolivar Alencastro</name>
   </contributor>
+
+  <entry>
+    <title>Do excesso à execução: o custo invisível da IA dentro das empresas</title>
+    <link href="https://bolivaralencastro.com.br/blog/do-excesso-a-execucao-o-custo-invisivel-da-ia-dentro-das-empresas.html" rel="alternate"/>
+    <id>https://bolivaralencastro.com.br/blog/do-excesso-a-execucao-o-custo-invisivel-da-ia-dentro-das-empresas.html</id>
+    <published>2026-07-28T00:00:00Z</published>
+    <updated>2026-07-28T00:00:00Z</updated>
+    <summary>No STATE, quatro perspectivas sobre finanças, arquitetura, neurociência e cultura ajudam a deslocar a conversa sobre inteligência artificial: da capacidade das ferramentas para o custo de reorganizar empresas e pessoas ao redor delas.</summary>
+    <content type="html">&lt;p&gt;Nesta terça-feira, 28 de julho de 2026, volto ao STATE para a décima edição do The State of Learning. O encontro desta vez tem um título bastante direto: Inteligência Artificial para além do hype: o custo invisível para as empresas.&lt;/p&gt;</content>
+  </entry>
 
   <entry>
     <title>O dia seguinte</title>
