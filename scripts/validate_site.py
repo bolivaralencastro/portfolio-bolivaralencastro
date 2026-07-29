@@ -25,6 +25,7 @@ TAGGING_CSP_SOURCES = [
     "https://www.google-analytics.com",
     "https://*.clarity.ms",
     "https://c.bing.com",
+    "https://bolivaralencastro.com.br/876b/",
 ]
 VOID_TAGS = {
     "area",
