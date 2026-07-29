@@ -55,6 +55,7 @@ Scripts:
   - `<link rel="stylesheet" href="/style.css?v=HASH">`
   - `<script src="/assets/js/gtm.js?v=HASH" defer></script>`
 - As paginas com CSP (index, about, blog, projects, now, links) liberam `www.googletagmanager.com`, `www.google-analytics.com`, `*.google-analytics.com`, `www.clarity.ms`, `*.clarity.ms` e `c.bing.com`, alem dos scripts locais em `/assets/js/`.
+- O Google Tag Gateway (Cloudflare, ativado no dashboard em Gerenciamento de tags da Web) reescreve o GA4 para carregar em first-party mode pelo caminho `/876b/` no proprio dominio; a CSP libera esse caminho em `script-src-elem`.
 - A CSP nao tem `unsafe-inline`: scripts e estilos inline sao bloqueados; qualquer snippet de terceiro vai para arquivo externo em `assets/js/`.
 - Eventos preparados pelo script de eventos:
   - `portfolio_page_context`
