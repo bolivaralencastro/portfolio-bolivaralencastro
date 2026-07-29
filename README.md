@@ -47,12 +47,14 @@ Scripts:
 
 ## Analytics
 
-- O portfolio nao carrega Google Tag Manager, Google Analytics ou Microsoft Clarity no caminho publico inicial.
-- O portfolio tambem nao carrega Meta Pixel por padrao; a prioridade atual e desempenho maximo no PageSpeed.
-- Eventos proprios de analytics nao sao carregados por padrao.
-- Toda pagina publica deve incluir a folha principal com URL versionada, por exemplo:
+- O portfolio carrega Google Tag Manager por meio de [`assets/js/gtm.js`](./assets/js/gtm.js).
+- O container ativo e `GTM-T3LNHCNR`, publicando Google Analytics 4 (`G-Q08W81XJ0K`) e Microsoft Clarity (`t8asclyhhx`).
+- O loader do GTM fica fora do caminho critico: so injeta `gtm.js` real apos a primeira interacao (`pointerdown`/`keydown`) ou apos 30s de pagina ociosa, o que vier primeiro. Isso mantem LCP/TBT intactos para quem so passa pela pagina.
+- O portfolio nao carrega Meta Pixel por padrao; a prioridade e desempenho maximo no PageSpeed.
+- Toda pagina publica deve incluir o loader do GTM e a folha principal com URL versionada, por exemplo:
   - `<link rel="stylesheet" href="/style.css?v=HASH">`
-- As paginas com CSP liberam scripts locais em `/assets/js/`.
+  - `<script src="/assets/js/gtm.js?v=HASH" defer></script>`
+- As paginas com CSP (index, about, blog, projects, now, links) liberam `www.googletagmanager.com`, `www.google-analytics.com`, `*.google-analytics.com`, `www.clarity.ms`, `*.clarity.ms` e `c.bing.com`, alem dos scripts locais em `/assets/js/`.
 - A CSP nao tem `unsafe-inline`: scripts e estilos inline sao bloqueados; qualquer snippet de terceiro vai para arquivo externo em `assets/js/`.
 - Eventos preparados pelo script de eventos:
   - `portfolio_page_context`
