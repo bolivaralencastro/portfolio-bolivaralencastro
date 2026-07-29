@@ -28,6 +28,21 @@ from notes_pipeline import (
 
 BASE_URL_DEFAULT = "https://bolivaralencastro.com.br"
 ROOT_PAGES = ["index.html", "about.html", "blog.html", "projects.html", "now.html", "links.html", "retratos-ufsc-florianopolis-imersivo.html"]
+SITE_CSP_CONTENT = (
+    "default-src 'self'; "
+    "script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.clarity.ms https://*.clarity.ms; "
+    "script-src-elem https://bolivaralencastro.com.br/assets/js/ https://bolivaralencastro.com.br/876b/ http://127.0.0.1:8080/assets/js/ http://localhost:8080/assets/js/ https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.clarity.ms https://*.clarity.ms; "
+    "connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://www.clarity.ms https://*.clarity.ms https://c.bing.com; "
+    "style-src 'self'; "
+    "img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.clarity.ms https://*.clarity.ms https://c.bing.com; "
+    "frame-src https://www.googletagmanager.com;"
+)
+FAVICON_LINKS_HTML = (
+    '  <link rel="icon" href="/favicon.ico" sizes="any">\n'
+    '  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">\n'
+    '  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">\n'
+    '  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">\n'
+)
 FEED_AUTHOR_NAME = "Bolívar Alencastro"
 FEED_AUTHOR_FALLBACK = "Bolivar Alencastro"
 AUTHOR_PROFILE_URL = f"{BASE_URL_DEFAULT}/about.html"
@@ -1180,6 +1195,36 @@ def ensure_rel_me_reference(html_content: str, href: str) -> str:
     return html_content[:head_idx] + snippet + html_content[head_idx:]
 
 
+def ensure_favicon_links(html_content: str) -> str:
+    if 'rel="icon"' in html_content:
+        return html_content
+
+    head_close = "</head>"
+    head_idx = html_content.find(head_close)
+    if head_idx == -1:
+        raise BuildError("Missing </head> while injecting favicon links")
+
+    return html_content[:head_idx] + FAVICON_LINKS_HTML + html_content[head_idx:]
+
+
+CSP_META_PATTERN = re.compile(
+    r'^[ \t]*<meta http-equiv="Content-Security-Policy" content="[^"]*">\n?', re.MULTILINE
+)
+
+
+def ensure_csp_meta(html_content: str, content: str) -> str:
+    snippet = f'  <meta http-equiv="Content-Security-Policy" content="{content}">\n'
+    if CSP_META_PATTERN.search(html_content):
+        return CSP_META_PATTERN.sub(snippet, html_content, count=1)
+
+    charset_pattern = re.compile(r'^[ \t]*<meta charset="UTF-8">\n', re.MULTILINE)
+    match = charset_pattern.search(html_content)
+    if not match:
+        raise BuildError("Missing <meta charset> while injecting CSP")
+    insert_at = match.end()
+    return html_content[:insert_at] + snippet + html_content[insert_at:]
+
+
 def apply_versioned_asset_refs(html_content: str, versions: dict[str, str]) -> str:
     updated = html_content
     updated = replace_asset_reference(updated, "href", "/style.css", versions["/style.css"])
@@ -1515,6 +1560,8 @@ def main() -> int:
         source_html = managed_pages.get(page_path)
         if source_html is None:
             source_html = page_path.read_text(encoding="utf-8")
+        source_html = ensure_csp_meta(source_html, SITE_CSP_CONTENT)
+        source_html = ensure_favicon_links(source_html)
         source_html = ensure_script_reference(source_html, "/assets/js/gtm.js")
         source_html = remove_meta_pixel_block(source_html)
         source_html = remove_script_reference(source_html, "/assets/js/analytics-events.js")

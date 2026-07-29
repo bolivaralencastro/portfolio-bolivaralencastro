@@ -33,10 +33,11 @@ These instructions apply to the whole repository. Use them for Codex, GitHub Cop
 
 ## CSP and scripts
 
-- Almost every page ships a strict CSP meta tag without `unsafe-inline`: inline `<script>` and `<style>` blocks are silently blocked by the browser.
+- Every public page ships a strict CSP meta tag without `unsafe-inline`: inline `<script>` and `<style>` blocks are silently blocked by the browser.
+- The CSP meta tag is centrally defined as `SITE_CSP_CONTENT` in `scripts/build_site_metadata.py` and injected/kept in sync on every public page by `ensure_csp_meta()` during the build. Never hand-edit the CSP meta tag in an individual `.html` file — edit `SITE_CSP_CONTENT` once and rebuild.
 - Never paste third-party snippets (pixels, widgets, analytics) inline. Put the bootstrap in a file under `assets/js/` and reference it with `<script src=... defer>`.
 - New JS/CSS assets referenced by pages must be registered in `VERSIONED_ASSETS` and in `apply_versioned_asset_refs` inside `scripts/build_site_metadata.py`, then stamped by running the build (`?v=` accepts hex hashes only).
-- If a new external host is needed, add it to the CSP meta tag of all pages and to the CSP host lists in `scripts/validate_site.py`.
+- If a new external host is needed, add it to `SITE_CSP_CONTENT` and to the CSP host lists in `scripts/validate_site.py` (`TAGGING_CSP_SOURCES`), then rebuild.
 
 ## Generated files
 
