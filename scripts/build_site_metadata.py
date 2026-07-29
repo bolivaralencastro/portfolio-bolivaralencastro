@@ -44,6 +44,7 @@ LISTING_CARD_WIDTH = 960
 LISTING_CARD_HEIGHT = 540
 VERSIONED_ASSETS = {
     "/style.css": pathlib.Path("style.css"),
+    "/assets/js/gtm.js": pathlib.Path("assets/js/gtm.js"),
     "/assets/js/lightbox.js": pathlib.Path("assets/js/lightbox.js"),
     "/assets/js/project-filters.js": pathlib.Path("assets/js/project-filters.js"),
 }
@@ -1182,6 +1183,7 @@ def ensure_rel_me_reference(html_content: str, href: str) -> str:
 def apply_versioned_asset_refs(html_content: str, versions: dict[str, str]) -> str:
     updated = html_content
     updated = replace_asset_reference(updated, "href", "/style.css", versions["/style.css"])
+    updated = replace_asset_reference(updated, "src", "/assets/js/gtm.js", versions["/assets/js/gtm.js"])
     updated = replace_asset_reference(updated, "src", "/assets/js/lightbox.js", versions["/assets/js/lightbox.js"])
     updated = replace_asset_reference(
         updated,
@@ -1513,7 +1515,7 @@ def main() -> int:
         source_html = managed_pages.get(page_path)
         if source_html is None:
             source_html = page_path.read_text(encoding="utf-8")
-        source_html = remove_script_reference(source_html, "/assets/js/gtm.js")
+        source_html = ensure_script_reference(source_html, "/assets/js/gtm.js")
         source_html = remove_meta_pixel_block(source_html)
         source_html = remove_script_reference(source_html, "/assets/js/analytics-events.js")
         source_html = remove_script_reference(source_html, "/assets/js/mobile-nav.js")
