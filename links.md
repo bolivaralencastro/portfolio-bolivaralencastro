@@ -7,7 +7,7 @@ Source: https://bolivaralencastro.com.br/links.html
 
 Product Designer · Design Systems · IA aplicada ao trabalho  
 
-  [Último texto: Do excesso à execução: o custo invisível da IA dentro das empresas](https://bolivaralencastro.com.br/blog/do-excesso-a-execucao-o-custo-invisivel-da-ia-dentro-das-empresas.html) [Projeto em destaque: Keeps Products](https://bolivaralencastro.com.br/projects/keeps-learning-konquest.html)  [Blog — todos os textos](https://bolivaralencastro.com.br/blog.html) [Portfólio — todos os projetos](https://bolivaralencastro.com.br/projects.html) [Sobre mim](https://bolivaralencastro.com.br/about.html)  
+  [Último texto: Tudo o que acontece quando fechamos os olhos](https://bolivaralencastro.com.br/blog/tudo-o-que-acontece-quando-fechamos-os-olhos.html) [Projeto em destaque: Keeps Products](https://bolivaralencastro.com.br/projects/keeps-learning-konquest.html)  [Blog — todos os textos](https://bolivaralencastro.com.br/blog.html) [Portfólio — todos os projetos](https://bolivaralencastro.com.br/projects.html) [Sobre mim](https://bolivaralencastro.com.br/about.html)  
 
  [Facebook](https://facebook.com/bolivaralencastrofotografia) [Instagram](https://www.instagram.com/bolivar.alencastro/) [LinkedIn](https://www.linkedin.com/in/bolivaralencastro/) [GitHub](https://github.com/bolivaralencastro) [E-mail](mailto:bolivar@alencastro.com.br)  
 
