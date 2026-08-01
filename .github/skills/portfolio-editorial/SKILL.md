@@ -25,24 +25,24 @@ Read:
    - Keep the long-form post precise, concrete, and structurally clear.
    - Preserve authorial intent without forcing intimate tone in every paragraph.
    - Prefer concrete observations and lived context over detached summaries.
-3. Generate all images automatically:
-   ```bash
-   # Preview prompts first (no cost)
-   python3 scripts/generate_post_images.py blog/<slug>.html --inline 2 --dry-run
-
-   # Generate cover, card and inline images in parallel
-   python3 scripts/generate_post_images.py blog/<slug>.html --inline 2
-   ```
-4. Insert the printed `<img>` tags into the post body at the appropriate positions.
-5. If images were provided by the user (photos, screenshots), use `blog_image_workflow.py` to compose triptychs and convert to webp.
-6. Link cited people, companies, products, events, and documentation when those references are public and stable.
-7. Add contextual variation to the author card instead of reusing the same line everywhere.
-8. Run:
+3. Images are never sourced automatically. Ask the user (or wait for them to say) which path applies before touching images:
+   - **Existing/provided images**: the user already has photos or assets for this post (sent in chat, in `.referencias/`, or elsewhere). Use those — resize/convert to webp as needed, do not generate replacements.
+   - **Edit existing images**: use `blog_image_workflow.py` to compose triptychs, crop, or convert provided images to webp.
+   - **AI-generated images**: only when the user explicitly asks for generated imagery. Preview prompts first (no cost), then generate:
+     ```bash
+     python3 scripts/generate_post_images.py blog/<slug>.html --inline 2 --dry-run
+     python3 scripts/generate_post_images.py blog/<slug>.html --inline 2
+     ```
+   A post can also ship with no inline images at all if the user doesn't provide or request any — do not force a cover/card/inline set to exist.
+4. Insert the resulting `<img>` tags into the post body at the appropriate positions.
+5. Link cited people, companies, products, events, and documentation when those references are public and stable.
+6. Add contextual variation to the author card instead of reusing the same line everywhere.
+7. Run:
    ```bash
    python3 scripts/build_site_metadata.py
    python3 scripts/validate_site.py
    ```
-9. Publish to social channels in order:
+8. Publish to social channels in order:
    1) LinkedIn (preview + publish)
    2) Instagram (preview + publish)
 
@@ -128,8 +128,8 @@ If missing, run `python3 scripts/twitter_auth.py` first.
 
 ```bash
 # 1) Write/update post HTML
-# 2) Generate images
-python3 scripts/generate_post_images.py blog/<slug>.html --inline 2
+# 2) Images (only if the user provided or requested them — see "Blog post workflow" step 3)
+python3 scripts/generate_post_images.py blog/<slug>.html --inline 2   # AI generation, only if asked
 
 # 3) Rebuild generated metadata and validate
 python3 scripts/build_site_metadata.py

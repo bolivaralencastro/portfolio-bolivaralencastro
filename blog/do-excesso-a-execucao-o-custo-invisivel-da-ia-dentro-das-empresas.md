@@ -180,6 +180,12 @@ Product Designer em São Paulo, escrevendo sobre produto, sistemas e o momento e
 
 ## Outras Publicações 
 
+ [![Capa do post: Tudo o que acontece quando fechamos os olhos](https://bolivaralencastro.com.br/assets/images/blog/tudo-o-que-acontece-quando-fechamos-os-olhos/card.webp)](https://bolivaralencastro.com.br/blog/tudo-o-que-acontece-quando-fechamos-os-olhos.html) 
+
+### [Tudo o que acontece quando fechamos os olhos](https://bolivaralencastro.com.br/blog/tudo-o-que-acontece-quando-fechamos-os-olhos.html) 
+
+Uma mariposa desaparece num banheiro interno. Entre o corpo seco atrás dos vasos, um sonho com cupins, uma mensagem para o pai e séculos de folclore sobre mariposas, um ensaio sobre o que a gente faz com o que não viu.  
+
  [![Capa do post: O dia seguinte](https://bolivaralencastro.com.br/assets/images/blog/o-dia-seguinte/card.webp)](https://bolivaralencastro.com.br/blog/o-dia-seguinte.html) 
 
 ### [O dia seguinte](https://bolivaralencastro.com.br/blog/o-dia-seguinte.html) 
@@ -190,10 +196,4 @@ Sobre ovos, imagem e o momento em que decidi me tornar vegano: uma cena guardada
 
 ### [Antes do CicloFest Rural: uma rota vivida com a Triskel Bike](https://bolivaralencastro.com.br/blog/antes-do-ciclofest-rural.html) 
 
-Em 2021, Lica nos convidou a percorrer em primeira mão uma rota que preparava para o CicloFest Rural. Entre bicicleta, fotografia e encontros em São Pedro de Alcântara, a Triskel Bike me deu uma experiência que continuo guardando com carinho.  
-
- [![Capa do post: O que ainda não deixamos morrer](https://bolivaralencastro.com.br/assets/images/blog/o-que-ainda-nao-deixamos-morrer/card.webp)](https://bolivaralencastro.com.br/blog/o-que-ainda-nao-deixamos-morrer.html) 
-
-### [O que ainda não deixamos morrer](https://bolivaralencastro.com.br/blog/o-que-ainda-nao-deixamos-morrer.html) 
-
-Nos eventos sobre IA, uma sensação volta com força: estamos outra vez usando antes de compreender direito. O ponto, porém, não é só a IA. É um padrão mais antigo de adoção indiscriminada que atravessa a história humana e continua pedindo a mesma coisa: que algo mude em nós.
+Em 2021, Lica nos convidou a percorrer em primeira mão uma rota que preparava para o CicloFest Rural. Entre bicicleta, fotografia e encontros em São Pedro de Alcântara, a Triskel Bike me deu uma experiência que continuo guardando com carinho.

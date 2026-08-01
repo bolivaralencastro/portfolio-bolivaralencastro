@@ -8,6 +8,14 @@ Notas editoriais sobre design, sistema visual e arquitetura web nativa.
 
 ## Posts  
 
+ [![Capa do post: Tudo o que acontece quando fechamos os olhos](https://bolivaralencastro.com.br/assets/images/blog/tudo-o-que-acontece-quando-fechamos-os-olhos/card.webp)](https://bolivaralencastro.com.br/blog/tudo-o-que-acontece-quando-fechamos-os-olhos.html) 
+
+ 
+
+### [Tudo o que acontece quando fechamos os olhos](https://bolivaralencastro.com.br/blog/tudo-o-que-acontece-quando-fechamos-os-olhos.html) 
+
+Uma mariposa desaparece num banheiro interno. Entre o corpo seco atrás dos vasos, um sonho com cupins, uma mensagem para o pai e séculos de folclore sobre mariposas, um ensaio sobre o que a gente faz com o que não viu.  01/08/2026  
+
  [![Capa do post: Do excesso à execução: o custo invisível da IA dentro das empresas](https://bolivaralencastro.com.br/assets/images/blog/do-excesso-a-execucao-o-custo-invisivel-da-ia-dentro-das-empresas/card.webp)](https://bolivaralencastro.com.br/blog/do-excesso-a-execucao-o-custo-invisivel-da-ia-dentro-das-empresas.html) 
 
  
@@ -158,12 +166,4 @@ Um ensaio especulativo sobre unidade, saturação, morte do absoluto e a dispers
 
 ### [As Pessoas Não Queriam Cavalos Mais Rápidos](https://bolivaralencastro.com.br/blog/as-pessoas-nao-queriam-cavalos-mais-rapidos.html) 
 
-Um ensaio sobre a frase atribuída a Henry Ford, o mito do gênio solitário e a inteligência coletiva que já imaginava um mundo para além dos cavalos.  13/03/2026  
-
- [![Capa do post: Por que adotei a lógica da IndieWeb no meu portfólio](https://bolivaralencastro.com.br/assets/images/blog/por-que-adotei-a-logica-da-indieweb-no-meu-portfolio/card.webp)](https://bolivaralencastro.com.br/blog/por-que-adotei-a-logica-da-indieweb-no-meu-portfolio.html) 
-
- 
-
-### [Por que adotei a lógica da IndieWeb no meu portfólio](https://bolivaralencastro.com.br/blog/por-que-adotei-a-logica-da-indieweb-no-meu-portfolio.html) 
-
-Como a IndieWeb me ajudou a tratar o portfólio como produto próprio e por que LLMs, CLIs, MCP e APIs tornaram esse caminho mais simples e democrático.  08/03/2026
+Um ensaio sobre a frase atribuída a Henry Ford, o mito do gênio solitário e a inteligência coletiva que já imaginava um mundo para além dos cavalos.  13/03/2026

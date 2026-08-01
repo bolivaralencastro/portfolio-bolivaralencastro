@@ -4,7 +4,7 @@
   <subtitle>Blog, notas e páginas publicadas em um site HTML-first.</subtitle>
   <link href="https://bolivaralencastro.com.br/feed.xml" rel="self"/>
   <link href="https://bolivaralencastro.com.br/" rel="alternate"/>
-  <updated>2026-07-28T00:00:00Z</updated>
+  <updated>2026-08-01T00:00:00Z</updated>
   <id>https://bolivaralencastro.com.br/feed.xml</id>
   <author>
     <name>Bolívar Alencastro</name>
@@ -13,6 +13,16 @@
   <contributor>
     <name>Bolivar Alencastro</name>
   </contributor>
+
+  <entry>
+    <title>Tudo o que acontece quando fechamos os olhos</title>
+    <link href="https://bolivaralencastro.com.br/blog/tudo-o-que-acontece-quando-fechamos-os-olhos.html" rel="alternate"/>
+    <id>https://bolivaralencastro.com.br/blog/tudo-o-que-acontece-quando-fechamos-os-olhos.html</id>
+    <published>2026-08-01T00:00:00Z</published>
+    <updated>2026-08-01T00:00:00Z</updated>
+    <summary>Uma mariposa desaparece num banheiro interno. Entre o corpo seco atrás dos vasos, um sonho com cupins, uma mensagem para o pai e séculos de folclore sobre mariposas, um ensaio sobre o que a gente faz com o que não viu.</summary>
+    <content type="html">&lt;p&gt;Um homem nu e um inseto morto.&lt;/p&gt;</content>
+  </entry>
 
   <entry>
     <title>Do excesso à execução: o custo invisível da IA dentro das empresas</title>
