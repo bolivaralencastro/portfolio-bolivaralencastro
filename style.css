@@ -1329,6 +1329,62 @@ a {
   max-width: none;
 }
 
+.e-content .video-embed {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: var(--space-3) 0;
+  border: 1px solid color-mix(in srgb, var(--card-rule) 78%, transparent);
+  border-radius: 10px;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--bg) 84%, var(--text) 16%);
+}
+
+.e-content .video-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.e-content .video-embed-caption {
+  margin: 0.6rem 0 var(--space-3);
+  font-size: var(--text-sm);
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.e-content .video-link-card {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  margin: var(--space-3) 0 0;
+  border: 1px solid color-mix(in srgb, var(--card-rule) 78%, transparent);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.e-content .video-link-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.e-content .video-link-card::after {
+  content: "▶";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: #fff;
+  background: color-mix(in srgb, #000 35%, transparent);
+}
+
 .project-media-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

@@ -35,7 +35,7 @@ SITE_CSP_CONTENT = (
     "connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://www.clarity.ms https://*.clarity.ms https://c.bing.com; "
     "style-src 'self'; "
     "img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.clarity.ms https://*.clarity.ms https://c.bing.com; "
-    "frame-src https://www.googletagmanager.com;"
+    "frame-src https://www.googletagmanager.com https://www.youtube-nocookie.com;"
 )
 FAVICON_LINKS_HTML = (
     '  <link rel="icon" href="/favicon.ico" sizes="any">\n'

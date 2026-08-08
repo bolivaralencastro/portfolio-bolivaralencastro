@@ -8,6 +8,14 @@ Notas editoriais sobre design, sistema visual e arquitetura web nativa.
 
 ## Posts  
 
+ [![Capa do post: O sacrilégio necessário](https://bolivaralencastro.com.br/assets/images/og/site-og.jpg)](https://bolivaralencastro.com.br/blog/o-sacrilegio-necessario.html) 
+
+ 
+
+### [O sacrilégio necessário](https://bolivaralencastro.com.br/blog/o-sacrilegio-necessario.html) 
+
+Da sistematização da dança de salão no Brasil aos anos discutindo papéis de gênero na Kirinus Escola de Dança: um ensaio sobre por que inventar um passo novo nunca foi sacrilégio, amarrado a Foli, Victor Wooten, Erin McKean e Tarja Branca.  08/08/2026  
+
  [![Capa do post: Tudo o que acontece quando fechamos os olhos](https://bolivaralencastro.com.br/assets/images/blog/tudo-o-que-acontece-quando-fechamos-os-olhos/card.webp)](https://bolivaralencastro.com.br/blog/tudo-o-que-acontece-quando-fechamos-os-olhos.html) 
 
  
@@ -158,12 +166,4 @@ O excesso de informação não é apenas um problema estatístico; é uma erosã
 
 ### [O impasse da totalidade](https://bolivaralencastro.com.br/blog/o-impasse-da-totalidade.html) 
 
-Um ensaio especulativo sobre unidade, saturação, morte do absoluto e a dispersão que torna a existência possível.  15/03/2026  
-
- [![Capa do post: As Pessoas Não Queriam Cavalos Mais Rápidos](https://bolivaralencastro.com.br/assets/images/blog/as-pessoas-nao-queriam-cavalos-mais-rapidos/card.webp)](https://bolivaralencastro.com.br/blog/as-pessoas-nao-queriam-cavalos-mais-rapidos.html) 
-
- 
-
-### [As Pessoas Não Queriam Cavalos Mais Rápidos](https://bolivaralencastro.com.br/blog/as-pessoas-nao-queriam-cavalos-mais-rapidos.html) 
-
-Um ensaio sobre a frase atribuída a Henry Ford, o mito do gênio solitário e a inteligência coletiva que já imaginava um mundo para além dos cavalos.  13/03/2026
+Um ensaio especulativo sobre unidade, saturação, morte do absoluto e a dispersão que torna a existência possível.  15/03/2026
