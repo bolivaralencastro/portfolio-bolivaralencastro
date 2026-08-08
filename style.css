@@ -1359,18 +1359,22 @@ a {
   position: relative;
   display: block;
   width: 100%;
-  max-width: 480px;
+  aspect-ratio: 16 / 9;
   margin: var(--space-3) 0 0;
   border: 1px solid color-mix(in srgb, var(--card-rule) 78%, transparent);
   border-radius: 10px;
   overflow: hidden;
+  background: color-mix(in srgb, var(--bg) 84%, var(--text) 16%);
 }
 
 .e-content .video-link-card img {
+  position: absolute;
+  inset: 0;
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
   margin: 0;
+  object-fit: cover;
 }
 
 .e-content .video-link-card::after {
