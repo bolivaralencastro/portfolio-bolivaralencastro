@@ -4,7 +4,7 @@
   <subtitle>Blog, notas e páginas publicadas em um site HTML-first.</subtitle>
   <link href="https://bolivaralencastro.com.br/feed.xml" rel="self"/>
   <link href="https://bolivaralencastro.com.br/" rel="alternate"/>
-  <updated>2026-08-01T00:00:00Z</updated>
+  <updated>2026-08-08T00:00:00Z</updated>
   <id>https://bolivaralencastro.com.br/feed.xml</id>
   <author>
     <name>Bolívar Alencastro</name>
@@ -13,6 +13,16 @@
   <contributor>
     <name>Bolivar Alencastro</name>
   </contributor>
+
+  <entry>
+    <title>O sacrilégio necessário</title>
+    <link href="https://bolivaralencastro.com.br/blog/o-sacrilegio-necessario.html" rel="alternate"/>
+    <id>https://bolivaralencastro.com.br/blog/o-sacrilegio-necessario.html</id>
+    <published>2026-08-08T00:00:00Z</published>
+    <updated>2026-08-08T00:00:00Z</updated>
+    <summary>Da sistematização da dança de salão no Brasil aos anos discutindo papéis de gênero na Kirinus Escola de Dança: um ensaio sobre por que inventar um passo novo nunca foi sacrilégio, amarrado a Foli, Victor Wooten, Erin McKean e Tarja Branca.</summary>
+    <content type="html">&lt;p&gt;A dança de salão chegou ao Brasil com os colonizadores portugueses e ganhou força de hábito de corte em 1808, com os bailes da família real no Rio de Janeiro. Por quase dois séculos, porém, ela sobreviveu e se transformou da mesma forma que as nossas mais profundas manifestações populares: de corpo para corpo, no suor da gafieira, no arrasta-pé do sertão, na intuição, sem manual.&lt;/p&gt;</content>
+  </entry>
 
   <entry>
     <title>Tudo o que acontece quando fechamos os olhos</title>

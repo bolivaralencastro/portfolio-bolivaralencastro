@@ -182,6 +182,12 @@ Product Designer em São Paulo, prestando atenção no que insiste em aparecer d
 
 ## Outras Publicações 
 
+ [![Capa do post: O sacrilégio necessário](https://bolivaralencastro.com.br/assets/images/og/site-og.jpg)](https://bolivaralencastro.com.br/blog/o-sacrilegio-necessario.html) 
+
+### [O sacrilégio necessário](https://bolivaralencastro.com.br/blog/o-sacrilegio-necessario.html) 
+
+Da sistematização da dança de salão no Brasil aos anos discutindo papéis de gênero na Kirinus Escola de Dança: um ensaio sobre por que inventar um passo novo nunca foi sacrilégio, amarrado a Foli, Victor Wooten, Erin McKean e Tarja Branca.  
+
  [![Capa do post: Do excesso à execução: o custo invisível da IA dentro das empresas](https://bolivaralencastro.com.br/assets/images/blog/do-excesso-a-execucao-o-custo-invisivel-da-ia-dentro-das-empresas/card.webp)](https://bolivaralencastro.com.br/blog/do-excesso-a-execucao-o-custo-invisivel-da-ia-dentro-das-empresas.html) 
 
 ### [Do excesso à execução: o custo invisível da IA dentro das empresas](https://bolivaralencastro.com.br/blog/do-excesso-a-execucao-o-custo-invisivel-da-ia-dentro-das-empresas.html) 
@@ -192,10 +198,4 @@ No STATE, quatro perspectivas sobre finanças, arquitetura, neurociência e cult
 
 ### [O dia seguinte](https://bolivaralencastro.com.br/blog/o-dia-seguinte.html) 
 
-Sobre ovos, imagem e o momento em que decidi me tornar vegano: uma cena guardada desde a pandemia, uma citação de Bataille e a manhã em que finalmente a fotografei.  
-
- [![Capa do post: Antes do CicloFest Rural: uma rota vivida com a Triskel Bike](https://bolivaralencastro.com.br/assets/images/blog/antes-do-ciclofest-rural/card.webp)](https://bolivaralencastro.com.br/blog/antes-do-ciclofest-rural.html) 
-
-### [Antes do CicloFest Rural: uma rota vivida com a Triskel Bike](https://bolivaralencastro.com.br/blog/antes-do-ciclofest-rural.html) 
-
-Em 2021, Lica nos convidou a percorrer em primeira mão uma rota que preparava para o CicloFest Rural. Entre bicicleta, fotografia e encontros em São Pedro de Alcântara, a Triskel Bike me deu uma experiência que continuo guardando com carinho.
+Sobre ovos, imagem e o momento em que decidi me tornar vegano: uma cena guardada desde a pandemia, uma citação de Bataille e a manhã em que finalmente a fotografei.

@@ -180,6 +180,12 @@ Product Designer em São Paulo, escrevendo sobre produto, sistemas e o momento e
 
 ## Outras Publicações 
 
+ [![Capa do post: O sacrilégio necessário](https://bolivaralencastro.com.br/assets/images/og/site-og.jpg)](https://bolivaralencastro.com.br/blog/o-sacrilegio-necessario.html) 
+
+### [O sacrilégio necessário](https://bolivaralencastro.com.br/blog/o-sacrilegio-necessario.html) 
+
+Da sistematização da dança de salão no Brasil aos anos discutindo papéis de gênero na Kirinus Escola de Dança: um ensaio sobre por que inventar um passo novo nunca foi sacrilégio, amarrado a Foli, Victor Wooten, Erin McKean e Tarja Branca.  
+
  [![Capa do post: Tudo o que acontece quando fechamos os olhos](https://bolivaralencastro.com.br/assets/images/blog/tudo-o-que-acontece-quando-fechamos-os-olhos/card.webp)](https://bolivaralencastro.com.br/blog/tudo-o-que-acontece-quando-fechamos-os-olhos.html) 
 
 ### [Tudo o que acontece quando fechamos os olhos](https://bolivaralencastro.com.br/blog/tudo-o-que-acontece-quando-fechamos-os-olhos.html) 
@@ -190,10 +196,4 @@ Uma mariposa desaparece num banheiro interno. Entre o corpo seco atrás dos vaso
 
 ### [O dia seguinte](https://bolivaralencastro.com.br/blog/o-dia-seguinte.html) 
 
-Sobre ovos, imagem e o momento em que decidi me tornar vegano: uma cena guardada desde a pandemia, uma citação de Bataille e a manhã em que finalmente a fotografei.  
-
- [![Capa do post: Antes do CicloFest Rural: uma rota vivida com a Triskel Bike](https://bolivaralencastro.com.br/assets/images/blog/antes-do-ciclofest-rural/card.webp)](https://bolivaralencastro.com.br/blog/antes-do-ciclofest-rural.html) 
-
-### [Antes do CicloFest Rural: uma rota vivida com a Triskel Bike](https://bolivaralencastro.com.br/blog/antes-do-ciclofest-rural.html) 
-
-Em 2021, Lica nos convidou a percorrer em primeira mão uma rota que preparava para o CicloFest Rural. Entre bicicleta, fotografia e encontros em São Pedro de Alcântara, a Triskel Bike me deu uma experiência que continuo guardando com carinho.
+Sobre ovos, imagem e o momento em que decidi me tornar vegano: uma cena guardada desde a pandemia, uma citação de Bataille e a manhã em que finalmente a fotografei.
