@@ -45,7 +45,7 @@ ROOT = Path(__file__).parent.parent
 ENV_FILE = ROOT / ".env"
 
 DEFAULT_IMAGE_MODEL = "openai/gpt-5.4-image-2"
-DEFAULT_PROMPT_MODEL = "google/gemini-2.0-flash-001"  # barato e rápido
+DEFAULT_PROMPT_MODEL = "google/gemini-3.5-flash-lite"  # barato e rápido
 
 PRESETS = {
     "cover":  (1400, 787),
@@ -241,7 +241,7 @@ hierarquia visual e enquadramento.
 
 Retorne APENAS o JSON, sem markdown, sem explicação."""
 
-    raw = call_text_model(system_prompt, api_key, prompt_model)
+    raw = call_text_model(system_prompt, api_key, prompt_model, max_tokens=2048)
 
     # Extrai JSON mesmo se vier com ```json ... ```
     json_m = re.search(r'\{.*\}', raw, re.DOTALL)

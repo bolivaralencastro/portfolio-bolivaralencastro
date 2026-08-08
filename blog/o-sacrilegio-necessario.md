@@ -10,7 +10,7 @@ Da sistematização da dança de salão no Brasil aos anos discutindo papéis de
 
 Resposta rápida 
 
-A dança de salão que hoje tem regra fixa nasceu de gente testando movimento sobre um ritmo, antes de qualquer regra existir para nomeá-lo. Sistematizar para ensinar não é o problema — foi o que levou a dança de salão da boemia para a escola. O problema é tratar o método como origem e qualquer variação como ameaça. Foli, a palestra de Victor Wooten, a TED Talk de Erin McKean e o documentário Tarja Branca mostram o mesmo mecanismo em domínios diferentes: erro, brincadeira e invenção são o que mantém uma forma viva.  
+A dança de salão que hoje tem regra fixa nasceu de gente testando movimento sobre um ritmo, antes de qualquer regra existir para nomeá-lo. Sistematizar para ensinar não é o problema — foi o que levou a dança de salão da boemia para a escola. O problema é tratar o método como origem e qualquer variação como ameaça. Foli, a palestra de Victor Wooten, a TED Talk de Erin McKean e o documentário Tarja Branca mostram o mesmo mecanismo em domínios diferentes: erro, brincadeira e invenção são o que mantém uma forma viva.  ![Ilustração de um dançarino em pleno salto rompendo uma grade geométrica rígida, em tons de azul e verde-água sobre fundo escuro](https://bolivaralencastro.com.br/assets/images/blog/o-sacrilegio-necessario/cover.webp) 
 
  
 
