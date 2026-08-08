@@ -15,7 +15,7 @@
   var images = Array.prototype.slice.call(
     document.querySelectorAll("main img")
   ).filter(function (image) {
-    if (image.closest(".author-card, .related-list, .project-item, .post-item, footer, header, nav")) {
+    if (image.closest(".author-card, .related-list, .project-item, .post-item, .video-link-card, footer, header, nav")) {
       return false;
     }
 
