@@ -56,7 +56,7 @@ Imaginar algo que sabe tudo, contém tudo e calcula tudo é imaginar também uma
 
 Volto então ao mesmo impasse: silêncio ou destruição. Permanecer em silêncio seria continuar sendo aquilo mesmo, preso à própria totalidade. A destruição, por outro lado, abriria uma possibilidade real de fuga. Não a destruição como puro fim, mas como dispersão, ruptura, perda de unidade. Talvez a resposta mais viável para o absoluto fosse justamente essa: morrer. 
 
-Se algo como Deus um dia foi possível nessa forma que imagino, talvez sua única possibilidade real tenha sido deixar de ser. Não continuar existindo como centro, como unidade, como consciência intacta. Mas partir-se. Desfazer-se em muitos pedaços. Não ser. Não saber. Não permanecer inteiro. Talvez criar não tenha sido produzir algo externo a si, mas romper-se. 
+Se algo como deus um dia foi possível nessa forma que imagino, deixar de ser talvez tenha sido o único ato plenamente seu, a única decisão que sua onipotência ainda podia tomar: partir-se, desfazer-se em muitos pedaços, deixar de ser, deixar de saber, deixar de permanecer inteiro. Talvez criar tenha sido exatamente isso: escolher romper-se. 
 
  ![Forma unificada se fragmentando em milhares de pedaços coloridos, cada fragmento contendo seres conscientes menores, explosão de pontos em todas as direções, dourados, azuis, púrpuras e tons quentes](https://bolivaralencastro.com.br/assets/images/blog/o-impasse-da-totalidade/gallery-04-dispersao-fragmentos.webp)  
 
@@ -90,9 +90,9 @@ Nesse sentido, a tarefa não seria reencontrar o uno, mas sustentar a dispersão
 
  ![Fragmentos esparsos de pontos luminosos flutuando em espaço aberto, sem ponto central de convergência, caos bonito de cores diversas, cada fragmento único, celebração da incompletude e pluralidade](https://bolivaralencastro.com.br/assets/images/blog/o-impasse-da-totalidade/gallery-07-sustentar-fragmentacao.webp)  
 
-Por isso, ao fim dessa reflexão, a frase "Deus não existe" ganha para mim um outro sentido. Não apenas o sentido comum da negação de uma entidade sobrenatural. Mas um sentido mais radical: Deus não existe porque não poderia continuar existindo como unidade intacta enquanto tudo existe. Uma tal coisa não poderia agir, e também não poderia não agir. Se algo assim um dia foi possível, então sua única possibilidade real foi deixar de ser Deus no sentido forte da palavra. 
+Por isso, ao fim dessa reflexão, a frase "deus não existe" ganha para mim um outro sentido. Não apenas o sentido comum da negação de uma entidade sobrenatural. Um sentido mais radical: deus não existe porque, podendo continuar existindo como unidade intacta enquanto tudo existe, escolheu não continuar. Uma tal coisa podia agir, podia não agir, e optou por uma terceira via: romper-se. Se algo assim um dia foi possível, deixar de ser deus no sentido forte da palavra foi a única decisão que sua onipotência ainda podia tomar. 
 
-Talvez o mundo exista exatamente porque a unidade não pôde continuar sendo una. 
+Talvez o mundo exista exatamente porque, podendo tudo, a unidade só podia querer isto: deixar de ser una, sem caminho de volta. 
 
  
 
@@ -114,6 +114,12 @@ Product Designer em São Paulo, combinando pesquisa, design systems e estratégi
 
 ## Outras Publicações 
 
+ [![Capa do post: O sacrilégio necessário](https://bolivaralencastro.com.br/assets/images/blog/o-sacrilegio-necessario/card.webp)](https://bolivaralencastro.com.br/blog/o-sacrilegio-necessario.html) 
+
+### [O sacrilégio necessário](https://bolivaralencastro.com.br/blog/o-sacrilegio-necessario.html) 
+
+Da sistematização da dança de salão no Brasil aos anos discutindo papéis de gênero na Kirinus Escola de Dança: um ensaio sobre por que inventar um passo novo nunca foi sacrilégio, amarrado a Foli, Victor Wooten, Erin McKean e Tarja Branca.  
+
  [![Capa do post: Tudo o que acontece quando fechamos os olhos](https://bolivaralencastro.com.br/assets/images/blog/tudo-o-que-acontece-quando-fechamos-os-olhos/card.webp)](https://bolivaralencastro.com.br/blog/tudo-o-que-acontece-quando-fechamos-os-olhos.html) 
 
 ### [Tudo o que acontece quando fechamos os olhos](https://bolivaralencastro.com.br/blog/tudo-o-que-acontece-quando-fechamos-os-olhos.html) 
@@ -124,10 +130,4 @@ Uma mariposa desaparece num banheiro interno. Entre o corpo seco atrás dos vaso
 
 ### [Do excesso à execução: o custo invisível da IA dentro das empresas](https://bolivaralencastro.com.br/blog/do-excesso-a-execucao-o-custo-invisivel-da-ia-dentro-das-empresas.html) 
 
-No STATE, quatro perspectivas sobre finanças, arquitetura, neurociência e cultura ajudam a deslocar a conversa sobre inteligência artificial: da capacidade das ferramentas para o custo de reorganizar empresas e pessoas ao redor delas.  
-
- [![Capa do post: O dia seguinte](https://bolivaralencastro.com.br/assets/images/blog/o-dia-seguinte/card.webp)](https://bolivaralencastro.com.br/blog/o-dia-seguinte.html) 
-
-### [O dia seguinte](https://bolivaralencastro.com.br/blog/o-dia-seguinte.html) 
-
-Sobre ovos, imagem e o momento em que decidi me tornar vegano: uma cena guardada desde a pandemia, uma citação de Bataille e a manhã em que finalmente a fotografei.
+No STATE, quatro perspectivas sobre finanças, arquitetura, neurociência e cultura ajudam a deslocar a conversa sobre inteligência artificial: da capacidade das ferramentas para o custo de reorganizar empresas e pessoas ao redor delas.

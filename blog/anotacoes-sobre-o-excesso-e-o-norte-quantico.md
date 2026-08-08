@@ -92,7 +92,7 @@ Product Designer em São Paulo, combinando pesquisa, design systems e estratégi
 
 ## Outras Publicações 
 
- [![Capa do post: O sacrilégio necessário](https://bolivaralencastro.com.br/assets/images/og/site-og.jpg)](https://bolivaralencastro.com.br/blog/o-sacrilegio-necessario.html) 
+ [![Capa do post: O sacrilégio necessário](https://bolivaralencastro.com.br/assets/images/blog/o-sacrilegio-necessario/card.webp)](https://bolivaralencastro.com.br/blog/o-sacrilegio-necessario.html) 
 
 ### [O sacrilégio necessário](https://bolivaralencastro.com.br/blog/o-sacrilegio-necessario.html) 
 
