@@ -8,6 +8,14 @@ Notas editoriais sobre design, sistema visual e arquitetura web nativa.
 
 ## Posts  
 
+ [![Capa do post: A camerazinha de R$ 100 e a imagem suficiente](https://bolivaralencastro.com.br/assets/images/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente/card.webp)](https://bolivaralencastro.com.br/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente.html) 
+
+ 
+
+### [A camerazinha de R$ 100 e a imagem suficiente](https://bolivaralencastro.com.br/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente.html) 
+
+Uma câmera de até R$ 100, fotos de 2 MP e vídeo Full HD: um pequeno objeto que mostra o quanto a fabricação de imagens se tornou acessível.  18/08/2026  
+
  [![Capa do post: O sacrilégio necessário](https://bolivaralencastro.com.br/assets/images/blog/o-sacrilegio-necessario/card.webp)](https://bolivaralencastro.com.br/blog/o-sacrilegio-necessario.html) 
 
  
@@ -158,12 +166,4 @@ Um relato sobre o GitHub Copilot Dev Days São Paulo e a ideia de que, no desenv
 
 ### [Anotações sobre o Excesso e o Norte Quântico](https://bolivaralencastro.com.br/blog/anotacoes-sobre-o-excesso-e-o-norte-quantico.html) 
 
-O excesso de informação não é apenas um problema estatístico; é uma erosão do sentido. Notas sobre algoritmos, humanidade e o futuro da criatividade no STATE.  31/03/2026  
-
- [![Capa do post: O impasse da totalidade](https://bolivaralencastro.com.br/assets/images/blog/o-impasse-da-totalidade/card.webp)](https://bolivaralencastro.com.br/blog/o-impasse-da-totalidade.html) 
-
- 
-
-### [O impasse da totalidade](https://bolivaralencastro.com.br/blog/o-impasse-da-totalidade.html) 
-
-Um ensaio especulativo sobre unidade, saturação, morte do absoluto e a dispersão que torna a existência possível.  15/03/2026
+O excesso de informação não é apenas um problema estatístico; é uma erosão do sentido. Notas sobre algoritmos, humanidade e o futuro da criatividade no STATE.  31/03/2026
