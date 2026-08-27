@@ -22,7 +22,7 @@ Participei do THE STATE OF LEARNING de agosto, no [STATE Innovation Center](http
 
  ![Ilustração em caneta esferográfica do corredor interno do STATE Innovation Center, galpão industrial reformado com estrutura metálica aparente, mesas de trabalho e plantas altas](https://bolivaralencastro.com.br/assets/images/blog/state-economia-da-confianca/corredor-state.webp) 
 
-O prédio inteiro é um argumento visual: teto de fábrica dos anos 1940 por cima, mato crescendo por baixo. Ninguém decidiu isso pensando no texto que eu ia escrever, mas ajudou.  
+O galpão industrial dos anos 1940 que hoje abriga o STATE, com a estrutura metálica original preservada.  
 
 Foi no meio do painel, ouvindo os três cruzarem dados, autenticidade e criadores, que uma comparação me ocorreu e não me largou mais: a diferença entre uma marca que se comporta como um stalker e uma marca que se comporta como uma pessoa querida — e como as duas, por caminhos opostos, podem cometer o mesmo erro. 
 
