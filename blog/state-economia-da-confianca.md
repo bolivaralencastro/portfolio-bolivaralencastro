@@ -18,7 +18,11 @@ A tensão por trás de dados, autenticidade e confiança é uma só: quanto mais
 
 Nem toda grade consegue prender uma planta. O texto inteiro, resumido numa imagem antes mesmo de começar.  
 
-Participei hoje do THE STATE OF LEARNING de agosto, no [STATE Innovation Center](https://www.state.is/), em São Paulo. O convite já vinha com uma tese: depois de décadas tratando atenção como o ativo mais valioso do mercado, a saturação de informação, a automação extrema e o excesso de cliques produziram uma espécie de cegueira digital. Visibilidade sem credibilidade virou passivo. Em seu lugar, propunham, emerge a economia da confiança — e a edição do dia cruzou reputação e dados estratégicos, autenticidade e microcomunidades, experiência e tangibilização, com Marcel Sampaio ([Edelman Brasil](https://www.linkedin.com/company/edelman-brasil)), [Gaia Passarelli](https://br.linkedin.com/in/gaiapassarelli/en) ([Substack](https://substack.com/)) e [Gica Trierweiler](https://www.linkedin.com/in/gicatrierweiler/) ([Bullet](https://br.linkedin.com/company/bullet-group)), mediados por [Dandara Fonseca](https://www.linkedin.com/in/dandara-fonseca-b11901177/) ([The Summer Hunter](https://thesummerhunter.com/)). 
+Participei do THE STATE OF LEARNING de agosto, no [STATE Innovation Center](https://www.state.is/), em São Paulo. O convite já vinha com uma tese: depois de décadas tratando atenção como o ativo mais valioso do mercado, a saturação de informação, a automação extrema e o excesso de cliques produziram uma espécie de cegueira digital. Visibilidade sem credibilidade virou passivo. Em seu lugar, propunham, emerge a economia da confiança — e a edição do dia cruzou reputação e dados estratégicos, autenticidade e microcomunidades, experiência e tangibilização, com Marcel Sampaio ([Edelman Brasil](https://www.linkedin.com/company/edelman-brasil)), [Gaia Passarelli](https://br.linkedin.com/in/gaiapassarelli/en) ([Substack](https://substack.com/)) e [Gica Trierweiler](https://www.linkedin.com/in/gicatrierweiler/) ([Bullet](https://br.linkedin.com/company/bullet-group)), mediados por [Dandara Fonseca](https://www.linkedin.com/in/dandara-fonseca-b11901177/) ([The Summer Hunter](https://thesummerhunter.com/)). 
+
+ ![Ilustração em caneta esferográfica do corredor interno do STATE Innovation Center, galpão industrial reformado com estrutura metálica aparente, mesas de trabalho e plantas altas](https://bolivaralencastro.com.br/assets/images/blog/state-economia-da-confianca/corredor-state.webp) 
+
+O prédio inteiro é um argumento visual: teto de fábrica dos anos 1940 por cima, mato crescendo por baixo. Ninguém decidiu isso pensando no texto que eu ia escrever, mas ajudou.  
 
 Foi no meio do painel, ouvindo os três cruzarem dados, autenticidade e criadores, que uma comparação me ocorreu e não me largou mais: a diferença entre uma marca que se comporta como um stalker e uma marca que se comporta como uma pessoa querida — e como as duas, por caminhos opostos, podem cometer o mesmo erro. 
 
@@ -88,6 +92,10 @@ Talvez a palavra que atravesse tudo isso seja espaço. Espaço entre dado e deci
 
 É praticamente a mesma questão que persegui, num registro bem mais especulativo, em [O impasse da totalidade](https://bolivaralencastro.com.br/blog/o-impasse-da-totalidade.html): a ideia de que conhecer tudo sobre algo — ou alguém — não é o auge da relação, é o fim dela. Totalidade e vigilância são parentes. 
 
+ ![Ilustração em caneta esferográfica de uma mesinha de madeira vazia no terraço do STATE, com uma planta ao lado e a estrutura industrial do prédio ao fundo](https://bolivaralencastro.com.br/assets/images/blog/state-economia-da-confianca/terraco-state.webp) 
+
+A mesa que sobrou vazia quando todo mundo desceu pro brunch — o tipo de espaço que este texto inteiro está tentando defender.  
+
 ## Terapeuta, parceiro, amigo, anfitrião: outros personagens para pensar dado 
 
 Se o stalker é um extremo, vale a pena colocar outros personagens ao lado dele para escapar da oposição fácil entre "marca invasiva" e "marca amiga" — porque cada relação organiza conhecimento, poder, consentimento e reciprocidade de um jeito diferente. 
@@ -99,6 +107,10 @@ O **parceiro** (no sentido de intimidade e consentimento) ensina algo que falta 
 O **amigo** tolera interações sem propósito comercial — nenhuma conversão, nenhum CTA, e ainda assim a relação melhora. Isso levanta a pergunta mais desconfortável de todas para uma marca: ela consegue fazer alguma coisa por uma comunidade sem transformar isso em mecanismo de aquisição? 
 
 E o **anfitrião** talvez seja a melhor imagem de personalização desejável: sabe algumas coisas sobre o convidado, prepara o ambiente, escolhe uma música — mas não escreve o roteiro da noite inteira. Personalização prescritiva diz "sabemos quem você é e o que você quer". Personalização hospitaleira diz "sabemos algumas coisas e usamos isso para criar um espaço em que você escolhe melhor". Uma tenta eliminar a incerteza. A outra torna a incerteza confortável. 
+
+ ![Ilustração em caneta esferográfica dos quatro participantes do painel — Dandara Fonseca, Gaia Passarelli, Gica Trierweiler e Marcel Sampaio — posando juntos no palco do STATE ao final do evento](https://bolivaralencastro.com.br/assets/images/blog/state-economia-da-confianca/grupo-palestrantes.webp) 
+
+Depois de uma manhã inteira discursando sobre confiança, o teste final é sempre o mesmo: quatro pessoas topam tirar foto de abraço sem ensaiar.  
 
 ## bell hooks e a confiança como conduta, não como campanha 
 
@@ -117,14 +129,6 @@ Tem ainda uma camada mais incômoda no stalker: ele não constrói uma ideia sob
 Foi impossível não pensar nisso quando "geração Z" apareceu no painel como bloco único. Categorias geracionais têm alguma utilidade descritiva — mas há um salto enorme entre "encontramos tendências estatísticas nesse conjunto" e "essas pessoas são assim". A primeira frase descreve uma distribuição; a segunda inventa um personagem. E o personagem, uma vez publicado à exaustão — "coisas que só a Gen Z entende", "o que a Gen Z espera das marcas" —, volta para dentro das próprias pessoas que ele descreveu. Algumas se reconhecem nele, outras o rejeitam, outras passam a performá-lo. A classificação não apenas descreve: ela pode produzir o comportamento que depois vai confirmá-la. 
 
 Isso lembra o poder pastoral de que fala Foucault: o pastor precisa conhecer o rebanho inteiro e cada ovelha individualmente ao mesmo tempo — população e indivíduo, dashboard e perfil, segmento e mensagem personalizada. É quase a realização tecnológica de um sonho antigo. E, nesse sistema, o desvio é caro: o fiel heterodoxo, o consumidor que atravessa segmentos, o jovem que age como "boomer" são estatisticamente incômodos porque expõem uma verdade que a classificação tentou esconder — a pessoa sempre excede a categoria. 
-
- ![Ilustração em caneta esferográfica dos quatro participantes do painel — Dandara Fonseca, Gaia Passarelli, Gica Trierweiler e Marcel Sampaio — posando juntos no palco do STATE ao final do evento](https://bolivaralencastro.com.br/assets/images/blog/state-economia-da-confianca/grupo-palestrantes.webp) 
-
-Depois de uma manhã inteira discursando sobre confiança, o teste final é sempre o mesmo: quatro pessoas topam tirar foto de abraço sem ensaiar.  
-
- ![Ilustração em caneta esferográfica de uma mesinha de madeira vazia no terraço do STATE, com uma planta ao lado e a estrutura industrial do prédio ao fundo](https://bolivaralencastro.com.br/assets/images/blog/state-economia-da-confianca/terraco-state.webp) 
-
-A mesa que sobrou vazia quando todo mundo desceu pro brunch — o tipo de espaço que este texto inteiro está tentando defender.  
 
 ## O que fica 
 
