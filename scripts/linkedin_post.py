@@ -321,6 +321,11 @@ def main():
         "--text-file",
         help="Path de um .txt com o corpo customizado do post (substitui a descrição automática)",
     )
+    parser.add_argument(
+        "--link-card",
+        action="store_true",
+        help="Publica como compartilhamento de link (card de artigo com preview automático da URL), em vez de subir a imagem como mídia solta",
+    )
     args = parser.parse_args()
 
     custom_body = None
@@ -352,7 +357,9 @@ def main():
     print(f"\n📝 Post: {meta['title']}")
     print(f"📅 Data: {meta['date']}")
     print(f"🔗 URL:  {target_url}")
-    if meta["image_path"]:
+    if args.link_card:
+        print(f"🔗 Modo: card de artigo com preview automático da URL (sem upload de imagem)")
+    elif meta["image_path"]:
         print(f"🖼️  Imagem: {meta['image_path'].relative_to(ROOT)}")
     else:
         print(f"🖼️  Imagem: não encontrada (usará card de link)")
@@ -379,7 +386,7 @@ def main():
         sys.exit(1)
 
     image_urn = None
-    if meta["image_path"]:
+    if meta["image_path"] and not args.link_card:
         print("🖼️  Registrando upload de imagem...")
         try:
             upload_url, image_urn = register_image_upload(token, author_urn)
