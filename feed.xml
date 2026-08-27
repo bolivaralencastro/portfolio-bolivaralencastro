@@ -4,7 +4,7 @@
   <subtitle>Blog, notas e páginas publicadas em um site HTML-first.</subtitle>
   <link href="https://bolivaralencastro.com.br/feed.xml" rel="self"/>
   <link href="https://bolivaralencastro.com.br/" rel="alternate"/>
-  <updated>2026-08-08T00:00:00Z</updated>
+  <updated>2026-08-27T00:00:00Z</updated>
   <id>https://bolivaralencastro.com.br/feed.xml</id>
   <author>
     <name>Bolívar Alencastro</name>
@@ -13,6 +13,26 @@
   <contributor>
     <name>Bolivar Alencastro</name>
   </contributor>
+
+  <entry>
+    <title>A era da confiança: o novo jogo dos negócios em um mercado exausto</title>
+    <link href="https://bolivaralencastro.com.br/blog/state-economia-da-confianca.html" rel="alternate"/>
+    <id>https://bolivaralencastro.com.br/blog/state-economia-da-confianca.html</id>
+    <published>2026-08-27T00:00:00Z</published>
+    <updated>2026-08-27T00:00:00Z</updated>
+    <summary>No STATE, um painel sobre dados, autenticidade e confiança puxou uma reflexão sobre stalkers, pessoas amadas, bell hooks e o direito ao imprevisível.</summary>
+    <content type="html">&lt;p&gt;Participei hoje do THE STATE OF LEARNING de agosto, no STATE Innovation Center, em São Paulo. O convite já vinha com uma tese: depois de décadas tratando atenção como o ativo mais valioso do mercado, a saturação de informação, a automação extrema e o excesso de cliques produziram uma espécie de cegueira digital. Visibilidade sem credibilidade virou passivo. Em seu lugar, propunham, emerge a economia da confiança — e a edição do dia cruzou reputação e dados estratégicos, autenticidade e microcomunidades, experiência e tangibilização, com Marcel Sampaio (Edelman Brasil), Gaia Passarelli (Substack) e Gica Trierweiler (Bullet), mediados por Dandara Fonseca (The Summer Hunter).&lt;/p&gt;</content>
+  </entry>
+
+  <entry>
+    <title>Quando a IA obriga o RH a redesenhar o trabalho</title>
+    <link href="https://bolivaralencastro.com.br/blog/rh-estrategico-ia-aula-inaugural.html" rel="alternate"/>
+    <id>https://bolivaralencastro.com.br/blog/rh-estrategico-ia-aula-inaugural.html</id>
+    <published>2026-08-14T00:00:00Z</published>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Na aula inaugural do MBA em RH Estratégico com Inteligência Artificial, risco, dados e desenho do trabalho reforçaram uma agenda que já aparece no desenvolvimento do Konquest, na Keeps.</summary>
+    <content type="html">&lt;p&gt;Na manhã de 14 de agosto de 2026, participei da aula inaugural do MBA em RH Estratégico com Inteligência Artificial da UniFECAF, no Cubo Itaú, em São Paulo. O encontro reuniu Kiko Campos, Cristiane Andrade e Diego Cidade. As três apresentações percorreram conselhos de administração, Business Partners, indicadores, recrutamento, produtos digitais e carreiras de entrada.&lt;/p&gt;</content>
+  </entry>
 
   <entry>
     <title>O sacrilégio necessário</title>

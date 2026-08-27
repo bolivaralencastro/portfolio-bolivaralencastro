@@ -182,20 +182,20 @@ Product Designer em São Paulo, prestando atenção no que insiste em aparecer d
 
 ## Outras Publicações 
 
+ [![Capa do post: A era da confiança: o novo jogo dos negócios em um mercado exausto](https://bolivaralencastro.com.br/assets/images/blog/state-economia-da-confianca/card.webp)](https://bolivaralencastro.com.br/blog/state-economia-da-confianca.html) 
+
+### [A era da confiança: o novo jogo dos negócios em um mercado exausto](https://bolivaralencastro.com.br/blog/state-economia-da-confianca.html) 
+
+No STATE, um painel sobre dados, autenticidade e confiança puxou uma reflexão sobre stalkers, pessoas amadas, bell hooks e o direito ao imprevisível.  
+
+ [![Capa do post: Quando a IA obriga o RH a redesenhar o trabalho](https://bolivaralencastro.com.br/assets/images/blog/rh-estrategico-ia-aula-inaugural/card.webp)](https://bolivaralencastro.com.br/blog/rh-estrategico-ia-aula-inaugural.html) 
+
+### [Quando a IA obriga o RH a redesenhar o trabalho](https://bolivaralencastro.com.br/blog/rh-estrategico-ia-aula-inaugural.html) 
+
+Na aula inaugural do MBA em RH Estratégico com Inteligência Artificial, risco, dados e desenho do trabalho reforçaram uma agenda que já aparece no desenvolvimento do Konquest, na Keeps.  
+
  [![Capa do post: O sacrilégio necessário](https://bolivaralencastro.com.br/assets/images/blog/o-sacrilegio-necessario/card.webp)](https://bolivaralencastro.com.br/blog/o-sacrilegio-necessario.html) 
 
 ### [O sacrilégio necessário](https://bolivaralencastro.com.br/blog/o-sacrilegio-necessario.html) 
 
-Da sistematização da dança de salão no Brasil aos anos discutindo papéis de gênero na Kirinus Escola de Dança: um ensaio sobre por que inventar um passo novo nunca foi sacrilégio, amarrado a Foli, Victor Wooten, Erin McKean e Tarja Branca.  
-
- [![Capa do post: Do excesso à execução: o custo invisível da IA dentro das empresas](https://bolivaralencastro.com.br/assets/images/blog/do-excesso-a-execucao-o-custo-invisivel-da-ia-dentro-das-empresas/card.webp)](https://bolivaralencastro.com.br/blog/do-excesso-a-execucao-o-custo-invisivel-da-ia-dentro-das-empresas.html) 
-
-### [Do excesso à execução: o custo invisível da IA dentro das empresas](https://bolivaralencastro.com.br/blog/do-excesso-a-execucao-o-custo-invisivel-da-ia-dentro-das-empresas.html) 
-
-No STATE, quatro perspectivas sobre finanças, arquitetura, neurociência e cultura ajudam a deslocar a conversa sobre inteligência artificial: da capacidade das ferramentas para o custo de reorganizar empresas e pessoas ao redor delas.  
-
- [![Capa do post: O dia seguinte](https://bolivaralencastro.com.br/assets/images/blog/o-dia-seguinte/card.webp)](https://bolivaralencastro.com.br/blog/o-dia-seguinte.html) 
-
-### [O dia seguinte](https://bolivaralencastro.com.br/blog/o-dia-seguinte.html) 
-
-Sobre ovos, imagem e o momento em que decidi me tornar vegano: uma cena guardada desde a pandemia, uma citação de Bataille e a manhã em que finalmente a fotografei.
+Da sistematização da dança de salão no Brasil aos anos discutindo papéis de gênero na Kirinus Escola de Dança: um ensaio sobre por que inventar um passo novo nunca foi sacrilégio, amarrado a Foli, Victor Wooten, Erin McKean e Tarja Branca.

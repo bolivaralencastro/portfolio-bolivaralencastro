@@ -10,7 +10,7 @@ Um mergulho na estratégia de UX e UI por trás de uma ferramenta que transforma
 
 Resposta rápida 
 
-Design para liderança não é apenas polir telas; é transformar dados brutos em leitura acionável. O post observa como estratégia de UX e UI pode reduzir ruído e apoiar decisões mais claras.  
+Design para liderança transforma dados brutos em leitura acionável. O post observa como estratégia de UX e UI pode reduzir ruído e apoiar decisões mais claras.  
 
  
 
@@ -55,7 +55,7 @@ Os **Cards de Ação Rápida** convertem dado em decisão operacional.
 
 Com um clique, o líder vai direto para a lista filtrada e consegue agir sem fricção. ![Painel com cartões de ação rápida para matrículas obrigatórias e liderados inativos](https://bolivaralencastro.com.br/assets/images/blog/design-para-liderar-com-clareza/gallery-02-cards-acao-rapida.webp) 
 
-## O status geral: menos conta de cabeça, mais clareza 
+## O status geral antecipa o diagnóstico 
 
 Sem apoio visual, o líder precisaria cruzar manualmente progresso, vencimento e atividade recente. Resolvemos isso com uma badge objetiva de status: 
  
@@ -79,9 +79,13 @@ O projeto percorreu roadmap, entrevistas com gestores, discovery, pesquisa, defi
 
 ## Conclusão: um parceiro estratégico para o líder 
 
-O Painel do Líder não é só visualização de dados; é um sistema de decisão rápida para gestão proativa e desenvolvimento contínuo. 
+O Painel do Líder funciona como um sistema de decisão rápida para gestão proativa e desenvolvimento contínuo. 
 
-Principal aprendizado: **simplicidade é o verdadeiro luxo em UX**. Não basta mostrar dados, é preciso transformá-los em clareza e ação. 
+Principal aprendizado: **simplicidade é o verdadeiro luxo em UX**. Dados ganham valor quando se transformam em clareza e ação. 
+
+O contexto mais amplo está documentado no projeto [Keeps Learning — Konquest](https://bolivaralencastro.com.br/projects/keeps-learning-konquest.html), que reúne jornadas de aprendizagem, comunicação e analytics dentro do mesmo ecossistema. 
+
+Quase um ano depois, a aula inaugural do MBA em RH Estratégico com Inteligência Artificial devolveu esse projeto a uma discussão maior. Em [Quando a IA obriga o RH a redesenhar o trabalho](https://bolivaralencastro.com.br/blog/rh-estrategico-ia-aula-inaugural.html), conecto o Painel do Líder à transformação do trabalho, às carreiras de entrada e ao papel do RH na organização de dados e decisões. 
 
 Se quiser trocar ideias sobre dashboards, produto e design estratégico, vamos conversar no [LinkedIn](https://www.linkedin.com/in/bolivaralencastro/). 
 
@@ -105,20 +109,20 @@ Product Designer em São Paulo, combinando pesquisa, design systems e estratégi
 
 ## Outras Publicações 
 
+ [![Capa do post: A era da confiança: o novo jogo dos negócios em um mercado exausto](https://bolivaralencastro.com.br/assets/images/blog/state-economia-da-confianca/card.webp)](https://bolivaralencastro.com.br/blog/state-economia-da-confianca.html) 
+
+### [A era da confiança: o novo jogo dos negócios em um mercado exausto](https://bolivaralencastro.com.br/blog/state-economia-da-confianca.html) 
+
+No STATE, um painel sobre dados, autenticidade e confiança puxou uma reflexão sobre stalkers, pessoas amadas, bell hooks e o direito ao imprevisível.  
+
+ [![Capa do post: Quando a IA obriga o RH a redesenhar o trabalho](https://bolivaralencastro.com.br/assets/images/blog/rh-estrategico-ia-aula-inaugural/card.webp)](https://bolivaralencastro.com.br/blog/rh-estrategico-ia-aula-inaugural.html) 
+
+### [Quando a IA obriga o RH a redesenhar o trabalho](https://bolivaralencastro.com.br/blog/rh-estrategico-ia-aula-inaugural.html) 
+
+Na aula inaugural do MBA em RH Estratégico com Inteligência Artificial, risco, dados e desenho do trabalho reforçaram uma agenda que já aparece no desenvolvimento do Konquest, na Keeps.  
+
  [![Capa do post: O sacrilégio necessário](https://bolivaralencastro.com.br/assets/images/blog/o-sacrilegio-necessario/card.webp)](https://bolivaralencastro.com.br/blog/o-sacrilegio-necessario.html) 
 
 ### [O sacrilégio necessário](https://bolivaralencastro.com.br/blog/o-sacrilegio-necessario.html) 
 
-Da sistematização da dança de salão no Brasil aos anos discutindo papéis de gênero na Kirinus Escola de Dança: um ensaio sobre por que inventar um passo novo nunca foi sacrilégio, amarrado a Foli, Victor Wooten, Erin McKean e Tarja Branca.  
-
- [![Capa do post: Tudo o que acontece quando fechamos os olhos](https://bolivaralencastro.com.br/assets/images/blog/tudo-o-que-acontece-quando-fechamos-os-olhos/card.webp)](https://bolivaralencastro.com.br/blog/tudo-o-que-acontece-quando-fechamos-os-olhos.html) 
-
-### [Tudo o que acontece quando fechamos os olhos](https://bolivaralencastro.com.br/blog/tudo-o-que-acontece-quando-fechamos-os-olhos.html) 
-
-Uma mariposa desaparece num banheiro interno. Entre o corpo seco atrás dos vasos, um sonho com cupins, uma mensagem para o pai e séculos de folclore sobre mariposas, um ensaio sobre o que a gente faz com o que não viu.  
-
- [![Capa do post: Do excesso à execução: o custo invisível da IA dentro das empresas](https://bolivaralencastro.com.br/assets/images/blog/do-excesso-a-execucao-o-custo-invisivel-da-ia-dentro-das-empresas/card.webp)](https://bolivaralencastro.com.br/blog/do-excesso-a-execucao-o-custo-invisivel-da-ia-dentro-das-empresas.html) 
-
-### [Do excesso à execução: o custo invisível da IA dentro das empresas](https://bolivaralencastro.com.br/blog/do-excesso-a-execucao-o-custo-invisivel-da-ia-dentro-das-empresas.html) 
-
-No STATE, quatro perspectivas sobre finanças, arquitetura, neurociência e cultura ajudam a deslocar a conversa sobre inteligência artificial: da capacidade das ferramentas para o custo de reorganizar empresas e pessoas ao redor delas.
+Da sistematização da dança de salão no Brasil aos anos discutindo papéis de gênero na Kirinus Escola de Dança: um ensaio sobre por que inventar um passo novo nunca foi sacrilégio, amarrado a Foli, Victor Wooten, Erin McKean e Tarja Branca.

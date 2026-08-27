@@ -34,13 +34,13 @@ Marca, sistema visual e campanhas digitais para a Kirinus Escola de Dança.
 
 ## Latest Post  
 
- [![Capa do post: O sacrilégio necessário](https://bolivaralencastro.com.br/assets/images/blog/o-sacrilegio-necessario/card.webp)](https://bolivaralencastro.com.br/blog/o-sacrilegio-necessario.html) 
+ [![Capa do post: A era da confiança: o novo jogo dos negócios em um mercado exausto](https://bolivaralencastro.com.br/assets/images/blog/state-economia-da-confianca/card.webp)](https://bolivaralencastro.com.br/blog/state-economia-da-confianca.html) 
 
  
 
-### [O sacrilégio necessário](https://bolivaralencastro.com.br/blog/o-sacrilegio-necessario.html) 
+### [A era da confiança: o novo jogo dos negócios em um mercado exausto](https://bolivaralencastro.com.br/blog/state-economia-da-confianca.html) 
 
-Da sistematização da dança de salão no Brasil aos anos discutindo papéis de gênero na Kirinus Escola de Dança: um ensaio sobre por que inventar um passo novo nunca foi sacrilégio, amarrado a Foli, Victor Wooten, Erin McKean e Tarja Branca.  08/08/2026    
+No STATE, um painel sobre dados, autenticidade e confiança puxou uma reflexão sobre stalkers, pessoas amadas, bell hooks e o direito ao imprevisível.  27/08/2026    
 
  
 
