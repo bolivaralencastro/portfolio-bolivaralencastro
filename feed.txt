@@ -25,6 +25,16 @@
   </entry>
 
   <entry>
+    <title>A camerazinha de R$ 100 e a imagem suficiente</title>
+    <link href="https://bolivaralencastro.com.br/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente.html" rel="alternate"/>
+    <id>https://bolivaralencastro.com.br/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente.html</id>
+    <published>2026-08-18T00:00:00Z</published>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <summary>Uma câmera de até R$ 100, fotos de 2 MP e vídeo Full HD: um pequeno objeto que mostra o quanto a fabricação de imagens se tornou acessível.</summary>
+    <content type="html">&lt;p&gt;Tenho usado uma dessas camerazinhas vendidas por até R$ 100. Ela cabe na mão, grava em miniSD e transforma o ato de fotografar numa sequência curta: ligar, apontar e apertar um botão. Depois, basta colocar o cartão no computador. As imagens estão ali.&lt;/p&gt;</content>
+  </entry>
+
+  <entry>
     <title>Quando a IA obriga o RH a redesenhar o trabalho</title>
     <link href="https://bolivaralencastro.com.br/blog/rh-estrategico-ia-aula-inaugural.html" rel="alternate"/>
     <id>https://bolivaralencastro.com.br/blog/rh-estrategico-ia-aula-inaugural.html</id>

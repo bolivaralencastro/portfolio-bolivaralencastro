@@ -16,6 +16,14 @@ Notas editoriais sobre design, sistema visual e arquitetura web nativa.
 
 No STATE, um painel sobre dados, autenticidade e confiança puxou uma reflexão sobre stalkers, pessoas amadas, bell hooks e o direito ao imprevisível.  27/08/2026  
 
+ [![Capa do post: A camerazinha de R$ 100 e a imagem suficiente](https://bolivaralencastro.com.br/assets/images/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente/card.webp)](https://bolivaralencastro.com.br/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente.html) 
+
+ 
+
+### [A camerazinha de R$ 100 e a imagem suficiente](https://bolivaralencastro.com.br/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente.html) 
+
+Uma câmera de até R$ 100, fotos de 2 MP e vídeo Full HD: um pequeno objeto que mostra o quanto a fabricação de imagens se tornou acessível.  18/08/2026  
+
  [![Capa do post: Quando a IA obriga o RH a redesenhar o trabalho](https://bolivaralencastro.com.br/assets/images/blog/rh-estrategico-ia-aula-inaugural/card.webp)](https://bolivaralencastro.com.br/blog/rh-estrategico-ia-aula-inaugural.html) 
 
  
@@ -158,12 +166,4 @@ No Cubo Itaú, o Agent Speedrun expôs memória, guardrails, runtime e o tipo de
 
 ### [Quando infraestrutura, automação, interface e voz entram na mesma aplicação](https://bolivaralencastro.com.br/blog/oracle-n8n-vercel-elevenlabs-e-a-stack-ai-first-no-cubo.html) 
 
-No evento promovido pela Oracle no Cubo Itaú, OCI, n8n, Vercel e ElevenLabs apareceram como partes de uma mesma arquitetura: infraestrutura, automação, interface e voz.  14/04/2026  
-
- [![Capa do post: GitHub Copilot, contexto e o que ficou do workshop na FIAP](https://bolivaralencastro.com.br/assets/images/blog/github-copilot-contexto-e-o-que-ficou-do-workshop-na-fiap/card.webp)](https://bolivaralencastro.com.br/blog/github-copilot-contexto-e-o-que-ficou-do-workshop-na-fiap.html) 
-
- 
-
-### [GitHub Copilot, contexto e o que ficou do workshop na FIAP](https://bolivaralencastro.com.br/blog/github-copilot-contexto-e-o-que-ficou-do-workshop-na-fiap.html) 
-
-Um relato sobre o GitHub Copilot Dev Days São Paulo e a ideia de que, no desenvolvimento com IA, contexto importa tanto quanto o modelo.  12/04/2026
+No evento promovido pela Oracle no Cubo Itaú, OCI, n8n, Vercel e ElevenLabs apareceram como partes de uma mesma arquitetura: infraestrutura, automação, interface e voz.  14/04/2026
