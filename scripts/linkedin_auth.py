@@ -45,7 +45,7 @@ def save_token(token: str):
     # Garante que cada chave começa numa linha nova
     content = content.rstrip("\n") + "\n"
     if re.search(r"^#?\s*LINKEDIN_ACCESS_TOKEN=", content, re.MULTILINE):
-        content = re.sub(r"#?\s*LINKEDIN_ACCESS_TOKEN=.*", f"LINKEDIN_ACCESS_TOKEN={token}", content)
+        content = re.sub(r"^#?\s*LINKEDIN_ACCESS_TOKEN=[^\n]*", f"LINKEDIN_ACCESS_TOKEN={token}", content, flags=re.MULTILINE)
     else:
         content += f"LINKEDIN_ACCESS_TOKEN={token}\n"
     ENV_FILE.write_text(content)
