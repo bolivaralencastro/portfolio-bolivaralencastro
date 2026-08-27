@@ -205,7 +205,9 @@ def build_tracked_url(url: str, source: str, campaign: str) -> str:
     return urllib.parse.urlunsplit(parsed._replace(query=new_query))
 
 
-def format_post_text(meta: dict, target_url: str) -> str:
+def format_post_text(meta: dict, target_url: str, custom_body: str | None = None) -> str:
+    if custom_body is not None:
+        return f"{custom_body}\n\n{target_url}"
     return (
         f"{meta['description']}\n\n"
         f"Novo post no blog 👇\n"
@@ -259,11 +261,12 @@ def publish_post(
     meta: dict,
     target_url: str,
     image_urn: str | None = None,
+    custom_body: str | None = None,
 ) -> str:
     """Publica o post e retorna o URN do share criado."""
     payload: dict = {
         "author": author_urn,
-        "commentary": format_post_text(meta, target_url),
+        "commentary": format_post_text(meta, target_url, custom_body),
         "visibility": "PUBLIC",
         "distribution": {
             "feedDistribution": "MAIN_FEED",
@@ -314,7 +317,15 @@ def main():
         action="store_true",
         help="Não adiciona parâmetros UTM no link da publicação",
     )
+    parser.add_argument(
+        "--text-file",
+        help="Path de um .txt com o corpo customizado do post (substitui a descrição automática)",
+    )
     args = parser.parse_args()
+
+    custom_body = None
+    if args.text_file:
+        custom_body = Path(args.text_file).read_text(encoding="utf-8").strip()
 
     env = load_env()
     token = env.get("LINKEDIN_ACCESS_TOKEN", "").strip()
@@ -345,7 +356,7 @@ def main():
         print(f"🖼️  Imagem: {meta['image_path'].relative_to(ROOT)}")
     else:
         print(f"🖼️  Imagem: não encontrada (usará card de link)")
-    print(f"\n--- Texto da publicação ---\n{format_post_text(meta, target_url)}\n---------------------------\n")
+    print(f"\n--- Texto da publicação ---\n{format_post_text(meta, target_url, custom_body)}\n---------------------------\n")
 
     if args.dry_run:
         print("🔍 Dry run: nada publicado.")
@@ -381,7 +392,7 @@ def main():
 
     print("📤 Publicando...")
     try:
-        share_urn = publish_post(token, author_urn, meta, target_url, image_urn)
+        share_urn = publish_post(token, author_urn, meta, target_url, image_urn, custom_body)
         save_publish_state(signature, share_urn)
         print(f"\n✅ Publicado com sucesso!")
         if share_urn:
