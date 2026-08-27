@@ -16,7 +16,7 @@ A tensão por trás de dados, autenticidade e confiança é uma só: quanto mais
 
  ![Ilustração conceitual em caneta esferográfica inspirada na arquitetura do STATE: uma grade rígida de vigas de aço no alto se dissolve, na parte de baixo, em plantas orgânicas que rompem e torcem as linhas retas](https://bolivaralencastro.com.br/assets/images/blog/state-economia-da-confianca/cover.webp) 
 
-Nem toda grade consegue prender uma planta. O texto inteiro, resumido numa imagem antes mesmo de começar.  
+Malha de controle em cima, crescimento que ela não previu embaixo — a tensão inteira do texto, resolvida em traço antes da primeira palavra.  
 
 Participei do THE STATE OF LEARNING de agosto, no [STATE Innovation Center](https://www.state.is/), em São Paulo. O evento partia de uma tese: depois de décadas tratando atenção como o ativo mais valioso do mercado, a saturação de informação, a automação extrema e o excesso de cliques produziram uma espécie de cegueira digital. Visibilidade sem credibilidade virou passivo. Em seu lugar, propunham, emerge a economia da confiança — e a edição do dia cruzou reputação e dados estratégicos, autenticidade e microcomunidades, experiência e tangibilização, com Marcel Sampaio ([Edelman Brasil](https://www.linkedin.com/company/edelman-brasil)), [Gaia Passarelli](https://br.linkedin.com/in/gaiapassarelli/en) ([Substack](https://substack.com/)) e [Gica Trierweiler](https://www.linkedin.com/in/gicatrierweiler/) ([Bullet](https://br.linkedin.com/company/bullet-group)), mediados por [Dandara Fonseca](https://www.linkedin.com/in/dandara-fonseca-b11901177/) ([The Summer Hunter](https://thesummerhunter.com/)). 
 
@@ -41,12 +41,6 @@ Marcel Sampaio abriu contando que a Edelman estuda confiança globalmente há ma
 Brigou com o controle do slide o tempo todo e ainda assim deu uma aula sobre por que confiança não se fabrica em duas semanas — a ironia não passou despercebida.  
 
 Gaia Passarelli, do Substack, insistiu que confiança "não é uma coisa que se conquista com uma campanha ali ao longo de algumas semanas" — é construída tijolinho após tijolinho, na troca direta entre quem cria e quem lê. E fez uma observação que corta fundo: marcas estão tentando imitar a autenticidade das pessoas, e imitar é fácil — "o resultado é que a gente tem um monte de marca no feed do Instagram falando umas com as outras, como se isso fosse uma coisa super legal, marcas tentando ser pessoas". A pergunta que ela deixou no ar foi o que se perde quando marcas trocam pessoas por dados, seguidores. 
-
- ![Ilustração em caneta esferográfica de uma selfie com Gaia Passarelli no STATE, os dois sorrindo, ela fazendo sinal de paz com a mão](https://bolivaralencastro.com.br/assets/images/blog/state-economia-da-confianca/selfie-gaia-passarelli.webp) 
-
-Prova de vida enviada para uma pessoa que não estava na sala, mas seguia a Gaia muito antes de mim — essa é para você, amor.  
-
-(Essa aqui é só uma tietagem — minha companheira acompanha o trabalho da Gaia há tempos e ficou animada quando soube que eu ia assistir a palestra dela. A foto é mais para ela do que para o blog, mas coube bem aqui.) 
 
  ![Ilustração em caneta esferográfica de Gica Trierweiler, da Bullet, palestrando sobre experiência e tangibilização no STATE](https://bolivaralencastro.com.br/assets/images/blog/state-economia-da-confianca/gica-trierweiler.webp) 
 
@@ -94,7 +88,7 @@ Talvez a palavra que atravesse tudo isso seja espaço. Espaço entre dado e deci
 
  ![Ilustração em caneta esferográfica de uma mesinha de madeira vazia no terraço do STATE, com uma planta ao lado e a estrutura industrial do prédio ao fundo](https://bolivaralencastro.com.br/assets/images/blog/state-economia-da-confianca/terraco-state.webp) 
 
-A mesa que sobrou vazia quando todo mundo desceu pro brunch — o tipo de espaço que este texto inteiro está tentando defender.  
+Uma das mesas do coworking que fica disponível pra quem decide ficar trabalhando no STATE depois do evento — o tipo de espaço que este texto inteiro está tentando defender.  
 
 ## Terapeuta, parceiro, amigo, anfitrião: outros personagens para pensar dado 
 
@@ -110,7 +104,7 @@ E o **anfitrião** talvez seja a melhor imagem de personalização desejável: s
 
  ![Ilustração em caneta esferográfica dos quatro participantes do painel — Dandara Fonseca, Gaia Passarelli, Gica Trierweiler e Marcel Sampaio — posando juntos no palco do STATE ao final do evento](https://bolivaralencastro.com.br/assets/images/blog/state-economia-da-confianca/grupo-palestrantes.webp) 
 
-Depois de uma manhã inteira discursando sobre confiança, o teste final é sempre o mesmo: quatro pessoas topam tirar foto de abraço sem ensaiar.  
+No fim, a prova mais simples de confiança do dia inteiro: um abraço em grupo que ninguém precisou roteirizar.  
 
 ## bell hooks e a confiança como conduta, não como campanha 
 
@@ -135,6 +129,12 @@ Isso lembra o poder pastoral de que fala Foucault: o pastor precisa conhecer o r
 O evento colocou reputação, dados, autenticidade e experiência lado a lado como resposta a um mercado exausto de atenção e espetáculo. Acho que a tensão real por trás de tudo isso é uma só: quanto mais capacidade temos de conhecer, prever e responder ao outro, maior também é o risco de sufocar exatamente aquilo que o torna humano — a capacidade de surpreender, mudar, contradizer, querer amanhã algo que não queria ontem. 
 
 Isso não é um argumento contra dado. É um argumento contra tratar dado como destino. Talvez a pergunta que vale mais do que "como conhecer melhor o consumidor" seja outra: que tipo de relação uma marca está construindo quando transforma aquilo que sabe sobre alguém em ação? Duas empresas podem ter exatamente os mesmos dados e construir relações moralmente muito diferentes com as pessoas — uma pergunta "como isso nos ajuda a extrair mais dela", a outra pergunta "o que saber isso exige de nós". E talvez seja só na segunda pergunta que confiança e autenticidade deixem de ser atributo de comunicação e voltem a ser, de fato, forma de comportamento. 
+
+ ![Ilustração em caneta esferográfica de uma selfie com Gaia Passarelli no STATE, os dois sorrindo, ela fazendo sinal de paz com a mão](https://bolivaralencastro.com.br/assets/images/blog/state-economia-da-confianca/selfie-gaia-passarelli.webp) 
+
+Prova de vida enviada para uma pessoa que não estava na sala, mas seguia a Gaia muito antes de mim — essa é para você, amor.  
+
+(Essa aqui é só uma tietagem — minha companheira acompanha o trabalho da Gaia há tempos e ficou animada quando soube que eu ia assistir a palestra dela. A foto é mais para ela do que para o blog, mas coube bem aqui.) 
 
  
 
