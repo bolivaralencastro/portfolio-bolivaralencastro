@@ -18,7 +18,7 @@ A tensão por trás de dados, autenticidade e confiança é uma só: quanto mais
 
 Nem toda grade consegue prender uma planta. O texto inteiro, resumido numa imagem antes mesmo de começar.  
 
-Participei do THE STATE OF LEARNING de agosto, no [STATE Innovation Center](https://www.state.is/), em São Paulo. O convite já vinha com uma tese: depois de décadas tratando atenção como o ativo mais valioso do mercado, a saturação de informação, a automação extrema e o excesso de cliques produziram uma espécie de cegueira digital. Visibilidade sem credibilidade virou passivo. Em seu lugar, propunham, emerge a economia da confiança — e a edição do dia cruzou reputação e dados estratégicos, autenticidade e microcomunidades, experiência e tangibilização, com Marcel Sampaio ([Edelman Brasil](https://www.linkedin.com/company/edelman-brasil)), [Gaia Passarelli](https://br.linkedin.com/in/gaiapassarelli/en) ([Substack](https://substack.com/)) e [Gica Trierweiler](https://www.linkedin.com/in/gicatrierweiler/) ([Bullet](https://br.linkedin.com/company/bullet-group)), mediados por [Dandara Fonseca](https://www.linkedin.com/in/dandara-fonseca-b11901177/) ([The Summer Hunter](https://thesummerhunter.com/)). 
+Participei do THE STATE OF LEARNING de agosto, no [STATE Innovation Center](https://www.state.is/), em São Paulo. O evento partia de uma tese: depois de décadas tratando atenção como o ativo mais valioso do mercado, a saturação de informação, a automação extrema e o excesso de cliques produziram uma espécie de cegueira digital. Visibilidade sem credibilidade virou passivo. Em seu lugar, propunham, emerge a economia da confiança — e a edição do dia cruzou reputação e dados estratégicos, autenticidade e microcomunidades, experiência e tangibilização, com Marcel Sampaio ([Edelman Brasil](https://www.linkedin.com/company/edelman-brasil)), [Gaia Passarelli](https://br.linkedin.com/in/gaiapassarelli/en) ([Substack](https://substack.com/)) e [Gica Trierweiler](https://www.linkedin.com/in/gicatrierweiler/) ([Bullet](https://br.linkedin.com/company/bullet-group)), mediados por [Dandara Fonseca](https://www.linkedin.com/in/dandara-fonseca-b11901177/) ([The Summer Hunter](https://thesummerhunter.com/)). 
 
  ![Ilustração em caneta esferográfica do corredor interno do STATE Innovation Center, galpão industrial reformado com estrutura metálica aparente, mesas de trabalho e plantas altas](https://bolivaralencastro.com.br/assets/images/blog/state-economia-da-confianca/corredor-state.webp) 
 
@@ -27,10 +27,6 @@ O prédio inteiro é um argumento visual: teto de fábrica dos anos 1940 por cim
 Foi no meio do painel, ouvindo os três cruzarem dados, autenticidade e criadores, que uma comparação me ocorreu e não me largou mais: a diferença entre uma marca que se comporta como um stalker e uma marca que se comporta como uma pessoa querida — e como as duas, por caminhos opostos, podem cometer o mesmo erro. 
 
 (Já é o segundo texto que escrevo puxado por uma manhã no STATE — o [primeiro](https://bolivaralencastro.com.br/blog/do-excesso-a-execucao-o-custo-invisivel-da-ia-dentro-das-empresas.html) foi sobre o custo invisível da IA dentro das empresas. Parece que o formato do evento — várias vozes curtas seguidas de painel — é particularmente bom em plantar uma ideia e sair de cena antes que ela termine de crescer.) 
-
- ![Ilustração em caneta esferográfica do notebook aberto sobre a mesa de trabalho no STATE, com o rascunho deste texto na tela, copo de chá e cabos ao redor](https://bolivaralencastro.com.br/assets/images/blog/state-economia-da-confianca/mesa-trabalho.webp) 
-
-O texto começou a nascer bem ali, entre o chá esfriando e um roteador de cabos que nenhum painel sobre confiança resolveria.  
 
 ## O que ficou das três cadeiras 
 
@@ -65,6 +61,10 @@ Gica Trierweiler, da Bullet, trouxe a ideia de tangibilização como "a prova de
 No painel, a discussão foi ficando mais afiada: alguém perguntou como diferenciar uma marca que construiu autenticidade de uma que só decidiu que autenticidade "vende" e passou a performá-la. E apareceu, de relance, a geração Z como exemplo — tratada ali, como quase sempre é, como um bloco único de comportamento, apesar da própria plateia reconhecer, rindo, o quanto isso simplifica demais. 
 
 *Aviso ao leitor: a partir daqui o texto sai do relato do evento e entra numa divagação — o tipo de coisa que acontece quando uma fala de quinze minutos me ocupa a cabeça pelas próximas duas horas. Boa parte do que vem a seguir não foi dito por ninguém no palco; é o que ficou martelando em mim depois de ouvir os três falarem. Tem um pouco de tudo que foi tratado ali dentro — insularidade, autenticidade, earned media, geração Z — mas reorganizado, esticado, levado para lugares que a manhã no STATE não previa. Fica o aviso para quem preferir parar por aqui. Para quem continuar: seja bem-vindo à divagação (risos).* 
+
+ ![Ilustração em caneta esferográfica do notebook aberto sobre a mesa de trabalho no STATE, com o rascunho deste texto na tela, copo de chá e cabos ao redor](https://bolivaralencastro.com.br/assets/images/blog/state-economia-da-confianca/mesa-trabalho.webp) 
+
+O texto começou a nascer bem ali, entre o chá esfriando e um roteador de cabos que nenhum painel sobre confiança resolveria.  
 
 ## A comparação que não me largou: o stalker e a pessoa querida 
 
