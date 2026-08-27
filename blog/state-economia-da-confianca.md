@@ -16,7 +16,7 @@ A tensão por trás de dados, autenticidade e confiança é uma só: quanto mais
 
  ![Ilustração conceitual em caneta esferográfica inspirada na arquitetura do STATE: uma grade rígida de vigas de aço no alto se dissolve, na parte de baixo, em plantas orgânicas que rompem e torcem as linhas retas](https://bolivaralencastro.com.br/assets/images/blog/state-economia-da-confianca/cover.webp) 
 
-Malha de controle em cima, crescimento que ela não previu embaixo — a tensão inteira do texto, resolvida em traço antes da primeira palavra.  
+Uma tentativa de ilustrar o orgânico e o inorgânico disputando espaço.  
 
 Participei do THE STATE OF LEARNING de agosto, no [STATE Innovation Center](https://www.state.is/), em São Paulo. O evento partia de uma tese: depois de décadas tratando atenção como o ativo mais valioso do mercado, a saturação de informação, a automação extrema e o excesso de cliques produziram uma espécie de cegueira digital. Visibilidade sem credibilidade virou passivo. Em seu lugar, propunham, emerge a economia da confiança — e a edição do dia cruzou reputação e dados estratégicos, autenticidade e microcomunidades, experiência e tangibilização, com Marcel Sampaio ([Edelman Brasil](https://www.linkedin.com/company/edelman-brasil)), [Gaia Passarelli](https://br.linkedin.com/in/gaiapassarelli/en) ([Substack](https://substack.com/)) e [Gica Trierweiler](https://www.linkedin.com/in/gicatrierweiler/) ([Bullet](https://br.linkedin.com/company/bullet-group)), mediados por [Dandara Fonseca](https://www.linkedin.com/in/dandara-fonseca-b11901177/) ([The Summer Hunter](https://thesummerhunter.com/)). 
 
