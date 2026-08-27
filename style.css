@@ -1697,6 +1697,55 @@ img, video {
     margin: 0;
   }
 }
+
+.speaker-detail {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--space-3);
+  align-items: start;
+  margin: var(--space-2) 0 var(--space-4);
+}
+
+.speaker-detail-media {
+  grid-column: span 6;
+  margin: 0;
+}
+
+.speaker-detail-media img {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.speaker-detail-media figcaption {
+  margin-top: var(--space-1);
+  color: var(--muted);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+}
+
+.speaker-detail-copy {
+  grid-column: span 6;
+  display: grid;
+  gap: var(--space-2);
+  align-content: start;
+}
+
+@media (max-width: 900px) {
+  .speaker-detail {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .speaker-detail-media,
+  .speaker-detail-copy {
+    grid-column: span 4;
+  }
+
+  .speaker-detail-media {
+    max-width: 32rem;
+  }
+}
+
 .photo-sequence {
   grid-column: 1 / -1;
   display: grid;
@@ -2479,4 +2528,3 @@ body > footer {
     animation: none !important;
   }
 }
-

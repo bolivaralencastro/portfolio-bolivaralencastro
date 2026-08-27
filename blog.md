@@ -8,6 +8,22 @@ Notas editoriais sobre design, sistema visual e arquitetura web nativa.
 
 ## Posts  
 
+ [![Capa do post: A era da confiança: o novo jogo dos negócios em um mercado exausto](https://bolivaralencastro.com.br/assets/images/blog/state-economia-da-confianca/card.webp)](https://bolivaralencastro.com.br/blog/state-economia-da-confianca.html) 
+
+ 
+
+### [A era da confiança: o novo jogo dos negócios em um mercado exausto](https://bolivaralencastro.com.br/blog/state-economia-da-confianca.html) 
+
+No STATE, um painel sobre dados, autenticidade e confiança puxou uma reflexão sobre stalkers, pessoas amadas, bell hooks e o direito ao imprevisível.  27/08/2026  
+
+ [![Capa do post: Quando a IA obriga o RH a redesenhar o trabalho](https://bolivaralencastro.com.br/assets/images/blog/rh-estrategico-ia-aula-inaugural/card.webp)](https://bolivaralencastro.com.br/blog/rh-estrategico-ia-aula-inaugural.html) 
+
+ 
+
+### [Quando a IA obriga o RH a redesenhar o trabalho](https://bolivaralencastro.com.br/blog/rh-estrategico-ia-aula-inaugural.html) 
+
+Na aula inaugural do MBA em RH Estratégico com Inteligência Artificial, risco, dados e desenho do trabalho reforçaram uma agenda que já aparece no desenvolvimento do Konquest, na Keeps.  14/08/2026  
+
  [![Capa do post: O sacrilégio necessário](https://bolivaralencastro.com.br/assets/images/blog/o-sacrilegio-necessario/card.webp)](https://bolivaralencastro.com.br/blog/o-sacrilegio-necessario.html) 
 
  
@@ -150,20 +166,4 @@ No evento promovido pela Oracle no Cubo Itaú, OCI, n8n, Vercel e ElevenLabs apa
 
 ### [GitHub Copilot, contexto e o que ficou do workshop na FIAP](https://bolivaralencastro.com.br/blog/github-copilot-contexto-e-o-que-ficou-do-workshop-na-fiap.html) 
 
-Um relato sobre o GitHub Copilot Dev Days São Paulo e a ideia de que, no desenvolvimento com IA, contexto importa tanto quanto o modelo.  12/04/2026  
-
- [![Capa do post: Anotações sobre o Excesso e o Norte Quântico](https://bolivaralencastro.com.br/assets/images/blog/anotacoes-sobre-o-excesso-e-o-norte-quantico/2026-03-31-anotacoes-sobre-o-excesso-e-o-norte-quantico-bolivar-social.jpg)](https://bolivaralencastro.com.br/blog/anotacoes-sobre-o-excesso-e-o-norte-quantico.html) 
-
- 
-
-### [Anotações sobre o Excesso e o Norte Quântico](https://bolivaralencastro.com.br/blog/anotacoes-sobre-o-excesso-e-o-norte-quantico.html) 
-
-O excesso de informação não é apenas um problema estatístico; é uma erosão do sentido. Notas sobre algoritmos, humanidade e o futuro da criatividade no STATE.  31/03/2026  
-
- [![Capa do post: O impasse da totalidade](https://bolivaralencastro.com.br/assets/images/blog/o-impasse-da-totalidade/card.webp)](https://bolivaralencastro.com.br/blog/o-impasse-da-totalidade.html) 
-
- 
-
-### [O impasse da totalidade](https://bolivaralencastro.com.br/blog/o-impasse-da-totalidade.html) 
-
-Um ensaio especulativo sobre unidade, saturação, morte do absoluto e a dispersão que torna a existência possível.  15/03/2026
+Um relato sobre o GitHub Copilot Dev Days São Paulo e a ideia de que, no desenvolvimento com IA, contexto importa tanto quanto o modelo.  12/04/2026

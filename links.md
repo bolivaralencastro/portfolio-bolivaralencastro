@@ -7,7 +7,7 @@ Source: https://bolivaralencastro.com.br/links.html
 
 Product Designer · Design Systems · IA aplicada ao trabalho  
 
-  [Último texto: O sacrilégio necessário](https://bolivaralencastro.com.br/blog/o-sacrilegio-necessario.html) [Projeto em destaque: Keeps Products](https://bolivaralencastro.com.br/projects/keeps-learning-konquest.html)  [Blog — todos os textos](https://bolivaralencastro.com.br/blog.html) [Portfólio — todos os projetos](https://bolivaralencastro.com.br/projects.html) [Sobre mim](https://bolivaralencastro.com.br/about.html)  
+  [Último texto: A era da confiança: o novo jogo dos negócios em um mercado exausto](https://bolivaralencastro.com.br/blog/state-economia-da-confianca.html) [Projeto em destaque: Keeps Products](https://bolivaralencastro.com.br/projects/keeps-learning-konquest.html)  [Blog — todos os textos](https://bolivaralencastro.com.br/blog.html) [Portfólio — todos os projetos](https://bolivaralencastro.com.br/projects.html) [Sobre mim](https://bolivaralencastro.com.br/about.html)  
 
  [Facebook](https://facebook.com/bolivaralencastrofotografia) [Instagram](https://www.instagram.com/bolivar.alencastro/) [LinkedIn](https://www.linkedin.com/in/bolivaralencastro/) [GitHub](https://github.com/bolivaralencastro) [E-mail](mailto:bolivar@alencastro.com.br)  
 
