@@ -88,14 +88,14 @@ Product Designer em Sao Paulo, usando curadoria em lote para transformar ruido d
 
 No STATE, um painel sobre dados, autenticidade e confiança puxou uma reflexão sobre stalkers, pessoas amadas, bell hooks e o direito ao imprevisível.  
 
+ [![Capa do post: A camerazinha de R$ 100 e a imagem suficiente](https://bolivaralencastro.com.br/assets/images/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente/card.webp)](https://bolivaralencastro.com.br/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente.html) 
+
+### [A camerazinha de R$ 100 e a imagem suficiente](https://bolivaralencastro.com.br/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente.html) 
+
+Uma câmera de até R$ 100, fotos de 2 MP e vídeo Full HD: um pequeno objeto que mostra o quanto a fabricação de imagens se tornou acessível.  
+
  [![Capa do post: Quando a IA obriga o RH a redesenhar o trabalho](https://bolivaralencastro.com.br/assets/images/blog/rh-estrategico-ia-aula-inaugural/card.webp)](https://bolivaralencastro.com.br/blog/rh-estrategico-ia-aula-inaugural.html) 
 
 ### [Quando a IA obriga o RH a redesenhar o trabalho](https://bolivaralencastro.com.br/blog/rh-estrategico-ia-aula-inaugural.html) 
 
-Na aula inaugural do MBA em RH Estratégico com Inteligência Artificial, risco, dados e desenho do trabalho reforçaram uma agenda que já aparece no desenvolvimento do Konquest, na Keeps.  
-
- [![Capa do post: O sacrilégio necessário](https://bolivaralencastro.com.br/assets/images/blog/o-sacrilegio-necessario/card.webp)](https://bolivaralencastro.com.br/blog/o-sacrilegio-necessario.html) 
-
-### [O sacrilégio necessário](https://bolivaralencastro.com.br/blog/o-sacrilegio-necessario.html) 
-
-Da sistematização da dança de salão no Brasil aos anos discutindo papéis de gênero na Kirinus Escola de Dança: um ensaio sobre por que inventar um passo novo nunca foi sacrilégio, amarrado a Foli, Victor Wooten, Erin McKean e Tarja Branca.
+Na aula inaugural do MBA em RH Estratégico com Inteligência Artificial, risco, dados e desenho do trabalho reforçaram uma agenda que já aparece no desenvolvimento do Konquest, na Keeps.

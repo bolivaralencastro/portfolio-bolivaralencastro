@@ -10,7 +10,7 @@ Um mergulho na estratégia de UX e UI por trás de uma ferramenta que transforma
 
 Resposta rápida 
 
-Design para liderança transforma dados brutos em leitura acionável. O post observa como estratégia de UX e UI pode reduzir ruído e apoiar decisões mais claras.  
+Design para liderança não é apenas polir telas; é transformar dados brutos em leitura acionável. O post observa como estratégia de UX e UI pode reduzir ruído e apoiar decisões mais claras.  
 
  
 
@@ -55,7 +55,7 @@ Os **Cards de Ação Rápida** convertem dado em decisão operacional.
 
 Com um clique, o líder vai direto para a lista filtrada e consegue agir sem fricção. ![Painel com cartões de ação rápida para matrículas obrigatórias e liderados inativos](https://bolivaralencastro.com.br/assets/images/blog/design-para-liderar-com-clareza/gallery-02-cards-acao-rapida.webp) 
 
-## O status geral antecipa o diagnóstico 
+## O status geral: menos conta de cabeça, mais clareza 
 
 Sem apoio visual, o líder precisaria cruzar manualmente progresso, vencimento e atividade recente. Resolvemos isso com uma badge objetiva de status: 
  
@@ -79,13 +79,9 @@ O projeto percorreu roadmap, entrevistas com gestores, discovery, pesquisa, defi
 
 ## Conclusão: um parceiro estratégico para o líder 
 
-O Painel do Líder funciona como um sistema de decisão rápida para gestão proativa e desenvolvimento contínuo. 
+O Painel do Líder não é só visualização de dados; é um sistema de decisão rápida para gestão proativa e desenvolvimento contínuo. 
 
-Principal aprendizado: **simplicidade é o verdadeiro luxo em UX**. Dados ganham valor quando se transformam em clareza e ação. 
-
-O contexto mais amplo está documentado no projeto [Keeps Learning — Konquest](https://bolivaralencastro.com.br/projects/keeps-learning-konquest.html), que reúne jornadas de aprendizagem, comunicação e analytics dentro do mesmo ecossistema. 
-
-Quase um ano depois, a aula inaugural do MBA em RH Estratégico com Inteligência Artificial devolveu esse projeto a uma discussão maior. Em [Quando a IA obriga o RH a redesenhar o trabalho](https://bolivaralencastro.com.br/blog/rh-estrategico-ia-aula-inaugural.html), conecto o Painel do Líder à transformação do trabalho, às carreiras de entrada e ao papel do RH na organização de dados e decisões. 
+Principal aprendizado: **simplicidade é o verdadeiro luxo em UX**. Não basta mostrar dados, é preciso transformá-los em clareza e ação. 
 
 Se quiser trocar ideias sobre dashboards, produto e design estratégico, vamos conversar no [LinkedIn](https://www.linkedin.com/in/bolivaralencastro/). 
 
@@ -115,14 +111,14 @@ Product Designer em São Paulo, combinando pesquisa, design systems e estratégi
 
 No STATE, um painel sobre dados, autenticidade e confiança puxou uma reflexão sobre stalkers, pessoas amadas, bell hooks e o direito ao imprevisível.  
 
+ [![Capa do post: A camerazinha de R$ 100 e a imagem suficiente](https://bolivaralencastro.com.br/assets/images/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente/card.webp)](https://bolivaralencastro.com.br/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente.html) 
+
+### [A camerazinha de R$ 100 e a imagem suficiente](https://bolivaralencastro.com.br/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente.html) 
+
+Uma câmera de até R$ 100, fotos de 2 MP e vídeo Full HD: um pequeno objeto que mostra o quanto a fabricação de imagens se tornou acessível.  
+
  [![Capa do post: Quando a IA obriga o RH a redesenhar o trabalho](https://bolivaralencastro.com.br/assets/images/blog/rh-estrategico-ia-aula-inaugural/card.webp)](https://bolivaralencastro.com.br/blog/rh-estrategico-ia-aula-inaugural.html) 
 
 ### [Quando a IA obriga o RH a redesenhar o trabalho](https://bolivaralencastro.com.br/blog/rh-estrategico-ia-aula-inaugural.html) 
 
-Na aula inaugural do MBA em RH Estratégico com Inteligência Artificial, risco, dados e desenho do trabalho reforçaram uma agenda que já aparece no desenvolvimento do Konquest, na Keeps.  
-
- [![Capa do post: O sacrilégio necessário](https://bolivaralencastro.com.br/assets/images/blog/o-sacrilegio-necessario/card.webp)](https://bolivaralencastro.com.br/blog/o-sacrilegio-necessario.html) 
-
-### [O sacrilégio necessário](https://bolivaralencastro.com.br/blog/o-sacrilegio-necessario.html) 
-
-Da sistematização da dança de salão no Brasil aos anos discutindo papéis de gênero na Kirinus Escola de Dança: um ensaio sobre por que inventar um passo novo nunca foi sacrilégio, amarrado a Foli, Victor Wooten, Erin McKean e Tarja Branca.
+Na aula inaugural do MBA em RH Estratégico com Inteligência Artificial, risco, dados e desenho do trabalho reforçaram uma agenda que já aparece no desenvolvimento do Konquest, na Keeps.
