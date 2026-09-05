@@ -1,0 +1,85 @@
+.ap403-story {
+  --ap-gap: clamp(0.55rem, 1.2vw, 1rem);
+}
+
+.ap403-story > p,
+.ap403-story > h2,
+.ap403-story > blockquote {
+  max-width: 760px;
+}
+
+.ap403-story blockquote {
+  margin: clamp(2.5rem, 6vw, 5rem) 0;
+  padding: 0;
+  border: 0;
+  font-size: clamp(1.45rem, 3vw, 2.65rem);
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+.ap403-story blockquote p {
+  margin: 0;
+}
+
+.ap403-gallery,
+.ap403-duo,
+.ap403-feature {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--ap-gap);
+  margin: clamp(2rem, 5vw, 4.5rem) 0;
+}
+
+.ap403-gallery img,
+.ap403-duo img,
+.ap403-feature img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  background: #f4f1ea;
+}
+
+.ap403-gallery img {
+  grid-column: span 2;
+}
+
+.ap403-duo img {
+  grid-column: span 6;
+}
+
+.ap403-feature img {
+  grid-column: span 7;
+}
+
+.ap403-feature.is-right img {
+  grid-column: 6 / span 7;
+}
+
+.ap403-feature figcaption,
+.ap403-duo figcaption {
+  grid-column: span 12;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.ap403-note {
+  margin: clamp(2rem, 4vw, 3.5rem) 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 760px) {
+  .ap403-gallery img {
+    grid-column: span 4;
+  }
+
+  .ap403-duo img,
+  .ap403-feature img,
+  .ap403-feature.is-right img {
+    grid-column: span 12;
+  }
+}

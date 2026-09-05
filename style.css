@@ -5,6 +5,11 @@
 
 /* ---------- Design Tokens ---------- */
 
+.project-year {
+  font-weight: 400;
+  opacity: 0.6;
+}
+
 :root {
   --bg: #ffffff;
   --text: #262626;

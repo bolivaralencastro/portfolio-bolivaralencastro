@@ -17,6 +17,7 @@ from dataclasses import dataclass
 from typing import List
 from urllib.parse import urlparse
 
+from image_metadata import image_metadata
 from markdown_export import html_page_to_markdown, inject_markdown_alternate_link
 from notes_pipeline import (
     NOTE_AUTO_BLOCK,
@@ -62,6 +63,13 @@ VERSIONED_ASSETS = {
     "/assets/js/gtm.js": pathlib.Path("assets/js/gtm.js"),
     "/assets/js/lightbox.js": pathlib.Path("assets/js/lightbox.js"),
     "/assets/js/project-filters.js": pathlib.Path("assets/js/project-filters.js"),
+    "/assets/js/instagram-gallery.js": pathlib.Path("assets/js/instagram-gallery.js"),
+    "/assets/js/ufsc-canvas-experiment.js": pathlib.Path("assets/js/ufsc-canvas-experiment.js"),
+    "/assets/css/nojs-nav.css": pathlib.Path("assets/css/nojs-nav.css"),
+    "/assets/css/ufsc-immersive.css": pathlib.Path("assets/css/ufsc-immersive.css"),
+    "/assets/css/ufsc-portraits.css": pathlib.Path("assets/css/ufsc-portraits.css"),
+    "/assets/css/ap403.css": pathlib.Path("assets/css/ap403.css"),
+    "/assets/css/instagram-gallery.css": pathlib.Path("assets/css/instagram-gallery.css"),
 }
 PROJECT_ORDER_AFTER = {
     "/projects/keeps-learning-site-identidade.html": "/projects/keeps-learning-konquest.html",
@@ -1101,7 +1109,15 @@ def resolve_listing_cover(url: str, base_url: str, repo_root: pathlib.Path) -> d
                     result["sizes"] = "(max-width: 700px) 86vw, (max-width: 980px) 62vw, 33vw"
             return result
 
-    return {"path": asset_path, "width": None, "height": None}
+    result = {"path": asset_path, "width": None, "height": None}
+    if source_asset.is_file() and source_asset.suffix.lower() != ".svg":
+        try:
+            _, width, height = image_metadata(source_asset)
+            result["width"] = width
+            result["height"] = height
+        except ValueError:
+            pass
+    return result
 
 
 def build_asset_versions(repo_root: pathlib.Path) -> dict[str, str]:
@@ -1227,15 +1243,9 @@ def ensure_csp_meta(html_content: str, content: str) -> str:
 
 def apply_versioned_asset_refs(html_content: str, versions: dict[str, str]) -> str:
     updated = html_content
-    updated = replace_asset_reference(updated, "href", "/style.css", versions["/style.css"])
-    updated = replace_asset_reference(updated, "src", "/assets/js/gtm.js", versions["/assets/js/gtm.js"])
-    updated = replace_asset_reference(updated, "src", "/assets/js/lightbox.js", versions["/assets/js/lightbox.js"])
-    updated = replace_asset_reference(
-        updated,
-        "src",
-        "/assets/js/project-filters.js",
-        versions["/assets/js/project-filters.js"],
-    )
+    for public_path, version in versions.items():
+        attribute = "href" if public_path.endswith(".css") else "src"
+        updated = replace_asset_reference(updated, attribute, public_path, version)
     return updated
 
 
@@ -1618,4 +1628,3 @@ if __name__ == "__main__":
     except BuildError as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         raise SystemExit(1)
-

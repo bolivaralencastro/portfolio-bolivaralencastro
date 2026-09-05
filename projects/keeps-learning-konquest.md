@@ -30,9 +30,31 @@ Os produtos atendiam perfis com níveis distintos de familiaridade e necessidade
 - Alinhamento recorrente com desenvolvimento para reduzir ruído entre intenção de design e implementação. 
  
 
-## Impacto 
+## Um recorte: o Painel do Líder Konquest 
 
-O trabalho consolidou uma base mais clara para a evolução do ecossistema, com decisões de interface menos fragmentadas, jornadas mais legíveis e uma experiência mais consistente entre produtos que compartilham o mesmo contexto operacional.  
+A área de analytics do Konquest reunia dados, filtros e cruzamentos para administradores e equipes de treinamento e desenvolvimento. O Painel do Líder partiu de uma necessidade específica: ajudar gestores a reconhecer pendências de aprendizagem e chegar aos liderados que precisavam de acompanhamento. 
+
+Nesse recorte, o processo passou por entrevistas com gestores, pesquisa, definição de requisitos e prototipação de alta fidelidade. Minha contribuição em UX e UI se concentrou na hierarquia dos indicadores, nos caminhos entre visão geral e detalhe e na aplicação dos padrões do Design System. 
+
+## Decisões de interface 
+
+A visão geral foi organizada em cinco indicadores: matrículas, taxa de liderados ativos, taxa de conclusão, média de horas e progresso dos obrigatórios. Fórmulas, referências e tendências acompanham os números para ajudar na interpretação. 
+
+ ![Visão geral do Painel do Líder, com cinco indicadores para acompanhar a aprendizagem da equipe](https://bolivaralencastro.com.br/assets/images/blog/design-para-liderar-com-clareza/gallery-01-kpis-visao-geral.webp) 
+
+Os indicadores organizam a primeira leitura do painel antes da exploração das listas.  
+
+Os cards de ação rápida levam a listas filtradas de matrículas obrigatórias, liderados inativos e matrículas livres. Esse caminho conecta a leitura do indicador ao grupo de pessoas ou matrículas que exige atenção. 
+
+ ![Cards de ação rápida para acessar listas filtradas no Painel do Líder](https://bolivaralencastro.com.br/assets/images/blog/design-para-liderar-com-clareza/gallery-02-cards-acao-rapida.webp) 
+
+O acesso às listas filtradas parte das situações de acompanhamento apresentadas no painel.  
+
+Nas tabelas de Cursos, Trilhas e Liderados, busca, ordenação e paginação seguem os mesmos padrões. A navegação avança da tabela para o detalhe; essa estrutura evita acumular modais durante a consulta. Os estados Em Risco, Atenção, Em Dia e Inativo sintetizam condições de vencimento e atividade que, de outra forma, precisariam ser cruzadas manualmente. 
+
+## Entrega documentada 
+
+O [relato publicado em setembro de 2025](https://bolivaralencastro.com.br/blog/design-para-liderar-com-clareza.html) registra um protótipo navegável de alta fidelidade e documentação preparados para handoff. As telas apresentadas aqui mostram as decisões desse estágio. O relato não apresenta métricas de uso após a implementação; os ganhos de clareza e agilidade são objetivos do desenho, ainda sem resultados quantitativos publicados nesse recorte.  
 
 ## Produtos em destaque 
 
