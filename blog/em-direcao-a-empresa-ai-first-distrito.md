@@ -10,7 +10,7 @@ O que significa ser uma empresa AI First? No Gen AI Lab do Distrito, a resposta 
 
 Resposta rápida 
 
-Ser AI First exige mais do que adotar chatbots: envolve memória, arquitetura, processos e novas formas de organizar trabalho. No Gen AI Lab do Distrito, Notion, Fhinck e Gabriel ajudaram a mostrar essa mudança por camadas concretas.  ![Cartaz de divulgação do evento Gen AI Lab Meetup no Distrito com fotos de Arthur Rozenblit e Vitor Finger](https://bolivaralencastro.com.br/assets/images/blog/em-direcao-a-empresa-ai-first-distrito/cover.webp?v=2) 
+Ser AI First exige mais do que adotar chatbots: envolve memória, arquitetura, processos e novas formas de organizar trabalho. No Gen AI Lab do Distrito, Notion, Fhinck e Gabriel ajudaram a mostrar essa mudança por camadas concretas.  ![Cartaz de divulgação do evento Gen AI Lab Meetup no Distrito com fotos de Arthur Rozenblit e Vitor Finger](https://bolivaralencastro.com.br/assets/images/blog/em-direcao-a-empresa-ai-first-distrito/cover-og.jpg) 
 
  
 

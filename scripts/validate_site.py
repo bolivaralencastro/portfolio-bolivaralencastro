@@ -10,9 +10,11 @@ from html.parser import HTMLParser
 import pathlib
 import re
 import sys
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Iterable, List
-from urllib.parse import parse_qs, urlsplit
+from urllib.parse import parse_qs, urlsplit, unquote, urljoin
+
+from image_metadata import image_metadata
 
 from notes_pipeline import NOTE_ARCHIVE_PAGE_SIZE, NOTE_AUTO_BLOCK, NOW_NOTES_LIMIT, load_notes, notes_archive_rel_path
 
@@ -84,6 +86,7 @@ class PageMeta:
     stylesheet_hrefs: List[str] = None
     csp_content: str = ""
     images: List[ImageMeta] = None
+    policy_violations: list[str] = field(default_factory=list)
 
     def __post_init__(self) -> None:
         if self.h1_texts is None:
@@ -123,6 +126,14 @@ class PageParser(HTMLParser):
 
     def handle_starttag(self, tag: str, attrs_list) -> None:
         attrs = dict(attrs_list)
+        if tag == "style" or "style" in attrs:
+            self.meta.policy_violations.append(f"line {self.getpos()[0]}: inline styles are blocked by CSP")
+        if any(name.startswith("on") for name in attrs):
+            self.meta.policy_violations.append(f"line {self.getpos()[0]}: inline event handlers are blocked by CSP")
+        if any((attrs.get(name) or "").strip().lower().startswith("javascript:") for name in ("href", "src", "action")):
+            self.meta.policy_violations.append(f"line {self.getpos()[0]}: javascript: URLs are blocked by CSP")
+        if tag == "script" and not attrs.get("src") and (attrs.get("type") or "").lower() != "application/ld+json":
+            self.meta.policy_violations.append(f"line {self.getpos()[0]}: inline scripts must move to assets/js/")
         classes = self._classes(attrs)
         in_e_content = "e-content" in classes or any(self._tag_stack)
         if tag not in VOID_TAGS:
@@ -230,8 +241,7 @@ class PageParser(HTMLParser):
         if tag == "script" and self._in_jsonld_script:
             self._in_jsonld_script = False
             payload = "".join(self._jsonld_chunks).strip()
-            if payload:
-                self.meta.jsonld_blocks.append(payload)
+            self.meta.jsonld_blocks.append(payload)
 
     def handle_data(self, data: str) -> None:
         if self._in_title:
@@ -300,8 +310,6 @@ def extract_jsonld_types(payload: str) -> set[str]:
     try:
         decoded = json.loads(payload)
     except json.JSONDecodeError:
-        if "BlogPosting" in payload:
-            types.add("BlogPosting")
         return types
 
     walk(decoded)
@@ -398,6 +406,79 @@ def class_inside_post_meta(html_content: str, class_name: str) -> bool:
     return bool(class_pattern.search(body))
 
 
+def validate_page_policy(page: PageMeta, errors: list[str]) -> None:
+    from build_site_metadata import SITE_CSP_CONTENT, VERSIONED_ASSETS
+
+    errors.extend(f"{page.rel_path}: {message}" for message in page.policy_violations)
+    if page.csp_content != SITE_CSP_CONTENT:
+        errors.append(f"{page.rel_path}: CSP must match SITE_CSP_CONTENT; run the metadata build")
+    for payload in page.jsonld_blocks:
+        try:
+            json.loads(payload)
+        except json.JSONDecodeError as exc:
+            errors.append(f"{page.rel_path}: invalid JSON-LD ({exc.msg})")
+    for reference in page.script_srcs + page.stylesheet_hrefs:
+        url = urlsplit(reference)
+        if url.scheme or url.netloc:
+            continue
+        if url.path not in VERSIONED_ASSETS:
+            errors.append(f"{page.rel_path}: unregistered local JS/CSS asset: {url.path}")
+        elif not has_version_query(reference):
+            errors.append(f"{page.rel_path}: asset must include a hex version: {url.path}")
+
+
+def local_asset_path(repo_root: pathlib.Path, page: PageMeta, reference: str) -> pathlib.Path | None:
+    url = urlsplit(urljoin(page.canonical, reference))
+    if url.scheme not in ("http", "https") or url.netloc != urlsplit(page.canonical).netloc:
+        return None
+    target = (repo_root / unquote(url.path).lstrip("/")).resolve()
+    return target if target.is_relative_to(repo_root.resolve()) else None
+
+
+def validate_page_images(repo_root: pathlib.Path, page: PageMeta, errors: list[str]) -> None:
+    for image in page.images:
+        # A dialog's empty image is populated on demand by its external script.
+        if not image.src:
+            continue
+        for name in ("width", "height"):
+            value = getattr(image, name)
+            if not value.isdigit() or int(value) <= 0:
+                errors.append(f"{page.rel_path}: image must declare positive {name}: {image.src}")
+        if image.decoding != "async":
+            errors.append(f"{page.rel_path}: image must use decoding='async': {image.src}")
+        target = local_asset_path(repo_root, page, image.src)
+        if target is None:
+            continue
+        if not target.is_file():
+            errors.append(f"{page.rel_path}: missing image: {image.src}")
+            continue
+        if target.stat().st_size >= 500_000:
+            errors.append(f"{page.rel_path}: image must be below 500KB: {image.src}")
+        if target.suffix.lower() == ".svg":
+            continue
+        try:
+            _, width, _ = image_metadata(target)
+            if width >= 2000:
+                errors.append(f"{page.rel_path}: image must be below 2000px wide: {image.src}")
+        except ValueError as exc:
+            errors.append(f"{page.rel_path}: {exc}")
+    for reference in set(filter(None, (page.og_image, page.twitter_image))):
+        target = local_asset_path(repo_root, page, reference)
+        if target is None:
+            errors.append(f"{page.rel_path}: social image must be a local asset: {reference}")
+            continue
+        if not target.is_file():
+            errors.append(f"{page.rel_path}: missing social image: {reference}")
+            continue
+        try:
+            if image_metadata(target) != ("JPEG", 1200, 630) or target.suffix.lower() not in (".jpg", ".jpeg"):
+                errors.append(f"{page.rel_path}: social image must be JPEG 1200x630: {reference}")
+        except ValueError as exc:
+            errors.append(f"{page.rel_path}: {exc}")
+        if target.stat().st_size >= 300_000:
+            errors.append(f"{page.rel_path}: social image must be below 300KB: {reference}")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Validate editorial and SEO metadata")
     parser.add_argument("--base-url", default=BASE_URL_DEFAULT, help="Canonical base URL")
@@ -428,6 +509,8 @@ def main() -> int:
     feed_content = (repo_root / "feed.xml").read_text(encoding="utf-8") if (repo_root / "feed.xml").exists() else ""
 
     for page in metas:
+        validate_page_policy(page, errors)
+        validate_page_images(repo_root, page, errors)
         expected_canonical = canonical_expected(base_url, page.rel_path)
 
         if not page.title_tag:

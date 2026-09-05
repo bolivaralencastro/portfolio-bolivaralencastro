@@ -304,6 +304,13 @@ def materialize_note(source: NoteSource, repo_root: pathlib.Path, *, base_url: s
     canonical_url = canonical_url_for_rel_path(public_rel_path, base_url) if base_url else ""
     page_title = f"{display_title} - Nota - {SITE_NAME}"
     og_image = rendered.first_image_src or DEFAULT_OG_IMAGE
+    if og_image.startswith("/"):
+        image_path = pathlib.Path(og_image.lstrip("/"))
+        social_path = image_path.with_name(image_path.stem + "-og.jpg")
+        if (repo_root / social_path).is_file():
+            og_image = "/" + social_path.as_posix()
+        else:
+            og_image = DEFAULT_OG_IMAGE
     excerpt_html = rendered.excerpt_html or f"<p>{html.escape(description)}</p>"
 
     return Note(
