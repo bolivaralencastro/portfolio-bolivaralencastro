@@ -1,0 +1,178 @@
+/* ==========================================================================
+   Depth Window — embeddable off-axis-projection viewports for blog posts.
+   Pairs with /assets/js/depth-window.js
+   ========================================================================== */
+
+.depth-window {
+  position: relative;
+  margin: var(--space-4) 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #05070d;
+  border: 1px solid rgba(38, 38, 38, 0.12);
+  aspect-ratio: 16 / 10;
+}
+
+/* The browser's own fullscreen layout already stretches this element to
+   fill the screen; the aspect-ratio/border/radius below are all authored
+   constraints for the inline card and need to be lifted explicitly so the
+   experience truly fills the display instead of floating as a framed box
+   on a black backdrop. */
+.depth-window:fullscreen,
+.depth-window:-webkit-full-screen {
+  aspect-ratio: unset;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+}
+
+.depth-window-canvas {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.depth-window-poster {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  /* Van Gogh's room: warm wood floor below, teal wall glow above. */
+  background: radial-gradient(circle at 65% 70%, rgba(168, 96, 44, 0.4), transparent 55%),
+              radial-gradient(circle at 35% 30%, rgba(63, 127, 134, 0.45), transparent 60%),
+              #14262a;
+}
+
+/* [hidden] on its own loses to the class rules above (equal specificity,
+   later in the cascade), so force it explicitly instead of relying on the
+   attribute alone. */
+.depth-window-poster[hidden],
+.depth-window-canvas[hidden] {
+  display: none;
+}
+
+.depth-window[data-scene="landscape"] .depth-window-poster {
+  /* sunset over rolling hills */
+  background: radial-gradient(circle at 55% 65%, rgba(232, 135, 90, 0.5), transparent 55%),
+              radial-gradient(circle at 30% 20%, rgba(42, 35, 80, 0.5), transparent 60%),
+              #4c3a2e;
+}
+
+.depth-window[data-scene="city-night"] .depth-window-poster {
+  /* city skyline under a night sky */
+  background: radial-gradient(circle at 70% 30%, rgba(238, 242, 255, 0.25), transparent 45%),
+              radial-gradient(circle at 30% 70%, rgba(44, 31, 74, 0.55), transparent 60%),
+              #05060f;
+}
+
+.depth-window-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3);
+  text-align: center;
+  background: linear-gradient(180deg, rgba(5, 7, 13, 0.35) 0%, rgba(5, 7, 13, 0.75) 100%);
+}
+
+.depth-window.is-active .depth-window-overlay {
+  display: none;
+}
+
+.depth-window-open,
+.depth-window-close {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 999px;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+}
+
+.depth-window-open {
+  color: #05070d;
+  background: #ffffff;
+}
+
+.depth-window-open:hover {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.depth-window-open:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.depth-window-close {
+  position: absolute;
+  top: var(--space-1);
+  right: var(--space-1);
+  padding: 0.4rem 0.9rem;
+  font-size: 0.78rem;
+  color: #ffffff;
+  background: rgba(5, 7, 13, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.depth-window-close:hover {
+  background: rgba(5, 7, 13, 0.85);
+}
+
+.depth-window:fullscreen .depth-window-close,
+.depth-window:-webkit-full-screen .depth-window-close {
+  top: var(--space-2);
+  right: var(--space-2);
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+}
+
+.depth-window-hint {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.8rem;
+  max-width: 32ch;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.depth-window-status {
+  position: absolute;
+  bottom: var(--space-1);
+  left: var(--space-1);
+  margin: 0;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(5, 7, 13, 0.55);
+  border-radius: 999px;
+  pointer-events: none;
+}
+
+.depth-window-status[data-tone="ok"] {
+  color: #9dff7a;
+}
+
+.depth-window-status[data-tone="warn"] {
+  color: #ffb066;
+}
+
+.depth-window-caption {
+  margin-top: var(--space-1);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .depth-window-open,
+  .depth-window-close {
+    transition: none;
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "whatsapp-mcp",
+  "version": "1.0.0",
+  "description": "MCP server para controlar WhatsApp Web via Chrome DevTools Protocol",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "chrome": "bash start-chrome.sh"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "puppeteer-core": "^22.0.0"
+  }
+}

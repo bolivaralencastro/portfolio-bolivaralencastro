@@ -4,7 +4,7 @@
   <subtitle>Blog, notas e páginas publicadas em um site HTML-first.</subtitle>
   <link href="https://bolivaralencastro.com.br/feed.xml" rel="self"/>
   <link href="https://bolivaralencastro.com.br/" rel="alternate"/>
-  <updated>2026-08-27T00:00:00Z</updated>
+  <updated>2026-09-11T00:00:00Z</updated>
   <id>https://bolivaralencastro.com.br/feed.xml</id>
   <author>
     <name>Bolívar Alencastro</name>
@@ -13,6 +13,26 @@
   <contributor>
     <name>Bolivar Alencastro</name>
   </contributor>
+
+  <entry>
+    <title>Há Quedas Por Vir</title>
+    <link href="https://bolivaralencastro.com.br/blog/ha-quedas-por-vir.html" rel="alternate"/>
+    <id>https://bolivaralencastro.com.br/blog/ha-quedas-por-vir.html</id>
+    <published>2026-09-11T00:00:00Z</published>
+    <updated>2026-09-11T00:00:00Z</updated>
+    <summary>Um relato em cinco tempos sobre Há Quedas Por Vir, de Érica Storer e Sansa: shibari, um escritório suspenso e a queda que nunca chega.</summary>
+    <content type="html">&lt;p&gt;Fui ao Espaço Arte 1 do Sesc Avenida Paulista, com minha companheira, para assistir a Há Quedas Por Vir.&lt;/p&gt;</content>
+  </entry>
+
+  <entry>
+    <title>Janelas de profundidade: paralaxe com rastreamento facial no navegador</title>
+    <link href="https://bolivaralencastro.com.br/blog/janelas-de-profundidade-parallax-facial-no-navegador.html" rel="alternate"/>
+    <id>https://bolivaralencastro.com.br/blog/janelas-de-profundidade-parallax-facial-no-navegador.html</id>
+    <published>2026-09-05T00:00:00Z</published>
+    <updated>2026-09-05T00:00:00Z</updated>
+    <summary>Construí uma técnica de renderização que transforma a tela do computador numa janela de verdade: a webcam segue a posição da sua cabeça e a cena 3D recalcula a perspectiva a cada quadro, com sombra do seu próprio corpo caindo sobre o cenário.</summary>
+    <content type="html">&lt;p&gt;A ideia começou de uma pergunta simples: dá para fazer o monitor parar de ser uma imagem plana e passar a se comportar como uma janela real, com profundidade e paralaxe, sem headset e sem hardware especial? A resposta é sim, e a peça central não é nova — é uma técnica de projeção de 2009 que a computação gráfica usa há tempos em CAVEs e simuladores. O que mudou é que hoje ela cabe inteira num navegador, rodando sobre a própria webcam do usuário.&lt;/p&gt;</content>
+  </entry>
 
   <entry>
     <title>A era da confiança: o novo jogo dos negócios em um mercado exausto</title>

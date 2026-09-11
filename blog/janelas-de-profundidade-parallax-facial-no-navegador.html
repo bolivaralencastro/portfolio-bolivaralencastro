@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.clarity.ms https://*.clarity.ms https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; script-src-elem https://bolivaralencastro.com.br/assets/js/ https://bolivaralencastro.com.br/876b/ http://127.0.0.1:8080/assets/js/ http://localhost:8080/assets/js/ https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.clarity.ms https://*.clarity.ms https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://www.clarity.ms https://*.clarity.ms https://c.bing.com https://cdn.jsdelivr.net https://storage.googleapis.com; style-src 'self'; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.clarity.ms https://*.clarity.ms https://c.bing.com; worker-src 'self' blob:; frame-src https://www.googletagmanager.com https://www.youtube-nocookie.com;">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Janelas de profundidade: paralaxe com rastreamento facial no navegador - Blog</title>
+  <meta name="description" content="Como construí janelas 3D interativas que reagem à posição da sua cabeça, com sombra do seu corpo projetada na cena, usando só webcam e JavaScript no navegador.">
+  <link rel="stylesheet" href="/style.css?v=1fbddec10e">
+  <noscript><link rel="stylesheet" href="/assets/css/nojs-nav.css?v=60f97e7e21"></noscript>
+  <link rel="canonical" href="https://bolivaralencastro.com.br/blog/janelas-de-profundidade-parallax-facial-no-navegador.html">
+  <meta name="author" content="Bolívar Alencastro">
+  <link rel="author" href="https://bolivaralencastro.com.br/about.html">
+  <meta name="generator" content="Handcrafted HTML">
+  <link rel="webmention" href="https://webmention.io/bolivaralencastro.com.br/webmention">
+  <link rel="pingback" href="https://webmention.io/bolivaralencastro.com.br/xmlrpc">
+  <link rel="me" href="https://github.com/bolivaralencastro">
+  <link rel="me" href="https://www.instagram.com/bolivar.alencastro/">
+  <link rel="me" href="https://www.linkedin.com/in/bolivaralencastro/">
+
+  <meta property="og:title" content="Janelas de profundidade: paralaxe com rastreamento facial no navegador">
+  <meta property="og:description" content="Como construí janelas 3D interativas que reagem à posição da sua cabeça, com sombra do seu corpo projetada na cena, usando só webcam e JavaScript no navegador.">
+  <meta property="og:url" content="https://bolivaralencastro.com.br/blog/janelas-de-profundidade-parallax-facial-no-navegador.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://bolivaralencastro.com.br/assets/images/blog/janelas-de-profundidade-parallax-facial-no-navegador/cover-og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Janelas de profundidade: paralaxe com rastreamento facial no navegador">
+  <meta name="twitter:description" content="Como construí janelas 3D interativas que reagem à posição da sua cabeça, com sombra do seu corpo projetada na cena, usando só webcam e JavaScript no navegador.">
+  <meta name="twitter:image" content="https://bolivaralencastro.com.br/assets/images/blog/janelas-de-profundidade-parallax-facial-no-navegador/cover-og.jpg">
+
+  <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Janelas de profundidade: paralaxe com rastreamento facial no navegador",
+    "description": "Como construí janelas 3D interativas que reagem à posição da sua cabeça, com sombra do seu corpo projetada na cena, usando só webcam e JavaScript no navegador.",
+    "mainEntityOfPage": "https://bolivaralencastro.com.br/blog/janelas-de-profundidade-parallax-facial-no-navegador.html",
+    "url": "https://bolivaralencastro.com.br/blog/janelas-de-profundidade-parallax-facial-no-navegador.html",
+    "image": "https://bolivaralencastro.com.br/assets/images/blog/janelas-de-profundidade-parallax-facial-no-navegador/cover.webp",
+    "datePublished": "2026-09-05",
+    "dateModified": "2026-09-05",
+    "author": {
+        "@type": "Person",
+        "name": "Bolívar Alencastro",
+        "url": "https://bolivaralencastro.com.br/about.html"
+    },
+    "publisher": {
+        "@type": "Person",
+        "name": "Bolívar Alencastro",
+        "url": "https://bolivaralencastro.com.br/about.html"
+    },
+    "inLanguage": "pt-BR",
+    "articleSection": "Creative Coding",
+    "keywords": [
+        "WebGL",
+        "Three.js",
+        "MediaPipe",
+        "Rastreamento Facial",
+        "Paralaxe",
+        "Creative Coding"
+    ]
+}
+  </script>
+  <meta name="view-transition" content="same-origin">
+  <link rel="stylesheet" href="/assets/css/depth-window.css?v=c37b643c52">
+  <script src="/assets/js/depth-window.js?v=5197e76913" defer></script>
+  <script src="/assets/js/lightbox.js?v=093a13015e" defer></script>
+  <link rel="me" href="https://facebook.com/bolivaralencastrofotografia">
+
+  <link rel="alternate" type="text/markdown" href="/blog/janelas-de-profundidade-parallax-facial-no-navegador.md">
+  <script src="/assets/js/gtm.js?v=0da7cb2cbb" defer></script>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+</head>
+<body>
+  <div class="grain"></div>
+  <a href="#main" class="skip-link">Pular para o conteúdo</a>
+
+  <header class="grid">
+    <div class="brand col-7"><a href="/" class="brand-link"><span class="brand-mark" aria-hidden="true"><span class="dot dot-blue"></span></span><strong>Bolívar Alencastro</strong></a></div>
+    <nav class="col-5" aria-label="Navegação principal">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/projects.html">Projects</a></li>
+        <li><a href="/blog.html" aria-current="page">Blog</a></li>
+        <li><a href="/now.html">Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="grid">
+    <article class="h-entry col-12">
+      <h1 class="p-name col-9">Janelas de profundidade: paralaxe com rastreamento facial no navegador</h1>
+      <div class="post-meta col-12">
+        <span class="visually-hidden">Por <a class="u-author h-card" rel="author" href="/about.html">Bolívar Alencastro</a></span>
+        <time class="dt-published" datetime="2026-09-05">05 Set 2026</time>
+        <span class="meta-separator" aria-hidden="true">•</span>
+        <span class="p-category">Creative Coding</span>
+        <span class="meta-separator" aria-hidden="true">•</span>
+        <span class="p-category">WebGL</span>
+        <span class="meta-separator" aria-hidden="true">•</span>
+        <span class="reading-time">6 min de leitura</span>
+        <span class="meta-separator" aria-hidden="true">•</span>
+        <a class="u-url" href="/blog/janelas-de-profundidade-parallax-facial-no-navegador.html">permalink</a>
+      </div>
+      <p class="p-summary col-8">Construí uma técnica de renderização que transforma a tela do computador numa janela de verdade: a webcam segue a posição da sua cabeça e a cena 3D recalcula a perspectiva a cada quadro, com sombra do seu próprio corpo caindo sobre o cenário.</p>
+      <aside class="quick-answer col-7" aria-label="Resposta rápida">
+        <p class="quick-answer-label">Resposta rápida</p>
+        <p>A ilusão vem de duas peças: rastreamento facial por webcam (MediaPipe Face Landmarker) estimando onde estão seus olhos, e uma projeção de frustum assimétrico (a técnica de Kooima) que redesenha a câmera 3D a cada quadro como se a tela fosse uma janela fixa. Tudo roda no navegador, em JavaScript puro, sem enviar nenhum quadro de vídeo a servidor algum. Ao longo do texto há três experiências ao vivo, uma por etapa — abra a câmera, mexa a cabeça, e feche antes de seguir para a próxima.</p>
+      </aside>
+
+      <img class="col-12" src="/assets/images/blog/janelas-de-profundidade-parallax-facial-no-navegador/cover.webp" alt="Ilustração editorial de uma janela 3D flutuante sobre fundo escuro, com grade de profundidade" width="1400" height="787" loading="eager" decoding="async" fetchpriority="high">
+
+      <div class="e-content col-8 section-block">
+        <p>A ideia começou de uma pergunta simples: dá para fazer o monitor parar de ser uma imagem plana e passar a se comportar como uma janela real, com profundidade e paralaxe, sem headset e sem hardware especial? A resposta é sim, e a peça central não é nova — é uma técnica de projeção de 2009 que a computação gráfica usa há tempos em CAVEs e simuladores. O que mudou é que hoje ela cabe inteira num navegador, rodando sobre a própria webcam do usuário.</p>
+
+        <h2>O truque não é mover a câmera. É deformar a lente.</h2>
+        <p>A primeira tentativa ingênua de "efeito 3D com webcam" costuma ser: pegar a posição da cabeça e mover a câmera virtual dentro da cena junto com ela. Isso produz um efeito de rotação, não de janela — a cena gira em torno de um eixo, mas não ganha profundidade real. O efeito de janela de verdade exige outra conta: a de <strong>Robert Kooima</strong>, descrita no relatório técnico <em>Generalized Perspective Projection</em> (2009), que trata a tela como um retângulo fixo no espaço e recalcula, a cada posição do olho, um frustum de câmera assimétrico — a pirâmide de visão que a GPU usa para projetar a cena não fica mais centrada, ela se inclina para compensar de onde você está olhando.</p>
+        <p>Isso é exatamente o mesmo princípio por trás da demonstração de <a href="http://johnnylee.net/projects/wii/" rel="noopener noreferrer" target="_blank">Johnny Chung Lee com o sensor infravermelho do Wii Remote</a>, que popularizou a ideia de "realidade virtual de mesa" em 2007: um sensor barato rastreando a cabeça, e o resto é matemática de projeção. A diferença é que, hoje, o sensor infravermelho dedicado virou uma webcam comum e um modelo de rastreamento facial rodando via WebAssembly.</p>
+
+        <p>Antes de seguir para a próxima peça, vale ver essa deformação de frustum funcionando — e vale ver num ambiente que você reconhece, não num cubo genérico. Um cenário abstrato deixa a matemática óbvia, mas esconde o efeito de verdade: um espaço reconhecível é o que deixa claro quando um canto "está errado" e quando ele volta a fazer sentido conforme você se move. A caixa abaixo é um quarto, livremente inspirado no quarto de Van Gogh em Arles.</p>
+
+        <figure class="depth-window" data-depth-window data-scene="van-gogh-room">
+          <div class="depth-window-poster" aria-hidden="true"></div>
+          <canvas class="depth-window-canvas" hidden></canvas>
+          <div class="depth-window-overlay">
+            <button type="button" class="depth-window-open">Abrir experiência</button>
+            <p class="depth-window-hint">Processado localmente no seu navegador. Nenhum vídeo é enviado a servidores.</p>
+          </div>
+          <button type="button" class="depth-window-close" hidden>Fechar</button>
+          <p class="depth-window-status" aria-live="polite"></p>
+          <figcaption class="depth-window-caption">O quarto em Arles — cama, criado-mudo, cadeiras, janela ao fundo. Vire a cabeça para conferir o canto.</figcaption>
+        </figure>
+        <noscript><p>Esta experiência exige JavaScript e acesso à câmera para funcionar.</p></noscript>
+
+        <h2>A peça que faltava: rastreamento facial sem instalar nada</h2>
+        <p>Para estimar onde estão seus olhos, uso o <a href="https://ai.google.dev/edge/mediapipe/solutions/vision/face_landmarker" rel="noopener noreferrer" target="_blank">Face Landmarker do MediaPipe</a>, um modelo que roda inteiramente no navegador (WebAssembly + GPU delegate) e devolve os pontos da íris a cada quadro de vídeo. A distância entre os cantos externos dos olhos, em pixels, vira uma estimativa de distância até a tela; a posição do centro dos olhos vira deslocamento lateral e vertical. Com isso, a cada frame eu tenho uma posição 3D aproximada da cabeça do visitante, em centímetros, relativa ao centro da tela — e é essa posição que alimenta a projeção assimétrica renderizada com <a href="https://threejs.org/" rel="noopener noreferrer" target="_blank">Three.js</a>.</p>
+        <p>A camada final, que fecha a ilusão, é a sombra. Um corpo (uma cabeça e ombros simplificados) segue essa mesma posição rastreada, mas fica num layer de renderização que a câmera principal nunca desenha — só a luz enxerga esse layer ao calcular seu mapa de sombra. O resultado é uma sombra real, projetada no piso e na parede da cena, que se move e cresce conforme você se aproxima da tela, sem que nenhuma forma extra apareça flutuando na sua frente.</p>
+
+        <p>Essa segunda caixa troca o interior por um exterior: uma paisagem ao entardecer, colinas se perdendo na neblina até o horizonte. Não tem paredes — o próprio céu, desenhado como uma cúpula ao redor de toda a cena, garante que nunca falta o que ver, não importa para que canto você olhe.</p>
+
+        <figure class="depth-window" data-depth-window data-scene="landscape">
+          <div class="depth-window-poster" aria-hidden="true"></div>
+          <canvas class="depth-window-canvas" hidden></canvas>
+          <div class="depth-window-overlay">
+            <button type="button" class="depth-window-open">Abrir experiência</button>
+            <p class="depth-window-hint">Processado localmente no seu navegador. Nenhum vídeo é enviado a servidores.</p>
+          </div>
+          <button type="button" class="depth-window-close" hidden>Fechar</button>
+          <p class="depth-window-status" aria-live="polite"></p>
+          <figcaption class="depth-window-caption">Entardecer sobre o campo — a sombra do seu corpo cai sobre a grama em primeiro plano.</figcaption>
+        </figure>
+        <noscript><p>Esta experiência exige JavaScript e acesso à câmera para funcionar.</p></noscript>
+
+        <h2>Da janela do quarto ao horizonte de uma cidade</h2>
+        <p>As duas primeiras cenas são ambientes baixos e horizontais — um quarto, um campo. A terceira inverte isso: uma rua à noite, prédios altos dos dois lados com janelas acesas em ritmo aleatório, recuando até uma lua no fundo. Mesmo motor de projeção e rastreamento, composição completamente diferente — profundidade vertical e densa, em vez de aberta.</p>
+
+        <figure class="depth-window" data-depth-window data-scene="city-night">
+          <div class="depth-window-poster" aria-hidden="true"></div>
+          <canvas class="depth-window-canvas" hidden></canvas>
+          <div class="depth-window-overlay">
+            <button type="button" class="depth-window-open">Abrir experiência</button>
+            <p class="depth-window-hint">Processado localmente no seu navegador. Nenhum vídeo é enviado a servidores.</p>
+          </div>
+          <button type="button" class="depth-window-close" hidden>Fechar</button>
+          <p class="depth-window-status" aria-live="polite"></p>
+          <figcaption class="depth-window-caption">Uma rua à noite — prédios recuando dos dois lados até a lua no horizonte.</figcaption>
+        </figure>
+        <noscript><p>Esta experiência exige JavaScript e acesso à câmera para funcionar.</p></noscript>
+
+        <h2>Uma janela por vez</h2>
+        <p>As três experiências deste post compartilham o mesmo motor de rastreamento, mas nunca ficam abertas ao mesmo tempo: abrir uma fecha automaticamente a anterior, libera a câmera e descarta a cena 3D da memória da GPU. Isso não é só economia de recursos — é a forma certa de pedir uma webcam num artigo. A câmera de quem lê não é um recurso de decoração; é confiança emprestada, e a interface precisa devolver o controle assim que a demonstração termina.</p>
+
+        <h2>Onde isso serve, além de truque bonito</h2>
+        <p>Como Product Designer trabalhando entre fotografia e interface, o que me interessa aqui não é o efeito em si, mas o que ele deixa entrever: mostruários de produto que respondem à cabeça de quem olha, cenas ilustrativas de portfólio que ganham profundidade real sem depender de nenhum asset 3D pesado — só primitivas geométricas, luz e uma câmera bem calculada —, ou seções inteiras de um site que se comportam como espaços físicos em vez de imagens fixas. A técnica é barata em termos de infraestrutura: não existe servidor, não existe upload, é só matemática de projeção e um modelo de visão computacional rodando no dispositivo do visitante.</p>
+
+        <section class="references" aria-label="Referências">
+          <h2>Referências</h2>
+          <ul>
+            <li>Robert Kooima, <em>Generalized Perspective Projection</em> (Louisiana State University, 2009) — a formulação do frustum assimétrico usada aqui.</li>
+            <li><a href="http://johnnylee.net/projects/wii/" rel="noopener noreferrer" target="_blank">Johnny Chung Lee — Head Tracking for Desktop VR Displays using the Wii Remote</a>, a demonstração de 2007 que popularizou a técnica com hardware de consumo.</li>
+            <li><a href="https://ai.google.dev/edge/mediapipe/solutions/vision/face_landmarker" rel="noopener noreferrer" target="_blank">MediaPipe Face Landmarker</a>, o modelo de rastreamento facial que roda no navegador via WebAssembly.</li>
+            <li><a href="https://threejs.org/" rel="noopener noreferrer" target="_blank">Three.js</a>, a biblioteca WebGL usada para renderizar as três cenas.</li>
+          </ul>
+        </section>
+
+        <section class="author-card h-card" aria-label="Sobre o autor">
+          <p class="author-card-title">Sobre o autor</p>
+          <div class="author-card-inner">
+          <img class="author-card-photo u-photo" src="/assets/images/author/bolivar-alencastro.webp" alt="Foto de Bolívar Alencastro" width="641" height="640" loading="lazy" decoding="async">
+          <div class="author-card-body">
+            <h3 class="author-card-name p-name"><a class="u-url" href="/about.html">Bolívar Alencastro</a></h3>
+            <p class="author-card-copy p-note">Product Designer em São Paulo, cruzando fotografia, interface e código para testar até onde a tela deixa de ser plana quando alguém do outro lado está mesmo olhando.</p>
+            <ul class="author-card-links" aria-label="Redes sociais do autor">
+              <li><a rel="me noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/bolivaralencastro/">LinkedIn</a></li>
+              <li><a rel="me noopener noreferrer" target="_blank" href="https://www.instagram.com/bolivar.alencastro/">Instagram</a></li>
+            </ul>
+          </div>
+          </div>
+        </section>
+      </div>
+        <!-- AUTO:post-related-posts:start -->
+<section class="grid col-12 section-block related-list" aria-label="Outras publicações">
+  <h2 class="col-12">Outras Publicações</h2>
+      <article class="post-item col-4">
+        <a href="/blog/ha-quedas-por-vir.html" class="post-card-cover" aria-label="Abrir post: Há Quedas Por Vir">
+          <img src="/assets/images/blog/ha-quedas-por-vir/card.webp" alt="Capa do post: Há Quedas Por Vir" loading="lazy" decoding="async" width="960" height="540">
+        </a>
+        <h3 class="p-name"><a href="/blog/ha-quedas-por-vir.html" class="u-url">Há Quedas Por Vir</a></h3>
+        <p class="post-card-summary">Um relato em cinco tempos sobre Há Quedas Por Vir, de Érica Storer e Sansa: shibari, um escritório suspenso e a queda que nunca chega.</p>
+      </article>
+
+      <article class="post-item col-4">
+        <a href="/blog/state-economia-da-confianca.html" class="post-card-cover" aria-label="Abrir post: A era da confiança: o novo jogo dos negócios em um mercado exausto">
+          <img src="/assets/images/blog/state-economia-da-confianca/card.webp" alt="Capa do post: A era da confiança: o novo jogo dos negócios em um mercado exausto" loading="lazy" decoding="async" width="960" height="540">
+        </a>
+        <h3 class="p-name"><a href="/blog/state-economia-da-confianca.html" class="u-url">A era da confiança: o novo jogo dos negócios em um mercado exausto</a></h3>
+        <p class="post-card-summary">No STATE, um painel sobre dados, autenticidade e confiança puxou uma reflexão sobre stalkers, pessoas amadas, bell hooks e o direito ao imprevisível.</p>
+      </article>
+
+      <article class="post-item col-4">
+        <a href="/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente.html" class="post-card-cover" aria-label="Abrir post: A camerazinha de R$ 100 e a imagem suficiente">
+          <img src="/assets/images/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente/card.webp" alt="Capa do post: A camerazinha de R$ 100 e a imagem suficiente" loading="lazy" decoding="async" width="960" height="540">
+        </a>
+        <h3 class="p-name"><a href="/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente.html" class="u-url">A camerazinha de R$ 100 e a imagem suficiente</a></h3>
+        <p class="post-card-summary">Uma câmera de até R$ 100, fotos de 2 MP e vídeo Full HD: um pequeno objeto que mostra o quanto a fabricação de imagens se tornou acessível.</p>
+      </article>
+</section>
+        <!-- AUTO:post-related-posts:end -->
+<!-- AUTO:post-related-projects:start -->
+
+<!-- AUTO:post-related-projects:end -->
+    </article>
+  </main>
+
+  
+<footer class="grid">
+  <p class="col-9">&copy; 2026 Bolívar Alencastro. Design HTML-first.</p>
+  <nav class="footer-links col-3" aria-label="Links do rodapé">
+    <ul>
+      <li><a href="/feed.xml" rel="alternate">RSS Feed</a></li>
+      <li><a href="/sitemap.xml">Sitemap</a></li>
+      <li><a href="/humans.txt">Humans</a></li>
+    </ul>
+  </nav>
+</footer>
+</body>
+</html>
