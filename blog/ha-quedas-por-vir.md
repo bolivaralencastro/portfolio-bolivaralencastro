@@ -30,9 +30,7 @@ O Espaço Arte 1 é uma sala ampla, mais parecida com uma sala de ensaio do que 
 
 Sessenta minutos sentado direto no chão também é uma experiência do corpo. Nada comparável ao que aconteceria depois no centro da cena, evidentemente, mas eu já ia mudando a posição das pernas, procurando outro apoio, ajustando a coluna. Antes de qualquer coisa acontecer, o meu próprio desconforto já apontava para o de Érica — só que o meu eu podia resolver a qualquer momento, bastava levantar. O dela, não. 
 
- ![A cena montada, objetos de escritório suspensos por cordas no centro da sala, antes do início da performance](https://bolivaralencastro.com.br/assets/images/blog/ha-quedas-por-vir/montagem-inicial.webp) 
-
-A cena montada, antes do início. Fotografia: Bolívar Alencastro.  
+ ![A cena montada, objetos de escritório suspensos por cordas no centro da sala, antes do início da performance](https://bolivaralencastro.com.br/assets/images/blog/ha-quedas-por-vir/montagem-inicial.webp)  
 
 Ninguém nos disse onde deveríamos ficar. Formalmente havia uma quantidade grande de possibilidades — o espaço não tinha fileiras, não tinha lugares marcados, não desenhava uma relação palco-plateia convencional. Ainda assim, em poucos minutos, se estabeleceu uma configuração bastante conhecida: a maioria sentou e ali permaneceu; algumas pessoas ficaram em pé; o fotógrafo circulava, porque sua função parecia autorizá-lo a isso. Não atravessamos o tapete para olhar de perto. Não pegamos uma folha do chão no meio da ação. Existem limites ali, mesmo que ninguém os tenha desenhado — talvez numa etiqueta aprendida em outros teatros, talvez na própria luz, que separa simbolicamente um dentro e um fora. Não sei quanto disso pertence ao desenho consciente da obra e quanto resulta apenas das condições do espaço. Essa dúvida costuma me acompanhar em situações assim, e prefiro deixá-la em aberto a resolvê-la à força. 
 
@@ -48,17 +46,13 @@ O que se via ali era trabalho de escritório encenado: atender telefone, manipul
 
 Sansa parecia livre e comandava a cena: fez as amarras, direcionou, moldou. Sua técnica era visivelmente precisa — nós feitos e desfeitos com controle. Em determinado momento, Érica se posiciona sentada de cabeça para baixo numa cadeira, amarrada por Sansa. E dali, invertida, ela continua trabalhando: atende telefone, mexe no notebook, assina, carimba, guarda papéis num fichário grande, erguido e suspenso como uma sanfona enorme. Alguns papéis entram nele sem muito cuidado; alguns caem. 
 
- ![Érica de ponta-cabeça, presa pelas cordas, manipulando um dispositivo enquanto Sansa trabalha ao lado, papéis espalhados pelo chão e o fichário sanfonado à esquerda](https://bolivaralencastro.com.br/assets/images/blog/ha-quedas-por-vir/invertida-trabalho.webp) 
-
-Érica invertida, ainda em expediente. Fotografia: Bolívar Alencastro.  
+ ![Érica de ponta-cabeça, presa pelas cordas, manipulando um dispositivo enquanto Sansa trabalha ao lado, papéis espalhados pelo chão e o fichário sanfonado à esquerda](https://bolivaralencastro.com.br/assets/images/blog/ha-quedas-por-vir/invertida-trabalho.webp)  
 
 O mais perturbador não era exatamente ver alguém de cabeça para baixo. Era ver que isso, por si, não parecia motivo suficiente para interromper o expediente. O telefone toca, ela atende. Chega um papel, ela assina. É preciso carimbar, ela carimba. A normalidade administrativa seguia intacta enquanto a condição física se tornava cada vez mais extraordinária — como se fosse o posto de trabalho que devesse se adaptar ao corpo invertido, e não o contrário. 
 
 Fiquei pensando em quanto tempo um corpo suporta ficar assim. Existe um limite, e alguém precisa conhecê-lo com precisão para se aproximar dele sem ultrapassá-lo — Sansa conhece a técnica, Érica conhece o próprio corpo. Foi difícil não levar essa pergunta para fora da performance. A exploração mais eficiente talvez não seja a que quebra um corpo de uma vez; é a que consegue aproximá-lo do limite sem que ele perca a capacidade de continuar operando. Quanto pode ser usado antes que seja preciso interromper? Quem decide que ainda é possível continuar? Existe controle. Existe técnica. Sansa fez toda a amarração com precisão, e foi ela também quem, mais tarde, desfez o nó. Érica não caiu. Foi solta, e se recuperou com tranquilidade, sem pressa, até desligar o computador. As duas saíram de cena. Os objetos continuaram suspensos, mas em desordem — não era mais um escritório organizado. 
 
- ![Detalhe das cordas de shibari amarrando o corpo à cadeira giratória, com uma luminária suspensa ao fundo](https://bolivaralencastro.com.br/assets/images/blog/ha-quedas-por-vir/detalhe-cordas.webp) 
-
-Detalhe das cordas na cadeira giratória. Fotografia: Bolívar Alencastro.  
+ ![Detalhe das cordas de shibari amarrando o corpo à cadeira giratória, com uma luminária suspensa ao fundo](https://bolivaralencastro.com.br/assets/images/blog/ha-quedas-por-vir/detalhe-cordas.webp)  
 
 Cheguei a pensar naquilo como uma espécie de antigravidade. Depois achei a palavra errada. As cordas não eliminam a força que puxa os objetos para baixo — tornam essa força visível. O que se vê ali é queda interrompida, continuamente, por um sistema de amarração muito preciso: presença da força, não ausência dela. A cadeira devia cair. O notebook devia cair. A impressora, a luminária, o fichário, Érica — tudo aquilo devia cair, e nada cai. Só as folhas de fato caem. Algumas são organizadas de volta; a maioria fica ali, no chão, ao redor do tapete. 
 
@@ -68,9 +62,7 @@ Voltando à imagem do fichário: ele entra em cena junto com as artistas — ao 
 
 Uma dessas folhas caiu perto de alguém da plateia. A pessoa a virou, tentando ler o que estava escrito. Entendi o gesto — eu teria feito o mesmo. Diante de um documento, por reflexo, procuramos uma instrução, uma informação, uma finalidade. Talvez porque ainda esperemos que, em algum lugar daquele sistema, exista uma explicação capaz de organizar o resto. 
 
- ![Cena ampla: Sansa manipulando um objeto junto ao rosto de Érica, invertida, o fichário-sanfona à esquerda, papéis e cordas espalhados pelo tapete, plateia sentada no chão ao fundo](https://bolivaralencastro.com.br/assets/images/blog/ha-quedas-por-vir/cena-ampla.webp) 
-
-A cena inteira, com a plateia sentada no chão ao fundo. Fotografia: Bolívar Alencastro.  
+ ![Cena ampla: Sansa manipulando um objeto junto ao rosto de Érica, invertida, o fichário-sanfona à esquerda, papéis e cordas espalhados pelo tapete, plateia sentada no chão ao fundo](https://bolivaralencastro.com.br/assets/images/blog/ha-quedas-por-vir/cena-ampla.webp)  
 
 E há uma camada de trabalho atrás do trabalho encenado. O que se via em cena — assinar, carimbar, imprimir, arquivar — parecia, isoladamente, vazio, circular, sem função fora dali. Mas essas ações produziam, sim, algo muito concreto: produziam a obra. Érica realiza fisicamente a funcionária, sem precisar ser uma personagem separada dela mesma. Ela é, ao mesmo tempo, artista pesquisando suspensão, trabalho e falha havia anos, e corpo real sustentando aquela posição por um tempo real, medido, controlado. Sansa conduz as cordas dentro da cena, e é também alguém com anos de pesquisa em shibari que tornam possível conduzi-las daquele jeito. 
 
@@ -82,9 +74,7 @@ Essa lógica não fica presa às paredes do Sesc. Antes de tudo isso existiu um 
 
 Talvez seja assim que qualquer estrutura social se sustente — não por imposição constante, mas por consenso, por inércia. A mesma inércia que fez a plateia sentar sem que ninguém dissesse onde ficar. Fizemos as cordas. Fizemos os nós. E somos, ao mesmo tempo, quem amarra e quem está amarrado. 
 
- ![Close do rosto invertido de Érica, ainda presa pelas cordas, segurando um pequeno dispositivo, óculos e cabelos soltos](https://bolivaralencastro.com.br/assets/images/blog/ha-quedas-por-vir/rosto-invertido.webp) 
-
-Close do rosto invertido de Érica, ainda em cena. Fotografia: Bolívar Alencastro.  
+ ![Close do rosto invertido de Érica, ainda presa pelas cordas, segurando um pequeno dispositivo, óculos e cabelos soltos](https://bolivaralencastro.com.br/assets/images/blog/ha-quedas-por-vir/rosto-invertido.webp)  
 
 ## Divisória 05 — Por vir 
 
@@ -96,9 +86,7 @@ E há uma ambiguidade que só a escrita resolve, porque a fala a apaga: **por vi
 
 Só li a sinopse ao sair da sala, e pesquisei o histórico da obra e das duas artistas no dia seguinte, sentado para escrever. Foi como se a performance ganhasse uma segunda apresentação, essa feita de texto e não de corpo: a cadeira continua sendo a mesma cadeira, mas agora eu sei que Érica já vinha suspendendo escritórios havia anos; a corda continua sendo a mesma corda, mas agora conheço um pouco mais da pesquisa de Sansa. Certas coisas que percebi intuitivamente na sala apareceram nomeadas depois, no texto institucional. Outras — o comportamento da plateia, a atenção que dei à impressora, a imagem do fichário tensionado — continuam sendo só minhas, e provavelmente vão continuar assim. 
 
- ![Close macro de um olho através de óculos redondos, com luz âmbar refletida nas lentes](https://bolivaralencastro.com.br/assets/images/blog/ha-quedas-por-vir/close-olho.webp) 
-
-Close macro, depois de desamarrada. Fotografia: Bolívar Alencastro.  
+ ![Close macro de um olho através de óculos redondos, com luz âmbar refletida nas lentes](https://bolivaralencastro.com.br/assets/images/blog/ha-quedas-por-vir/close-olho.webp)  
 
 Saímos antes de descobrir o que acontece com aquela estrutura depois que os corpos deixam de sustentá-la. Talvez as quedas por vir não sejam as de Érica. Talvez sejam as dos objetos que continuam suspensos ali, sem ninguém, depois que as duas já foram embora. A performance termina antes da queda. O que vem depois fica fora do tempo da obra, e nós não ficamos para ver. 
 
