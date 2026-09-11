@@ -8,6 +8,22 @@ Notas editoriais sobre design, sistema visual e arquitetura web nativa.
 
 ## Posts  
 
+ [![Capa do post: Há Quedas Por Vir](https://bolivaralencastro.com.br/assets/images/blog/ha-quedas-por-vir/card.webp)](https://bolivaralencastro.com.br/blog/ha-quedas-por-vir.html) 
+
+ 
+
+### [Há Quedas Por Vir](https://bolivaralencastro.com.br/blog/ha-quedas-por-vir.html) 
+
+Um relato em cinco tempos sobre Há Quedas Por Vir, de Érica Storer e Sansa: shibari, um escritório suspenso e a queda que nunca chega.  11/09/2026  
+
+ [![Capa do post: Janelas de profundidade: paralaxe com rastreamento facial no navegador](https://bolivaralencastro.com.br/assets/images/blog/janelas-de-profundidade-parallax-facial-no-navegador/card.webp)](https://bolivaralencastro.com.br/blog/janelas-de-profundidade-parallax-facial-no-navegador.html) 
+
+ 
+
+### [Janelas de profundidade: paralaxe com rastreamento facial no navegador](https://bolivaralencastro.com.br/blog/janelas-de-profundidade-parallax-facial-no-navegador.html) 
+
+Construí uma técnica de renderização que transforma a tela do computador numa janela de verdade: a webcam segue a posição da sua cabeça e a cena 3D recalcula a perspectiva a cada quadro, com sombra do seu próprio corpo caindo sobre o cenário.  05/09/2026  
+
  [![Capa do post: A era da confiança: o novo jogo dos negócios em um mercado exausto](https://bolivaralencastro.com.br/assets/images/blog/state-economia-da-confianca/card.webp)](https://bolivaralencastro.com.br/blog/state-economia-da-confianca.html) 
 
  
@@ -150,20 +166,4 @@ Salvei posts no LinkedIn por 30 dias. O acúmulo não virou hype — virou padr�
 
 ### [Publicando no LinkedIn com Python e a REST API](https://bolivaralencastro.com.br/blog/publicando-no-linkedin-com-python-e-api.html) 
 
-Um script Python que detecta o post mais recente, faz upload da imagem e publica no LinkedIn em um comando — o URN correto apareceu no corpo de um erro 422.  21/04/2026  
-
- [![Capa do post: No Cubo, o Agent Speedrun expôs a infraestrutura por trás de um agente utilizável](https://bolivaralencastro.com.br/assets/images/blog/agent-speedrun-bedrock-agentcore-e-o-que-ficou-do-workshop-no-cubo/card.webp)](https://bolivaralencastro.com.br/blog/agent-speedrun-bedrock-agentcore-e-o-que-ficou-do-workshop-no-cubo.html) 
-
- 
-
-### [No Cubo, o Agent Speedrun expôs a infraestrutura por trás de um agente utilizável](https://bolivaralencastro.com.br/blog/agent-speedrun-bedrock-agentcore-e-o-que-ficou-do-workshop-no-cubo.html) 
-
-No Cubo Itaú, o Agent Speedrun expôs memória, guardrails, runtime e o tipo de estrutura que sustenta um agente quando a demo acaba.  18/04/2026  
-
- [![Capa do post: Quando infraestrutura, automação, interface e voz entram na mesma aplicação](https://bolivaralencastro.com.br/assets/images/blog/oracle-n8n-vercel-elevenlabs-e-a-stack-ai-first-no-cubo/card.webp)](https://bolivaralencastro.com.br/blog/oracle-n8n-vercel-elevenlabs-e-a-stack-ai-first-no-cubo.html) 
-
- 
-
-### [Quando infraestrutura, automação, interface e voz entram na mesma aplicação](https://bolivaralencastro.com.br/blog/oracle-n8n-vercel-elevenlabs-e-a-stack-ai-first-no-cubo.html) 
-
-No evento promovido pela Oracle no Cubo Itaú, OCI, n8n, Vercel e ElevenLabs apareceram como partes de uma mesma arquitetura: infraestrutura, automação, interface e voz.  14/04/2026
+Um script Python que detecta o post mais recente, faz upload da imagem e publica no LinkedIn em um comando — o URN correto apareceu no corpo de um erro 422.  21/04/2026

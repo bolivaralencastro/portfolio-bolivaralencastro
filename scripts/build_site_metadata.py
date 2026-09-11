@@ -31,11 +31,12 @@ BASE_URL_DEFAULT = "https://bolivaralencastro.com.br"
 ROOT_PAGES = ["index.html", "about.html", "blog.html", "projects.html", "now.html", "links.html", "retratos-ufsc-florianopolis-imersivo.html"]
 SITE_CSP_CONTENT = (
     "default-src 'self'; "
-    "script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.clarity.ms https://*.clarity.ms; "
-    "script-src-elem https://bolivaralencastro.com.br/assets/js/ https://bolivaralencastro.com.br/876b/ http://127.0.0.1:8080/assets/js/ http://localhost:8080/assets/js/ https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.clarity.ms https://*.clarity.ms; "
-    "connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://www.clarity.ms https://*.clarity.ms https://c.bing.com; "
+    "script-src 'self' 'wasm-unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.clarity.ms https://*.clarity.ms https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; "
+    "script-src-elem https://bolivaralencastro.com.br/assets/js/ https://bolivaralencastro.com.br/876b/ http://127.0.0.1:8080/assets/js/ http://localhost:8080/assets/js/ https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.clarity.ms https://*.clarity.ms https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; "
+    "connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://www.clarity.ms https://*.clarity.ms https://c.bing.com https://cdn.jsdelivr.net https://storage.googleapis.com; "
     "style-src 'self'; "
     "img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://www.clarity.ms https://*.clarity.ms https://c.bing.com; "
+    "worker-src 'self' blob:; "
     "frame-src https://www.googletagmanager.com https://www.youtube-nocookie.com;"
 )
 FAVICON_LINKS_HTML = (
@@ -65,6 +66,8 @@ VERSIONED_ASSETS = {
     "/assets/js/project-filters.js": pathlib.Path("assets/js/project-filters.js"),
     "/assets/js/instagram-gallery.js": pathlib.Path("assets/js/instagram-gallery.js"),
     "/assets/js/ufsc-canvas-experiment.js": pathlib.Path("assets/js/ufsc-canvas-experiment.js"),
+    "/assets/js/depth-window.js": pathlib.Path("assets/js/depth-window.js"),
+    "/assets/css/depth-window.css": pathlib.Path("assets/css/depth-window.css"),
     "/assets/css/nojs-nav.css": pathlib.Path("assets/css/nojs-nav.css"),
     "/assets/css/ufsc-immersive.css": pathlib.Path("assets/css/ufsc-immersive.css"),
     "/assets/css/ufsc-portraits.css": pathlib.Path("assets/css/ufsc-portraits.css"),

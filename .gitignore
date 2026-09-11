@@ -4,6 +4,10 @@ assets/images/.DS_Store
 .referencias/
 referencias/
 .env
+.env_temp
 .linkedin_token
 data/*.sqlite
 youtube-research/videos/
+History
+__pycache__/
+node_modules/
