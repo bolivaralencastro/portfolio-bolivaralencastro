@@ -430,6 +430,12 @@ def run(
         )
         save_webp(img_bytes, dest, w, h, quality)
 
+        # Keep responsive cover derivatives beside the canonical cover. The
+        # metadata builder advertises them automatically when it finds them.
+        if name == "cover" and dest.suffix.lower() == ".webp":
+            save_webp(img_bytes, dest.with_name("cover-960.webp"), 960, 540, quality)
+            save_webp(img_bytes, dest.with_name("cover-720.webp"), 720, 405, quality)
+
         # Gera um JPG vertical separado para o feed do Instagram.
         # card.webp permanece 16:9 para Open Graph, listagens e LinkedIn.
         if name == "card" and dest.suffix.lower() == ".webp":

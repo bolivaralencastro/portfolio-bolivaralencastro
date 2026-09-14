@@ -1244,6 +1244,46 @@ def ensure_csp_meta(html_content: str, content: str) -> str:
     return html_content[:insert_at] + snippet + html_content[insert_at:]
 
 
+def apply_responsive_image_refs(html_content: str, repo_root: pathlib.Path) -> str:
+    """Add responsive sources where committed WebP derivatives are available.
+
+    This intentionally leaves hand-authored ``srcset`` attributes alone. Image
+    generation stays outside the metadata build so the CI remains stdlib-only;
+    the build merely makes already-versioned derivatives discoverable.
+    """
+    def replace_image(match: re.Match[str]) -> str:
+        tag = match.group(0)
+        if re.search(r"\bsrcset=", tag, re.IGNORECASE):
+            return tag
+        source_match = re.search(r"\bsrc=(['\"])([^'\"]+)\1", tag, re.IGNORECASE)
+        if not source_match:
+            return tag
+        source = source_match.group(2)
+        if not source.startswith("/assets/") or not source.lower().endswith(".webp"):
+            return tag
+        source_path = repo_root / source.lstrip("/")
+        if not source_path.is_file():
+            return tag
+
+        variants = []
+        for width in (720, 960):
+            candidate = source_path.with_name(f"{source_path.stem}-{width}.webp")
+            if candidate.is_file():
+                variants.append(f"/{candidate.relative_to(repo_root).as_posix()} {width}w")
+        if not variants:
+            return tag
+
+        try:
+            _, source_width, _ = image_metadata(source_path)
+        except ValueError:
+            return tag
+        variants.append(f"{source} {source_width}w")
+        attrs = f' srcset="{", ".join(variants)}" sizes="(max-width: 700px) calc(100vw - 2rem), 960px"'
+        return tag[:-1] + attrs + ">"
+
+    return re.sub(r"<img\b[^>]*>", replace_image, html_content, flags=re.IGNORECASE)
+
+
 def apply_versioned_asset_refs(html_content: str, versions: dict[str, str]) -> str:
     updated = html_content
     for public_path, version in versions.items():
@@ -1581,6 +1621,7 @@ def main() -> int:
         source_html = remove_script_reference(source_html, "/assets/js/mobile-nav.js")
         source_html = remove_mobile_nav_button(source_html)
         source_html = ensure_rel_me_reference(source_html, "https://facebook.com/bolivaralencastrofotografia")
+        source_html = apply_responsive_image_refs(source_html, repo_root)
         if should_include_lightbox(page_path, repo_root):
             source_html = ensure_script_reference(source_html, "/assets/js/lightbox.js")
         else:

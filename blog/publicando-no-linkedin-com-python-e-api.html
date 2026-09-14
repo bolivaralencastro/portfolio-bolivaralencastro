@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Publicando no LinkedIn com Python e a REST API - Blog</title>
   <meta name="description" content="Um script Python que detecta o post mais recente, faz upload da imagem e publica no LinkedIn em um comando — o URN correto apareceu no corpo de um erro 422.">
-  <link rel="stylesheet" href="/style.css?v=1fbddec10e">
+  <link rel="stylesheet" href="/style.css?v=7498db94da">
   <noscript><link rel="stylesheet" href="/assets/css/nojs-nav.css?v=60f97e7e21"></noscript>
   <link rel="canonical" href="https://bolivaralencastro.com.br/blog/publicando-no-linkedin-com-python-e-api.html">
   <meta name="author" content="Bolívar Alencastro">
@@ -110,7 +110,7 @@
         <p>Publicar no LinkedIn pela API exigiu transformar tentativa, erro 422 e documentação em um fluxo operacional. O script detecta o post mais recente, envia a imagem e publica a partir do próprio ambiente do portfolio.</p>
       </aside>
 
-      <img class="col-12" src="/assets/images/blog/publicando-no-linkedin-com-python-e-api/cover.webp" alt="Ilustração editorial mostrando terminal com saída de script Python conectado a um card do LinkedIn" width="1400" height="787" loading="lazy" decoding="async">
+      <img class="col-12" src="/assets/images/blog/publicando-no-linkedin-com-python-e-api/cover.webp" alt="Ilustração editorial mostrando terminal com saída de script Python conectado a um card do LinkedIn" width="1400" height="787" loading="lazy" decoding="async" srcset="/assets/images/blog/publicando-no-linkedin-com-python-e-api/cover-720.webp 720w, /assets/images/blog/publicando-no-linkedin-com-python-e-api/cover-960.webp 960w, /assets/images/blog/publicando-no-linkedin-com-python-e-api/cover.webp 1400w" sizes="(max-width: 700px) calc(100vw - 2rem), 960px">
 
       <div class="e-content col-8 section-block">
         <p>Toda vez que publico um post novo, a etapa seguinte é abrir o LinkedIn, colar o link, escolher a imagem, escrever alguma coisa e postar. São dez minutos que sempre parecem desnecessários — não pelo esforço, mas porque toda informação para fazer isso já está no próprio blog. Então resolvi automatizar.</p>
@@ -122,7 +122,7 @@
 
         <p>A autenticação usa <a href="https://learn.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow" rel="noopener noreferrer" target="_blank">OAuth 2.0 com Authorization Code Flow</a>. O script <code>scripts/linkedin_auth.py</code> sobe um servidor local na porta 8080 como callback, captura o código de autorização, troca pelo access token e salva em disco. O <code>linkedin_post.py</code> lê esse token e cuida do resto.</p>
 
-        <img src="/assets/images/blog/publicando-no-linkedin-com-python-e-api/oauth-flow.webp" alt="Diagrama do fluxo OAuth 2.0: browser abrindo a autorização e retornando o token para o servidor local na porta 8080" width="1200" height="675" loading="lazy" decoding="async">
+        <img src="/assets/images/blog/publicando-no-linkedin-com-python-e-api/oauth-flow.webp" alt="Diagrama do fluxo OAuth 2.0: browser abrindo a autorização e retornando o token para o servidor local na porta 8080" width="1200" height="675" loading="lazy" decoding="async" srcset="/assets/images/blog/publicando-no-linkedin-com-python-e-api/oauth-flow-720.webp 720w, /assets/images/blog/publicando-no-linkedin-com-python-e-api/oauth-flow-960.webp 960w, /assets/images/blog/publicando-no-linkedin-com-python-e-api/oauth-flow.webp 1200w" sizes="(max-width: 700px) calc(100vw - 2rem), 960px">
 
         <h2>Os erros que ensinaram mais</h2>
         <p>A primeira tentativa de publicar usou o endpoint <code>/v2/ugcPosts</code> — que era o padrão documentado por anos. A resposta foi um <code>403 Forbidden</code> sem mensagem útil. O motivo, enterrado na documentação da LinkedIn, é que esse endpoint exige verificação de app de terceiros, que não se aplica a scripts pessoais. A solução foi migrar para a nova API <code>/rest/posts</code>, que funciona com o scope <code>w_member_social</code> sem nenhuma verificação adicional. Essa diferença não está sinalizada de forma óbvia — o <code>403</code> parece um problema de credencial, não de endpoint.</p>
@@ -134,7 +134,7 @@ Allowed URN types: urn:li:company, urn:li:member</code></pre>
 
         <p>A API sinalizava que o prefixo do URN estava errado — e, ao fazer isso, revelou o identificador correto no próprio corpo do erro. Pessoas físicas usam <code>urn:li:member:{id}</code>, não <code>urn:li:person:{id}</code>. O <code>id</code> numérico aparece no painel do LinkedIn Developer. Uma vez corrigido o prefixo, a publicação funcionou.</p>
 
-        <img src="/assets/images/blog/publicando-no-linkedin-com-python-e-api/erro-422.webp" alt="Ilustração do erro 422 da API com lupa destacando a informação útil dentro do corpo do erro — o URN correto" width="1200" height="675" loading="lazy" decoding="async">
+        <img src="/assets/images/blog/publicando-no-linkedin-com-python-e-api/erro-422.webp" alt="Ilustração do erro 422 da API com lupa destacando a informação útil dentro do corpo do erro — o URN correto" width="1200" height="675" loading="lazy" decoding="async" srcset="/assets/images/blog/publicando-no-linkedin-com-python-e-api/erro-422-720.webp 720w, /assets/images/blog/publicando-no-linkedin-com-python-e-api/erro-422-960.webp 960w, /assets/images/blog/publicando-no-linkedin-com-python-e-api/erro-422.webp 1200w" sizes="(max-width: 700px) calc(100vw - 2rem), 960px">
 
         <p>Um detalhe de ambiente: no macOS com Python 3.14+, as requisições HTTPS para a API falham por SSL sem intervenção explícita. A correção é instalar o <a href="https://pypi.org/project/certifi/" rel="noopener noreferrer" target="_blank">certifi</a> e injetar o bundle de certificados no início do script com <code>ssl.create_default_context(cafile=certifi.where())</code>.</p>
 
@@ -147,7 +147,7 @@ Allowed URN types: urn:li:company, urn:li:member</code></pre>
           <li><code>python3 scripts/linkedin_post.py</code></li>
         </ol>
 
-        <img src="/assets/images/blog/publicando-no-linkedin-com-python-e-api/pipeline.webp" alt="Pipeline de três etapas: arquivo HTML, comando no terminal com sucesso, e post publicado no LinkedIn" width="1200" height="675" loading="lazy" decoding="async">
+        <img src="/assets/images/blog/publicando-no-linkedin-com-python-e-api/pipeline.webp" alt="Pipeline de três etapas: arquivo HTML, comando no terminal com sucesso, e post publicado no LinkedIn" width="1200" height="675" loading="lazy" decoding="async" srcset="/assets/images/blog/publicando-no-linkedin-com-python-e-api/pipeline-720.webp 720w, /assets/images/blog/publicando-no-linkedin-com-python-e-api/pipeline-960.webp 960w, /assets/images/blog/publicando-no-linkedin-com-python-e-api/pipeline.webp 1200w" sizes="(max-width: 700px) calc(100vw - 2rem), 960px">
 
         <p>O script também aceita <code>--dry-run</code> para simular a publicação sem postar de fato, e <code>--slug &lt;slug&gt;</code> para publicar um post específico em vez do mais recente. A saída no terminal confirma cada etapa: detecção do post, upload da imagem, publicação, URL do post publicado.</p>
 
@@ -173,7 +173,7 @@ Allowed URN types: urn:li:company, urn:li:member</code></pre>
   <h2 class="col-12">Outras Publicações</h2>
       <article class="post-item col-4">
         <a href="/blog/ha-quedas-por-vir.html" class="post-card-cover" aria-label="Abrir post: Há Quedas Por Vir">
-          <img src="/assets/images/blog/ha-quedas-por-vir/card.webp" alt="Capa do post: Há Quedas Por Vir" loading="lazy" decoding="async" width="960" height="540">
+          <img src="/assets/images/blog/ha-quedas-por-vir/card.webp" alt="Capa do post: Há Quedas Por Vir" loading="lazy" decoding="async" width="960" height="540" srcset="/assets/images/blog/ha-quedas-por-vir/card-720.webp 720w, /assets/images/blog/ha-quedas-por-vir/card.webp 960w" sizes="(max-width: 700px) calc(100vw - 2rem), 960px">
         </a>
         <h3 class="p-name"><a href="/blog/ha-quedas-por-vir.html" class="u-url">Há Quedas Por Vir</a></h3>
         <p class="post-card-summary">Um relato em cinco tempos sobre Há Quedas Por Vir, de Érica Storer e Sansa: shibari, um escritório suspenso e a queda que nunca chega.</p>
@@ -181,7 +181,7 @@ Allowed URN types: urn:li:company, urn:li:member</code></pre>
 
       <article class="post-item col-4">
         <a href="/blog/janelas-de-profundidade-parallax-facial-no-navegador.html" class="post-card-cover" aria-label="Abrir post: Janelas de profundidade: paralaxe com rastreamento facial no navegador">
-          <img src="/assets/images/blog/janelas-de-profundidade-parallax-facial-no-navegador/card.webp" alt="Capa do post: Janelas de profundidade: paralaxe com rastreamento facial no navegador" loading="lazy" decoding="async" width="960" height="540">
+          <img src="/assets/images/blog/janelas-de-profundidade-parallax-facial-no-navegador/card.webp" alt="Capa do post: Janelas de profundidade: paralaxe com rastreamento facial no navegador" loading="lazy" decoding="async" width="960" height="540" srcset="/assets/images/blog/janelas-de-profundidade-parallax-facial-no-navegador/card-720.webp 720w, /assets/images/blog/janelas-de-profundidade-parallax-facial-no-navegador/card.webp 960w" sizes="(max-width: 700px) calc(100vw - 2rem), 960px">
         </a>
         <h3 class="p-name"><a href="/blog/janelas-de-profundidade-parallax-facial-no-navegador.html" class="u-url">Janelas de profundidade: paralaxe com rastreamento facial no navegador</a></h3>
         <p class="post-card-summary">Construí uma técnica de renderização que transforma a tela do computador numa janela de verdade: a webcam segue a posição da sua cabeça e a cena 3D recalcula a perspectiva a cada quadro, com sombra do seu próprio corpo caindo sobre o cenário.</p>
@@ -189,7 +189,7 @@ Allowed URN types: urn:li:company, urn:li:member</code></pre>
 
       <article class="post-item col-4">
         <a href="/blog/state-economia-da-confianca.html" class="post-card-cover" aria-label="Abrir post: A era da confiança: o novo jogo dos negócios em um mercado exausto">
-          <img src="/assets/images/blog/state-economia-da-confianca/card.webp" alt="Capa do post: A era da confiança: o novo jogo dos negócios em um mercado exausto" loading="lazy" decoding="async" width="960" height="540">
+          <img src="/assets/images/blog/state-economia-da-confianca/card.webp" alt="Capa do post: A era da confiança: o novo jogo dos negócios em um mercado exausto" loading="lazy" decoding="async" width="960" height="540" srcset="/assets/images/blog/state-economia-da-confianca/card-720.webp 720w, /assets/images/blog/state-economia-da-confianca/card.webp 960w" sizes="(max-width: 700px) calc(100vw - 2rem), 960px">
         </a>
         <h3 class="p-name"><a href="/blog/state-economia-da-confianca.html" class="u-url">A era da confiança: o novo jogo dos negócios em um mercado exausto</a></h3>
         <p class="post-card-summary">No STATE, um painel sobre dados, autenticidade e confiança puxou uma reflexão sobre stalkers, pessoas amadas, bell hooks e o direito ao imprevisível.</p>
