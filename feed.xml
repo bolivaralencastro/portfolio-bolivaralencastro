@@ -4,7 +4,7 @@
   <subtitle>Blog, notas e páginas publicadas em um site HTML-first.</subtitle>
   <link href="https://bolivaralencastro.com.br/feed.xml" rel="self"/>
   <link href="https://bolivaralencastro.com.br/" rel="alternate"/>
-  <updated>2026-09-11T00:00:00Z</updated>
+  <updated>2026-09-15T00:00:00Z</updated>
   <id>https://bolivaralencastro.com.br/feed.xml</id>
   <author>
     <name>Bolívar Alencastro</name>
@@ -13,6 +13,16 @@
   <contributor>
     <name>Bolivar Alencastro</name>
   </contributor>
+
+  <entry>
+    <title>A segunda corda</title>
+    <link href="https://bolivaralencastro.com.br/blog/a-segunda-corda.html" rel="alternate"/>
+    <id>https://bolivaralencastro.com.br/blog/a-segunda-corda.html</id>
+    <published>2026-09-15T00:00:00Z</published>
+    <updated>2026-09-15T00:00:00Z</updated>
+    <summary>A linha de vida que impediu a queda de Mayk abre uma reflexão sobre trabalho, propriedade, tecnologia e as proteções que sustentam quem trabalha.</summary>
+    <content type="html">&lt;p&gt;Em 14 de março de 2024, no bairro Água Verde, em Curitiba, Mayk Gustavo Ribeiro da Silva estava no segundo dia de trabalho em um prédio de 27 andares. Fazia a limpeza da fachada, suspenso do lado de fora do sexto andar, com cerca de 18 metros de vazio abaixo dele e mais de vinte andares acima até a cobertura. Foi de lá que veio o homem que cortou sua corda.&lt;/p&gt;</content>
+  </entry>
 
   <entry>
     <title>Há Quedas Por Vir</title>

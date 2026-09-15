@@ -8,6 +8,14 @@ Notas editoriais sobre design, sistema visual e arquitetura web nativa.
 
 ## Posts  
 
+ [![Capa do post: A segunda corda](https://bolivaralencastro.com.br/assets/images/blog/a-segunda-corda/card.webp)](https://bolivaralencastro.com.br/blog/a-segunda-corda.html) 
+
+ 
+
+### [A segunda corda](https://bolivaralencastro.com.br/blog/a-segunda-corda.html) 
+
+A linha de vida que impediu a queda de Mayk abre uma reflexão sobre trabalho, propriedade, tecnologia e as proteções que sustentam quem trabalha.  15/09/2026  
+
  [![Capa do post: Há Quedas Por Vir](https://bolivaralencastro.com.br/assets/images/blog/ha-quedas-por-vir/card.webp)](https://bolivaralencastro.com.br/blog/ha-quedas-por-vir.html) 
 
  
@@ -158,12 +166,4 @@ Se uma pessoa consegue pedir, ajustar e publicar uma página em HTML, CSS e Java
 
 ### [O que 30 dias de posts salvos me disseram sobre IA](https://bolivaralencastro.com.br/blog/o-que-30-dias-de-posts-salvos-me-disseram-sobre-ia.html) 
 
-Salvei posts no LinkedIn por 30 dias. O acúmulo não virou hype — virou padrão. Cinco temas que apareceram com consistência: custo de uso, agentes em produção, MCP, voz como interface, e o Brasil na posição 61 de 116.  22/04/2026  
-
- [![Capa do post: Publicando no LinkedIn com Python e a REST API](https://bolivaralencastro.com.br/assets/images/blog/publicando-no-linkedin-com-python-e-api/card.webp)](https://bolivaralencastro.com.br/blog/publicando-no-linkedin-com-python-e-api.html) 
-
- 
-
-### [Publicando no LinkedIn com Python e a REST API](https://bolivaralencastro.com.br/blog/publicando-no-linkedin-com-python-e-api.html) 
-
-Um script Python que detecta o post mais recente, faz upload da imagem e publica no LinkedIn em um comando — o URN correto apareceu no corpo de um erro 422.  21/04/2026
+Salvei posts no LinkedIn por 30 dias. O acúmulo não virou hype — virou padrão. Cinco temas que apareceram com consistência: custo de uso, agentes em produção, MCP, voz como interface, e o Brasil na posição 61 de 116.  22/04/2026
