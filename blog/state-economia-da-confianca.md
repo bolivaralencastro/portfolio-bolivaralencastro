@@ -156,6 +156,12 @@ Product Designer em São Paulo, colecionando manhãs no STATE que viram texto an
 
 ## Outras Publicações 
 
+ [![Capa do post: A segunda corda](https://bolivaralencastro.com.br/assets/images/blog/a-segunda-corda/card.webp)](https://bolivaralencastro.com.br/blog/a-segunda-corda.html) 
+
+### [A segunda corda](https://bolivaralencastro.com.br/blog/a-segunda-corda.html) 
+
+A linha de vida que impediu a queda de Mayk abre uma reflexão sobre trabalho, propriedade, tecnologia e as proteções que sustentam quem trabalha.  
+
  [![Capa do post: Há Quedas Por Vir](https://bolivaralencastro.com.br/assets/images/blog/ha-quedas-por-vir/card.webp)](https://bolivaralencastro.com.br/blog/ha-quedas-por-vir.html) 
 
 ### [Há Quedas Por Vir](https://bolivaralencastro.com.br/blog/ha-quedas-por-vir.html) 
@@ -166,10 +172,4 @@ Um relato em cinco tempos sobre Há Quedas Por Vir, de Érica Storer e Sansa: sh
 
 ### [Janelas de profundidade: paralaxe com rastreamento facial no navegador](https://bolivaralencastro.com.br/blog/janelas-de-profundidade-parallax-facial-no-navegador.html) 
 
-Construí uma técnica de renderização que transforma a tela do computador numa janela de verdade: a webcam segue a posição da sua cabeça e a cena 3D recalcula a perspectiva a cada quadro, com sombra do seu próprio corpo caindo sobre o cenário.  
-
- [![Capa do post: A camerazinha de R$ 100 e a imagem suficiente](https://bolivaralencastro.com.br/assets/images/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente/card.webp)](https://bolivaralencastro.com.br/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente.html) 
-
-### [A camerazinha de R$ 100 e a imagem suficiente](https://bolivaralencastro.com.br/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente.html) 
-
-Uma câmera de até R$ 100, fotos de 2 MP e vídeo Full HD: um pequeno objeto que mostra o quanto a fabricação de imagens se tornou acessível.
+Construí uma técnica de renderização que transforma a tela do computador numa janela de verdade: a webcam segue a posição da sua cabeça e a cena 3D recalcula a perspectiva a cada quadro, com sombra do seu próprio corpo caindo sobre o cenário.

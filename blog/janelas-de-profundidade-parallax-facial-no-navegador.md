@@ -116,6 +116,12 @@ Product Designer em São Paulo, cruzando fotografia, interface e código para te
 
 ## Outras Publicações 
 
+ [![Capa do post: A segunda corda](https://bolivaralencastro.com.br/assets/images/blog/a-segunda-corda/card.webp)](https://bolivaralencastro.com.br/blog/a-segunda-corda.html) 
+
+### [A segunda corda](https://bolivaralencastro.com.br/blog/a-segunda-corda.html) 
+
+A linha de vida que impediu a queda de Mayk abre uma reflexão sobre trabalho, propriedade, tecnologia e as proteções que sustentam quem trabalha.  
+
  [![Capa do post: Há Quedas Por Vir](https://bolivaralencastro.com.br/assets/images/blog/ha-quedas-por-vir/card.webp)](https://bolivaralencastro.com.br/blog/ha-quedas-por-vir.html) 
 
 ### [Há Quedas Por Vir](https://bolivaralencastro.com.br/blog/ha-quedas-por-vir.html) 
@@ -126,10 +132,4 @@ Um relato em cinco tempos sobre Há Quedas Por Vir, de Érica Storer e Sansa: sh
 
 ### [A era da confiança: o novo jogo dos negócios em um mercado exausto](https://bolivaralencastro.com.br/blog/state-economia-da-confianca.html) 
 
-No STATE, um painel sobre dados, autenticidade e confiança puxou uma reflexão sobre stalkers, pessoas amadas, bell hooks e o direito ao imprevisível.  
-
- [![Capa do post: A camerazinha de R$ 100 e a imagem suficiente](https://bolivaralencastro.com.br/assets/images/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente/card.webp)](https://bolivaralencastro.com.br/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente.html) 
-
-### [A camerazinha de R$ 100 e a imagem suficiente](https://bolivaralencastro.com.br/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente.html) 
-
-Uma câmera de até R$ 100, fotos de 2 MP e vídeo Full HD: um pequeno objeto que mostra o quanto a fabricação de imagens se tornou acessível.
+No STATE, um painel sobre dados, autenticidade e confiança puxou uma reflexão sobre stalkers, pessoas amadas, bell hooks e o direito ao imprevisível.
