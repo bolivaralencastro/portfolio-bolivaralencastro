@@ -114,6 +114,12 @@ Product Designer em São Paulo, atento ao trabalho invisível que sustenta qualq
 
 ## Outras Publicações 
 
+ [![Capa do post: Paramos de desenhar telas. Aí o marketing pediu uma vista explodida](https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/card.webp)](https://bolivaralencastro.com.br/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida.html) 
+
+### [Paramos de desenhar telas. Aí o marketing pediu uma vista explodida](https://bolivaralencastro.com.br/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida.html) 
+
+Deixamos de desenhar telas e passamos a prototipar em código. Quando o marketing pediu uma vista explodida da interface, a saída foi criar o stage-viewer: uma base real de cena 3D para a IA generativa refinar, em vez de recriar do zero.  
+
  [![Capa do post: A segunda corda](https://bolivaralencastro.com.br/assets/images/blog/a-segunda-corda/card.webp)](https://bolivaralencastro.com.br/blog/a-segunda-corda.html) 
 
 ### [A segunda corda](https://bolivaralencastro.com.br/blog/a-segunda-corda.html) 
@@ -124,10 +130,4 @@ A linha de vida que impediu a queda de Mayk abre uma reflexão sobre trabalho, p
 
 ### [Janelas de profundidade: paralaxe com rastreamento facial no navegador](https://bolivaralencastro.com.br/blog/janelas-de-profundidade-parallax-facial-no-navegador.html) 
 
-Construí uma técnica de renderização que transforma a tela do computador numa janela de verdade: a webcam segue a posição da sua cabeça e a cena 3D recalcula a perspectiva a cada quadro, com sombra do seu próprio corpo caindo sobre o cenário.  
-
- [![Capa do post: A era da confiança: o novo jogo dos negócios em um mercado exausto](https://bolivaralencastro.com.br/assets/images/blog/state-economia-da-confianca/card.webp)](https://bolivaralencastro.com.br/blog/state-economia-da-confianca.html) 
-
-### [A era da confiança: o novo jogo dos negócios em um mercado exausto](https://bolivaralencastro.com.br/blog/state-economia-da-confianca.html) 
-
-No STATE, um painel sobre dados, autenticidade e confiança puxou uma reflexão sobre stalkers, pessoas amadas, bell hooks e o direito ao imprevisível.
+Construí uma técnica de renderização que transforma a tela do computador numa janela de verdade: a webcam segue a posição da sua cabeça e a cena 3D recalcula a perspectiva a cada quadro, com sombra do seu próprio corpo caindo sobre o cenário.
