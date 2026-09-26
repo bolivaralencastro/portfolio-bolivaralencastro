@@ -8,6 +8,14 @@ Notas editoriais sobre design, sistema visual e arquitetura web nativa.
 
 ## Posts  
 
+ [![Capa do post: Paramos de desenhar telas. Aí o marketing pediu uma vista explodida](https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/card.webp)](https://bolivaralencastro.com.br/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida.html) 
+
+ 
+
+### [Paramos de desenhar telas. Aí o marketing pediu uma vista explodida](https://bolivaralencastro.com.br/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida.html) 
+
+Deixamos de desenhar telas e passamos a prototipar em código. Quando o marketing pediu uma vista explodida da interface, a saída foi criar o stage-viewer: uma base real de cena 3D para a IA generativa refinar, em vez de recriar do zero.  26/09/2026  
+
  [![Capa do post: A segunda corda](https://bolivaralencastro.com.br/assets/images/blog/a-segunda-corda/card.webp)](https://bolivaralencastro.com.br/blog/a-segunda-corda.html) 
 
  
@@ -158,12 +166,4 @@ Um arquivo visual do apartamento 403 em Florianópolis: cenas, objetos, luzes e 
 
 ### [Com LLMs, cada página pode voltar a ter forma própria](https://bolivaralencastro.com.br/blog/com-llms-cada-pagina-pode-voltar-a-ter-forma-propria.html) 
 
-Se uma pessoa consegue pedir, ajustar e publicar uma página em HTML, CSS e JavaScript com muito menos atrito, a web pode voltar a ser um lugar menos padronizado e mais autoral.  23/04/2026  
-
- [![Capa do post: O que 30 dias de posts salvos me disseram sobre IA](https://bolivaralencastro.com.br/assets/images/blog/o-que-30-dias-de-posts-salvos-me-disseram-sobre-ia/card.webp)](https://bolivaralencastro.com.br/blog/o-que-30-dias-de-posts-salvos-me-disseram-sobre-ia.html) 
-
- 
-
-### [O que 30 dias de posts salvos me disseram sobre IA](https://bolivaralencastro.com.br/blog/o-que-30-dias-de-posts-salvos-me-disseram-sobre-ia.html) 
-
-Salvei posts no LinkedIn por 30 dias. O acúmulo não virou hype — virou padrão. Cinco temas que apareceram com consistência: custo de uso, agentes em produção, MCP, voz como interface, e o Brasil na posição 61 de 116.  22/04/2026
+Se uma pessoa consegue pedir, ajustar e publicar uma página em HTML, CSS e JavaScript com muito menos atrito, a web pode voltar a ser um lugar menos padronizado e mais autoral.  23/04/2026

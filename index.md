@@ -34,13 +34,13 @@ Marca, sistema visual e campanhas digitais para a Kirinus Escola de Dança.
 
 ## Latest Post  
 
- [![Capa do post: A segunda corda](https://bolivaralencastro.com.br/assets/images/blog/a-segunda-corda/card.webp)](https://bolivaralencastro.com.br/blog/a-segunda-corda.html) 
+ [![Capa do post: Paramos de desenhar telas. Aí o marketing pediu uma vista explodida](https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/card.webp)](https://bolivaralencastro.com.br/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida.html) 
 
  
 
-### [A segunda corda](https://bolivaralencastro.com.br/blog/a-segunda-corda.html) 
+### [Paramos de desenhar telas. Aí o marketing pediu uma vista explodida](https://bolivaralencastro.com.br/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida.html) 
 
-A linha de vida que impediu a queda de Mayk abre uma reflexão sobre trabalho, propriedade, tecnologia e as proteções que sustentam quem trabalha.  15/09/2026    
+Deixamos de desenhar telas e passamos a prototipar em código. Quando o marketing pediu uma vista explodida da interface, a saída foi criar o stage-viewer: uma base real de cena 3D para a IA generativa refinar, em vez de recriar do zero.  26/09/2026    
 
  
 
