@@ -1520,7 +1520,7 @@ a {
   color: inherit;
   text-decoration: none;
   border-right: 1px solid color-mix(in srgb, var(--card-rule) 78%, transparent);
-  border-bottom: 1px solid color-mix(in srgb, var(--card-rule) 78%, transparent);
+  border-bottom-color: color-mix(in srgb, var(--card-rule) 78%, transparent);
   transition: background 0.15s;
 
   &:hover {
@@ -1528,18 +1528,29 @@ a {
   }
 }
 
+.e-content .tool-grid-item {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: color-mix(in srgb, var(--card-rule) 78%, transparent);
+}
+
 .tool-grid-logo {
+  width: 40px;
   height: 40px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 4px;
 }
 
 .tool-grid-logo img {
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
-  border-radius: 8px;
+  border-radius: 4px;
   margin: 0;
 }
 
