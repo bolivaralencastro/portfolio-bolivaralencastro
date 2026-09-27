@@ -1,34 +1,32 @@
 Source: https://bolivaralencastro.com.br/blog/publicando-no-linkedin-com-python-e-api.html
 
-# Publicando no LinkedIn com Python e a REST API 
+# Publicar no LinkedIn e no Instagram sem abrir os apps 
 
- Por [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 21 Abr 2026 • Dev Tools • Automação • 5 min de leitura • [permalink](https://bolivaralencastro.com.br/blog/publicando-no-linkedin-com-python-e-api.html)  
+ Por [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 21 Abr 2026 • Dev Tools • Automação • 7 min de leitura • [permalink](https://bolivaralencastro.com.br/blog/publicando-no-linkedin-com-python-e-api.html)  
 
-Um script Python que detecta o post mais recente, faz upload da imagem e publica no LinkedIn em um comando — o URN correto apareceu no corpo de um erro 422. 
+Dois scripts Python leem o post mais recente do blog e publicam no LinkedIn e no Instagram sozinhos. A parte difícil não foi automatizar, foi decifrar o que cada API exige de verdade. 
 
  
 
 Resposta rápida 
 
-Publicar no LinkedIn pela API exigiu transformar tentativa, erro 422 e documentação em um fluxo operacional. O script detecta o post mais recente, envia a imagem e publica a partir do próprio ambiente do portfolio.  ![Ilustração editorial mostrando terminal com saída de script Python conectado a um card do LinkedIn](https://bolivaralencastro.com.br/assets/images/blog/publicando-no-linkedin-com-python-e-api/cover.webp) 
+Escrevo o post uma vez no blog e dois scripts publicam nas redes: `linkedin_post.py` e `instagram_post.py` leem o HTML mais recente, resolvem imagem e legenda, e publicam via API. Nunca mais abro os apps para postar — que era exatamente o objetivo, mesmo que na primeira versão desta publicação eu tenha contado a história como se fosse sobre depurar um erro 422 do LinkedIn.  ![Ilustração editorial mostrando terminal com saída de script Python conectado a cards do LinkedIn e do Instagram](https://bolivaralencastro.com.br/assets/images/blog/publicando-no-linkedin-com-python-e-api/cover.webp) 
 
  
 
-Toda vez que publico um post novo, a etapa seguinte é abrir o LinkedIn, colar o link, escolher a imagem, escrever alguma coisa e postar. São dez minutos que sempre parecem desnecessários — não pelo esforço, mas porque toda informação para fazer isso já está no próprio blog. Então resolvi automatizar. 
+Toda vez que publico um post novo, a etapa seguinte era abrir o LinkedIn, colar o link, escolher a imagem, escrever alguma coisa e postar — e depois repetir o mesmo ritual no Instagram, com uma imagem em outro formato e uma legenda mais curta. Dez, quinze minutos que sempre pareceram desnecessários, porque toda informação para fazer isso já está no próprio blog: título, resumo, imagem de capa, data. Resolvi automatizar, e o resultado hoje são dois scripts, não um. 
 
-O resultado é `scripts/linkedin_post.py`: um script Python que lê o post mais recente do blog, faz upload da imagem de capa para a [LinkedIn REST API](https://learn.microsoft.com/en-us/linkedin/) e publica em um único comando. A parte mais interessante do processo não foi a automação em si, mas o que apareceu ao longo do caminho. 
+Quando escrevi a primeira versão deste post, em abril, só existia `scripts/linkedin_post.py` e a história que eu tinha para contar era sobre depurar a API do LinkedIn — o que era verdade, mas incompleta: o script do Instagram já estava em construção no dia seguinte. Meio ano e algumas migrações de API depois, os dois publicam lado a lado, e o ponto real nunca foi resolver um erro específico. Foi parar de precisar abrir qualquer um dos dois apps. 
 
-## O que o script faz 
+## Um comando por post, dois destinos 
 
-O fluxo tem três etapas. Primeiro, o script detecta automaticamente o post mais recente percorrendo todos os arquivos `blog/*.html` e lendo o atributo `datetime` das tags `<time>` — a mesma fonte que alimenta o feed RSS e a listagem do blog. Segundo, faz upload da imagem `card.webp` do post via `/rest/images?action=initializeUpload`, que retorna uma URL de upload e um URN de imagem para referenciar depois. Terceiro, publica via `POST /rest/posts` com o header `LinkedIn-Version: 202503`. 
+Os dois scripts compartilham a mesma lógica de entrada: percorrem `blog/*.html`, leem o atributo `datetime` das tags `<time>` — a mesma fonte que alimenta o feed RSS e a listagem do blog — e extraem título, resumo e imagem de capa do post mais recente (ou de um slug específico, via `--slug`). A partir daí, cada um resolve o que a rede exige. 
 
-A autenticação usa [OAuth 2.0 com Authorization Code Flow](https://learn.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow). O script `scripts/linkedin_auth.py` sobe um servidor local na porta 8080 como callback, captura o código de autorização, troca pelo access token e salva em disco. O `linkedin_post.py` lê esse token e cuida do resto. ![Diagrama do fluxo OAuth 2.0: browser abrindo a autorização e retornando o token para o servidor local na porta 8080](https://bolivaralencastro.com.br/assets/images/blog/publicando-no-linkedin-com-python-e-api/oauth-flow.webp) 
+## LinkedIn: OAuth, upload de imagem e dois erros que ensinaram mais 
 
-## Os erros que ensinaram mais 
+`scripts/linkedin_post.py` faz upload da imagem de capa via `/rest/images?action=initializeUpload`, que retorna uma URL de upload e um URN de imagem, e publica via `POST /rest/posts` com o header `LinkedIn-Version: 202503`. A autenticação usa [OAuth 2.0 com Authorization Code Flow](https://learn.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow): `scripts/linkedin_auth.py` sobe um servidor local na porta 8080 como callback, captura o código de autorização, troca pelo access token e salva em disco. ![Diagrama do fluxo OAuth 2.0: browser abrindo a autorização e retornando o token para o servidor local na porta 8080](https://bolivaralencastro.com.br/assets/images/blog/publicando-no-linkedin-com-python-e-api/oauth-flow.webp) 
 
-A primeira tentativa de publicar usou o endpoint `/v2/ugcPosts` — que era o padrão documentado por anos. A resposta foi um `403 Forbidden` sem mensagem útil. O motivo, enterrado na documentação da LinkedIn, é que esse endpoint exige verificação de app de terceiros, que não se aplica a scripts pessoais. A solução foi migrar para a nova API `/rest/posts`, que funciona com o scope `w_member_social` sem nenhuma verificação adicional. Essa diferença não está sinalizada de forma óbvia — o `403` parece um problema de credencial, não de endpoint. 
-
-O segundo tropeço foi mais instrutivo. Com o endpoint correto, a chamada retornou um `422 Unprocessable Entity` com esta mensagem: 
+A primeira tentativa de publicar usou o endpoint `/v2/ugcPosts` — o padrão documentado por anos. A resposta foi um `403 Forbidden` sem mensagem útil: esse endpoint exige verificação de app de terceiros, que não se aplica a scripts pessoais. A solução foi migrar para `/rest/posts`, que funciona com o scope `w_member_social` sem verificação adicional. Com o endpoint correto, a chamada seguinte retornou um `422 Unprocessable Entity`: 
 
 ```
 author value urn:li:person:********** is of type member.
@@ -37,22 +35,27 @@ Allowed URN types: urn:li:company, urn:li:member
 
  
 
-A API sinalizava que o prefixo do URN estava errado — e, ao fazer isso, revelou o identificador correto no próprio corpo do erro. Pessoas físicas usam `urn:li:member:{id}`, não `urn:li:person:{id}`. O `id` numérico aparece no painel do LinkedIn Developer. Uma vez corrigido o prefixo, a publicação funcionou. ![Ilustração do erro 422 da API com lupa destacando a informação útil dentro do corpo do erro — o URN correto](https://bolivaralencastro.com.br/assets/images/blog/publicando-no-linkedin-com-python-e-api/erro-422.webp) 
+A API sinalizava que o prefixo do URN estava errado — e, ao fazer isso, revelou o identificador correto no próprio corpo do erro. Pessoas físicas usam `urn:li:member:{id}`, não `urn:li:person:{id}`; o `id` numérico aparece no painel do LinkedIn Developer. Um detalhe de ambiente à parte: no macOS com Python 3.14+, as requisições HTTPS falham por SSL sem intervenção explícita, e a correção é instalar o [certifi](https://pypi.org/project/certifi/) e injetar o bundle de certificados com `ssl.create_default_context(cafile=certifi.where())`. Em agosto, adicionei ainda a flag `--link-card`, que publica como card de link com preview automático da URL em vez de subir a imagem como mídia solta. ![Ilustração do erro 422 da API com lupa destacando a informação útil dentro do corpo do erro — o URN correto](https://bolivaralencastro.com.br/assets/images/blog/publicando-no-linkedin-com-python-e-api/erro-422.webp) 
 
-Um detalhe de ambiente: no macOS com Python 3.14+, as requisições HTTPS para a API falham por SSL sem intervenção explícita. A correção é instalar o [certifi](https://pypi.org/project/certifi/) e injetar o bundle de certificados no início do script com `ssl.create_default_context(cafile=certifi.where())`. 
+## Instagram: contêiner em duas etapas e regras que a API não deixa óbvias 
 
-## O fluxo funcionando 
+`scripts/instagram_post.py` publica pela Instagram Graph API, que funciona por contêiner em duas chamadas: `POST /{user_id}/media` cria o contêiner com a imagem e a legenda e devolve um `container_id`; `POST /{user_id}/media_publish` publica esse contêiner. Nada disso aceita WEBP — o formato editorial que uso no resto do site — então o script procura por `instagram.jpg` ou `card.jpg` na pasta de assets do post e serve a imagem via URL pública no `raw.githubusercontent.com`, para evitar o atraso de propagação do GitHub Pages. 
 
-Com tudo resolvido, o ciclo de publicação ficou assim: 
+A legenda é montada à parte, porque o Instagram não renderiza links clicáveis nela: o texto vem do resumo do post, seguido de um aviso de "link na bio" e da URL com parâmetros UTM (`utm_source=instagram`, campanha pelo slug), para eu saber depois, no analytics, o que veio de onde. A autenticação trocou de fornecedor no meio do caminho: comecei publicando via `graph.facebook.com` com um token de app Facebook e migrei em julho para `graph.instagram.com` com Instagram Login direto, depois que um token do tipo IGAA passou a ser rejeitado com `OAuthException 190` no host antigo. `scripts/instagram_auth.py` cuida da troca e salva `INSTAGRAM_ACCESS_TOKEN` e `INSTAGRAM_IG_USER_ID` no `.env`. 
+
+## O fluxo hoje 
+
+Com os dois scripts funcionando, o ciclo de publicação ficou assim: 
  
 1. Escrever o post HTML no blog 
 1. `python3 scripts/build_site_metadata.py` 
 1. `python3 scripts/linkedin_post.py` 
- ![Pipeline de três etapas: arquivo HTML, comando no terminal com sucesso, e post publicado no LinkedIn](https://bolivaralencastro.com.br/assets/images/blog/publicando-no-linkedin-com-python-e-api/pipeline.webp) 
+1. `python3 scripts/instagram_post.py` 
+ ![Pipeline de etapas: arquivo HTML, comandos no terminal com sucesso, e posts publicados no LinkedIn e no Instagram](https://bolivaralencastro.com.br/assets/images/blog/publicando-no-linkedin-com-python-e-api/pipeline.webp) 
 
-O script também aceita `--dry-run` para simular a publicação sem postar de fato, e `--slug <slug>` para publicar um post específico em vez do mais recente. A saída no terminal confirma cada etapa: detecção do post, upload da imagem, publicação, URL do post publicado. 
+Ambos aceitam `--dry-run` para simular sem publicar de fato, e a saída no terminal confirma cada etapa: detecção do post, resolução da imagem, publicação, URL final. Nenhum dos dois exige que eu toque em um app de celular. 
 
-A [LinkedIn REST API](https://learn.microsoft.com/en-us/linkedin/) tem documentação razoável, mas a distância entre o que está escrito e o que funciona para apps pessoais não verificados é suficiente para fazer alguns endpoints parecerem quebrados quando não estão. A migração de `/v2/ugcPosts` para `/rest/posts` não aparece como requisito óbvio em nenhum lugar central. O erro 422 foi mais útil do que qualquer página de docs. 
+A distância entre o que a documentação de cada rede promete e o que de fato funciona para uma conta pessoal, não verificada, é grande o bastante para fazer endpoints inteiros parecerem quebrados quando só estão desatualizados ou vetados para esse uso. Isso valeu tanto para o `403` do LinkedIn quanto para o `OAuthException 190` do Instagram. Mas o que ficou, passados os dois debugs, não foi a lista de erros — foi o hábito que mudou: escrevo uma vez, publico duas. 
 
  
 
