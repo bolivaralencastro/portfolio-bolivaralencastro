@@ -285,13 +285,13 @@
   </entry>
 
   <entry>
-    <title>Publicando no LinkedIn com Python e a REST API</title>
+    <title>Publicar no LinkedIn e no Instagram sem abrir os apps</title>
     <link href="https://bolivaralencastro.com.br/blog/publicando-no-linkedin-com-python-e-api.html" rel="alternate"/>
     <id>https://bolivaralencastro.com.br/blog/publicando-no-linkedin-com-python-e-api.html</id>
     <published>2026-04-21T00:00:00Z</published>
     <updated>2026-04-21T00:00:00Z</updated>
-    <summary>Um script Python que detecta o post mais recente, faz upload da imagem e publica no LinkedIn em um comando — o URN correto apareceu no corpo de um erro 422.</summary>
-    <content type="html">&lt;p&gt;Toda vez que publico um post novo, a etapa seguinte é abrir o LinkedIn, colar o link, escolher a imagem, escrever alguma coisa e postar. São dez minutos que sempre parecem desnecessários — não pelo esforço, mas porque toda informação para fazer isso já está no próprio blog. Então resolvi automatizar.&lt;/p&gt;</content>
+    <summary>Dois scripts Python leem o post mais recente do blog e publicam no LinkedIn e no Instagram sozinhos. A parte difícil não foi automatizar, foi decifrar o que cada API exige de verdade.</summary>
+    <content type="html">&lt;p&gt;Toda vez que publico um post novo, a etapa seguinte era abrir o LinkedIn, colar o link, escolher a imagem, escrever alguma coisa e postar — e depois repetir o mesmo ritual no Instagram, com uma imagem em outro formato e uma legenda mais curta. Dez, quinze minutos que sempre pareceram desnecessários, porque toda informação para fazer isso já está no próprio blog: título, resumo, imagem de capa, data. Resolvi automatizar, e o resultado hoje são dois scripts, não um.&lt;/p&gt;</content>
   </entry>
 
   <entry>
