@@ -256,6 +256,10 @@ E o mesmo enquadramento pode sair quadrado, vertical ou panorâmico sem refazer 
 
 A ferramenta também anima. Uma linha do tempo por keyframes move o celular ou o notebook, a câmera, a separação dos componentes e as luzes, e o próprio app exporta o resultado em vídeo. Neste exemplo, montei uma coreografia de seis segundos que lembra uma apresentação de produto: a câmera começa baixa e distante, se aproxima de frente e termina numa visão em três quartos, enquanto o celular gira e flutua devagar. 
 
+![Interface do stage-viewer com um celular 3D exibindo a tela inicial do protótipo sobre fundo escuro e, abaixo, a linha do tempo de animação com trilhas e losangos de keyframe nos instantes 0, 3 e 6 segundos.](https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/editor-de-animacao.webp)
+
+O editor de animação do stage-viewer: uma linha do tempo com keyframes para o celular, a câmera, a separação e as luzes. 
+
 Seu navegador não suporta vídeo HTML5.
 
 O resultado exportado pelo app: a câmera se aproxima e o celular gira, em uma cena de seis segundos. 
