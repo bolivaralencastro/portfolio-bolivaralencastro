@@ -57,6 +57,7 @@ These instructions apply to the whole repository. Use them for Codex, GitHub Cop
 3. Commit generated outputs together with the content (`sitemap.xml`, `feed.xml`, `feed.txt`, regenerated pages).
 4. Push to `main`. GitHub Pages deploys automatically (behind Cloudflare; HTML cache up to 10 minutes).
 5. CI (`Validate Content` + `Refresh Site Metadata`) re-runs the same build and fails if committed outputs do not match — on failure, rerun step 2 locally, commit, push again.
+6. Optional, after the deploy is live: notify IndexNow about the changed pages with `python3 scripts/indexnow_submit.py` (dry run) and `python3 scripts/indexnow_submit.py --send` (real submission to api.indexnow.org). It reads the key from the `<key>.txt` file at the repo root, which must stay public and committed. Only submit when the user asks; never submit before the push is deployed.
 
 ## Notes workflow
 
