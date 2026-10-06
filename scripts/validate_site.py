@@ -499,6 +499,18 @@ def validate_no_secret_files(repo_root: pathlib.Path, errors: list[str]) -> None
             errors.append(f"{rel_path}: tracked file looks like a credential and would be published")
 
 
+def validate_sitemap_images(repo_root: pathlib.Path, base_url: str, sitemap_content: str, errors: list[str]) -> None:
+    """Every <image:loc> in sitemap.xml must point to a file that is actually published."""
+    for loc in re.findall(r"<image:loc>([^<]+)</image:loc>", sitemap_content):
+        if not loc.startswith(base_url + "/"):
+            errors.append(f"sitemap.xml: image URL outside {base_url}: {loc}")
+        elif not (repo_root / loc.removeprefix(base_url + "/")).is_file():
+            errors.append(f"sitemap.xml: image file not found for {loc}")
+    for block in re.findall(r"<url>.*?</url>", sitemap_content, re.S):
+        if block.count("<image:image>") > 1000:
+            errors.append("sitemap.xml: more than 1000 images for a single URL")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Validate editorial and SEO metadata")
     parser.add_argument("--base-url", default=BASE_URL_DEFAULT, help="Canonical base URL")
@@ -529,6 +541,7 @@ def main() -> int:
     feed_content = (repo_root / "feed.xml").read_text(encoding="utf-8") if (repo_root / "feed.xml").exists() else ""
 
     validate_no_secret_files(repo_root, errors)
+    validate_sitemap_images(repo_root, base_url, sitemap_content, errors)
 
     for page in metas:
         validate_page_policy(page, errors)

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://bolivaralencastro.com.br/</loc>
     <lastmod>2026-10-06</lastmod>
@@ -24,21 +24,37 @@
     <loc>https://bolivaralencastro.com.br/now.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/now/o-infinito-em-um-junco-2026-05-20.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/now/a-politica-sexual-da-carne-2026-05-20.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/links.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/author/bolivar-alencastro.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/retratos-ufsc-florianopolis-imersivo.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-03.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-07.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-12.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-18.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-24.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-36.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-45.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-54.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-66.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-72.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/cover.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/notes/</loc>
     <lastmod>2026-07-08</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/now/o-infinito-em-um-junco-2026-05-20.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/now/a-politica-sexual-da-carne-2026-05-20.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/blog/page/2.html</loc>
@@ -49,161 +65,450 @@
     <loc>https://bolivaralencastro.com.br/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/cover.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/homologacao.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/prototipo-home.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/prototipo-feed.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/figma-bloqueado.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/comparacao-so-prompt.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/comparacao-com-ferramenta.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/componente-3d-card-aula.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/componente-ia-card-vidro.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/mockup-3d-notebook-rocha.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/interface-notebook-cards.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/interface-4-vistas.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/cena-notebook-cards.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/cena-celular-card.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/cena-desktop-mobile.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/cena-angulo-baixo.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/cena-feed-desktop-mobile.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/ajuste-antes-cena-3d.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/ajuste-antes-ia.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/ajuste-depois-cena-3d.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/ajuste-depois-ia.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/escritorio-isometrica.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/escritorio-vista-de-cima.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/escritorio-ia-vista-de-cima.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/escritorio-profundidade-de-campo.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/escritorio-ia-por-cima-do-ombro.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/escritorio-pessoas-em-pe.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/escritorio-ia-conversa.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/lente-padrao.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/lente-olho-de-peixe.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/retrato-desfoque.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/teleobjetiva.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/proporcao-21x9.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/proporcao-1x1.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/proporcao-4x5.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/proporcao-9x16.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/paramos-de-desenhar-telas-o-marketing-pediu-uma-vista-explodida/editor-de-animacao.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/blog/a-segunda-corda.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-segunda-corda/cover.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-segunda-corda/duas-linhas.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-segunda-corda/trabalho-invisivel.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-segunda-corda/trabalhador-fachada-horizontal.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-segunda-corda/negociacao-desigual.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-segunda-corda/maquina-e-tempo.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-segunda-corda/patrimonio-e-moradia.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-segunda-corda/politica-e-justica.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-segunda-corda/manutencao-direitos.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-segunda-corda/rede-de-protecao.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-segunda-corda/vida-alem-do-trabalho.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/blog/ha-quedas-por-vir.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ha-quedas-por-vir/cover.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ha-quedas-por-vir/montagem-inicial.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ha-quedas-por-vir/invertida-trabalho.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ha-quedas-por-vir/detalhe-cordas.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ha-quedas-por-vir/cena-ampla.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ha-quedas-por-vir/rosto-invertido.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ha-quedas-por-vir/close-olho.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/blog/janelas-de-profundidade-parallax-facial-no-navegador.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/janelas-de-profundidade-parallax-facial-no-navegador/cover.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/blog/state-economia-da-confianca.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/state-economia-da-confianca/cover.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/state-economia-da-confianca/corredor-state.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/state-economia-da-confianca/marcel-sampaio.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/state-economia-da-confianca/gaia-passarelli.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/state-economia-da-confianca/gica-trierweiler.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/state-economia-da-confianca/painel-mediacao.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/state-economia-da-confianca/mesa-trabalho.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/state-economia-da-confianca/terraco-state.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/state-economia-da-confianca/grupo-palestrantes.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/state-economia-da-confianca/selfie-gaia-passarelli.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente/cover.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente/IMG0001.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente/IMG0003.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente/IMG0004.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente/IMG0005.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente/IMG0007.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente/IMG0008.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente/IMG0009.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente/IMG0010.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente/IMG0012.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente/IMG0013.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente/IMG0014.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente/IMG0015.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente/IMG0016.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente/IMG0017.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente/IMG0018.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente/IMG0019.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente/IMG0020.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente/IMG0021.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente/IMG0022.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente/IMG0023.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente/IMG0024.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente/IMG0025.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente/IMG0026.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/a-camerazinha-de-100-reais-e-a-imagem-suficiente/IMG0027.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/blog/rh-estrategico-ia-aula-inaugural.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/rh-estrategico-ia-aula-inaugural/cover.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/rh-estrategico-ia-aula-inaugural/kiko-campos.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/rh-estrategico-ia-aula-inaugural/cristiane-andrade.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/rh-estrategico-ia-aula-inaugural/diego-cidade.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/blog/o-sacrilegio-necessario.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/o-sacrilegio-necessario/cover.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/blog/tudo-o-que-acontece-quando-fechamos-os-olhos.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/tudo-o-que-acontece-quando-fechamos-os-olhos/cover.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/tudo-o-que-acontece-quando-fechamos-os-olhos/inline-01-o-box.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/tudo-o-que-acontece-quando-fechamos-os-olhos/inline-02-mariposa-nas-maos.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/tudo-o-que-acontece-quando-fechamos-os-olhos/inline-03-mariposa-e-lampada.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/tudo-o-que-acontece-quando-fechamos-os-olhos/inline-07-mariposa-especime.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/tudo-o-que-acontece-quando-fechamos-os-olhos/inline-04-samambaias.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/tudo-o-que-acontece-quando-fechamos-os-olhos/inline-05-onibus.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/tudo-o-que-acontece-quando-fechamos-os-olhos/inline-06-pai.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/blog/do-excesso-a-execucao-o-custo-invisivel-da-ia-dentro-das-empresas.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/do-excesso-a-execucao-o-custo-invisivel-da-ia-dentro-das-empresas/cover.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/do-excesso-a-execucao-o-custo-invisivel-da-ia-dentro-das-empresas/leandro-ci-and-t.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/do-excesso-a-execucao-o-custo-invisivel-da-ia-dentro-das-empresas/bruno-brq.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/do-excesso-a-execucao-o-custo-invisivel-da-ia-dentro-das-empresas/regina-mindeduca.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/do-excesso-a-execucao-o-custo-invisivel-da-ia-dentro-das-empresas/tatiana-edenred.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/do-excesso-a-execucao-o-custo-invisivel-da-ia-dentro-das-empresas/grupo-palestrantes.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/blog/o-dia-seguinte.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/o-dia-seguinte/cover.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/o-dia-seguinte/inline-01-pes-e-ovos.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/o-dia-seguinte/inline-02-agua-e-ovos.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/o-dia-seguinte/livro-historia-do-olho.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/blog/antes-do-ciclofest-rural.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/antes-do-ciclofest-rural/cover.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/antes-do-ciclofest-rural/primeira-parada.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/antes-do-ciclofest-rural/igreja.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/antes-do-ciclofest-rural/casario-vermelho.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/antes-do-ciclofest-rural/cogumelos-da-mata.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/antes-do-ciclofest-rural/produtores-de-cogumelos-atualizado.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/antes-do-ciclofest-rural/subida.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/antes-do-ciclofest-rural/casarao.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/antes-do-ciclofest-rural/instagram-sombra-destaque.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/antes-do-ciclofest-rural/instagram-saida.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/antes-do-ciclofest-rural/instagram-primeira-pousada.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/antes-do-ciclofest-rural/instagram-parada-rural.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/antes-do-ciclofest-rural/instagram-refugio-da-mata.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/antes-do-ciclofest-rural/instagram-trilha-das-bruxas-original.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/antes-do-ciclofest-rural/instagram-cervejaria-loop.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/antes-do-ciclofest-rural/instagram-casarao.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/antes-do-ciclofest-rural/instagram-chegada-florianopolis.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/blog/o-que-ainda-nao-deixamos-morrer.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/o-que-ainda-nao-deixamos-morrer/marie-curie-notebook-pages.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/o-que-ainda-nao-deixamos-morrer/radium-girls-ad-1921.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/o-que-ainda-nao-deixamos-morrer/plastic-waste-history.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/o-que-ainda-nao-deixamos-morrer/hiroshima-poster.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/o-que-ainda-nao-deixamos-morrer/mandala-creation.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/o-que-ainda-nao-deixamos-morrer/mandala-water.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/blog/codex-no-celular-conectado-ao-computador-para-publicar-no-blog.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/codex-no-celular-conectado-ao-computador-para-publicar-no-blog/cover.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/codex-no-celular-conectado-ao-computador-para-publicar-no-blog/inline-01.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/blog/o-que-33-posts-salvos-no-instagram-me-disseram-sobre-ia-e-criacao.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/o-que-33-posts-salvos-no-instagram-me-disseram-sobre-ia-e-criacao/cover.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/o-que-33-posts-salvos-no-instagram-me-disseram-sobre-ia-e-criacao/post-dxh0i.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/o-que-33-posts-salvos-no-instagram-me-disseram-sobre-ia-e-criacao/post-dxzkj4.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/o-que-33-posts-salvos-no-instagram-me-disseram-sobre-ia-e-criacao/post-dx11n.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/blog/do-elevador-ao-making-of-openrouter-veo-seedance.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/do-elevador-ao-making-of-openrouter-veo-seedance/cover.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/do-elevador-ao-making-of-openrouter-veo-seedance/storyboard-elevador.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/do-elevador-ao-making-of-openrouter-veo-seedance/05-fissura-start.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/do-elevador-ao-making-of-openrouter-veo-seedance/06-recomposicao-end.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/do-elevador-ao-making-of-openrouter-veo-seedance/gemeo-look-floral.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/do-elevador-ao-making-of-openrouter-veo-seedance/gemeo-look-beanie.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/do-elevador-ao-making-of-openrouter-veo-seedance/gemeo-look-knit.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/do-elevador-ao-making-of-openrouter-veo-seedance/lowpoly-host-front.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/do-elevador-ao-making-of-openrouter-veo-seedance/meta-video-speaker-frame.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/do-elevador-ao-making-of-openrouter-veo-seedance/process-safe-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/do-elevador-ao-making-of-openrouter-veo-seedance/process-safe-03.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/do-elevador-ao-making-of-openrouter-veo-seedance/process-safe-04.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/blog/em-direcao-a-empresa-ai-first-distrito.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/em-direcao-a-empresa-ai-first-distrito/cover-og.jpg</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/em-direcao-a-empresa-ai-first-distrito/distrito-galeria-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/em-direcao-a-empresa-ai-first-distrito/distrito-galeria-02.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/em-direcao-a-empresa-ai-first-distrito/distrito-galeria-03.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/blog/demoday-tera.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/demoday-tera/cover.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/demoday-tera/demoday-triptych-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/demoday-tera/demoday-triptych-02.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/demoday-tera/demoday-triptych-03.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/demoday-tera/demoday-triptych-04.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/demoday-tera/demoday-triptych-05.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/demoday-tera/demoday-triptych-06.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/blog/ap-403-memoria-de-um-lugar.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cover.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-01-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-01-02.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-01-03.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-01-04.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-01-05.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-01-06.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-01-07.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-02-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-02-02.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-02-03.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-03-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-03-02.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-03-03.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-04-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-05-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-04-02.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-04-03.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-04-04.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-05-02.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-05-03.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-05-04.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-06-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-06-02.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-06-03.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-06-04.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-07-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-07-02.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-07-03.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-09-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-08-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-08-02.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-08-03.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-09-02.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-09-03.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-09-04.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-10-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-10-02.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-10-03.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-10-04.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-10-05.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-11-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-12-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-12-02.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-11-02.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-11-03.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-11-04.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-11-05.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-12-03.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-12-04.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-12-05.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-13-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-13-02.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-13-03.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-13-04.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-13-05.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-14-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-14-02.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-14-03.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-15-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-15-02.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-16-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/ap-403-memoria-de-um-lugar/cena-16-02.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/blog/com-llms-cada-pagina-pode-voltar-a-ter-forma-propria.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/com-llms-cada-pagina-pode-voltar-a-ter-forma-propria/cover.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/blog/o-que-30-dias-de-posts-salvos-me-disseram-sobre-ia.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/o-que-30-dias-de-posts-salvos-me-disseram-sobre-ia/cover.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/o-que-30-dias-de-posts-salvos-me-disseram-sobre-ia/mcp-infraestrutura-inline.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/o-que-30-dias-de-posts-salvos-me-disseram-sobre-ia/voz-interface-inline.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/blog/publicando-no-linkedin-com-python-e-api.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/publicando-no-linkedin-com-python-e-api/cover.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/publicando-no-linkedin-com-python-e-api/oauth-flow.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/publicando-no-linkedin-com-python-e-api/erro-422.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/publicando-no-linkedin-com-python-e-api/pipeline.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/blog/agent-speedrun-bedrock-agentcore-e-o-que-ficou-do-workshop-no-cubo.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/agent-speedrun-bedrock-agentcore-e-o-que-ficou-do-workshop-no-cubo/cover.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/agent-speedrun-bedrock-agentcore-e-o-que-ficou-do-workshop-no-cubo/agent-speedrun-bedrock-agentcore-cubo-galeria-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/agent-speedrun-bedrock-agentcore-e-o-que-ficou-do-workshop-no-cubo/agent-speedrun-bedrock-agentcore-cubo-galeria-02.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/agent-speedrun-bedrock-agentcore-e-o-que-ficou-do-workshop-no-cubo/agent-speedrun-bedrock-agentcore-cubo-galeria-03.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/agent-speedrun-bedrock-agentcore-e-o-que-ficou-do-workshop-no-cubo/agent-speedrun-bedrock-agentcore-cubo-galeria-04.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/agent-speedrun-bedrock-agentcore-e-o-que-ficou-do-workshop-no-cubo/agent-speedrun-bedrock-agentcore-cubo-workshop-photo.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/blog/oracle-n8n-vercel-elevenlabs-e-a-stack-ai-first-no-cubo.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/oracle-n8n-vercel-elevenlabs-e-a-stack-ai-first-no-cubo/cover.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/oracle-n8n-vercel-elevenlabs-e-a-stack-ai-first-no-cubo/oracle-ai-first-cubo-galeria-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/oracle-n8n-vercel-elevenlabs-e-a-stack-ai-first-no-cubo/oracle-ai-first-cubo-galeria-02.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/oracle-n8n-vercel-elevenlabs-e-a-stack-ai-first-no-cubo/oracle-ai-first-cubo-galeria-03.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/oracle-n8n-vercel-elevenlabs-e-a-stack-ai-first-no-cubo/oracle-ai-first-cubo-galeria-04.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/oracle-n8n-vercel-elevenlabs-e-a-stack-ai-first-no-cubo/oracle-ai-first-cubo-galeria-05.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/oracle-n8n-vercel-elevenlabs-e-a-stack-ai-first-no-cubo/oracle-ai-first-cubo-galeria-06.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/oracle-n8n-vercel-elevenlabs-e-a-stack-ai-first-no-cubo/oracle-ai-first-cubo-galeria-07.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/oracle-n8n-vercel-elevenlabs-e-a-stack-ai-first-no-cubo/oracle-ai-first-cubo-galeria-08.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/oracle-n8n-vercel-elevenlabs-e-a-stack-ai-first-no-cubo/oracle-ai-first-cubo-galeria-09.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/blog/github-copilot-contexto-e-o-que-ficou-do-workshop-na-fiap.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/github-copilot-contexto-e-o-que-ficou-do-workshop-na-fiap/cover.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/github-copilot-contexto-e-o-que-ficou-do-workshop-na-fiap/github-copilot-workshop-fiap-foto-grupo-sala.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/github-copilot-contexto-e-o-que-ficou-do-workshop-na-fiap/vscode-config-captura.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/github-copilot-contexto-e-o-que-ficou-do-workshop-na-fiap/github-copilot-workshop-fiap-foto-sala.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/github-copilot-contexto-e-o-que-ficou-do-workshop-na-fiap/github-copilot-workshop-fiap-foto-grupo.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/blog/anotacoes-sobre-o-excesso-e-o-norte-quantico.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/anotacoes-sobre-o-excesso-e-o-norte-quantico/ilustracoes/2026-03-31-anotacoes-sobre-o-excesso-e-o-norte-quantico-bolivar-capa-site.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/anotacoes-sobre-o-excesso-e-o-norte-quantico/ilustracoes/2026-03-31-anotacoes-sobre-o-excesso-e-o-norte-quantico-bolivar-abertura.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/anotacoes-sobre-o-excesso-e-o-norte-quantico/ilustracoes/2026-03-31-anotacoes-sobre-o-excesso-e-o-norte-quantico-bolivar-disposicao-mental.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/anotacoes-sobre-o-excesso-e-o-norte-quantico/ilustracoes/2026-03-31-anotacoes-sobre-o-excesso-e-o-norte-quantico-bolivar-molho-e-planilha.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/anotacoes-sobre-o-excesso-e-o-norte-quantico/ilustracoes/2026-03-31-anotacoes-sobre-o-excesso-e-o-norte-quantico-bolivar-atalho-no-caos.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/anotacoes-sobre-o-excesso-e-o-norte-quantico/ilustracoes/2026-03-31-anotacoes-sobre-o-excesso-e-o-norte-quantico-bolivar-responsabilidade-do-azul.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/anotacoes-sobre-o-excesso-e-o-norte-quantico/ilustracoes/2026-03-31-anotacoes-sobre-o-excesso-e-o-norte-quantico-bolivar-gambiarra-como-tecnologia.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/anotacoes-sobre-o-excesso-e-o-norte-quantico/ilustracoes/2026-03-31-anotacoes-sobre-o-excesso-e-o-norte-quantico-bolivar-fechamento.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/blog/o-impasse-da-totalidade.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/o-impasse-da-totalidade/cover.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/o-impasse-da-totalidade/gallery-01-saturacao-absoluto.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/o-impasse-da-totalidade/gallery-02-silencio-divino.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/o-impasse-da-totalidade/gallery-03-colapso-ontologico.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/o-impasse-da-totalidade/gallery-04-dispersao-fragmentos.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/o-impasse-da-totalidade/gallery-05-babel-convergencia.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/o-impasse-da-totalidade/gallery-06-morte-sono-dispositivos.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/o-impasse-da-totalidade/gallery-07-sustentar-fragmentacao.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/blog/as-pessoas-nao-queriam-cavalos-mais-rapidos.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/as-pessoas-nao-queriam-cavalos-mais-rapidos/cover.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/as-pessoas-nao-queriam-cavalos-mais-rapidos/benz-patent-motorwagen.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/as-pessoas-nao-queriam-cavalos-mais-rapidos/street-cleaning.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/as-pessoas-nao-queriam-cavalos-mais-rapidos/crowded-car.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/as-pessoas-nao-queriam-cavalos-mais-rapidos/assembly-line.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/as-pessoas-nao-queriam-cavalos-mais-rapidos/highland-park-workers.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/blog/por-que-adotei-a-logica-da-indieweb-no-meu-portfolio.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/por-que-adotei-a-logica-da-indieweb-no-meu-portfolio/cover.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/blog/design-dados-e-doao-de-sangue-como-um-totem-me-fez-repensar-a-experincia-do-usurio.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/design-dados-e-doacao-de-sangue/cover.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/blog/o-retorno-das-sombras-sem-o-retorno-da-conscincia.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/o-retorno-das-sombras-sem-o-retorno-da-consciencia/cover.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/blog/design-para-liderar-com-clareza.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/design-para-liderar-com-clareza/cover.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/design-para-liderar-com-clareza/gallery-01-kpis-visao-geral.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/design-para-liderar-com-clareza/gallery-02-cards-acao-rapida.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/design-para-liderar-com-clareza/gallery-03-status-geral.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/design-para-liderar-com-clareza/gallery-04-tabela-detalhe.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/design-para-liderar-com-clareza/gallery-05-prototipo-handoff.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/notes/2026-07-08-alimentos-que-ainda-nutrem.html</loc>
@@ -224,11 +529,13 @@
     <loc>https://bolivaralencastro.com.br/notes/2026-05-20-lendo-o-infinito-em-um-junco.html</loc>
     <lastmod>2026-05-20</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/now/o-infinito-em-um-junco-2026-05-20.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/notes/2026-05-20-antes-de-ler-a-politica-sexual-da-carne.html</loc>
     <lastmod>2026-05-20</lastmod>
     <priority>0.6</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/now/a-politica-sexual-da-carne-2026-05-20.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/notes/2026-05-19-notas-como-superficie.html</loc>
@@ -239,65 +546,324 @@
     <loc>https://bolivaralencastro.com.br/projects/keeps-learning-konquest.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/keeps-learning-konquest/gallery-01-konquest-mockup.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/design-para-liderar-com-clareza/gallery-01-kpis-visao-geral.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/blog/design-para-liderar-com-clareza/gallery-02-cards-acao-rapida.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/keeps-learning-konquest/konquest-keeps-learning.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/keeps-learning-konquest/smartzap-keeps.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/keeps-learning-konquest/learning-anaytics.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/keeps-learning-konquest/migracao-sem-dor-de-cabeca-1.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/keeps-learning-konquest/fonte-rica-de-recursos-go-learning.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/keeps-learning-konquest/poder-da-aprendizagem-go-learning.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/projects/keeps-learning-site-identidade.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/keeps-learning-site-identidade/gallery-05-keeps-learning-desktop.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/keeps-learning-site-identidade/gallery-02-keeps-learning-logo.png</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/keeps-learning-site-identidade/gallery-03-keeps-learning-papelaria.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/keeps-learning-site-identidade/gallery-04-keeps-learning-uniforme.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/projects/kirinus-escola-de-danca.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/kirinus-escola-de-danca/gallery-01-kirinus-escola-de-danca.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/kirinus-escola-de-danca/gallery-02-kirinus-identidade-visual.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/kirinus-escola-de-danca/gallery-03-kirinus-material-promocional.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/kirinus-escola-de-danca/kirinus-bolivar-alencastro.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/projects/intelbras-opl-cidades-invisiveis.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/intelbras-opl-cidades-invisiveis/gallery-01-opl-produto.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/projects/coletivo-pilates.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/coletivo-pilates/cover.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/coletivo-pilates/gallery-01-logo-primary.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/coletivo-pilates/logo-sheet.svg</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/coletivo-pilates/gallery-02-faixa.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/coletivo-pilates/gallery-03-papelaria.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/coletivo-pilates/mockup-studio-signage-reference.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/coletivo-pilates/gallery-04-site-home.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/coletivo-pilates/gallery-04-return-preta.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/coletivo-pilates/gallery-06-return-creme.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/coletivo-pilates/gallery-07-logo-costas.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/coletivo-pilates/gallery-08-portraits-mockup.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/coletivo-pilates/mockup-products-reference.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/coletivo-pilates/gallery-09-tote-bag.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/coletivo-pilates/gallery-10-meias.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/projects/experiencia-branding-identidade-visual.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/branding-identidade-visual/gallery-01-kirinus-escola-de-danca.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/branding-identidade-visual/gallery-02-debate-diario.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/branding-identidade-visual/gallery-03-posh-10-anos.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/branding-identidade-visual/gallery-04-instituto-floripa-futuro.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/branding-identidade-visual/gallery-05-imersao-em-danca.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/projects/trabalhos-pessoais-arte-ilustracao.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/trabalhos-pessoais/cover.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/trabalhos-pessoais/spiritual-trance/01.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/trabalhos-pessoais/spiritual-trance/02.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/trabalhos-pessoais/guilherme-rocha/01.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/trabalhos-pessoais/guilherme-rocha/02.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/trabalhos-pessoais/guilherme-rocha/03.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/trabalhos-pessoais/guilherme-rocha/04.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/trabalhos-pessoais/guilherme-rocha/05.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/trabalhos-pessoais/guilherme-rocha/06.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/trabalhos-pessoais/guilherme-rocha/07.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/trabalhos-pessoais/conexao/01.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/trabalhos-pessoais/conexao/02.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/trabalhos-pessoais/imprima-seu-estilo-3m/01.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/trabalhos-pessoais/imprima-seu-estilo-3m/02.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/trabalhos-pessoais/imprima-seu-estilo-3m/03.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/trabalhos-pessoais/ride-faster/01.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/trabalhos-pessoais/ride-faster/02.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/trabalhos-pessoais/ride-faster/03.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/trabalhos-pessoais/ride-faster/04.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/trabalhos-pessoais/fluir/01.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/trabalhos-pessoais/fluir/02.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/trabalhos-pessoais/fluir/03.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/projects/grupo-rbs-planejamento-multimidia.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/grupo-rbs-planejamento-multimidia/capa.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/grupo-rbs-planejamento-multimidia/gallery-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/grupo-rbs-planejamento-multimidia/gallery-02.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/grupo-rbs-planejamento-multimidia/gallery-03.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/grupo-rbs-planejamento-multimidia/gallery-04.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/grupo-rbs-planejamento-multimidia/gallery-05.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/grupo-rbs-planejamento-multimidia/gallery-06.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/grupo-rbs-planejamento-multimidia/gallery-07.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/grupo-rbs-planejamento-multimidia/gallery-08.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/grupo-rbs-planejamento-multimidia/gallery-09.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/projects/retratos-ufsc-florianopolis.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/cover.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-02.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-04.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-05.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-06.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-07.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-08.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-09.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-10.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-11.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-12.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-03.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-13.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-14.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-15.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-16.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-17.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-19.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-20.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-21.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-22.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-23.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-24.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-25.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-26.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-27.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-18.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-28.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-29.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-30.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-31.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-32.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-33.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-34.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-35.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-37.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-38.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-39.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-40.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-41.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-42.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-43.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-44.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-45.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-36.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-46.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-47.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-48.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-49.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-50.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-51.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-52.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-53.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-55.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-56.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-57.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-58.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-59.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-60.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-61.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-62.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-63.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-64.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-65.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-66.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-54.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-67.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-68.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-69.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-70.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-71.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/retratos-ufsc-florianopolis/retrato-72.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/projects/fotografia-instagram.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17935143157901537_0.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17930284213985279_0.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17930284213985279_1.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17930284213985279_2.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17930284213985279_3.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17930284213985279_4.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17930284213985279_5.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17930284213985279_6.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17930284213985279_7.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17930284213985279_8.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17930284213985279_9.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/18005846200529882.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17935143157901537_1.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17935143157901537_2.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17935143157901537_3.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17935143157901537_4.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17935143157901537_5.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17935143157901537_6.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17935143157901537_7.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17935143157901537_8.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17935143157901537_9.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/18003731497393663_0.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/18003731497393663_1.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/18003731497393663_2.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/18003731497393663_3.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/18003731497393663_4.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/18003731497393663_5.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/18003731497393663_6.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/18003731497393663_7.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/18003731497393663_8.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/18003731497393663_9.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17899539404462014_0.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17899539404462014_1.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17899539404462014_2.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17899539404462014_3.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17899539404462014_4.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17899539404462014_5.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17899539404462014_6.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17899539404462014_7.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17899539404462014_8.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17936438830913056_0.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17936438830913056_1.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17936438830913056_2.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17936438830913056_3.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17936438830913056_4.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17936438830913056_5.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17936438830913056_6.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17936438830913056_7.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17936438830913056_8.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17936438830913056_9.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/17890040234882441.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/18070174096499003.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/fotografia-instagram/18337956874052535.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/projects/degola.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/degola/cover.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/degola/gallery-01-degola-logo.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/degola/gallery-02-degola-patch-negativa.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/degola/gallery-03-degola-papelaria.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/degola/gallery-04-degola-etiqueta.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/degola/gallery-05-degola-fachada.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/degola/gallery-06-degola-embalagem.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/degola/gallery-07-degola-site.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/projects/anis-crua.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/anis-crua/anis-crua-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/anis-crua/anis-crua-02.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/anis-crua/anis-crua-03.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/anis-crua/anis-crua-04.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/anis-crua/anis-crua-05.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/anis-crua/anis-crua-06.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/anis-crua/anis-crua-07.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/anis-crua/anis-crua-08.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/anis-crua/anis-crua-09.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/anis-crua/anis-crua-10.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/anis-crua/instagram-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/anis-crua/instagram-02.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/anis-crua/instagram-03.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/anis-crua/instagram-04.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/anis-crua/instagram-05.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/anis-crua/instagram-06.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://bolivaralencastro.com.br/projects/espetaculo-mesmo.html</loc>
     <lastmod>2026-10-06</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-02.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-03.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-04.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-05.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-06.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-07.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-08.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-09.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-10.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-11.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-12.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-13.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-14.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-15.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-16.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-17.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-18.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-19.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-20.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-21.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-22.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-23.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-24.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-25.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-26.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-27.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-28.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-29.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-30.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-31.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-32.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-33.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-34.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-35.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-36.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-37.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-38.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-39.webp</image:loc></image:image>
+    <image:image><image:loc>https://bolivaralencastro.com.br/assets/images/projects/espetaculo-mesmo/espetaculo-mesmo-40.webp</image:loc></image:image>
   </url>
 </urlset>

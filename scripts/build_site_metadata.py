@@ -967,8 +967,93 @@ def render_blog_archive_page(page: ArchivePage, *, base_url: str) -> str:
     return "\n".join(lines)
 
 
+SITEMAP_IMAGE_NS = "http://www.google.com/schemas/sitemap-image/1.1"
+SITEMAP_IMAGE_LIMIT = 1000
+# Mesmo recorte do lightbox: imagens de conteudo, sem cards de listagem, avatar do autor, logos e chrome.
+SITEMAP_IMAGE_SKIP_CLASSES = {
+    "author-card", "related-list", "project-item", "post-item", "video-link-card",
+    "yt-facade", "tool-grid", "tool-grid-item",
+}
+SITEMAP_IMAGE_SKIP_TAGS = {"header", "footer", "nav"}
+VOID_TAGS = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "source", "track", "wbr"}
+
+
+class SitemapImageCollector(HTMLParser):
+    """Collect content images from <main>: local, with alt text, outside listing cards and chrome."""
+
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.in_main = False
+        self.stack: list[tuple[str, bool]] = []
+        self.skip_depth = 0
+        self.sources: list[str] = []
+
+    def handle_starttag(self, tag: str, attrs_list) -> None:
+        attrs = dict(attrs_list)
+        if tag == "main" and attrs.get("id") == "main":
+            self.in_main = True
+        if not self.in_main:
+            return
+        classes = set((attrs.get("class") or "").split())
+        skips = tag in SITEMAP_IMAGE_SKIP_TAGS or bool(classes & SITEMAP_IMAGE_SKIP_CLASSES)
+        if tag == "img":
+            if not self.skip_depth and not skips and (attrs.get("alt") or "").strip() and attrs.get("src"):
+                self.sources.append(attrs["src"])
+            return
+        if tag in VOID_TAGS:
+            return
+        self.stack.append((tag, skips))
+        if skips:
+            self.skip_depth += 1
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag == "main" and self.in_main and not self.stack:
+            self.in_main = False
+            return
+        if not self.in_main or tag in VOID_TAGS:
+            return
+        while self.stack:
+            open_tag, skips = self.stack.pop()
+            if skips:
+                self.skip_depth -= 1
+            if open_tag == tag:
+                break
+
+
+def sitemap_images_for_page(page_path: pathlib.Path, repo_root: pathlib.Path, base_url: str) -> list[str]:
+    if not page_path.exists():
+        return []
+    collector = SitemapImageCollector()
+    collector.feed(page_path.read_text(encoding="utf-8"))
+    images: list[str] = []
+    for src in collector.sources:
+        if src.startswith(base_url + "/"):
+            path = src.removeprefix(base_url)
+        elif src.startswith("/") and not src.startswith("//"):
+            path = src
+        else:
+            continue
+        path = path.split("?", 1)[0].split("#", 1)[0]
+        if not (repo_root / path.lstrip("/")).is_file():
+            continue
+        url = base_url + path
+        if url not in images:
+            images.append(url)
+    return images[:SITEMAP_IMAGE_LIMIT]
+
+
+def sitemap_loc_to_path(loc: str, repo_root: pathlib.Path, base_url: str) -> pathlib.Path:
+    rel = loc.removeprefix(base_url).lstrip("/")
+    if not rel or rel.endswith("/"):
+        rel += "index.html"
+    return repo_root / rel
+
+
 def render_sitemap(base_url: str, items: list[dict]) -> str:
-    lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    lines = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="{SITEMAP_IMAGE_NS}">',
+    ]
     for item in items:
         lines.extend(
             [
@@ -976,9 +1061,11 @@ def render_sitemap(base_url: str, items: list[dict]) -> str:
                 f"    <loc>{html.escape(item['loc'])}</loc>",
                 f"    <lastmod>{item['lastmod']}</lastmod>",
                 f"    <priority>{item['priority']:.1f}</priority>",
-                "  </url>",
             ]
         )
+        for image_url in item.get("images", []):
+            lines.append(f"    <image:image><image:loc>{html.escape(image_url)}</image:loc></image:image>")
+        lines.append("  </url>")
     lines.append("</urlset>")
     lines.append("")
     return "\n".join(lines)
@@ -1506,6 +1593,8 @@ def main() -> int:
             }
         )
 
+    for item in sitemap_items:
+        item["images"] = sitemap_images_for_page(sitemap_loc_to_path(item["loc"], repo_root, base_url), repo_root, base_url)
     sitemap_content = render_sitemap(base_url, sitemap_items)
     sitemap_txt_content = render_sitemap_txt(sitemap_items)
 
