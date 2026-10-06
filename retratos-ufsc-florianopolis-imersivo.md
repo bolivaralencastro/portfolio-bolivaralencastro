@@ -1,4 +1,4 @@
-# Retratos e Vida Universitaria na UFSC — Edicao Imersiva - Bolivar Alencastro
+# Retratos na UFSC: Edicao Imersiva - Bolivar Alencastro
 Source: https://bolivaralencastro.com.br/retratos-ufsc-florianopolis-imersivo.html
 
 [**Bolivar Alencastro**](https://bolivaralencastro.com.br/)   
@@ -167,7 +167,7 @@ Sobre o autor
 
  
 
-### [Bolivar Alencastro](https://bolivaralencastro.com.br/about.html) 
+## [Bolivar Alencastro](https://bolivaralencastro.com.br/about.html) 
 
 Product Designer em Sao Paulo. Cruzo fotografia, interface e narrativa para transformar arquivo visual em experiencia legivel. 
  

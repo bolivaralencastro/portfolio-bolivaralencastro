@@ -82,7 +82,7 @@ Sobre o autor
 
  
 
-### [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 
+## [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 
 
 Product Designer em São Paulo. Acostumado a desenhar interfaces para pessoas, mas cada vez mais intrigado com a ideia de projetar sistemas cujo principal usuário é um agente autônomo. 
  

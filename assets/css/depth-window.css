@@ -102,8 +102,12 @@
   background: #ffffff;
 }
 
+.depth-window :focus-visible {
+  outline-color: #ffffff;
+}
+
 .depth-window-open:hover {
-  background: var(--primary);
+  background: #005dff;
   color: #ffffff;
 }
 

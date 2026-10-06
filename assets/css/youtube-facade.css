@@ -1,0 +1,84 @@
+/* Fachada de vídeo do YouTube: o iframe só é criado no clique (assets/js/youtube-facade.js). */
+.e-content .video-embed .yt-facade {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-width: 44px;
+  min-height: 44px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.e-content .video-embed .yt-facade img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.e-content .video-embed .yt-facade::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0) 55%);
+  pointer-events: none;
+}
+
+.e-content .video-embed .yt-facade-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: 68px;
+  height: 68px;
+  margin: -34px 0 0 -34px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.72);
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  pointer-events: none;
+}
+
+.e-content .video-embed .yt-facade-play::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -12px 0 0 -8px;
+  border-style: solid;
+  border-width: 12px 0 12px 20px;
+  border-color: transparent transparent transparent #fff;
+}
+
+.e-content .video-embed .yt-facade:hover img {
+  transform: scale(1.03);
+}
+
+.e-content .video-embed .yt-facade:hover .yt-facade-play,
+.e-content .video-embed .yt-facade:focus-visible .yt-facade-play {
+  transform: scale(1.08);
+  background: rgba(0, 0, 0, 0.88);
+}
+
+.e-content .video-embed .yt-facade:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: -6px;
+  box-shadow: inset 0 0 0 6px #000;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .e-content .video-embed .yt-facade img,
+  .e-content .video-embed .yt-facade-play {
+    transition: none;
+  }
+}

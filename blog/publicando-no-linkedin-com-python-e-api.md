@@ -65,7 +65,7 @@ Sobre o autor
 
  
 
-### [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 
+## [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 
 
 Product Designer em São Paulo que prefere automatizar a própria presença digital a terceirizar para uma ferramenta que decide o formato, o horário e o texto por você. 
  

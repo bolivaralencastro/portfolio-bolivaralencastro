@@ -126,7 +126,7 @@ Sobre o autor
 
  
 
-### [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 
+## [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 
 
 Product Designer em São Paulo, trabalhando na Keeps com produtos de aprendizagem, dados e interfaces que ajudam líderes a transformar contexto em decisão. 
  

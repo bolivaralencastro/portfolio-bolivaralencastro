@@ -108,7 +108,7 @@ Sobre o autor
 
  
 
-### [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 
+## [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 
 
 Product Designer em São Paulo. Escrevo aqui também sobre o que muda em mim antes de mudar em qualquer projeto — inclusive quando a imagem demora anos para poder existir. 
  

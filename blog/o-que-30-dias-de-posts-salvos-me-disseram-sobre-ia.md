@@ -82,7 +82,7 @@ Sobre o autor
 
  
 
-### [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 
+## [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 
 
 Product Designer em São Paulo que salva posts para não perder o fio e, quando volta para ler, tenta separar infraestrutura de narrativa.      
 

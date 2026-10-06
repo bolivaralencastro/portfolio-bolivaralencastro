@@ -183,7 +183,7 @@ Sobre o autor
 
 ![Foto de Bolívar Alencastro](https://bolivaralencastro.com.br/assets/images/author/bolivar-alencastro.webp)
 
-### [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html)
+## [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html)
 
 Product Designer em São Paulo, escrevendo sobre trabalho, proteção e as estruturas que sustentam a vida comum.
 

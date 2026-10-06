@@ -73,6 +73,8 @@ VERSIONED_ASSETS = {
     "/assets/css/ufsc-portraits.css": pathlib.Path("assets/css/ufsc-portraits.css"),
     "/assets/css/ap403.css": pathlib.Path("assets/css/ap403.css"),
     "/assets/css/instagram-gallery.css": pathlib.Path("assets/css/instagram-gallery.css"),
+    "/assets/js/youtube-facade.js": pathlib.Path("assets/js/youtube-facade.js"),
+    "/assets/css/youtube-facade.css": pathlib.Path("assets/css/youtube-facade.css"),
 }
 PROJECT_ORDER_AFTER = {
     "/projects/keeps-learning-site-identidade.html": "/projects/keeps-learning-konquest.html",
@@ -715,7 +717,7 @@ def build_author_card_html() -> str:
             '  <div class="author-card-inner">',
             '    <img class="author-card-photo u-photo" src="/assets/images/author/bolivar-alencastro.webp" alt="Foto de Bolívar Alencastro" width="641" height="640" loading="lazy" decoding="async">',
             '    <div class="author-card-body">',
-            '      <h3 class="author-card-name p-name"><a class="u-url" href="/about.html">Bolívar Alencastro</a></h3>',
+            '      <h2 class="author-card-name p-name"><a class="u-url" href="/about.html">Bolívar Alencastro</a></h2>',
             '      <p class="author-card-copy p-note">Product Designer em São Paulo. Estruturo narrativas, interfaces e sistemas para transformar complexidade em decisões claras.</p>',
             '      <ul class="author-card-links" aria-label="Redes sociais do autor">',
             '        <li><a rel="me noopener noreferrer" target="_blank" href="https://facebook.com/bolivaralencastrofotografia">Facebook</a></li>',

@@ -102,7 +102,7 @@ Sobre o autor
 
  
 
-### [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 
+## [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 
 
 Product Designer em São Paulo, atento ao trabalho invisível que sustenta qualquer estrutura antes de ela cair. 
  

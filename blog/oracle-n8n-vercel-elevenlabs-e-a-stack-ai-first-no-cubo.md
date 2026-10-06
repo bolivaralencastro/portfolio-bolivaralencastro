@@ -54,7 +54,7 @@ Sobre o autor
 
  
 
-### [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 
+## [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 
 
 Product Designer em São Paulo, escrevendo sobre produto, interfaces e, cada vez mais, sobre o momento em que infraestrutura, automação, interface e voz finalmente começam a fazer parte da mesma conversa. 
  

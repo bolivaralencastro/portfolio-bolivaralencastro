@@ -117,7 +117,7 @@ Sobre o autor
 
  
 
-### [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 
+## [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 
 
 Product Designer em São Paulo. Trabalho com estruturas — de produto, de informação, de decisão. Às vezes escrevo sobre as que precisam ser desmontadas. 
  

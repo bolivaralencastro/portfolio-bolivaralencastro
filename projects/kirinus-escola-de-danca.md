@@ -10,7 +10,7 @@ Kirinus Escola de Dança buscava fortalecer sua marca e ampliar sua presença no
 
 O trabalho incluiu definição de logotipo, sistema cromático, tipografia e materiais de apoio. Também conduzi campanhas de marketing em canais digitais e impressos, com peças para espetáculos, cursos e eventos da escola. 
 
-O resultado foi uma comunicação visual coerente, capaz de transmitir energia, leveza e profissionalismo, ampliando o reconhecimento da escola entre alunos, parceiros e público em geral. ![Peça de comunicação Kirinus Escola de Dança](https://bolivaralencastro.com.br/assets/images/projects/kirinus-escola-de-danca/gallery-01-kirinus-escola-de-danca.webp) ![Aplicação da identidade visual Kirinus](https://bolivaralencastro.com.br/assets/images/projects/kirinus-escola-de-danca/gallery-02-kirinus-identidade-visual.webp) ![Material promocional da Kirinus Escola de Dança](https://bolivaralencastro.com.br/assets/images/projects/kirinus-escola-de-danca/gallery-03-kirinus-material-promocional.jpg)   ![Composição quadrada da Kirinus Escola de Dança assinada por Bolívar Alencastro](https://bolivaralencastro.com.br/assets/images/projects/kirinus-escola-de-danca/kirinus-bolivar-alencastro.webp?v=deb5424)   
+O resultado foi uma comunicação visual coerente, capaz de transmitir energia, leveza e profissionalismo, ampliando o reconhecimento da escola entre alunos, parceiros e público em geral. ![Peça de comunicação Kirinus Escola de Dança](https://bolivaralencastro.com.br/assets/images/projects/kirinus-escola-de-danca/gallery-01-kirinus-escola-de-danca.webp) ![Aplicação da identidade visual Kirinus](https://bolivaralencastro.com.br/assets/images/projects/kirinus-escola-de-danca/gallery-02-kirinus-identidade-visual.webp) ![Material promocional da Kirinus Escola de Dança](https://bolivaralencastro.com.br/assets/images/projects/kirinus-escola-de-danca/gallery-03-kirinus-material-promocional.webp)   ![Composição quadrada da Kirinus Escola de Dança assinada por Bolívar Alencastro](https://bolivaralencastro.com.br/assets/images/projects/kirinus-escola-de-danca/kirinus-bolivar-alencastro.webp?v=deb5424)   
 
  
 
@@ -20,7 +20,7 @@ Sobre o autor
 
  
 
-### [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 
+## [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 
 
 Product Designer em São Paulo. Estruturo narrativas, interfaces e sistemas para transformar complexidade em decisões claras. 
  

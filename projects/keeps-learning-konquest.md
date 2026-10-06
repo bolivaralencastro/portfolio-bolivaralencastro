@@ -74,25 +74,25 @@ Smartzap
 
  
 
- ![Tela do Analytics da Keeps](https://bolivaralencastro.com.br/assets/images/projects/keeps-learning-konquest/learning-anaytics.png)  
+ ![Tela do Analytics da Keeps](https://bolivaralencastro.com.br/assets/images/projects/keeps-learning-konquest/learning-anaytics.webp)  
 
 Analytics  
 
  
 
- ![Composição do site da Keeps sobre migração sem dor de cabeça](https://bolivaralencastro.com.br/assets/images/projects/keeps-learning-konquest/migracao-sem-dor-de-cabeca-1.png)  
+ ![Composição do site da Keeps sobre migração sem dor de cabeça](https://bolivaralencastro.com.br/assets/images/projects/keeps-learning-konquest/migracao-sem-dor-de-cabeca-1.webp)  
 
 Migração sem dor de cabeça  
 
  
 
- ![Tela do site da Keeps destacando fonte rica de recursos](https://bolivaralencastro.com.br/assets/images/projects/keeps-learning-konquest/fonte-rica-de-recursos-go-learning.png)  
+ ![Tela do site da Keeps destacando fonte rica de recursos](https://bolivaralencastro.com.br/assets/images/projects/keeps-learning-konquest/fonte-rica-de-recursos-go-learning.webp)  
 
 Fonte rica de recursos  
 
  
 
- ![Tela do site da Keeps sobre o poder da aprendizagem](https://bolivaralencastro.com.br/assets/images/projects/keeps-learning-konquest/poder-da-aprendizagem-go-learning.png)  
+ ![Tela do site da Keeps sobre o poder da aprendizagem](https://bolivaralencastro.com.br/assets/images/projects/keeps-learning-konquest/poder-da-aprendizagem-go-learning.webp)  
 
 O poder da aprendizagem   
 
@@ -110,7 +110,7 @@ Sobre o autor
 
  
 
-### [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 
+## [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 
 
 Product Designer em São Paulo. Estruturo narrativas, interfaces e sistemas para transformar complexidade em decisões claras. 
  

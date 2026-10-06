@@ -74,7 +74,7 @@ Sobre o autor
 
  
 
-### [Bolivar Alencastro](https://bolivaralencastro.com.br/about.html) 
+## [Bolivar Alencastro](https://bolivaralencastro.com.br/about.html) 
 
 Product Designer em Sao Paulo, usando curadoria em lote para transformar ruido de feed em criterio de produto, linguagem e operacao.      
 

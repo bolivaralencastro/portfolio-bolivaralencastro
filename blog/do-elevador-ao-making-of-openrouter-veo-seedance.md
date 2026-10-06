@@ -186,7 +186,7 @@ Sobre o autor
 
  
 
-### [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 
+## [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 
 
 Product Designer em São Paulo, interessado no ponto em que direção visual, estrutura técnica e limitação de ferramenta deixam de ser problemas separados e passam a formar o próprio projeto. 
  

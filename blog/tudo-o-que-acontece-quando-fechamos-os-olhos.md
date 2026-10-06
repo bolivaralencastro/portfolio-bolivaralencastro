@@ -4,7 +4,7 @@ Source: https://bolivaralencastro.com.br/blog/tudo-o-que-acontece-quando-fechamo
 
  Por [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 01 Ago 2026 • Ensaio • Memória • 9 min de leitura • [permalink](https://bolivaralencastro.com.br/blog/tudo-o-que-acontece-quando-fechamos-os-olhos.html)  
 
-Uma mariposa desaparece num banheiro interno. Entre o corpo seco atrás dos vasos, um sonho com cupins, uma mensagem para o pai e séculos de folclore sobre mariposas, um ensaio sobre o que a gente faz com o que não viu. 
+Uma mariposa desaparece num banheiro interno. Entre um sonho com cupins e séculos de folclore, um ensaio sobre o que a gente faz com o que não viu. 
 
  
 
@@ -170,7 +170,7 @@ Sobre o autor
 
  
 
-### [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 
+## [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 
 
 Product Designer em São Paulo, prestando atenção no que insiste em aparecer duas vezes antes de ser notado. 
  

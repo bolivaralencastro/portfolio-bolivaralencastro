@@ -50,7 +50,7 @@ Sobre o autor
 
  
 
-### [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 
+## [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 
 
 Product Designer em São Paulo, interessado nos objetos cotidianos que condensam engenharia, decisões de interface e novas maneiras de produzir imagens. 
  

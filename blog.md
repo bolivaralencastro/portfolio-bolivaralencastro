@@ -78,7 +78,7 @@ Da sistematização da dança de salão no Brasil aos anos discutindo papéis de
 
 ### [Tudo o que acontece quando fechamos os olhos](https://bolivaralencastro.com.br/blog/tudo-o-que-acontece-quando-fechamos-os-olhos.html) 
 
-Uma mariposa desaparece num banheiro interno. Entre o corpo seco atrás dos vasos, um sonho com cupins, uma mensagem para o pai e séculos de folclore sobre mariposas, um ensaio sobre o que a gente faz com o que não viu.  01/08/2026  
+Uma mariposa desaparece num banheiro interno. Entre um sonho com cupins e séculos de folclore, um ensaio sobre o que a gente faz com o que não viu.  01/08/2026  
 
  [![Capa do post: Do excesso à execução: o custo invisível da IA dentro das empresas](https://bolivaralencastro.com.br/assets/images/blog/do-excesso-a-execucao-o-custo-invisivel-da-ia-dentro-das-empresas/card.webp)](https://bolivaralencastro.com.br/blog/do-excesso-a-execucao-o-custo-invisivel-da-ia-dentro-das-empresas.html) 
 

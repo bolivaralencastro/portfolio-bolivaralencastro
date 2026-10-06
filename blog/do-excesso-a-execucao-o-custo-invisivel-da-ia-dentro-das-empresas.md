@@ -168,7 +168,7 @@ Sobre o autor
 
  
 
-### [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 
+## [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 
 
 Product Designer em São Paulo, escrevendo sobre produto, sistemas e o momento em que ferramentas criadas para reduzir complexidade começam a cobrar seu preço em atenção, decisão e capacidade humana. 
  

@@ -54,7 +54,7 @@ Sobre o autor
 
  
 
-### [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 
+## [Bolívar Alencastro](https://bolivaralencastro.com.br/about.html) 
 
 Product Designer em São Paulo, ex-diretor de arte de uma escola de dança, ainda testando o próximo passo antes de nomeá-lo. 
  
