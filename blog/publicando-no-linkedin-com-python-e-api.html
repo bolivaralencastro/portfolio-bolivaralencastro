@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Publicar no LinkedIn e no Instagram sem abrir os apps - Blog</title>
   <meta name="description" content="Dois scripts Python leem o post mais recente do blog e publicam no LinkedIn e no Instagram sozinhos. A parte difícil não foi automatizar, foi decifrar o que cada API exige de verdade.">
-  <link rel="stylesheet" href="/style.css?v=85d3592245">
+  <link rel="stylesheet" href="/style.css?v=4a6122dd35">
   <noscript><link rel="stylesheet" href="/assets/css/nojs-nav.css?v=60f97e7e21"></noscript>
   <link rel="canonical" href="https://bolivaralencastro.com.br/blog/publicando-no-linkedin-com-python-e-api.html">
   <meta name="author" content="Bolívar Alencastro">
@@ -122,7 +122,7 @@
         <p>Os dois scripts compartilham a mesma lógica de entrada: percorrem <code>blog/*.html</code>, leem o atributo <code>datetime</code> das tags <code>&lt;time&gt;</code> — a mesma fonte que alimenta o feed RSS e a listagem do blog — e extraem título, resumo e imagem de capa do post mais recente (ou de um slug específico, via <code>--slug</code>). A partir daí, cada um resolve o que a rede exige.</p>
 
         <h2>LinkedIn: OAuth, upload de imagem e dois erros que ensinaram mais</h2>
-        <p><code>scripts/linkedin_post.py</code> faz upload da imagem de capa via <code>/rest/images?action=initializeUpload</code>, que retorna uma URL de upload e um URN de imagem, e publica via <code>POST /rest/posts</code> com o header <code>LinkedIn-Version: 202503</code>. A autenticação usa <a href="https://learn.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow" rel="noopener noreferrer" target="_blank">OAuth 2.0 com Authorization Code Flow</a>: <code>scripts/linkedin_auth.py</code> sobe um servidor local na porta 8080 como callback, captura o código de autorização, troca pelo access token e salva em disco.</p>
+        <p><code>scripts/linkedin_post.py</code> faz upload da imagem de capa via <code>/rest/images?action=initializeUpload</code>, que retorna uma URL de upload e um URN de imagem, e publica via <code>POST /rest/posts</code> com uma versão ativa no header <code>LinkedIn-Version</code>. A autenticação usa <a href="https://learn.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow" rel="noopener noreferrer" target="_blank">OAuth 2.0 com Authorization Code Flow</a>: <code>scripts/linkedin_auth.py</code> sobe um servidor local na porta 8080 como callback, valida o estado da autorização, captura o código, troca pelo access token e salva em disco.</p>
 
         <img src="/assets/images/blog/publicando-no-linkedin-com-python-e-api/oauth-flow.webp" alt="Diagrama do fluxo OAuth 2.0: browser abrindo a autorização e retornando o token para o servidor local na porta 8080" width="1200" height="675" loading="lazy" decoding="async" srcset="/assets/images/blog/publicando-no-linkedin-com-python-e-api/oauth-flow-720.webp 720w, /assets/images/blog/publicando-no-linkedin-com-python-e-api/oauth-flow-960.webp 960w, /assets/images/blog/publicando-no-linkedin-com-python-e-api/oauth-flow.webp 1200w" sizes="(max-width: 700px) calc(100vw - 2rem), 960px">
 
