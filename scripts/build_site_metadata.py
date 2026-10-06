@@ -1333,6 +1333,27 @@ def ensure_csp_meta(html_content: str, content: str) -> str:
     return html_content[:insert_at] + snippet + html_content[insert_at:]
 
 
+ROBOTS_META_CONTENT = "index, follow, max-image-preview:large"
+ROBOTS_META_PATTERN = re.compile(r'^[ \t]*<meta name="robots"[^>]*>\n', re.MULTILINE)
+
+
+def ensure_robots_meta(html_content: str) -> str:
+    """Allow large image previews (Discover, Google Images) on indexable pages.
+
+    Pages that already declare a robots meta with noindex (redirect stubs) are left alone.
+    """
+    existing = ROBOTS_META_PATTERN.search(html_content)
+    snippet = f'  <meta name="robots" content="{ROBOTS_META_CONTENT}">\n'
+    if existing:
+        if "noindex" in existing.group(0).lower():
+            return html_content
+        return ROBOTS_META_PATTERN.sub(snippet, html_content, count=1)
+    csp = CSP_META_PATTERN.search(html_content)
+    if not csp:
+        raise BuildError("Missing CSP meta while injecting robots meta")
+    return html_content[: csp.end()] + snippet + html_content[csp.end():]
+
+
 def apply_responsive_image_refs(html_content: str, repo_root: pathlib.Path) -> str:
     """Add responsive sources where committed WebP derivatives are available.
 
@@ -1705,6 +1726,7 @@ def main() -> int:
         if source_html is None:
             source_html = page_path.read_text(encoding="utf-8")
         source_html = ensure_csp_meta(source_html, SITE_CSP_CONTENT)
+        source_html = ensure_robots_meta(source_html)
         source_html = ensure_favicon_links(source_html)
         source_html = ensure_script_reference(source_html, "/assets/js/gtm.js")
         source_html = remove_meta_pixel_block(source_html)

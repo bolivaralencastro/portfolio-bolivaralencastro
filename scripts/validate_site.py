@@ -511,6 +511,17 @@ def validate_sitemap_images(repo_root: pathlib.Path, base_url: str, sitemap_cont
             errors.append("sitemap.xml: more than 1000 images for a single URL")
 
 
+def validate_robots_meta(repo_root: pathlib.Path, pages: Iterable[PageMeta], errors: list[str]) -> None:
+    """Indexable pages must allow large image previews; noindex stubs are exempt."""
+    for page in pages:
+        content = (repo_root / page.rel_path).read_text(encoding="utf-8")
+        match = re.search(r'<meta name="robots" content="([^"]*)">', content)
+        if match and "noindex" in match.group(1):
+            continue
+        if not match or "max-image-preview:large" not in match.group(1):
+            errors.append(f"{page.rel_path}: missing <meta name='robots'> with max-image-preview:large")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Validate editorial and SEO metadata")
     parser.add_argument("--base-url", default=BASE_URL_DEFAULT, help="Canonical base URL")
@@ -542,6 +553,7 @@ def main() -> int:
 
     validate_no_secret_files(repo_root, errors)
     validate_sitemap_images(repo_root, base_url, sitemap_content, errors)
+    validate_robots_meta(repo_root, metas, errors)
 
     for page in metas:
         validate_page_policy(page, errors)
