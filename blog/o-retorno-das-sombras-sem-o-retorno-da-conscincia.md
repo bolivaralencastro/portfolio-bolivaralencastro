@@ -14,7 +14,7 @@ O retorno das sombras no design digital precisa vir acompanhado de consciência 
 
  
 
-### O design digital está em um novo ciclo: sombras, texturas e profundidade voltam à cena. Mas será que aprendemos com o passado? 
+O design digital está em um novo ciclo: sombras, texturas e profundidade voltam à cena. Mas será que aprendemos com o passado? 
 
 O design digital vive em ciclos. Tendências retornam quando tecnologia e cultura mudam. Nas últimas temporadas, interfaces com sombras, degradês sutis, transparências e microanimações voltaram a dominar vitrines como Dribbble e portfólios autorais. ![Interface digital com camadas e sombras destacando a discussão entre estética e performance](https://bolivaralencastro.com.br/assets/images/blog/o-retorno-das-sombras-sem-o-retorno-da-consciencia/cover.webp) 
 
