@@ -11,3 +11,7 @@ youtube-research/videos/
 History
 __pycache__/
 node_modules/
+
+# Credenciais e cookies nunca devem ser publicados
+data/instagram-research/instagram-cookies.txt
+*cookies*.txt
