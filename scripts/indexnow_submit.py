@@ -16,6 +16,7 @@ import argparse
 import json
 import pathlib
 import re
+import ssl
 import subprocess
 import sys
 import urllib.error
@@ -25,6 +26,17 @@ BASE_URL = "https://bolivaralencastro.com.br"
 ENDPOINT = "https://api.indexnow.org/IndexNow"
 MAX_URLS = 10000  # IndexNow limit per request
 KEY_FILE_PATTERN = re.compile(r"^[0-9a-f]{32}\.txt$")
+
+
+def tls_context() -> ssl.SSLContext:
+    """Verified TLS context. python.org builds on macOS ship without CA roots, so fall back to the system bundle."""
+    context = ssl.create_default_context()
+    if context.cert_store_stats().get("x509_ca"):
+        return context
+    for cafile in ("/etc/ssl/cert.pem", "/etc/ssl/certs/ca-certificates.crt"):
+        if pathlib.Path(cafile).is_file():
+            return ssl.create_default_context(cafile=cafile)
+    return context
 
 
 def find_key(repo_root: pathlib.Path) -> str:
@@ -87,10 +99,13 @@ def main() -> int:
         ENDPOINT, data=payload, headers={"Content-Type": "application/json; charset=utf-8"}, method="POST"
     )
     try:
-        with urllib.request.urlopen(request, timeout=30) as response:
+        with urllib.request.urlopen(request, timeout=30, context=tls_context()) as response:
             print(f"IndexNow responded HTTP {response.status}")
     except urllib.error.HTTPError as exc:
         print(f"IndexNow rejected the submission: HTTP {exc.code} {exc.reason}", file=sys.stderr)
+        return 1
+    except urllib.error.URLError as exc:
+        print(f"Could not reach IndexNow: {exc.reason}", file=sys.stderr)
         return 1
     return 0
 
