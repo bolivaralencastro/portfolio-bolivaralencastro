@@ -6,7 +6,7 @@ Pré-requisito (uma vez, no painel developers.facebook.com):
     1. Adicione o caso de uso "Access the Threads API" a um app Meta
        (ou crie um app novo do tipo Threads).
     2. Em "Threads API > Settings", anote o Threads App ID e o App Secret
-       e salve no .env como THREADS_APP_ID e THREADS_APP_SECRET.
+       e salve no .local/.env como THREADS_APP_ID e THREADS_APP_SECRET.
     3. Registre a Redirect Callback URL (padrão deste script:
        https://bolivaralencastro.com.br/).
     4. Em "App Roles", adicione a sua conta do Threads como Threads Tester
@@ -18,7 +18,7 @@ Fluxo deste script:
     2. O navegador redireciona para a callback com ?code=... na URL.
     3. Cole a URL completa (ou só o code) de volta aqui.
     4. O script troca code -> token curto -> token de 60 dias e salva
-       THREADS_ACCESS_TOKEN e THREADS_USER_ID no .env.
+       THREADS_ACCESS_TOKEN e THREADS_USER_ID no .local/.env.
 
 Usage:
     python3 scripts/threads_auth.py
@@ -37,6 +37,8 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
+from local_paths import ENV_FILE
+
 try:
     import certifi
 
@@ -45,7 +47,6 @@ except ImportError:
     SSL_CONTEXT = ssl.create_default_context()
 
 ROOT = Path(__file__).parent.parent
-ENV_FILE = ROOT / ".env"
 AUTH_HOST = "https://threads.net"
 GRAPH_HOST = "https://graph.threads.net"
 DEFAULT_REDIRECT = "https://bolivaralencastro.com.br/"
@@ -72,7 +73,7 @@ def save_to_env(key: str, value: str):
     else:
         content = content.rstrip("\n") + f"\n{new_line}\n"
     ENV_FILE.write_text(content)
-    print(f"   ✅ {key} salvo no .env")
+    print(f"   ✅ {key} salvo no .local/.env")
 
 
 def http_get(url: str) -> dict:
@@ -110,7 +111,7 @@ def main():
     app_id = env.get("THREADS_APP_ID", "").strip()
     app_secret = env.get("THREADS_APP_SECRET", "").strip()
     if not app_id or not app_secret:
-        print("❌ Configure THREADS_APP_ID e THREADS_APP_SECRET no .env (ver docstring).")
+        print("❌ Configure THREADS_APP_ID e THREADS_APP_SECRET no .local/.env (ver docstring).")
         sys.exit(1)
 
     raw = args.code

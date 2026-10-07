@@ -38,15 +38,16 @@ from datetime import UTC, datetime, timedelta
 from pathlib import Path
 from typing import Any
 
+from local_paths import ENV_FILE, local_path
+
 ROOT = Path(__file__).resolve().parent.parent
-ENV_FILE = ROOT / ".env"
 DB_PATH = Path(
     os.environ.get(
         "OPENAI_OBSERVABILITY_DB_PATH",
-        str(ROOT / "data" / "openai-observability.sqlite"),
+        str(local_path("data", "openai-observability.sqlite")),
     )
 )
-GENERATED_IMAGE_DIR = ROOT / "data" / "generated-images"
+GENERATED_IMAGE_DIR = local_path("data", "generated-images")
 
 TEXT_MODEL_PRICING = {
     "gpt-5.4-mini": {
@@ -233,7 +234,7 @@ def get_openai_client():
 
     api_key = get_api_key()
     if not api_key:
-        raise RuntimeError("OPENAI_API_KEY ausente no ambiente ou no .env")
+        raise RuntimeError("OPENAI_API_KEY ausente no ambiente ou no .local/.env")
     return OpenAI(api_key=api_key)
 
 

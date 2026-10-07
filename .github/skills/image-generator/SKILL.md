@@ -93,7 +93,7 @@ Use `--raw-prompt` para desativar o contexto automático.
 
 ## Pré-requisitos
 
-- `OPENROUTER_API_KEY` no `.env`
+- `OPENROUTER_API_KEY` no `.local/.env`
 - `pip3 install Pillow certifi`
 
 ## Custo estimado

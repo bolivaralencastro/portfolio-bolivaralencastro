@@ -13,11 +13,13 @@ import urllib.parse
 from collections import defaultdict
 from typing import Any
 
+from local_paths import ENV_FILE, local_path
+
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-ENV_PATH = ROOT / ".env"
-SNAPSHOT_DIR = ROOT / "data" / "analytics" / "snapshots"
-WEEKLY_DIR = ROOT / "data" / "analytics" / "weekly"
+ENV_PATH = ENV_FILE
+SNAPSHOT_DIR = local_path("data", "analytics", "snapshots")
+WEEKLY_DIR = local_path("data", "analytics", "weekly")
 CLARITY_API_URL = "https://www.clarity.ms/export-data/api/v1/project-live-insights"
 CLARITY_TOKEN_KEY = "CLARITY_DATA_EXPORT_TOKEN"
 GA4_PROPERTY_ID = "501542723"

@@ -34,6 +34,8 @@ import urllib.request
 from html import unescape
 from pathlib import Path
 
+from local_paths import ENV_FILE, STATE_ROOT
+
 try:
     import certifi
 
@@ -44,9 +46,8 @@ except Exception:
 ROOT = Path(__file__).parent.parent
 BLOG_DIR = ROOT / "blog"
 PROJECTS_DIR = ROOT / "projects"
-ENV_FILE = ROOT / ".env"
 BASE_URL = "https://bolivaralencastro.com.br"
-STATE_DIR = ROOT / ".social_publish_state"
+STATE_DIR = STATE_ROOT
 TWITTER_STATE_FILE = STATE_DIR / "twitter_last_publish.json"
 
 TWEET_CREATE_URL = "https://api.twitter.com/2/tweets"
@@ -487,7 +488,7 @@ def main() -> None:
     if meta["date"]:
         print(f"Data: {meta['date']}")
     print(f"URL:  {meta['url']}")
-    print(f"Conta X: @{username}" if username else "Conta X: (usuario nao identificado no .env)")
+    print(f"Conta X: @{username}" if username else "Conta X: (usuario nao identificado no .local/.env)")
     if meta["image_path"]:
         print(f"Imagem: {meta['image_path']}")
     else:

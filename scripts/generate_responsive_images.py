@@ -25,7 +25,7 @@ TARGET_WIDTHS = (720, 960)
 def referenced_images() -> set[pathlib.Path]:
     images: set[pathlib.Path] = set()
     for page in REPO_ROOT.rglob("*.html"):
-        if any(part in {".git", ".referencias"} for part in page.parts):
+        if any(part in {".git", ".local", ".referencias"} for part in page.parts):
             continue
         for source in IMAGE_SOURCE.findall(page.read_text(encoding="utf-8")):
             image = REPO_ROOT / source.lstrip("/")

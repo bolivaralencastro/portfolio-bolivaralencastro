@@ -2,6 +2,18 @@
 
 Portfolio HTML-first publicado no GitHub Pages em `https://bolivaralencastro.com.br`.
 
+## Fronteiras de conteúdo
+
+O projeto separa explicitamente três superfícies:
+
+- **Produção:** `_site/`, artefato descartável montado por `scripts/build_public_site.py` e publicado pelo GitHub Pages.
+- **GitHub público:** HTML, Markdown publicado, automações, documentação e assets efetivamente usados pelo site.
+- **Somente local:** `.local/`, com credenciais, cookies, estados de publicação, analytics, pesquisas, curadorias, rascunhos e mídias-fonte.
+
+Prepare o workspace privado com `mkdir -p .local` e copie `.env.example` para `.local/.env`. Para guardar essa área em outro disco, defina `PORTFOLIO_LOCAL_DIR` com um caminho absoluto ou relativo ao repositório.
+
+Nunca use `git add -f` para contornar as regras de `.gitignore`. O repositório público não é backup para `.local/`.
+
 ## Automacao editorial e SEO
 
 Este repositorio usa scripts Python (stdlib) para manter metadados, indices editoriais e URLs versionadas de assets sem CMS.
@@ -44,6 +56,9 @@ Scripts:
 - `python scripts/build_site_metadata.py`: gera sitemap, feed, blocos auto-gerados e atualiza o versionamento de assets publicos.
 - `python scripts/build_site_metadata.py --check`: falha se os arquivos gerados ou as URLs versionadas de assets estiverem desatualizados.
 - `python scripts/validate_site.py`: valida SEO/editorial/integridade.
+- `python scripts/check_repository_hygiene.py`: bloqueia caminhos locais, caches e padrões de segredo no Git.
+- `python scripts/build_public_site.py --output _site`: monta somente os arquivos permitidos em produção.
+- `python scripts/check_before_publish.py`: executa todas as validações usadas pelo CI.
 - `python scripts/blog_image_workflow.py`: compoe tripticos horizontais sem corte e converte assets para `webp`.
 - `python scripts/twitter_post.py`: publica conteudo do portfolio no X, com suporte a blog, projetos e paginas avulsas.
 
@@ -79,9 +94,11 @@ Scripts:
 
 - `.github/workflows/validate-content.yml`
   - roda em `pull_request` e `push`
-  - executa `build_site_metadata.py --check`
-  - executa `validate_site.py`
-  - funciona como rede de seguranca remota, nao como gerador automatico de conteudo
+  - executa a verificacao completa de metadata, SEO, testes, higiene e artefato
+- `.github/workflows/deploy-pages.yml`
+  - roda em pushes para `main`
+  - monta `_site/` por lista permitida
+  - publica somente esse artefato no GitHub Pages
 
 ## Fluxo recomendado de publicacao
 
@@ -89,10 +106,10 @@ Este repositorio segue um fluxo `local-first` para conteudo publicado:
 
 1. editar o HTML e os assets localmente
 2. rodar `python3 scripts/build_site_metadata.py`
-3. rodar `python3 scripts/validate_site.py`
+3. rodar `python3 scripts/check_before_publish.py`
 4. publicar somente depois que a validacao local estiver limpa
 
-Nao ha mais workflow de GitHub Actions fazendo commit automatico em `main`. Isso evita divergencias artificiais entre `main` local e remoto, reduz conflitos em arquivos gerados e combina melhor com um fluxo solo de publicacao direta.
+Ative os hooks versionados uma vez por clone com `git config core.hooksPath .githooks`. O hook de commit verifica higiene; o hook de push executa a validacao completa. Nenhum workflow faz commit automatico em `main`.
 
 ## Fluxo de notas
 
@@ -130,7 +147,7 @@ Campos e regras:
 - `date`: obrigatorio no front matter ou no prefixo do arquivo (`YYYY-MM-DD-slug.md`)
 - `category`: opcional, padrao `Nota`
 - `classes`: opcional, para reaproveitar estilos como `note-seed`
-- `status`: `published` ou `draft`; rascunhos nao entram no `now.html`
+- `status`: `published` ou `draft`; rascunhos ficam em `.local/drafts/notes/` e nao entram no Git
 - notas publicadas entram no feed e no sitemap
 - shortcodes suportados: `image`, `audio`, `video`
 - para casos mais especificos, blocos HTML puros tambem podem ser embutidos no corpo
@@ -178,7 +195,13 @@ python3 scripts/note.py new "Titulo da nota" \
   --no-publish
 ```
 
-Para publicar uma nota ja criada:
+O arquivo fica em `.local/drafts/notes/` e não altera páginas geradas nem o índice do Git. Para publicá-lo:
+
+```bash
+python3 scripts/note.py publish .local/drafts/notes/YYYY-MM-DD-slug.md
+```
+
+Para publicar uma nota já criada em `content/notes/`:
 
 ```bash
 python3 scripts/note.py publish content/notes/YYYY-MM-DD-slug.md
@@ -207,7 +230,7 @@ python3 scripts/twitter_post.py --kind project --slug keeps-learning-konquest
 python3 scripts/twitter_post.py --dry-run --path about.html
 ```
 
-Credenciais esperadas no `.env` para o X:
+Credenciais esperadas no `.local/.env` para o X:
 
 ```bash
 X_API_KEY=<api_key>
@@ -218,7 +241,7 @@ X_CALLBACK_URL=http://127.0.0.1:8080/callback
 X_USERNAME=<handle_opcional>
 ```
 
-Na primeira configuracao, rode `python3 scripts/twitter_auth.py` para concluir o OAuth 1.0a e salvar os tokens no `.env`.
+Na primeira configuração, copie `.env.example` para `.local/.env` e rode `python3 scripts/twitter_auth.py` para concluir o OAuth 1.0a.
 
 ## Pesquisa de videos do YouTube
 
@@ -231,7 +254,7 @@ O repositorio agora inclui um fluxo local para transformar um video do YouTube e
 - relatorio com perguntas, dores e oportunidades de conteudo
 - leitura AI opcional com DeepSeek para temas, perguntas e proximas pecas
 
-Configuracao no `.env`:
+Configuracao no `.local/.env`:
 
 ```bash
 YOUTUBE_API_KEY=<api_key_do_youtube_data_api_v3>
@@ -244,16 +267,16 @@ Uso:
 python3 youtube-research/scripts/collect_video_research.py 'https://www.youtube.com/watch?v=VIDEO_ID'
 python3 youtube-research/scripts/collect_video_research.py 'https://youtu.be/VIDEO_ID' --lang pt
 python3 youtube-research/scripts/collect_video_research.py 'https://youtu.be/VIDEO_ID' --force-stt
-python3 youtube-research/scripts/analyze_learning.py youtube-research/videos/<titulo-do-video>--VIDEO_ID
+python3 youtube-research/scripts/analyze_learning.py .local/youtube-research/videos/<titulo-do-video>--VIDEO_ID
 ```
 
 Estrutura:
 
 - `youtube-research/scripts/`: coleta e analise
 - `youtube-research/prompts/`: prompts versionaveis/refinaveis
-- `youtube-research/videos/<titulo-do-video>--<video_id>/`: uma pasta por video analisado
+- `.local/youtube-research/videos/<titulo-do-video>--<video_id>/`: uma pasta por video analisado
 
-Saida gerada em `youtube-research/videos/<titulo-do-video>--<video_id>/`:
+Saida gerada em `.local/youtube-research/videos/<titulo-do-video>--<video_id>/`:
 
 - `video.json`
 - `transcript.json`
@@ -292,7 +315,7 @@ jules login
 
 Onde adicionar a chave da API do Jules:
 
-- arquivo: `.env` na raiz do repositorio
+- arquivo privado: `.local/.env`
 - variavel: `JULES_API_KEY`
 
 Exemplo:

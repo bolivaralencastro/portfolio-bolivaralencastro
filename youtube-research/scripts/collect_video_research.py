@@ -48,8 +48,10 @@ except Exception:
 
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 ROOT = REPO_ROOT
-ENV_FILE = REPO_ROOT / ".env"
-DATA_ROOT = REPO_ROOT / "youtube-research" / "videos"
+sys.path.insert(0, str(REPO_ROOT / "scripts"))
+from local_paths import ENV_FILE, YOUTUBE_RESEARCH_ROOT
+
+DATA_ROOT = YOUTUBE_RESEARCH_ROOT
 YOUTUBE_API_BASE = "https://www.googleapis.com/youtube/v3"
 WATCH_BASE = "https://www.youtube.com/watch"
 TIMEDTEXT_BASE = "https://www.youtube.com/api/timedtext"
@@ -1294,7 +1296,7 @@ def main() -> int:
 
     if platform == "youtube":
         if not youtube_api_key:
-            print("Erro: configure YOUTUBE_API_KEY no .env ou no ambiente.")
+            print("Erro: configure YOUTUBE_API_KEY no .local/.env ou no ambiente.")
             return 1
         video_id = extract_video_id(args.url)
         video = fetch_video(youtube_api_key, video_id)

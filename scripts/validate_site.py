@@ -481,11 +481,15 @@ def validate_page_images(repo_root: pathlib.Path, page: PageMeta, errors: list[s
 
 
 SECRET_PATH_PATTERN = re.compile(r"(cookie|token|secret|credential|\.env($|\.)|\.pem$|\.key$|id_rsa)", re.IGNORECASE)
-SECRET_PATH_ALLOWLIST = {"scripts/export_instagram_cookies.py", "scripts/refresh_meta_tokens.py"}
+SECRET_PATH_ALLOWLIST = {
+    ".env.example",
+    "scripts/export_instagram_cookies.py",
+    "scripts/refresh_meta_tokens.py",
+}
 
 
 def validate_no_secret_files(repo_root: pathlib.Path, errors: list[str]) -> None:
-    """Fail when a tracked file looks like a credential: the whole repo is published."""
+    """Fail when a tracked file looks like a credential, even outside the Pages artifact."""
     try:
         listing = subprocess.run(
             ["git", "ls-files"], cwd=repo_root, capture_output=True, text=True, check=True

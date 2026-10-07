@@ -14,7 +14,7 @@ ja expoe `og:image` ou `twitter:image` apontando para um asset local.
 ## Pre-requisitos
 
 - Python 3.10+
-- `.env` na raiz com as credenciais do X
+- `.local/.env` na raiz com as credenciais do X
 
 ## Fluxo padrao
 
@@ -38,7 +38,7 @@ python3 scripts/twitter_post.py --kind project --slug keeps-learning-konquest
 python3 scripts/twitter_post.py --path about.html
 ```
 
-## Configuracao do `.env`
+## Configuracao do `.local/.env`
 
 ```bash
 X_API_KEY=<api_key>

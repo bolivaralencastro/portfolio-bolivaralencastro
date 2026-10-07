@@ -26,7 +26,7 @@ Read:
    - Preserve authorial intent without forcing intimate tone in every paragraph.
    - Prefer concrete observations and lived context over detached summaries.
 3. Images are never sourced automatically. Ask the user (or wait for them to say) which path applies before touching images:
-   - **Existing/provided images**: the user already has photos or assets for this post (sent in chat, in `.referencias/`, or elsewhere). Use those — resize/convert to webp as needed, do not generate replacements.
+   - **Existing/provided images**: the user already has photos or assets for this post (sent in chat, in `.local/references/`, or elsewhere). Use those — resize/convert to webp as needed, do not generate replacements.
    - **Edit existing images**: use `blog_image_workflow.py` to compose triptychs, crop, or convert provided images to webp.
    - **AI-generated images**: only when the user explicitly asks for generated imagery. Preview prompts first (no cost), then generate:
      ```bash
@@ -92,7 +92,7 @@ python3 scripts/linkedin_post.py --dry-run    # preview
 python3 scripts/linkedin_post.py --slug <slug>
 ```
 
-Requires `LINKEDIN_ACCESS_TOKEN` in `.env`. If expired, run `linkedin_auth.py` first.
+Requires `LINKEDIN_ACCESS_TOKEN` in `.local/.env`. If expired, run `linkedin_auth.py` first.
 
 ## Publishing to Instagram (optional)
 
@@ -102,7 +102,7 @@ python3 scripts/instagram_post.py --dry-run    # preview
 python3 scripts/instagram_post.py --slug <slug>
 ```
 
-Requires `INSTAGRAM_ACCESS_TOKEN` and `INSTAGRAM_USER_ID` in `.env`.
+Requires `INSTAGRAM_ACCESS_TOKEN` and `INSTAGRAM_USER_ID` in `.local/.env`.
 If expired, run `python3 scripts/instagram_auth.py` first.
 
 Important: Instagram Graph API only accepts `JPG/PNG` by URL (`image_url`),
@@ -121,7 +121,7 @@ python3 scripts/twitter_post.py --path about.html            # standalone page
 ```
 
 Requires `X_API_KEY`, `X_API_SECRET`, `X_ACCESS_TOKEN` and
-`X_ACCESS_TOKEN_SECRET` in `.env`.
+`X_ACCESS_TOKEN_SECRET` in `.local/.env`.
 If missing, run `python3 scripts/twitter_auth.py` first.
 
 ## Full publication order (recommended)

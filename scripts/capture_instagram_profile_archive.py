@@ -20,6 +20,8 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
+from local_paths import local_path
+
 try:
     import certifi
 
@@ -250,7 +252,7 @@ def main() -> int:
     parser.add_argument("--port", type=int, default=9333, help="Chrome remote debugging port")
     parser.add_argument(
         "--output-root",
-        default=str(ROOT / "data" / "instagram_profile_archives"),
+        default=str(local_path("data", "instagram_profile_archives")),
         help="Directory where manifest and images will be stored",
     )
     parser.add_argument("--max-pages", type=int, default=10, help="Safety cap for paginated feed requests")

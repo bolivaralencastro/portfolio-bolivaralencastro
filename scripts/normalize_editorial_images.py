@@ -8,6 +8,8 @@ social URL mappings for review. HTML references must be updated separately.
 import argparse
 import json
 from pathlib import Path
+
+from local_paths import REFERENCES_ROOT
 import shutil
 
 from image_metadata import image_metadata
@@ -57,7 +59,7 @@ def main() -> None:
             if target.stat().st_size >= 300_000:
                 raise RuntimeError(f"Could not meet social image budget: {target}")
         for path in oversized:
-            backup = root / ".referencias" / "asset-normalization" / path.relative_to(root)
+            backup = REFERENCES_ROOT / "asset-normalization" / path.relative_to(root)
             if not backup.exists():
                 backup.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(path, backup)

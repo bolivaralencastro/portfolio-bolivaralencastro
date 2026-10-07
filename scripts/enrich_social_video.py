@@ -20,7 +20,7 @@ Usage:
 Restrições:
   - Não altera o fluxo de captura existente (social_capture_browser.py / social_curation.py).
   - Não processa itens de LinkedIn nem posts de imagem/link do Instagram.
-  - Requer OPENROUTER_API_KEY no ambiente ou em .env.
+  - Requer OPENROUTER_API_KEY no ambiente ou em .local/.env.
   - Requer yt-dlp e ffmpeg instalados.
 """
 
@@ -34,6 +34,8 @@ import shutil
 import subprocess
 import sys
 from pathlib import Path
+
+from local_paths import ENV_FILE, local_path
 from typing import Any
 
 # ---------------------------------------------------------------------------
@@ -43,7 +45,7 @@ from typing import Any
 ROOT = Path(__file__).parent.parent
 COLLECT_SCRIPT = ROOT / "youtube-research" / "scripts" / "collect_video_research.py"
 ANALYZE_SCRIPT = ROOT / "youtube-research" / "scripts" / "analyze_learning.py"
-DEFAULT_BASE_DIR = ROOT / "data" / "instagram-research" / "reels"
+DEFAULT_BASE_DIR = local_path("data", "instagram-research", "reels")
 DEFAULT_MODEL = "deepseek/deepseek-v4-pro"
 
 # ---------------------------------------------------------------------------
@@ -51,8 +53,8 @@ DEFAULT_MODEL = "deepseek/deepseek-v4-pro"
 # ---------------------------------------------------------------------------
 
 def load_env() -> None:
-    """Carrega variáveis do .env se existir (sem dependência de python-dotenv)."""
-    env_path = ROOT / ".env"
+    """Carrega variáveis do .local/.env se existir (sem dependência de python-dotenv)."""
+    env_path = ENV_FILE
     if not env_path.exists():
         return
     with env_path.open() as f:

@@ -28,11 +28,12 @@ import urllib.request
 from dataclasses import dataclass
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
+
+from local_paths import ENV_FILE, local_path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parent.parent
-DB_PATH = ROOT / "data" / "openrouter-generations.sqlite"
-ENV_FILE = ROOT / ".env"
+DB_PATH = local_path("data", "openrouter-generations.sqlite")
 
 try:
     import certifi

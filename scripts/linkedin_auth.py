@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 LinkedIn OAuth 2.0 — one-time auth flow.
-Saves the access token to .env for use by linkedin_post.py.
+Saves the access token to .local/.env for use by linkedin_post.py.
 
 Usage:
     python3 scripts/linkedin_auth.py
@@ -19,6 +19,8 @@ import threading
 import webbrowser
 from pathlib import Path
 
+from local_paths import ENV_FILE
+
 try:
     import certifi
     SSL_CONTEXT = ssl.create_default_context(cafile=certifi.where())
@@ -26,7 +28,6 @@ except ImportError:
     SSL_CONTEXT = ssl.create_default_context()
 
 ROOT = Path(__file__).parent.parent
-ENV_FILE = ROOT / ".env"
 
 
 def load_env():
@@ -49,7 +50,7 @@ def save_token(token: str):
     else:
         content += f"LINKEDIN_ACCESS_TOKEN={token}\n"
     ENV_FILE.write_text(content)
-    print(f"✅ Token salvo em .env")
+    print(f"✅ Token salvo em .local/.env")
 
 
 def exchange_code(code: str, env: dict) -> str:
@@ -76,7 +77,7 @@ def main():
     required = ["LINKEDIN_CLIENT_ID", "LINKEDIN_CLIENT_SECRET", "LINKEDIN_REDIRECT_URI"]
     missing = [k for k in required if not env.get(k)]
     if missing:
-        print(f"❌ Faltam variáveis no .env: {', '.join(missing)}")
+        print(f"❌ Faltam variáveis no .local/.env: {', '.join(missing)}")
         sys.exit(1)
 
     auth_code = [None]

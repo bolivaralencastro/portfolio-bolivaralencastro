@@ -1,18 +1,33 @@
 .DS_Store
-assets/.DS_Store
-assets/images/.DS_Store
+**/.DS_Store
+
+# Workspace privado: credenciais, pesquisas, rascunhos, estados e fontes brutas.
+.local/
 .referencias/
 referencias/
+data/
+curadorias/
+ideias-blogposts/
+.social_publish_state/
+youtube-research/videos/
+assets/images/social/
+
+# Credenciais nunca devem ser versionadas.
 .env
+.env.*
+!.env.example
 .env_temp
 .linkedin_token
-data/*.sqlite
-youtube-research/videos/
+*cookies*.txt
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Saidas locais e caches.
+_site/
 History
 __pycache__/
+*.py[cod]
+*.sqlite
 node_modules/
-
-# Credenciais e cookies nunca devem ser publicados
-data/instagram-research/instagram-cookies.txt
-*cookies*.txt
-data/

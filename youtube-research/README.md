@@ -37,5 +37,5 @@ python3 youtube-research/scripts/collect_video_research.py 'https://www.youtube.
 python3 youtube-research/scripts/collect_video_research.py 'https://www.instagram.com/rndyrbrts/reel/DWpSK4uDhIO/'
 
 # 2. Rodar a segunda camada de analise
-python3 youtube-research/scripts/analyze_learning.py youtube-research/videos/<titulo-do-video>--VIDEO_ID
+python3 youtube-research/scripts/analyze_learning.py .local/youtube-research/videos/<titulo-do-video>--VIDEO_ID
 ```

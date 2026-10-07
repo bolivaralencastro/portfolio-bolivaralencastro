@@ -1,14 +1,16 @@
 from __future__ import annotations
 
 from pathlib import Path
+
+from local_paths import REFERENCES_ROOT, SOCIAL_ASSETS_ROOT
 from typing import Iterable
 
 from PIL import Image, ImageColor, ImageDraw, ImageFont, ImageOps
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT_DIR = ROOT / "assets/images/social/instagram/veganismo-horizonte-moral"
-SRC_DIR = ROOT / ".referencias/social-sources/veganismo-horizonte-moral/sources"
+OUT_DIR = SOCIAL_ASSETS_ROOT / "instagram" / "veganismo-horizonte-moral"
+SRC_DIR = REFERENCES_ROOT / "social-sources" / "veganismo-horizonte-moral" / "sources"
 FONT_DIR = OUT_DIR / "fonts"
 
 W = 1080

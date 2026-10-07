@@ -14,7 +14,7 @@ Publica o último post do blog (ou um específico) no LinkedIn com uma imagem `c
 
 - Python 3.10+
 - `certifi` instalado: `pip3 install certifi`
-- `.env` na raiz com as credenciais (ver seção abaixo)
+- `.local/.env` na raiz com as credenciais (ver seção abaixo)
 
 ## Fluxo padrão
 
@@ -32,7 +32,7 @@ python3 scripts/linkedin_post.py --dry-run
 python3 scripts/linkedin_post.py --slug nome-do-slug
 ```
 
-## Configuração do `.env`
+## Configuração do `.local/.env`
 
 ```
 LINKEDIN_CLIENT_ID=<client_id>
@@ -42,7 +42,7 @@ LINKEDIN_ACCESS_TOKEN=<token_oauth>
 LINKEDIN_PERSON_URN=urn:li:person:FptyQBlmzW
 ```
 
-O `.env` é gitignored. O token tem validade de ~2 meses. Quando expirar, rode `linkedin_auth.py` novamente.
+O `.local/.env` é gitignored. O token tem validade de ~2 meses. Quando expirar, rode `linkedin_auth.py` novamente.
 
 ## Como a detecção de post funciona
 
@@ -67,12 +67,12 @@ O `.env` é gitignored. O token tem validade de ~2 meses. Quando expirar, rode `
 ## Arquivos relevantes
 
 - `scripts/linkedin_post.py` — script principal de publicação
-- `scripts/linkedin_auth.py` — fluxo OAuth (salva token no `.env`)
-- `.env` — credenciais (gitignored)
+- `scripts/linkedin_auth.py` — fluxo OAuth (salva token no `.local/.env`)
+- `.local/.env` — credenciais (gitignored)
 
 ## Notas técnicas
 
 - O URN do autor é `urn:li:person:FptyQBlmzW` (pessoa autenticada via OAuth)
 - A API `/v2/ugcPosts` (antiga) não funciona com este app — usar `/rest/posts`
-- A API `/v2/me` e `/v2/userinfo` retornam 403 para este app; o URN está fixo no `.env`
+- A API `/v2/me` e `/v2/userinfo` retornam 403 para este app; o URN está fixo no `.local/.env`
 - SSL fix para Python 3.14+ no macOS: `certifi` é obrigatório

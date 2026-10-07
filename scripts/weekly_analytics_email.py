@@ -13,9 +13,11 @@ import subprocess
 import sys
 from email.message import EmailMessage
 
+from local_paths import local_path
+
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-WEEKLY_DIR = ROOT / "data" / "analytics" / "weekly"
+WEEKLY_DIR = local_path("data", "analytics", "weekly")
 DEFAULT_FROM = "bolivar@alencastro.com.br"
 
 

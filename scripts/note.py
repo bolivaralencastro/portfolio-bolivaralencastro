@@ -11,6 +11,7 @@ import sys
 import tempfile
 from dataclasses import dataclass
 
+from local_paths import DRAFTS_ROOT
 from notes_pipeline import NOTE_SOURCE_DIR, NoteError, parse_note_file, slugify
 
 DEFAULT_PUBLISH_BRANCH = "main"
@@ -67,7 +68,7 @@ def write_note_file(args: argparse.Namespace, repo_root: pathlib.Path) -> pathli
     if not slug:
         raise PublishError("could not derive slug from title; use --slug")
 
-    notes_dir = repo_root / NOTE_SOURCE_DIR
+    notes_dir = DRAFTS_ROOT / "notes" if args.no_publish or args.status == "draft" else repo_root / NOTE_SOURCE_DIR
     notes_dir.mkdir(parents=True, exist_ok=True)
     note_path = notes_dir / f"{date_value.isoformat()}-{slug}.md"
     if note_path.exists():
@@ -88,6 +89,13 @@ def write_note_file(args: argparse.Namespace, repo_root: pathlib.Path) -> pathli
     fields.append("")
     note_path.write_text("\n".join(fields), encoding="utf-8", newline="\n")
     return note_path
+
+
+def display_path(path: pathlib.Path, repo_root: pathlib.Path) -> str:
+    try:
+        return path.relative_to(repo_root).as_posix()
+    except ValueError:
+        return str(path)
 
 
 def resolve_note_path(raw_path: str, repo_root: pathlib.Path) -> pathlib.Path:
@@ -145,7 +153,7 @@ def ensure_note_scope_isolated(
 
 def build_and_validate(repo_root: pathlib.Path) -> None:
     run(["python3", "scripts/build_site_metadata.py"], repo_root=repo_root)
-    run(["python3", "scripts/validate_site.py"], repo_root=repo_root)
+    run(["python3", "scripts/check_before_publish.py"], repo_root=repo_root)
 
 
 def prepare_temp_publish_repo(repo_root: pathlib.Path, publish_branch: str) -> tuple[tempfile.TemporaryDirectory[str], pathlib.Path]:
@@ -288,6 +296,8 @@ def direct_publish_note(args: argparse.Namespace, repo_root: pathlib.Path) -> st
         raise PublishError("--no-push cannot be used with --direct-main")
     if args.no_publish:
         raise PublishError("--no-publish cannot be used with --direct-main")
+    if args.status != "published":
+        raise PublishError("--direct-main only accepts published notes")
 
     date_value = dt.date.fromisoformat(args.date) if args.date else dt.date.today()
     body = read_body(args)
@@ -323,7 +333,11 @@ def command_new(args: argparse.Namespace, repo_root: pathlib.Path) -> int:
 
     note_path = write_note_file(args, repo_root)
     if args.no_publish:
-        print(f"Created {note_path.relative_to(repo_root).as_posix()}")
+        print(f"Created local draft {display_path(note_path, repo_root)}")
+        return 0
+
+    if args.status == "draft":
+        print(f"Created local draft {display_path(note_path, repo_root)}")
         return 0
 
     build_and_validate(repo_root)
@@ -339,15 +353,38 @@ def command_new(args: argparse.Namespace, repo_root: pathlib.Path) -> int:
 
 
 def command_publish(args: argparse.Namespace, repo_root: pathlib.Path) -> int:
-    note_path = resolve_note_path(args.note_path, repo_root)
-    build_and_validate(repo_root)
-    stage_commit_push(
-        note_path,
-        include=args.include,
-        repo_root=repo_root,
-        no_push=args.no_push,
-        message=args.message,
-    )
+    source_path = resolve_note_path(args.note_path, repo_root)
+    note_path = source_path
+    try:
+        source_path.relative_to(DRAFTS_ROOT)
+        is_local_draft = True
+    except ValueError:
+        is_local_draft = False
+
+    if is_local_draft:
+        content = source_path.read_text(encoding="utf-8")
+        content = content.replace("status: draft", "status: published", 1)
+        destination_dir = repo_root / NOTE_SOURCE_DIR
+        destination_dir.mkdir(parents=True, exist_ok=True)
+        note_path = destination_dir / source_path.name
+        if note_path.exists():
+            raise PublishError(f"published note already exists: {note_path.relative_to(repo_root).as_posix()}")
+        note_path.write_text(content, encoding="utf-8", newline="\n")
+    try:
+        build_and_validate(repo_root)
+        stage_commit_push(
+            note_path,
+            include=args.include,
+            repo_root=repo_root,
+            no_push=args.no_push,
+            message=args.message,
+        )
+    except Exception:
+        if is_local_draft and note_path.exists():
+            note_path.unlink()
+        raise
+    if is_local_draft:
+        source_path.unlink()
     print(f"Published {note_path.relative_to(repo_root).as_posix()}")
     return 0
 

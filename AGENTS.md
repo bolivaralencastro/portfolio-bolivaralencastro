@@ -29,7 +29,7 @@ These instructions apply to the whole repository. Use them for Codex, GitHub Cop
   - `og` images: JPEG, `1200x630`, under `300KB` (JPEG for WhatsApp/Facebook preview compatibility)
 - Keep referenced images under `500KB` and under `2000px` wide; resize and recompress before committing.
 - Content images must carry `width`, `height`, `decoding="async"` and `loading="lazy"` (first/hero image uses `fetchpriority="high"` instead of lazy).
-- Heavy source material (original photos, raw exports) must NOT live under `assets/` — everything there is deployed and publicly served. Keep it in `.referencias/` (gitignored, never published).
+- Heavy source material (original photos, raw exports) must NOT live under `assets/`. Keep it in `.local/references/` or `.local/assets-source/` (gitignored, never published).
 
 ## CSP and scripts
 
@@ -53,10 +53,10 @@ These instructions apply to the whole repository. Use them for Codex, GitHub Cop
 ## Deploy flow
 
 1. Edit content/assets.
-2. Run `python3 scripts/build_site_metadata.py` and `python3 scripts/validate_site.py` immediately before committing. The sitemap `lastmod` of files with uncommitted changes is stamped with today's date, which must match the commit date — build and commit on the same day (rebuild if the commit slips to another day).
+2. Run `python3 scripts/build_site_metadata.py` and `python3 scripts/check_before_publish.py` immediately before committing. The sitemap `lastmod` of files with uncommitted changes is stamped with today's date, which must match the commit date — build and commit on the same day (rebuild if the commit slips to another day).
 3. Commit generated outputs together with the content (`sitemap.xml`, `feed.xml`, `feed.txt`, regenerated pages).
-4. Push to `main`. GitHub Pages deploys automatically (behind Cloudflare; HTML cache up to 10 minutes).
-5. CI (`Validate Content` + `Refresh Site Metadata`) re-runs the same build and fails if committed outputs do not match — on failure, rerun step 2 locally, commit, push again.
+4. Push to `main`. GitHub Actions builds the allowlisted `_site/` artifact and GitHub Pages deploys only that artifact (behind Cloudflare; HTML cache up to 10 minutes).
+5. CI (`Validate Content` + `Deploy Pages`) re-runs the same checks and fails if committed outputs do not match — on failure, rerun step 2 locally, commit, push again.
 6. Optional, after the deploy is live: notify IndexNow about the changed pages with `python3 scripts/indexnow_submit.py` (dry run) and `python3 scripts/indexnow_submit.py --send` (real submission to api.indexnow.org). It reads the key from the `<key>.txt` file at the repo root, which must stay public and committed. Only submit when the user asks; never submit before the push is deployed.
 
 ## Notes workflow
@@ -69,7 +69,7 @@ These instructions apply to the whole repository. Use them for Codex, GitHub Cop
 - The complete notes archive is paginated in `notes/index.html` and `notes/page/N.html`.
 - When asked to create and publish a note with minimal friction, prefer `python3 scripts/note.py new ... --direct-main`.
 - `--direct-main` must publish from an isolated temporary worktree based on `origin/main`, so the note can go live without PR and without depending on the current local branch.
-- When asked to create or update a note without immediate publication, prefer `python3 scripts/note.py`.
+- When asked to create or update a note without immediate publication, prefer `python3 scripts/note.py`; drafts must stay under `.local/drafts/notes/`.
 - If editing note sources manually, regenerate with `python3 scripts/build_site_metadata.py` and validate with `python3 scripts/validate_site.py`.
 - A request like `crie uma nota sobre...` should default to this note flow unless the user clearly asks for a blog post instead.
 

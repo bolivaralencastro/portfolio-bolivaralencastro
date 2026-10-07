@@ -25,6 +25,8 @@ import urllib.error
 from pathlib import Path
 from datetime import datetime
 
+from local_paths import ENV_FILE, STATE_ROOT
+
 try:
     import certifi
     SSL_CONTEXT = ssl.create_default_context(cafile=certifi.where())
@@ -33,9 +35,8 @@ except ImportError:
 
 ROOT = Path(__file__).parent.parent
 BLOG_DIR = ROOT / "blog"
-ENV_FILE = ROOT / ".env"
 BASE_URL = "https://bolivaralencastro.com.br"
-STATE_DIR = ROOT / ".social_publish_state"
+STATE_DIR = STATE_ROOT
 LINKEDIN_STATE_FILE = STATE_DIR / "linkedin_last_publish.json"
 
 UTM_MEDIUM = "social"
@@ -100,7 +101,7 @@ def find_latest_post() -> Path:
 
 
 def get_member_urn(token: str, env: dict) -> str:
-    """Retorna o URN do membro. Prioriza LINKEDIN_PERSON_URN do .env."""
+    """Retorna o URN do membro. Prioriza LINKEDIN_PERSON_URN do .local/.env."""
     urn = env.get("LINKEDIN_PERSON_URN", "").strip()
     if urn:
         return urn
@@ -133,7 +134,7 @@ def get_member_urn(token: str, env: dict) -> str:
     if not sub:
         raise ValueError(
             "Não foi possível obter o URN do membro.\n"
-            "Adicione LINKEDIN_PERSON_URN=urn:li:person:SEU_ID ao .env"
+            "Adicione LINKEDIN_PERSON_URN=urn:li:person:SEU_ID ao .local/.env"
         )
     return f"urn:li:person:{sub}"
 
@@ -336,7 +337,7 @@ def main():
     token = env.get("LINKEDIN_ACCESS_TOKEN", "").strip()
 
     if not token:
-        print("❌ LINKEDIN_ACCESS_TOKEN não encontrado no .env")
+        print("❌ LINKEDIN_ACCESS_TOKEN não encontrado no .local/.env")
         print("   Execute primeiro: python3 scripts/linkedin_auth.py")
         sys.exit(1)
 

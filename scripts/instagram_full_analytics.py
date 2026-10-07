@@ -22,9 +22,10 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
+from local_paths import ENV_FILE, local_path
+
 ROOT = Path(__file__).resolve().parent.parent
-ENV_FILE = ROOT / ".env"
-OUT_DIR = ROOT / "data" / "instagram_analytics"
+OUT_DIR = local_path("data", "instagram_analytics")
 OUT_JSON = OUT_DIR / "latest.json"
 OUT_CSV = OUT_DIR / "latest.csv"
 

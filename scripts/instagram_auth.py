@@ -8,7 +8,7 @@ Fluxo usado:
        instagram_manage_insights, pages_read_engagement, pages_show_list
     2. Execute este script passando o token curto.
     3. O script troca por token de longa duração, encontra a página conectada
-       ao Instagram e salva no .env:
+       ao Instagram e salva no .local/.env:
        INSTAGRAM_ACCESS_TOKEN, INSTAGRAM_USER_ID e INSTAGRAM_PAGE_ID.
 
 Usage:
@@ -29,6 +29,8 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
+from local_paths import ENV_FILE
+
 try:
     import certifi
     SSL_CONTEXT = ssl.create_default_context(cafile=certifi.where())
@@ -36,7 +38,6 @@ except ImportError:
     SSL_CONTEXT = ssl.create_default_context()
 
 ROOT = Path(__file__).parent.parent
-ENV_FILE = ROOT / ".env"
 GRAPH_API = "https://graph.facebook.com/v25.0"
 DEFAULT_USERNAME = "bolivar.alencastro"
 
@@ -61,7 +62,7 @@ def save_to_env(key: str, value: str):
     else:
         content = content.rstrip("\n") + f"\n{new_line}\n"
     ENV_FILE.write_text(content)
-    print(f"   ✅ {key} salvo no .env")
+    print(f"   ✅ {key} salvo no .local/.env")
 
 
 def graph_get(path: str, params: dict) -> dict:
@@ -112,7 +113,7 @@ def main():
     app_secret = env.get("INSTAGRAM_APP_SECRET", "").strip()
 
     if not app_id or not app_secret:
-        print("❌ Configure INSTAGRAM_APP_ID e INSTAGRAM_APP_SECRET no .env")
+        print("❌ Configure INSTAGRAM_APP_ID e INSTAGRAM_APP_SECRET no .local/.env")
         sys.exit(1)
 
     short_token = (args.short_token or sys.stdin.read()).strip()

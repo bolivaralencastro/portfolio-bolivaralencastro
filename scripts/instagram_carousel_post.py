@@ -3,8 +3,8 @@
 Publica um carrossel do Instagram via Graph API.
 
 Uso:
-    python3 scripts/instagram_carousel_post.py assets/images/social/instagram/veganismo-horizonte-moral --dry-run
-    python3 scripts/instagram_carousel_post.py assets/images/social/instagram/veganismo-horizonte-moral --ref <git-ref>
+    python3 scripts/instagram_carousel_post.py .local/assets-source/social/instagram/veganismo-horizonte-moral --dry-run
+    python3 scripts/instagram_carousel_post.py .local/assets-source/social/instagram/veganismo-horizonte-moral --ref <git-ref>
 """
 
 from __future__ import annotations
@@ -23,6 +23,8 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
+from local_paths import ENV_FILE
+
 try:
     import certifi
 
@@ -32,7 +34,6 @@ except ImportError:
 
 
 ROOT = Path(__file__).resolve().parents[1]
-ENV_FILE = ROOT / ".env"
 GRAPH_API = "https://graph.instagram.com/v23.0"
 DEFAULT_REPO = "bolivaralencastro/portfolio-bolivaralencastro"
 
@@ -208,7 +209,7 @@ def main() -> None:
     token = env.get("INSTAGRAM_ACCESS_TOKEN", "").strip()
     user_id = (env.get("INSTAGRAM_IG_USER_ID") or env.get("INSTAGRAM_USER_ID", "")).strip()
     if not token or not user_id:
-        print("❌ Credenciais de Instagram ausentes no .env")
+        print("❌ Credenciais de Instagram ausentes no .local/.env")
         sys.exit(1)
 
     carousel_dir = (ROOT / args.carousel_dir).resolve() if not Path(args.carousel_dir).is_absolute() else Path(args.carousel_dir)

@@ -9,7 +9,7 @@ aceita WEBP no image_url).
 
 Pré-requisitos:
     - Conta Instagram Business ou Creator
-    - INSTAGRAM_ACCESS_TOKEN e INSTAGRAM_USER_ID no .env
+    - INSTAGRAM_ACCESS_TOKEN e INSTAGRAM_USER_ID no .local/.env
     - O site deve estar publicado (a imagem precisa de URL pública)
     - Gere o token via Facebook Login/Graph API Explorer ou execute instagram_auth.py
 
@@ -30,6 +30,8 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
+from local_paths import ENV_FILE
+
 try:
     import certifi
     SSL_CONTEXT = ssl.create_default_context(cafile=certifi.where())
@@ -38,7 +40,6 @@ except ImportError:
 
 ROOT = Path(__file__).parent.parent
 BLOG_DIR = ROOT / "blog"
-ENV_FILE = ROOT / ".env"
 BASE_URL = "https://bolivaralencastro.com.br"
 GRAPH_API = "https://graph.instagram.com/v23.0"
 
@@ -218,7 +219,7 @@ def main():
     user_id = (env.get("INSTAGRAM_IG_USER_ID") or env.get("INSTAGRAM_USER_ID", "")).strip()
 
     if not token or not user_id:
-        print("❌ Credenciais não encontradas no .env")
+        print("❌ Credenciais não encontradas no .local/.env")
         print("   Execute primeiro: python3 scripts/instagram_auth.py")
         sys.exit(1)
 

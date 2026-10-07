@@ -6,8 +6,8 @@ O script foi feito para trabalhar com arquivos baixados manualmente das platafor
 sem scraping e sem APIs privadas.
 
 Usage:
-    python3 scripts/social_curation.py import .referencias/social-exports/linkedin/export.zip --source linkedin
-    python3 scripts/social_curation.py import .referencias/social-exports/instagram/export.zip --source instagram
+    python3 scripts/social_curation.py import .local/references/social-exports/linkedin/export.zip --source linkedin
+    python3 scripts/social_curation.py import .local/references/social-exports/instagram/export.zip --source instagram
     python3 scripts/social_curation.py report --days 90
 """
 
@@ -29,11 +29,13 @@ from pathlib import Path
 from typing import Any, Iterable
 from urllib.parse import urlparse
 
+from local_paths import CURATION_ROOT, REFERENCES_ROOT, local_path
+
 
 ROOT = Path(__file__).parent.parent
-DB_PATH = ROOT / "data" / "social-curation.sqlite"
-EXPORT_ROOT = ROOT / ".referencias" / "social-exports"
-REPORT_DIR = ROOT / "curadorias"
+DB_PATH = local_path("data", "social-curation.sqlite")
+EXPORT_ROOT = REFERENCES_ROOT / "social-exports"
+REPORT_DIR = CURATION_ROOT
 URL_RE = re.compile(r"https?://[^\s<>'\")\]]+")
 
 
@@ -421,7 +423,7 @@ def init_dirs():
     for path in [
         EXPORT_ROOT / "linkedin",
         EXPORT_ROOT / "instagram",
-        ROOT / "data",
+        local_path("data"),
         REPORT_DIR,
     ]:
         path.mkdir(parents=True, exist_ok=True)

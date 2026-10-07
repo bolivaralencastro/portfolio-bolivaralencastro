@@ -29,6 +29,8 @@ import urllib.request
 from io import BytesIO
 from pathlib import Path
 
+from local_paths import ENV_FILE
+
 try:
     import certifi
     SSL_CONTEXT = ssl.create_default_context(cafile=certifi.where())
@@ -42,7 +44,6 @@ except ImportError:
     HAS_PIL = False
 
 ROOT = Path(__file__).parent.parent
-ENV_FILE = ROOT / ".env"
 
 DEFAULT_IMAGE_MODEL = "openai/gpt-5.4-image-2"
 DEFAULT_PROMPT_MODEL = "google/gemini-3.5-flash-lite"  # barato e rápido
@@ -514,7 +515,7 @@ def main():
     env = load_env()
     api_key = env.get("OPENROUTER_API_KEY", "").strip()
     if not api_key:
-        print("❌ OPENROUTER_API_KEY não encontrado no .env")
+        print("❌ OPENROUTER_API_KEY não encontrado no .local/.env")
         sys.exit(1)
 
     html_path = Path(args.post)

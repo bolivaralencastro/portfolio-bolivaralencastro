@@ -16,7 +16,9 @@ import requests
 from pathlib import Path
 from datetime import datetime
 
-ENV_PATH = Path(__file__).parent.parent / ".env"
+from local_paths import ENV_FILE
+
+ENV_PATH = ENV_FILE
 
 
 def load_env():
@@ -34,14 +36,14 @@ def update_env(key, value):
     pattern = rf'^({re.escape(key)}=)(.*)$'
     new_content = re.sub(pattern, rf'\g<1>{value}', content, flags=re.MULTILINE)
     ENV_PATH.write_text(new_content)
-    print(f"  Updated {key} in .env")
+    print(f"  Updated {key} in .local/.env")
 
 
 def refresh_instagram_token(env):
     print("\n[Instagram] Refreshing access token...")
     token = env.get("INSTAGRAM_ACCESS_TOKEN")
     if not token:
-        print("  ERROR: INSTAGRAM_ACCESS_TOKEN not found in .env")
+        print("  ERROR: INSTAGRAM_ACCESS_TOKEN not found in .local/.env")
         return False
 
     resp = requests.get(

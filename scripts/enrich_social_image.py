@@ -17,7 +17,7 @@ Usage:
     python3 scripts/enrich_social_image.py --use-browser-cookies --limit 5
 
 Pré-requisitos:
-  - OPENROUTER_API_KEY no .env ou no ambiente.
+  - OPENROUTER_API_KEY no .local/.env ou no ambiente.
   - yt-dlp instalado (pip install yt-dlp).
   - Para posts privados/salvos: Chrome aberto com a conta logada e usar --use-browser-cookies.
 """
@@ -33,6 +33,8 @@ import shutil
 import subprocess
 import sys
 from pathlib import Path
+
+from local_paths import ENV_FILE, local_path
 from typing import Any
 
 # ---------------------------------------------------------------------------
@@ -41,7 +43,7 @@ from typing import Any
 
 ROOT = Path(__file__).parent.parent
 ANALYZE_SCRIPT = ROOT / "youtube-research" / "scripts" / "analyze_images.py"
-DEFAULT_BASE_DIR = ROOT / "data" / "instagram-research" / "posts"
+DEFAULT_BASE_DIR = local_path("data", "instagram-research", "posts")
 
 VIDEO_EXTENSIONS = {".mp4", ".m4v", ".webm", ".mkv", ".mov", ".avi"}
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp", ".gif"}
@@ -51,7 +53,7 @@ IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp", ".gif"}
 # ---------------------------------------------------------------------------
 
 def load_env() -> None:
-    env_path = ROOT / ".env"
+    env_path = ENV_FILE
     if not env_path.exists():
         return
     with env_path.open() as f:

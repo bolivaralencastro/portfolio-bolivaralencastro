@@ -9,7 +9,7 @@ Use this skill when a task starts from a YouTube URL and the useful output is no
 
 ## Before running
 
-- Confirm `YOUTUBE_API_KEY` exists in the repository `.env`.
+- Confirm `YOUTUBE_API_KEY` exists in the repository `.local/.env`.
 - Confirm `OPENROUTER_API_KEY` exists if transcript fallback by audio is required.
 - Work from the repository root so output paths resolve correctly.
 - Treat transcript capture as a two-stage workflow:
@@ -27,7 +27,7 @@ Useful variants:
 ```bash
 python3 youtube-research/scripts/collect_video_research.py 'https://youtu.be/VIDEO_ID' --lang pt
 python3 youtube-research/scripts/collect_video_research.py 'https://www.youtube.com/watch?v=VIDEO_ID' --max-comments 500
-python3 youtube-research/scripts/collect_video_research.py 'https://www.youtube.com/watch?v=VIDEO_ID' --output-dir youtube-research/videos/custom-name
+python3 youtube-research/scripts/collect_video_research.py 'https://www.youtube.com/watch?v=VIDEO_ID' --output-dir .local/youtube-research/videos/custom-name
 python3 youtube-research/scripts/collect_video_research.py 'https://www.youtube.com/watch?v=VIDEO_ID' --force-stt
 ```
 
@@ -40,7 +40,7 @@ Language resolution priority is:
 
 ## Output contract
 
-The script writes a folder under `youtube-research/videos/<video-title>--<video_id>/` containing:
+The script writes a folder under `.local/youtube-research/videos/<video-title>--<video_id>/` containing:
 
 - `video.json`: video metadata and counts
 - `transcript.json`: structured transcript segments when available
@@ -80,5 +80,5 @@ note that the platform is being used only for transcript-driven research.
 ## Relevant files
 
 - `youtube-research/scripts/collect_video_research.py`
-- `.env`
-- `youtube-research/videos/`
+- `.local/.env`
+- `.local/youtube-research/videos/`

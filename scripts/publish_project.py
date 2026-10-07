@@ -192,7 +192,7 @@ def publish_linkedin(result: dict, allow_duplicate: bool) -> str:
     token = env.get("LINKEDIN_ACCESS_TOKEN", "").strip()
     if not token:
         raise RuntimeError(
-            "LINKEDIN_ACCESS_TOKEN nao encontrado no .env. Rode python3 scripts/linkedin_auth.py"
+            "LINKEDIN_ACCESS_TOKEN nao encontrado no .local/.env. Rode python3 scripts/linkedin_auth.py"
         )
 
     author_urn = linkedin_post.get_member_urn(token, env)
@@ -260,7 +260,7 @@ def publish_instagram(result: dict) -> tuple[str, str | None]:
     user_id = env.get("INSTAGRAM_USER_ID", "").strip()
     if not token or not user_id:
         raise RuntimeError(
-            "Credenciais do Instagram ausentes no .env. Rode python3 scripts/instagram_auth.py"
+            "Credenciais do Instagram ausentes no .local/.env. Rode python3 scripts/instagram_auth.py"
         )
     if not result["instagram_image_url"]:
         raise RuntimeError(

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Export Microsoft Clarity dashboard data using the local .env token."""
+"""Export Microsoft Clarity dashboard data using the private .local/.env token."""
 
 from __future__ import annotations
 
@@ -11,10 +11,12 @@ import subprocess
 import sys
 import urllib.parse
 
+from local_paths import ENV_FILE, local_path
+
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-ENV_PATH = ROOT / ".env"
-OUT_DIR = ROOT / "data" / "analytics" / "clarity"
+ENV_PATH = ENV_FILE
+OUT_DIR = local_path("data", "analytics", "clarity")
 API_URL = "https://www.clarity.ms/export-data/api/v1/project-live-insights"
 TOKEN_KEY = "CLARITY_DATA_EXPORT_TOKEN"
 ALLOWED_DAYS = {"1", "2", "3"}

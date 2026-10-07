@@ -31,7 +31,9 @@ except Exception:
 
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 ROOT = REPO_ROOT
-ENV_FILE = REPO_ROOT / ".env"
+sys.path.insert(0, str(REPO_ROOT / "scripts"))
+from local_paths import ENV_FILE
+
 OPENROUTER_CHAT_URL = "https://openrouter.ai/api/v1/chat/completions"
 DEFAULT_MODEL = "deepseek/deepseek-chat"
 DEFAULT_PROMPT_FILE = (
@@ -266,7 +268,7 @@ def main() -> int:
     env = load_env()
     api_key = (env.get("OPENROUTER_API_KEY") or "").strip()
     if not api_key:
-        print("Erro: configure OPENROUTER_API_KEY no .env ou no ambiente.")
+        print("Erro: configure OPENROUTER_API_KEY no .local/.env ou no ambiente.")
         return 1
 
     prompt_file = Path(args.prompt_file).resolve()

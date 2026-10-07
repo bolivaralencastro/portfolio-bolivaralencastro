@@ -22,13 +22,13 @@ Despachar tarefas assíncronas para o Jules, acompanhar seu progresso via API, e
 - **Source do portfolio:** `sources/github/bolivaralencastro/portfolio-bolivaralencastro`
 - **Branch padrão:** `main`
 - **API base:** `https://jules.googleapis.com/v1alpha`
-- **Autenticação:** header `X-Goog-Api-Key: $JULES_API_KEY` (variável no `.env`)
+- **Autenticação:** header `X-Goog-Api-Key: $JULES_API_KEY` (variável no `.local/.env`)
 - **CLI:** `jules` (globalmente instalado via npm)
 
 Carregar a chave na sessão antes de qualquer chamada:
 
 ```bash
-export JULES_API_KEY=$(grep JULES_API_KEY .env | cut -d= -f2)
+export JULES_API_KEY=$(grep JULES_API_KEY .local/.env | cut -d= -f2)
 ```
 
 ## Prioridades
@@ -124,7 +124,7 @@ e inclua o output no PR como comentário.
 
 ## Segurança e limites de execução na cloud
 
-Jules clona o repositório do GitHub em uma VM isolada. Ele **não tem acesso** ao `.env`, a tokens locais, nem ao ambiente da máquina do usuário — o `.gitignore` impede que segredos entrem no repo.
+Jules clona o repositório do GitHub em uma VM isolada. Ele **não tem acesso** ao `.local/.env`, a tokens locais, nem ao ambiente da máquina do usuário — o `.gitignore` impede que segredos entrem no repo.
 
 Consequência prática:
 
@@ -133,10 +133,10 @@ Consequência prática:
 | `build_site_metadata.py` | ✅ Sim | Só lê/escreve arquivos do repo |
 | `validate_site.py` | ✅ Sim | Só lê arquivos do repo |
 | `blog_image_workflow.py` | ✅ Sim | Manipula arquivos locais |
-| `linkedin_post.py` | ❌ Não | Precisa de tokens no `.env` |
-| `twitter_post.py` | ❌ Não | Precisa de tokens no `.env` |
+| `linkedin_post.py` | ❌ Não | Precisa de tokens no `.local/.env` |
+| `twitter_post.py` | ❌ Não | Precisa de tokens no `.local/.env` |
 | `generate_post_images.py` | ❌ Não | Precisa de `OPENROUTER_API_KEY` |
-| `instagram_post.py` | ❌ Não | Precisa de tokens no `.env` |
+| `instagram_post.py` | ❌ Não | Precisa de tokens no `.local/.env` |
 
 **Nunca instrua o Jules a rodar scripts que dependem de credenciais externas.** Eles falharão silenciosamente na VM e o erro vai aparecer só nas atividades da sessão.
 

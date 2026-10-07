@@ -3,12 +3,12 @@
 Configura credenciais para publicar no X (Twitter) via API usando OAuth 1.0a user context.
 
 Fluxo usado:
-    1. Ler X_API_KEY e X_API_SECRET do .env
+    1. Ler X_API_KEY e X_API_SECRET do .local/.env
     2. Solicitar request token
     3. Abrir URL de autorizacao no navegador
     4. Receber callback local em localhost:8080
     5. Trocar por access token
-    6. Salvar no .env: X_ACCESS_TOKEN, X_ACCESS_TOKEN_SECRET, X_USER_ID, X_USERNAME
+    6. Salvar no .local/.env: X_ACCESS_TOKEN, X_ACCESS_TOKEN_SECRET, X_USER_ID, X_USERNAME
 
 Usage:
     python3 scripts/twitter_auth.py
@@ -32,6 +32,8 @@ import urllib.request
 import webbrowser
 from pathlib import Path
 
+from local_paths import ENV_FILE
+
 try:
     import certifi
 
@@ -40,7 +42,6 @@ except Exception:
     SSL_CONTEXT = ssl.create_default_context()
 
 ROOT = Path(__file__).parent.parent
-ENV_FILE = ROOT / ".env"
 REQUEST_TOKEN_URL = "https://api.twitter.com/oauth/request_token"
 AUTHORIZE_URL = "https://api.twitter.com/oauth/authorize"
 ACCESS_TOKEN_URL = "https://api.twitter.com/oauth/access_token"
@@ -105,7 +106,7 @@ def save_to_env(key: str, value: str) -> None:
     else:
         content = content.rstrip("\n") + f"\n{new_line}\n"
     ENV_FILE.write_text(content, encoding="utf-8")
-    print(f"   Salvo {key} no .env")
+    print(f"   Salvo {key} no .local/.env")
 
 
 def oauth1_post(
@@ -161,7 +162,7 @@ def main() -> None:
     callback_url = env.get("X_CALLBACK_URL", DEFAULT_CALLBACK_URL).strip() or DEFAULT_CALLBACK_URL
 
     if not api_key or not api_secret:
-        print("Erro: configure X_API_KEY e X_API_SECRET no .env")
+        print("Erro: configure X_API_KEY e X_API_SECRET no .local/.env")
         sys.exit(1)
 
     callback_data: dict[str, str] = {}

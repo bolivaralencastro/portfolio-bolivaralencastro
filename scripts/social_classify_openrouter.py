@@ -9,7 +9,7 @@ Fluxo esperado (semanal):
     4) python3 scripts/social_curation.py report --days 7 --label ai-tools
 
 Requer:
-    - OPENROUTER_API_KEY no .env ou no ambiente
+    - OPENROUTER_API_KEY no .local/.env ou no ambiente
 Opcional:
     - OPENROUTER_MODEL (default: openai/gpt-4.1-mini)
 """
@@ -27,6 +27,8 @@ import urllib.error
 import urllib.request
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
+
+from local_paths import ENV_FILE
 from typing import Any
 
 ROOT = Path(__file__).parent.parent
@@ -57,7 +59,7 @@ except ImportError:
 
 
 def load_env_file() -> dict[str, str]:
-    env_path = ROOT / ".env"
+    env_path = ENV_FILE
     values: dict[str, str] = {}
     if not env_path.exists():
         return values
@@ -75,7 +77,7 @@ def get_config() -> tuple[str, str]:
     api_key = os.environ.get("OPENROUTER_API_KEY") or env_file.get("OPENROUTER_API_KEY", "")
     model = os.environ.get("OPENROUTER_MODEL") or env_file.get("OPENROUTER_MODEL", DEFAULT_MODEL)
     if not api_key:
-        raise RuntimeError("OPENROUTER_API_KEY ausente no ambiente/.env")
+        raise RuntimeError("OPENROUTER_API_KEY ausente no ambiente/.local/.env")
     return api_key.strip(), model.strip()
 
 

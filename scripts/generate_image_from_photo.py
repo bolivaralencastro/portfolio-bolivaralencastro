@@ -22,6 +22,8 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
+from local_paths import ENV_FILE
+
 try:
     import certifi
     SSL_CONTEXT = ssl.create_default_context(cafile=certifi.where())
@@ -35,7 +37,6 @@ except ImportError:
     HAS_PIL = False
 
 ROOT = Path(__file__).parent.parent
-ENV_FILE = ROOT / ".env"
 
 MODEL = "google/gemini-2.5-flash-image"
 
@@ -149,7 +150,7 @@ def main():
 
     api_key = load_api_key()
     if not api_key:
-        print("❌ OPENROUTER_API_KEY não encontrado no .env ou nas variáveis de ambiente.")
+        print("❌ OPENROUTER_API_KEY não encontrado no .local/.env ou nas variáveis de ambiente.")
         sys.exit(1)
 
     source = Path(args.source)

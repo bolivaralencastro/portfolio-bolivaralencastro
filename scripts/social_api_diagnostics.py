@@ -6,7 +6,7 @@ Uso:
     python3 scripts/social_api_diagnostics.py
 
 O script NÃO altera nada nas contas/apps. Ele apenas testa endpoints de leitura
-com as credenciais do .env e imprime um relatório objetivo do que está liberado
+com as credenciais do .local/.env e imprime um relatório objetivo do que está liberado
 ou bloqueado.
 """
 
@@ -20,8 +20,9 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
+from local_paths import ENV_FILE
+
 ROOT = Path(__file__).resolve().parent.parent
-ENV_FILE = ROOT / ".env"
 
 
 def ssl_context() -> ssl.SSLContext:

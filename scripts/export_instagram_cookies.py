@@ -8,6 +8,8 @@ from pathlib import Path
 
 import browser_cookie3
 
+from local_paths import CREDENTIALS_ROOT, LOCAL_ROOT, REPO_ROOT
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
@@ -15,7 +17,9 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "output",
-        help="Caminho do arquivo de saída em formato Netscape.",
+        nargs="?",
+        default=str(CREDENTIALS_ROOT / "instagram-cookies.txt"),
+        help="Caminho do arquivo de saída em formato Netscape (padrão: .local/credentials/instagram-cookies.txt).",
     )
     parser.add_argument(
         "--browser",
@@ -46,7 +50,9 @@ def load_cookies(browser: str, domain: str):
 
 def main() -> None:
     args = parse_args()
-    output_path = Path(args.output)
+    output_path = Path(args.output).expanduser().resolve()
+    if output_path.is_relative_to(REPO_ROOT) and not output_path.is_relative_to(LOCAL_ROOT):
+        raise SystemExit("Recusado: cookies dentro do repositório devem ficar sob .local/.")
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     source_jar = load_cookies(args.browser, args.domain)
@@ -60,6 +66,7 @@ def main() -> None:
         raise SystemExit(f"Nenhum cookie encontrado para {args.domain} em {args.browser}.")
 
     jar.save(ignore_discard=True, ignore_expires=True)
+    output_path.chmod(0o600)
     print(f"Saved {count} cookies to {output_path}")
 
 

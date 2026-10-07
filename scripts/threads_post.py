@@ -7,14 +7,14 @@ Modos:
     python3 scripts/threads_post.py --text "..." --dry-run
 
     # Carrossel/imagem a partir de um diretório com caption.txt + slide-NN.jpg
-    python3 scripts/threads_post.py assets/images/social/threads/meu-post --dry-run
+    python3 scripts/threads_post.py .local/assets-source/social/threads/meu-post --dry-run
 
     # Reusando slides já commitados em outro diretório do repo
-    python3 scripts/threads_post.py assets/images/social/threads/meu-post \
-        --slides-dir assets/images/social/instagram/meu-post
+    python3 scripts/threads_post.py .local/assets-source/social/threads/meu-post \
+        --slides-dir .local/assets-source/social/instagram/meu-post
 
 Pré-requisitos:
-    - THREADS_ACCESS_TOKEN e THREADS_USER_ID no .env (gere com threads_auth.py)
+    - THREADS_ACCESS_TOKEN e THREADS_USER_ID no .local/.env (gere com threads_auth.py)
     - Slides commitados e pushados (as URLs públicas vêm do raw do GitHub)
 
 Limite do Threads: 500 caracteres de texto por post.
@@ -34,6 +34,8 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
+from local_paths import ENV_FILE
+
 try:
     import certifi
 
@@ -42,7 +44,6 @@ except ImportError:
     SSL_CONTEXT = ssl.create_default_context()
 
 ROOT = Path(__file__).resolve().parents[1]
-ENV_FILE = ROOT / ".env"
 GRAPH_API = "https://graph.threads.net/v1.0"
 DEFAULT_REPO = "bolivaralencastro/portfolio-bolivaralencastro"
 TEXT_LIMIT = 500
@@ -127,7 +128,7 @@ def main():
     token = env.get("THREADS_ACCESS_TOKEN", "").strip()
     user_id = env.get("THREADS_USER_ID", "").strip()
     if not args.dry_run and (not token or not user_id):
-        print("❌ THREADS_ACCESS_TOKEN/THREADS_USER_ID ausentes no .env — rode threads_auth.py")
+        print("❌ THREADS_ACCESS_TOKEN/THREADS_USER_ID ausentes no .local/.env — rode threads_auth.py")
         sys.exit(1)
 
     slides: list[Path] = []

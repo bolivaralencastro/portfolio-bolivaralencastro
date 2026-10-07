@@ -14,21 +14,21 @@ Use this skill after the raw YouTube research artifacts already exist on disk.
   - `comments.json`
   - `summary.json`
   - `transcript.txt` or `transcript.json`
-- Confirm `OPENROUTER_API_KEY` exists in the repository `.env`.
+- Confirm `OPENROUTER_API_KEY` exists in the repository `.local/.env`.
 - Treat this as a second-pass analysis layer. Do not recollect comments or transcript unless the source artifacts are missing or stale.
 
 ## Default command
 
 ```bash
-python3 youtube-research/scripts/analyze_learning.py youtube-research/videos/<video-title>--<video_id>
+python3 youtube-research/scripts/analyze_learning.py .local/youtube-research/videos/<video-title>--<video_id>
 ```
 
 Useful variants:
 
 ```bash
-python3 youtube-research/scripts/analyze_learning.py youtube-research/videos/<video-title>--<video_id> --prompt-file youtube-research/prompts/learning-analysis-v2.md
-python3 youtube-research/scripts/analyze_learning.py youtube-research/videos/<video-title>--<video_id> --model deepseek/deepseek-chat
-python3 youtube-research/scripts/analyze_learning.py youtube-research/videos/<video-title>--<video_id> --max-threads 40
+python3 youtube-research/scripts/analyze_learning.py .local/youtube-research/videos/<video-title>--<video_id> --prompt-file youtube-research/prompts/learning-analysis-v2.md
+python3 youtube-research/scripts/analyze_learning.py .local/youtube-research/videos/<video-title>--<video_id> --model deepseek/deepseek-chat
+python3 youtube-research/scripts/analyze_learning.py .local/youtube-research/videos/<video-title>--<video_id> --max-threads 40
 ```
 
 ## Output contract
@@ -52,4 +52,4 @@ Keep previous files intact so prompt refinements can be compared across runs.
 
 - `youtube-research/scripts/analyze_learning.py`
 - `youtube-research/prompts/learning-analysis-v2.md`
-- `youtube-research/videos/`
+- `.local/youtube-research/videos/`
