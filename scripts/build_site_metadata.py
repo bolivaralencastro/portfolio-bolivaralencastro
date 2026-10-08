@@ -28,6 +28,7 @@ from notes_pipeline import (
 )
 
 BASE_URL_DEFAULT = "https://bolivaralencastro.com.br"
+MAX_STABILIZATION_PASSES = 4
 ROOT_PAGES = ["index.html", "about.html", "blog.html", "projects.html", "now.html", "links.html", "retratos-ufsc-florianopolis-imersivo.html"]
 SITE_CSP_CONTENT = (
     "default-src 'self'; "
@@ -1402,10 +1403,47 @@ def apply_versioned_asset_refs(html_content: str, versions: dict[str, str]) -> s
     return updated
 
 
+def stabilize_generated_metadata(
+    *,
+    repo_root: pathlib.Path,
+    base_url: str,
+    check: bool,
+    changed: list[pathlib.Path],
+    current_pass: int,
+) -> int:
+    """Repeat write mode until generated pages and their sitemap agree.
+
+    A pass can change a generated listing such as ``now.html`` after the
+    sitemap has already inspected its Git state. The next pass observes that
+    change and produces the final ``lastmod`` value. Check mode never writes or
+    recurses; it only validates the committed fixed point.
+    """
+    if check or not changed:
+        return 0
+
+    if current_pass >= MAX_STABILIZATION_PASSES:
+        print(
+            f"ERROR: generated metadata did not stabilize after {MAX_STABILIZATION_PASSES} passes.",
+            file=sys.stderr,
+        )
+        return 1
+
+    command = [
+        sys.executable,
+        str(pathlib.Path(__file__).resolve()),
+        "--base-url",
+        base_url,
+        "--stabilization-pass",
+        str(current_pass + 1),
+    ]
+    return subprocess.run(command, cwd=repo_root, check=False).returncode
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Generate sitemap/feed and editorial index blocks")
     parser.add_argument("--check", action="store_true", help="Validate generated outputs without writing files")
     parser.add_argument("--base-url", default=BASE_URL_DEFAULT, help="Canonical base URL")
+    parser.add_argument("--stabilization-pass", type=int, default=1, help=argparse.SUPPRESS)
     args = parser.parse_args()
 
     repo_root = pathlib.Path(__file__).resolve().parent.parent
@@ -1773,10 +1811,17 @@ def main() -> int:
         print("Updated files:")
         for item in changed:
             print(f" - {item.relative_to(repo_root).as_posix()}")
+        sys.stdout.flush()
     else:
         print("No metadata changes needed.")
 
-    return 0
+    return stabilize_generated_metadata(
+        repo_root=repo_root,
+        base_url=base_url,
+        check=args.check,
+        changed=changed,
+        current_pass=args.stabilization_pass,
+    )
 
 
 if __name__ == "__main__":

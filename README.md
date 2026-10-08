@@ -54,6 +54,7 @@ Arquivos, blocos e referencias gerados automaticamente:
 
 Scripts:
 - `python scripts/build_site_metadata.py`: gera sitemap, feed, blocos auto-gerados e atualiza o versionamento de assets publicos.
+- A geracao repete internamente as passagens necessarias ate que paginas derivadas e `lastmod` do sitemap estejam estaveis; nao rode o comando duas vezes manualmente.
 - `python scripts/build_site_metadata.py --check`: falha se os arquivos gerados ou as URLs versionadas de assets estiverem desatualizados.
 - `python scripts/validate_site.py`: valida SEO/editorial/integridade.
 - `python scripts/check_repository_hygiene.py`: bloqueia caminhos locais, caches e padrões de segredo no Git.
